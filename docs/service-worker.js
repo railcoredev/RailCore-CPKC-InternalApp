@@ -1,4 +1,4 @@
-const CACHE_NAME = 'railcore-crossing-worker-v1';
+const CACHE_NAME = 'railcore-crossing-worker-v2';
 const ASSETS = [
   './',
   './index.html',
