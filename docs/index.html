@@ -2,388 +2,184 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>RAILCORE – CPKC Crossing Worker App</title>
+  <title>RAILCORE — CPKC Worker App v3.7</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="manifest" href="manifest.webmanifest" />
-  <link rel="icon" href="railcore-icon-192.png" sizes="192x192" type="image/png" />
-  <link rel="apple-touch-icon" href="railcore-icon-192.png" />
+
+  <!-- PWA + Theme -->
   <meta name="theme-color" content="#050910" />
-  <style>
-    :root {
-      --railcore-orange: #ff6600;
-      --railcore-steel: #2f3e4f;
-      --bg-main: #050910;
-      --bg-panel: #111722;
-      --bg-panel-alt: #161d29;
-      --border-subtle: #262f3d;
-      --text-main: #e5edf7;
-      --text-muted: #9aa4b6;
-      --accent-distance: #ffb366;
-    }
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icons/icon-192.png" type="image/png" />
 
-    * {
-      box-sizing: border-box;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
-        "Segoe UI", sans-serif;
-    }
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
 
-    body {
-      margin: 0;
-      padding: 12px;
-      background: radial-gradient(circle at top right, #15284a 0, #050910 55%, #000 100%);
-      color: var(--text-main);
-    }
+  <!-- Export libs (for PDF/PNG) -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
-    .app-shell {
-      max-width: 480px;
-      margin: 0 auto;
-      border-radius: 14px;
-      border: 1px solid #283445;
-      background: linear-gradient(145deg, #0a0f18, #141b27);
-      padding: 10px 10px 8px 10px;
-      box-shadow:
-        0 0 30px rgba(0, 0, 0, 0.75),
-        0 0 0 1px rgba(255, 255, 255, 0.03);
-    }
-
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 6px;
-    }
-
-    .logo {
-      font-size: 26px;
-      font-weight: 900;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .logo span.rail {
-      color: var(--railcore-orange);
-    }
-
-    .logo span.core {
-      color: #c5d0e3;
-    }
-
-    .header-sub {
-      font-size: 10px;
-      color: var(--text-muted);
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      text-align: right;
-    }
-
-    .filter-block {
-      margin-bottom: 4px;
-    }
-
-    .field-label {
-      font-size: 11px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-      margin-bottom: 2px;
-    }
-
-    .multiselect {
-      width: 100%;
-      border-radius: 7px;
-      padding: 6px 8px;
-      background: #060a11;
-      border: 1px solid #273448;
-      color: var(--text-main);
-      font-size: 14px;
-      min-height: 80px;
-      max-height: 180px;
-      overflow-y: auto;
-    }
-
-    .multiselect:focus {
-      outline: none;
-      border-color: var(--railcore-orange);
-      box-shadow: 0 0 0 1px rgba(255, 102, 0, 0.6);
-    }
-
-    .sticky-bar {
-      position: sticky;
-      top: 0;
-      z-index: 5;
-      margin-top: 4px;
-      padding: 8px;
-      border-radius: 10px;
-      background: var(--bg-panel-alt);
-      border: 1px solid #303c4f;
-    }
-
-    .sticky-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-bottom: 4px;
-    }
-
-    .sticky-row:last-child {
-      margin-bottom: 0;
-    }
-
-    .sticky-col {
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-      min-width: 120px;
-    }
-
-    .sticky-label {
-      font-size: 9px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-      margin-bottom: 2px;
-    }
-
-    .sticky-subdivision-select {
-      width: 100%;
-      border-radius: 6px;
-      padding: 5px 7px;
-      background: #050810;
-      border: 1px solid #273448;
-      color: var(--text-main);
-      font-size: 13px;
-    }
-
-    .sticky-subdivision-select:focus {
-      outline: none;
-      border-color: var(--railcore-orange);
-    }
-
-    .sticky-ec-text {
-      font-size: 12px;
-    }
-
-    .sticky-inline {
-      display: flex;
-      gap: 6px;
-    }
-
-    .sticky-inline input {
-      flex: 1;
-      padding: 5px 7px;
-      border-radius: 6px;
-      background: #050810;
-      border: 1px solid #273448;
-      color: var(--text-main);
-      font-size: 13px;
-    }
-
-    .sticky-inline input:focus {
-      outline: none;
-      border-color: var(--railcore-orange);
-    }
-
-    .viewmode-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      align-items: center;
-      margin-top: 2px;
-    }
-
-    .viewmode-row label {
-      font-size: 12px;
-    }
-
-    .buttons-row {
-      display: flex;
-      gap: 6px;
-      flex-wrap: wrap;
-      margin-top: 4px;
-    }
-
-    .btn {
-      padding: 5px 12px;
-      border-radius: 999px;
-      font-size: 12px;
-      border: 1px solid #3b485d;
-      background: #141b27;
-      color: var(--text-main);
-      cursor: pointer;
-      flex: 0 0 auto;
-    }
-
-    .btn-primary {
-      border-color: var(--railcore-orange);
-      background: radial-gradient(circle at 30% 0, #ff9540 0, #ff6600 35%, #c34a00 80%);
-      color: #111;
-      font-weight: 600;
-    }
-
-    .btn:hover {
-      filter: brightness(1.08);
-    }
-
-    .tabs {
-      display: flex;
-      margin-top: 6px;
-      border-bottom: 1px solid #273343;
-      background: linear-gradient(to right, #111722, #141b27);
-      border-radius: 10px 10px 0 0;
-      overflow: hidden;
-    }
-
-    .tab {
-      flex: 1;
-      text-align: center;
-      padding: 7px 0;
-      font-size: 13px;
-      color: var(--text-muted);
-      cursor: pointer;
-      border-right: 1px solid #273343;
-    }
-
-    .tab:last-child {
-      border-right: none;
-    }
-
-    .tab.active {
-      color: var(--text-main);
-      background: #141b27;
-      box-shadow: inset 0 -2px 0 var(--railcore-orange);
-    }
-
-    .results-panel {
-      border-radius: 0 0 10px 10px;
-      border: 1px solid var(--border-subtle);
-      border-top: none;
-      background: rgba(3, 6, 12, 0.9);
-      max-height: 520px;
-      overflow-y: auto;
-      padding: 10px 12px 12px 14px;
-    }
-
-    .result-item {
-      margin-bottom: 8px;
-    }
-
-    .result-line1 {
-      font-family: "SF Mono", ui-monospace, Menlo, Consolas, monospace;
-      font-size: 14px;
-    }
-
-    .result-line2 {
-      font-family: "SF Mono", ui-monospace, Menlo, Consolas, monospace;
-      font-size: 13px;
-      color: var(--accent-distance);
-      padding-left: 20px;
-    }
-
-    .footer-version {
-      margin-top: 4px;
-      font-size: 9px;
-      text-align: right;
-      color: var(--text-muted);
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-    }
-
-    @media (min-width: 700px) {
-      .app-shell {
-        max-width: 640px;
-      }
-      .sticky-row {
-        flex-wrap: nowrap;
-      }
-    }
-  </style>
+  <!-- App Logic -->
+  <script defer src="data_loader.js"></script>
+  <script defer src="app.js"></script>
 </head>
 <body>
   <div class="app-shell">
+    <!-- HEADER -->
     <header class="header">
       <div class="logo">
         <span class="rail">RAIL</span><span class="core">CORE</span>
       </div>
       <div class="header-sub">
-        CPKC – Crossing App (Worker)
+        CPKC – CROSSING / SIDING / TRACK LENGTH WORKER APP
       </div>
     </header>
 
+    <!-- MAIN FILTER PANEL (compact, above sticky bar) -->
     <section class="filter-block">
-      <div class="field-label">State(s)</div>
-      <select class="multiselect" multiple>
-        <option>IA</option>
-        <option>IL</option>
-        <option>MO</option>
-        <option>KS</option>
-        <option>NE</option>
-        <option>MN</option>
-        <option>WI</option>
-        <option>SD</option>
-        <option>ND</option>
-        <option>CO</option>
-      </select>
+      <!-- STATES -->
+      <div class="field-group">
+        <label for="stateSelect" class="field-label">STATE(S)</label>
+        <!-- Multi-select; options populated by JS -->
+        <select id="stateSelect" class="multiselect" multiple>
+          <!-- JS will inject options (IA, IL, MO, etc.) -->
+        </select>
+      </div>
     </section>
 
+    <!-- STICKY BAR: Subdivision, Emergency Contact, Spacing, View Mode, Buttons -->
     <section class="sticky-bar">
+      <!-- Row 1: Subdivision + Emergency Contact -->
       <div class="sticky-row">
         <div class="sticky-col">
-          <div class="sticky-label">Subdivision</div>
-          <select class="sticky-subdivision-select">
-            <option value="">(All)</option>
-            <option>Kansas City Sub – CPKC</option>
-            <option>Ottumwa Sub – CPKC</option>
-            <option>Davenport Sub – CPKC</option>
+          <div class="sticky-label">SUBDIVISION</div>
+          <select id="subdivisionSelect" class="sticky-subdivision-select">
+            <!-- JS will inject subdivision list -->
           </select>
         </div>
         <div class="sticky-col">
-          <div class="sticky-label">Emergency Contact</div>
-          <div class="sticky-ec-text">
+          <div class="sticky-label">EMERGENCY CONTACT</div>
+          <div class="sticky-ec-text" id="emergencyContact">
             CPKC Emergency: 1-800-766-7912
           </div>
         </div>
       </div>
 
+      <!-- Row 2: Spacing + Buffer + View Mode -->
       <div class="sticky-row">
         <div class="sticky-col">
-          <div class="sticky-label">Spacing (ft)</div>
+          <div class="sticky-label">SPACING (FT)</div>
           <div class="sticky-inline">
-            <input type="number" value="5500" />
-            <input type="number" value="400" placeholder="Buffer" />
+            <input id="spacingInput" type="number" value="5500" min="0" />
+            <input id="bufferInput" type="number" value="400" min="0" placeholder="Buffer" />
           </div>
         </div>
 
         <div class="sticky-col">
-          <div class="sticky-label">View Mode</div>
+          <div class="sticky-label">VIEW MODE</div>
           <div class="viewmode-row">
-            <label><input type="radio" name="vm" value="threshold" checked /> ≥ Threshold</label>
-            <label><input type="radio" name="vm" value="all" /> All</label>
+            <label>
+              <input type="radio" name="viewMode" id="viewThreshold" value="threshold" checked />
+              ≥ Threshold
+            </label>
+            <label>
+              <input type="radio" name="viewMode" id="viewAll" value="all" />
+              All
+            </label>
           </div>
         </div>
       </div>
 
+      <!-- Row 3: Buttons -->
       <div class="buttons-row">
-        <button class="btn btn-primary" id="applyBtn">Apply</button>
-        <button class="btn" id="printBtn">Print</button>
-        <button class="btn" id="downloadBtn">Download</button>
+        <button id="applyBtn" class="btn btn-primary">Apply</button>
+        <button id="printBtn" class="btn">Print</button>
+        <button id="downloadBtn" class="btn">Download</button>
       </div>
     </section>
 
-    <div class="tabs">
-      <div class="tab active">Crossings</div>
-      <div class="tab">Sidings</div>
-      <div class="tab">Yards</div>
-    </div>
+    <!-- TABS -->
+    <nav class="tabs">
+      <button class="tab active" data-tab="crossings">Crossings</button>
+      <button class="tab" data-tab="sidings">Sidings</button>
+      <button class="tab" data-tab="tracklengths">Track Lengths</button>
+    </nav>
 
-    <section class="results-panel" id="resultsPanel">
-    </section>
+    <!-- RESULTS PANELS (one container per tab) -->
+    <main class="results-shell">
+      <!-- Crossings -->
+      <section id="panel-crossings" class="tab-panel active">
+        <div id="results-crossings" class="results-panel">
+          <!-- JS will render:
+               CROSSING
+               ↓ distance
+               CROSSING
 
-    <div class="footer-version">
-      v3.6 WORKER MOCK
-    </div>
+               (blank line)
+               repeat...
+          -->
+        </div>
+      </section>
+
+      <!-- Sidings -->
+      <section id="panel-sidings" class="tab-panel">
+        <div id="results-sidings" class="results-panel">
+          <!-- JS will render per siding:
+               SIDING NAME
+               MP start – MP end (Total: XXXX ft)
+
+               MP start
+               ↓ distance
+               Crossing
+               ↓ distance
+               Crossing
+               ...
+               ↓ distance
+               MP end
+
+               (blank line)
+          -->
+        </div>
+      </section>
+
+      <!-- Track Lengths (Yard Tracks Only) -->
+      <section id="panel-tracklengths" class="tab-panel">
+        <div class="tracklengths-header">
+          <div class="field-group">
+            <label for="yardSelect" class="field-label">YARD</label>
+            <select id="yardSelect" class="input-select">
+              <!-- JS will inject yard list -->
+            </select>
+          </div>
+        </div>
+        <div id="results-tracklengths" class="results-panel">
+          <!-- JS will render:
+               YARD NAME
+
+               Track Name         Length (ft)
+               --------------------------------
+               Track 101          4,200
+               Track 102          6,050
+               ...
+          -->
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Version -->
+    <footer class="footer-version">
+      RAILCORE CPKC WORKER APP — v3.7
+    </footer>
   </div>
 
-  <script src="data_loader.js"></script>
-  <script src="app.js"></script>
+  <!-- Download Format Dialog (hidden by default, shown by JS) -->
+  <div id="downloadDialog" class="dialog-backdrop hidden">
+    <div class="dialog">
+      <div class="dialog-title">Download as:</div>
+      <button class="dialog-option" data-format="txt">TXT</button>
+      <button class="dialog-option" data-format="csv">CSV</button>
+      <button class="dialog-option" data-format="pdf">PDF</button>
+      <button class="dialog-option" data-format="png">PNG</button>
+      <button class="dialog-cancel" id="downloadCancelBtn">Cancel</button>
+    </div>
+  </div>
 </body>
 </html>
