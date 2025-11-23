@@ -1,185 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>RAILCORE — CPKC Worker App v3.7</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RailCore CPKC Worker App — v3.7</title>
 
-  <!-- PWA + Theme -->
-  <meta name="theme-color" content="#050910" />
-  <link rel="manifest" href="manifest.webmanifest" />
-  <link rel="icon" href="icons/icon-192.png" type="image/png" />
+    <!-- Correct CSS reference -->
+    <link rel="stylesheet" href="./styles/style.css">
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles.css" />
+    <!-- PWA -->
+    <link rel="manifest" href="./manifest.webmanifest">
+    <meta name="theme-color" content="#0b0f1a" />
 
-  <!-- Export libs (for PDF/PNG) -->
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <!-- Icons -->
+    <link rel="apple-touch-icon" href="./railcore-icon-192.png">
+    <link rel="icon" href="./railcore-icon-192.png">
 
-  <!-- App Logic -->
-  <script defer src="data_loader.js"></script>
-  <script defer src="app.js"></script>
+    <!-- JS -->
+    <script defer src="./data_loader.js"></script>
+    <script defer src="./app.js"></script>
 </head>
+
 <body>
-  <div class="app-shell">
-    <!-- HEADER -->
-    <header class="header">
-      <div class="logo">
-        <span class="rail">RAIL</span><span class="core">CORE</span>
-      </div>
-      <div class="header-sub">
-        CPKC – CROSSING / SIDING / TRACK LENGTH WORKER APP
-      </div>
-    </header>
 
-    <!-- MAIN FILTER PANEL (compact, above sticky bar) -->
-    <section class="filter-block">
-      <!-- STATES -->
-      <div class="field-group">
-        <label for="stateSelect" class="field-label">STATE(S)</label>
-        <!-- Multi-select; options populated by JS -->
-        <select id="stateSelect" class="multiselect" multiple>
-          <!-- JS will inject options (IA, IL, MO, etc.) -->
-        </select>
-      </div>
-    </section>
+<div class="header">
+    <span class="railcore-orange">RAIL</span><span class="railcore-gray">CORE</span>
+    <div class="subtitle">CPKC — CROSSING / SIDING / TRACK LENGTH WORKER APP</div>
+</div>
 
-    <!-- STICKY BAR: Subdivision, Emergency Contact, Spacing, View Mode, Buttons -->
-    <section class="sticky-bar">
-      <!-- Row 1: Subdivision + Emergency Contact -->
-      <div class="sticky-row">
-        <div class="sticky-col">
-          <div class="sticky-label">SUBDIVISION</div>
-          <select id="subdivisionSelect" class="sticky-subdivision-select">
-            <!-- JS will inject subdivision list -->
-          </select>
-        </div>
-        <div class="sticky-col">
-          <div class="sticky-label">EMERGENCY CONTACT</div>
-          <div class="sticky-ec-text" id="emergencyContact">
-            CPKC Emergency: 1-800-766-7912
-          </div>
-        </div>
-      </div>
+<div class="panel">
 
-      <!-- Row 2: Spacing + Buffer + View Mode -->
-      <div class="sticky-row">
-        <div class="sticky-col">
-          <div class="sticky-label">SPACING (FT)</div>
-          <div class="sticky-inline">
-            <input id="spacingInput" type="number" value="5500" min="0" />
-            <input id="bufferInput" type="number" value="400" min="0" placeholder="Buffer" />
-          </div>
-        </div>
+    <!-- STATE FILTER -->
+    <label>STATE(S)</label>
+    <select id="stateSelect" multiple></select>
 
-        <div class="sticky-col">
-          <div class="sticky-label">VIEW MODE</div>
-          <div class="viewmode-row">
-            <label>
-              <input type="radio" name="viewMode" id="viewThreshold" value="threshold" checked />
-              ≥ Threshold
-            </label>
-            <label>
-              <input type="radio" name="viewMode" id="viewAll" value="all" />
-              All
-            </label>
-          </div>
-        </div>
-      </div>
+    <!-- SUBDIVISION -->
+    <label>SUBDIVISION</label>
+    <select id="subdivisionSelect"></select>
 
-      <!-- Row 3: Buttons -->
-      <div class="buttons-row">
-        <button id="applyBtn" class="btn btn-primary">Apply</button>
-        <button id="printBtn" class="btn">Print</button>
-        <button id="downloadBtn" class="btn">Download</button>
-      </div>
-    </section>
+    <!-- EMERGENCY CONTACT -->
+    <label>EMERGENCY CONTACT</label>
+    <div id="emergencyDisplay">CPKC Emergency: 1-800-766-7912</div>
 
-    <!-- TABS -->
-    <nav class="tabs">
-      <button class="tab active" data-tab="crossings">Crossings</button>
-      <button class="tab" data-tab="sidings">Sidings</button>
-      <button class="tab" data-tab="tracklengths">Track Lengths</button>
-    </nav>
+    <!-- SPACING -->
+    <label>SPACING (FT)</label>
+    <input id="spacingInput" type="number" value="5500">
 
-    <!-- RESULTS PANELS (one container per tab) -->
-    <main class="results-shell">
-      <!-- Crossings -->
-      <section id="panel-crossings" class="tab-panel active">
-        <div id="results-crossings" class="results-panel">
-          <!-- JS will render:
-               CROSSING
-               ↓ distance
-               CROSSING
+    <label>BUFFER (FT)</label>
+    <input id="bufferInput" type="number" value="400">
 
-               (blank line)
-               repeat...
-          -->
-        </div>
-      </section>
-
-      <!-- Sidings -->
-      <section id="panel-sidings" class="tab-panel">
-        <div id="results-sidings" class="results-panel">
-          <!-- JS will render per siding:
-               SIDING NAME
-               MP start – MP end (Total: XXXX ft)
-
-               MP start
-               ↓ distance
-               Crossing
-               ↓ distance
-               Crossing
-               ...
-               ↓ distance
-               MP end
-
-               (blank line)
-          -->
-        </div>
-      </section>
-
-      <!-- Track Lengths (Yard Tracks Only) -->
-      <section id="panel-tracklengths" class="tab-panel">
-        <div class="tracklengths-header">
-          <div class="field-group">
-            <label for="yardSelect" class="field-label">YARD</label>
-            <select id="yardSelect" class="input-select">
-              <!-- JS will inject yard list -->
-            </select>
-          </div>
-        </div>
-        <div id="results-tracklengths" class="results-panel">
-          <!-- JS will render:
-               YARD NAME
-
-               Track Name         Length (ft)
-               --------------------------------
-               Track 101          4,200
-               Track 102          6,050
-               ...
-          -->
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer Version -->
-    <footer class="footer-version">
-      RAILCORE CPKC WORKER APP — v3.7
-    </footer>
-  </div>
-
-  <!-- Download Format Dialog (hidden by default, shown by JS) -->
-  <div id="downloadDialog" class="dialog-backdrop hidden">
-    <div class="dialog">
-      <div class="dialog-title">Download as:</div>
-      <button class="dialog-option" data-format="txt">TXT</button>
-      <button class="dialog-option" data-format="csv">CSV</button>
-      <button class="dialog-option" data-format="pdf">PDF</button>
-      <button class="dialog-option" data-format="png">PNG</button>
-      <button class="dialog-cancel" id="downloadCancelBtn">Cancel</button>
+    <!-- VIEW MODE -->
+    <label>VIEW MODE</label>
+    <div class="radioRow">
+        <label><input type="radio" name="viewMode" value="threshold" checked> ≥ Threshold</label>
+        <label><input type="radio" name="viewMode" value="all"> All</label>
     </div>
-  </div>
+
+    <!-- Buttons -->
+    <div class="buttonRow">
+        <button id="applyBtn" class="primary">Apply</button>
+        <button id="printBtn">Print</button>
+        <button id="downloadBtn">Download</button>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+        <button class="tab active" data-tab="crossings">Crossings</button>
+        <button class="tab" data-tab="sidings">Sidings</button>
+        <button class="tab" data-tab="tracklengths">Track Lengths</button>
+    </div>
+
+    <!-- Output -->
+    <div id="output" class="outputBox"></div>
+
+    <!-- Version -->
+    <div class="version">RAILCORE CPKC WORKER APP — v3.7</div>
+</div>
+
 </body>
 </html>
