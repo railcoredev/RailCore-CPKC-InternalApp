@@ -1,20 +1,35 @@
 {
-  "name": "RailCore CPKC Crossing Worker",
-  "short_name": "RailCore XINGS",
+  "name": "RAILCORE CPKC Worker App",
+  "short_name": "RailCore CPKC",
+  "description": "RailCore – CPKC Worker App (Crossings, Sidings, Track Lengths)",
+  "version": "3.7",
   "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
-  "background_color": "#050910",
   "theme_color": "#050910",
+  "background_color": "#050910",
   "icons": [
     {
-      "src": "railcore-icon-192.png",
+      "src": "./icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "railcore-icon-512.png",
+      "src": "./icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
+    },
+    {
+      "src": "./icons/icon-mask-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./icons/icon-mask-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }
