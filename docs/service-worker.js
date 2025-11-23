@@ -5,8 +5,8 @@
    - Auto-refresh when a new version is detected
    ============================================================ */
 
-const CACHE_NAME = "railcore-cpkc-worker-v3.7";
-const APP_VERSION = "3.7";
+const CACHE_NAME = "railcore-cpkc-worker-v3.8";
+const APP_VERSION = "3.8";
 
 // Files to cache (core assets)
 const CORE_ASSETS = [
