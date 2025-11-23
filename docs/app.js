@@ -1,229 +1,357 @@
-// docs/app.js
+/* ============================================================
+   RAILCORE WORKER APP v3.7 — MAIN UI LOGIC (UNIVERSAL BUILD)
+   This version does NOT assume any fixed CSV column names.
+   All field extraction uses "best guess" fallbacks.
+   ============================================================ */
 
-// ------------------------------------------------------
-//  MOCK DATA  (Kansas City Sub sample, local/offline)
-//  Each item has distanceToNextFt = gap to the NEXT one.
-// ------------------------------------------------------
-const MOCK_KC_CROSSINGS = [
-  {
-    sub: "Kansas City Sub – CPKC",
-    mp: 8.5,
-    mainName: "KANSAS AVE",
-    localName: "Kansas Ave",
-    protection: "GATES",
-    dot: "079123A",
-    distanceToNextFt: 7920
-  },
-  {
-    sub: "Kansas City Sub – CPKC",
-    mp: 10.1,
-    mainName: "TURLEY RD",
-    localName: "Turley Rd",
-    protection: "FLASHERS",
-    dot: "079456B",
-    distanceToNextFt: 13728
-  },
-  {
-    sub: "Kansas City Sub – CPKC",
-    mp: 12.7,
-    mainName: "155TH ST",
-    localName: "155th St",
-    protection: "GATES",
-    dot: "079789C",
-    distanceToNextFt: 9024
-  },
-  {
-    sub: "Kansas City Sub – CPKC",
-    mp: 14.4,
-    mainName: "HOLLIDAY RD",
-    localName: "Holliday Rd",
-    protection: "GATES",
-    dot: "079999D",
-    distanceToNextFt: 14784
-  },
-  {
-    sub: "Kansas City Sub – CPKC",
-    mp: 17.2,
-    mainName: "KILL CREEK RD",
-    localName: "Kill Creek Rd",
-    protection: "FLASHERS",
-    dot: "079888E",
-    distanceToNextFt: 8712
-  },
-  {
-    sub: "Kansas City Sub – CPKC",
-    mp: 19.9,
-    mainName: "CEDAR CREEK RD",
-    localName: "Cedar Creek Rd",
-    protection: "GATES",
-    dot: "079777F",
-    distanceToNextFt: null // last one – no next distance
-  }
-];
+//
+// GLOBAL STATE
+//
+let ACTIVE_TAB = "crossings"; // crossings | sidings | tracklengths
+let DATA = {
+    crossings: [],
+    sidings: [],
+    tracklengths: [],
+    subdivisions: [],
+    yards: [],
+    states: []
+};
 
-// ------------------------------------------------------
-//  DOM HOOKS
-// ------------------------------------------------------
-const stateSelect = document.getElementById("stateSelect");
-const subdivisionSelect = document.getElementById("subdivisionSelect");
-const spacingInput = document.getElementById("spacingFt");
-const bufferInput = document.getElementById("bufferFt");
-const viewThresholdRadio = document.getElementById("viewThreshold");
-const viewAllRadio = document.getElementById("viewAll");
-const applyBtn = document.getElementById("applyBtn");
-const printBtn = document.getElementById("printBtn");
-const downloadBtn = document.getElementById("downloadBtn");
-const resultsPanel = document.getElementById("resultsPanel");
+//
+// SMALL UTILITIES
+//
+const $ = (id) => document.getElementById(id);
+const $$ = (sel) => document.querySelectorAll(sel);
 
-// ------------------------------------------------------
-//  INIT – simple state setup (no real state filter yet)
-// ------------------------------------------------------
-function init() {
-  // For now just show KC Sub sample when page loads
-  renderCrossingBlocks(MOCK_KC_CROSSINGS);
+// Convert CSV → array of objects
+function parseCSV(csvText) {
+    const lines = csvText.trim().split(/\r?\n/);
+    const headers = lines.shift().split(",");
+
+    return lines.map(line => {
+        const cols = line.split(",");
+        const row = {};
+        headers.forEach((h, i) => { row[h.trim()] = cols[i] ?? ""; });
+        return row;
+    });
 }
 
-document.addEventListener("DOMContentLoaded", init);
-
-// ------------------------------------------------------
-//  FILTER + RENDER PIPELINE
-// ------------------------------------------------------
-function handleApplyClick() {
-  // spacing + buffer combined as minimum allowed gap
-  const spacingFt = Number(spacingInput.value) || 0;
-  const bufferFt = Number(bufferInput.value) || 0;
-  const minGapFt = spacingFt + bufferFt;
-
-  const viewMode = viewAllRadio.checked ? "all" : "threshold";
-
-  let crossings = [...MOCK_KC_CROSSINGS];
-
-  // later: filter by state + subdivision + data_loader here
-
-  // Build A→B blocks from sequential crossings
-  const blocks = [];
-  for (let i = 0; i < crossings.length - 1; i++) {
-    const a = crossings[i];
-    const b = crossings[i + 1];
-
-    // distance A→B comes from a.distanceToNextFt (local/offline)
-    const gapFt = typeof a.distanceToNextFt === "number"
-      ? a.distanceToNextFt
-      : null;
-
-    if (gapFt == null) continue; // defensive
-
-    if (viewMode === "all" || gapFt >= minGapFt) {
-      blocks.push({ a, b, gapFt });
-    }
-  }
-
-  renderBlocks(blocks);
+// Sort by numeric MP
+function sortByMP(arr) {
+    return arr.sort((a, b) =>
+        (parseFloat(a.MP) || 0) - (parseFloat(b.MP) || 0)
+    );
 }
 
-applyBtn.addEventListener("click", handleApplyClick);
+//
+// INITIALIZATION
+//
+window.addEventListener("DOMContentLoaded", async () => {
+    await loadAllData();
 
-// ------------------------------------------------------
-//  RENDER HELPERS
-// ------------------------------------------------------
-function renderCrossingBlocks(crossings) {
-  // default render uses current spacing + viewMode
-  const spacingFt = Number(spacingInput.value) || 0;
-  const bufferFt = Number(bufferInput.value) || 0;
-  const minGapFt = spacingFt + bufferFt;
-  const viewMode = viewAllRadio.checked ? "all" : "threshold";
+    populateStateSelector();
+    populateSubdivisionSelector();
+    populateYardSelector();
 
-  const blocks = [];
-  for (let i = 0; i < crossings.length - 1; i++) {
-    const a = crossings[i];
-    const b = crossings[i + 1];
-    const gapFt = typeof a.distanceToNextFt === "number"
-      ? a.distanceToNextFt
-      : null;
-    if (gapFt == null) continue;
-
-    if (viewMode === "all" || gapFt >= minGapFt) {
-      blocks.push({ a, b, gapFt });
-    }
-  }
-
-  renderBlocks(blocks);
-}
-
-function renderBlocks(blocks) {
-  resultsPanel.innerHTML = "";
-
-  if (!blocks.length) {
-    const empty = document.createElement("div");
-    empty.className = "results-empty";
-    empty.textContent = "No crossings meet the current spacing filter.";
-    resultsPanel.appendChild(empty);
-    return;
-  }
-
-  blocks.forEach((block, idx) => {
-    const { a, b, gapFt } = block;
-
-    // C (top)
-    resultsPanel.appendChild(makeCrossingLine(a));
-
-    // D (middle arrow line)
-    const distLine = document.createElement("div");
-    distLine.className = "result-line distance-line";
-    distLine.textContent = `↓ ${gapFt.toLocaleString("en-US")} ft`;
-    resultsPanel.appendChild(distLine);
-
-    // C (bottom)
-    resultsPanel.appendChild(makeCrossingLine(b));
-
-    // Space between blocks (but not after very last)
-    if (idx !== blocks.length - 1) {
-      const spacer = document.createElement("div");
-      spacer.className = "result-spacer";
-      spacer.textContent = " "; // keeps block height in some renderers
-      resultsPanel.appendChild(spacer);
-    }
-  });
-}
-
-function makeCrossingLine(x) {
-  const line = document.createElement("div");
-  line.className = "result-line crossing-line";
-
-  // Example style: MP 8.5 — KANSAS AVE — Kansas Ave — GATES — DOT# 079123A
-  line.textContent =
-    `MP ${x.mp} — ${x.mainName} — ${x.localName} — ${x.protection} — DOT# ${x.dot}`;
-
-  return line;
-}
-
-// ------------------------------------------------------
-//  PRINT + DOWNLOAD
-// ------------------------------------------------------
-printBtn.addEventListener("click", () => {
-  window.print();
+    setupTabs();
+    setupButtons();
 });
 
-downloadBtn.addEventListener("click", () => {
-  const lines = [];
-  const children = Array.from(resultsPanel.children);
-  children.forEach((el) => {
-    if (!el.classList.contains("result-line") &&
-        !el.classList.contains("result-spacer")) return;
-    const txt = el.textContent || "";
-    lines.push(txt.trimEnd());
-  });
+//
+// LOAD ALL DATA
+//
+async function loadAllData() {
+    try {
+        DATA = await loadRailCoreDataMaster(); // provided in data_loader.js
+    } catch (e) {
+        console.warn("Fallback to empty data:", e);
+    }
+}
 
-  const blob = new Blob([lines.join("\n") + "\n"], {
-    type: "text/plain;charset=utf-8"
-  });
+//
+// POPULATE STATE SELECTOR
+//
+function populateStateSelector() {
+    const stateSelect = $("stateSelect");
+    stateSelect.innerHTML = "";
 
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = "RailCore_CPKC_Crossings.txt";
-  document.body.appendChild(a);
-  a.click();
-  a.remove();
-  URL.revokeObjectURL(url);
-});
+    DATA.states.forEach(st => {
+        const opt = document.createElement("option");
+        opt.value = st;
+        opt.textContent = st;
+        stateSelect.appendChild(opt);
+    });
+}
+
+//
+// POPULATE SUBDIVISION SELECTOR
+//
+function populateSubdivisionSelector() {
+    const subSelect = $("subdivisionSelect");
+    subSelect.innerHTML = "";
+
+    DATA.subdivisions.forEach(sub => {
+        const opt = document.createElement("option");
+        opt.value = sub;
+        opt.textContent = sub;
+        subSelect.appendChild(opt);
+    });
+}
+
+//
+// POPULATE YARD SELECTOR
+//
+function populateYardSelector() {
+    const yardSelect = $("yardSelect");
+    yardSelect.innerHTML = "";
+
+    DATA.yards.forEach(y => {
+        const opt = document.createElement("option");
+        opt.value = y;
+        opt.textContent = y;
+        yardSelect.appendChild(opt);
+    });
+}
+
+//
+// SETUP TAB LOGIC
+//
+function setupTabs() {
+    $$(".tab").forEach(tab => {
+        tab.addEventListener("click", () => {
+            $$(".tab").forEach(t => t.classList.remove("active"));
+            tab.classList.add("active");
+
+            ACTIVE_TAB = tab.dataset.tab;
+
+            $$(".tab-panel").forEach(p => p.classList.remove("active"));
+            $("panel-" + ACTIVE_TAB).classList.add("active");
+        });
+    });
+}
+
+//
+// SETUP BUTTONS (Apply, Print, Download)
+//
+function setupButtons() {
+    $("applyBtn").addEventListener("click", applyFilters);
+    $("printBtn").addEventListener("click", () => window.print());
+    $("downloadBtn").addEventListener("click", showDownloadDialog);
+
+    $("downloadCancelBtn").addEventListener("click", () => {
+        $("downloadDialog").classList.add("hidden");
+    });
+
+    $$(".dialog-option").forEach(btn => {
+        btn.addEventListener("click", () => downloadFile(btn.dataset.format));
+    });
+}
+
+//
+// APPLY BUTTON LOGIC
+//
+function applyFilters() {
+    const spacing = parseFloat($("spacingInput").value) || 0;
+    const buffer = parseFloat($("bufferInput").value) || 0;
+
+    const selectedStates = Array.from($("stateSelect").selectedOptions)
+        .map(o => o.value);
+
+    const subdivision = $("subdivisionSelect").value;
+    const viewMode = document.querySelector("input[name='viewMode']:checked").value;
+
+    if (ACTIVE_TAB === "crossings") renderCrossings(selectedStates, subdivision, spacing, buffer, viewMode);
+    if (ACTIVE_TAB === "sidings") renderSidings(subdivision);
+    if (ACTIVE_TAB === "tracklengths") renderTrackLengths();
+}
+
+//
+// CROSSINGS OUTPUT (3-LINE BLOCK LOGIC)
+//
+function renderCrossings(states, subdivision, spacing, buffer, viewMode) {
+    const panel = $("results-crossings");
+    panel.innerHTML = "";
+
+    // Filter relevant rows
+    let rows = DATA.crossings.filter(r => {
+        const rState = r.STATE || r.state || "";
+        const rSub = r.SUBDIVISION || r.Subdivision || r.sub || "";
+
+        return (states.length === 0 || states.includes(rState)) &&
+               (subdivision === "" || rSub === subdivision);
+    });
+
+    // Sort by MP
+    rows = sortByMP(rows);
+
+    // Build A→B blocks
+    for (let i = 0; i < rows.length - 1; i++) {
+        const A = rows[i];
+        const B = rows[i + 1];
+
+        const mpA = parseFloat(A.MP) || 0;
+        const mpB = parseFloat(B.MP) || 0;
+        const dFeet = Math.round(Math.abs(mpB - mpA) * 5280);
+
+        // Threshold filter
+        if (viewMode === "threshold" && dFeet < spacing) continue;
+
+        const block = document.createElement("div");
+        block.className = "result-block";
+
+        block.innerHTML = `
+            <div class="result-crossing">${formatCrossingLine(A)}</div>
+            <div class="result-distance">↓ ${dFeet.toLocaleString()} ft</div>
+            <div class="result-crossing">${formatCrossingLine(B)}</div>
+        `;
+
+        panel.appendChild(block);
+    }
+}
+
+//
+// FORMAT CROSSING LINE
+//
+function formatCrossingLine(row) {
+    const mp = row.MP || row.milepost || "?";
+    const name = row.COMMON_NAME || row.NAME || row.Crossing || "UNKNOWN";
+    const road = row.ROAD || row.Road || "";
+    const prot = row.PROTECTION || row.Device || "";
+    const dot = row.DOT || row.DOTID || row.DOT_Number || "---------";
+
+    return `MP ${mp} — ${name} — ${road} — ${prot} — DOT#${dot}`;
+}
+
+//
+// SIDINGS PANEL
+//
+function renderSidings(subdivision) {
+    const panel = $("results-sidings");
+    panel.innerHTML = "";
+
+    const rows = DATA.sidings.filter(r => {
+        const rSub = r.SUBDIVISION || r.Subdivision || "";
+        return subdivision === "" || rSub === subdivision;
+    });
+
+    rows.forEach(r => {
+        const start = parseFloat(r.MP_START || r.StartMP || 0);
+        const end = parseFloat(r.MP_END || r.EndMP || 0);
+        const totalFt = Math.round(Math.abs(end - start) * 5280);
+
+        const block = document.createElement("div");
+        block.className = "result-block";
+
+        block.innerHTML = `
+            <div class="siding-header">${r.NAME || r.Siding || "UNKNOWN SIDING"}</div>
+            <div class="siding-range">MP ${start} – MP ${end} (Total ${totalFt.toLocaleString()} ft)</div>
+        `;
+
+        panel.appendChild(block);
+    });
+}
+
+//
+// TRACK LENGTHS PANEL (YARD TRACKS ONLY)
+//
+function renderTrackLengths() {
+    const yard = $("yardSelect").value;
+    const panel = $("results-tracklengths");
+    panel.innerHTML = "";
+
+    const rows = DATA.tracklengths.filter(r =>
+        r.YARD === yard || r.Yard === yard
+    );
+
+    rows.forEach(r => {
+        const rowElem = document.createElement("div");
+        rowElem.className = "track-row";
+
+        rowElem.innerHTML = `
+            <span>${r.TRACK || r.Track || r.Name}</span>
+            <span>${r.LENGTH || r.Length || "0"} ft</span>
+        `;
+
+        panel.appendChild(rowElem);
+    });
+}
+
+//
+// DOWNLOAD DIALOG
+//
+function showDownloadDialog() {
+    $("downloadDialog").classList.remove("hidden");
+}
+
+//
+// DOWNLOAD HANDLER
+//
+function downloadFile(format) {
+    $("downloadDialog").classList.add("hidden");
+
+    const text = getCurrentTabText();
+    const filename = `RailCore_${ACTIVE_TAB}_${Date.now()}`;
+
+    if (format === "txt") return downloadTXT(filename + ".txt", text);
+    if (format === "csv") return downloadCSV(filename + ".csv", text);
+    if (format === "pdf") return downloadPDF(filename + ".pdf");
+    if (format === "png") return downloadPNG(filename + ".png");
+}
+
+//
+// BUILD TEXT OUTPUT FOR CURRENT TAB
+//
+function getCurrentTabText() {
+    return document.querySelector(`#results-${ACTIVE_TAB}`).innerText;
+}
+
+//
+// DOWNLOAD TXT
+//
+function downloadTXT(name, text) {
+    const blob = new Blob([text], { type: "text/plain" });
+    downloadBlob(blob, name);
+}
+
+//
+// DOWNLOAD CSV (simple: each line preserved)
+//
+function downloadCSV(name, text) {
+    const csv = text.replace(/\t/g, ",");
+    const blob = new Blob([csv], { type: "text/csv" });
+    downloadBlob(blob, name);
+}
+
+//
+// DOWNLOAD PDF
+//
+async function downloadPDF(name) {
+    const { jsPDF } = window.jspdf;
+    const pdf = new jsPDF({ unit: "pt", format: "letter" });
+
+    const panel = document.querySelector(`#results-${ACTIVE_TAB}`);
+
+    await pdf.html(panel, { x: 20, y: 20 });
+    pdf.save(name);
+}
+
+//
+// DOWNLOAD PNG
+//
+async function downloadPNG(name) {
+    const panel = document.querySelector(`#results-${ACTIVE_TAB}`);
+    const canvas = await html2canvas(panel);
+    canvas.toBlob(blob => downloadBlob(blob, name));
+}
+
+//
+// GENERIC BLOB DOWNLOADER
+//
+function downloadBlob(blob, filename) {
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = filename;
+    link.click();
+    URL.revokeObjectURL(url);
+}
