@@ -1,357 +1,176 @@
-/* ============================================================
-   RAILCORE WORKER APP v3.7 — MAIN UI LOGIC (UNIVERSAL BUILD)
-   This version does NOT assume any fixed CSV column names.
-   All field extraction uses "best guess" fallbacks.
-   ============================================================ */
-
-//
 // GLOBAL STATE
-//
-let ACTIVE_TAB = "crossings"; // crossings | sidings | tracklengths
-let DATA = {
-    crossings: [],
-    sidings: [],
-    tracklengths: [],
-    subdivisions: [],
-    yards: [],
-    states: []
-};
+let STATE_DATA = {};
+let SUB_DATA = {};
+let CROSSINGS = [];
+let SIDINGS = [];
+let TRACKS = [];
 
-//
-// SMALL UTILITIES
-//
-const $ = (id) => document.getElementById(id);
-const $$ = (sel) => document.querySelectorAll(sel);
-
-// Convert CSV → array of objects
-function parseCSV(csvText) {
-    const lines = csvText.trim().split(/\r?\n/);
-    const headers = lines.shift().split(",");
-
-    return lines.map(line => {
-        const cols = line.split(",");
-        const row = {};
-        headers.forEach((h, i) => { row[h.trim()] = cols[i] ?? ""; });
-        return row;
-    });
-}
-
-// Sort by numeric MP
-function sortByMP(arr) {
-    return arr.sort((a, b) =>
-        (parseFloat(a.MP) || 0) - (parseFloat(b.MP) || 0)
-    );
-}
-
-//
-// INITIALIZATION
-//
+// =====================
+// INITIAL LOAD
+// =====================
 window.addEventListener("DOMContentLoaded", async () => {
-    await loadAllData();
-
-    populateStateSelector();
-    populateSubdivisionSelector();
-    populateYardSelector();
-
-    setupTabs();
-    setupButtons();
+    await loadData();
+    setupUI();
 });
 
-//
-// LOAD ALL DATA
-//
-async function loadAllData() {
-    try {
-        DATA = await loadRailCoreDataMaster(); // provided in data_loader.js
-    } catch (e) {
-        console.warn("Fallback to empty data:", e);
-    }
+// =====================
+// LOAD DATA (from data_loader.js)
+// =====================
+async function loadData() {
+    const data = await loadRailCoreData();
+    STATE_DATA = data.states;
+    SUB_DATA = data.subdivisions;
+    CROSSINGS = data.crossings;
+    SIDINGS = data.sidings;
+    TRACKS = data.tracklengths;
 }
 
-//
-// POPULATE STATE SELECTOR
-//
-function populateStateSelector() {
-    const stateSelect = $("stateSelect");
-    stateSelect.innerHTML = "";
+// =====================
+// SETUP UI
+// =====================
+function setupUI() {
 
-    DATA.states.forEach(st => {
-        const opt = document.createElement("option");
-        opt.value = st;
-        opt.textContent = st;
-        stateSelect.appendChild(opt);
+    document.getElementById("applyBtn").addEventListener("click", applyFilters);
+    document.getElementById("printBtn").addEventListener("click", () => window.print());
+    document.getElementById("downloadBtn").addEventListener("click", showDownloadMenu);
+
+    document.querySelectorAll(".tab").forEach(tab => {
+        tab.addEventListener("click", () => switchTab(tab.dataset.tab));
     });
+
+    populateStateSelect();
+    populateSubdivisionSelect();
 }
 
-//
-// POPULATE SUBDIVISION SELECTOR
-//
-function populateSubdivisionSelector() {
-    const subSelect = $("subdivisionSelect");
-    subSelect.innerHTML = "";
+// =====================
+// TAB SWITCHING
+// =====================
+let CURRENT_TAB = "crossings";
 
-    DATA.subdivisions.forEach(sub => {
-        const opt = document.createElement("option");
-        opt.value = sub;
-        opt.textContent = sub;
-        subSelect.appendChild(opt);
-    });
+function switchTab(tab) {
+    CURRENT_TAB = tab;
+
+    document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+    document.querySelector(`.tab[data-tab="${tab}"]`).classList.add("active");
+
+    applyFilters();
 }
 
-//
-// POPULATE YARD SELECTOR
-//
-function populateYardSelector() {
-    const yardSelect = $("yardSelect");
-    yardSelect.innerHTML = "";
-
-    DATA.yards.forEach(y => {
-        const opt = document.createElement("option");
-        opt.value = y;
-        opt.textContent = y;
-        yardSelect.appendChild(opt);
-    });
-}
-
-//
-// SETUP TAB LOGIC
-//
-function setupTabs() {
-    $$(".tab").forEach(tab => {
-        tab.addEventListener("click", () => {
-            $$(".tab").forEach(t => t.classList.remove("active"));
-            tab.classList.add("active");
-
-            ACTIVE_TAB = tab.dataset.tab;
-
-            $$(".tab-panel").forEach(p => p.classList.remove("active"));
-            $("panel-" + ACTIVE_TAB).classList.add("active");
-        });
-    });
-}
-
-//
-// SETUP BUTTONS (Apply, Print, Download)
-//
-function setupButtons() {
-    $("applyBtn").addEventListener("click", applyFilters);
-    $("printBtn").addEventListener("click", () => window.print());
-    $("downloadBtn").addEventListener("click", showDownloadDialog);
-
-    $("downloadCancelBtn").addEventListener("click", () => {
-        $("downloadDialog").classList.add("hidden");
-    });
-
-    $$(".dialog-option").forEach(btn => {
-        btn.addEventListener("click", () => downloadFile(btn.dataset.format));
-    });
-}
-
-//
-// APPLY BUTTON LOGIC
-//
+// =====================
+// FILTER + RENDER
+// =====================
 function applyFilters() {
-    const spacing = parseFloat($("spacingInput").value) || 0;
-    const buffer = parseFloat($("bufferInput").value) || 0;
 
-    const selectedStates = Array.from($("stateSelect").selectedOptions)
-        .map(o => o.value);
-
-    const subdivision = $("subdivisionSelect").value;
+    const threshold = parseInt(document.getElementById("spacingInput").value);
     const viewMode = document.querySelector("input[name='viewMode']:checked").value;
 
-    if (ACTIVE_TAB === "crossings") renderCrossings(selectedStates, subdivision, spacing, buffer, viewMode);
-    if (ACTIVE_TAB === "sidings") renderSidings(subdivision);
-    if (ACTIVE_TAB === "tracklengths") renderTrackLengths();
-}
+    if (CURRENT_TAB === "crossings") {
+        renderCrossings(threshold, viewMode);
+    }
 
-//
-// CROSSINGS OUTPUT (3-LINE BLOCK LOGIC)
-//
-function renderCrossings(states, subdivision, spacing, buffer, viewMode) {
-    const panel = $("results-crossings");
-    panel.innerHTML = "";
+    if (CURRENT_TAB === "sidings") {
+        renderSidings();
+    }
 
-    // Filter relevant rows
-    let rows = DATA.crossings.filter(r => {
-        const rState = r.STATE || r.state || "";
-        const rSub = r.SUBDIVISION || r.Subdivision || r.sub || "";
-
-        return (states.length === 0 || states.includes(rState)) &&
-               (subdivision === "" || rSub === subdivision);
-    });
-
-    // Sort by MP
-    rows = sortByMP(rows);
-
-    // Build A→B blocks
-    for (let i = 0; i < rows.length - 1; i++) {
-        const A = rows[i];
-        const B = rows[i + 1];
-
-        const mpA = parseFloat(A.MP) || 0;
-        const mpB = parseFloat(B.MP) || 0;
-        const dFeet = Math.round(Math.abs(mpB - mpA) * 5280);
-
-        // Threshold filter
-        if (viewMode === "threshold" && dFeet < spacing) continue;
-
-        const block = document.createElement("div");
-        block.className = "result-block";
-
-        block.innerHTML = `
-            <div class="result-crossing">${formatCrossingLine(A)}</div>
-            <div class="result-distance">↓ ${dFeet.toLocaleString()} ft</div>
-            <div class="result-crossing">${formatCrossingLine(B)}</div>
-        `;
-
-        panel.appendChild(block);
+    if (CURRENT_TAB === "tracklengths") {
+        renderTrackLengths();
     }
 }
 
-//
-// FORMAT CROSSING LINE
-//
-function formatCrossingLine(row) {
-    const mp = row.MP || row.milepost || "?";
-    const name = row.COMMON_NAME || row.NAME || row.Crossing || "UNKNOWN";
-    const road = row.ROAD || row.Road || "";
-    const prot = row.PROTECTION || row.Device || "";
-    const dot = row.DOT || row.DOTID || row.DOT_Number || "---------";
+// =====================
+// CROSSINGS (A→B blocks)
+// =====================
+function renderCrossings(threshold, viewMode) {
 
-    return `MP ${mp} — ${name} — ${road} — ${prot} — DOT#${dot}`;
+    let html = "";
+    const filtered = CROSSINGS.sort((a, b) => a.mp - b.mp);
+
+    for (let i = 0; i < filtered.length - 1; i++) {
+
+        const A = filtered[i];
+        const B = filtered[i + 1];
+        const dist = Math.round((B.mp - A.mp) * 5280);
+
+        if (viewMode === "threshold" && dist < threshold) {
+            continue;
+        }
+
+        html += `MP ${A.mp.toFixed(1)} — ${A.road}\n`;
+        html += `↓ ${dist.toLocaleString()} ft\n`;
+        html += `MP ${B.mp.toFixed(1)} — ${B.road}\n\n`;
+    }
+
+    document.getElementById("output").innerText = html;
 }
 
-//
-// SIDINGS PANEL
-//
-function renderSidings(subdivision) {
-    const panel = $("results-sidings");
-    panel.innerHTML = "";
+// =====================
+// SIDINGS FORMAT
+// =====================
+function renderSidings() {
 
-    const rows = DATA.sidings.filter(r => {
-        const rSub = r.SUBDIVISION || r.Subdivision || "";
-        return subdivision === "" || rSub === subdivision;
+    let html = "";
+    const sidings = SIDINGS.sort((a, b) => a.start_mp - b.start_mp);
+
+    sidings.forEach(s => {
+
+        const lengthFt = Math.round((s.end_mp - s.start_mp) * 5280);
+
+        html += `${s.name}\n`;
+        html += `MP ${s.start_mp.toFixed(1)} – MP ${s.end_mp.toFixed(1)} — ${lengthFt.toLocaleString()} ft\n\n`;
+
+        let lastMP = s.start_mp;
+
+        CROSSINGS.filter(c => c.mp >= s.start_mp && c.mp <= s.end_mp)
+            .sort((a, b) => a.mp - b.mp)
+            .forEach(c => {
+                const dist = Math.round((c.mp - lastMP) * 5280);
+                html += `MP ${lastMP.toFixed(1)}\n↓ ${dist.toLocaleString()} ft\n${c.road}\n\n`;
+                lastMP = c.mp;
+            });
+
+        const finalDist = Math.round((s.end_mp - lastMP) * 5280);
+        html += `MP ${lastMP.toFixed(1)}\n↓ ${finalDist.toLocaleString()} ft\nMP ${s.end_mp.toFixed(1)}\n\n`;
     });
 
-    rows.forEach(r => {
-        const start = parseFloat(r.MP_START || r.StartMP || 0);
-        const end = parseFloat(r.MP_END || r.EndMP || 0);
-        const totalFt = Math.round(Math.abs(end - start) * 5280);
-
-        const block = document.createElement("div");
-        block.className = "result-block";
-
-        block.innerHTML = `
-            <div class="siding-header">${r.NAME || r.Siding || "UNKNOWN SIDING"}</div>
-            <div class="siding-range">MP ${start} – MP ${end} (Total ${totalFt.toLocaleString()} ft)</div>
-        `;
-
-        panel.appendChild(block);
-    });
+    document.getElementById("output").innerText = html;
 }
 
-//
-// TRACK LENGTHS PANEL (YARD TRACKS ONLY)
-//
+// =====================
+// TRACK LENGTHS TAB
+// =====================
 function renderTrackLengths() {
-    const yard = $("yardSelect").value;
-    const panel = $("results-tracklengths");
-    panel.innerHTML = "";
 
-    const rows = DATA.tracklengths.filter(r =>
-        r.YARD === yard || r.Yard === yard
-    );
+    let html = "";
 
-    rows.forEach(r => {
-        const rowElem = document.createElement("div");
-        rowElem.className = "track-row";
-
-        rowElem.innerHTML = `
-            <span>${r.TRACK || r.Track || r.Name}</span>
-            <span>${r.LENGTH || r.Length || "0"} ft</span>
-        `;
-
-        panel.appendChild(rowElem);
+    TRACKS.forEach(t => {
+        html += `${t.yard} — Track ${t.track}\n`;
+        html += `MP ${t.start_mp.toFixed(1)} – MP ${t.end_mp.toFixed(1)}\n`;
+        html += `${Math.round((t.end_mp - t.start_mp) * 5280).toLocaleString()} ft\n\n`;
     });
+
+    document.getElementById("output").innerText = html;
 }
 
-//
-// DOWNLOAD DIALOG
-//
-function showDownloadDialog() {
-    $("downloadDialog").classList.remove("hidden");
+// =====================
+// DOWNLOAD MENU
+// =====================
+function showDownloadMenu() {
+
+    const text = document.getElementById("output").innerText;
+
+    const filename = `RailCore_${CURRENT_TAB}_${Date.now()}`;
+
+    downloadTXT(filename + ".txt", text);
 }
 
-//
-// DOWNLOAD HANDLER
-//
-function downloadFile(format) {
-    $("downloadDialog").classList.add("hidden");
-
-    const text = getCurrentTabText();
-    const filename = `RailCore_${ACTIVE_TAB}_${Date.now()}`;
-
-    if (format === "txt") return downloadTXT(filename + ".txt", text);
-    if (format === "csv") return downloadCSV(filename + ".csv", text);
-    if (format === "pdf") return downloadPDF(filename + ".pdf");
-    if (format === "png") return downloadPNG(filename + ".png");
-}
-
-//
-// BUILD TEXT OUTPUT FOR CURRENT TAB
-//
-function getCurrentTabText() {
-    return document.querySelector(`#results-${ACTIVE_TAB}`).innerText;
-}
-
-//
-// DOWNLOAD TXT
-//
-function downloadTXT(name, text) {
+// =====================
+// FILE DOWNLOAD
+// =====================
+function downloadTXT(filename, text) {
     const blob = new Blob([text], { type: "text/plain" });
-    downloadBlob(blob, name);
-}
-
-//
-// DOWNLOAD CSV (simple: each line preserved)
-//
-function downloadCSV(name, text) {
-    const csv = text.replace(/\t/g, ",");
-    const blob = new Blob([csv], { type: "text/csv" });
-    downloadBlob(blob, name);
-}
-
-//
-// DOWNLOAD PDF
-//
-async function downloadPDF(name) {
-    const { jsPDF } = window.jspdf;
-    const pdf = new jsPDF({ unit: "pt", format: "letter" });
-
-    const panel = document.querySelector(`#results-${ACTIVE_TAB}`);
-
-    await pdf.html(panel, { x: 20, y: 20 });
-    pdf.save(name);
-}
-
-//
-// DOWNLOAD PNG
-//
-async function downloadPNG(name) {
-    const panel = document.querySelector(`#results-${ACTIVE_TAB}`);
-    const canvas = await html2canvas(panel);
-    canvas.toBlob(blob => downloadBlob(blob, name));
-}
-
-//
-// GENERIC BLOB DOWNLOADER
-//
-function downloadBlob(blob, filename) {
     const url = URL.createObjectURL(blob);
-    const link = document.createElement("a");
-    link.href = url;
-    link.download = filename;
-    link.click();
-    URL.revokeObjectURL(url);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = filename;
+    a.click();
 }
