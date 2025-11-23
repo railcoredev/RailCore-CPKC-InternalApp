@@ -1,81 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
     <title>RailCore CPKC Worker App — v3.7</title>
 
-    <!-- Correct CSS reference -->
-    <link rel="stylesheet" href="./styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- PWA -->
-    <link rel="manifest" href="./manifest.webmanifest">
-    <meta name="theme-color" content="#0b0f1a" />
+    <!-- PWA hooks -->
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#0b0f1a">
 
     <!-- Icons -->
-    <link rel="apple-touch-icon" href="./railcore-icon-192.png">
-    <link rel="icon" href="./railcore-icon-192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="railcore-icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="railcore-icon-512.png">
 
-    <!-- JS -->
-    <script defer src="./data_loader.js"></script>
-    <script defer src="./app.js"></script>
+    <!-- RailCore styles -->
+    <link rel="stylesheet" href="styles/style.css">
 </head>
-
 <body>
 
 <div class="header">
-    <span class="railcore-orange">RAIL</span><span class="railcore-gray">CORE</span>
-    <div class="subtitle">CPKC — CROSSING / SIDING / TRACK LENGTH WORKER APP</div>
+    <div>
+        <span class="railcore-orange">RAIL</span><span class="railcore-gray">CORE</span>
+    </div>
+    <div class="subtitle">
+        CPKC – CROSSING / SIDING / TRACK LENGTH WORKER APP
+    </div>
 </div>
 
 <div class="panel">
 
-    <!-- STATE FILTER -->
-    <label>STATE(S)</label>
-    <select id="stateSelect" multiple></select>
+    <!-- STATE(S) -->
+    <label for="stateSelect">STATE(S)</label>
+    <select id="stateSelect" multiple>
+        <!-- populated by JS -->
+    </select>
 
-    <!-- SUBDIVISION -->
-    <label>SUBDIVISION</label>
-    <select id="subdivisionSelect"></select>
+    <!-- SUBDIVISION + EMERGENCY CONTACT -->
+    <div style="display:flex; gap:18px; flex-wrap:wrap;">
+        <div style="flex:1; min-width:180px;">
+            <label for="subdivisionSelect">SUBDIVISION</label>
+            <select id="subdivisionSelect">
+                <!-- populated by JS -->
+            </select>
+        </div>
 
-    <!-- EMERGENCY CONTACT -->
-    <label>EMERGENCY CONTACT</label>
-    <div id="emergencyDisplay">CPKC Emergency: 1-800-766-7912</div>
-
-    <!-- SPACING -->
-    <label>SPACING (FT)</label>
-    <input id="spacingInput" type="number" value="5500">
-
-    <label>BUFFER (FT)</label>
-    <input id="bufferInput" type="number" value="400">
-
-    <!-- VIEW MODE -->
-    <label>VIEW MODE</label>
-    <div class="radioRow">
-        <label><input type="radio" name="viewMode" value="threshold" checked> ≥ Threshold</label>
-        <label><input type="radio" name="viewMode" value="all"> All</label>
+        <div style="flex:1; min-width:180px;">
+            <label>EMERGENCY CONTACT</label>
+            <div id="emergencyContact" style="margin-top:8px; color:#d7dce2;">
+                CPKC Emergency: <a href="tel:1-800-766-7912" style="color:#7fb2ff; text-decoration:none;">1-800-766-7912</a>
+            </div>
+        </div>
     </div>
 
-    <!-- Buttons -->
-    <div class="buttonRow">
+    <!-- SPACING + BUFFER -->
+    <div style="display:flex; gap:18px; flex-wrap:wrap; margin-top:8px;">
+        <div style="flex:1; min-width:140px;">
+            <label for="spacingInput">SPACING (FT)</label>
+            <input id="spacingInput" type="number" value="5500" min="0" step="100">
+        </div>
+        <div style="flex:1; min-width:140px;">
+            <label for="bufferInput">BUFFER (FT)</label>
+            <input id="bufferInput" type="number" value="400" min="0" step="50">
+        </div>
+    </div>
+
+    <!-- VIEW MODE -->
+    <label style="margin-top:16px;">VIEW MODE</label>
+    <div style="margin-top:4px;">
+        <label style="margin-right:18px;">
+            <input type="radio" name="viewMode" value="threshold" checked>
+            ≥ Threshold
+        </label>
+        <label>
+            <input type="radio" name="viewMode" value="all">
+            All
+        </label>
+    </div>
+
+    <!-- ACTION BUTTONS -->
+    <div style="margin-top:16px;">
         <button id="applyBtn" class="primary">Apply</button>
         <button id="printBtn">Print</button>
         <button id="downloadBtn">Download</button>
     </div>
 
-    <!-- Tabs -->
+    <!-- TABS -->
     <div class="tabs">
         <button class="tab active" data-tab="crossings">Crossings</button>
         <button class="tab" data-tab="sidings">Sidings</button>
         <button class="tab" data-tab="tracklengths">Track Lengths</button>
     </div>
 
-    <!-- Output -->
-    <div id="output" class="outputBox"></div>
+    <!-- OUTPUT -->
+    <div id="output" class="outputBox">
+        <!-- formatted results appear here -->
+    </div>
 
-    <!-- Version -->
-    <div class="version">RAILCORE CPKC WORKER APP — v3.7</div>
+    <div class="version">
+        RAILCORE CPKC WORKER APP — v3.7
+    </div>
+
 </div>
+
+<!-- Scripts (order matters) -->
+<script src="data_loader.js"></script>
+<script src="app.js"></script>
 
 </body>
 </html>
