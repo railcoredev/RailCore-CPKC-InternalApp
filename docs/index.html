@@ -5,7 +5,7 @@
   <title>RAILCORE – CPKC Worker Crossing App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- PWA manifest + theme (keeps it dark, no big orange bar) -->
+  <!-- PWA + theme (keeps it dark, avoids orange browser bars) -->
   <link rel="manifest" href="manifest.webmanifest" />
   <meta name="theme-color" content="#050910" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -28,7 +28,6 @@
     <!-- STATE FILTER ABOVE STICKY BAR -->
     <section class="filter-block">
       <div class="field-label">State(s)</div>
-      <!-- multi-select; behavior handled in JS later -->
       <select id="stateSelect" class="multiselect" multiple>
         <option>IA</option>
         <option>IL</option>
@@ -40,31 +39,23 @@
       </select>
     </section>
 
-    <!-- STICKY BAR (Subdivision, EC, Spacing, Buffer, View, Apply/Print/Download) -->
+    <!-- STICKY CONTROL BAR (always compact) -->
     <section class="sticky-bar">
-      <!-- Row 1: Subdivision + Emergency Contact -->
-      <div class="sticky-row">
-        <div class="sticky-col">
-          <div class="sticky-label">Subdivision</div>
-          <select id="subdivisionSelect" class="sticky-subdivision-select">
-            <option value="KC_SUB">Kansas City Sub – CPKC</option>
-            <option value="OTT_SUB">Ottumwa Sub – CPKC</option>
-            <option value="DAV_SUB">Davenport Sub – CPKC</option>
-            <option value="CHI_SUB">Chicago Sub – CPKC</option>
-            <option value="ELG_SUB">Elgin Sub – CPKC</option>
-          </select>
-        </div>
-        <div class="sticky-col sticky-ec">
-          <div class="sticky-label">Emergency Contact</div>
-          <div class="sticky-ec-text">
-            CPKC Emergency: 1-800-766-7912
-          </div>
-        </div>
+      <!-- Subdivision full-width -->
+      <div class="sticky-col sticky-col-sub">
+        <div class="sticky-label">Subdivision</div>
+        <select id="subdivisionSelect" class="sticky-subdivision-select">
+          <option value="KC_SUB">Kansas City</option>
+          <option value="OTT_SUB">Ottumwa</option>
+          <option value="DAV_SUB">Davenport</option>
+          <option value="CHI_SUB">Chicago</option>
+          <option value="ELG_SUB">Elgin</option>
+        </select>
       </div>
 
-      <!-- Row 2: Spacing + Buffer + View Mode -->
+      <!-- Row 1: Spacing / Buffer / Apply -->
       <div class="sticky-row sticky-row-tight">
-        <div class="sticky-col">
+        <div class="sticky-col sticky-col-spacing">
           <div class="sticky-label">Spacing (ft) / Buffer (ft)</div>
           <div class="sticky-inline">
             <input
@@ -83,23 +74,29 @@
               value="400"
               inputmode="numeric"
             />
-          </div>
-        </div>
-
-        <div class="sticky-col sticky-col-view">
-          <div class="sticky-label">View Mode</div>
-          <div class="viewmode-row">
-            <label><input type="radio" name="vm" value="threshold" checked /> ≥ Threshold</label>
-            <label><input type="radio" name="vm" value="all" /> All</label>
+            <button id="applyBtn" class="btn btn-primary btn-compact">
+              Apply
+            </button>
           </div>
         </div>
       </div>
 
-      <!-- Row 3: Buttons -->
-      <div class="buttons-row">
-        <button id="applyBtn" class="btn btn-primary">Apply</button>
-        <button id="printBtn" class="btn">Print</button>
-        <button id="downloadBtn" class="btn">Download</button>
+      <!-- Row 2: View Mode + Print / Download -->
+      <div class="sticky-row sticky-row-tight controls-row">
+        <div class="viewmode-inline">
+          <span class="viewmode-label">View</span>
+          <label><input type="radio" name="vm" value="threshold" checked /> ≥ Threshold</label>
+          <label><input type="radio" name="vm" value="all" /> All</label>
+        </div>
+        <div class="buttons-row">
+          <button id="printBtn" class="btn btn-secondary">Print</button>
+          <button id="downloadBtn" class="btn btn-secondary">Download</button>
+        </div>
+      </div>
+
+      <!-- Emergency contact footer inside control panel -->
+      <div class="sticky-ec-footer">
+        CPKC Emergency: 1-800-766-7912
       </div>
     </section>
 
@@ -110,11 +107,11 @@
       <button class="tab" data-tab="tracks">Track Lengths</button>
     </div>
 
-    <!-- RESULTS PANEL: inner content is swapped by JS per tab -->
+    <!-- RESULTS PANEL -->
     <section id="resultsPanel" class="results-panel">
-      <!-- CROSSINGS CONTENT (default shown) -->
+      <!-- CROSSINGS CONTENT (default) -->
       <div id="resultsCrossings" class="results-section active">
-        <!-- Example static blocks; real data comes from data_loader.js later -->
+        <!-- Static samples for now; real data comes from data_loader.js -->
         <div class="result-block">
           <div class="result-line1">
             MP 8.5 — KANSAS AVE — Kansas Ave — GATES — DOT# 079123A
@@ -140,29 +137,19 @@
         </div>
       </div>
 
-      <!-- SIDINGS CONTENT -->
+      <!-- SIDINGS CONTENT (placeholder layout) -->
       <div id="resultsSidings" class="results-section">
         <div class="results-placeholder">
           Sidings view will show:
-          <br />
-          <br />
-          Siding Name
-          <br />
-          MP Start – MP End — Total Distance (ft)
-          <br />
-          <br />
-          MP Start
-          <br />
-          ↓ Distance to crossing (if any)
-          <br />
-          Crossing (if any)
-          <br />
-          ↓ Distance to next crossing (if any)
-          <br />
-          Crossing (if any)
-          <br />
-          ↓ Distance to MP End
-          <br />
+          <br /><br />
+          Siding Name<br />
+          MP Start – MP End — Total Distance (ft)<br /><br />
+          MP Start<br />
+          ↓ Distance to crossing (if any)<br />
+          Crossing (if any)<br />
+          ↓ Distance to next crossing (if any)<br />
+          Crossing (if any)<br />
+          ↓ Distance to MP End<br />
           MP End
         </div>
       </div>
@@ -177,26 +164,24 @@
 
         <div class="results-placeholder">
           Track Lengths view will show:
-          <br />
-          <br />
-          Track ID — Description — Length (ft)
-          <br />
-          One selected yard at a time.
+          <br /><br />
+          Track ID — Description — Length (ft)<br />
+          For the selected yard only.
         </div>
       </div>
     </section>
 
     <!-- FOOTER VERSION ONLY -->
     <div class="footer-version">
-      RAILCORE CPKC WORKER APP • v3.9
+      RAILCORE CPKC WORKER APP • v3.8
     </div>
   </div>
 
-  <!-- App logic / data loader (already in your repo) -->
+  <!-- Core logic (already in your repo) -->
   <script src="data_loader.js" defer></script>
   <script src="app.js" defer></script>
 
-  <!-- Small inline script ONLY for tab + yard UI behavior -->
+  <!-- Inline UI wiring: tabs, yard visibility, 5-digit enforcement -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const tabs = document.querySelectorAll(".tab");
@@ -205,6 +190,7 @@
         sidings: document.getElementById("resultsSidings"),
         tracks: document.getElementById("resultsTracks"),
       };
+
       const yardLabel = document.querySelector(".yard-label");
       const yardSelect = document.getElementById("yardSelect");
 
@@ -216,7 +202,6 @@
           el.classList.toggle("active", key === name);
         });
 
-        // Yard selector only visible on Track Lengths tab
         const showYard = name === "tracks";
         if (yardLabel && yardSelect) {
           yardLabel.style.display = showYard ? "block" : "none";
@@ -233,7 +218,7 @@
       // Initial state
       activateTab("crossings");
 
-      // Enforce 5-digit max in spacing/buffer
+      // Enforce 5-digit max in spacing/buffer inputs
       function limitFiveDigits(input) {
         input.addEventListener("input", () => {
           if (input.value.length > 5) {
