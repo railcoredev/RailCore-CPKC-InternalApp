@@ -5,10 +5,9 @@
     <title>RAILCORE — CPKC Worker App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Main stylesheet -->
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- Main stylesheet (matches /docs/styles/style.css in your repo) -->
+    <link rel="stylesheet" href="styles/style.css" />
 
-    <!-- PWA-friendly basics (you can keep your existing manifest/service worker as-is) -->
     <meta name="theme-color" content="#1b232f" />
 </head>
 <body>
@@ -46,8 +45,9 @@
         <div class="rc-main-layout">
             <!-- STICKY CONTROL PANEL -->
             <section class="rc-control-panel">
-                <!-- Row 1: Subdivision (left) + Spacing / Buffer / Apply (right) -->
+                <!-- Row 1 -->
                 <div class="rc-control-row rc-control-row-top">
+                    <!-- Subdivision selector -->
                     <div class="rc-control-group rc-control-subdivision">
                         <label for="subdivisionSelect" class="rc-label">Subdivision</label>
                         <select id="subdivisionSelect" class="rc-select">
@@ -59,6 +59,7 @@
                         </select>
                     </div>
 
+                    <!-- Spacing controls (Crossings tab) -->
                     <div class="rc-control-group rc-control-spacing" data-tab-visible="tab-crossings">
                         <div class="rc-inline-field">
                             <label for="spacingFtInput" class="rc-label">Min Spacing (ft)</label>
@@ -73,20 +74,20 @@
                         </button>
                     </div>
 
-                    <!-- Yard selector: only for Track Lengths tab (hidden by default via CSS) -->
+                    <!-- Yard selector (Track Lengths tab only) -->
                     <div class="rc-control-group rc-control-yard" data-tab-visible="tab-track-lengths">
                         <div class="rc-inline-field">
                             <label for="yardSelect" class="rc-label">Yard</label>
                             <select id="yardSelect" class="rc-select">
-                                <!-- Populate this via JS with yards for the selected subdivision -->
                                 <option value="">Select Yard</option>
                             </select>
                         </div>
                     </div>
                 </div>
 
-                <!-- Row 2: View Mode + Print + Download -->
+                <!-- Row 2 -->
                 <div class="rc-control-row rc-control-row-bottom">
+                    <!-- View mode (Crossings tab) -->
                     <div class="rc-control-group rc-control-viewmode" data-tab-visible="tab-crossings">
                         <label for="viewModeSelect" class="rc-label">View Mode</label>
                         <select id="viewModeSelect" class="rc-select">
@@ -95,11 +96,13 @@
                         </select>
                     </div>
 
+                    <!-- Track view label (Track Lengths tab) -->
                     <div class="rc-control-group rc-control-viewmode" data-tab-visible="tab-track-lengths">
                         <label class="rc-label rc-label-dim">Track View</label>
                         <span class="rc-static-value">Yard / Track Lengths</span>
                     </div>
 
+                    <!-- Actions -->
                     <div class="rc-control-group rc-control-actions">
                         <button id="printBtn" class="rc-button rc-button-ghost">
                             Print
@@ -109,22 +112,23 @@
                         </button>
                     </div>
 
+                    <!-- Emergency line -->
                     <div class="rc-control-emergency">
-                        EMERGENCY? Call CPKC Police / Emergency: <span class="rc-emergency-number">1-800-716-9132</span>
+                        EMERGENCY? Call CPKC Police / Emergency:
+                        <span class="rc-emergency-number">1-800-716-9132</span>
                     </div>
                 </div>
             </section>
 
-            <!-- CONTENT AREA (SCROLLS) -->
+            <!-- CONTENT AREA -->
             <main class="rc-content">
-                <!-- CROSSINGS TAB CONTENT -->
+                <!-- CROSSINGS TAB -->
                 <section id="tab-crossings" class="rc-tab-content rc-tab-content-active">
                     <div class="rc-panel">
                         <div class="rc-panel-header">
                             <div class="rc-panel-title">Crossings — Spacing Ladder</div>
                             <div class="rc-panel-subtitle">
-                                Output format locked:
-                                CROSSING / ↓ distance / CROSSING / (blank line)
+                                Output format locked: CROSSING / ↓ distance / CROSSING / (blank line)
                             </div>
                         </div>
                         <pre id="crossingsResults" class="rc-results rc-results-ladder">
@@ -133,7 +137,7 @@ Loading crossings data...
                     </div>
                 </section>
 
-                <!-- TRACK LENGTHS TAB CONTENT -->
+                <!-- TRACK LENGTHS TAB -->
                 <section id="tab-track-lengths" class="rc-tab-content">
                     <div class="rc-panel">
                         <div class="rc-panel-header">
@@ -148,24 +152,20 @@ Loading crossings data...
                     </div>
                 </section>
 
-                <!-- ABOUT TAB CONTENT -->
+                <!-- ABOUT TAB -->
                 <section id="tab-about" class="rc-tab-content">
                     <div class="rc-panel">
                         <div class="rc-panel-header">
                             <div class="rc-panel-title">About — RAILCORE CPKC Worker App</div>
                         </div>
                         <div class="rc-results rc-results-text">
-                            <p>
-                                This internal worker tool is designed for the CPKC corridor and focuses on:
-                            </p>
+                            <p>This internal worker tool is designed for the CPKC corridor and focuses on:</p>
                             <ul>
                                 <li>Crossing spacing ladders for worker planning.</li>
                                 <li>Subdivision-aware, assignment-aware reference mode.</li>
                                 <li>Yard / track length reference for the Track Lengths tab.</li>
                             </ul>
-                            <p>
-                                Crossings output:
-                            </p>
+                            <p>Crossings output format:</p>
 <pre>
 MP ####.# — COMMON NAME — Road Name — PROTECTION — DOT#XXXXXXX
     ↓ #### ft
@@ -175,7 +175,7 @@ MP ####.# — NEXT CROSSING — Road Name — PROTECTION — DOT#XXXXXXX
 (blank line between blocks)
 </pre>
                             <p>
-                                All filtering and spacing logic runs locally for offline use. Data snapshots are sourced
+                                All spacing logic runs locally for offline use. Data snapshots are sourced
                                 from the embedded CPKC infrastructure data set.
                             </p>
                         </div>
@@ -185,12 +185,11 @@ MP ####.# — NEXT CROSSING — Road Name — PROTECTION — DOT#XXXXXXX
         </div>
     </div>
 
-    <!-- JS: your existing data loader / app logic -->
-    <!-- Keep / adjust these as needed to match your repo structure -->
-    <script src="js/data_loader.js"></script>
-    <script src="js/app_worker.js"></script>
+    <!-- EXISTING JS FILES IN YOUR REPO -->
+    <script src="data_loader.js"></script>
+    <script src="app.js"></script>
 
-    <!-- Minimal UI wiring + loader hook -->
+    <!-- Minimal UI wiring + optional hooks into app.js -->
     <script>
         (function () {
             // Tab switching
@@ -223,7 +222,7 @@ MP ####.# — NEXT CROSSING — Road Name — PROTECTION — DOT#XXXXXXX
             // Initialize defaults
             setActiveTab('tab-crossings');
 
-            // Expose basic UI references for JS/data loader
+            // Expose basic UI helpers
             window.RCWorkerUI = {
                 getSelectedSubdivision: function () {
                     return document.getElementById('subdivisionSelect').value;
@@ -235,7 +234,8 @@ MP ####.# — NEXT CROSSING — Road Name — PROTECTION — DOT#XXXXXXX
                     return Number(document.getElementById('bufferFtInput').value) || 0;
                 },
                 getViewMode: function () {
-                    return document.getElementById('viewModeSelect').value;
+                    var vm = document.getElementById('viewModeSelect');
+                    return vm ? vm.value : 'ladder';
                 },
                 setCrossingsText: function (text) {
                     document.getElementById('crossingsResults').textContent = text || '';
@@ -258,7 +258,13 @@ MP ####.# — NEXT CROSSING — Road Name — PROTECTION — DOT#XXXXXXX
                 }
             };
 
-            // Wire UI events to external app logic if present
+            // Wire buttons to RCWorkerApp if it exists in app.js
+            function safeCall(fnName) {
+                if (window.RCWorkerApp && typeof window.RCWorkerApp[fnName] === 'function') {
+                    window.RCWorkerApp[fnName]();
+                }
+            }
+
             var applyBtn = document.getElementById('applySpacingBtn');
             var printBtn = document.getElementById('printBtn');
             var downloadBtn = document.getElementById('downloadBtn');
@@ -266,49 +272,14 @@ MP ####.# — NEXT CROSSING — Road Name — PROTECTION — DOT#XXXXXXX
             var yardSelect = document.getElementById('yardSelect');
             var viewModeSelect = document.getElementById('viewModeSelect');
 
-            function safeCall(fnName) {
-                if (window.RCWorkerApp && typeof window.RCWorkerApp[fnName] === 'function') {
-                    window.RCWorkerApp[fnName]();
-                }
-            }
+            if (applyBtn) applyBtn.addEventListener('click', function () { safeCall('onApplySpacing'); });
+            if (printBtn) printBtn.addEventListener('click', function () { safeCall('onPrint'); });
+            if (downloadBtn) downloadBtn.addEventListener('click', function () { safeCall('onDownload'); });
+            if (subdivisionSelect) subdivisionSelect.addEventListener('change', function () { safeCall('onSubdivisionChange'); });
+            if (yardSelect) yardSelect.addEventListener('change', function () { safeCall('onYardChange'); });
+            if (viewModeSelect) viewModeSelect.addEventListener('change', function () { safeCall('onViewModeChange'); });
 
-            if (applyBtn) {
-                applyBtn.addEventListener('click', function () {
-                    safeCall('onApplySpacing');
-                });
-            }
-
-            if (printBtn) {
-                printBtn.addEventListener('click', function () {
-                    safeCall('onPrint');
-                });
-            }
-
-            if (downloadBtn) {
-                downloadBtn.addEventListener('click', function () {
-                    safeCall('onDownload');
-                });
-            }
-
-            if (subdivisionSelect) {
-                subdivisionSelect.addEventListener('change', function () {
-                    safeCall('onSubdivisionChange');
-                });
-            }
-
-            if (yardSelect) {
-                yardSelect.addEventListener('change', function () {
-                    safeCall('onYardChange');
-                });
-            }
-
-            if (viewModeSelect) {
-                viewModeSelect.addEventListener('change', function () {
-                    safeCall('onViewModeChange');
-                });
-            }
-
-            // Loader hook: let your JS take over once everything is ready
+            // Let app.js initialize if it wants to
             document.addEventListener('DOMContentLoaded', function () {
                 if (window.RCWorkerApp && typeof window.RCWorkerApp.init === 'function') {
                     window.RCWorkerApp.init();
