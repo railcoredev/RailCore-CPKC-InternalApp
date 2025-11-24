@@ -1,110 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>RailCore CPKC Worker App — v3.8</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="manifest" href="manifest.webmanifest">
-  <meta name="theme-color" content="#0b0f1a">
-  <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <title>RailCore CPKC Worker App — v3.8</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- PWA hooks -->
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#0b0f1a">
+    <!-- Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="railcore-icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="railcore-icon-512.png">
+    <!-- RailCore styles -->
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <div class="logo">
-        <span class="rc-orange">RAIL</span><span class="rc-core">CORE</span>
-      </div>
-      <div class="subtitle">
-        CPKC — CROSSINGS · SIDINGS · TRACK LENGTHS (WORKER)
-      </div>
-    </header>
+<div class="container">
+    <!-- HEADER -->
+    <div class="header">
+        <div>
+            <span class="rc-title-orange">RAIL</span><span class="rc-title-core">CORE</span>
+        </div>
+        <div class="subtitle">
+            CPKC – CROSSING / SIDING / TRACK LENGTH WORKER APP
+        </div>
+    </div>
 
-    <main>
-      <section class="control-panel">
+    <!-- CONTROL PANEL -->
+    <div class="panel">
         <!-- STATE(S) -->
-        <label for="stateSelect" class="field-label">STATE(S)</label>
-        <select id="stateSelect" class="field-multi" multiple></select>
+        <label for="stateSelect">STATE(S)</label>
+        <select id="stateSelect" multiple>
+            <!-- populated by app.js from data_loader -->
+        </select>
 
         <!-- SUBDIVISION -->
-        <label for="subdivisionSelect" class="field-label">SUBDIVISION</label>
-        <select id="subdivisionSelect" class="field-select"></select>
+        <label for="subdivisionSelect">SUBDIVISION</label>
+        <select id="subdivisionSelect">
+            <!-- populated by app.js -->
+        </select>
 
         <!-- EMERGENCY CONTACT -->
-        <div class="inline-row">
-          <div class="inline-field">
-            <label class="field-label">EMERGENCY CONTACT</label>
-            <div class="ec-text">
-              CPKC Emergency: <a href="tel:1-800-766-7912">1-800-766-7912</a>
+        <div class="field-row">
+            <div class="field-col full">
+                <label>EMERGENCY CONTACT</label>
+                <div class="emergency-text">
+                    CPKC Emergency: <a href="tel:1-800-766-7912">1-800-766-7912</a>
+                </div>
             </div>
-          </div>
         </div>
 
-        <!-- SPACING + BUFFER -->
-        <div class="inline-row">
-          <div class="inline-field">
-            <label for="spacingInput" class="field-label">SPACING (FT)</label>
-            <input id="spacingInput" class="field-input" type="number" value="5500" min="0" step="100">
-          </div>
-          <div class="inline-field">
-            <label for="bufferInput" class="field-label">BUFFER (FT)</label>
-            <input id="bufferInput" class="field-input" type="number" value="400" min="0" step="50">
-          </div>
+        <!-- SPACING / BUFFER -->
+        <div class="field-row">
+            <div class="field-col">
+                <label for="spacingInput">SPACING (FT)</label>
+                <input type="number" id="spacingInput" value="5500">
+            </div>
+            <div class="field-col">
+                <label for="bufferInput">BUFFER (FT)</label>
+                <input type="number" id="bufferInput" value="400">
+            </div>
         </div>
 
         <!-- VIEW MODE -->
-        <label class="field-label">VIEW MODE</label>
-        <div class="viewmode-row">
-          <label><input type="radio" name="viewMode" value="threshold" checked> ≥ Threshold</label>
-          <label><input type="radio" name="viewMode" value="all"> All</label>
+        <label>VIEW MODE</label>
+        <div class="radio-row">
+            <label><input type="radio" name="viewMode" value="threshold" checked> ≥ Threshold</label>
+            <label><input type="radio" name="viewMode" value="all"> All</label>
         </div>
 
-        <!-- BUTTONS -->
+        <!-- ACTION BUTTONS -->
         <div class="button-row">
-          <button id="applyBtn" class="btn primary">Apply</button>
-          <button id="printBtn" class="btn">Print</button>
-          <button id="downloadBtn" class="btn">Download</button>
+            <button id="applyBtn" class="primary">Apply</button>
+            <button id="printBtn" class="secondary">Print</button>
+            <button id="downloadBtn" class="secondary">Download</button>
         </div>
-      </section>
-
-      <!-- TABS -->
-      <nav class="tabs">
-        <div class="tab active" data-tab="crossings">Crossings</div>
-        <div class="tab" data-tab="sidings">Sidings</div>
-        <div class="tab" data-tab="tracks">Track Lengths</div>
-      </nav>
-
-      <!-- YARD (track lengths only) -->
-      <section id="yardPanel" class="yard-panel hidden">
-        <label for="yardSelect" class="field-label">YARD</label>
-        <select id="yardSelect" class="field-select"></select>
-      </section>
-
-      <!-- RESULTS -->
-      <section class="results-panel">
-        <pre id="outputText" class="results-text"></pre>
-      </section>
-
-      <footer class="footer">
-        <div class="version">RAILCORE CPKC WORKER APP — v3.8</div>
-      </footer>
-    </main>
-  </div>
-
-  <!-- DOWNLOAD OVERLAY -->
-  <div id="downloadOverlay" class="download-overlay hidden">
-    <div class="download-card">
-      <div class="download-title">Download as:</div>
-      <div class="download-buttons">
-        <button data-format="txt" class="btn primary">TXT</button>
-        <button data-format="csv" class="btn">CSV</button>
-        <button data-format="pdf" class="btn">PDF</button>
-        <button data-format="png" class="btn">PNG</button>
-        <button data-format="cancel" class="btn secondary">Cancel</button>
-      </div>
     </div>
-  </div>
 
-  <script src="data_loader.js"></script>
-  <script src="app.js"></script>
+    <!-- TABS -->
+    <div class="tab-bar">
+        <div id="tabCrossings" class="tab active">Crossings</div>
+        <div id="tabSidings" class="tab">Sidings</div>
+        <div id="tabTracks" class="tab">Track Lengths</div>
+    </div>
+
+    <!-- RESULTS PANEL -->
+    <div id="resultsPanel" class="output-block">
+        <!-- Yard row: visible only when Track Lengths tab is active -->
+        <div id="yardRow" class="yard-row hidden">
+            <label for="yardSelect">YARD</label>
+            <select id="yardSelect">
+                <!-- Populated in app.js -->
+            </select>
+        </div>
+
+        <pre id="outputText">
+Select state, subdivision, and spacing, then tap Apply.
+        </pre>
+        <div class="footer-version">
+            RAILCORE CPKC WORKER APP — v3.8
+        </div>
+    </div>
+</div>
+
+<!-- SAVE AS / DOWNLOAD MODAL -->
+<div id="downloadModal" class="modal hidden">
+    <div class="modal-content">
+        <div class="modal-header">
+            Save As
+        </div>
+        <div class="modal-body">
+            <label for="downloadFileName">File name</label>
+            <input type="text" id="downloadFileName" value="railcore_export">
+
+            <label for="downloadFileType">File type</label>
+            <select id="downloadFileType">
+                <option value="txt">Text (.txt)</option>
+                <option value="csv">CSV (.csv)</option>
+                <option value="pdf">PDF (.pdf)</option>
+                <option value="png">PNG (.png)</option>
+            </select>
+
+            <label for="downloadPath">Save to</label>
+            <input type="text" id="downloadPath"
+                   value="Browser's default download folder"
+                   readonly>
+            <div class="path-help">
+                (Your browser will choose the actual folder. You can move the file later.)
+            </div>
+        </div>
+        <div class="modal-actions">
+            <button id="downloadCancel" class="secondary">Cancel</button>
+            <button id="downloadSave" class="primary">Save</button>
+        </div>
+    </div>
+</div>
+
+<!-- SCRIPTS -->
+<script src="data_loader.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
