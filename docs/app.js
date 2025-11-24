@@ -1,296 +1,362 @@
 // app.js
-// Main logic for RAILCORE CPKC Worker App v3.8.1
+// RailCore CPKC Worker App – UI logic
+// Uses loadRailCoreSnapshot() from data_loader.js
 
-let snapshot = null;
-let currentTab = 'crossings'; // 'crossings' | 'sidings' | 'tracks';
+let SNAPSHOT = null;
 
-document.addEventListener('DOMContentLoaded', async () => {
-  snapshot = await loadRailCoreSnapshot();
-  initFilters(snapshot);
-  initTabs();
-  initButtons();
-  renderCurrentTab(); // initial view
+let currentSubdivisionId = null;
+let currentTab = "crossings"; // 'crossings' | 'sidings' | 'tracks'
+let viewMode = "threshold"; // 'threshold' | 'all'
+
+const DOM = {};
+
+document.addEventListener("DOMContentLoaded", () => {
+  cacheDom();
+  wireEvents();
+  initApp();
 });
 
-function initFilters(data) {
-  const stateSel = document.getElementById('stateSelector');
-  const subSel = document.getElementById('subdivisionSelector');
+function cacheDom() {
+  DOM.stateSummary = document.getElementById("stateSummary");
+  DOM.subdivisionSelect = document.getElementById("subdivisionSelect");
+  DOM.spacingInput = document.getElementById("spacingInput");
+  DOM.bufferInput = document.getElementById("bufferInput");
+  DOM.applyButton = document.getElementById("applyButton");
+  DOM.viewThreshold = document.getElementById("viewThreshold");
+  DOM.viewAll = document.getElementById("viewAll");
+  DOM.printButton = document.getElementById("printButton");
+  DOM.downloadButton = document.getElementById("downloadButton");
 
-  // States
-  (data.states || []).forEach(st => {
-    const opt = document.createElement('option');
-    opt.value = st.code;
-    opt.textContent = `${st.code} — ${st.name}`;
-    stateSel.appendChild(opt);
-  });
+  DOM.tabCrossings = document.getElementById("tabCrossings");
+  DOM.tabSidings = document.getElementById("tabSidings");
+  DOM.tabTracks = document.getElementById("tabTracks");
 
-  // Preselect all states by default
-  for (let i = 0; i < stateSel.options.length; i++) {
-    stateSel.options[i].selected = true;
-  }
-
-  // Subdivisions (CPKC-only snapshot)
-  (data.subdivisions || []).forEach(sub => {
-    const opt = document.createElement('option');
-    opt.value = sub.id;
-    opt.textContent = sub.name;
-    subSel.appendChild(opt);
-  });
-
-  if (subSel.options.length > 0) {
-    subSel.selectedIndex = 0;
-  }
+  DOM.yardBlock = document.getElementById("yardBlock");
+  DOM.yardSelect = document.getElementById("yardSelect");
+  DOM.resultsOutput = document.getElementById("resultsOutput");
 }
 
-function initTabs() {
-  const tabs = document.querySelectorAll('.tab');
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      const target = tab.getAttribute('data-tab');
-      setActiveTab(target);
-    });
-  });
-}
-
-function initButtons() {
-  document.getElementById('applyBtn').addEventListener('click', () => {
-    renderCurrentTab();
+function wireEvents() {
+  DOM.applyButton.addEventListener("click", () => {
+    renderCurrentView();
   });
 
-  document.getElementById('printBtn').addEventListener('click', () => {
-    // Print only when explicitly clicked (no auto-print on load)
+  DOM.subdivisionSelect.addEventListener("change", () => {
+    currentSubdivisionId = DOM.subdivisionSelect.value || null;
+    renderCurrentView();
+  });
+
+  DOM.viewThreshold.addEventListener("change", () => {
+    if (DOM.viewThreshold.checked) {
+      viewMode = "threshold";
+      renderCurrentView();
+    }
+  });
+
+  DOM.viewAll.addEventListener("change", () => {
+    if (DOM.viewAll.checked) {
+      viewMode = "all";
+      renderCurrentView();
+    }
+  });
+
+  DOM.printButton.addEventListener("click", () => {
     window.print();
   });
 
-  // Download -> open modal
-  document.getElementById('downloadBtn').addEventListener('click', openDownloadModal);
-
-  document.getElementById('downloadCancelBtn').addEventListener('click', closeDownloadModal);
-  document.getElementById('downloadConfirmBtn').addEventListener('click', performDownload);
-}
-
-function setActiveTab(tabName) {
-  currentTab = tabName;
-
-  // Update tab styles
-  document.querySelectorAll('.tab').forEach(tab => {
-    const t = tab.getAttribute('data-tab');
-    tab.classList.toggle('active', t === tabName);
+  DOM.downloadButton.addEventListener("click", () => {
+    downloadResults();
   });
 
-  // Yard selector only visible on tracks tab
-  const yardRow = document.getElementById('yardSelectorRow');
-  if (tabName === 'tracks') {
-    yardRow.classList.remove('hidden');
-    populateYards();
-  } else {
-    yardRow.classList.add('hidden');
-  }
+  DOM.tabCrossings.addEventListener("click", () => setTab("crossings"));
+  DOM.tabSidings.addEventListener("click", () => setTab("sidings"));
+  DOM.tabTracks.addEventListener("click", () => setTab("tracks"));
 
-  renderCurrentTab();
+  DOM.yardSelect.addEventListener("change", () => {
+    if (currentTab === "tracks") {
+      renderCurrentView();
+    }
+  });
 }
 
-function renderCurrentTab() {
-  if (!snapshot) return;
-
-  if (currentTab === 'crossings') {
-    renderCrossings();
-  } else if (currentTab === 'sidings') {
-    renderSidings();
-  } else if (currentTab === 'tracks') {
-    renderTrackLengths();
-  }
-}
-
-function getSelectedStates() {
-  const sel = document.getElementById('stateSelector');
-  return Array.from(sel.selectedOptions).map(o => o.value);
-}
-
-function getSelectedSubdivisionId() {
-  const sel = document.getElementById('subdivisionSelector');
-  return sel.value || null;
-}
-
-/* CROSSINGS TAB: crossing-distance-crossing blocks with spacing filter */
-
-function renderCrossings() {
-  const out = document.getElementById('resultsOutput');
-  const states = getSelectedStates();
-  const subId = getSelectedSubdivisionId();
-  const spacing = Number(document.getElementById('spacingInput').value) || 0;
-  const viewMode = document.querySelector('input[name="viewMode"]:checked')?.value || 'threshold';
-
-  const allCrossings = (snapshot.crossings || [])
-    .filter(c => (!subId || c.subdivision_id === subId))
-    .filter(c => states.length === 0 || states.includes(c.state_code));
-
-  // sort by MP ascending
-  allCrossings.sort((a, b) => a.mp - b.mp);
-
-  if (allCrossings.length < 2) {
-    out.textContent = 'No crossing pairs available for selection.';
+async function initApp() {
+  try {
+    SNAPSHOT = await loadRailCoreSnapshot();
+  } catch (err) {
+    console.error("Failed to load snapshot", err);
+    DOM.resultsOutput.textContent =
+      "Error loading RailCore snapshot. Check your connection or JSON.";
     return;
   }
 
-  let lines = [];
+  populateStateSummary();
+  populateSubdivisionSelect();
+  populateYardSelectAll(); // yard dropdown shows all yards in snapshot (not filtered by sub)
 
-  for (let i = 0; i < allCrossings.length - 1; i++) {
-    const a = allCrossings[i];
-    const b = allCrossings[i + 1];
+  // Default subdivision = first one
+  if (SNAPSHOT.subdivisions && SNAPSHOT.subdivisions.length > 0) {
+    currentSubdivisionId = SNAPSHOT.subdivisions[0].id;
+    DOM.subdivisionSelect.value = currentSubdivisionId;
+  }
 
-    const distFt = Math.round((b.mp - a.mp) * 5280); // MP -> feet
-    const passesThreshold = distFt >= spacing;
+  renderCurrentView();
+}
 
-    if (viewMode === 'threshold' && !passesThreshold) {
-      // Skip pairs that are too close
+function populateStateSummary() {
+  if (!SNAPSHOT || !SNAPSHOT.states) return;
+  const uniqueCount = SNAPSHOT.states.length;
+  DOM.stateSummary.textContent = `${uniqueCount} Item${uniqueCount === 1 ? "" : "s"}`;
+}
+
+function populateSubdivisionSelect() {
+  const sel = DOM.subdivisionSelect;
+  sel.innerHTML = "";
+
+  if (!SNAPSHOT || !SNAPSHOT.subdivisions || !SNAPSHOT.subdivisions.length) {
+    const opt = document.createElement("option");
+    opt.value = "";
+    opt.textContent = "No subdivisions";
+    sel.appendChild(opt);
+    return;
+  }
+
+  SNAPSHOT.subdivisions.forEach((sub) => {
+    const opt = document.createElement("option");
+    opt.value = sub.id;
+    opt.textContent = sub.name || sub.id;
+    sel.appendChild(opt);
+  });
+}
+
+// Yard dropdown shows ALL yards across the snapshot; user picks manually.
+function populateYardSelectAll() {
+  const sel = DOM.yardSelect;
+  sel.innerHTML = "";
+
+  if (!SNAPSHOT || !SNAPSHOT.yards || SNAPSHOT.yards.length === 0) {
+    const opt = document.createElement("option");
+    opt.value = "";
+    opt.textContent = "No yards in snapshot";
+    sel.appendChild(opt);
+    return;
+  }
+
+  SNAPSHOT.yards.forEach((yard) => {
+    const opt = document.createElement("option");
+    opt.value = yard.id;
+    opt.textContent = yard.name || yard.id;
+    sel.appendChild(opt);
+  });
+}
+
+function setTab(tabId) {
+  currentTab = tabId;
+
+  // Toggle tab button styles
+  [DOM.tabCrossings, DOM.tabSidings, DOM.tabTracks].forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.tab === tabId);
+  });
+
+  // Toggle yard dropdown visibility
+  if (tabId === "tracks") {
+    DOM.yardBlock.classList.remove("hidden");
+  } else {
+    DOM.yardBlock.classList.add("hidden");
+  }
+
+  renderCurrentView();
+}
+
+function parseFeetValue(inputEl, fallback) {
+  const raw = (inputEl.value || "").replace(/[^\d]/g, "");
+  const num = parseInt(raw, 10);
+  if (Number.isFinite(num) && num > 0) {
+    inputEl.value = String(num);
+    return num;
+  }
+  inputEl.value = String(fallback);
+  return fallback;
+}
+
+function getCurrentSubdivision() {
+  if (!SNAPSHOT || !SNAPSHOT.subdivisions) return null;
+  return SNAPSHOT.subdivisions.find((s) => s.id === currentSubdivisionId) || null;
+}
+
+function getCrossingsForCurrentSubdivision() {
+  if (!SNAPSHOT || !SNAPSHOT.crossings) return [];
+  if (!currentSubdivisionId) return SNAPSHOT.crossings.slice();
+  return SNAPSHOT.crossings
+    .filter((c) => c.subdivision_id === currentSubdivisionId)
+    .slice()
+    .sort((a, b) => a.mp - b.mp);
+}
+
+function getSidingsForCurrentSubdivision() {
+  if (!SNAPSHOT || !SNAPSHOT.sidings) return [];
+  if (!currentSubdivisionId) return SNAPSHOT.sidings.slice();
+  return SNAPSHOT.sidings
+    .filter((s) => s.subdivision_id === currentSubdivisionId)
+    .slice()
+    .sort((a, b) => a.mp_start - b.mp_start);
+}
+
+function getCurrentYard() {
+  if (!SNAPSHOT || !SNAPSHOT.yards || SNAPSHOT.yards.length === 0) return null;
+  const id = DOM.yardSelect.value;
+  return SNAPSHOT.yards.find((y) => y.id === id) || SNAPSHOT.yards[0];
+}
+
+function renderCurrentView() {
+  if (!SNAPSHOT) return;
+
+  const spacingFt = parseFeetValue(DOM.spacingInput, 5500);
+  // bufferFt is not used yet, but keep it parsed for future logic
+  const bufferFt = parseFeetValue(DOM.bufferInput, 400);
+  void bufferFt; // avoid linter warning
+
+  let text = "";
+
+  if (currentTab === "crossings") {
+    text = renderCrossingsView(spacingFt);
+  } else if (currentTab === "sidings") {
+    text = renderSidingsView();
+  } else {
+    text = renderTrackLengthsView();
+  }
+
+  if (!text.trim()) {
+    text = "No matching data for the selected subdivision / settings.";
+  }
+
+  DOM.resultsOutput.textContent = text;
+}
+
+function renderCrossingsView(spacingFt) {
+  const crossings = getCrossingsForCurrentSubdivision();
+  if (!crossings.length) {
+    return "No crossings in this subdivision for the current snapshot.";
+  }
+
+  const lines = [];
+  const useThreshold = viewMode === "threshold";
+
+  for (let i = 0; i < crossings.length - 1; i++) {
+    const a = crossings[i];
+    const b = crossings[i + 1];
+
+    const mpDist = Math.abs(b.mp - a.mp);
+    const feet = Math.round(mpDist * 5280);
+
+    if (useThreshold && feet < spacingFt) {
       continue;
     }
 
-    // A
     lines.push(formatCrossingLine(a));
-    // Distance
-    lines.push(`↓ ${distFt.toLocaleString()} ft`);
-    // B
+    lines.push(`↓ ${feet.toLocaleString()} ft`);
     lines.push(formatCrossingLine(b));
-    // Blank line between blocks
-    lines.push('');
+    lines.push(""); // blank line between pairs
   }
 
-  if (lines.length === 0) {
-    out.textContent = 'No crossing pairs meet the spacing threshold.';
-  } else {
-    out.textContent = lines.join('\n');
+  if (!lines.length && useThreshold) {
+    return (
+      "No crossing pairs meet the spacing threshold.\n\n" +
+      `Threshold: ${spacingFt.toLocaleString()} ft`
+    );
   }
+
+  return lines.join("\n");
 }
 
 function formatCrossingLine(c) {
-  const mpStr = (c.mp ?? '').toString();
-  const roadCommon = c.road_common || '';
-  const roadName = c.road_name || '';
-  const protection = c.protection || '';
-  const dot = c.dot_number || '';
-  return `MP ${mpStr} — ${roadCommon} — ${roadName} — ${protection} — DOT# ${dot}`;
+  const mpStr = `MP ${c.mp}`;
+  const common = (c.road_common || "").toUpperCase();
+  const road = c.road_name || "";
+  const prot = (c.protection || "").toUpperCase();
+  const dot = c.dot_number ? `DOT# ${c.dot_number}` : "";
+
+  const parts = [mpStr, "—", common, "—", road, "—", prot];
+  if (dot) {
+    parts.push("—", dot);
+  }
+  return parts.join(" ");
 }
 
-/* SIDINGS TAB: simple list placeholder wired to snapshot */
-
-function renderSidings() {
-  const out = document.getElementById('resultsOutput');
-  const subId = getSelectedSubdivisionId();
-
-  const sidings = (snapshot.sidings || []).filter(s => !subId || s.subdivision_id === subId);
-
-  if (!sidings.length) {
-    out.textContent = 'No sidings listed for this subdivision (yet).';
-    return;
-  }
+function renderSidingsView() {
+  const sub = getCurrentSubdivision();
+  const sidings = getSidingsForCurrentSubdivision();
 
   const lines = [];
 
-  sidings.forEach(s => {
-    const lenFt = (s.mp_end - s.mp_start) * 5280;
-    lines.push(`${s.name}`);
-    lines.push(`MP ${s.mp_start} – MP ${s.mp_end}  (${Math.round(lenFt).toLocaleString()} ft)`);
-    lines.push(''); // blank line between sidings
-  });
-
-  out.textContent = lines.join('\n');
-}
-
-/* TRACK LENGTHS TAB: yard selector + track list */
-
-function populateYards() {
-  const yardSel = document.getElementById('yardSelector');
-  yardSel.innerHTML = ''; // reset
-
-  const yards = snapshot.yards || [];
-  yards.forEach(y => {
-    const opt = document.createElement('option');
-    opt.value = y.id;
-    opt.textContent = y.name;
-    yardSel.appendChild(opt);
-  });
-
-  if (yardSel.options.length > 0 && yardSel.selectedIndex === -1) {
-    yardSel.selectedIndex = 0;
+  lines.push("Sidings view will show:");
+  lines.push("");
+  lines.push("Siding Name");
+  lines.push("MP Start – MP End — Total Distance (ft)");
+  lines.push("");
+  if (!sidings.length) {
+    lines.push("No sidings in this subdivision for the current snapshot.");
+    return lines.join("\n");
   }
 
-  yardSel.addEventListener('change', renderTrackLengths);
+  sidings.forEach((s) => {
+    const totalFeet = Math.round(Math.abs(s.mp_end - s.mp_start) * 5280);
+    lines.push(`${s.name || "Unnamed Siding"}`);
+    lines.push(
+      `MP ${s.mp_start} – MP ${s.mp_end} — ${totalFeet.toLocaleString()} ft`
+    );
+    lines.push("");
+  });
+
+  if (sub) {
+    lines.unshift(`Subdivision: ${sub.name || sub.id}`);
+    lines.unshift("");
+  }
+
+  return lines.join("\n");
 }
 
-function renderTrackLengths() {
-  const out = document.getElementById('resultsOutput');
-  const yardSel = document.getElementById('yardSelector');
-  const yardId = yardSel.value;
-
-  const yards = snapshot.yards || [];
-  const yard = yards.find(y => y.id === yardId);
+function renderTrackLengthsView() {
+  const yard = getCurrentYard();
+  const lines = [];
 
   if (!yard) {
-    out.textContent = 'No yard selected or yard has no track details yet.';
-    return;
+    lines.push("No yards defined in this snapshot.");
+    return lines.join("\n");
   }
 
-  const lines = [];
-  lines.push(`${yard.name}`);
-  lines.push(''); // blank
+  lines.push(`Yard: ${yard.name || yard.id}`);
+  lines.push("");
 
-  (yard.tracks || []).forEach(t => {
-    const len = t.length_ft != null ? `${t.length_ft.toLocaleString()} ft` : '';
-    lines.push(`${t.name}  —  ${len}`);
+  if (!yard.tracks || yard.tracks.length === 0) {
+    lines.push("Track lengths view will show:");
+    lines.push("");
+    lines.push("Track ID — Description — Length (ft)");
+    lines.push("For the selected yard only.");
+    return lines.join("\n");
+  }
+
+  lines.push("Track ID — Description — Length (ft)");
+  lines.push("");
+
+  yard.tracks.forEach((t) => {
+    const id = t.id || "";
+    const desc = t.name || t.description || "";
+    const len = t.length_ft != null ? t.length_ft : "";
+    lines.push(`${id} — ${desc} — ${len.toLocaleString()} ft`);
   });
 
-  out.textContent = lines.join('\n');
+  return lines.join("\n");
 }
 
-/* DOWNLOAD "SAVE AS" MODAL */
-
-function openDownloadModal() {
-  const modal = document.getElementById('downloadModal');
-  const filenameInput = document.getElementById('downloadFilename');
-  const typeSel = document.getElementById('downloadFiletype');
-
-  // Pre-fill filename based on tab
-  filenameInput.value = `railcore_${currentTab}_results`;
-
-  // Default to .txt
-  typeSel.value = 'txt';
-
-  modal.classList.remove('hidden');
-}
-
-function closeDownloadModal() {
-  const modal = document.getElementById('downloadModal');
-  modal.classList.add('hidden');
-}
-
-function performDownload() {
-  const filenameBase = document.getElementById('downloadFilename').value || 'railcore_results';
-  const type = document.getElementById('downloadFiletype').value;
-  const text = document.getElementById('resultsOutput').textContent || '';
-
-  let mime = 'text/plain';
-  let ext = '.txt';
-
-  if (type === 'csv') {
-    mime = 'text/csv';
-    ext = '.csv';
-  } else if (type === 'json') {
-    mime = 'application/json';
-    ext = '.json';
-  }
-
-  const blob = new Blob([text], { type: mime });
+function downloadResults() {
+  const text = DOM.resultsOutput.textContent || "";
+  const blob = new Blob([text], { type: "text/plain;charset=utf-8" });
   const url = URL.createObjectURL(blob);
-
-  const a = document.createElement('a');
+  const a = document.createElement("a");
   a.href = url;
-  a.download = `${filenameBase}${ext}`;
+  a.download = "railcore_cpkc_worker_results.txt";
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
   URL.revokeObjectURL(url);
-
-  closeDownloadModal();
 }
