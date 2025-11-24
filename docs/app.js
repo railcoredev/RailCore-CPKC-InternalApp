@@ -1,276 +1,296 @@
 // app.js
-// RailCore CPKC Worker App v3.8 – UI + logic
+// Main logic for RAILCORE CPKC Worker App v3.8.1
 
-// ---------- STATE ----------
-
-const appState = {
-    data: null,
-    activeTab: 'crossings' // 'crossings' | 'sidings' | 'tracks'
-};
-
-// ---------- INIT ----------
+let snapshot = null;
+let currentTab = 'crossings'; // 'crossings' | 'sidings' | 'tracks';
 
 document.addEventListener('DOMContentLoaded', async () => {
-    // Load lightweight snapshot data
-    appState.data = await loadRailCoreData();
-
-    wireFilters();
-    populateStates();
-    populateSubdivisions();
-    populateYards();
-
-    wireTabs();
-    wireButtons();
-    registerServiceWorker();
+  snapshot = await loadRailCoreSnapshot();
+  initFilters(snapshot);
+  initTabs();
+  initButtons();
+  renderCurrentTab(); // initial view
 });
 
-// ---------- FILTERS & DATA POPULATION ----------
+function initFilters(data) {
+  const stateSel = document.getElementById('stateSelector');
+  const subSel = document.getElementById('subdivisionSelector');
 
-function wireFilters() {
-    const stateSelect = document.getElementById('stateSelect');
-    const subdivSelect = document.getElementById('subdivisionSelect');
+  // States
+  (data.states || []).forEach(st => {
+    const opt = document.createElement('option');
+    opt.value = st.code;
+    opt.textContent = `${st.code} — ${st.name}`;
+    stateSel.appendChild(opt);
+  });
 
-    stateSelect.addEventListener('change', () => {
-        populateSubdivisions();
-    });
+  // Preselect all states by default
+  for (let i = 0; i < stateSel.options.length; i++) {
+    stateSel.options[i].selected = true;
+  }
+
+  // Subdivisions (CPKC-only snapshot)
+  (data.subdivisions || []).forEach(sub => {
+    const opt = document.createElement('option');
+    opt.value = sub.id;
+    opt.textContent = sub.name;
+    subSel.appendChild(opt);
+  });
+
+  if (subSel.options.length > 0) {
+    subSel.selectedIndex = 0;
+  }
 }
 
-function populateStates() {
-    const stateSelect = document.getElementById('stateSelect');
-    stateSelect.innerHTML = '';
-
-    if (!appState.data || !appState.data.states) return;
-
-    appState.data.states.forEach(s => {
-        const opt = document.createElement('option');
-        opt.value = s.code;
-        opt.textContent = s.name;
-        stateSelect.appendChild(opt);
+function initTabs() {
+  const tabs = document.querySelectorAll('.tab');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const target = tab.getAttribute('data-tab');
+      setActiveTab(target);
     });
+  });
 }
 
-function populateSubdivisions() {
-    const subdivSelect = document.getElementById('subdivisionSelect');
-    subdivSelect.innerHTML = '';
+function initButtons() {
+  document.getElementById('applyBtn').addEventListener('click', () => {
+    renderCurrentTab();
+  });
 
-    if (!appState.data || !appState.data.subdivisions) return;
+  document.getElementById('printBtn').addEventListener('click', () => {
+    // Print only when explicitly clicked (no auto-print on load)
+    window.print();
+  });
 
-    appState.data.subdivisions.forEach(sub => {
-        const opt = document.createElement('option');
-        opt.value = sub.code;
-        opt.textContent = sub.name;
-        subdivSelect.appendChild(opt);
-    });
+  // Download -> open modal
+  document.getElementById('downloadBtn').addEventListener('click', openDownloadModal);
+
+  document.getElementById('downloadCancelBtn').addEventListener('click', closeDownloadModal);
+  document.getElementById('downloadConfirmBtn').addEventListener('click', performDownload);
 }
+
+function setActiveTab(tabName) {
+  currentTab = tabName;
+
+  // Update tab styles
+  document.querySelectorAll('.tab').forEach(tab => {
+    const t = tab.getAttribute('data-tab');
+    tab.classList.toggle('active', t === tabName);
+  });
+
+  // Yard selector only visible on tracks tab
+  const yardRow = document.getElementById('yardSelectorRow');
+  if (tabName === 'tracks') {
+    yardRow.classList.remove('hidden');
+    populateYards();
+  } else {
+    yardRow.classList.add('hidden');
+  }
+
+  renderCurrentTab();
+}
+
+function renderCurrentTab() {
+  if (!snapshot) return;
+
+  if (currentTab === 'crossings') {
+    renderCrossings();
+  } else if (currentTab === 'sidings') {
+    renderSidings();
+  } else if (currentTab === 'tracks') {
+    renderTrackLengths();
+  }
+}
+
+function getSelectedStates() {
+  const sel = document.getElementById('stateSelector');
+  return Array.from(sel.selectedOptions).map(o => o.value);
+}
+
+function getSelectedSubdivisionId() {
+  const sel = document.getElementById('subdivisionSelector');
+  return sel.value || null;
+}
+
+/* CROSSINGS TAB: crossing-distance-crossing blocks with spacing filter */
+
+function renderCrossings() {
+  const out = document.getElementById('resultsOutput');
+  const states = getSelectedStates();
+  const subId = getSelectedSubdivisionId();
+  const spacing = Number(document.getElementById('spacingInput').value) || 0;
+  const viewMode = document.querySelector('input[name="viewMode"]:checked')?.value || 'threshold';
+
+  const allCrossings = (snapshot.crossings || [])
+    .filter(c => (!subId || c.subdivision_id === subId))
+    .filter(c => states.length === 0 || states.includes(c.state_code));
+
+  // sort by MP ascending
+  allCrossings.sort((a, b) => a.mp - b.mp);
+
+  if (allCrossings.length < 2) {
+    out.textContent = 'No crossing pairs available for selection.';
+    return;
+  }
+
+  let lines = [];
+
+  for (let i = 0; i < allCrossings.length - 1; i++) {
+    const a = allCrossings[i];
+    const b = allCrossings[i + 1];
+
+    const distFt = Math.round((b.mp - a.mp) * 5280); // MP -> feet
+    const passesThreshold = distFt >= spacing;
+
+    if (viewMode === 'threshold' && !passesThreshold) {
+      // Skip pairs that are too close
+      continue;
+    }
+
+    // A
+    lines.push(formatCrossingLine(a));
+    // Distance
+    lines.push(`↓ ${distFt.toLocaleString()} ft`);
+    // B
+    lines.push(formatCrossingLine(b));
+    // Blank line between blocks
+    lines.push('');
+  }
+
+  if (lines.length === 0) {
+    out.textContent = 'No crossing pairs meet the spacing threshold.';
+  } else {
+    out.textContent = lines.join('\n');
+  }
+}
+
+function formatCrossingLine(c) {
+  const mpStr = (c.mp ?? '').toString();
+  const roadCommon = c.road_common || '';
+  const roadName = c.road_name || '';
+  const protection = c.protection || '';
+  const dot = c.dot_number || '';
+  return `MP ${mpStr} — ${roadCommon} — ${roadName} — ${protection} — DOT# ${dot}`;
+}
+
+/* SIDINGS TAB: simple list placeholder wired to snapshot */
+
+function renderSidings() {
+  const out = document.getElementById('resultsOutput');
+  const subId = getSelectedSubdivisionId();
+
+  const sidings = (snapshot.sidings || []).filter(s => !subId || s.subdivision_id === subId);
+
+  if (!sidings.length) {
+    out.textContent = 'No sidings listed for this subdivision (yet).';
+    return;
+  }
+
+  const lines = [];
+
+  sidings.forEach(s => {
+    const lenFt = (s.mp_end - s.mp_start) * 5280;
+    lines.push(`${s.name}`);
+    lines.push(`MP ${s.mp_start} – MP ${s.mp_end}  (${Math.round(lenFt).toLocaleString()} ft)`);
+    lines.push(''); // blank line between sidings
+  });
+
+  out.textContent = lines.join('\n');
+}
+
+/* TRACK LENGTHS TAB: yard selector + track list */
 
 function populateYards() {
-    const yardSelect = document.getElementById('yardSelect');
-    yardSelect.innerHTML = '';
+  const yardSel = document.getElementById('yardSelector');
+  yardSel.innerHTML = ''; // reset
 
-    if (!appState.data || !appState.data.yards) {
-        // simple default
-        ['Kansas City Yard', 'Default Yard'].forEach(y => {
-            const opt = document.createElement('option');
-            opt.value = y;
-            opt.textContent = y;
-            yardSelect.appendChild(opt);
-        });
-        return;
-    }
+  const yards = snapshot.yards || [];
+  yards.forEach(y => {
+    const opt = document.createElement('option');
+    opt.value = y.id;
+    opt.textContent = y.name;
+    yardSel.appendChild(opt);
+  });
 
-    appState.data.yards.forEach(y => {
-        const opt = document.createElement('option');
-        opt.value = y.code || y.name;
-        opt.textContent = y.name;
-        yardSelect.appendChild(opt);
-    });
+  if (yardSel.options.length > 0 && yardSel.selectedIndex === -1) {
+    yardSel.selectedIndex = 0;
+  }
+
+  yardSel.addEventListener('change', renderTrackLengths);
 }
 
-// ---------- TABS ----------
+function renderTrackLengths() {
+  const out = document.getElementById('resultsOutput');
+  const yardSel = document.getElementById('yardSelector');
+  const yardId = yardSel.value;
 
-function wireTabs() {
-    const tabCross = document.getElementById('tabCrossings');
-    const tabSidings = document.getElementById('tabSidings');
-    const tabTracks = document.getElementById('tabTracks');
+  const yards = snapshot.yards || [];
+  const yard = yards.find(y => y.id === yardId);
 
-    tabCross.addEventListener('click', () => setActiveTab('crossings'));
-    tabSidings.addEventListener('click', () => setActiveTab('sidings'));
-    tabTracks.addEventListener('click', () => setActiveTab('tracks'));
+  if (!yard) {
+    out.textContent = 'No yard selected or yard has no track details yet.';
+    return;
+  }
+
+  const lines = [];
+  lines.push(`${yard.name}`);
+  lines.push(''); // blank
+
+  (yard.tracks || []).forEach(t => {
+    const len = t.length_ft != null ? `${t.length_ft.toLocaleString()} ft` : '';
+    lines.push(`${t.name}  —  ${len}`);
+  });
+
+  out.textContent = lines.join('\n');
 }
 
-function setActiveTab(tabKey) {
-    appState.activeTab = tabKey;
+/* DOWNLOAD "SAVE AS" MODAL */
 
-    // toggle active class
-    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-    if (tabKey === 'crossings') document.getElementById('tabCrossings').classList.add('active');
-    if (tabKey === 'sidings') document.getElementById('tabSidings').classList.add('active');
-    if (tabKey === 'tracks') document.getElementById('tabTracks').classList.add('active');
+function openDownloadModal() {
+  const modal = document.getElementById('downloadModal');
+  const filenameInput = document.getElementById('downloadFilename');
+  const typeSel = document.getElementById('downloadFiletype');
 
-    // yard row only on Track Lengths tab
-    const yardRow = document.getElementById('yardRow');
-    if (tabKey === 'tracks') yardRow.classList.remove('hidden');
-    else yardRow.classList.add('hidden');
+  // Pre-fill filename based on tab
+  filenameInput.value = `railcore_${currentTab}_results`;
 
-    // change placeholder text
-    const output = document.getElementById('outputText');
-    if (tabKey === 'crossings') {
-        output.textContent = 'Select state, subdivision, and spacing, then tap Apply.\n\nCrossings view will list crossing–distance–crossing blocks.';
-    } else if (tabKey === 'sidings') {
-        output.textContent =
-            'Select state, subdivision, and spacing, then tap Apply.\n\n' +
-            'Sidings view will show:\n' +
-            '  • Siding name and MP start–end with total length at top\n' +
-            '  • Within each siding: MP start, distance to crossing(s) in feet,\n' +
-            '    crossing(s), distance to end, MP end.';
-    } else {
-        output.textContent =
-            'Select state, subdivision, spacing, and yard, then tap Apply.\n\n' +
-            'Track length view will list tracks for the selected yard.';
-    }
+  // Default to .txt
+  typeSel.value = 'txt';
+
+  modal.classList.remove('hidden');
 }
 
-// ---------- BUTTONS (Apply / Print / Download) ----------
-
-function wireButtons() {
-    document.getElementById('applyBtn').addEventListener('click', onApply);
-    document.getElementById('printBtn').addEventListener('click', () => window.print());
-    wireDownloadDialog();
+function closeDownloadModal() {
+  const modal = document.getElementById('downloadModal');
+  modal.classList.add('hidden');
 }
 
-function onApply() {
-    const stateSelect = document.getElementById('stateSelect');
-    const subdivSelect = document.getElementById('subdivisionSelect');
-    const spacing = Number(document.getElementById('spacingInput').value || 0);
-    const buffer = Number(document.getElementById('bufferInput').value || 0);
-    const yard = document.getElementById('yardSelect').value;
-    const viewMode = document.querySelector('input[name="viewMode"]:checked').value;
+function performDownload() {
+  const filenameBase = document.getElementById('downloadFilename').value || 'railcore_results';
+  const type = document.getElementById('downloadFiletype').value;
+  const text = document.getElementById('resultsOutput').textContent || '';
 
-    const selectedStates = Array.from(stateSelect.selectedOptions).map(o => o.textContent);
-    const stateText = selectedStates.length ? selectedStates.join(', ') : 'All loaded states';
-    const subdivText = subdivSelect.selectedOptions[0]?.textContent || 'All subdivisions';
+  let mime = 'text/plain';
+  let ext = '.txt';
 
-    const output = document.getElementById('outputText');
+  if (type === 'csv') {
+    mime = 'text/csv';
+    ext = '.csv';
+  } else if (type === 'json') {
+    mime = 'application/json';
+    ext = '.json';
+  }
 
-    if (appState.activeTab === 'crossings') {
-        output.textContent =
-            `STATE(S): ${stateText}\n` +
-            `SUBDIVISION: ${subdivText}\n` +
-            `SPACING: ${spacing.toLocaleString()} ft   BUFFER: ${buffer.toLocaleString()} ft\n` +
-            `VIEW MODE: ${viewMode === 'threshold' ? '>= Threshold' : 'All crossings'}\n\n` +
-            'CROSSINGS (sample format):\n\n' +
-            'MP  8.5 — KANSAS AVE — Kansas Ave — GATES — DOT# 079123A\n' +
-            '  ↓ 7,920 ft\n' +
-            'MP 10.1 — TURLEY RD — Turley Rd — FLASHERS — DOT# 079456B\n\n' +
-            'MP 10.1 — TURLEY RD — Turley Rd — FLASHERS — DOT# 079456B\n' +
-            '  ↓ 13,728 ft\n' +
-            'MP 12.7 — 155TH ST — 155th St — GATES — DOT# 079789C\n\n' +
-            '(Real distances will come from the data set; this is the permanent block pattern.)';
-    } else if (appState.activeTab === 'sidings') {
-        output.textContent =
-            `STATE(S): ${stateText}\n` +
-            `SUBDIVISION: ${subdivText}\n` +
-            `SPACING: ${spacing.toLocaleString()} ft   BUFFER: ${buffer.toLocaleString()} ft\n` +
-            `VIEW MODE: ${viewMode === 'threshold' ? '>= Threshold' : 'All sidings'}\n\n` +
-            'SIDINGS (sample format):\n\n' +
-            'Siding: OLATHE\n' +
-            '  MP 14.0 – MP 16.5 (Total 2.5 mi)\n' +
-            '    MP 14.0\n' +
-            '      ↓ 1,200 ft\n' +
-            '      Crossing: 151ST ST\n' +
-            '      ↓ 3,000 ft\n' +
-            '      Crossing: 159TH ST\n' +
-            '      ↓ 4,000 ft\n' +
-            '    MP 16.5\n\n' +
-            '(Real values will be filled from the subdivision data.)';
-    } else {
-        output.textContent =
-            `STATE(S): ${stateText}\n` +
-            `SUBDIVISION: ${subdivText}\n` +
-            `YARD: ${yard}\n\n` +
-            'TRACK LENGTHS (sample format):\n\n' +
-            `Yard: ${yard}\n` +
-            '  Receiving 1 — 6,500 ft\n' +
-            '  Receiving 2 — 6,400 ft\n' +
-            '  Departure 1 — 7,000 ft\n\n' +
-            '(Final version will list every track with live lengths from the yard table.)';
-    }
-}
+  const blob = new Blob([text], { type: mime });
+  const url = URL.createObjectURL(blob);
 
-// ---------- DOWNLOAD (Save As dialog) ----------
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `${filenameBase}${ext}`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
 
-function wireDownloadDialog() {
-    const modal = document.getElementById('downloadModal');
-    const openBtn = document.getElementById('downloadBtn');
-    const cancelBtn = document.getElementById('downloadCancel');
-    const saveBtn = document.getElementById('downloadSave');
-    const fileNameInput = document.getElementById('downloadFileName');
-    const fileTypeSelect = document.getElementById('downloadFileType');
-
-    openBtn.addEventListener('click', () => {
-        // Default file name based on active tab & subdivision
-        const subdivText = document.getElementById('subdivisionSelect').selectedOptions[0]?.textContent || 'All';
-        let base = 'railcore_';
-        if (appState.activeTab === 'crossings') base += 'crossings';
-        else if (appState.activeTab === 'sidings') base += 'sidings';
-        else base += 'tracks';
-
-        base += '_' + subdivText.replace(/\s+/g, '_').toLowerCase();
-        fileNameInput.value = base;
-        fileTypeSelect.value = 'txt';
-
-        modal.classList.remove('hidden');
-    });
-
-    cancelBtn.addEventListener('click', () => {
-        modal.classList.add('hidden');
-    });
-
-    saveBtn.addEventListener('click', () => {
-        const format = fileTypeSelect.value;
-        let name = (fileNameInput.value || 'railcore_export').trim();
-
-        // ensure extension
-        if (!name.toLowerCase().endsWith('.' + format)) {
-            name += '.' + format;
-        }
-
-        exportCurrentView(format, name);
-        modal.classList.add('hidden');
-    });
-}
-
-function exportCurrentView(format, filename) {
-    const text = document.getElementById('outputText').innerText || '';
-    let mime = 'text/plain';
-
-    if (format === 'csv') mime = 'text/csv';
-    else if (format === 'pdf') mime = 'application/pdf';
-    else if (format === 'png') mime = 'image/png';
-
-    // NOTE: For now we export plain text for all formats.
-    // PDF/PNG are simple text exports with the requested extension.
-    triggerDownload(text, mime, filename);
-}
-
-function triggerDownload(content, mimeType, filename) {
-    const blob = new Blob([content], { type: mimeType });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = filename;
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-    URL.revokeObjectURL(url);
-}
-
-// ---------- SERVICE WORKER ----------
-
-function registerServiceWorker() {
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker
-            .register('./service-worker.js')
-            .catch(err => console.warn('SW registration failed', err));
-    }
+  closeDownloadModal();
 }
