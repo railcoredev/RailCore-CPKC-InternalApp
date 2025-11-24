@@ -1,402 +1,311 @@
-/* =========================================================
-   RAILCORE — CPKC Worker App
-   Clean metallic theme, compact sticky control panel,
-   orange tabs, and full-height results area.
-   ========================================================= */
+/* Base layout */
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    height: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background: radial-gradient(circle at top right, #1f2935 0, #11151d 45%, #050608 100%);
-    color: #e5e9f0;
-    -webkit-font-smoothing: antialiased;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui,
+    sans-serif;
+  background: radial-gradient(circle at top left, #1d2738 0, #050811 55%, #000 100%);
+  color: #f2f4ff;
 }
 
-/* App shell layout */
-.rc-app-shell {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding: 10px 14px;
+/* Root layout – fills phone */
+
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-/* HEADER */
-.rc-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 14px 8px;
-    border-radius: 6px;
-    background: linear-gradient(135deg, #131923, #1f2a38);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-    margin-bottom: 8px;
+.app-header {
+  padding: 8px 16px 4px;
 }
 
-.rc-header-left {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
+.logo-row {
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
 }
 
-.rc-logo {
-    font-size: 1.1rem;
-    letter-spacing: 0.08em;
-    font-weight: 700;
-    text-transform: uppercase;
+.logo-rail {
+  color: #ff6600;
 }
 
-.rc-logo-rail {
-    color: #ff6600;
+.logo-core {
+  color: #f2f4ff;
 }
 
-.rc-logo-core {
-    color: #2f3e4f;
-    margin-left: 3px;
+.header-subtitle {
+  margin-top: 2px;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #9ba4c3;
 }
 
-.rc-header-subtitle {
-    font-size: 0.8rem;
-    color: #a0aec0;
+/* Main area: card fills remaining height */
+
+.app-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-.rc-header-right {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    font-size: 0.75rem;
-    text-align: right;
+.app-card {
+  margin: 6px 6px 10px;
+  padding: 10px 10px 6px;
+  border-radius: 18px;
+  background: radial-gradient(circle at top, #151c28 0, #060b14 55%, #05060a 100%);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.55);
+  display: flex;
+  flex-direction: column;
+  max-width: 650px;
+  width: 100%;
+  align-self: center;
+  /* Make the card fill vertical space between header and bottom */
+  flex: 1;
 }
 
-.rc-header-meta {
-    color: #cbd5e0;
+/* Sticky controls */
+
+.controls-panel {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  padding-bottom: 8px;
+  background: radial-gradient(circle at top, #151c28 0, #060b14 55%, #05060a 100%);
 }
 
-.rc-meta-label {
-    color: #718096;
-    margin-right: 4px;
+/* Fields */
+
+.field-block {
+  margin-bottom: 6px;
 }
 
-/* TAB BAR */
-.rc-tab-bar {
-    display: flex;
-    align-items: stretch;
-    gap: 4px;
-    margin-bottom: 8px;
+.field-block.compact {
+  flex: 1;
+  min-width: 0;
 }
 
-.rc-tab {
-    position: relative;
-    border: none;
-    background: #1a202c;
-    color: #e2e8f0;
-    padding: 6px 14px;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    border-radius: 6px 6px 0 0;
-    cursor: pointer;
-    outline: none;
-    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.7) inset;
-    border-bottom: 2px solid transparent;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+.field-label {
+  font-size: 0.68rem;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: #9ba4c3;
+  margin-bottom: 3px;
 }
 
-.rc-tab:hover {
-    background: #202736;
+.field-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.rc-tab-active {
-    background: #222b3a;
-    color: #ff9a4d;
-    border-bottom-color: #ff6600;
+.spacing-row {
+  margin-top: 4px;
 }
 
-/* MAIN LAYOUT */
-.rc-main-layout {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    min-height: 0;
+.view-row {
+  margin-top: 8px;
+  justify-content: space-between;
 }
 
-/* CONTROL PANEL (STICKY) */
-.rc-control-panel {
-    position: sticky;
-    top: 0;
-    z-index: 20;
-    background: linear-gradient(180deg, rgba(15, 23, 36, 0.96), rgba(15, 23, 36, 0.98));
-    border-radius: 6px;
-    padding: 8px 10px 6px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
-    border: 1px solid rgba(148, 163, 184, 0.25);
-    margin-bottom: 8px;
+/* Pills / inputs */
+
+.pill-input {
+  border-radius: 999px;
+  border: 1px solid rgba(170, 183, 214, 0.35);
+  padding: 7px 12px;
+  background: rgba(6, 10, 20, 0.9);
+  color: #f2f4ff;
+  font-size: 0.88rem;
+  width: 100%;
 }
 
-/* Rows inside control panel */
-.rc-control-row {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    flex-wrap: wrap;
+.pill-input:focus {
+  outline: none;
+  border-color: #ff6600;
+  box-shadow: 0 0 0 1px rgba(255, 102, 0, 0.4);
 }
 
-.rc-control-row-top {
-    margin-bottom: 4px;
+.pill-select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, #ff6600 50%),
+    linear-gradient(135deg, #ff6600 50%, transparent 50%);
+  background-position: calc(100% - 14px) calc(50% - 3px),
+    calc(100% - 9px) calc(50% - 3px);
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+  padding-right: 24px;
 }
 
-.rc-control-row-bottom {
-    align-items: flex-end;
+.pill-number {
+  max-width: 90px;
+  text-align: center;
 }
 
-/* Control groups */
-.rc-control-group {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
+/* Read-only pill */
 
-.rc-control-subdivision {
-    min-width: 220px;
-}
-
-.rc-control-spacing {
-    margin-left: auto;
-}
-
-.rc-control-yard {
-    margin-left: auto;
-}
-
-/* Inputs, selects, labels */
-.rc-label {
-    font-size: 0.72rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: #a0aec0;
-}
-
-.rc-label-dim {
-    opacity: 0.8;
-}
-
-.rc-static-value {
-    font-size: 0.8rem;
-    color: #e2e8f0;
-}
-
-.rc-inline-field {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-}
-
-.rc-input,
-.rc-select {
-    background: #111827;
-    border: 1px solid #4a5568;
-    border-radius: 4px;
-    padding: 4px 6px;
-    font-size: 0.8rem;
-    color: #e5e7eb;
-    min-width: 90px;
-}
-
-.rc-input:focus,
-.rc-select:focus {
-    border-color: #ff6600;
-    outline: none;
-    box-shadow: 0 0 0 1px rgba(255, 102, 0, 0.65);
+.pill-readonly {
+  opacity: 0.8;
 }
 
 /* Buttons */
-.rc-button {
-    border-radius: 4px;
-    border: 1px solid #4a5568;
-    padding: 5px 10px;
-    font-size: 0.78rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    cursor: pointer;
-    background: #111827;
-    color: #e2e8f0;
-    white-space: nowrap;
+
+.btn {
+  border-radius: 999px;
+  padding: 8px 18px;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
-.rc-button:hover {
-    background: #1f2937;
+.btn-primary {
+  background: #ff6600;
+  color: #05070d;
+  box-shadow: 0 4px 14px rgba(255, 102, 0, 0.5);
 }
 
-.rc-button-primary {
-    border-color: #ff6600;
-    background: #ff6600;
-    color: #111827;
-    font-weight: 600;
+.btn-secondary {
+  background: #121a27;
+  color: #f2f4ff;
+  border: 1px solid rgba(145, 162, 198, 0.6);
 }
 
-.rc-button-primary:hover {
-    background: #ff7b22;
+/* View mode / radios */
+
+.view-mode-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: nowrap;
 }
 
-.rc-button-ghost {
-    border-color: #4a5568;
-    background: rgba(17, 24, 39, 0.9);
+.view-label {
+  font-size: 0.78rem;
+  color: #c3cbde;
 }
 
-/* Control panel actions + emergency line */
-.rc-control-actions {
-    margin-left: auto;
+.radio-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.82rem;
 }
 
-.rc-control-emergency {
-    margin-left: auto;
-    font-size: 0.75rem;
-    color: #f6ad55;
-    white-space: nowrap;
+.radio-label input[type="radio"] {
+  accent-color: #1a73e8;
 }
 
-.rc-emergency-number {
-    font-weight: 600;
+.actions-group {
+  display: flex;
+  gap: 8px;
 }
 
-/* CONTENT AREA */
-.rc-content {
-    flex: 1;
-    min-height: 0;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
+/* Emergency row */
+
+.emergency-row {
+  margin-top: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.rc-tab-content {
-    display: none;
-    flex: 1;
-    min-height: 0;
+.emergency-text {
+  font-size: 0.78rem;
+  color: #e3e7ff;
+  text-align: right;
 }
 
-.rc-tab-content-active {
-    display: flex;
+.emergency-text a {
+  color: #4aa6ff;
+  text-decoration: underline;
 }
 
-/* Panel */
-.rc-panel {
-    flex: 1;
-    min-height: 0;
-    width: 100%;
-    background: radial-gradient(circle at top left, #1f2933 0, #10131a 40%, #050608 100%);
-    border-radius: 6px;
-    border: 1px solid rgba(148, 163, 184, 0.3);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
-    display: flex;
-    flex-direction: column;
-    padding: 8px 10px;
+/* Tabs */
+
+.tabs-row {
+  margin-top: 10px;
+  display: flex;
+  border-bottom: 1px solid rgba(110, 126, 162, 0.45);
 }
 
-.rc-panel-header {
-    padding-bottom: 6px;
-    border-bottom: 1px solid rgba(148, 163, 184, 0.35);
-    margin-bottom: 4px;
+.tab-button {
+  flex: 1;
+  padding: 8px 6px 6px;
+  background: transparent;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: none;
+  color: #a3afc7;
+  border-bottom: 2px solid transparent;
 }
 
-.rc-panel-title {
-    font-size: 0.9rem;
-    font-weight: 600;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #e5e7eb;
+.tab-button.active {
+  color: #ff6600;
+  border-bottom-color: #ff6600;
 }
 
-.rc-panel-subtitle {
-    font-size: 0.75rem;
-    color: #a0aec0;
-    margin-top: 2px;
+/* Results panel: fills remaining height, scrolls internally */
+
+.results-panel {
+  flex: 1;
+  margin-top: 8px;
+  border-radius: 12px;
+  background: #05070f;
+  padding: 10px 10px 6px;
+  min-height: 220px;
+  /* key: let flexbox handle height and allow scrolling inside */
+  min-height: 0;
+  overflow-y: auto;
 }
 
-/* Results areas */
-.rc-results {
-    flex: 1;
-    min-height: 0;
-    margin-top: 4px;
-    padding: 8px;
-    border-radius: 4px;
-    background: #05070c;
-    border: 1px solid rgba(75, 85, 99, 0.8);
-    overflow: auto;
-    font-size: 0.8rem;
+/* Yard dropdown block (track lengths tab) */
+
+.yard-block {
+  margin-bottom: 8px;
 }
 
-/* Ladder view */
-.rc-results-ladder {
-    font-family: "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    line-height: 1.4;
-    white-space: pre;
+.hidden {
+  display: none;
 }
 
-/* Text view (About, Track Lengths) */
-.rc-results-text {
-    font-size: 0.8rem;
-    color: #e5e7eb;
+/* Results text */
+
+.results-output {
+  margin: 0;
+  font-family: "SF Mono", ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  font-size: 0.86rem;
+  line-height: 1.35;
+  white-space: pre-wrap;
+  color: #f5f7ff;
 }
 
-.rc-results-text p {
-    margin-bottom: 6px;
-}
+/* Footer */
 
-.rc-results-text ul {
-    margin-left: 14px;
-    margin-bottom: 6px;
-}
-
-.rc-results-text li {
-    margin-bottom: 2px;
-}
-
-/* Mobile tweaks */
-@media (max-width: 768px) {
-    .rc-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 4px;
-    }
-
-    .rc-header-right {
-        align-items: flex-start;
-    }
-
-    .rc-control-panel {
-        padding: 8px;
-    }
-
-    .rc-control-row {
-        align-items: flex-start;
-    }
-
-    .rc-control-subdivision {
-        width: 100%;
-    }
-
-    .rc-control-row-bottom {
-        flex-wrap: wrap;
-    }
-
-    .rc-control-actions {
-        margin-left: 0;
-    }
-
-    .rc-control-emergency {
-        margin-left: 0;
-    }
+.app-footer {
+  margin-top: 6px;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #7d88a4;
+  text-align: center;
 }
