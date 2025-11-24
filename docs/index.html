@@ -1,291 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>RAILCORE — CPKC Worker App</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <title>RAILCORE – CPKC Worker App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Main stylesheet (matches /docs/styles/style.css in your repo) -->
-    <link rel="stylesheet" href="styles/style.css" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles/style.css" />
 
-    <meta name="theme-color" content="#1b232f" />
+  <meta name="theme-color" content="#ff6600" />
 </head>
 <body>
-    <div class="rc-app-shell">
-        <!-- HEADER -->
-        <header class="rc-header">
-            <div class="rc-header-left">
-                <div class="rc-logo">
-                    <span class="rc-logo-rail">RAIL</span><span class="rc-logo-core">CORE</span>
-                </div>
-                <div class="rc-header-subtitle">
-                    CPKC Worker App — Crossings &amp; Track Lengths
-                </div>
+  <div id="app-root" class="app-root">
+    <!-- HEADER -->
+    <header class="app-header">
+      <div class="logo-row">
+        <span class="logo-rail">RAIL</span><span class="logo-core">CORE</span>
+      </div>
+      <div class="header-subtitle">CPKC – INTERNAL WORKER TOOL</div>
+    </header>
+
+    <!-- MAIN APP AREA -->
+    <main class="app-main">
+      <section class="app-card">
+
+        <!-- ========== STICKY CONTROL PANEL ========== -->
+        <div class="controls-panel">
+          <!-- STATE(S) DROPDOWN (future 50–state selector) + summary pill -->
+          <div class="field-block">
+            <div class="field-label">STATE(S)</div>
+            <div class="field-row">
+              <select id="stateSelect" class="pill-input pill-select">
+                <!-- For now just a placeholder; future: all 50 states -->
+                <option value="">All</option>
+              </select>
+              <!-- stateSummary kept for existing app.js logic -->
+              <div id="stateSummary" class="pill-input pill-readonly">
+                0 Items
+              </div>
             </div>
-            <div class="rc-header-right">
-                <div class="rc-header-meta">
-                    <span class="rc-meta-label">Mode:</span>
-                    <span class="rc-meta-value">Assignment / Reference</span>
-                </div>
-                <div class="rc-header-meta">
-                    <span class="rc-meta-label">User:</span>
-                    <span class="rc-meta-value">Worker</span>
-                </div>
+          </div>
+
+          <!-- SUBDIVISION DROPDOWN -->
+          <div class="field-block">
+            <div class="field-label">SUBDIVISION</div>
+            <select id="subdivisionSelect" class="pill-input pill-select">
+              <!-- Populated by app.js from SNAPSHOT.subdivisions -->
+            </select>
+          </div>
+
+          <!-- SPACING + BUFFER + APPLY (single row, tight) -->
+          <div class="field-row spacing-row">
+            <div class="field-block compact">
+              <div class="field-label">SPACING (FT)</div>
+              <input
+                id="spacingInput"
+                class="pill-input pill-number"
+                type="text"
+                inputmode="numeric"
+                pattern="\\d*"
+                maxlength="5"
+                value="5500"
+              />
             </div>
-        </header>
+            <div class="field-block compact">
+              <div class="field-label">BUFFER (FT)</div>
+              <input
+                id="bufferInput"
+                class="pill-input pill-number"
+                type="text"
+                inputmode="numeric"
+                pattern="\\d*"
+                maxlength="5"
+                value="400"
+              />
+            </div>
+            <button id="applyButton" class="btn btn-primary">Apply</button>
+          </div>
 
-        <!-- TAB BAR -->
-        <nav class="rc-tab-bar">
-            <button class="rc-tab rc-tab-active" data-tab="tab-crossings">Crossings</button>
-            <button class="rc-tab" data-tab="tab-track-lengths">Track Lengths</button>
-            <button class="rc-tab" data-tab="tab-about">About</button>
-        </nav>
+          <!-- VIEW MODE + PRINT/DOWNLOAD -->
+          <div class="field-row view-row">
+            <div class="view-mode-group">
+              <span class="view-label">View</span>
+              <label class="radio-label">
+                <input
+                  type="radio"
+                  name="viewMode"
+                  value="threshold"
+                  id="viewThreshold"
+                  checked
+                />
+                <span>≥ Threshold</span>
+              </label>
+              <label class="radio-label">
+                <input
+                  type="radio"
+                  name="viewMode"
+                  value="all"
+                  id="viewAll"
+                />
+                <span>All</span>
+              </label>
+            </div>
+            <div class="actions-group">
+              <button id="printButton" class="btn btn-secondary">Print</button>
+              <button id="downloadButton" class="btn btn-secondary">Download</button>
+            </div>
+          </div>
 
-        <!-- MAIN LAYOUT: CONTROL PANEL (STICKY) + CONTENT -->
-        <div class="rc-main-layout">
-            <!-- STICKY CONTROL PANEL -->
-            <section class="rc-control-panel">
-                <!-- Row 1 -->
-                <div class="rc-control-row rc-control-row-top">
-                    <!-- Subdivision selector -->
-                    <div class="rc-control-group rc-control-subdivision">
-                        <label for="subdivisionSelect" class="rc-label">Subdivision</label>
-                        <select id="subdivisionSelect" class="rc-select">
-                            <option value="KC">KANSAS CITY SUB</option>
-                            <option value="OT">OTTUMWA SUB</option>
-                            <option value="DV">DAVENPORT SUB</option>
-                            <option value="CH">CHICAGO SUB</option>
-                            <option value="EL">ELGIN SUB</option>
-                        </select>
-                    </div>
+          <!-- EMERGENCY LINE -->
+          <div class="emergency-row">
+            <div class="emergency-spacer"></div>
+            <div class="emergency-text">
+              CPKC Emergency:
+              <a href="tel:1-800-766-7912">1-800-766-7912</a>
+            </div>
+          </div>
 
-                    <!-- Spacing controls (Crossings tab) -->
-                    <div class="rc-control-group rc-control-spacing" data-tab-visible="tab-crossings">
-                        <div class="rc-inline-field">
-                            <label for="spacingFtInput" class="rc-label">Min Spacing (ft)</label>
-                            <input id="spacingFtInput" type="number" class="rc-input" value="1500" min="0" step="50" />
-                        </div>
-                        <div class="rc-inline-field">
-                            <label for="bufferFtInput" class="rc-label">Per-End Buffer (ft)</label>
-                            <input id="bufferFtInput" type="number" class="rc-input" value="200" min="0" step="50" />
-                        </div>
-                        <button id="applySpacingBtn" class="rc-button rc-button-primary">
-                            Apply
-                        </button>
-                    </div>
-
-                    <!-- Yard selector (Track Lengths tab only) -->
-                    <div class="rc-control-group rc-control-yard" data-tab-visible="tab-track-lengths">
-                        <div class="rc-inline-field">
-                            <label for="yardSelect" class="rc-label">Yard</label>
-                            <select id="yardSelect" class="rc-select">
-                                <option value="">Select Yard</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Row 2 -->
-                <div class="rc-control-row rc-control-row-bottom">
-                    <!-- View mode (Crossings tab) -->
-                    <div class="rc-control-group rc-control-viewmode" data-tab-visible="tab-crossings">
-                        <label for="viewModeSelect" class="rc-label">View Mode</label>
-                        <select id="viewModeSelect" class="rc-select">
-                            <option value="ladder">Crossing Ladder</option>
-                            <option value="raw">Raw List</option>
-                        </select>
-                    </div>
-
-                    <!-- Track view label (Track Lengths tab) -->
-                    <div class="rc-control-group rc-control-viewmode" data-tab-visible="tab-track-lengths">
-                        <label class="rc-label rc-label-dim">Track View</label>
-                        <span class="rc-static-value">Yard / Track Lengths</span>
-                    </div>
-
-                    <!-- Actions -->
-                    <div class="rc-control-group rc-control-actions">
-                        <button id="printBtn" class="rc-button rc-button-ghost">
-                            Print
-                        </button>
-                        <button id="downloadBtn" class="rc-button rc-button-ghost">
-                            Download
-                        </button>
-                    </div>
-
-                    <!-- Emergency line -->
-                    <div class="rc-control-emergency">
-                        EMERGENCY? Call CPKC Police / Emergency:
-                        <span class="rc-emergency-number">1-800-716-9132</span>
-                    </div>
-                </div>
-            </section>
-
-            <!-- CONTENT AREA -->
-            <main class="rc-content">
-                <!-- CROSSINGS TAB -->
-                <section id="tab-crossings" class="rc-tab-content rc-tab-content-active">
-                    <div class="rc-panel">
-                        <div class="rc-panel-header">
-                            <div class="rc-panel-title">Crossings — Spacing Ladder</div>
-                            <div class="rc-panel-subtitle">
-                                Output format locked: CROSSING / ↓ distance / CROSSING / (blank line)
-                            </div>
-                        </div>
-                        <pre id="crossingsResults" class="rc-results rc-results-ladder">
-Loading crossings data...
-                        </pre>
-                    </div>
-                </section>
-
-                <!-- TRACK LENGTHS TAB -->
-                <section id="tab-track-lengths" class="rc-tab-content">
-                    <div class="rc-panel">
-                        <div class="rc-panel-header">
-                            <div class="rc-panel-title">Track Lengths — Yard / Track Reference</div>
-                            <div class="rc-panel-subtitle">
-                                Select subdivision and yard to view track lengths for each track.
-                            </div>
-                        </div>
-                        <div id="trackLengthsContainer" class="rc-results rc-results-text">
-                            Track lengths view is ready. Select a subdivision and yard above to load data.
-                        </div>
-                    </div>
-                </section>
-
-                <!-- ABOUT TAB -->
-                <section id="tab-about" class="rc-tab-content">
-                    <div class="rc-panel">
-                        <div class="rc-panel-header">
-                            <div class="rc-panel-title">About — RAILCORE CPKC Worker App</div>
-                        </div>
-                        <div class="rc-results rc-results-text">
-                            <p>This internal worker tool is designed for the CPKC corridor and focuses on:</p>
-                            <ul>
-                                <li>Crossing spacing ladders for worker planning.</li>
-                                <li>Subdivision-aware, assignment-aware reference mode.</li>
-                                <li>Yard / track length reference for the Track Lengths tab.</li>
-                            </ul>
-                            <p>Crossings output format:</p>
-<pre>
-MP ####.# — COMMON NAME — Road Name — PROTECTION — DOT#XXXXXXX
-    ↓ #### ft
-
-MP ####.# — NEXT CROSSING — Road Name — PROTECTION — DOT#XXXXXXX
-
-(blank line between blocks)
-</pre>
-                            <p>
-                                All spacing logic runs locally for offline use. Data snapshots are sourced
-                                from the embedded CPKC infrastructure data set.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-            </main>
+          <!-- TABS -->
+          <nav class="tabs-row">
+            <button
+              class="tab-button active"
+              data-tab="crossings"
+              id="tabCrossings"
+            >
+              Crossings
+            </button>
+            <button
+              class="tab-button"
+              data-tab="sidings"
+              id="tabSidings"
+            >
+              Sidings
+            </button>
+            <button
+              class="tab-button"
+              data-tab="tracks"
+              id="tabTracks"
+            >
+              Track Lengths
+            </button>
+          </nav>
         </div>
-    </div>
+        <!-- ========== END STICKY CONTROL PANEL ========== -->
 
-    <!-- EXISTING JS FILES IN YOUR REPO -->
-    <script src="data_loader.js"></script>
-    <script src="app.js"></script>
+        <!-- RESULTS AREA (fills remaining height, scrolls internally) -->
+        <section class="results-panel">
+          <!-- Yard dropdown (only used for Track Lengths tab) -->
+          <div id="yardBlock" class="yard-block hidden">
+            <div class="field-label">YARD</div>
+            <select id="yardSelect" class="pill-input pill-select">
+              <!-- Populated by app.js from SNAPSHOT.yards -->
+            </select>
+          </div>
 
-    <!-- Minimal UI wiring + optional hooks into app.js -->
-    <script>
-        (function () {
-            // Tab switching
-            var tabs = document.querySelectorAll('.rc-tab');
-            var tabContents = document.querySelectorAll('.rc-tab-content');
-            var controlGroups = document.querySelectorAll('[data-tab-visible]');
+          <pre id="resultsOutput" class="results-output">
+Loading RailCore snapshot…
+          </pre>
+        </section>
 
-            function setActiveTab(tabId) {
-                tabs.forEach(function (btn) {
-                    btn.classList.toggle('rc-tab-active', btn.getAttribute('data-tab') === tabId);
-                });
-                tabContents.forEach(function (section) {
-                    section.classList.toggle('rc-tab-content-active', section.id === tabId);
-                });
+        <!-- FOOTER (always at bottom of the card) -->
+        <footer class="app-footer">
+          RAILCORE CPKC WORKER APP · V3.8.1
+        </footer>
+      </section>
+    </main>
+  </div>
 
-                // Show/hide tab-specific control groups
-                controlGroups.forEach(function (group) {
-                    var visibleFor = group.getAttribute('data-tab-visible');
-                    group.style.display = (visibleFor === tabId) ? 'flex' : 'none';
-                });
-            }
-
-            tabs.forEach(function (btn) {
-                btn.addEventListener('click', function () {
-                    var id = btn.getAttribute('data-tab');
-                    setActiveTab(id);
-                });
-            });
-
-            // Initialize defaults
-            setActiveTab('tab-crossings');
-
-            // Expose basic UI helpers
-            window.RCWorkerUI = {
-                getSelectedSubdivision: function () {
-                    return document.getElementById('subdivisionSelect').value;
-                },
-                getSpacingFt: function () {
-                    return Number(document.getElementById('spacingFtInput').value) || 0;
-                },
-                getBufferFt: function () {
-                    return Number(document.getElementById('bufferFtInput').value) || 0;
-                },
-                getViewMode: function () {
-                    var vm = document.getElementById('viewModeSelect');
-                    return vm ? vm.value : 'ladder';
-                },
-                setCrossingsText: function (text) {
-                    document.getElementById('crossingsResults').textContent = text || '';
-                },
-                setTrackLengthsHtml: function (html) {
-                    document.getElementById('trackLengthsContainer').innerHTML = html || '';
-                },
-                getSelectedYard: function () {
-                    return document.getElementById('yardSelect').value;
-                },
-                setYardOptions: function (options) {
-                    var select = document.getElementById('yardSelect');
-                    select.innerHTML = '';
-                    options.forEach(function (opt) {
-                        var o = document.createElement('option');
-                        o.value = opt.value;
-                        o.textContent = opt.label;
-                        select.appendChild(o);
-                    });
-                }
-            };
-
-            // Wire buttons to RCWorkerApp if it exists in app.js
-            function safeCall(fnName) {
-                if (window.RCWorkerApp && typeof window.RCWorkerApp[fnName] === 'function') {
-                    window.RCWorkerApp[fnName]();
-                }
-            }
-
-            var applyBtn = document.getElementById('applySpacingBtn');
-            var printBtn = document.getElementById('printBtn');
-            var downloadBtn = document.getElementById('downloadBtn');
-            var subdivisionSelect = document.getElementById('subdivisionSelect');
-            var yardSelect = document.getElementById('yardSelect');
-            var viewModeSelect = document.getElementById('viewModeSelect');
-
-            if (applyBtn) applyBtn.addEventListener('click', function () { safeCall('onApplySpacing'); });
-            if (printBtn) printBtn.addEventListener('click', function () { safeCall('onPrint'); });
-            if (downloadBtn) downloadBtn.addEventListener('click', function () { safeCall('onDownload'); });
-            if (subdivisionSelect) subdivisionSelect.addEventListener('change', function () { safeCall('onSubdivisionChange'); });
-            if (yardSelect) yardSelect.addEventListener('change', function () { safeCall('onYardChange'); });
-            if (viewModeSelect) viewModeSelect.addEventListener('change', function () { safeCall('onViewModeChange'); });
-
-            // Let app.js initialize if it wants to
-            document.addEventListener('DOMContentLoaded', function () {
-                if (window.RCWorkerApp && typeof window.RCWorkerApp.init === 'function') {
-                    window.RCWorkerApp.init();
-                }
-            });
-        })();
-    </script>
+  <!-- DATA + APP LOGIC -->
+  <script src="data_loader.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
