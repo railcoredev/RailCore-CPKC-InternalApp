@@ -4,7 +4,6 @@
    orange tabs, and full-height results area.
    ========================================================= */
 
-/* Base reset-ish */
 *,
 *::before,
 *::after {
@@ -131,7 +130,7 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
-    min-height: 0; /* for flex scrolling */
+    min-height: 0;
 }
 
 /* CONTROL PANEL (STICKY) */
