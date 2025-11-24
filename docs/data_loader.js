@@ -1,129 +1,188 @@
-// data_loader.js
-// Lightweight in-repo snapshot for RailCore CPKC Worker App v3.7
-// Later this will be replaced by the FRA / Hyperstore pipeline.
+// data_loader.js — RailCore CPKC Worker App v3.8
+// Expanded stub data for KS/MO/IA/IL, with sample KC Sub crossings/sidings/yards/tracks.
 
 async function loadRailCoreData() {
-    // In the future this could fetch from JSON/CSV:
-    // const res = await fetch('data/source.json');
-    // return await res.json();
+  // In future, this can fetch live FRA/Hyperstore JSON or CSV.
+  // For now we return a static object that app.js uses.
 
-    // For now we return a static object that matches app.js expectations.
-    return {
-        states: [
-            { code: "KS", name: "Kansas" },
-            { code: "MO", name: "Missouri" }
-        ],
+  return {
+    states: [
+      { code: "KS", name: "Kansas" },
+      { code: "MO", name: "Missouri" },
+      { code: "IA", name: "Iowa" },
+      { code: "IL", name: "Illinois" }
+    ],
 
-        subdivisions: [
-            {
-                id: "KC_SUB",
-                name: "Kansas City Sub – CPKC",
-                stateCodes: ["KS", "MO"],
-                emergency: "CPKC Emergency: 1-800-766-7912"
-            }
-        ],
+    subdivisions: [
+      {
+        code: "KC_SUB_CPKC",
+        name: "Kansas City Sub — CPKC",
+        stateCodes: ["KS", "MO"]
+      },
+      {
+        code: "OTT_SUB_CPKC",
+        name: "Ottumwa Sub — CPKC",
+        stateCodes: ["IA", "IL"]
+      },
+      {
+        code: "DAV_SUB_CPKC",
+        name: "Davenport Sub — CPKC",
+        stateCodes: ["IA", "IL"]
+      },
+      {
+        code: "CHI_SUB_CPKC",
+        name: "Chicago Sub — CPKC",
+        stateCodes: ["IL"]
+      }
+    ],
 
-        // ---------- CROSSINGS ----------
-        // NOTE: mileposts approximate, just to demo spacing logic.
-        crossings: [
-            {
-                id: "X1",
-                subId: "KC_SUB",
-                state: "KS",
-                mp: 8.5,
-                road: "KANSAS AVE",
-                protection: "GATES",
-                dot: "079123A"
-            },
-            {
-                id: "X2",
-                subId: "KC_SUB",
-                state: "KS",
-                mp: 10.1,
-                road: "TURLEY RD",
-                protection: "FLASHERS",
-                dot: "079456B"
-            },
-            {
-                id: "X3",
-                subId: "KC_SUB",
-                state: "KS",
-                mp: 12.7,
-                road: "155TH ST",
-                protection: "GATES",
-                dot: "079789C"
-            },
-            {
-                id: "X4",
-                subId: "KC_SUB",
-                state: "KS",
-                mp: 14.4,
-                road: "HOLLIDAY RD",
-                protection: "GATES",
-                dot: "079852D"
-            },
-            {
-                id: "X5",
-                subId: "KC_SUB",
-                state: "KS",
-                mp: 17.2,
-                road: "KILL CREEK RD",
-                protection: "FLASHERS",
-                dot: "079934E"
-            },
-            {
-                id: "X6",
-                subId: "KC_SUB",
-                state: "KS",
-                mp: 19.9,
-                road: "CEDAR CREEK RD",
-                protection: "GATES",
-                dot: "079967F"
-            }
-        ],
+    yards: [
+      {
+        code: "KCY",
+        name: "Kansas City Yard",
+        subdivisionCode: "KC_SUB_CPKC",
+        stateCode: "KS"
+      },
+      {
+        code: "OTTY",
+        name: "Ottumwa Yard",
+        subdivisionCode: "OTT_SUB_CPKC",
+        stateCode: "IA"
+      },
+      {
+        code: "DVPY",
+        name: "Davenport Yard",
+        subdivisionCode: "DAV_SUB_CPKC",
+        stateCode: "IA"
+      },
+      {
+        code: "CHIY",
+        name: "Chicago Yard",
+        subdivisionCode: "CHI_SUB_CPKC",
+        stateCode: "IL"
+      }
+    ],
 
-        // ---------- SIDINGS ----------
-        // Simple examples spanning some of the crossing territory.
-        sidings: [
-            {
-                id: "S1",
-                subId: "KC_SUB",
-                name: "BONNER SPRINGS",
-                start_mp: 8.0,
-                end_mp: 12.0
-            },
-            {
-                id: "S2",
-                subId: "KC_SUB",
-                name: "DE SOTO",
-                start_mp: 12.0,
-                end_mp: 18.5
-            }
-        ],
+    // Sample Kansas City Sub crossings
+    crossings: [
+      {
+        id: "KCX1",
+        subdivisionCode: "KC_SUB_CPKC",
+        stateCode: "KS",
+        mp: 8.5,
+        roadMain: "KANSAS AVE",
+        roadDetail: "Kansas Ave",
+        protection: "GATES",
+        dot: "079123A",
+        distanceToNextFt: 7920
+      },
+      {
+        id: "KCX2",
+        subdivisionCode: "KC_SUB_CPKC",
+        stateCode: "KS",
+        mp: 10.1,
+        roadMain: "TURLEY RD",
+        roadDetail: "Turley Rd",
+        protection: "FLASHERS",
+        dot: "079456B",
+        distanceToNextFt: 13728
+      },
+      {
+        id: "KCX3",
+        subdivisionCode: "KC_SUB_CPKC",
+        stateCode: "KS",
+        mp: 12.7,
+        roadMain: "155TH ST",
+        roadDetail: "155th St",
+        protection: "GATES",
+        dot: "079789C",
+        distanceToNextFt: 9024
+      },
+      {
+        id: "KCX4",
+        subdivisionCode: "KC_SUB_CPKC",
+        stateCode: "KS",
+        mp: 14.4,
+        roadMain: "HOLLIDAY RD",
+        roadDetail: "Holliday Rd",
+        protection: "GATES",
+        dot: "079913D",
+        distanceToNextFt: 14784
+      },
+      {
+        id: "KCX5",
+        subdivisionCode: "KC_SUB_CPKC",
+        stateCode: "KS",
+        mp: 17.2,
+        roadMain: "KILL CREEK RD",
+        roadDetail: "Kill Creek Rd",
+        protection: "FLASHERS",
+        dot: "079935E"
+      }
+    ],
 
-        // ---------- TRACK LENGTHS ----------
-        tracklengths: [
-            {
-                yard: "KANSAS CITY YARD",
-                subId: "KC_SUB",
-                track: "1",
-                start_mp: 5.0,
-                end_mp: 5.4
-            },
-            {
-                yard: "KANSAS CITY YARD",
-                subId: "KC_SUB",
-                track: "2",
-                start_mp: 5.4,
-                end_mp: 5.9
-            },
-            {
-                yard: "KANSAS CITY YARD",
-                subId: "KC_SUB",
-                track: "3",
-                start_mp: 5.9,
-                end_mp: 6.3
-            }
+    // Sample siding data for KC Sub; others are placeholder stubs
+    sidings: [
+      {
+        subdivisionCode: "KC_SUB_CPKC",
+        name: "EDGERTON",
+        mpStart: 32.0,
+        mpEnd: 34.5,
+        lengthFt: 13200,
+        sequence: [
+          "MP 32.0 (start)",
+          "  ...distance to first crossing (ft) — crossing name...",
+          "  ...distance to second crossing (ft) — crossing name (if any)...",
+          "MP 34.5 (end)"
         ]
-    };
+      },
+      {
+        subdivisionCode: "KC_SUB_CPKC",
+        name: "OLATHE",
+        mpStart: 18.0,
+        mpEnd: 20.2,
+        lengthFt: 11616,
+        sequence: [
+          "MP 18.0 (start)",
+          "  ...distance / crossing details to be filled in...",
+          "MP 20.2 (end)"
+        ]
+      },
+      // Placeholder sidings for other subs
+      {
+        subdivisionCode: "OTT_SUB_CPKC",
+        name: "OTTUMWA SIDING A",
+        mpStart: 100.0,
+        mpEnd: 102.0,
+        lengthFt: 10560,
+        sequence: [
+          "MP 100.0 (start)",
+          "  ...placeholder sequence...",
+          "MP 102.0 (end)"
+        ]
+      },
+      {
+        subdivisionCode: "DAV_SUB_CPKC",
+        name: "DAVENPORT SIDING A",
+        mpStart: 200.0,
+        mpEnd: 202.4,
+        lengthFt: 12672,
+        sequence: [
+          "MP 200.0 (start)",
+          "  ...placeholder sequence...",
+          "MP 202.4 (end)"
+        ]
+      }
+    ],
+
+    // Sample track length data keyed by yard
+    trackLengths: [
+      { yardCode: "KCY", trackName: "Receiving 1", lengthFt: 6500 },
+      { yardCode: "KCY", trackName: "Receiving 2", lengthFt: 6400 },
+      { yardCode: "KCY", trackName: "Departure 1", lengthFt: 7000 },
+      { yardCode: "OTTY", trackName: "Track 1", lengthFt: 5200 },
+      { yardCode: "DVPY", trackName: "Track 3", lengthFt: 5800 },
+      { yardCode: "CHIY", trackName: "East Departure", lengthFt: 7200 }
+    ]
+  };
 }
