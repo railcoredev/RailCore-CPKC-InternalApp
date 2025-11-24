@@ -2,236 +2,149 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>RAILCORE – CPKC Worker Crossing App</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAILCORE – CPKC Worker App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- PWA + theme (keeps it dark, avoids orange browser bars) -->
   <link rel="manifest" href="manifest.webmanifest" />
-  <meta name="theme-color" content="#050910" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
   <link rel="stylesheet" href="styles/style.css" />
+
+  <meta name="theme-color" content="#ff6600" />
 </head>
 <body>
-  <div class="app-shell">
-    <!-- HEADER -->
-    <header class="header">
-      <div class="logo">
-        <span class="rail">RAIL</span><span class="core">CORE</span>
+  <div id="app-root" class="app-root">
+    <header class="app-header">
+      <div class="logo-row">
+        <span class="logo-rail">RAIL</span><span class="logo-core">CORE</span>
       </div>
-      <div class="header-sub">
-        CPKC – Internal Worker Tool
-      </div>
+      <div class="header-subtitle">CPKC – INTERNAL WORKER TOOL</div>
     </header>
 
-    <!-- STATE FILTER ABOVE STICKY BAR -->
-    <section class="filter-block">
-      <div class="field-label">State(s)</div>
-      <select id="stateSelect" class="multiselect" multiple>
-        <option>IA</option>
-        <option>IL</option>
-        <option>MO</option>
-        <option>KS</option>
-        <option>NE</option>
-        <option>MN</option>
-        <option>WI</option>
-      </select>
-    </section>
+    <main class="app-main">
+      <section class="app-card">
 
-    <!-- STICKY CONTROL BAR (always compact) -->
-    <section class="sticky-bar">
-      <!-- Subdivision full-width -->
-      <div class="sticky-col sticky-col-sub">
-        <div class="sticky-label">Subdivision</div>
-        <select id="subdivisionSelect" class="sticky-subdivision-select">
-          <option value="KC_SUB">Kansas City</option>
-          <option value="OTT_SUB">Ottumwa</option>
-          <option value="DAV_SUB">Davenport</option>
-          <option value="CHI_SUB">Chicago</option>
-          <option value="ELG_SUB">Elgin</option>
-        </select>
-      </div>
+        <!-- Sticky control panel -->
+        <div class="controls-panel">
+          <!-- States line (non-interactive for now) -->
+          <div class="field-block">
+            <div class="field-label">STATE(S)</div>
+            <div id="stateSummary" class="pill-input pill-readonly">0 Items</div>
+          </div>
 
-      <!-- Row 1: Spacing / Buffer / Apply -->
-      <div class="sticky-row sticky-row-tight">
-        <div class="sticky-col sticky-col-spacing">
-          <div class="sticky-label">Spacing (ft) / Buffer (ft)</div>
-          <div class="sticky-inline">
-            <input
-              id="spacingInput"
-              type="number"
-              class="input-short"
-              maxlength="5"
-              value="5500"
-              inputmode="numeric"
-            />
-            <input
-              id="bufferInput"
-              type="number"
-              class="input-short"
-              maxlength="5"
-              value="400"
-              inputmode="numeric"
-            />
-            <button id="applyBtn" class="btn btn-primary btn-compact">
-              Apply
+          <!-- Subdivision selector -->
+          <div class="field-block">
+            <div class="field-label">SUBDIVISION</div>
+            <select id="subdivisionSelect" class="pill-input pill-select">
+              <!-- Populated by app.js -->
+            </select>
+          </div>
+
+          <!-- Spacing / Buffer / Apply in one row -->
+          <div class="field-row spacing-row">
+            <div class="field-block compact">
+              <div class="field-label">SPACING (FT)</div>
+              <input
+                id="spacingInput"
+                class="pill-input pill-number"
+                type="text"
+                inputmode="numeric"
+                pattern="\\d*"
+                maxlength="5"
+                value="5500"
+              />
+            </div>
+            <div class="field-block compact">
+              <div class="field-label">BUFFER (FT)</div>
+              <input
+                id="bufferInput"
+                class="pill-input pill-number"
+                type="text"
+                inputmode="numeric"
+                pattern="\\d*"
+                maxlength="5"
+                value="400"
+              />
+            </div>
+            <button id="applyButton" class="btn btn-primary">Apply</button>
+          </div>
+
+          <!-- View mode / Print / Download -->
+          <div class="field-row view-row">
+            <div class="view-mode-group">
+              <span class="view-label">View</span>
+              <label class="radio-label">
+                <input
+                  type="radio"
+                  name="viewMode"
+                  value="threshold"
+                  id="viewThreshold"
+                  checked
+                />
+                <span>≥ Threshold</span>
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="viewMode" value="all" id="viewAll" />
+                <span>All</span>
+              </label>
+            </div>
+            <div class="actions-group">
+              <button id="printButton" class="btn btn-secondary">Print</button>
+              <button id="downloadButton" class="btn btn-secondary">Download</button>
+            </div>
+          </div>
+
+          <!-- Emergency contact at bottom-right of controls -->
+          <div class="emergency-row">
+            <div class="emergency-spacer"></div>
+            <div class="emergency-text">
+              CPKC Emergency:
+              <a href="tel:1-800-766-7912">1-800-766-7912</a>
+            </div>
+          </div>
+
+          <!-- Tabs -->
+          <nav class="tabs-row">
+            <button
+              class="tab-button active"
+              data-tab="crossings"
+              id="tabCrossings"
+            >
+              Crossings
             </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Row 2: View Mode + Print / Download -->
-      <div class="sticky-row sticky-row-tight controls-row">
-        <div class="viewmode-inline">
-          <span class="viewmode-label">View</span>
-          <label><input type="radio" name="vm" value="threshold" checked /> ≥ Threshold</label>
-          <label><input type="radio" name="vm" value="all" /> All</label>
-        </div>
-        <div class="buttons-row">
-          <button id="printBtn" class="btn btn-secondary">Print</button>
-          <button id="downloadBtn" class="btn btn-secondary">Download</button>
-        </div>
-      </div>
-
-      <!-- Emergency contact footer inside control panel -->
-      <div class="sticky-ec-footer">
-        CPKC Emergency: 1-800-766-7912
-      </div>
-    </section>
-
-    <!-- TABS -->
-    <div class="tabs">
-      <button class="tab active" data-tab="crossings">Crossings</button>
-      <button class="tab" data-tab="sidings">Sidings</button>
-      <button class="tab" data-tab="tracks">Track Lengths</button>
-    </div>
-
-    <!-- RESULTS PANEL -->
-    <section id="resultsPanel" class="results-panel">
-      <!-- CROSSINGS CONTENT (default) -->
-      <div id="resultsCrossings" class="results-section active">
-        <!-- Static samples for now; real data comes from data_loader.js -->
-        <div class="result-block">
-          <div class="result-line1">
-            MP 8.5 — KANSAS AVE — Kansas Ave — GATES — DOT# 079123A
-          </div>
-          <div class="result-line2">
-            ↓ 7,920 ft
-          </div>
-          <div class="result-line3">
-            MP 10.0 — 155TH ST — 155th St — GATES — DOT# 079456B
-          </div>
+            <button class="tab-button" data-tab="sidings" id="tabSidings">
+              Sidings
+            </button>
+            <button
+              class="tab-button"
+              data-tab="tracks"
+              id="tabTracks"
+            >
+              Track Lengths
+            </button>
+          </nav>
         </div>
 
-        <div class="result-block">
-          <div class="result-line1">
-            MP 10.0 — 155TH ST — 155th St — GATES — DOT# 079456B
+        <!-- Results panel (scrolls when long) -->
+        <section class="results-panel">
+          <!-- Track-length yard dropdown (only shown on Track tab) -->
+          <div id="yardBlock" class="yard-block hidden">
+            <div class="field-label">YARD</div>
+            <select id="yardSelect" class="pill-input pill-select">
+              <!-- Populated by app.js -->
+            </select>
           </div>
-          <div class="result-line2">
-            ↓ 9,024 ft
-          </div>
-          <div class="result-line3">
-            MP 11.7 — 183RD ST — 183rd St — FLASHERS — DOT# 079789C
-          </div>
-        </div>
-      </div>
 
-      <!-- SIDINGS CONTENT (placeholder layout) -->
-      <div id="resultsSidings" class="results-section">
-        <div class="results-placeholder">
-          Sidings view will show:
-          <br /><br />
-          Siding Name<br />
-          MP Start – MP End — Total Distance (ft)<br /><br />
-          MP Start<br />
-          ↓ Distance to crossing (if any)<br />
-          Crossing (if any)<br />
-          ↓ Distance to next crossing (if any)<br />
-          Crossing (if any)<br />
-          ↓ Distance to MP End<br />
-          MP End
-        </div>
-      </div>
+          <pre id="resultsOutput" class="results-output">
+Loading RailCore snapshot…</pre>
+        </section>
 
-      <!-- TRACK LENGTHS CONTENT -->
-      <div id="resultsTracks" class="results-section">
-        <div class="field-label yard-label">Yard</div>
-        <select id="yardSelect" class="yard-select">
-          <option>Bensenville Yard — CPKC</option>
-          <option>Kansas City Yard — CPKC</option>
-        </select>
-
-        <div class="results-placeholder">
-          Track Lengths view will show:
-          <br /><br />
-          Track ID — Description — Length (ft)<br />
-          For the selected yard only.
-        </div>
-      </div>
-    </section>
-
-    <!-- FOOTER VERSION ONLY -->
-    <div class="footer-version">
-      RAILCORE CPKC WORKER APP • v3.8
-    </div>
+        <footer class="app-footer">
+          RAILCORE CPKC WORKER APP · V3.8.1
+        </footer>
+      </section>
+    </main>
   </div>
 
-  <!-- Core logic (already in your repo) -->
-  <script src="data_loader.js" defer></script>
-  <script src="app.js" defer></script>
-
-  <!-- Inline UI wiring: tabs, yard visibility, 5-digit enforcement -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const tabs = document.querySelectorAll(".tab");
-      const sections = {
-        crossings: document.getElementById("resultsCrossings"),
-        sidings: document.getElementById("resultsSidings"),
-        tracks: document.getElementById("resultsTracks"),
-      };
-
-      const yardLabel = document.querySelector(".yard-label");
-      const yardSelect = document.getElementById("yardSelect");
-
-      function activateTab(name) {
-        tabs.forEach((t) => {
-          t.classList.toggle("active", t.dataset.tab === name);
-        });
-        Object.entries(sections).forEach(([key, el]) => {
-          el.classList.toggle("active", key === name);
-        });
-
-        const showYard = name === "tracks";
-        if (yardLabel && yardSelect) {
-          yardLabel.style.display = showYard ? "block" : "none";
-          yardSelect.style.display = showYard ? "block" : "none";
-        }
-      }
-
-      tabs.forEach((tab) => {
-        tab.addEventListener("click", () => {
-          activateTab(tab.dataset.tab);
-        });
-      });
-
-      // Initial state
-      activateTab("crossings");
-
-      // Enforce 5-digit max in spacing/buffer inputs
-      function limitFiveDigits(input) {
-        input.addEventListener("input", () => {
-          if (input.value.length > 5) {
-            input.value = input.value.slice(0, 5);
-          }
-        });
-      }
-
-      const spacingInput = document.getElementById("spacingInput");
-      const bufferInput = document.getElementById("bufferInput");
-      if (spacingInput) limitFiveDigits(spacingInput);
-      if (bufferInput) limitFiveDigits(bufferInput);
-    });
-  </script>
+  <script src="data_loader.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
