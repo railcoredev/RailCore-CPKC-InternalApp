@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "dataset": "RailCore CPKC Worker Snapshot",
+    "version": "3.8.1",
+    "railroad": "CPKC"
+  },
+  "states": [
+    { "code": "IA", "name": "Iowa" },
+    { "code": "IL", "name": "Illinois" },
+    { "code": "MO", "name": "Missouri" },
+    { "code": "KS", "name": "Kansas" }
+    // + any others you use
+  ],
+  "subdivisions": [
+    {
+      "id": "cpkc_kc",
+      "name": "Kansas City Sub",
+      "state_codes": ["MO", "KS"]
+    },
+    {
+      "id": "cpkc_ottumwa",
+      "name": "Ottumwa Sub",
+      "state_codes": ["IA", "IL"]
+    },
+    {
+      "id": "cpkc_davenport",
+      "name": "Davenport Sub",
+      "state_codes": ["IA", "IL"]
+    },
+    {
+      "id": "cpkc_chicago",
+      "name": "Chicago Sub",
+      "state_codes": ["IL"]
+    },
+    {
+      "id": "cpkc_elgin",
+      "name": "Elgin Sub",
+      "state_codes": ["IL"]
+    }
+
+    // + placeholder northern subs (Marquette, Mason City, Dubuque, St. Paul, etc.)
+  ],
+
+  "crossings": [
+    {
+      "id": "kc_mp8_5_kansas_ave",
+      "subdivision_id": "cpkc_kc",
+      "state_code": "KS",
+      "mp": 8.5,
+      "road_common": "KANSAS AVE",
+      "road_name": "Kansas Ave",
+      "protection": "GATES",
+      "dot_number": "079123A"
+    }
+    // …
+  ],
+
+  "sidings": [
+    {
+      "id": "kcs_deer_creek",
+      "subdivision_id": "cpkc_davenport",
+      "name": "DEER CREEK",
+      "mp_start": 151.5,
+      "mp_end": 153.6
+    }
+    // from your Master_Sidings later
+  ],
+
+  "yards": [
+    {
+      "id": "bensenville",
+      "name": "Bensenville Yard",
+      "subdivision_id": "cpkc_elgin",
+      "state_codes": ["IL"],
+      "tracks": [
+        { "id": "B17", "name": "B17", "length_ft": 6500 },
+        { "id": "B18", "name": "B18", "length_ft": 6400 }
+      ]
+    }
+    // + any others
+  ]
+}
