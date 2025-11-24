@@ -2,46 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>RAILCORE – CPKC Worker App v3.8.1</title>
+  <title>RAILCORE – CPKC Worker Crossing App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- PWA manifest + theme (keeps it dark, no big orange bar) -->
   <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#050910" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
   <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
   <div class="app-shell">
     <!-- HEADER -->
     <header class="header">
-      <div>
-        <div class="logo">
-          <span class="rail">RAIL</span><span class="core">CORE</span>
-        </div>
-        <div class="header-sub">CPKC – Worker Crossing / Sidings / Tracks</div>
+      <div class="logo">
+        <span class="rail">RAIL</span><span class="core">CORE</span>
       </div>
-      <div class="header-meta">
-        <div class="header-meta-line">Internal Worker Tool</div>
-        <div class="header-meta-line small">v3.8.1</div>
+      <div class="header-sub">
+        CPKC – Internal Worker Tool
       </div>
     </header>
 
-    <!-- STATE FILTER ABOVE STICKY -->
+    <!-- STATE FILTER ABOVE STICKY BAR -->
     <section class="filter-block">
       <div class="field-label">State(s)</div>
-      <select id="stateSelector" class="multiselect" multiple>
-        <!-- Populated by app.js using snapshot -->
+      <!-- multi-select; behavior handled in JS later -->
+      <select id="stateSelect" class="multiselect" multiple>
+        <option>IA</option>
+        <option>IL</option>
+        <option>MO</option>
+        <option>KS</option>
+        <option>NE</option>
+        <option>MN</option>
+        <option>WI</option>
       </select>
     </section>
 
-    <!-- STICKY BAR (Subdivision, EC, Spacing, Buffer, View, Buttons) -->
+    <!-- STICKY BAR (Subdivision, EC, Spacing, Buffer, View, Apply/Print/Download) -->
     <section class="sticky-bar">
       <!-- Row 1: Subdivision + Emergency Contact -->
       <div class="sticky-row">
         <div class="sticky-col">
           <div class="sticky-label">Subdivision</div>
-          <select id="subdivisionSelector" class="sticky-subdivision-select">
-            <!-- Populated by app.js -->
+          <select id="subdivisionSelect" class="sticky-subdivision-select">
+            <option value="KC_SUB">Kansas City Sub – CPKC</option>
+            <option value="OTT_SUB">Ottumwa Sub – CPKC</option>
+            <option value="DAV_SUB">Davenport Sub – CPKC</option>
+            <option value="CHI_SUB">Chicago Sub – CPKC</option>
+            <option value="ELG_SUB">Elgin Sub – CPKC</option>
           </select>
         </div>
-        <div class="sticky-col">
+        <div class="sticky-col sticky-ec">
           <div class="sticky-label">Emergency Contact</div>
           <div class="sticky-ec-text">
             CPKC Emergency: 1-800-766-7912
@@ -50,25 +63,39 @@
       </div>
 
       <!-- Row 2: Spacing + Buffer + View Mode -->
-      <div class="sticky-row">
+      <div class="sticky-row sticky-row-tight">
         <div class="sticky-col">
-          <div class="sticky-label">Spacing (ft) & Buffer</div>
+          <div class="sticky-label">Spacing (ft) / Buffer (ft)</div>
           <div class="sticky-inline">
-            <input id="spacingInput" type="number" value="5500" />
-            <input id="bufferInput" type="number" value="400" placeholder="Buffer" />
+            <input
+              id="spacingInput"
+              type="number"
+              class="input-short"
+              maxlength="5"
+              value="5500"
+              inputmode="numeric"
+            />
+            <input
+              id="bufferInput"
+              type="number"
+              class="input-short"
+              maxlength="5"
+              value="400"
+              inputmode="numeric"
+            />
           </div>
         </div>
 
-        <div class="sticky-col">
+        <div class="sticky-col sticky-col-view">
           <div class="sticky-label">View Mode</div>
           <div class="viewmode-row">
-            <label><input type="radio" name="viewMode" value="threshold" checked /> ≥ Threshold</label>
-            <label><input type="radio" name="viewMode" value="all" /> All</label>
+            <label><input type="radio" name="vm" value="threshold" checked /> ≥ Threshold</label>
+            <label><input type="radio" name="vm" value="all" /> All</label>
           </div>
         </div>
       </div>
 
-      <!-- Buttons Row -->
+      <!-- Row 3: Buttons -->
       <div class="buttons-row">
         <button id="applyBtn" class="btn btn-primary">Apply</button>
         <button id="printBtn" class="btn">Print</button>
@@ -77,59 +104,149 @@
     </section>
 
     <!-- TABS -->
-    <nav class="tabs">
+    <div class="tabs">
       <button class="tab active" data-tab="crossings">Crossings</button>
       <button class="tab" data-tab="sidings">Sidings</button>
       <button class="tab" data-tab="tracks">Track Lengths</button>
-    </nav>
+    </div>
 
-    <!-- RESULTS -->
-    <section class="results-panel">
-      <!-- Yard selector only appears when Tracks tab is active -->
-      <div id="yardSelectorRow" class="yard-selector-row hidden">
-        <div class="sticky-label">Yard</div>
-        <select id="yardSelector" class="sticky-subdivision-select">
-          <!-- Populated in Tracks tab only -->
-        </select>
+    <!-- RESULTS PANEL: inner content is swapped by JS per tab -->
+    <section id="resultsPanel" class="results-panel">
+      <!-- CROSSINGS CONTENT (default shown) -->
+      <div id="resultsCrossings" class="results-section active">
+        <!-- Example static blocks; real data comes from data_loader.js later -->
+        <div class="result-block">
+          <div class="result-line1">
+            MP 8.5 — KANSAS AVE — Kansas Ave — GATES — DOT# 079123A
+          </div>
+          <div class="result-line2">
+            ↓ 7,920 ft
+          </div>
+          <div class="result-line3">
+            MP 10.0 — 155TH ST — 155th St — GATES — DOT# 079456B
+          </div>
+        </div>
+
+        <div class="result-block">
+          <div class="result-line1">
+            MP 10.0 — 155TH ST — 155th St — GATES — DOT# 079456B
+          </div>
+          <div class="result-line2">
+            ↓ 9,024 ft
+          </div>
+          <div class="result-line3">
+            MP 11.7 — 183RD ST — 183rd St — FLASHERS — DOT# 079789C
+          </div>
+        </div>
       </div>
 
-      <pre id="resultsOutput" class="results-output">
-      </pre>
+      <!-- SIDINGS CONTENT -->
+      <div id="resultsSidings" class="results-section">
+        <div class="results-placeholder">
+          Sidings view will show:
+          <br />
+          <br />
+          Siding Name
+          <br />
+          MP Start – MP End — Total Distance (ft)
+          <br />
+          <br />
+          MP Start
+          <br />
+          ↓ Distance to crossing (if any)
+          <br />
+          Crossing (if any)
+          <br />
+          ↓ Distance to next crossing (if any)
+          <br />
+          Crossing (if any)
+          <br />
+          ↓ Distance to MP End
+          <br />
+          MP End
+        </div>
+      </div>
+
+      <!-- TRACK LENGTHS CONTENT -->
+      <div id="resultsTracks" class="results-section">
+        <div class="field-label yard-label">Yard</div>
+        <select id="yardSelect" class="yard-select">
+          <option>Bensenville Yard — CPKC</option>
+          <option>Kansas City Yard — CPKC</option>
+        </select>
+
+        <div class="results-placeholder">
+          Track Lengths view will show:
+          <br />
+          <br />
+          Track ID — Description — Length (ft)
+          <br />
+          One selected yard at a time.
+        </div>
+      </div>
     </section>
 
+    <!-- FOOTER VERSION ONLY -->
     <div class="footer-version">
-      RAILCORE CPKC WORKER APP · v3.8.1
+      RAILCORE CPKC WORKER APP • v3.9
     </div>
   </div>
 
-  <!-- Download "Save As" Modal -->
-  <div id="downloadModal" class="modal hidden">
-    <div class="modal-backdrop"></div>
-    <div class="modal-content">
-      <div class="modal-header">Download Results</div>
-      <div class="modal-body">
-        <label class="modal-label">
-          File name
-          <input id="downloadFilename" type="text" value="railcore_results" />
-        </label>
+  <!-- App logic / data loader (already in your repo) -->
+  <script src="data_loader.js" defer></script>
+  <script src="app.js" defer></script>
 
-        <label class="modal-label">
-          File type
-          <select id="downloadFiletype">
-            <option value="txt">Plain Text (.txt)</option>
-            <option value="csv">CSV (.csv)</option>
-            <option value="json">JSON (.json)</option>
-          </select>
-        </label>
-      </div>
-      <div class="modal-footer">
-        <button id="downloadCancelBtn" class="btn">Cancel</button>
-        <button id="downloadConfirmBtn" class="btn btn-primary">Save</button>
-      </div>
-    </div>
-  </div>
+  <!-- Small inline script ONLY for tab + yard UI behavior -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const tabs = document.querySelectorAll(".tab");
+      const sections = {
+        crossings: document.getElementById("resultsCrossings"),
+        sidings: document.getElementById("resultsSidings"),
+        tracks: document.getElementById("resultsTracks"),
+      };
+      const yardLabel = document.querySelector(".yard-label");
+      const yardSelect = document.getElementById("yardSelect");
 
-  <script src="data_loader.js"></script>
-  <script src="app.js"></script>
+      function activateTab(name) {
+        tabs.forEach((t) => {
+          t.classList.toggle("active", t.dataset.tab === name);
+        });
+        Object.entries(sections).forEach(([key, el]) => {
+          el.classList.toggle("active", key === name);
+        });
+
+        // Yard selector only visible on Track Lengths tab
+        const showYard = name === "tracks";
+        if (yardLabel && yardSelect) {
+          yardLabel.style.display = showYard ? "block" : "none";
+          yardSelect.style.display = showYard ? "block" : "none";
+        }
+      }
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          activateTab(tab.dataset.tab);
+        });
+      });
+
+      // Initial state
+      activateTab("crossings");
+
+      // Enforce 5-digit max in spacing/buffer
+      function limitFiveDigits(input) {
+        input.addEventListener("input", () => {
+          if (input.value.length > 5) {
+            input.value = input.value.slice(0, 5);
+          }
+        });
+      }
+
+      const spacingInput = document.getElementById("spacingInput");
+      const bufferInput = document.getElementById("bufferInput");
+      if (spacingInput) limitFiveDigits(spacingInput);
+      if (bufferInput) limitFiveDigits(bufferInput);
+    });
+  </script>
 </body>
 </html>
