@@ -2,7 +2,7 @@
  "meta": {
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-17T22:03:26+00:00",
+  "generated_at": "2026-08-17T22:06:05+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260817_165739",
@@ -2232,8 +2232,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "9h 42m",
-         "minutes": 582
+         "label": "9h 39m",
+         "minutes": 579
         },
         "name": "HANK,(MATT)"
        },
@@ -2241,8 +2241,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "9h 42m",
-         "minutes": 582
+         "label": "9h 39m",
+         "minutes": 579
         },
         "name": "YORK,(CHRISTOPHER)"
        }
@@ -4087,8 +4087,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 58m",
-         "minutes": 418
+         "label": "6h 55m",
+         "minutes": 415
         },
         "name": "LIENEMAN,(DENNIS)"
        },
@@ -4096,8 +4096,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 58m",
-         "minutes": 418
+         "label": "6h 55m",
+         "minutes": 415
         },
         "name": "CLAPP,(JASON)"
        }
@@ -4136,8 +4136,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 57m",
-         "minutes": 237
+         "label": "3h 54m",
+         "minutes": 234
         },
         "name": "HARTMAN,(JAMES)"
        },
@@ -4145,8 +4145,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 57m",
-         "minutes": 237
+         "label": "3h 54m",
+         "minutes": 234
         },
         "name": "CARAPIA,(JUAN)"
        }
@@ -4185,8 +4185,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "9h 12m",
-         "minutes": 552
+         "label": "9h 09m",
+         "minutes": 549
         },
         "name": "BRESHEARS,(CHRIS)"
        },
@@ -4194,8 +4194,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "9h 12m",
-         "minutes": 552
+         "label": "9h 09m",
+         "minutes": 549
         },
         "name": "DORSEY,(STETSON)"
        }
@@ -4234,8 +4234,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "5h 27m",
-         "minutes": 327
+         "label": "5h 24m",
+         "minutes": 324
         },
         "name": "ROBERTS,(KIMBERLY)"
        },
@@ -4243,8 +4243,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "5h 27m",
-         "minutes": 327
+         "label": "5h 24m",
+         "minutes": 324
         },
         "name": "JAMESON,(DANIELLE)"
        }
@@ -5609,8 +5609,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 42m",
-         "minutes": 402
+         "label": "6h 39m",
+         "minutes": 399
         },
         "name": "GERST,(BRADEN)"
        },
@@ -5618,8 +5618,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 42m",
-         "minutes": 402
+         "label": "6h 39m",
+         "minutes": 399
         },
         "name": "POOLE,(TREVOR)"
        }
@@ -7715,346 +7715,6 @@
  },
  "alerts": [
   {
-   "id": "P1|253-17|04664|2026-08-19",
-   "type": "upstream_unlisting",
-   "train": "253-17",
-   "when": "2026-08-19T03:30",
-   "detected_at": "2026-08-17T16:57:37",
-   "station": "04664",
-   "downstream": "04640",
-   "note": "Dropped from 04664 lineup while still posted at 04640."
-  },
-  {
-   "id": "P1|261-19|04664|2026-08-19",
-   "type": "upstream_unlisting",
-   "train": "261-19",
-   "when": "2026-08-19T09:10",
-   "detected_at": "2026-08-17T16:57:37",
-   "station": "04664",
-   "downstream": "04640",
-   "note": "Dropped from 04664 lineup while still posted at 04640."
-  },
-  {
-   "id": "P1|577-302|04664|2026-08-19",
-   "type": "upstream_unlisting",
-   "train": "577-302",
-   "when": "2026-08-19T16:05",
-   "detected_at": "2026-08-17T16:57:37",
-   "station": "04664",
-   "downstream": "04640",
-   "note": "Dropped from 04664 lineup while still posted at 04640."
-  },
-  {
-   "id": "P1|253-18|04664|2026-08-20",
-   "type": "upstream_unlisting",
-   "train": "253-18",
-   "when": "2026-08-20T03:30",
-   "detected_at": "2026-08-17T16:57:37",
-   "station": "04664",
-   "downstream": "04640",
-   "note": "Dropped from 04664 lineup while still posted at 04640."
-  },
-  {
-   "id": "P1|261-20|04664|2026-08-20",
-   "type": "upstream_unlisting",
-   "train": "261-20",
-   "when": "2026-08-20T09:10",
-   "detected_at": "2026-08-17T16:57:37",
-   "station": "04664",
-   "downstream": "04640",
-   "note": "Dropped from 04664 lineup while still posted at 04640."
-  },
-  {
-   "id": "P1|180-18|04664|2026-08-19",
-   "type": "upstream_unlisting",
-   "train": "180-18",
-   "when": "2026-08-19T08:40",
-   "detected_at": "2026-08-17T16:57:37",
-   "station": "04664",
-   "downstream": "04690",
-   "note": "Dropped from 04664 lineup while still posted at 04690."
-  },
-  {
-   "id": "P1|280-18|04664|2026-08-19",
-   "type": "upstream_unlisting",
-   "train": "280-18",
-   "when": "2026-08-19T11:25",
-   "detected_at": "2026-08-17T16:57:37",
-   "station": "04664",
-   "downstream": "04690",
-   "note": "Dropped from 04664 lineup while still posted at 04690."
-  },
-  {
-   "id": "P1|180-19|04664|2026-08-20",
-   "type": "upstream_unlisting",
-   "train": "180-19",
-   "when": "2026-08-20T08:40",
-   "detected_at": "2026-08-17T16:57:37",
-   "station": "04664",
-   "downstream": "04690",
-   "note": "Dropped from 04664 lineup while still posted at 04690."
-  },
-  {
-   "id": "P1|679-318|04664|2026-08-19",
-   "type": "upstream_unlisting",
-   "train": "679-318",
-   "when": "2026-08-19T21:45",
-   "detected_at": "2026-08-17T16:57:37",
-   "station": "04664",
-   "downstream": "04640",
-   "note": "Dropped from 04664 lineup while still posted at 04640."
-  },
-  {
-   "id": "P1|2253-17|04664|2026-08-18",
-   "type": "upstream_unlisting",
-   "train": "2253-17",
-   "when": "2026-08-18T14:38",
-   "detected_at": "2026-08-17T16:57:37",
-   "station": "04664",
-   "downstream": "04640",
-   "note": "Dropped from 04664 lineup while still posted at 04640."
-  },
-  {
-   "id": "P1|577-303|04664|2026-08-19",
-   "type": "upstream_unlisting",
-   "train": "577-303",
-   "when": "2026-08-19T17:03",
-   "detected_at": "2026-08-17T16:57:37",
-   "station": "04664",
-   "downstream": "04640",
-   "note": "Dropped from 04664 lineup while still posted at 04640."
-  },
-  {
-   "id": "P1|3253-18|04664|2026-08-19",
-   "type": "upstream_unlisting",
-   "train": "3253-18",
-   "when": "2026-08-19T03:30",
-   "detected_at": "2026-08-17T16:57:37",
-   "station": "04664",
-   "downstream": "04640",
-   "note": "Dropped from 04664 lineup while still posted at 04640."
-  },
-  {
-   "id": "P1|280-20|04664|2026-08-21",
-   "type": "upstream_unlisting",
-   "train": "280-20",
-   "when": "2026-08-21T11:25",
-   "detected_at": "2026-08-17T16:57:37",
-   "station": "04664",
-   "downstream": "04690",
-   "note": "Dropped from 04664 lineup while still posted at 04690."
-  },
-  {
-   "id": "P1|181-16|04664|2026-08-19",
-   "type": "upstream_unlisting",
-   "train": "181-16",
-   "when": "2026-08-19T11:40",
-   "detected_at": "2026-08-17T16:57:37",
-   "station": "04664",
-   "downstream": "04640",
-   "note": "Dropped from 04664 lineup while still posted at 04640."
-  },
-  {
-   "id": "P1|357-529|04664|2026-08-19",
-   "type": "upstream_unlisting",
-   "train": "357-529",
-   "when": "2026-08-19T12:29",
-   "detected_at": "2026-08-17T16:57:37",
-   "station": "04664",
-   "downstream": "04640",
-   "note": "Dropped from 04664 lineup while still posted at 04640."
-  },
-  {
-   "id": "P1|781-17|04664|2026-08-18",
-   "type": "upstream_unlisting",
-   "train": "781-17",
-   "when": "2026-08-18T13:05",
-   "detected_at": "2026-08-17T16:45:41",
-   "station": "04664",
-   "downstream": "04640",
-   "note": "Dropped from 04664 lineup while still posted at 04640."
-  },
-  {
-   "id": "P1|180-20|04640|2026-08-21",
-   "type": "upstream_unlisting",
-   "train": "180-20",
-   "when": "2026-08-21T04:05",
-   "detected_at": "2026-08-17T16:07:51",
-   "station": "04640",
-   "downstream": "04664",
-   "note": "Dropped from 04640 lineup while still posted at 04664."
-  },
-  {
-   "id": "P1|280-20|04640|2026-08-21",
-   "type": "upstream_unlisting",
-   "train": "280-20",
-   "when": "2026-08-21T03:45",
-   "detected_at": "2026-08-17T16:07:51",
-   "station": "04640",
-   "downstream": "04664",
-   "note": "Dropped from 04640 lineup while still posted at 04664."
-  },
-  {
-   "id": "P1|390-265|04640|2026-08-21",
-   "type": "upstream_unlisting",
-   "train": "390-265",
-   "when": "2026-08-21T09:10",
-   "detected_at": "2026-08-17T16:07:51",
-   "station": "04640",
-   "downstream": "04664",
-   "note": "Dropped from 04640 lineup while still posted at 04664."
-  },
-  {
-   "id": "P1|252-21|04640|2026-08-21",
-   "type": "upstream_unlisting",
-   "train": "252-21",
-   "when": "2026-08-21T09:55",
-   "detected_at": "2026-08-17T16:07:51",
-   "station": "04640",
-   "downstream": "04664",
-   "note": "Dropped from 04640 lineup while still posted at 04664."
-  },
-  {
-   "id": "P1|576-306|04640|2026-08-21",
-   "type": "upstream_unlisting",
-   "train": "576-306",
-   "when": "2026-08-21T00:01",
-   "detected_at": "2026-08-17T16:07:51",
-   "station": "04640",
-   "downstream": "04664",
-   "note": "Dropped from 04640 lineup while still posted at 04664."
-  },
-  {
-   "id": "P1|576-306|04640|2026-08-20",
-   "type": "upstream_unlisting",
-   "train": "576-306",
-   "when": "2026-08-20T23:00",
-   "detected_at": "2026-08-17T16:07:51",
-   "station": "04640",
-   "downstream": "04664",
-   "note": "Dropped from 04640 lineup while still posted at 04664."
-  },
-  {
-   "id": "P1|253-19|04664|2026-08-21",
-   "type": "upstream_unlisting",
-   "train": "253-19",
-   "when": "2026-08-21T03:30",
-   "detected_at": "2026-08-17T14:28:09",
-   "station": "04664",
-   "downstream": "04640",
-   "note": "Dropped from 04664 lineup while still posted at 04640."
-  },
-  {
-   "id": "P1|280-19|04664|2026-08-20",
-   "type": "upstream_unlisting",
-   "train": "280-19",
-   "when": "2026-08-20T11:25",
-   "detected_at": "2026-08-17T14:28:09",
-   "station": "04664",
-   "downstream": "04690",
-   "note": "Dropped from 04664 lineup while still posted at 04690."
-  },
-  {
-   "id": "P1|576-306|04664|2026-08-21",
-   "type": "upstream_unlisting",
-   "train": "576-306",
-   "when": "2026-08-21T07:25",
-   "detected_at": "2026-08-17T14:28:09",
-   "station": "04664",
-   "downstream": "04690",
-   "note": "Dropped from 04664 lineup while still posted at 04690."
-  },
-  {
-   "id": "P1|375-532|04664|2026-08-20",
-   "type": "upstream_unlisting",
-   "train": "375-532",
-   "when": "2026-08-20T08:25",
-   "detected_at": "2026-08-17T14:28:09",
-   "station": "04664",
-   "downstream": "04640",
-   "note": "Dropped from 04664 lineup while still posted at 04640."
-  },
-  {
-   "id": "P1|180-20|04664|2026-08-21",
-   "type": "upstream_unlisting",
-   "train": "180-20",
-   "when": "2026-08-21T08:40",
-   "detected_at": "2026-08-17T14:28:09",
-   "station": "04664",
-   "downstream": "04690",
-   "note": "Dropped from 04664 lineup while still posted at 04690."
-  },
-  {
-   "id": "P1|375-537|04664|2026-08-21",
-   "type": "upstream_unlisting",
-   "train": "375-537",
-   "when": "2026-08-21T02:55",
-   "detected_at": "2026-08-17T14:28:09",
-   "station": "04664",
-   "downstream": "04640",
-   "note": "Dropped from 04664 lineup while still posted at 04640."
-  },
-  {
-   "id": "P1|375-538|04664|2026-08-21",
-   "type": "upstream_unlisting",
-   "train": "375-538",
-   "when": "2026-08-21T07:55",
-   "detected_at": "2026-08-17T14:28:09",
-   "station": "04664",
-   "downstream": "04640",
-   "note": "Dropped from 04664 lineup while still posted at 04640."
-  },
-  {
-   "id": "P1|261-21|04664|2026-08-21",
-   "type": "upstream_unlisting",
-   "train": "261-21",
-   "when": "2026-08-21T09:10",
-   "detected_at": "2026-08-17T14:28:09",
-   "station": "04664",
-   "downstream": "04640",
-   "note": "Dropped from 04664 lineup while still posted at 04640."
-  },
-  {
-   "id": "P1|181-18|04664|2026-08-21",
-   "type": "upstream_unlisting",
-   "train": "181-18",
-   "when": "2026-08-21T13:35",
-   "detected_at": "2026-08-17T14:28:09",
-   "station": "04664",
-   "downstream": "04640",
-   "note": "Dropped from 04664 lineup while still posted at 04640."
-  },
-  {
-   "id": "P1|375-539|04664|2026-08-21",
-   "type": "upstream_unlisting",
-   "train": "375-539",
-   "when": "2026-08-21T12:55",
-   "detected_at": "2026-08-17T14:28:09",
-   "station": "04664",
-   "downstream": "04640",
-   "note": "Dropped from 04664 lineup while still posted at 04640."
-  },
-  {
-   "id": "P1|576-305|04664|2026-08-20",
-   "type": "upstream_unlisting",
-   "train": "576-305",
-   "when": "2026-08-20T17:10",
-   "detected_at": "2026-08-17T14:28:09",
-   "station": "04664",
-   "downstream": "04690",
-   "note": "Dropped from 04664 lineup while still posted at 04690."
-  },
-  {
-   "id": "P1|390-265|04690|2026-08-20",
-   "type": "upstream_unlisting",
-   "train": "390-265",
-   "when": "2026-08-20T22:05",
-   "detected_at": "2026-08-17T14:28:09",
-   "station": "04690",
-   "downstream": "04640",
-   "note": "Dropped from 04690 lineup while still posted at 04640."
-  },
-  {
    "id": "RAC|LUDWIG,(AARON)|576-304|2026-08-17",
    "type": "runaround_candidate",
    "train": "576-304",
@@ -8068,56 +7728,6 @@
    "rule": "",
    "remedy": "",
    "verify": []
-  },
-  {
-   "id": "P1|252-18|04541|2026-08-18",
-   "type": "upstream_unlisting",
-   "train": "252-18",
-   "when": "2026-08-18T00:01",
-   "detected_at": "2026-08-17T14:16:39",
-   "station": "04541",
-   "downstream": "04640",
-   "note": "Dropped from 04541 lineup while still posted at 04640."
-  },
-  {
-   "id": "P1|252-19|04541|2026-08-19",
-   "type": "upstream_unlisting",
-   "train": "252-19",
-   "when": "2026-08-19T00:01",
-   "detected_at": "2026-08-17T14:16:39",
-   "station": "04541",
-   "downstream": "04640",
-   "note": "Dropped from 04541 lineup while still posted at 04640."
-  },
-  {
-   "id": "P1|252-20|04541|2026-08-20",
-   "type": "upstream_unlisting",
-   "train": "252-20",
-   "when": "2026-08-20T00:01",
-   "detected_at": "2026-08-17T14:16:39",
-   "station": "04541",
-   "downstream": "04640",
-   "note": "Dropped from 04541 lineup while still posted at 04640."
-  },
-  {
-   "id": "P1|252-21|04541|2026-08-21",
-   "type": "upstream_unlisting",
-   "train": "252-21",
-   "when": "2026-08-21T00:01",
-   "detected_at": "2026-08-17T14:16:39",
-   "station": "04541",
-   "downstream": "04640",
-   "note": "Dropped from 04541 lineup while still posted at 04640."
-  },
-  {
-   "id": "P1|252-18|04540|2026-08-18",
-   "type": "upstream_unlisting",
-   "train": "252-18",
-   "when": "2026-08-18T00:01",
-   "detected_at": "2026-08-17T14:06:28",
-   "station": "04540",
-   "downstream": "04640",
-   "note": "Dropped from 04540 lineup while still posted at 04640."
   }
  ]
 }
