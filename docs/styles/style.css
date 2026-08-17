@@ -6,11 +6,11 @@
   box-sizing: border-box;
 }
 
+/* The entire app scrolls as one page — no inner scroll traps. */
 html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
 }
 
 body {
@@ -73,18 +73,12 @@ body {
   max-width: 650px;
   width: 100%;
   align-self: center;
-  /* Make the card fill vertical space between header and bottom */
-  flex: 1;
 }
 
-/* Sticky controls */
+/* Controls flow with the page (nothing sticky/pinned). */
 
 .controls-panel {
-  position: sticky;
-  top: 0;
-  z-index: 3;
   padding-bottom: 8px;
-  background: radial-gradient(circle at top, #151c28 0, #060b14 55%, #05060a 100%);
 }
 
 /* Fields */
@@ -263,18 +257,14 @@ body {
   border-bottom-color: #ff6600;
 }
 
-/* Results panel: fills remaining height, scrolls internally */
+/* Results panel: natural height; the PAGE scrolls, not the panel */
 
 .results-panel {
-  flex: 1;
   margin-top: 8px;
   border-radius: 12px;
   background: #05070f;
   padding: 10px 10px 6px;
-  min-height: 220px;
-  /* key: let flexbox handle height and allow scrolling inside */
-  min-height: 0;
-  overflow-y: auto;
+  min-height: 120px;
 }
 
 /* Yard dropdown block (track lengths tab) */
@@ -313,10 +303,8 @@ body {
 /* ===== Home portal (v4) ===== */
 
 .home-panel {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   padding-top: 6px;
 }
 
@@ -366,17 +354,14 @@ body {
 }
 
 .home-panel .emergency-row {
-  margin-top: auto;
-  padding-top: 12px;
+  margin-top: 12px;
 }
 
 /* ===== Section chrome (v4) ===== */
 
 .section-panel {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  min-height: 0;
 }
 
 .section-bar {
@@ -415,4 +400,10 @@ body {
   font-size: 0.76rem;
   text-align: center;
   color: #c3cbde;
+}
+
+/* Freshness sits at the bottom of the page, above the footer. */
+.freshness-bottom {
+  margin-top: 10px;
+  margin-bottom: 0;
 }
