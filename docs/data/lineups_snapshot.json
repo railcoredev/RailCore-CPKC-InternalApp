@@ -2,7 +2,7 @@
  "meta": {
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-17T22:06:05+00:00",
+  "generated_at": "2026-08-17T22:39:22+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260817_165739",
@@ -2232,8 +2232,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "9h 39m",
-         "minutes": 579
+         "label": "9h 06m",
+         "minutes": 546
         },
         "name": "HANK,(MATT)"
        },
@@ -2241,8 +2241,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "9h 39m",
-         "minutes": 579
+         "label": "9h 06m",
+         "minutes": 546
         },
         "name": "YORK,(CHRISTOPHER)"
        }
@@ -4087,8 +4087,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 55m",
-         "minutes": 415
+         "label": "6h 22m",
+         "minutes": 382
         },
         "name": "LIENEMAN,(DENNIS)"
        },
@@ -4096,8 +4096,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 55m",
-         "minutes": 415
+         "label": "6h 22m",
+         "minutes": 382
         },
         "name": "CLAPP,(JASON)"
        }
@@ -4136,8 +4136,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 54m",
-         "minutes": 234
+         "label": "3h 21m",
+         "minutes": 201
         },
         "name": "HARTMAN,(JAMES)"
        },
@@ -4145,8 +4145,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 54m",
-         "minutes": 234
+         "label": "3h 21m",
+         "minutes": 201
         },
         "name": "CARAPIA,(JUAN)"
        }
@@ -4185,8 +4185,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "9h 09m",
-         "minutes": 549
+         "label": "8h 36m",
+         "minutes": 516
         },
         "name": "BRESHEARS,(CHRIS)"
        },
@@ -4194,8 +4194,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "9h 09m",
-         "minutes": 549
+         "label": "8h 36m",
+         "minutes": 516
         },
         "name": "DORSEY,(STETSON)"
        }
@@ -4234,8 +4234,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "5h 24m",
-         "minutes": 324
+         "label": "4h 51m",
+         "minutes": 291
         },
         "name": "ROBERTS,(KIMBERLY)"
        },
@@ -4243,8 +4243,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "5h 24m",
-         "minutes": 324
+         "label": "4h 51m",
+         "minutes": 291
         },
         "name": "JAMESON,(DANIELLE)"
        }
@@ -5609,8 +5609,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 39m",
-         "minutes": 399
+         "label": "6h 06m",
+         "minutes": 366
         },
         "name": "GERST,(BRADEN)"
        },
@@ -5618,8 +5618,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 39m",
-         "minutes": 399
+         "label": "6h 06m",
+         "minutes": 366
         },
         "name": "POOLE,(TREVOR)"
        }
@@ -7728,6 +7728,145 @@
    "rule": "",
    "remedy": "",
    "verify": []
+  }
+ ],
+ "my_status": [
+  {
+   "name": "LUDWIG,(AARON)",
+   "tickets": [
+    {
+     "date": "2026-08-15",
+     "on_duty": "1900",
+     "off_duty": "0629",
+     "train": "180-15",
+     "craft": "AE",
+     "turn": "MU01",
+     "pool": "OB",
+     "dep": "04541",
+     "arr": "04664"
+    },
+    {
+     "date": "2026-08-14",
+     "on_duty": "2010",
+     "off_duty": "0740",
+     "train": "181-11",
+     "craft": "AE",
+     "turn": "MU01",
+     "pool": "OB",
+     "dep": "04664",
+     "arr": "04541"
+    },
+    {
+     "date": "2026-08-10",
+     "on_duty": "2300",
+     "off_duty": "1350",
+     "train": "252-11",
+     "craft": "AE",
+     "turn": "OB13",
+     "pool": "OB",
+     "dep": "04540",
+     "arr": "04664"
+    },
+    {
+     "date": "2026-08-09",
+     "on_duty": "1820",
+     "off_duty": "0710",
+     "train": "2181-09",
+     "craft": "AE",
+     "turn": "OB13",
+     "pool": "OB",
+     "dep": "04664",
+     "arr": "04541"
+    },
+    {
+     "date": "2026-08-07",
+     "on_duty": "1230",
+     "off_duty": "0533",
+     "train": "261-08",
+     "craft": "AE",
+     "turn": "MU01",
+     "pool": "SW",
+     "dep": "04690",
+     "arr": "04664"
+    },
+    {
+     "date": "2026-08-05",
+     "on_duty": "2250",
+     "off_duty": "0850",
+     "train": "370-401",
+     "craft": "AE",
+     "turn": "MU01",
+     "pool": "SW",
+     "dep": "04664",
+     "arr": "04690"
+    },
+    {
+     "date": "2026-07-31",
+     "on_duty": "1920",
+     "off_duty": "0720",
+     "train": "180-31",
+     "craft": "AE",
+     "turn": "OB13",
+     "pool": "OB",
+     "dep": "04541",
+     "arr": "04664"
+    },
+    {
+     "date": "2026-07-30",
+     "on_duty": "1320",
+     "off_duty": "0200",
+     "train": "181-27",
+     "craft": "AE",
+     "turn": "OB13",
+     "pool": "OB",
+     "dep": "04664",
+     "arr": "04541"
+    },
+    {
+     "date": "2026-07-29",
+     "on_duty": "0530",
+     "off_duty": "1840",
+     "train": "D252-29",
+     "craft": "AE",
+     "turn": "OB13",
+     "pool": "OB",
+     "dep": "04540",
+     "arr": "04664"
+    },
+    {
+     "date": "2026-07-27",
+     "on_duty": "2200",
+     "off_duty": "1245",
+     "train": "181-24",
+     "craft": "AE",
+     "turn": "OB13",
+     "pool": "OB",
+     "dep": "04664",
+     "arr": "04541"
+    },
+    {
+     "date": "2026-07-24",
+     "on_duty": "1350",
+     "off_duty": "2245",
+     "train": "K82-24",
+     "craft": "CO",
+     "turn": "MU02",
+     "pool": "EW",
+     "dep": "04664",
+     "arr": "04664"
+    },
+    {
+     "date": "2026-07-22",
+     "on_duty": "1845",
+     "off_duty": "0845",
+     "train": "180-22",
+     "craft": "AE",
+     "turn": "OB13",
+     "pool": "OB",
+     "dep": "04541",
+     "arr": "04664"
+    }
+   ]
   }
  ]
 }

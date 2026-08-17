@@ -696,15 +696,44 @@ function buildAlertCard(a, isQuiet) {
     return card;
 }
 
-// Personal picture from the feed: board positions + any train whose crew
-// list carries the user's name. Name is a local, device-only setting.
+// Personal picture: CURRENT status first (latest ticket + HOS clock, board
+// position, crew-list appearances), HISTORY separate below (operator
+// request 2026-08-17). Name is a local, device-only setting.
+function hosLine(t) {
+  // 12h federal window from on-duty; only meaningful while not tied up.
+  try {
+    const on = new Date(`${t.date}T${t.on_duty.slice(0,2)}:${t.on_duty.slice(2)}:00`);
+    const mins = Math.round((Date.now() - on.getTime()) / 60000);
+    if (mins < 0 || mins > 24 * 60) return "";
+    const left = 12 * 60 - mins;
+    const h = Math.floor(Math.abs(left) / 60), m = Math.abs(left) % 60;
+    return left >= 0
+      ? `  On duty ${Math.floor(mins/60)}h ${mins%60}m — HOS remaining ${h}h ${String(m).padStart(2,"0")}m`
+      : `  On duty ${Math.floor(mins/60)}h ${mins%60}m — PAST 12h by ${h}h ${String(m).padStart(2,"0")}m`;
+  } catch (_) { return ""; }
+}
+
 function renderMyStatus(d) {
   const me = (localStorage.getItem("railcore_my_name") || "").trim().toUpperCase();
   if (!me || me.length < 3) {
-    return "Set MY NAME above (once) to see your board position and calls here.\n\n";
+    return "Set MY NAME above (once) to see your current status here.\n\n";
   }
-  const lines = [`— YOU (${me}) —`];
+  const lines = [`— YOU (${me}) — CURRENT —`];
   let found = false;
+
+  // Latest ticket = current/most recent call (from the warehouse via feed).
+  const mine = (d.my_status || []).find((s) =>
+    (s.name || "").toUpperCase().startsWith(me) || me.startsWith((s.name || "").toUpperCase()));
+  const tickets = mine ? mine.tickets || [] : [];
+  if (tickets.length) {
+    const t = tickets[0];
+    lines.push(`Latest call: ${t.train} (${t.craft}, turn ${t.turn}/${t.pool})`);
+    lines.push(`  ${t.date} on-duty ${t.on_duty}` +
+      (t.off_duty ? ` — tied up ${t.off_duty}` : " — no tie-up recorded"));
+    if (t.dep || t.arr) lines.push(`  Leg: ${t.dep || "?"} → ${t.arr || "?"}`);
+    if (!t.off_duty) { const h = hosLine(t); if (h) lines.push(h); }
+  }
+
   (d.crew_boards.boards || []).forEach((b) => {
     (b.rows || []).forEach((r) => {
       if ((r.employee_name || "").toUpperCase().startsWith(me)) {
@@ -719,12 +748,24 @@ function renderMyStatus(d) {
       const crew = (t.eng_crew || []).concat(t.trn_crew || []);
       if (crew.some((m) => (m.name || "").toUpperCase().startsWith(me))) {
         found = true;
-        lines.push(`Called/on: ${t.train_asgn} at ${st.name || st.location_code}` +
+        lines.push(`On lineup: ${t.train_asgn} at ${st.name || st.location_code}` +
           ` — ${t.date_time} ${t.status || ""}`);
       }
     });
   });
-  if (!found) lines.push("Not currently on any captured board or crew list.");
+  if (!found && !tickets.length) {
+    lines.push("Not currently on any captured board or crew list.");
+  }
+
+  if (tickets.length > 1) {
+    lines.push("");
+    lines.push("— HISTORY —");
+    tickets.slice(1, 11).forEach((t) => {
+      lines.push(`${t.date}  ${t.on_duty}  ${t.train}  (${t.craft} ${t.turn}/${t.pool})` +
+        (t.off_duty ? `  tied up ${t.off_duty}` : ""));
+    });
+  }
+
   lines.push("");
   lines.push("────────────────────");
   lines.push("");
