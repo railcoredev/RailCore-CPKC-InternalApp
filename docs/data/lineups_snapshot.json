@@ -2,7 +2,7 @@
  "meta": {
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-17T17:45:29+00:00",
+  "generated_at": "2026-08-17T18:05:29+00:00",
   "names_mode": "initials",
   "source_runs": {
    "train_lineup": "sched_20260817_123959",
@@ -10,7 +10,7 @@
   },
   "captured_at": {
    "train_lineup": "2026-08-17T17:41:11.705209+00:00",
-   "crew_boards": "2026-08-17T17:42:11.146212+00:00"
+   "crew_boards": "2026-08-17T17:42:41.194396+00:00"
   }
  },
  "train_lineup": {
@@ -2159,8 +2159,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 45m",
-         "minutes": 525
+         "label": "8h 25m",
+         "minutes": 505
         },
         "name": "B.T.",
         "tags": [
@@ -2192,8 +2192,8 @@
         "craft": "CO",
         "hos": {
          "band": "green",
-         "label": "8h 45m",
-         "minutes": 525
+         "label": "8h 25m",
+         "minutes": 505
         },
         "name": "W.J.",
         "tags": [
@@ -2272,8 +2272,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 30m",
-         "minutes": 630
+         "label": "10h 10m",
+         "minutes": 610
         },
         "name": "K.R.",
         "tags": [
@@ -2284,8 +2284,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "10h 30m",
-         "minutes": 630
+         "label": "10h 10m",
+         "minutes": 610
         },
         "name": "R.S.",
         "tags": [
@@ -2406,9 +2406,20 @@
       "trn_planned_crew": []
      },
      {
-      "crewed": false,
+      "crewed": true,
       "date_time": "08/17-2130",
-      "eng_crew": [],
+      "eng_crew": [
+       {
+        "craft": "EN",
+        "name": "H.M.",
+        "on_in": "1h 40m"
+       },
+       {
+        "craft": "AE",
+        "name": "Y.C.",
+        "on_in": "1h 40m"
+       }
+      ],
       "eng_crew_count": "0",
       "eng_crew_district": "8IDA",
       "eng_crew_pool": "DA",
@@ -3897,27 +3908,27 @@
        {
         "craft": "EN",
         "hos": {
-         "band": "green",
-         "label": "4h 00m",
-         "minutes": 240
+         "band": "yellow",
+         "label": "3h 40m",
+         "minutes": 220
         },
         "name": "H.J."
        },
        {
         "craft": "AE",
         "hos": {
-         "band": "green",
-         "label": "4h 00m",
-         "minutes": 240
+         "band": "yellow",
+         "label": "3h 40m",
+         "minutes": 220
         },
         "name": "P.D."
        },
        {
         "craft": "ET",
         "hos": {
-         "band": "green",
-         "label": "4h 00m",
-         "minutes": 240
+         "band": "yellow",
+         "label": "3h 40m",
+         "minutes": 220
         },
         "name": "K.S."
        }
@@ -3925,7 +3936,18 @@
       "eng_crew_count": "1",
       "eng_crew_district": "8IDA",
       "eng_crew_pool": "DA",
-      "eng_planned_crew": [],
+      "eng_planned_crew": [
+       {
+        "craft": "EN",
+        "name": "H.M.",
+        "on_in": "1h 40m"
+       },
+       {
+        "craft": "AE",
+        "name": "Y.C.",
+        "on_in": "1h 40m"
+       }
+      ],
       "hours_in_future": "",
       "information": "ACTUAL ORDER FROM MTP",
       "location_code": "04664",
@@ -3955,8 +3977,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 45m",
-         "minutes": 465
+         "label": "7h 25m",
+         "minutes": 445
         },
         "name": "N.T."
        },
@@ -3964,8 +3986,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 45m",
-         "minutes": 465
+         "label": "7h 25m",
+         "minutes": 445
         },
         "name": "B.G."
        }
@@ -4061,8 +4083,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 15m",
-         "minutes": 495
+         "label": "7h 55m",
+         "minutes": 475
         },
         "name": "H.J."
        },
@@ -4070,8 +4092,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 15m",
-         "minutes": 495
+         "label": "7h 55m",
+         "minutes": 475
         },
         "name": "C.J."
        }
@@ -4109,8 +4131,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "11h 16m",
-         "minutes": 676
+         "label": "10h 56m",
+         "minutes": 656
         },
         "name": "L.D."
        },
@@ -4118,8 +4140,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "11h 16m",
-         "minutes": 676
+         "label": "10h 56m",
+         "minutes": 656
         },
         "name": "C.J."
        }
@@ -4157,8 +4179,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "9h 45m",
-         "minutes": 585
+         "label": "9h 25m",
+         "minutes": 565
         },
         "name": "R.K."
        },
@@ -4166,8 +4188,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "9h 45m",
-         "minutes": 585
+         "label": "9h 25m",
+         "minutes": 565
         },
         "name": "J.D."
        }
@@ -4203,13 +4225,21 @@
       "eng_crew": [
        {
         "craft": "EN",
-        "name": "D.Z.",
-        "on_in": "0h 15m"
+        "hos": {
+         "band": "green",
+         "label": "11h 55m",
+         "minutes": 715
+        },
+        "name": "D.Z."
        },
        {
         "craft": "AE",
-        "name": "L.D.",
-        "on_in": "0h 15m"
+        "hos": {
+         "band": "green",
+         "label": "11h 55m",
+         "minutes": 715
+        },
+        "name": "L.D."
        }
       ],
       "eng_crew_count": "1",
@@ -4244,12 +4274,12 @@
        {
         "craft": "EN",
         "name": "B.C.",
-        "on_in": "1h 30m"
+        "on_in": "1h 10m"
        },
        {
         "craft": "AE",
         "name": "D.S.",
-        "on_in": "1h 30m"
+        "on_in": "1h 10m"
        }
       ],
       "eng_crew_count": "0",
@@ -5277,8 +5307,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 30m",
-         "minutes": 450
+         "label": "7h 10m",
+         "minutes": 430
         },
         "name": "C.D."
        },
@@ -5286,8 +5316,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 30m",
-         "minutes": 450
+         "label": "7h 10m",
+         "minutes": 430
         },
         "name": "L.N."
        }
@@ -5615,8 +5645,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "11h 00m",
-         "minutes": 660
+         "label": "10h 40m",
+         "minutes": 640
         },
         "name": "G.B."
        },
@@ -5624,8 +5654,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "11h 00m",
-         "minutes": 660
+         "label": "10h 40m",
+         "minutes": 640
         },
         "name": "P.T."
        }
@@ -6943,8 +6973,114 @@
     "label": "OTTUMWA ENG XTRA BRD",
     "menu_path": "1_04",
     "option": "04",
-    "rows": [],
-    "screen_title": "OTTUMWA ENG XTRA BRD",
+    "rows": [
+     {
+      "craft_code": "*E",
+      "employee_name": "L.A.",
+      "home_away": "",
+      "menu_path": "1_04",
+      "page": 1,
+      "pers": "",
+      "pool": "",
+      "position": "001",
+      "run_id": "sched_20260817_123959",
+      "sc": "",
+      "screen_title": "OTTUMWA ENG XTRA BRD POSITION",
+      "snapshot_date": "2026-08-17T17:41:29.533076+00:00",
+      "status_code": "",
+      "subdistrict": "OT",
+      "term": "",
+      "turn_asgn": "0013",
+      "turn_hours": "",
+      "turn_info": "00",
+      "ushr": ""
+     },
+     {
+      "craft_code": "*E",
+      "employee_name": "B.B.",
+      "home_away": "",
+      "menu_path": "1_04",
+      "page": 1,
+      "pers": "",
+      "pool": "",
+      "position": "003",
+      "run_id": "sched_20260817_123959",
+      "sc": "",
+      "screen_title": "OTTUMWA ENG XTRA BRD POSITION",
+      "snapshot_date": "2026-08-17T17:41:29.533076+00:00",
+      "status_code": "",
+      "subdistrict": "OT",
+      "term": "",
+      "turn_asgn": "0012",
+      "turn_hours": "",
+      "turn_info": "00",
+      "ushr": ""
+     },
+     {
+      "craft_code": "*E",
+      "employee_name": "N.D.",
+      "home_away": "",
+      "menu_path": "1_04",
+      "page": 1,
+      "pers": "",
+      "pool": "",
+      "position": "004",
+      "run_id": "sched_20260817_123959",
+      "sc": "",
+      "screen_title": "OTTUMWA ENG XTRA BRD POSITION",
+      "snapshot_date": "2026-08-17T17:41:29.533076+00:00",
+      "status_code": "",
+      "subdistrict": "OT",
+      "term": "",
+      "turn_asgn": "0011",
+      "turn_hours": "1855 0835",
+      "turn_info": "1855 0835            00",
+      "ushr": ""
+     },
+     {
+      "craft_code": "E",
+      "employee_name": "F.D.",
+      "home_away": "",
+      "menu_path": "1_04",
+      "page": 1,
+      "pers": "",
+      "pool": "",
+      "position": "002",
+      "run_id": "sched_20260817_123959",
+      "sc": "",
+      "screen_title": "OTTUMWA ENG XTRA BRD POSITION",
+      "snapshot_date": "2026-08-17T17:41:29.533076+00:00",
+      "status_code": "",
+      "subdistrict": "OT",
+      "term": "",
+      "turn_asgn": "0006",
+      "turn_hours": "",
+      "turn_info": "00",
+      "ushr": ""
+     },
+     {
+      "craft_code": "E",
+      "employee_name": "C.R.",
+      "home_away": "",
+      "menu_path": "1_04",
+      "page": 1,
+      "pers": "",
+      "pool": "",
+      "position": "005",
+      "run_id": "sched_20260817_123959",
+      "sc": "",
+      "screen_title": "OTTUMWA ENG XTRA BRD POSITION",
+      "snapshot_date": "2026-08-17T17:41:29.533076+00:00",
+      "status_code": "",
+      "subdistrict": "OT",
+      "term": "",
+      "turn_asgn": "0002",
+      "turn_hours": "2151 0936",
+      "turn_info": "2151 0936            00",
+      "ushr": ""
+     }
+    ],
+    "screen_title": "OTTUMWA ENG XTRA BRD POSITION",
     "subdistrict": "OT"
    },
    {
@@ -7237,13 +7373,97 @@
     "label": "OTT SWITCHMAN XTRA BRD",
     "menu_path": "2_04",
     "option": "04",
-    "rows": [],
-    "screen_title": "OTT SWITCHMAN XTRA BRD",
+    "rows": [
+     {
+      "craft_code": "",
+      "employee_name": "K.J.",
+      "home_away": "",
+      "menu_path": "2_04",
+      "page": 1,
+      "pers": "",
+      "pool": "",
+      "position": "001",
+      "run_id": "sched_20260817_123959",
+      "sc": "",
+      "screen_title": "OTT SWITCHMAN XTRABRD POSITION",
+      "snapshot_date": "2026-08-17T17:42:41.194396+00:00",
+      "status_code": "",
+      "subdistrict": "OT",
+      "term": "",
+      "turn_asgn": "0012",
+      "turn_hours": "",
+      "turn_info": "00",
+      "ushr": ""
+     },
+     {
+      "craft_code": "",
+      "employee_name": "B.C.",
+      "home_away": "",
+      "menu_path": "2_04",
+      "page": 1,
+      "pers": "",
+      "pool": "",
+      "position": "002",
+      "run_id": "sched_20260817_123959",
+      "sc": "",
+      "screen_title": "OTT SWITCHMAN XTRABRD POSITION",
+      "snapshot_date": "2026-08-17T17:42:41.194396+00:00",
+      "status_code": "",
+      "subdistrict": "OT",
+      "term": "",
+      "turn_asgn": "0006",
+      "turn_hours": "1850 0835",
+      "turn_info": "1850 0835            00",
+      "ushr": ""
+     },
+     {
+      "craft_code": "",
+      "employee_name": "G.R.",
+      "home_away": "",
+      "menu_path": "2_04",
+      "page": 1,
+      "pers": "",
+      "pool": "",
+      "position": "003",
+      "run_id": "sched_20260817_123959",
+      "sc": "",
+      "screen_title": "OTT SWITCHMAN XTRABRD POSITION",
+      "snapshot_date": "2026-08-17T17:42:41.194396+00:00",
+      "status_code": "",
+      "subdistrict": "OT",
+      "term": "",
+      "turn_asgn": "0011",
+      "turn_hours": "2150 0935",
+      "turn_info": "2150 0935            00",
+      "ushr": ""
+     }
+    ],
+    "screen_title": "OTT SWITCHMAN XTRABRD POSITION",
     "subdistrict": "OT"
    }
   ],
-  "captured_at": "2026-08-17T17:42:11.146212+00:00",
-  "row_count": 10,
+  "captured_at": "2026-08-17T17:42:41.194396+00:00",
+  "row_count": 18,
   "run_id": "sched_20260817_123959"
- }
+ },
+ "alerts": [
+  {
+   "type": "runaround_candidate",
+   "train": "253-15",
+   "when": "2026-08-17T12:01",
+   "detected_at": "2026-08-17T13:04:07",
+   "went_to": "L.D.",
+   "their_turn": "SW05/SW",
+   "note": "Possible runaround while you were first out. Candidate only \u2014 verify against calling rules."
+  },
+  {
+   "type": "runaround_candidate",
+   "train": "261-18",
+   "when": "2026-08-17T13:00",
+   "detected_at": "2026-08-17T13:04:07",
+   "went_to": "D.Z.",
+   "their_turn": "MU03/SW",
+   "note": "Possible runaround while you were first out. Candidate only \u2014 verify against calling rules."
+  }
+ ]
 }
