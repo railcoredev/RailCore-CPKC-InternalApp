@@ -91,6 +91,27 @@ everything else after. Update this instead of scattering notes.
 8. Multi-user / private hosting: authenticated API (the E6 FRA
    data-platform pattern), full names, per-user personal data.
 
+## RailCore Portal (phone app) — user-experience audit 2026-08-17
+Walked on the operator's phone via ADB, every tab, as a user.
+**Discovery: there are TWO RailCore apps.** The phone runs the Portal shell
+("One Portal. Pinned releases." — Documents/Infrastructure/Operations Pilot,
+hash-pinned bundles, T3 lineup/board deliberately BLOCKED pending live
+data). The lineups/boards/alerts built today live in the OTHER app (this
+repo's PWA). Merge decision needed: the Portal's pin/governance shell is
+the right home; today's live feed is exactly the T3 data it's waiting for.
+
+| # | Area | Finding | Severity |
+|---|------|---------|----------|
+| P1 | Home chips | "app update up to date" next to "fresh stale" reads as a contradiction — operator read stale data as failed app updates. Split APP vs DATA freshness visually (already solved in this repo's PWA). | High |
+| P2 | Doc reader | PDF page furniture interleaved (page nos, edition footers), huge blank gaps, hard line-breaks mid-sentence. Section text needs reflow + furniture stripping at bundle build time. | High |
+| P3 | Doc reader | No sticky current-section heading; TOC tap lands mid-stream of one continuous doc; scrolling drifts into other sections with no orientation. Operator's top complaint. | High |
+| P4 | Navigation | Top tab bar scrolls away — deep in a doc there is no way out but scrolling to top. Make nav sticky (portal) — note this repo's PWA deliberately scrolls whole-page per operator preference, but IT has short pages; the portal has 100-page docs. | High |
+| P5 | Navigation | System back EXITS the app from deep in a document instead of going up (doc → TOC → tab). Needs history integration. | High |
+| P6 | Infrastructure tab | Styling completely broken: unstyled serif, near-invisible headings, raw label/number list. CSS not loading in the bundle. Crossings sub-tab did not visibly change content. | Critical |
+| P7 | Operations tab | Same broken styling. Pool summary STALE since 08-02 (feed died with the E6 freeze / pipeline stop). Honest TTL chips — good bones. | High |
+| P8 | Content gap | Document catalog lacks today's sources: union agreements (calling rules!), GM notices, CheatSheets ref cards. C:\CPKC Sources is the pipeline. | Med |
+| P9 | Good | Version pins per document (gcor_9th@0.2.0 · current), railroad filter, pack/category filters, offline shell, privacy tiers (T1/T2 aggregates, no names) — keep all of this. | — |
+
 ## Decisions log
 - 2026-08-17: One app = RailCore-CPKC-InternalApp; feeds live in this repo's
   docs/data/; GitHub Pages = free middleman for single-user phase.
