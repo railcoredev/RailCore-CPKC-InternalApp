@@ -407,3 +407,56 @@ body {
   margin-top: 10px;
   margin-bottom: 0;
 }
+
+/* ===== Alert cards (v4.1) ===== */
+
+.alerts-panel {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.alert-card {
+  border: 1px solid rgba(255, 102, 0, 0.55);
+  border-radius: 12px;
+  background: linear-gradient(160deg, #241708 0%, #10090a 100%);
+  padding: 10px 12px;
+}
+
+.alert-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.alert-title {
+  flex: 1;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.alert-when {
+  font-size: 0.74rem;
+  color: #c3cbde;
+}
+
+.alert-body {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: #e3e7ff;
+}
+
+.alert-body .rule-cite {
+  margin-top: 6px;
+  font-size: 0.72rem;
+  color: #9ba4c3;
+}
+
+.alert-actions {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+}

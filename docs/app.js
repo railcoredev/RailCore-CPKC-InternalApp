@@ -58,6 +58,7 @@ function cacheDom() {
   DOM.stationSelect = document.getElementById("stationSelect");
   DOM.boardSelect = document.getElementById("boardSelect");
   DOM.freshnessText = document.getElementById("freshnessText");
+  DOM.alertsPanel = document.getElementById("alertsPanel");
   DOM.resultsOutput = document.getElementById("resultsOutput");
 
   ALL_BLOCKS.forEach((id) => { DOM[id] = document.getElementById(id); });
@@ -126,6 +127,10 @@ function openSection(sectionId) {
   const show = new Set(SECTIONS[sectionId].blocks);
   ALL_BLOCKS.forEach((id) => DOM[id].classList.toggle("hidden", !show.has(id)));
 
+  // Alert cards live on the My Train section.
+  DOM.alertsPanel.classList.toggle("hidden", sectionId !== "mytrain");
+  if (sectionId === "mytrain") renderAlertCards();
+
   updateFreshnessBar();
   renderCurrentView();
   if (sectionId === "mytrain") DOM.trainFindInput.focus();
@@ -149,7 +154,7 @@ function updateHomeTiles() {
     const cacheNote = LINEUPS.fromCache ? " · offline" : "";
     tl.textContent = `${d.train_lineup.train_count} trains · ${age || "?"}${cacheNote}`;
     cb.textContent = `${d.crew_boards.board_count} boards · ${formatAge(cap.crew_boards) || "?"}${cacheNote}`;
-    const nAlerts = (d.alerts || []).length;
+    const nAlerts = visibleAlerts().length;
     mt.textContent = nAlerts
       ? `⚠ ${nAlerts} alert${nAlerts === 1 ? "" : "s"} · find your train fast`
       : "Find where a train sits, fast";
@@ -532,23 +537,105 @@ function renderBoardsView() {
 // Search every station's lineup for a symbol fragment: two taps from app
 // open to "where does my train sit".
 
-function renderAlerts(d) {
-  const alerts = d.alerts || [];
-  if (!alerts.length) return "";
-  const lines = ["⚠ ALERTS (candidates — verify before acting)", ""];
+// ===================== ALERT CARDS =====================
+// Feed alerts are already claim-reconciled server-side: when the Data
+// Processor sees a matching RA claim in the captured timeslips, the flag
+// retires and vanishes from the feed automatically. localStorage holds the
+// user's own immediate marks (claimed/dismissed) for alerts still in feed.
+
+const ALERT_STATE_KEY = "railcore_alert_state_v1";
+
+function alertState() {
+  try { return JSON.parse(localStorage.getItem(ALERT_STATE_KEY) || "{}"); }
+  catch (_) { return {}; }
+}
+
+function setAlertState(id, state) {
+  const s = alertState();
+  s[id] = state;
+  try { localStorage.setItem(ALERT_STATE_KEY, JSON.stringify(s)); } catch (_) {}
+  renderAlertCards();
+  updateHomeTiles();
+}
+
+function visibleAlerts() {
+  const d = lineupsData();
+  const handled = alertState();
+  return (d && d.alerts ? d.alerts : []).filter((a) => !handled[a.id]);
+}
+
+function renderAlertCards() {
+  const panel = DOM.alertsPanel;
+  panel.innerHTML = "";
+  const alerts = visibleAlerts();
+  if (!alerts.length) return;
+
   alerts.forEach((a) => {
+    const card = document.createElement("div");
+    card.className = "alert-card";
+
+    const head = document.createElement("div");
+    head.className = "alert-head";
+    const title = document.createElement("div");
+    title.className = "alert-title";
+    title.textContent = a.type === "runaround_candidate"
+      ? `⚠ Possible runaround — ${a.train}`
+      : `⚠ ${a.train}: ${a.note || a.type}`;
+    const when = document.createElement("div");
+    when.className = "alert-when";
+    when.textContent = (a.when || "").replace("T", " ");
+    head.appendChild(title);
+    head.appendChild(when);
+
+    const body = document.createElement("div");
+    body.className = "alert-body hidden";
     if (a.type === "runaround_candidate") {
-      lines.push(`${(a.when || "").replace("T", " ")}  ${a.train} went to ${a.went_to || "?"} (${a.their_turn || "?"})`);
-      lines.push(`  ${a.note || ""}`);
+      const lines = [
+        `Went to: ${a.went_to || "?"} (${a.their_turn || "?"})`,
+        a.planned_pool ? `Train's planned pool: ${a.planned_pool}` : "",
+        a.call_by ? `Call would have been made by ${a.call_by}` : "",
+        a.remedy ? `If upheld: ${a.remedy}` : "",
+      ].filter(Boolean);
+      body.innerHTML = lines.map((l) => `<div>${l}</div>`).join("");
+      if (a.verify && a.verify.length) {
+        body.innerHTML += `<div class="rule-cite">Check before claiming: ${a.verify.join("; ")}</div>`;
+      }
+      if (a.rule) {
+        body.innerHTML += `<div class="rule-cite">${a.rule}</div>`;
+      }
     } else {
-      lines.push(`${(a.when || "").replace("T", " ")}  ${a.train}`);
-      lines.push(`  ${a.note || ""}`);
+      body.textContent = a.note || "";
     }
-    lines.push("");
+
+    const actions = document.createElement("div");
+    actions.className = "alert-actions hidden";
+    const btnClaimed = document.createElement("button");
+    btnClaimed.className = "btn btn-primary btn-small";
+    btnClaimed.textContent = "I filed a claim";
+    btnClaimed.addEventListener("click", (e) => {
+      e.stopPropagation();
+      setAlertState(a.id, "claimed");
+    });
+    const btnDismiss = document.createElement("button");
+    btnDismiss.className = "btn btn-secondary btn-small";
+    btnDismiss.textContent = "Dismiss";
+    btnDismiss.addEventListener("click", (e) => {
+      e.stopPropagation();
+      setAlertState(a.id, "dismissed");
+    });
+    actions.appendChild(btnClaimed);
+    actions.appendChild(btnDismiss);
+
+    head.addEventListener("click", () => {
+      body.classList.toggle("hidden");
+      actions.classList.toggle("hidden");
+    });
+
+    card.appendChild(head);
+    card.appendChild(body);
+    card.appendChild(actions);
+    panel.appendChild(card);
   });
-  lines.push("────────────────────");
-  lines.push("");
-  return lines.join("\n");
 }
 
 function renderMyTrainView() {
@@ -565,8 +652,7 @@ function renderMyTrainView() {
       const base = String(t.train_asgn || "").split("-")[0];
       if (base) symbols.add(base);
     }));
-    return renderAlerts(d) +
-      "Type at least 2 characters of a train symbol.\n\n" +
+    return "Type at least 2 characters of a train symbol.\n\n" +
       `On the board right now (${symbols.size} symbols):\n` +
       [...symbols].sort().join("  ");
   }
