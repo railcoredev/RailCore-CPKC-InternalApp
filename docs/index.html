@@ -7,6 +7,7 @@
 
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="stylesheet" href="styles/style.css" />
+  <link rel="icon" href="railcore-icon-192.png" />
 
   <meta name="theme-color" content="#ff6600" />
 </head>
@@ -24,91 +25,39 @@
     <main class="app-main">
       <section class="app-card">
 
-        <!-- ========== STICKY CONTROL PANEL ========== -->
-        <div class="controls-panel">
-          <!-- STATE(S) DROPDOWN (future 50–state selector) + summary pill -->
-          <div class="field-block">
-            <div class="field-label">STATE(S)</div>
-            <div class="field-row">
-              <select id="stateSelect" class="pill-input pill-select">
-                <!-- For now just a placeholder; future: all 50 states -->
-                <option value="">All</option>
-              </select>
-              <!-- stateSummary kept for existing app.js logic -->
-              <div id="stateSummary" class="pill-input pill-readonly">
-                0 Items
-              </div>
-            </div>
+        <!-- ========== HOME PORTAL ========== -->
+        <div id="homePanel" class="home-panel">
+          <div class="tile-grid">
+            <button class="tile tile-primary" data-section="mytrain">
+              <div class="tile-title">My Train</div>
+              <div class="tile-sub" id="tileSubMytrain">Find where a train sits, fast</div>
+            </button>
+            <button class="tile" data-section="lineups">
+              <div class="tile-title">Train Lineups</div>
+              <div class="tile-sub" id="tileSubLineups">–</div>
+            </button>
+            <button class="tile" data-section="boards">
+              <div class="tile-title">Crew Boards</div>
+              <div class="tile-sub" id="tileSubBoards">–</div>
+            </button>
+            <button class="tile" data-section="reference">
+              <div class="tile-title">Ref Cards</div>
+              <div class="tile-sub" id="tileSubReference">Subdivision cheat sheets</div>
+            </button>
+            <button class="tile" data-section="crossings">
+              <div class="tile-title">Crossings</div>
+              <div class="tile-sub" id="tileSubCrossings">FRA inventory + spacing</div>
+            </button>
+            <button class="tile" data-section="sidings">
+              <div class="tile-title">Sidings</div>
+              <div class="tile-sub" id="tileSubSidings">Controlled sidings by MP</div>
+            </button>
+            <button class="tile" data-section="tracks">
+              <div class="tile-title">Track Lengths</div>
+              <div class="tile-sub" id="tileSubTracks">Yard tracks</div>
+            </button>
           </div>
 
-          <!-- SUBDIVISION DROPDOWN -->
-          <div class="field-block">
-            <div class="field-label">SUBDIVISION</div>
-            <select id="subdivisionSelect" class="pill-input pill-select">
-              <!-- Populated by app.js from SNAPSHOT.subdivisions -->
-            </select>
-          </div>
-
-          <!-- SPACING + BUFFER + APPLY (single row, tight) -->
-          <div class="field-row spacing-row">
-            <div class="field-block compact">
-              <div class="field-label">SPACING (FT)</div>
-              <input
-                id="spacingInput"
-                class="pill-input pill-number"
-                type="text"
-                inputmode="numeric"
-                pattern="\\d*"
-                maxlength="5"
-                value="5500"
-              />
-            </div>
-            <div class="field-block compact">
-              <div class="field-label">BUFFER (FT)</div>
-              <input
-                id="bufferInput"
-                class="pill-input pill-number"
-                type="text"
-                inputmode="numeric"
-                pattern="\\d*"
-                maxlength="5"
-                value="400"
-              />
-            </div>
-            <button id="applyButton" class="btn btn-primary">Apply</button>
-          </div>
-
-          <!-- VIEW MODE + PRINT/DOWNLOAD -->
-          <div class="field-row view-row">
-            <div class="view-mode-group">
-              <span class="view-label">View</span>
-              <label class="radio-label">
-                <input
-                  type="radio"
-                  name="viewMode"
-                  value="threshold"
-                  id="viewThreshold"
-                  checked
-                />
-                <span>≥ Threshold</span>
-              </label>
-              <label class="radio-label">
-                <input
-                  type="radio"
-                  name="viewMode"
-                  value="all"
-                  id="viewAll"
-                />
-                <span>All</span>
-              </label>
-            </div>
-            <div class="actions-group">
-              <button id="printButton" class="btn btn-secondary">Print</button>
-              <button id="downloadButton" class="btn btn-secondary">Download</button>
-            </div>
-          </div>
-
-          <!-- EMERGENCY LINE -->
           <div class="emergency-row">
             <div class="emergency-spacer"></div>
             <div class="emergency-text">
@@ -116,94 +65,155 @@
               <a href="tel:1-800-766-7912">1-800-766-7912</a>
             </div>
           </div>
-
-          <!-- TABS -->
-          <nav class="tabs-row">
-            <button
-              class="tab-button active"
-              data-tab="crossings"
-              id="tabCrossings"
-            >
-              Crossings
-            </button>
-            <button
-              class="tab-button"
-              data-tab="sidings"
-              id="tabSidings"
-            >
-              Sidings
-            </button>
-            <button
-              class="tab-button"
-              data-tab="tracks"
-              id="tabTracks"
-            >
-              Track Lengths
-            </button>
-            <button
-              class="tab-button"
-              data-tab="lineups"
-              id="tabLineups"
-            >
-              Lineups
-            </button>
-            <button
-              class="tab-button"
-              data-tab="boards"
-              id="tabBoards"
-            >
-              Boards
-            </button>
-            <button
-              class="tab-button"
-              data-tab="reference"
-              id="tabReference"
-            >
-              Ref Card
-            </button>
-          </nav>
         </div>
-        <!-- ========== END STICKY CONTROL PANEL ========== -->
+        <!-- ========== END HOME PORTAL ========== -->
 
-        <!-- RESULTS AREA (fills remaining height, scrolls internally) -->
-        <section class="results-panel">
-          <!-- Yard dropdown (only used for Track Lengths tab) -->
-          <div id="yardBlock" class="yard-block hidden">
-            <div class="field-label">YARD</div>
-            <select id="yardSelect" class="pill-input pill-select">
-              <!-- Populated by app.js from SNAPSHOT.yards -->
-            </select>
+        <!-- ========== SECTION VIEW ========== -->
+        <div id="sectionPanel" class="section-panel hidden">
+
+          <div class="section-bar">
+            <button id="homeButton" class="btn btn-secondary home-btn" title="Home">⌂</button>
+            <div id="sectionTitle" class="section-title">SECTION</div>
+            <div class="actions-group">
+              <button id="printButton" class="btn btn-secondary btn-small">Print</button>
+              <button id="downloadButton" class="btn btn-secondary btn-small">Save</button>
+            </div>
           </div>
 
-          <!-- Station dropdown (Lineups tab) -->
-          <div id="stationBlock" class="yard-block hidden">
-            <div class="field-label">STATION</div>
-            <select id="stationSelect" class="pill-input pill-select">
-              <!-- Populated by app.js from LINEUPS.train_lineup.stations -->
-            </select>
+          <!-- CONTROLS (visibility managed per section) -->
+          <div class="controls-panel">
+
+            <!-- STATE(S) (crossings) -->
+            <div id="stateBlock" class="field-block hidden">
+              <div class="field-label">STATE(S)</div>
+              <div class="field-row">
+                <select id="stateSelect" class="pill-input pill-select">
+                  <option value="">All</option>
+                </select>
+                <div id="stateSummary" class="pill-input pill-readonly">
+                  0 Items
+                </div>
+              </div>
+            </div>
+
+            <!-- SUBDIVISION (crossings / sidings / ref cards) -->
+            <div id="subdivisionBlock" class="field-block hidden">
+              <div class="field-label">SUBDIVISION</div>
+              <select id="subdivisionSelect" class="pill-input pill-select">
+                <!-- Populated by app.js from SNAPSHOT.subdivisions -->
+              </select>
+            </div>
+
+            <!-- SPACING + BUFFER + APPLY (crossings) -->
+            <div id="spacingBlock" class="field-row spacing-row hidden">
+              <div class="field-block compact">
+                <div class="field-label">SPACING (FT)</div>
+                <input
+                  id="spacingInput"
+                  class="pill-input pill-number"
+                  type="text"
+                  inputmode="numeric"
+                  pattern="\\d*"
+                  maxlength="5"
+                  value="5500"
+                />
+              </div>
+              <div class="field-block compact">
+                <div class="field-label">BUFFER (FT)</div>
+                <input
+                  id="bufferInput"
+                  class="pill-input pill-number"
+                  type="text"
+                  inputmode="numeric"
+                  pattern="\\d*"
+                  maxlength="5"
+                  value="400"
+                />
+              </div>
+              <button id="applyButton" class="btn btn-primary">Apply</button>
+            </div>
+
+            <!-- VIEW MODE (crossings) -->
+            <div id="viewBlock" class="field-row view-row hidden">
+              <div class="view-mode-group">
+                <span class="view-label">View</span>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="viewMode"
+                    value="threshold"
+                    id="viewThreshold"
+                    checked
+                  />
+                  <span>≥ Threshold</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="viewMode"
+                    value="all"
+                    id="viewAll"
+                  />
+                  <span>All</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- TRAIN SYMBOL (my train) -->
+            <div id="findBlock" class="field-block hidden">
+              <div class="field-label">TRAIN SYMBOL</div>
+              <input
+                id="trainFindInput"
+                class="pill-input"
+                type="text"
+                inputmode="search"
+                autocomplete="off"
+                placeholder="e.g. 181, 253-05, I52"
+              />
+            </div>
+
+            <!-- YARD (track lengths) -->
+            <div id="yardBlock" class="field-block hidden">
+              <div class="field-label">YARD</div>
+              <select id="yardSelect" class="pill-input pill-select">
+                <!-- Populated by app.js from SNAPSHOT.yards -->
+              </select>
+            </div>
+
+            <!-- STATION (lineups) -->
+            <div id="stationBlock" class="field-block hidden">
+              <div class="field-label">STATION</div>
+              <select id="stationSelect" class="pill-input pill-select">
+                <!-- Populated by app.js from LINEUPS.train_lineup.stations -->
+              </select>
+            </div>
+
+            <!-- CREW BOARD (boards) -->
+            <div id="boardBlock" class="field-block hidden">
+              <div class="field-label">CREW BOARD</div>
+              <select id="boardSelect" class="pill-input pill-select">
+                <!-- Populated by app.js from LINEUPS.crew_boards.boards -->
+              </select>
+            </div>
+
+            <!-- DATA FRESHNESS: separate from app version, shown on data sections -->
+            <div id="freshnessBar" class="field-block hidden">
+              <div id="freshnessText" class="pill-input pill-readonly freshness-text">–</div>
+            </div>
           </div>
 
-          <!-- Crew board dropdown (Boards tab) -->
-          <div id="boardBlock" class="yard-block hidden">
-            <div class="field-label">CREW BOARD</div>
-            <select id="boardSelect" class="pill-input pill-select">
-              <!-- Populated by app.js from LINEUPS.crew_boards.boards -->
-            </select>
-          </div>
+          <!-- RESULTS -->
+          <section class="results-panel">
+            <pre id="resultsOutput" class="results-output">
+Loading…
+            </pre>
+          </section>
+        </div>
+        <!-- ========== END SECTION VIEW ========== -->
 
-          <!-- Data freshness (Lineups / Boards tabs): separate from app version -->
-          <div id="freshnessBar" class="yard-block hidden">
-            <div id="freshnessText" class="pill-input pill-readonly">–</div>
-          </div>
-
-          <pre id="resultsOutput" class="results-output">
-Loading RailCore snapshot…
-          </pre>
-        </section>
-
-        <!-- FOOTER (always at bottom of the card) -->
+        <!-- FOOTER -->
         <footer class="app-footer">
-          RAILCORE CPKC WORKER APP · V3.10.0
+          RAILCORE CPKC WORKER APP · V4.0.0
         </footer>
       </section>
     </main>
@@ -212,5 +222,16 @@ Loading RailCore snapshot…
   <!-- DATA + APP LOGIC -->
   <script src="data_loader.js"></script>
   <script src="app.js"></script>
+  <script>
+    // Offline support + installability. Without this registration the
+    // service worker never runs (gap present since v3.8).
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("service-worker.js").catch((err) => {
+          console.warn("Service worker registration failed:", err);
+        });
+      });
+    }
+  </script>
 </body>
 </html>
