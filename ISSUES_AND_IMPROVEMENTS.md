@@ -60,6 +60,17 @@ everything else after. Update this instead of scattering notes.
   on inline fallback data for months. Fixed; now generated from reviewed data.
 - 2026-08-17: mojibake (UTF-8-as-cp1252) in card strings repaired at export.
 
+## Claims lifecycle roadmap (Aaron, 2026-08-17 evening)
+1. ✅ Alert cards: tap for details, "I filed a claim"/"Dismiss", auto-retire
+   when the captured timeslips show a matching RA claim.
+2. Claim OUTCOME tracking from the finance page: WAIT APP → APP-TRND
+   (paid) or denied — with the wrinkle that a DENIED claim is sometimes
+   PAID ON ANOTHER LINE (match by date/amount across lines before calling
+   anything unpaid). Needs a claim-lineage model over
+   personal_timeslip_claims.
+3. Submit-claim button that prefills the miscellaneous-claim entry screen —
+   BLOCKED until that screen is scanned/mapped (not yet captured).
+
 ## Roadmap (Aaron's direction, 2026-08-17)
 1. ✅ Portal home + sections (v4.0.0): My Train quick-find, Lineups, Boards,
    Ref Cards, Crossings, Sidings, Track Lengths.
