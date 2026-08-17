@@ -25,6 +25,16 @@ everything else after. Update this instead of scattering notes.
 | 9 | Processor | Timed slots get marked done-for-the-day even when they FAIL and capture nothing (08-17: five empty slot runs all marked done). Should only mark done on success. | OPEN |
 | 8 | Backup | snapshots/ + railops.db (the unregenerable truth) have no automated offsite backup. | OPEN (high value) |
 
+## Open questions for the operator (rules the program will NOT guess)
+- Runaround calling rules: the detector flags CANDIDATES only. Today's set:
+  the two claimed events (180-16 @ 0815 → SW04, 781-14 @ 0900 → MU08) plus
+  three same-pattern afternoon events (280-16 @ 1145 → SW03, 253-15 @ 1201
+  → SW05, 261-18 @ 1300 → MU03). Are the afternoon ones also runarounds?
+  If not, what distinguishes them (pool protects its own trains? extraboard
+  only fills vacancies? rest rules?) — each answer becomes an encoded rule
+  and makes the detector smarter. This is also the seed of the rules-Q&A
+  engine: the governing agreement text should back every rule.
+
 ## Fixed
 - 2026-08-17 (pm): **History-sweep gap after outages** (operator caught it):
   start date was always now-minus-lookback with no check of when history
