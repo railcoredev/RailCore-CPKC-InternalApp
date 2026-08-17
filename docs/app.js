@@ -56,6 +56,7 @@ function cacheDom() {
   DOM.printButton = document.getElementById("printButton");
   DOM.downloadButton = document.getElementById("downloadButton");
   DOM.trainFindInput = document.getElementById("trainFindInput");
+  DOM.myNameInput = document.getElementById("myNameInput");
 
   DOM.yardSelect = document.getElementById("yardSelect");
   DOM.stationSelect = document.getElementById("stationSelect");
@@ -95,6 +96,12 @@ function wireEvents() {
   DOM.stationSelect.addEventListener("change", renderCurrentView);
   DOM.boardSelect.addEventListener("change", renderCurrentView);
   DOM.trainFindInput.addEventListener("input", renderCurrentView);
+  DOM.myNameInput.value = localStorage.getItem("railcore_my_name") || "";
+  DOM.myNameInput.addEventListener("input", () => {
+    try { localStorage.setItem("railcore_my_name", DOM.myNameInput.value.trim()); }
+    catch (_) {}
+    renderCurrentView();
+  });
 }
 
 async function initApp() {
@@ -689,10 +696,46 @@ function buildAlertCard(a, isQuiet) {
     return card;
 }
 
+// Personal picture from the feed: board positions + any train whose crew
+// list carries the user's name. Name is a local, device-only setting.
+function renderMyStatus(d) {
+  const me = (localStorage.getItem("railcore_my_name") || "").trim().toUpperCase();
+  if (!me || me.length < 3) {
+    return "Set MY NAME above (once) to see your board position and calls here.\n\n";
+  }
+  const lines = [`— YOU (${me}) —`];
+  let found = false;
+  (d.crew_boards.boards || []).forEach((b) => {
+    (b.rows || []).forEach((r) => {
+      if ((r.employee_name || "").toUpperCase().startsWith(me)) {
+        found = true;
+        lines.push(`Board: ${b.label || b.screen_title} — POS ${r.position}` +
+          `, turn ${r.turn_asgn}${r.home_away ? " (AWAY)" : ""}`);
+      }
+    });
+  });
+  (d.train_lineup.stations || []).forEach((st) => {
+    (st.trains || []).forEach((t) => {
+      const crew = (t.eng_crew || []).concat(t.trn_crew || []);
+      if (crew.some((m) => (m.name || "").toUpperCase().startsWith(me))) {
+        found = true;
+        lines.push(`Called/on: ${t.train_asgn} at ${st.name || st.location_code}` +
+          ` — ${t.date_time} ${t.status || ""}`);
+      }
+    });
+  });
+  if (!found) lines.push("Not currently on any captured board or crew list.");
+  lines.push("");
+  lines.push("────────────────────");
+  lines.push("");
+  return lines.join("\n");
+}
+
 function renderMyTrainView() {
   const d = lineupsData();
   if (!d) return "No lineup data available yet.";
 
+  const personal = renderMyStatus(d);
   const q = (DOM.trainFindInput.value || "").trim().toUpperCase();
   const stations = d.train_lineup.stations || [];
 
@@ -703,7 +746,7 @@ function renderMyTrainView() {
       const base = String(t.train_asgn || "").split("-")[0];
       if (base) symbols.add(base);
     }));
-    return "Type at least 2 characters of a train symbol.\n\n" +
+    return personal + "Type at least 2 characters of a train symbol.\n\n" +
       `On the board right now (${symbols.size} symbols):\n` +
       [...symbols].sort().join("  ");
   }
