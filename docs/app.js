@@ -4,6 +4,7 @@
 
 let SNAPSHOT = null;
 let LINEUPS = null;          // live feed: { data, fromCache } from loadLineupsSnapshot()
+let REFERENCE = null;        // cheat-sheet cards from loadSubdivisionReference()
 
 let currentSubdivisionId = null;
 let currentTab = "crossings"; // 'crossings' | 'sidings' | 'tracks' | 'lineups' | 'boards'
@@ -33,6 +34,7 @@ function cacheDom() {
   DOM.tabTracks = document.getElementById("tabTracks");
   DOM.tabLineups = document.getElementById("tabLineups");
   DOM.tabBoards = document.getElementById("tabBoards");
+  DOM.tabReference = document.getElementById("tabReference");
 
   DOM.yardBlock = document.getElementById("yardBlock");
   DOM.yardSelect = document.getElementById("yardSelect");
@@ -44,10 +46,10 @@ function cacheDom() {
   DOM.freshnessText = document.getElementById("freshnessText");
   DOM.resultsOutput = document.getElementById("resultsOutput");
 
-  // Crossing-specific control rows, hidden on the live-data tabs.
+  // Crossing-specific control rows, hidden on the live-data + reference tabs.
+  DOM.subdivisionBlock = DOM.subdivisionSelect.closest(".field-block");
   DOM.crossingControls = [
     DOM.stateSummary.closest(".field-block"),
-    DOM.subdivisionSelect.closest(".field-block"),
     document.querySelector(".spacing-row"),
     document.querySelector(".view-row"),
   ].filter(Boolean);
@@ -90,6 +92,7 @@ function wireEvents() {
   DOM.tabTracks.addEventListener("click", () => setTab("tracks"));
   DOM.tabLineups.addEventListener("click", () => setTab("lineups"));
   DOM.tabBoards.addEventListener("click", () => setTab("boards"));
+  DOM.tabReference.addEventListener("click", () => setTab("reference"));
 
   DOM.yardSelect.addEventListener("change", () => {
     if (currentTab === "tracks") {
@@ -115,9 +118,10 @@ async function initApp() {
     return;
   }
 
-  // Live lineups feed loads independently: reference data failing must not
-  // block lineups, and vice versa.
+  // Live lineups feed + cheat-sheet cards load independently: one failing
+  // must not block the others.
   LINEUPS = await loadLineupsSnapshot();
+  REFERENCE = await loadSubdivisionReference();
 
   populateStateSummary();
   populateSubdivisionSelect();
@@ -186,20 +190,23 @@ function setTab(tabId) {
 
   // Toggle tab button styles
   [DOM.tabCrossings, DOM.tabSidings, DOM.tabTracks,
-   DOM.tabLineups, DOM.tabBoards].forEach((btn) => {
+   DOM.tabLineups, DOM.tabBoards, DOM.tabReference].forEach((btn) => {
     btn.classList.toggle("active", btn.dataset.tab === tabId);
   });
 
   const isLive = tabId === "lineups" || tabId === "boards";
+  const isRef = tabId === "reference";
 
-  // Crossing-planning controls only make sense on the reference tabs.
-  DOM.crossingControls.forEach((el) => el.classList.toggle("hidden", isLive));
+  // Crossing-planning controls only make sense on the crossing/siding tabs;
+  // the subdivision picker additionally drives the Ref Card tab.
+  DOM.crossingControls.forEach((el) => el.classList.toggle("hidden", isLive || isRef));
+  DOM.subdivisionBlock.classList.toggle("hidden", isLive);
 
   DOM.yardBlock.classList.toggle("hidden", tabId !== "tracks");
   DOM.stationBlock.classList.toggle("hidden", tabId !== "lineups");
   DOM.boardBlock.classList.toggle("hidden", tabId !== "boards");
-  DOM.freshnessBar.classList.toggle("hidden", !isLive);
-  if (isLive) updateFreshnessBar();
+  DOM.freshnessBar.classList.toggle("hidden", !(isLive || isRef));
+  if (isLive || isRef) updateFreshnessBar();
 
   renderCurrentView();
 }
@@ -262,6 +269,8 @@ function renderCurrentView() {
     text = renderLineupsView();
   } else if (currentTab === "boards") {
     text = renderBoardsView();
+  } else if (currentTab === "reference") {
+    text = renderReferenceView();
   } else {
     text = renderTrackLengthsView();
   }
@@ -450,6 +459,13 @@ function formatAge(isoTs) {
 }
 
 function updateFreshnessBar() {
+  if (currentTab === "reference") {
+    const gen = REFERENCE && REFERENCE.meta ? REFERENCE.meta.generated_at : "";
+    DOM.freshnessText.textContent = REFERENCE
+      ? `Reviewed card data · published ${gen ? gen.slice(0, 10) : "?"} · verify before use`
+      : "Reference cards not available.";
+    return;
+  }
   const d = lineupsData();
   if (!d) {
     DOM.freshnessText.textContent = "No lineup data yet — will load when published.";
@@ -529,6 +545,66 @@ function renderBoardsView() {
     lines.push(`${pos}  ${turn} ${cr} ${nm} ${stc}${away}`);
   });
 
+  return lines.join("\n");
+}
+
+// ===================== SUBDIVISION REFERENCE (cheat-sheet cards) =====================
+// Data: docs/data/subdivision_reference.json, compiled by the CPKC
+// Subdivision CheatSheets program from reviewed, source-cited card data.
+
+function renderReferenceView() {
+  if (!REFERENCE || !REFERENCE.subdivisions) {
+    return "Reference cards not available yet.";
+  }
+  const card = REFERENCE.subdivisions.find((c) => c.id === currentSubdivisionId)
+    || REFERENCE.subdivisions[0];
+  if (!card) return "No card for this subdivision.";
+
+  const lines = [];
+  lines.push(card.name || card.id);
+  if (card.effective) lines.push(`Effective: ${card.effective}`);
+  lines.push("");
+
+  (card.facts || []).forEach((f) => lines.push(`${f.label}: ${f.value}`));
+  if (card.directionNote) {
+    lines.push("");
+    lines.push(card.directionNote);
+  }
+
+  if (card.station && card.station.rows) {
+    lines.push("");
+    lines.push(`── ${card.station.title || "STATIONS BY MILEPOST"} ──`);
+    card.station.rows.forEach((r) => {
+      const mp = String(r.mp || "").padStart(6);
+      const mop = String(r.mop || "").padEnd(4);
+      const loc = String(r.loc || "");
+      const pre = r.sub ? "   " : "";
+      let line = `${mp}  ${mop} ${pre}${loc}`;
+      if (r.notes) line += ` — ${r.notes}`;
+      lines.push(line);
+    });
+  }
+
+  (card.back || []).forEach((sec) => {
+    if (!sec.title) return;
+    lines.push("");
+    lines.push(`── ${sec.title} ──`);
+    if (sec.type === "table" && sec.rows) {
+      sec.rows.forEach((row) => {
+        lines.push(row.filter((cell) => String(cell).trim() !== "").join("  ·  "));
+      });
+    } else if (sec.items) {
+      sec.items.forEach((it) => {
+        const lead = it.lead ? `${it.lead} ` : "";
+        lines.push(`${lead}${it.text || ""}`.trim());
+      });
+    }
+  });
+
+  if (card.footer) {
+    lines.push("");
+    lines.push(card.footer);
+  }
   return lines.join("\n");
 }
 

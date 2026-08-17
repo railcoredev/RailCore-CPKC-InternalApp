@@ -1,0 +1,3229 @@
+{
+ "meta": {
+  "feed": "subdivision_reference",
+  "generated_at": "2026-08-17T16:13:06+00:00",
+  "source": "CPKC Subdivision CheatSheets program (reviewed cards)"
+ },
+ "subdivisions": [
+  {
+   "id": "cpkc_chicago",
+   "name": "CHICAGO SUBDIVISION",
+   "timetable": "US Eastern Region TT",
+   "effective": "July 1, 2024",
+   "facts": [
+    {
+     "label": "Subdivision Limits",
+     "value": "MP 40.3 \u2013 141.2"
+    },
+    {
+     "label": "Maximum Speed",
+     "value": "40 MPH"
+    },
+    {
+     "label": "Movement Authority",
+     "value": "TWC/ABS \u00b7 CTC"
+    },
+    {
+     "label": "PTC",
+     "value": "In effect"
+    }
+   ],
+   "directionNote": "Westward = increasing MP toward Lake South (141.2).  Eastward = decreasing MP toward Randall Road (40.3).  # = Control Point / Manual Interlocking.",
+   "station": {
+    "caption": "Sw Normal / Reverse / Query = radio-controlled switch request codes (GCOR 8.19.1). Movement over these switches is governed by ABS signals; ABS signals mark the OS limits.",
+    "columns": [
+     {
+      "key": "sta",
+      "header": "Sta #",
+      "width": 650,
+      "align": "center"
+     },
+     {
+      "key": "mop",
+      "header": "M.O.P.",
+      "width": 950,
+      "align": "center"
+     },
+     {
+      "key": "loc",
+      "header": "Location",
+      "width": 2100
+     },
+     {
+      "key": "mp",
+      "header": "MP",
+      "width": 750,
+      "align": "center"
+     },
+     {
+      "key": "sid",
+      "header": "Siding",
+      "width": 700,
+      "align": "center"
+     },
+     {
+      "key": "swN",
+      "header": "Sw Nml",
+      "width": 850,
+      "align": "center"
+     },
+     {
+      "key": "swR",
+      "header": "Sw Rev",
+      "width": 850,
+      "align": "center"
+     },
+     {
+      "key": "swQ",
+      "header": "Sw Qry",
+      "width": 850,
+      "align": "center"
+     },
+     {
+      "key": "notes",
+      "header": "Notes",
+      "width": 3100
+     }
+    ],
+    "rows": [
+     {
+      "mop": "TWC/ABS",
+      "loc": "RANDALL ROAD  #",
+      "mp": "40.3",
+      "notes": "CP \u00b7 West end 2 MT (Elgin Sub) \u00b7 East end DT",
+      "bold": true
+     },
+     {
+      "sta": "04561",
+      "mop": "TWC/ABS",
+      "loc": "PINGREE GROVE",
+      "mp": "42.0",
+      "swN": "44261",
+      "swR": "44263",
+      "swQ": "44265",
+      "notes": "West end DT (sw MP 41.9)",
+      "bold": true
+     },
+     {
+      "sta": "04559",
+      "mop": "TWC/ABS",
+      "loc": "HAMPSHIRE",
+      "mp": "51.0",
+      "bold": true
+     },
+     {
+      "loc": "ESS GENOA",
+      "mp": "57.0",
+      "swN": "44641",
+      "swR": "44643",
+      "sub": true
+     },
+     {
+      "sta": "04563",
+      "mop": "TWC/ABS",
+      "loc": "GENOA",
+      "mp": "58.0",
+      "sid": "9,246",
+      "bold": true
+     },
+     {
+      "loc": "WSS GENOA",
+      "mp": "58.9",
+      "swN": "44461",
+      "swR": "44463",
+      "sub": true
+     },
+     {
+      "loc": "ESS MONROE CENTER",
+      "mp": "72.3",
+      "swN": "72321",
+      "swR": "72323",
+      "sub": true
+     },
+     {
+      "mop": "TWC/ABS",
+      "loc": "MONROE CENTER",
+      "mp": "74.0",
+      "sid": "12,500",
+      "bold": true
+     },
+     {
+      "loc": "WSS MONROE CENTER",
+      "mp": "74.9",
+      "swN": "74851",
+      "swR": "74853",
+      "sub": true
+     },
+     {
+      "loc": "ESS DAVIS JCT",
+      "mp": "78.2",
+      "sub": true
+     },
+     {
+      "sta": "04568",
+      "mop": "TWC/ABS",
+      "loc": "DAVIS JCT",
+      "mp": "79.0",
+      "sid": "8,738",
+      "notes": "Illinois Railway Crossing",
+      "bold": true
+     },
+     {
+      "loc": "WSS DAVIS JCT",
+      "mp": "79.9",
+      "sub": true
+     },
+     {
+      "loc": "ESS ADELINE",
+      "mp": "99.7",
+      "sub": true
+     },
+     {
+      "sta": "04571",
+      "mop": "TWC/ABS",
+      "loc": "ADELINE",
+      "mp": "101.3",
+      "sid": "7,949",
+      "bold": true
+     },
+     {
+      "loc": "WSS ADELINE",
+      "mp": "101.4",
+      "sub": true
+     },
+     {
+      "loc": "ESS KITTREDGE",
+      "mp": "117.4",
+      "sub": true
+     },
+     {
+      "sta": "04573",
+      "mop": "TWC/ABS",
+      "loc": "KITTREDGE",
+      "mp": "118.5",
+      "sid": "11,270",
+      "bold": true
+     },
+     {
+      "loc": "WSS KITTREDGE",
+      "mp": "119.7",
+      "sub": true
+     },
+     {
+      "mop": "TWC/ABS",
+      "loc": "PLUM",
+      "mp": "136.3",
+      "notes": "TrAM Area 1 / 4 boundary",
+      "bold": true
+     },
+     {
+      "sta": "04580",
+      "mop": "TWC/ABS",
+      "loc": "EAST SAVANNA",
+      "mp": "137.7",
+      "notes": "East end DT \u00b7 Auto interlocking MP 137.7",
+      "bold": true
+     },
+     {
+      "sta": "04581",
+      "mop": "TWC/ABS",
+      "loc": "SAVANNA",
+      "mp": "138.4",
+      "notes": "BNSF Crossing \u00b7 Auto interlocking MP 138.4",
+      "bold": true
+     },
+     {
+      "mop": "CTC",
+      "loc": "WEST SAVANNA",
+      "mp": "140.0",
+      "notes": "West end DT \u00b7 ABS \u2192 CTC boundary",
+      "bold": true
+     },
+     {
+      "mop": "CTC",
+      "loc": "SABULA DRAWBRIDGE  #",
+      "mp": "140.5",
+      "notes": "CP \u00b7 CP Iowa Train Dispatcher \u00b7 manned by bridgetender (navigation season)",
+      "bold": true
+     },
+     {
+      "mop": "CTC",
+      "loc": "ISLAND  #",
+      "mp": "140.9",
+      "notes": "CP \u00b7 Davenport Sub",
+      "bold": true
+     },
+     {
+      "sta": "04583",
+      "mop": "CTC",
+      "loc": "LAKE SOUTH  #",
+      "mp": "141.2",
+      "notes": "CP \u00b7 Marquette Sub",
+      "bold": true
+     }
+    ],
+    "rowSize": 12
+   },
+   "back": [
+    {
+     "col": "L",
+     "type": "table",
+     "title": "RADIO CHANNELS",
+     "columns": [
+      {
+       "header": "Channel",
+       "width": 2100
+      },
+      {
+       "header": "AAR",
+       "width": 1600,
+       "align": "center"
+      },
+      {
+       "header": "Call-In",
+       "width": 1400,
+       "align": "center"
+      }
+     ],
+     "rows": [
+      [
+       "Road",
+       "065-065",
+       "1"
+      ],
+      [
+       "Yard",
+       "088-088",
+       ""
+      ],
+      [
+       "Elgin Dispr",
+       "094-094",
+       "1"
+      ],
+      [
+       "Engineering Service Reliability",
+       "",
+       "3"
+      ],
+      [
+       "Diesel Specialist",
+       "",
+       "5"
+      ],
+      [
+       "PTC Help Desk",
+       "",
+       "8"
+      ],
+      [
+       "Emergency",
+       "",
+       "911"
+      ]
+     ]
+    },
+    {
+     "col": "L",
+     "type": "table",
+     "title": "TELEPHONE",
+     "columns": [
+      {
+       "header": "Contact",
+       "width": 3400
+      },
+      {
+       "header": "Number",
+       "width": 1700,
+       "align": "center"
+      }
+     ],
+     "rows": [
+      [
+       "CPR Tower B17 Operator",
+       "630-860-4401"
+      ],
+      [
+       "IR Train Dispatcher",
+       "802-774-5025"
+      ],
+      [
+       "IR Fax",
+       "802-774-2902"
+      ]
+     ]
+    },
+    {
+     "col": "L",
+     "type": "table",
+     "title": "CONTROLLED SIDINGS",
+     "boldCol0": true,
+     "columns": [
+      {
+       "header": "Siding",
+       "width": 1900
+      },
+      {
+       "header": "ESS MP",
+       "width": 1100,
+       "align": "center"
+      },
+      {
+       "header": "WSS MP",
+       "width": 1100,
+       "align": "center"
+      },
+      {
+       "header": "Length",
+       "width": 1000,
+       "align": "center"
+      }
+     ],
+     "rows": [
+      [
+       "Genoa",
+       "57.0",
+       "58.9",
+       "9,246"
+      ],
+      [
+       "Monroe Center",
+       "72.3",
+       "74.9",
+       "12,500"
+      ],
+      [
+       "Davis Jct",
+       "78.2",
+       "79.9",
+       "8,738"
+      ],
+      [
+       "Adeline",
+       "99.7",
+       "101.4",
+       "7,949"
+      ],
+      [
+       "Kittredge",
+       "117.4",
+       "119.7",
+       "11,270"
+      ]
+     ]
+    },
+    {
+     "col": "L",
+     "type": "notes",
+     "title": "OPERATING NOTES",
+     "size": 13,
+     "items": [
+      {
+       "lead": "Method:",
+       "text": "TWC + ABS Randall Road\u2013West Savanna; CTC West Savanna\u2013Lake. PTC in effect entire sub."
+      },
+      {
+       "lead": "Double Track:",
+       "text": "Randall Road\u2013Pingree Grove & East Savanna\u2013West Savanna. From north: Westward & Eastward Track."
+      },
+      {
+       "lead": "TrAM:",
+       "text": "Area 1 = Sabula Jct\u2013Plum; Area 4 = Plum\u2013Pingree Grove."
+      },
+      {
+       "lead": "Interlockings:",
+       "text": "Sabula Drawbridge (CP Iowa TD). East Savanna auto interlocking MP 137.7 \u2013 switch power OFF & hand-operate when switching. Savanna BNSF auto interlocking MP 138.4."
+      },
+      {
+       "lead": "DOB:",
+       "text": "BRC main-track crews need current BRC Daily Operating Bulletin before leaving initial terminal; IHB crews carry current IHB DOB."
+      },
+      {
+       "lead": "RFI cold-weather (GO F-19):",
+       "text": "Solid intermodal / auto-rack / combo / empty-bulk trains, MP 94.0\u201395.0 & 103.0\u2013104.0: \u201315 to \u201321\u00b0F = 40, \u201322 to \u201339\u00b0F = 30; all track \u201340\u00b0F or colder = 30."
+      },
+      {
+       "lead": "Speed:",
+       "text": "Monroe Center through turnouts & siding = 30 MPH (GO F-19)."
+      }
+     ]
+    },
+    {
+     "col": "R",
+     "type": "table",
+     "title": "TRACKSIDE WARNING DETECTORS",
+     "columns": [
+      {
+       "header": "MP",
+       "width": 1500,
+       "align": "center"
+      },
+      {
+       "header": "Type",
+       "width": 1900,
+       "align": "center"
+      },
+      {
+       "header": "Call Back",
+       "width": 1700,
+       "align": "center"
+      }
+     ],
+     "rows": [
+      [
+       "44.4",
+       "HBD/DED",
+       "#044455"
+      ],
+      [
+       "53.0",
+       "HBD/DED",
+       "#053055"
+      ],
+      [
+       "84.7",
+       "HBD/DED",
+       "#084755"
+      ],
+      [
+       "98.6",
+       "HBD/DED",
+       "#098655"
+      ],
+      [
+       "110.9",
+       "HBD/DED",
+       "#110955"
+      ],
+      [
+       "128.5",
+       "HBD/DED",
+       "#128555"
+      ]
+     ]
+    },
+    {
+     "col": "R",
+     "type": "table",
+     "title": "BAD-ORDER SET-OUT TRACKS",
+     "boldCol0": true,
+     "columns": [
+      {
+       "header": "Location",
+       "width": 2100
+      },
+      {
+       "header": "Details",
+       "width": 3000
+      }
+     ],
+     "rows": [
+      [
+       "Savanna",
+       "MP 137.5, Track 2, 500 ft east of east switch"
+      ],
+      [
+       "Savanna",
+       "MP 138.1, depot stub tracks, west switch only"
+      ],
+      [
+       "Hampshire",
+       "MP 51.0"
+      ]
+     ]
+    },
+    {
+     "col": "R",
+     "type": "table",
+     "title": "OTHER TRACKS (not shown as stations)",
+     "columns": [
+      {
+       "header": "Sta #",
+       "width": 1200,
+       "align": "center"
+      },
+      {
+       "header": "Location",
+       "width": 1900
+      },
+      {
+       "header": "MP",
+       "width": 1000,
+       "align": "center"
+      },
+      {
+       "header": "Switch",
+       "width": 1000,
+       "align": "center"
+      }
+     ],
+     "rows": [
+      [
+       "04566",
+       "Kirkland",
+       "67.3",
+       "East end"
+      ],
+      [
+       "04569",
+       "Byron",
+       "88.9",
+       "Both ends"
+      ],
+      [
+       "04570",
+       "Leaf River",
+       "96.8",
+       "West end"
+      ],
+      [
+       "04572",
+       "Forreston",
+       "106.8",
+       "East end"
+      ],
+      [
+       "04576",
+       "Lanark",
+       "119.9",
+       "East end"
+      ],
+      [
+       "04574",
+       "Red Barn",
+       "129.3",
+       "East end"
+      ]
+     ]
+    }
+   ],
+   "footer": "Transcribed from CPKC US Eastern Region Timetable, Chicago Subdivision, pp. 72\u201373, eff. July 1, 2024, with GO F-19 (Apr 2, 2026): Monroe Center siding added, detector 73.6 retired, RFI cold-weather policy, Sabula bridgetender. Verify against current timetable and GBOs before operational use."
+  },
+  {
+   "id": "cpkc_davenport",
+   "name": "DAVENPORT SUBDIVISION",
+   "timetable": "US Eastern Region TT",
+   "effective": "July 1, 2024",
+   "facts": [
+    {
+     "label": "Subdivision Limits",
+     "value": "MP 140.9 \u2013 195.7"
+    },
+    {
+     "label": "Maximum Speed",
+     "value": "50 MPH"
+    },
+    {
+     "label": "Movement Authority",
+     "value": "CTC / YL"
+    },
+    {
+     "label": "PTC",
+     "value": "In effect"
+    }
+   ],
+   "directionNote": "Northward = decreasing MP toward Island (140.9).  Southward = increasing MP toward Nahant (195.7).  # = Control Point / Manual Interlocking.",
+   "station": {
+    "columns": [
+     {
+      "key": "sta",
+      "header": "Sta #",
+      "width": 850,
+      "align": "center"
+     },
+     {
+      "key": "mop",
+      "header": "M.O.P.",
+      "width": 1150,
+      "align": "center"
+     },
+     {
+      "key": "loc",
+      "header": "Location",
+      "width": 3000
+     },
+     {
+      "key": "mp",
+      "header": "MP",
+      "width": 900,
+      "align": "center"
+     },
+     {
+      "key": "sid",
+      "header": "Siding (ft)",
+      "width": 900,
+      "align": "center"
+     },
+     {
+      "key": "notes",
+      "header": "Notes",
+      "width": 4000
+     }
+    ],
+    "rows": [
+     {
+      "mop": "CTC",
+      "loc": "ISLAND",
+      "mp": "140.9",
+      "notes": "(Chicago Sub) \u2013 north end of Davenport Sub",
+      "bold": true
+     },
+     {
+      "sta": "04583",
+      "mop": "CTC",
+      "loc": "SABULA JCT  #",
+      "mp": "141.3",
+      "notes": "CP \u00b7 Marquette Sub",
+      "bold": true
+     },
+     {
+      "loc": "Deer Creek North  #",
+      "mp": "151.5",
+      "notes": "siding north end",
+      "sub": true
+     },
+     {
+      "sta": "04584",
+      "mop": "CTC",
+      "loc": "DEER CREEK",
+      "mp": "153.6",
+      "sid": "11,000",
+      "bold": true
+     },
+     {
+      "loc": "Deer Creek South  #",
+      "mp": "153.7",
+      "notes": "siding south end",
+      "sub": true
+     },
+     {
+      "loc": "UP 5TH ST CLINTON",
+      "mp": "157.6",
+      "notes": "UP Crossing \u00b7 N 157.6 / S 157.9",
+      "sub": true
+     },
+     {
+      "sta": "04587",
+      "mop": "CTC",
+      "loc": "CLINTON  #",
+      "mp": "158.0",
+      "notes": "CP \u00b7 UP Crossing \u00b7 Manual interlocking (UP TD-12) \u00b7 Continuous Quiet Zone",
+      "bold": true
+     },
+     {
+      "loc": "Camanche North  #",
+      "mp": "160.1",
+      "notes": "siding north end",
+      "sub": true
+     },
+     {
+      "sta": "04588",
+      "mop": "CTC",
+      "loc": "CAMANCHE",
+      "mp": "161.0",
+      "sid": "9,686",
+      "notes": "Jct UP",
+      "bold": true
+     },
+     {
+      "loc": "Camanche South  #",
+      "mp": "162.0",
+      "notes": "siding south end",
+      "sub": true
+     },
+     {
+      "mop": "CTC",
+      "loc": "CP167  #",
+      "mp": "167.09",
+      "notes": "CP",
+      "bold": true
+     },
+     {
+      "sta": "04590",
+      "mop": "CTC",
+      "loc": "PRINCETON",
+      "mp": "172.4",
+      "bold": true
+     },
+     {
+      "loc": "Le Claire North  #",
+      "mp": "176.9",
+      "notes": "siding north end",
+      "sub": true
+     },
+     {
+      "sta": "04591",
+      "mop": "CTC",
+      "loc": "LE CLAIRE",
+      "mp": "177.0",
+      "sid": "4,798",
+      "bold": true
+     },
+     {
+      "loc": "Le Claire South  #",
+      "mp": "177.9",
+      "notes": "siding south end",
+      "sub": true
+     },
+     {
+      "mop": "CTC",
+      "loc": "CP182  #",
+      "mp": "182.1",
+      "notes": "CP",
+      "bold": true
+     },
+     {
+      "sta": "04592",
+      "mop": "CTC",
+      "loc": "PLEASANT VALLEY",
+      "mp": "184.0",
+      "bold": true
+     },
+     {
+      "loc": "Bettendorf North  #",
+      "mp": "187.6",
+      "notes": "siding north end",
+      "sub": true
+     },
+     {
+      "sta": "04594",
+      "mop": "CTC",
+      "loc": "BETTENDORF",
+      "mp": "188.1",
+      "sid": "8,393",
+      "bold": true
+     },
+     {
+      "loc": "Bettendorf South  #",
+      "mp": "189.4",
+      "notes": "siding south end",
+      "sub": true
+     },
+     {
+      "sta": "04598",
+      "mop": "CTC",
+      "loc": "WATERWORKS",
+      "mp": "191.2",
+      "notes": "Eldridge Sub",
+      "bold": true
+     },
+     {
+      "mop": "CTC",
+      "loc": "CP193  #",
+      "mp": "193.2",
+      "notes": "CP \u00b7 CTC ends \u2192 YL \u00b7 NORTH yard limit MP 193.2 (CP 193)",
+      "bold": true
+     },
+     {
+      "mop": "YL",
+      "loc": "NORTH WYE SWITCH",
+      "mp": "193.5",
+      "notes": "Jct BNSF",
+      "bold": true
+     },
+     {
+      "mop": "YL",
+      "loc": "SOUTH WYE SWITCH",
+      "mp": "193.8",
+      "notes": "Jct BNSF",
+      "bold": true
+     },
+     {
+      "sta": "04600",
+      "mop": "YL",
+      "loc": "WEST DAVENPORT",
+      "mp": "194.0",
+      "bold": true
+     },
+     {
+      "sta": "04640",
+      "mop": "YL",
+      "loc": "NAHANT",
+      "mp": "195.7",
+      "notes": "Ottumwa Sub \u00b7 yard limit extends to MP 198.6 (Nahant, Ottumwa Sub)",
+      "bold": true
+     }
+    ],
+    "rowSize": 12
+   },
+   "back": [
+    {
+     "col": "L",
+     "type": "table",
+     "title": "RADIO CHANNELS",
+     "columns": [
+      {
+       "header": "Channel",
+       "width": 2600
+      },
+      {
+       "header": "AAR",
+       "width": 1500,
+       "align": "center"
+      },
+      {
+       "header": "Call-In",
+       "width": 1000,
+       "align": "center"
+      }
+     ],
+     "rows": [
+      [
+       "Road \u2013 Nahant to Deer Creek (KC OS)",
+       "044-044",
+       "1"
+      ],
+      [
+       "Road \u2013 Deer Creek to Island (Iowa OS)",
+       "084-084",
+       "1"
+      ],
+      [
+       "Eldridge Spur",
+       "044-044",
+       "1"
+      ],
+      [
+       "Nahant Yard",
+       "088-088",
+       ""
+      ],
+      [
+       "West Davenport Yard",
+       "028-028",
+       ""
+      ],
+      [
+       "UP Dispr Clinton (1900\u20130700, *51)",
+       "062-062",
+       "*43 / *51"
+      ],
+      [
+       "BNSF Crescent",
+       "074-074",
+       ""
+      ],
+      [
+       "BNSF Lawler",
+       "039-039",
+       "740"
+      ],
+      [
+       "Engineering Service Reliability",
+       "",
+       "3"
+      ],
+      [
+       "Diesel Specialist",
+       "",
+       "5"
+      ],
+      [
+       "PTC Help Desk",
+       "",
+       "8"
+      ],
+      [
+       "Emergency",
+       "",
+       "911"
+      ]
+     ]
+    },
+    {
+     "col": "L",
+     "type": "table",
+     "title": "TELEPHONE",
+     "columns": [
+      {
+       "header": "Contact",
+       "width": 3400
+      },
+      {
+       "header": "Number",
+       "width": 1700,
+       "align": "center"
+      }
+     ],
+     "rows": [
+      [
+       "UP Dispatcher 12",
+       "402-636-1863"
+      ],
+      [
+       "BNSF Operator \u2013 Crescent Bridge",
+       "309-788-0941"
+      ]
+     ]
+    },
+    {
+     "col": "L",
+     "type": "table",
+     "title": "CONTROLLED SIDINGS",
+     "boldCol0": true,
+     "columns": [
+      {
+       "header": "Siding",
+       "width": 1900
+      },
+      {
+       "header": "North MP",
+       "width": 1100,
+       "align": "center"
+      },
+      {
+       "header": "South MP",
+       "width": 1100,
+       "align": "center"
+      },
+      {
+       "header": "Length (ft)",
+       "width": 1000,
+       "align": "center"
+      }
+     ],
+     "rows": [
+      [
+       "Deer Creek",
+       "151.5",
+       "153.7",
+       "11,000"
+      ],
+      [
+       "Camanche",
+       "160.1",
+       "162.0",
+       "9,686"
+      ],
+      [
+       "Le Claire",
+       "176.9",
+       "177.9",
+       "4,798"
+      ],
+      [
+       "Bettendorf",
+       "187.6",
+       "189.4",
+       "8,393"
+      ]
+     ]
+    },
+    {
+     "col": "L",
+     "type": "table",
+     "title": "TRACKSIDE WARNING DETECTORS",
+     "columns": [
+      {
+       "header": "MP",
+       "width": 1500,
+       "align": "center"
+      },
+      {
+       "header": "Type",
+       "width": 1900,
+       "align": "center"
+      },
+      {
+       "header": "Call Back",
+       "width": 1700,
+       "align": "center"
+      }
+     ],
+     "rows": [
+      [
+       "150.0",
+       "HBD/DED",
+       "#150055"
+      ],
+      [
+       "170.0",
+       "HBD/DED",
+       "#170055"
+      ],
+      [
+       "189.8",
+       "HBD/DED",
+       "#189855"
+      ]
+     ]
+    },
+    {
+     "col": "R",
+     "type": "notes",
+     "title": "SPEED",
+     "size": 13,
+     "items": [
+      {
+       "lead": "Maximum:",
+       "text": "50 MPH (raised MP 141.3\u2013153.6). Exceptions (MPH): 140.9\u2013141.3 = 25 \u00b7 153.6\u2013160.0 = 20 \u00b7 157.8 Clinton UP interlocking crossovers = 20 \u00b7 160.0\u2013190.0 = 40 \u00b7 190.0\u2013193.9 = 25 \u00b7 193.9\u2013194.0 = 20 \u00b7 194.0\u2013195.7 = 25."
+      },
+      {
+       "text": "Through turnouts & sidings: Deer Creek = 30; Camanche = 25.  W. Davenport N. Lead = 15; Nahant Yard Tks 5/6/11/12 = 15; Nahant N. Lead = 15."
+      },
+      {
+       "text": "Loaded crude-oil / ethanol unit trains = 30 in non-signaled territory without Broken Rail Detection (unless lower prescribed)."
+      },
+      {
+       "lead": "Cold weather:",
+       "text": "\u201315\u00b0F or colder = 35; below \u201322\u00b0F = 30 (entire sub, unless more restrictive)."
+      },
+      {
+       "lead": "RFI cold-weather (GO F-18):",
+       "text": "Solid intermodal / auto-rack / combo / empty-bulk trains, MP 145.0\u2013150.0, 162.0\u2013163.0 & 170.0\u2013178.0: \u201315 to \u201321\u00b0F = 40, \u201322 to \u201339\u00b0F = 30; all track \u201340\u00b0F or colder = 30."
+      },
+      {
+       "lead": "Speed test:",
+       "text": "MP 164.0\u2013167.0 and MP 184.0\u2013187.0."
+      }
+     ]
+    },
+    {
+     "col": "R",
+     "type": "notes",
+     "title": "CONTINUOUS QUIET ZONES \u2013 GCOR 5.8.4",
+     "size": 12,
+     "items": [
+      {
+       "lead": "Clinton:",
+       "text": "32nd Ave N 154.0 \u00b7 30th Ave N 154.2 \u00b7 25th Ave N 154.7 \u00b7 24th Ave N 154.8 \u00b7 23rd Ave N 154.9 \u00b7 9th Ave N 156.2 \u00b7 6th Ave N 156.4 \u00b7 2nd Ave S 156.8 \u00b7 5th Ave S 157.1 \u00b7 6th Ave S 157.2."
+      },
+      {
+       "text": "No partial-quiet zones listed.",
+       "italic": true
+      }
+     ]
+    },
+    {
+     "col": "R",
+     "type": "notes",
+     "title": "KEY OPERATING NOTES",
+     "size": 12,
+     "items": [
+      {
+       "lead": "Yard Limits:",
+       "text": "MP 193.2 (CP 193) to MP 198.6 (Nahant, Ottumwa Sub)."
+      },
+      {
+       "lead": "Clinton:",
+       "text": "Manual interlocking, UP Train Dispatcher 12 (Omaha); MofW get foul time from UP TD."
+      },
+      {
+       "lead": "Crescent Bridge:",
+       "text": "Contact BNSF operator on AAR 074-074 before occupying; 18\u203206\u2033 height @ 24th St (Water Works); single-stack only \u2013 auto racks / >1-stack via IAIS Govt Bridge; cars >263,000 lb prohibited."
+      },
+      {
+       "lead": "Bettendorf:",
+       "text": "Loaded crude/ethanol tank cars must hold main track (no siding)."
+      },
+      {
+       "lead": "Remote Control:",
+       "text": "RCO in use MP 193.0\u2013198.6; cab may not be occupied."
+      }
+     ]
+    }
+   ],
+   "footer": "Transcribed from CPKC US Eastern Region Timetable, Davenport Subdivision, pp. 76\u201378, eff. July 1, 2024, with GO F-18 (Apr 2, 2026): max speed 50 MPH + new exceptions, Camanche siding relocated (N switch MP 160.1, 9,686 ft), yard limit 193.2\u2013198.6, RFI cold-weather policy. Not on card: electric locks, equipment restrictions, switch info. Verify against current timetable and GBOs before operational use."
+  },
+  {
+   "id": "cpkc_elgin",
+   "name": "ELGIN SUBDIVISION",
+   "timetable": "US Eastern Region TT",
+   "effective": "July 1, 2024",
+   "facts": [
+    {
+     "label": "Subdivision Limits",
+     "value": "MP 5.4 \u2013 40.3"
+    },
+    {
+     "label": "Maximum Speed",
+     "value": "PSGR 70 / OTHER 40"
+    },
+    {
+     "label": "Movement Authority",
+     "value": "CTC (entire sub)"
+    },
+    {
+     "label": "PTC",
+     "value": "In effect"
+    }
+   ],
+   "directionNote": "Westward = increasing MP toward Randall Road (40.3).  Eastward = decreasing MP toward Tower A5 (5.4).  # = Control Point / Manual Interlocking.",
+   "station": {
+    "columns": [
+     {
+      "key": "sta",
+      "header": "Sta #",
+      "width": 800,
+      "align": "center"
+     },
+     {
+      "key": "loc",
+      "header": "Location",
+      "width": 3400
+     },
+     {
+      "key": "mp",
+      "header": "MP",
+      "width": 950,
+      "align": "center"
+     },
+     {
+      "key": "notes",
+      "header": "Notes",
+      "width": 5650
+     }
+    ],
+    "rows": [
+     {
+      "loc": "TOWER A5  #",
+      "mp": "5.4",
+      "notes": "CP \u00b7 C&M Sub \u00b7 Track 0 connects to Tower A6 (MP 5.7)",
+      "bold": true
+     },
+     {
+      "loc": "TOWER B6  #",
+      "mp": "5.7",
+      "notes": "CP",
+      "bold": true
+     },
+     {
+      "loc": "GRAND/CICERO",
+      "mp": "6.6",
+      "bold": true
+     },
+     {
+      "loc": "CICERO WEST  #",
+      "mp": "6.7",
+      "notes": "CP \u00b7 Jct BRC Railroad",
+      "bold": true
+     },
+     {
+      "sta": "4526",
+      "loc": "HANSON PARK",
+      "mp": "7.7",
+      "bold": true
+     },
+     {
+      "sta": "4527",
+      "loc": "GALEWOOD",
+      "mp": "8.7",
+      "notes": "Galewood East # MP 8.5 \u00b7 Yard \u00b7 CQ MP 9.3\u20139.8 (whistle at Narragansett Ave 8.6)",
+      "bold": true
+     },
+     {
+      "sta": "4528",
+      "loc": "MARS",
+      "mp": "9.1",
+      "bold": true
+     },
+     {
+      "sta": "4529",
+      "loc": "MONT CLARE",
+      "mp": "9.5",
+      "notes": "PQ MP 9.8\u201310.6",
+      "bold": true
+     },
+     {
+      "sta": "4531",
+      "loc": "ELMWOOD PARK",
+      "mp": "10.2",
+      "bold": true
+     },
+     {
+      "sta": "4532",
+      "loc": "RIVER GROVE",
+      "mp": "11.5",
+      "bold": true
+     },
+     {
+      "loc": "TOWER B12  #",
+      "mp": "12.7",
+      "notes": "CP \u00b7 Jct CN (CN Crossing) & IHB \u00b7 West end 3 MT / East end 2 MT",
+      "bold": true
+     },
+     {
+      "sta": "4533",
+      "loc": "FRANKLIN PARK",
+      "mp": "13.2",
+      "notes": "Franklin Park West # MP 13.3 (CP)",
+      "bold": true
+     },
+     {
+      "sta": "4534",
+      "loc": "MANNHEIM",
+      "mp": "14.0",
+      "bold": true
+     },
+     {
+      "sta": "4540",
+      "loc": "BENSENVILLE YARD",
+      "mp": "15.5",
+      "notes": "Yard",
+      "bold": true
+     },
+     {
+      "sta": "4545",
+      "loc": "TOWER B17  #",
+      "mp": "17.0",
+      "notes": "CP \u00b7 PQ MP 16.8\u201317.8 \u00b7 York Rd AHS MP 17.08 / 17.16",
+      "bold": true
+     },
+     {
+      "loc": "BENSENVILLE",
+      "mp": "17.2",
+      "bold": true
+     },
+     {
+      "sta": "4547",
+      "loc": "WOOD DALE",
+      "mp": "19.1",
+      "notes": "Wood Dale East # MP 18.4",
+      "bold": true
+     },
+     {
+      "sta": "4548",
+      "loc": "ITASCA",
+      "mp": "21.0",
+      "notes": "Itasca East # MP 20.1",
+      "bold": true
+     },
+     {
+      "sta": "4550",
+      "loc": "MEDINAH",
+      "mp": "23.0",
+      "bold": true
+     },
+     {
+      "sta": "4551",
+      "loc": "ROSELLE",
+      "mp": "23.9",
+      "notes": "Roselle West # MP 25.0 (CP) \u00b7 PQ MP 24.1\u201324.9",
+      "bold": true
+     },
+     {
+      "sta": "4552",
+      "loc": "SCHAUMBURG",
+      "mp": "26.5",
+      "bold": true
+     },
+     {
+      "sta": "4553",
+      "loc": "HANOVER PARK",
+      "mp": "28.4",
+      "bold": true
+     },
+     {
+      "sta": "4554",
+      "loc": "BARTLETT",
+      "mp": "30.1",
+      "notes": "Bartlett East # MP 29.3 \u00b7 CQ MP 29.3\u201332.1",
+      "bold": true
+     },
+     {
+      "sta": "4555",
+      "loc": "SPAULDING  #",
+      "mp": "32.7",
+      "notes": "CP \u00b7 Jct CN (CN Crossing) \u00b7 Yard",
+      "bold": true
+     },
+     {
+      "sta": "4556",
+      "loc": "TOWER B35",
+      "mp": "35.2",
+      "notes": "# B35 East MP 35.2 / # B35 West MP 35.6 (CP)",
+      "bold": true
+     },
+     {
+      "loc": "NATIONAL ST",
+      "mp": "36.0",
+      "notes": "National St West No 2 MT # MP 36.1 (CP)",
+      "bold": true
+     },
+     {
+      "sta": "4557",
+      "loc": "ELGIN",
+      "mp": "36.6",
+      "notes": "Elgin East # MP 36.4 (CP)",
+      "bold": true
+     },
+     {
+      "loc": "ALMORA  #",
+      "mp": "39.7",
+      "notes": "CP",
+      "bold": true
+     },
+     {
+      "loc": "BIG TIMBER",
+      "mp": "39.8",
+      "bold": true
+     },
+     {
+      "loc": "RANDALL ROAD  #",
+      "mp": "40.3",
+      "notes": "CP \u00b7 Chicago Sub \u00b7 East end DT \u00b7 West end 2 MT",
+      "bold": true
+     }
+    ],
+    "rowSize": 12
+   },
+   "back": [
+    {
+     "col": "L",
+     "type": "table",
+     "title": "RADIO CHANNELS",
+     "columns": [
+      {
+       "header": "Channel",
+       "width": 2900
+      },
+      {
+       "header": "AAR",
+       "width": 1300,
+       "align": "center"
+      },
+      {
+       "header": "Call-In",
+       "width": 900,
+       "align": "center"
+      }
+     ],
+     "rows": [
+      [
+       "Road",
+       "094-094",
+       "1"
+      ],
+      [
+       "Bensenville Yd \u2013 West / Intermodal / 7 lead / IM Pocket",
+       "065-065",
+       "7"
+      ],
+      [
+       "Bensenville Yd \u2013 A / New Arrival / D yard",
+       "088-088",
+       "7"
+      ],
+      [
+       "Bensenville Yd \u2013 F yard",
+       "034-034",
+       "7"
+      ],
+      [
+       "Bensenville Yd \u2013 C / Hump / Rip",
+       "084-084",
+       "7"
+      ],
+      [
+       "Bensenville \u2013 All Mechanical",
+       "024-024",
+       ""
+      ],
+      [
+       "UP North/East Dispr",
+       "062-062",
+       "*47"
+      ],
+      [
+       "Engineering Service Reliability",
+       "",
+       "3"
+      ],
+      [
+       "Diesel Specialist",
+       "",
+       "5"
+      ],
+      [
+       "PTC Help Desk",
+       "",
+       "8"
+      ],
+      [
+       "Emergency",
+       "",
+       "911"
+      ]
+     ]
+    },
+    {
+     "col": "L",
+     "type": "table",
+     "title": "TELEPHONE",
+     "columns": [
+      {
+       "header": "Contact",
+       "width": 3400
+      },
+      {
+       "header": "Number",
+       "width": 1700,
+       "align": "center"
+      }
+     ],
+     "rows": [
+      [
+       "Elgin Dispatcher (DOBs)",
+       "612-904-5834"
+      ]
+     ]
+    },
+    {
+     "col": "L",
+     "type": "notes",
+     "title": "RADIO-ACTIVATED SWITCH \u2013 GCOR 8.21",
+     "size": 12,
+     "items": [
+      {
+       "lead": "West Yard Hump Switch Lead:",
+       "text": "Yard Ch SOO5 / AAR 088-088. Normal (RCZ1) #0011 \u00b7 Reverse (RCZ2) #0022 \u00b7 Status/report only #0033. Positions announced over radio; enter tones swiftly to avoid time-out. Push-button: lock box on switch case (N/R)."
+      }
+     ]
+    },
+    {
+     "col": "L",
+     "type": "notes",
+     "title": "QUIET ZONES \u2013 GCOR 5.8.4",
+     "size": 12,
+     "items": [
+      {
+       "lead": "CQ:",
+       "text": "Chicago (Oak Park 9.16 \u2013 Harlem 9.79; whistle at Narragansett 8.6) \u00b7 Bensenville (Thatcher 11.4 \u2013 Church 17.58) \u00b7 Wood Dale (Ash 18.48 \u2013 Wood Dale Rd 19.17) \u00b7 Roselle Rodenburg 26.17 \u00b7 Itasca (Prospect 20.25 \u2013 Catalpa 21.37) \u00b7 Bartlett (Prospect 29.51 \u2013 Spaulding Rd 32.67)."
+      },
+      {
+       "lead": "PQ:",
+       "text": "Elmwood Park 2200\u20130600 (73rd Ave 9.95 \u2013 Grand Ave 10.51) \u00b7 Roselle 0001\u20130500 (Park/Prospect/Roselle Rd 24.37\u201324.59)."
+      },
+      {
+       "text": "Full crossing lists in timetable.",
+       "italic": true
+      }
+     ]
+    },
+    {
+     "col": "R",
+     "type": "notes",
+     "title": "SPEED",
+     "size": 12,
+     "items": [
+      {
+       "lead": "Maximum:",
+       "text": "PSGR 70 / OTHER 40 MPH."
+      },
+      {
+       "text": "MT 1&2: Tower A5\u2013Elgin 70/40, Elgin\u2013Randall Rd 50/40. MT 3: Tower A5\u2013MP 12.5 70/40, MP 12.5\u2013Tower B12 40/25. MT 3&4: Tower B12\u2013Franklin Park West 15/15."
+      },
+      {
+       "text": "Spaulding over EJE 70/40; MP 34.0\u201335 (MT 1&2) 55/40. Extensive yard, crossover & turnout exceptions \u2013 see timetable."
+      },
+      {
+       "lead": "Cold weather:",
+       "text": "\u201310 to \u201321\u00b0F = 60/40; below \u201322\u00b0F = 50/30 (entire sub, unless more restrictive)."
+      },
+      {
+       "lead": "Speed test:",
+       "text": "MP 32 to MP 31."
+      }
+     ]
+    },
+    {
+     "col": "R",
+     "type": "notes",
+     "title": "KEY OPERATING NOTES",
+     "size": 12,
+     "items": [
+      {
+       "lead": "Block / Control:",
+       "text": "CTC Tower A5\u2013Randall Rd (CP Elgin TD). Metra CCF controls Tower A5\u2013Franklin Park West; CP Tower B17 controls Franklin Park West\u2013Randall Rd."
+      },
+      {
+       "lead": "Main Track:",
+       "text": "3 MT Tower A5\u2013Franklin Park West; 4 MT Tower B12\u2013Franklin Park West; 2 MT Tower B12\u2013Randall Rd (tracks numbered 1\u20134 from the north)."
+      },
+      {
+       "lead": "DOB:",
+       "text": "Elgin Sub MP 5.4\u201340.3 protected by DOB; obtain from Elgin Dispatcher 612-904-5834 and verify before acting."
+      },
+      {
+       "lead": "Chicago critical crossings:",
+       "text": "Harlem, Narragansett & Oak Park Aves \u2013 notify dispatcher if blocked/anticipated >10 min."
+      },
+      {
+       "lead": "RCO:",
+       "text": "Bensenville Yard MP 13.6\u201317; locomotive cab may not be occupied."
+      },
+      {
+       "lead": "TrAM:",
+       "text": "Area 1 (entire Elgin Sub). Metra passenger service governed by CP rules/TT/GO."
+      }
+     ]
+    }
+   ],
+   "footer": "Transcribed from CPKC US Eastern Region Timetable, Elgin Subdivision, pp. 66\u201371, eff. July 1, 2024. Compressed to 2 pages \u2013 NOT on card (see timetable): full speed/crossover exceptions, electric locks, equipment restrictions, inter-track fences, signal indications, public-crossing rules, full quiet-zone crossing lists. Verify against current timetable and GBOs before operational use."
+  },
+  {
+   "id": "cpkc_kc",
+   "name": "KANSAS CITY SUBDIVISION",
+   "timetable": "US Southern Region TT",
+   "effective": "GO F-22, July 2, 2026",
+   "facts": [
+    {
+     "label": "Subdivision Limits",
+     "value": "MP 302.8 \u2013 498.9"
+    },
+    {
+     "label": "Maximum Speed",
+     "value": "see timetable"
+    },
+    {
+     "label": "Movement Authority",
+     "value": "YL \u00b7 TWC \u00b7 CTC"
+    },
+    {
+     "label": "PTC",
+     "value": "In effect"
+    }
+   ],
+   "directionNote": "Northward = decreasing MP toward Ottumwa (302.8).  Southward = increasing MP toward Airline Jct / Kansas City (498.9).  # = Control Point / Manual Interlocking.  Distance measured from Airline Jct.",
+   "station": {
+    "caption": "Collapsed to one row per siding \u2013 North/South switch MPs shown in Notes. Speed page was not provided in GO F-22; confirm maximum speed from the timetable.",
+    "columns": [
+     {
+      "key": "sta",
+      "header": "Sta #",
+      "width": 750,
+      "align": "center"
+     },
+     {
+      "key": "mop",
+      "header": "M.O.P.",
+      "width": 850,
+      "align": "center"
+     },
+     {
+      "key": "loc",
+      "header": "Location",
+      "width": 2500
+     },
+     {
+      "key": "mp",
+      "header": "MP (No 1)",
+      "width": 850,
+      "align": "center"
+     },
+     {
+      "key": "mp2",
+      "header": "No 2",
+      "width": 750,
+      "align": "center"
+     },
+     {
+      "key": "sid",
+      "header": "Siding (ft)",
+      "width": 900,
+      "align": "center"
+     },
+     {
+      "key": "notes",
+      "header": "Notes",
+      "width": 4200
+     }
+    ],
+    "rows": [
+     {
+      "sta": "04664",
+      "mop": "YL",
+      "loc": "OTTUMWA",
+      "mp": "302.8",
+      "sid": "YARD",
+      "notes": "(Ottumwa Sub) \u00b7 north end \u00b7 yard limit MP 302.4\u2013305.0",
+      "bold": true
+     },
+     {
+      "sta": "04665",
+      "mop": "TWC",
+      "loc": "BLAKESBURG",
+      "mp": "315.7",
+      "sid": "6,360",
+      "notes": "NSS 315.5 / SSS 316.8",
+      "bold": true
+     },
+     {
+      "sta": "04666",
+      "mop": "CTC",
+      "loc": "MORAVIA",
+      "mp": "329.0",
+      "sid": "11,100",
+      "notes": "Jct APCN \u00b7 Moravia North # 327.9 / South # 330.2",
+      "bold": true
+     },
+     {
+      "mop": "CTC",
+      "loc": "CP 338  #",
+      "mp": "338.4",
+      "notes": "CP (new)",
+      "bold": true
+     },
+     {
+      "sta": "04669",
+      "mop": "CTC",
+      "loc": "SEYMOUR",
+      "mp": "350.4",
+      "bold": true
+     },
+     {
+      "sta": "04670",
+      "mop": "CTC",
+      "loc": "SEWAL",
+      "mp": "355.0",
+      "sid": "12,000",
+      "notes": "Sewal North # 354.1 / South # 356.5",
+      "bold": true
+     },
+     {
+      "mop": "CTC",
+      "loc": "CP 367  #",
+      "mp": "367.5",
+      "notes": "CP",
+      "bold": true
+     },
+     {
+      "sta": "04673",
+      "mop": "CTC",
+      "loc": "NEWTOWN",
+      "mp": "380.0",
+      "sid": "10,200",
+      "notes": "Newtown North # 379.2 / South # 381.3",
+      "bold": true
+     },
+     {
+      "mop": "CTC",
+      "loc": "CP 392  #",
+      "mp": "392.7",
+      "notes": "CP",
+      "bold": true
+     },
+     {
+      "mop": "CTC",
+      "loc": "LAREDO",
+      "mp": "406.0",
+      "sid": "12,058",
+      "notes": "Laredo North # 405.1 / South # 407.6",
+      "bold": true
+     },
+     {
+      "sta": "04677",
+      "mop": "CTC",
+      "loc": "CHULA  #",
+      "mp": "414.1",
+      "notes": "CP",
+      "bold": true
+     },
+     {
+      "sta": "04678",
+      "mop": "CTC",
+      "loc": "CHILLICOTHE",
+      "mp": "422.7",
+      "sid": "5,063",
+      "notes": "Jct MNC \u00b7 Chillicothe North # 421.9 / South # 423.0",
+      "bold": true
+     },
+     {
+      "mop": "CTC",
+      "loc": "DAWN",
+      "mp": "430.0",
+      "sid": "10,600",
+      "notes": "Dawn North # 428.8 / South # 430.9",
+      "bold": true
+     },
+     {
+      "sta": "04680",
+      "mop": "CTC",
+      "loc": "BRAYMER",
+      "mp": "443.0",
+      "sid": "4,911",
+      "notes": "Braymer North # 442.1 / South # 443.2",
+      "bold": true
+     },
+     {
+      "sta": "04682",
+      "mop": "CTC",
+      "loc": "POLO  #",
+      "mp": "456.8",
+      "notes": "Jct UP \u00b7 North End 2 MT (Main 1 / Main 2 begins southward) \u00b7 NO 1 / NO 2",
+      "bold": true,
+      "mp2": "456.8"
+     },
+     {
+      "sta": "04684",
+      "mop": "CTC",
+      "loc": "LAWSON JCT  #",
+      "mp": "468.3",
+      "notes": "Jct UP \u00b7 NO 1 / NO 2",
+      "bold": true,
+      "mp2": "468.3"
+     },
+     {
+      "sta": "04686",
+      "mop": "CTC",
+      "loc": "EXCELSIOR SPRINGS",
+      "mp": "476.1",
+      "bold": true
+     },
+     {
+      "sta": "04688",
+      "mop": "CTC",
+      "loc": "MOSEBY JCT  #",
+      "mp": "481.5",
+      "notes": "Jct UP \u00b7 NO 1 / NO 2",
+      "bold": true,
+      "mp2": "481.5"
+     },
+     {
+      "sta": "04689",
+      "mop": "CTC",
+      "loc": "LIBERTY",
+      "mp": "488.9",
+      "sid": "5,050",
+      "notes": "Liberty North 488.1 / South 489.2",
+      "bold": true
+     },
+     {
+      "mop": "CTC",
+      "loc": "BIRMINGHAM  #",
+      "mp": "494.4",
+      "notes": "NS Crossing",
+      "bold": true
+     },
+     {
+      "mop": "CTC",
+      "loc": "MINNEVILLE  #",
+      "mp": "494.6",
+      "notes": "CP",
+      "bold": true
+     },
+     {
+      "mop": "CTC",
+      "loc": "DRAWBRIDGE  #",
+      "mp": "497.1",
+      "notes": "South End 2 MT / North End 2 MT (bridge)",
+      "bold": true
+     },
+     {
+      "mop": "CTC",
+      "loc": "FREIGHTLINE JCT  #",
+      "mp": "498.6",
+      "notes": "CP",
+      "bold": true
+     },
+     {
+      "sta": "04690",
+      "mop": "CTC",
+      "loc": "JOINT AGENCY",
+      "mp": "\u2013",
+      "sid": "YARD",
+      "notes": "South End 2 MT (Main 1 / Main 2 rejoins) \u00b7 Yard",
+      "bold": true
+     },
+     {
+      "sta": "04696",
+      "mop": "CTC",
+      "loc": "AIRLINE JCT  #",
+      "mp": "498.9",
+      "notes": "Jct KCS \u00b7 Kansas City \u00b7 south end",
+      "bold": true
+     }
+    ],
+    "rowSize": 12
+   },
+   "back": [
+    {
+     "col": "L",
+     "type": "table",
+     "title": "RADIO CHANNELS",
+     "columns": [
+      {
+       "header": "Channel",
+       "width": 2900
+      },
+      {
+       "header": "AAR",
+       "width": 1300,
+       "align": "center"
+      },
+      {
+       "header": "Call-In",
+       "width": 900,
+       "align": "center"
+      }
+     ],
+     "rows": [
+      [
+       "Road \u2013 Ottumwa to Laredo",
+       "044-044",
+       "1"
+      ],
+      [
+       "Road \u2013 Laredo to Airline Jct",
+       "044-044",
+       "1"
+      ],
+      [
+       "Yard",
+       "088-088",
+       "7"
+      ],
+      [
+       "Ottumwa Yard",
+       "065-065",
+       "7"
+      ],
+      [
+       "Knoche Yard Switching",
+       "063-063",
+       ""
+      ],
+      [
+       "NS Control Opr Birmingham",
+       "018-018",
+       "355"
+      ],
+      [
+       "Engineering Service Reliability",
+       "",
+       "3"
+      ],
+      [
+       "Diesel Specialist",
+       "",
+       "5"
+      ],
+      [
+       "PTC Help Desk",
+       "",
+       "8"
+      ],
+      [
+       "Emergency",
+       "",
+       "911"
+      ]
+     ]
+    },
+    {
+     "col": "L",
+     "type": "table",
+     "title": "CONTROLLED SIDINGS",
+     "boldCol0": true,
+     "size": 12,
+     "columns": [
+      {
+       "header": "Siding",
+       "width": 1900
+      },
+      {
+       "header": "North MP",
+       "width": 1100,
+       "align": "center"
+      },
+      {
+       "header": "South MP",
+       "width": 1100,
+       "align": "center"
+      },
+      {
+       "header": "Length (ft)",
+       "width": 1000,
+       "align": "center"
+      }
+     ],
+     "rows": [
+      [
+       "Blakesburg",
+       "315.5",
+       "316.8",
+       "6,360"
+      ],
+      [
+       "Moravia",
+       "327.9",
+       "330.2",
+       "11,100"
+      ],
+      [
+       "Sewal",
+       "354.1",
+       "356.5",
+       "12,000"
+      ],
+      [
+       "Newtown",
+       "379.2",
+       "381.3",
+       "10,200"
+      ],
+      [
+       "Laredo",
+       "405.1",
+       "407.6",
+       "12,058"
+      ],
+      [
+       "Chillicothe",
+       "421.9",
+       "423.0",
+       "5,063"
+      ],
+      [
+       "Dawn",
+       "428.8",
+       "430.9",
+       "10,600"
+      ],
+      [
+       "Braymer",
+       "442.1",
+       "443.2",
+       "4,911"
+      ],
+      [
+       "Liberty",
+       "488.1",
+       "489.2",
+       "5,050"
+      ]
+     ]
+    },
+    {
+     "col": "R",
+     "type": "table",
+     "title": "TRACKSIDE WARNING DETECTORS",
+     "size": 12,
+     "columns": [
+      {
+       "header": "MP",
+       "width": 1700,
+       "align": "center"
+      },
+      {
+       "header": "Type",
+       "width": 1700,
+       "align": "center"
+      },
+      {
+       "header": "Call Back",
+       "width": 1700,
+       "align": "center"
+      }
+     ],
+     "rows": [
+      [
+       "338.0",
+       "HBD/DED",
+       "#338055"
+      ],
+      [
+       "358.0",
+       "HBD/DED",
+       "#358055"
+      ],
+      [
+       "410.9",
+       "HBD/DED",
+       "#410955"
+      ],
+      [
+       "432.4",
+       "HBD/DED",
+       "#432455"
+      ],
+      [
+       "450.6",
+       "HBD/DED",
+       "#450655"
+      ],
+      [
+       "495.2 MT1",
+       "HBD/DED",
+       "#495266"
+      ],
+      [
+       "495.2 MT2",
+       "HBD/DED",
+       "#495244"
+      ]
+     ]
+    },
+    {
+     "col": "R",
+     "type": "notes",
+     "title": "KEY OPERATING NOTES",
+     "size": 12,
+     "items": [
+      {
+       "lead": "Two Main Tracks (Main 1 / Main 2):",
+       "text": "Polo (MP 456.8, North End 2 MT) southward to Joint Agency (South End 2 MT); Drawbridge is the 2 MT designation boundary. Single main track elsewhere. Detector MP 495.2 covers MT 1 & 2."
+      },
+      {
+       "lead": "Method:",
+       "text": "YL Ottumwa (yard 302.4\u2013305.0); TWC Blakesburg; CTC Moravia\u2013Airline Jct. Additional CTC in place Sewal North\u2013Moravia North (7-2-2026). New CPs: CP 338, Moravia N/S. Distant signal MP 325.6."
+      },
+      {
+       "lead": "APNC Jct:",
+       "text": "Automatic interlocking REMOVED (track reconfiguration). Enter CPKC main track only with Track Warrant authority from CPKC Ops Supervisor; do not open case door / unlock electric switch or operate MofW lock box without permission."
+      },
+      {
+       "lead": "Birmingham:",
+       "text": "NS Crossing \u00b7 NS Control Opr on AAR 018-018 (call-in 355)."
+      },
+      {
+       "lead": "Junctions:",
+       "text": "Polo, Lawson Jct, Moseby Jct (UP) \u00b7 Chillicothe (MNC) \u00b7 Moravia (APCN) \u00b7 Airline Jct (KCS)."
+      },
+      {
+       "text": "Additional detectors near MP 318, 372, 391, 485 appear on the station page but their call-backs were not legible \u2013 verify.",
+       "italic": true
+      }
+     ]
+    }
+   ],
+   "footer": "Transcribed from CPKC General Order F-22, Kansas City Subdivision, July 2, 2026 (station page pp. 4\u20135; radio/detector/interlocking p. 7 of 8). Maximum-speed page and full signal-indication detail NOT provided \u2013 obtain from timetable. Verify all values against current timetable and GBOs before operational use."
+  },
+  {
+   "id": "cpkc_ottumwa",
+   "name": "OTTUMWA SUBDIVISION",
+   "timetable": "US Eastern Region TT",
+   "effective": "July 1, 2024",
+   "facts": [
+    {
+     "label": "Subdivision Limits",
+     "value": "MP 195.7 \u2013 302.8"
+    },
+    {
+     "label": "Maximum Speed",
+     "value": "40 MPH"
+    },
+    {
+     "label": "Movement Authority",
+     "value": "CTC \u00b7 ABS/TWC \u00b7 YL"
+    },
+    {
+     "label": "PTC",
+     "value": "In effect"
+    }
+   ],
+   "directionNote": "Northward = decreasing MP toward Nahant (195.7).  Southward = increasing MP toward Ottumwa (302.8).  # = Control Point / Manual Interlocking.",
+   "station": {
+    "columns": [
+     {
+      "key": "sta",
+      "header": "Sta #",
+      "width": 900,
+      "align": "center"
+     },
+     {
+      "key": "mop",
+      "header": "M.O.P.",
+      "width": 1000,
+      "align": "center"
+     },
+     {
+      "key": "loc",
+      "header": "Location",
+      "width": 3400
+     },
+     {
+      "key": "mp",
+      "header": "MP",
+      "width": 750,
+      "align": "center"
+     },
+     {
+      "key": "sid",
+      "header": "Siding (ft)",
+      "width": 800,
+      "align": "center"
+     },
+     {
+      "key": "notes",
+      "header": "Notes",
+      "width": 3950
+     }
+    ],
+    "rows": [
+     {
+      "sta": "04640",
+      "mop": "YL",
+      "loc": "NAHANT",
+      "mp": "195.7",
+      "notes": "(Davenport Sub) \u00b7 yard 193.0\u2013198.6",
+      "bold": true
+     },
+     {
+      "mop": "YL",
+      "loc": "CP 198  #",
+      "mp": "198.6",
+      "notes": "CP \u00b7 S yard limit MP 198.6 \u00b7 Nahant Industry Track",
+      "bold": true
+     },
+     {
+      "sta": "04643",
+      "mop": "CTC",
+      "loc": "MONTPELIER NORTH",
+      "mp": "203.8",
+      "bold": true
+     },
+     {
+      "sta": "04644",
+      "mop": "CTC",
+      "loc": "MONTPELIER  #",
+      "mp": "205.6",
+      "notes": "N. Montpelier electric lock MP 203.6",
+      "bold": true
+     },
+     {
+      "sta": "04645",
+      "mop": "CTC",
+      "loc": "IPSCO  #",
+      "mp": "206.7",
+      "notes": "CP \u00b7 dual-control switch derail (GCOR 9.13)",
+      "bold": true
+     },
+     {
+      "loc": "Heinz North  #",
+      "mp": "215.5",
+      "notes": "siding north end",
+      "sub": true
+     },
+     {
+      "sta": "04646",
+      "mop": "CTC",
+      "loc": "HEINZ",
+      "mp": "216.0",
+      "sid": "8,856",
+      "bold": true
+     },
+     {
+      "loc": "Heinz South  #",
+      "mp": "217.4",
+      "notes": "CTC \u2192 ABS/TWC boundary",
+      "sub": true
+     },
+     {
+      "sta": "04649",
+      "mop": "ABS/TWC",
+      "loc": "MUSCATINE",
+      "mp": "220.3",
+      "notes": "Yard \u00b7 Continuous Quiet Zone",
+      "bold": true
+     },
+     {
+      "sta": "04650",
+      "mop": "CTC",
+      "loc": "FRUITLAND  #",
+      "mp": "227.0",
+      "notes": "ABS/TWC \u2192 CTC boundary",
+      "bold": true
+     },
+     {
+      "loc": "Letts North  #",
+      "mp": "230.8",
+      "notes": "siding north end",
+      "sub": true
+     },
+     {
+      "sta": "04651",
+      "mop": "CTC",
+      "loc": "LETTS",
+      "mp": "232.5",
+      "sid": "9,500",
+      "bold": true
+     },
+     {
+      "loc": "Letts South  #",
+      "mp": "232.7",
+      "notes": "siding south end",
+      "sub": true
+     },
+     {
+      "loc": "Cotter North  #",
+      "mp": "244.2",
+      "notes": "siding north end",
+      "sub": true
+     },
+     {
+      "sta": "04655",
+      "mop": "CTC",
+      "loc": "COTTER",
+      "mp": "245.3",
+      "sid": "6,112",
+      "bold": true
+     },
+     {
+      "loc": "Cotter South  #",
+      "mp": "245.5",
+      "notes": "siding south end",
+      "sub": true
+     },
+     {
+      "loc": "Washington North  #",
+      "mp": "253.6",
+      "notes": "siding north end",
+      "sub": true
+     },
+     {
+      "sta": "04658",
+      "mop": "CTC",
+      "loc": "WASHINGTON",
+      "mp": "254.0",
+      "sid": "10,400",
+      "bold": true
+     },
+     {
+      "loc": "Washington South  #",
+      "mp": "255.7",
+      "notes": "siding south end",
+      "sub": true
+     },
+     {
+      "mop": "CTC",
+      "loc": "CP 258  #",
+      "mp": "258.0",
+      "notes": "CP",
+      "bold": true
+     },
+     {
+      "mop": "CTC",
+      "loc": "CP 265  #",
+      "mp": "265.8",
+      "notes": "CP",
+      "bold": true
+     },
+     {
+      "sta": "04659",
+      "mop": "CTC",
+      "loc": "RUBIO",
+      "mp": "271.3",
+      "notes": "bad-order MP 271.5 (N of signaled xing)",
+      "bold": true
+     },
+     {
+      "mop": "CTC",
+      "loc": "CP 273  #",
+      "mp": "273.7",
+      "notes": "CP",
+      "bold": true
+     },
+     {
+      "loc": "Linby North  #",
+      "mp": "281.85",
+      "notes": "siding north end",
+      "sub": true
+     },
+     {
+      "sta": "04660",
+      "mop": "CTC",
+      "loc": "LINBY",
+      "mp": "283.0",
+      "sid": "12,000",
+      "notes": "bad-order MP 283.1 N end house track",
+      "bold": true
+     },
+     {
+      "loc": "Linby South  #",
+      "mp": "284.25",
+      "notes": "siding south end",
+      "sub": true
+     },
+     {
+      "mop": "CTC",
+      "loc": "CP 292  #",
+      "mp": "292.3",
+      "notes": "CP",
+      "bold": true
+     },
+     {
+      "loc": "Rutledge North  #",
+      "mp": "297.7",
+      "notes": "siding north end",
+      "sub": true
+     },
+     {
+      "sta": "04662",
+      "mop": "CTC",
+      "loc": "RUTLEDGE",
+      "mp": "298.8",
+      "sid": "5,784",
+      "bold": true
+     },
+     {
+      "loc": "Rutledge South  #",
+      "mp": "298.88",
+      "notes": "siding south end",
+      "sub": true
+     },
+     {
+      "sta": "04663",
+      "mop": "CTC",
+      "loc": "LAWLER  #",
+      "mp": "301.5",
+      "notes": "CP \u00b7 BNSF Crossing \u00b7 manual interlocking (BNSF dispr)",
+      "bold": true
+     },
+     {
+      "sta": "04664",
+      "mop": "YL",
+      "loc": "OTTUMWA",
+      "mp": "302.8",
+      "notes": "(Kansas City Sub) \u00b7 yard 302.4\u2013305.0 \u00b7 S sw 303.9",
+      "bold": true
+     }
+    ],
+    "rowSize": 11
+   },
+   "back": [
+    {
+     "col": "L",
+     "type": "table",
+     "title": "RADIO CHANNELS",
+     "columns": [
+      {
+       "header": "Channel",
+       "width": 2600
+      },
+      {
+       "header": "AAR",
+       "width": 1500,
+       "align": "center"
+      },
+      {
+       "header": "Call-In",
+       "width": 1000,
+       "align": "center"
+      }
+     ],
+     "rows": [
+      [
+       "Road",
+       "044-044",
+       "1"
+      ],
+      [
+       "Yard",
+       "065-065",
+       ""
+      ],
+      [
+       "BNSF Dispr Lawler",
+       "039-039",
+       "740"
+      ],
+      [
+       "Engineering Service Reliability",
+       "",
+       "3"
+      ],
+      [
+       "Diesel Specialist",
+       "",
+       "5"
+      ],
+      [
+       "PTC Help Desk",
+       "",
+       "8"
+      ],
+      [
+       "Emergency",
+       "",
+       "911"
+      ]
+     ]
+    },
+    {
+     "col": "L",
+     "type": "table",
+     "title": "TELEPHONE",
+     "columns": [
+      {
+       "header": "Contact",
+       "width": 3400
+      },
+      {
+       "header": "Number",
+       "width": 1700,
+       "align": "center"
+      }
+     ],
+     "rows": [
+      [
+       "BNSF Creston Dispatcher",
+       "817-867-7044"
+      ]
+     ]
+    },
+    {
+     "col": "L",
+     "type": "table",
+     "title": "CONTROLLED SIDINGS",
+     "boldCol0": true,
+     "columns": [
+      {
+       "header": "Siding",
+       "width": 1900
+      },
+      {
+       "header": "North MP",
+       "width": 1100,
+       "align": "center"
+      },
+      {
+       "header": "South MP",
+       "width": 1100,
+       "align": "center"
+      },
+      {
+       "header": "Length (ft)",
+       "width": 1000,
+       "align": "center"
+      }
+     ],
+     "rows": [
+      [
+       "Heinz",
+       "215.5",
+       "217.4",
+       "8,856"
+      ],
+      [
+       "Letts",
+       "230.8",
+       "232.7",
+       "9,500"
+      ],
+      [
+       "Cotter",
+       "244.2",
+       "245.5",
+       "6,112"
+      ],
+      [
+       "Washington",
+       "253.6",
+       "255.7",
+       "10,400"
+      ],
+      [
+       "Linby",
+       "281.85",
+       "284.25",
+       "12,000"
+      ],
+      [
+       "Rutledge",
+       "297.7",
+       "298.88",
+       "5,784"
+      ]
+     ]
+    },
+    {
+     "col": "L",
+     "type": "table",
+     "title": "TRACKSIDE WARNING DETECTORS",
+     "columns": [
+      {
+       "header": "MP",
+       "width": 1500,
+       "align": "center"
+      },
+      {
+       "header": "Type",
+       "width": 1900,
+       "align": "center"
+      },
+      {
+       "header": "Call Back",
+       "width": 1700,
+       "align": "center"
+      }
+     ],
+     "rows": [
+      [
+       "207.3",
+       "HBD/DED",
+       "#207355"
+      ],
+      [
+       "225.6",
+       "HBD/DED",
+       "#225655"
+      ],
+      [
+       "243.0",
+       "HBD/DED",
+       "#243055"
+      ],
+      [
+       "262.7",
+       "HBD/DED",
+       "#262755"
+      ],
+      [
+       "279.6",
+       "HBD/DED",
+       "#279655"
+      ],
+      [
+       "295.8",
+       "HBD/DED",
+       "#295855"
+      ]
+     ]
+    },
+    {
+     "col": "R",
+     "type": "notes",
+     "title": "SPEED",
+     "size": 12,
+     "items": [
+      {
+       "lead": "Maximum:",
+       "text": "40 MPH.  Exceptions: MP 195.7\u2013198.6 = 25 \u00b7 MP 298.8\u2013302.8 = 20 \u00b7 Heinz & Letts through turnouts/siding = 25 \u00b7 Heinz Spur = 10 \u00b7 Montpelier through turnout = 25 \u00b7 Washington & Linby through turnouts/siding = 30."
+      },
+      {
+       "text": "Yard tracks (Nahant, Muscatine, Luke Yard, Ottumwa) = 15; Nahant Industry Track MP 201.0\u2013205.5 = 25; Muscatine Sampson St MP 221.5 = HER 10."
+      },
+      {
+       "text": "Loaded crude-oil / ethanol unit trains = 30 in non-signaled territory without Broken Rail Detection (unless lower prescribed)."
+      },
+      {
+       "lead": "Cold weather:",
+       "text": "\u201315\u00b0F: MP 195.7\u2013257.0 & 265.0\u2013302.8 = 35. \u201315 to \u201325\u00b0F: MP 257.0\u2013265.0 = 25. \u201325\u00b0F: MP 257.0\u2013265.0 = 10 (inspect ahead of each train). Below \u201322\u00b0F: entire sub = 30."
+      }
+     ]
+    },
+    {
+     "col": "R",
+     "type": "notes",
+     "title": "CONTINUOUS QUIET ZONES \u2013 GCOR 5.8.4",
+     "size": 12,
+     "items": [
+      {
+       "lead": "Muscatine:",
+       "text": "Mad Creek 218.8 \u00b7 Cedar St 219.2 \u00b7 Iowa St 219.3 \u00b7 Sycamore St 219.3 \u00b7 Chestnut St 219.4 \u00b7 Hershey Ave 219.9."
+      },
+      {
+       "text": "No partial-quiet zones listed.",
+       "italic": true
+      }
+     ]
+    },
+    {
+     "col": "R",
+     "type": "notes",
+     "title": "KEY OPERATING NOTES",
+     "size": 12,
+     "items": [
+      {
+       "lead": "Yard Limits:",
+       "text": "Nahant MP 193.0\u2013198.6 \u00b7 Ottumwa MP 302.4\u2013305.0."
+      },
+      {
+       "lead": "Method:",
+       "text": "CTC (S. Yard Nahant\u2013Heinz, Fruitland\u2013Ottumwa); ABS + TWC Heinz\u2013Fruitland (MP 217.4\u2013227.1). PTC entire sub."
+      },
+      {
+       "lead": "Lawler:",
+       "text": "Manual interlocking controlled by BNSF dispatcher (CP Ops Supervisor may relay)."
+      },
+      {
+       "lead": "Nahant Industry:",
+       "text": "MP 194.0\u2013198.6 contact Nahant Asst TM; MP 198.6\u2013Montpelier contact Ops Supervisor. Locos not permitted over bridge (outbound 1/2/3 & Clay) ~700 ft S of Meeker Farms crossing."
+      },
+      {
+       "lead": "BNSF trains:",
+       "text": "obtain CP TGBO at Creston, Galesburg or Ottumwa."
+      },
+      {
+       "lead": "Heavy grade:",
+       "text": "MP 301.3\u2013299.0 SWD avg 1.60%. RCO MP 193.0\u2013198.6, cab not occupied."
+      }
+     ]
+    }
+   ],
+   "footer": "Transcribed from CPKC US Eastern Region Timetable, Ottumwa Subdivision, pp. 81\u201383, eff. July 1, 2024. Not on card (see timetable): full switch information, IPSCO dual-control-switch text, equipment restrictions, other tracks, bad-order details. Verify against current timetable and GBOs before operational use."
+  },
+  {
+   "id": "cpkc_elgin_index",
+   "mode": "index",
+   "name": "ELGIN SUB \u2013 MILEPOST INDEX",
+   "timetable": "US Eastern Region TT",
+   "effective": "July 1, 2024",
+   "radio": {
+    "columns": [
+     {
+      "header": "Channel",
+      "width": 3400
+     },
+     {
+      "header": "AAR",
+      "width": 1700,
+      "align": "center"
+     }
+    ],
+    "rows": [
+     [
+      "Road",
+      "094-094"
+     ],
+     [
+      "West Yard / IOC",
+      "065-065"
+     ],
+     [
+      "A / D yard",
+      "088-088"
+     ],
+     [
+      "F yard",
+      "034-034"
+     ],
+     [
+      "C yard",
+      "084-084"
+     ],
+     [
+      "Mechanical",
+      "024-024"
+     ],
+     [
+      "UP Dispr",
+      "062-062  *47"
+     ]
+    ]
+   },
+   "directionNote": "Read bottom-up: lowest milepost (MP 5.4 Tower A5 / east end) at the BOTTOM, highest (MP 40.3 Randall Road / west end) at top.  Bold ALL-CAPS = station / control point;  plain text = road crossing.  # = Control Point.  Quiet-zone status per timetable GCOR 5.8.4.",
+   "station": {
+    "title": "STATIONS & CROSSINGS BY MILEPOST",
+    "rowSize": 12,
+    "reverse": true,
+    "columns": [
+     {
+      "key": "mp",
+      "header": "MP",
+      "width": 850,
+      "align": "center"
+     },
+     {
+      "key": "loc",
+      "header": "Station / Crossing",
+      "width": 3100
+     },
+     {
+      "key": "qz",
+      "header": "Quiet Zone / Notes",
+      "width": 2800
+     }
+    ],
+    "rows": [
+     {
+      "mp": "5.4",
+      "loc": "TOWER A5  #",
+      "qz": "CP \u00b7 C&M Sub",
+      "bold": true
+     },
+     {
+      "mp": "5.7",
+      "loc": "TOWER B6  #",
+      "qz": "CP",
+      "bold": true
+     },
+     {
+      "mp": "6.6",
+      "loc": "GRAND/CICERO",
+      "bold": true
+     },
+     {
+      "mp": "6.7",
+      "loc": "CICERO WEST  #",
+      "qz": "CP \u00b7 Jct BRC",
+      "bold": true
+     },
+     {
+      "mp": "7.7",
+      "loc": "HANSON PARK",
+      "bold": true
+     },
+     {
+      "mp": "7.74",
+      "loc": "Hanson Park Ped"
+     },
+     {
+      "mp": "8.5",
+      "loc": "GALEWOOD EAST  #",
+      "qz": "siding N end",
+      "bold": true
+     },
+     {
+      "mp": "8.6",
+      "loc": "Naragansett Ave",
+      "qz": "CQ \u2013 whistle required"
+     },
+     {
+      "mp": "8.66",
+      "loc": "Galewood Ped"
+     },
+     {
+      "mp": "8.7",
+      "loc": "GALEWOOD",
+      "qz": "Yard",
+      "bold": true
+     },
+     {
+      "mp": "9.1",
+      "loc": "MARS",
+      "bold": true
+     },
+     {
+      "mp": "9.11",
+      "loc": "Mars Ped"
+     },
+     {
+      "mp": "9.16",
+      "loc": "Oak Park Ave",
+      "qz": "Continuous QZ"
+     },
+     {
+      "mp": "9.48",
+      "loc": "Sayre Ave",
+      "qz": "Continuous QZ"
+     },
+     {
+      "mp": "9.5",
+      "loc": "MONT CLARE",
+      "bold": true
+     },
+     {
+      "mp": "9.53",
+      "loc": "Mont Clare Ped",
+      "qz": "CQ (per hand sheet)"
+     },
+     {
+      "mp": "9.58",
+      "loc": "Nordica Ave",
+      "qz": "Continuous QZ"
+     },
+     {
+      "mp": "9.69",
+      "loc": "Neva Ave",
+      "qz": "Continuous QZ"
+     },
+     {
+      "mp": "9.79",
+      "loc": "Harlem Ave",
+      "qz": "Continuous QZ"
+     },
+     {
+      "mp": "9.95",
+      "loc": "73rd Ave",
+      "qz": "Partial QZ 2200\u20130600"
+     },
+     {
+      "mp": "10.18",
+      "loc": "75th Ave",
+      "qz": "Partial QZ 2200\u20130600"
+     },
+     {
+      "mp": "10.2",
+      "loc": "ELMWOOD PARK",
+      "bold": true
+     },
+     {
+      "mp": "10.33",
+      "loc": "Elmwood Pk Ped",
+      "qz": "Partial QZ 2200\u20130600"
+     },
+     {
+      "mp": "10.45",
+      "loc": "Grand Ave",
+      "qz": "Partial QZ 2200\u20130600"
+     },
+     {
+      "mp": "10.51",
+      "loc": "Ped Crossing",
+      "qz": "Partial QZ 2200\u20130600"
+     },
+     {
+      "mp": "11.4",
+      "loc": "Thatcher Ave",
+      "qz": "Continuous QZ (TT)"
+     },
+     {
+      "mp": "11.5",
+      "loc": "RIVER GROVE",
+      "bold": true
+     },
+     {
+      "mp": "12.12",
+      "loc": "River Rd (De Plaines River Rd)",
+      "qz": "Continuous QZ (TT)"
+     },
+     {
+      "mp": "12.31",
+      "loc": "Elm St",
+      "qz": "Continuous QZ (TT)"
+     },
+     {
+      "mp": "12.63",
+      "loc": "Belmont Crossing"
+     },
+     {
+      "mp": "12.67",
+      "loc": "North Central Franklin Pk Ped"
+     },
+     {
+      "mp": "12.7",
+      "loc": "TOWER B12  #",
+      "qz": "CP \u00b7 Jct CN & IHB \u00b7 W end 3 MT / E end 2 MT",
+      "bold": true
+     },
+     {
+      "mp": "12.85",
+      "loc": "Edginton St",
+      "qz": "Continuous QZ (TT)"
+     },
+     {
+      "mp": "12.99",
+      "loc": "Rose St / 25th Ave",
+      "qz": "Continuous QZ (TT)"
+     },
+     {
+      "mp": "13.04",
+      "loc": "Franklin Park Metra Sta (Ped)",
+      "qz": "Continuous QZ (TT)"
+     },
+     {
+      "mp": "13.13",
+      "loc": "Cal Wagner St",
+      "qz": "Continuous QZ (TT)"
+     },
+     {
+      "mp": "13.2",
+      "loc": "FRANKLIN PARK",
+      "bold": true
+     },
+     {
+      "mp": "13.26",
+      "loc": "Ruby St",
+      "qz": "Continuous QZ (TT)"
+     },
+     {
+      "mp": "13.3",
+      "loc": "FRANKLIN PARK WEST  #",
+      "qz": "CP",
+      "bold": true
+     },
+     {
+      "mp": "13.53",
+      "loc": "Scott St",
+      "qz": "Continuous QZ (TT)"
+     },
+     {
+      "mp": "14.0",
+      "loc": "MANNHEIM",
+      "bold": true
+     },
+     {
+      "mp": "15.5",
+      "loc": "BENSENVILLE YARD",
+      "qz": "Yard",
+      "bold": true
+     },
+     {
+      "mp": "17.0",
+      "loc": "TOWER B17  #",
+      "qz": "CP \u00b7 PQ 16.8\u201317.8",
+      "bold": true
+     },
+     {
+      "mp": "17.08",
+      "loc": "York Rd",
+      "qz": "Continuous QZ \u00b7 AHS"
+     },
+     {
+      "mp": "17.16",
+      "loc": "Center St",
+      "qz": "Continuous QZ \u00b7 AHS"
+     },
+     {
+      "mp": "17.2",
+      "loc": "BENSENVILLE",
+      "bold": true
+     },
+     {
+      "mp": "17.23",
+      "loc": "Addison St",
+      "qz": "Continuous QZ"
+     },
+     {
+      "mp": "17.58",
+      "loc": "Church St",
+      "qz": "Continuous QZ"
+     },
+     {
+      "mp": "18.4",
+      "loc": "WOOD DALE EAST  #",
+      "bold": true
+     },
+     {
+      "mp": "18.48",
+      "loc": "Ash Ave",
+      "qz": "Continuous QZ"
+     },
+     {
+      "mp": "19.08",
+      "loc": "Irving Park Rd",
+      "qz": "Continuous QZ"
+     },
+     {
+      "mp": "19.1",
+      "loc": "WOOD DALE",
+      "bold": true
+     },
+     {
+      "mp": "19.17",
+      "loc": "Wood Dale Rd",
+      "qz": "Continuous QZ"
+     },
+     {
+      "mp": "20.1",
+      "loc": "ITASCA EAST  #",
+      "bold": true
+     },
+     {
+      "mp": "20.25",
+      "loc": "Prospect Ave (Itasca)",
+      "qz": "Continuous QZ"
+     },
+     {
+      "mp": "21.0",
+      "loc": "ITASCA",
+      "bold": true
+     },
+     {
+      "mp": "21.02",
+      "loc": "Walnut St",
+      "qz": "Continuous QZ"
+     },
+     {
+      "mp": "21.07",
+      "loc": "Itasca Ped (Station Pedway)",
+      "qz": "Continuous QZ"
+     },
+     {
+      "mp": "21.37",
+      "loc": "Catalpa St",
+      "qz": "Continuous QZ"
+     },
+     {
+      "mp": "22.0",
+      "loc": "Rohlwing Rd"
+     },
+     {
+      "mp": "23.0",
+      "loc": "MEDINAH",
+      "bold": true
+     },
+     {
+      "mp": "23.06",
+      "loc": "Medinah Rd"
+     },
+     {
+      "mp": "23.9",
+      "loc": "ROSELLE",
+      "bold": true
+     },
+     {
+      "mp": "24.37",
+      "loc": "Park St",
+      "qz": "Partial QZ 0001\u20130500"
+     },
+     {
+      "mp": "24.46",
+      "loc": "Prospect St (Roselle)",
+      "qz": "Partial QZ 0001\u20130500"
+     },
+     {
+      "mp": "24.59",
+      "loc": "Roselle Rd",
+      "qz": "Partial QZ 0001\u20130500"
+     },
+     {
+      "mp": "25.0",
+      "loc": "ROSELLE WEST  #",
+      "qz": "CP",
+      "bold": true
+     },
+     {
+      "mp": "26.17",
+      "loc": "Rodenberg Rd",
+      "qz": "Continuous QZ (B-20 GO)"
+     },
+     {
+      "mp": "26.5",
+      "loc": "SCHAUMBURG",
+      "bold": true
+     },
+     {
+      "mp": "28.4",
+      "loc": "HANOVER PARK",
+      "bold": true
+     },
+     {
+      "mp": "29.3",
+      "loc": "BARTLETT EAST  #",
+      "bold": true
+     },
+     {
+      "mp": "29.51",
+      "loc": "Prospect Ave (Bartlett)",
+      "qz": "Continuous QZ"
+     },
+     {
+      "mp": "30.04",
+      "loc": "Bartlett Ped (Main St)",
+      "qz": "Continuous QZ"
+     },
+     {
+      "mp": "30.09",
+      "loc": "Oak Ave",
+      "qz": "Continuous QZ"
+     },
+     {
+      "mp": "30.1",
+      "loc": "BARTLETT",
+      "bold": true
+     },
+     {
+      "mp": "30.26",
+      "loc": "Western Ave",
+      "qz": "Continuous QZ"
+     },
+     {
+      "mp": "31.87",
+      "loc": "Naperville Rd",
+      "qz": "Continuous QZ"
+     },
+     {
+      "mp": "32.67",
+      "loc": "Spaulding Rd",
+      "qz": "No QZ"
+     },
+     {
+      "mp": "32.7",
+      "loc": "SPAULDING  #",
+      "qz": "CP \u00b7 Jct CN \u00b7 Yard",
+      "bold": true
+     },
+     {
+      "mp": "33.47",
+      "loc": "Gifford Rd"
+     },
+     {
+      "mp": "34.72",
+      "loc": "St. Charles Rd (Rt 25)"
+     },
+     {
+      "mp": "35.01",
+      "loc": "Raymond St"
+     },
+     {
+      "mp": "35.08",
+      "loc": "Elgin Ave"
+     },
+     {
+      "mp": "35.2",
+      "loc": "TOWER B35 EAST  #",
+      "qz": "CP",
+      "bold": true
+     },
+     {
+      "mp": "35.6",
+      "loc": "TOWER B35 WEST  #",
+      "qz": "CP",
+      "bold": true
+     },
+     {
+      "mp": "35.74",
+      "loc": "East Ped"
+     },
+     {
+      "mp": "35.8",
+      "loc": "Center Ped"
+     },
+     {
+      "mp": "35.89",
+      "loc": "National St Crossing"
+     },
+     {
+      "mp": "35.91",
+      "loc": "Chicago St"
+     },
+     {
+      "mp": "36.0",
+      "loc": "NATIONAL ST",
+      "bold": true
+     },
+     {
+      "mp": "36.1",
+      "loc": "NATIONAL ST WEST  #",
+      "qz": "CP",
+      "bold": true
+     },
+     {
+      "mp": "36.4",
+      "loc": "ELGIN EAST  #",
+      "qz": "CP",
+      "bold": true
+     },
+     {
+      "mp": "36.6",
+      "loc": "ELGIN",
+      "bold": true
+     },
+     {
+      "mp": "36.63",
+      "loc": "Highland"
+     },
+     {
+      "mp": "36.69",
+      "loc": "Kimble"
+     },
+     {
+      "mp": "37.02",
+      "loc": "McLean Blvd"
+     },
+     {
+      "mp": "39.7",
+      "loc": "ALMORA  #",
+      "qz": "CP",
+      "bold": true
+     },
+     {
+      "mp": "39.8",
+      "loc": "BIG TIMBER",
+      "bold": true
+     },
+     {
+      "mp": "40.3",
+      "loc": "RANDALL ROAD  #",
+      "qz": "CP \u00b7 Chicago Sub \u00b7 E end DT",
+      "bold": true
+     }
+    ]
+   },
+   "footer": "Crossings merged from Aaron's Elgin crossing sheet; quiet-zone status per CPKC US Eastern Region Timetable GCOR 5.8.4 (eff. July 1, 2024). '(TT)' = timetable lists as Continuous QZ but hand sheet leaves unmarked \u2013 verify. Also verify: Elm St MP (12.31 vs TT 12.23), Rose St vs 25th Ave @ 12.99, Mont Clare Ped CQ, West Ped MP. Verify against current timetable / GBOs before operational use."
+  }
+ ]
+}

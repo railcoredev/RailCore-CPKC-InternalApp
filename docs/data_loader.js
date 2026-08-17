@@ -5,6 +5,19 @@
 // Data Processor after every extraction sweep. Offline-first: the last good
 // copy is kept in localStorage so the app ALWAYS renders data with its age —
 // a failed fetch means "show cached + say how old", never an error screen.
+// Subdivision cheat-sheet cards (facts, stations by MP, radio, speed…),
+// compiled by the CPKC Subdivision CheatSheets program from reviewed sources.
+async function loadSubdivisionReference() {
+  try {
+    const res = await fetch('data/subdivision_reference.json', { cache: 'no-store' });
+    if (!res.ok) throw new Error('Reference HTTP ' + res.status);
+    return await res.json();
+  } catch (err) {
+    console.warn('Subdivision reference unavailable:', err);
+    return null;
+  }
+}
+
 async function loadLineupsSnapshot() {
   const url = 'data/lineups_snapshot.json';
   const CACHE_KEY = 'railcore_lineups_cache_v1';
