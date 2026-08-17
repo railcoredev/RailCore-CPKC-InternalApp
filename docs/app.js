@@ -3,9 +3,10 @@
 // Uses loadRailCoreSnapshot() from data_loader.js
 
 let SNAPSHOT = null;
+let LINEUPS = null;          // live feed: { data, fromCache } from loadLineupsSnapshot()
 
 let currentSubdivisionId = null;
-let currentTab = "crossings"; // 'crossings' | 'sidings' | 'tracks'
+let currentTab = "crossings"; // 'crossings' | 'sidings' | 'tracks' | 'lineups' | 'boards'
 let viewMode = "threshold"; // 'threshold' | 'all'
 
 const DOM = {};
@@ -30,10 +31,26 @@ function cacheDom() {
   DOM.tabCrossings = document.getElementById("tabCrossings");
   DOM.tabSidings = document.getElementById("tabSidings");
   DOM.tabTracks = document.getElementById("tabTracks");
+  DOM.tabLineups = document.getElementById("tabLineups");
+  DOM.tabBoards = document.getElementById("tabBoards");
 
   DOM.yardBlock = document.getElementById("yardBlock");
   DOM.yardSelect = document.getElementById("yardSelect");
+  DOM.stationBlock = document.getElementById("stationBlock");
+  DOM.stationSelect = document.getElementById("stationSelect");
+  DOM.boardBlock = document.getElementById("boardBlock");
+  DOM.boardSelect = document.getElementById("boardSelect");
+  DOM.freshnessBar = document.getElementById("freshnessBar");
+  DOM.freshnessText = document.getElementById("freshnessText");
   DOM.resultsOutput = document.getElementById("resultsOutput");
+
+  // Crossing-specific control rows, hidden on the live-data tabs.
+  DOM.crossingControls = [
+    DOM.stateSummary.closest(".field-block"),
+    DOM.subdivisionSelect.closest(".field-block"),
+    document.querySelector(".spacing-row"),
+    document.querySelector(".view-row"),
+  ].filter(Boolean);
 }
 
 function wireEvents() {
@@ -71,11 +88,20 @@ function wireEvents() {
   DOM.tabCrossings.addEventListener("click", () => setTab("crossings"));
   DOM.tabSidings.addEventListener("click", () => setTab("sidings"));
   DOM.tabTracks.addEventListener("click", () => setTab("tracks"));
+  DOM.tabLineups.addEventListener("click", () => setTab("lineups"));
+  DOM.tabBoards.addEventListener("click", () => setTab("boards"));
 
   DOM.yardSelect.addEventListener("change", () => {
     if (currentTab === "tracks") {
       renderCurrentView();
     }
+  });
+
+  DOM.stationSelect.addEventListener("change", () => {
+    if (currentTab === "lineups") renderCurrentView();
+  });
+  DOM.boardSelect.addEventListener("change", () => {
+    if (currentTab === "boards") renderCurrentView();
   });
 }
 
@@ -89,9 +115,15 @@ async function initApp() {
     return;
   }
 
+  // Live lineups feed loads independently: reference data failing must not
+  // block lineups, and vice versa.
+  LINEUPS = await loadLineupsSnapshot();
+
   populateStateSummary();
   populateSubdivisionSelect();
   populateYardSelectAll(); // yard dropdown shows all yards in snapshot (not filtered by sub)
+  populateStationSelect();
+  populateBoardSelect();
 
   // Default subdivision = first one
   if (SNAPSHOT.subdivisions && SNAPSHOT.subdivisions.length > 0) {
@@ -153,16 +185,21 @@ function setTab(tabId) {
   currentTab = tabId;
 
   // Toggle tab button styles
-  [DOM.tabCrossings, DOM.tabSidings, DOM.tabTracks].forEach((btn) => {
+  [DOM.tabCrossings, DOM.tabSidings, DOM.tabTracks,
+   DOM.tabLineups, DOM.tabBoards].forEach((btn) => {
     btn.classList.toggle("active", btn.dataset.tab === tabId);
   });
 
-  // Toggle yard dropdown visibility
-  if (tabId === "tracks") {
-    DOM.yardBlock.classList.remove("hidden");
-  } else {
-    DOM.yardBlock.classList.add("hidden");
-  }
+  const isLive = tabId === "lineups" || tabId === "boards";
+
+  // Crossing-planning controls only make sense on the reference tabs.
+  DOM.crossingControls.forEach((el) => el.classList.toggle("hidden", isLive));
+
+  DOM.yardBlock.classList.toggle("hidden", tabId !== "tracks");
+  DOM.stationBlock.classList.toggle("hidden", tabId !== "lineups");
+  DOM.boardBlock.classList.toggle("hidden", tabId !== "boards");
+  DOM.freshnessBar.classList.toggle("hidden", !isLive);
+  if (isLive) updateFreshnessBar();
 
   renderCurrentView();
 }
@@ -221,6 +258,10 @@ function renderCurrentView() {
     text = renderCrossingsView(spacingFt);
   } else if (currentTab === "sidings") {
     text = renderSidingsView();
+  } else if (currentTab === "lineups") {
+    text = renderLineupsView();
+  } else if (currentTab === "boards") {
+    text = renderBoardsView();
   } else {
     text = renderTrackLengthsView();
   }
@@ -343,6 +384,149 @@ function renderTrackLengthsView() {
     const desc = t.name || t.description || "";
     const len = t.length_ft != null ? t.length_ft : "";
     lines.push(`${id} — ${desc} — ${len.toLocaleString()} ft`);
+  });
+
+  return lines.join("\n");
+}
+
+// ===================== LIVE LINEUPS / BOARDS =====================
+// Data: docs/data/lineups_snapshot.json, published by the CPKC Data
+// Processor after each extraction sweep (program -> git repo -> app).
+
+function lineupsData() {
+  return LINEUPS && LINEUPS.data ? LINEUPS.data : null;
+}
+
+function populateStationSelect() {
+  const sel = DOM.stationSelect;
+  sel.innerHTML = "";
+  const d = lineupsData();
+  const stations = d ? d.train_lineup.stations || [] : [];
+  if (!stations.length) {
+    const opt = document.createElement("option");
+    opt.value = "";
+    opt.textContent = "No lineup data";
+    sel.appendChild(opt);
+    return;
+  }
+  stations.forEach((st) => {
+    const opt = document.createElement("option");
+    opt.value = st.location_code;
+    opt.textContent = `${st.name || st.location_code} (${st.location_code})`;
+    sel.appendChild(opt);
+  });
+}
+
+function populateBoardSelect() {
+  const sel = DOM.boardSelect;
+  sel.innerHTML = "";
+  const d = lineupsData();
+  const boards = d ? d.crew_boards.boards || [] : [];
+  if (!boards.length) {
+    const opt = document.createElement("option");
+    opt.value = "";
+    opt.textContent = "No board data";
+    sel.appendChild(opt);
+    return;
+  }
+  boards.forEach((b, i) => {
+    const opt = document.createElement("option");
+    opt.value = String(i);
+    opt.textContent = b.label || b.screen_title || `Board ${i + 1}`;
+    sel.appendChild(opt);
+  });
+}
+
+function formatAge(isoTs) {
+  if (!isoTs) return "";
+  const then = new Date(isoTs);
+  if (isNaN(then.getTime())) return "";
+  const mins = Math.round((Date.now() - then.getTime()) / 60000);
+  if (mins < 1) return "just now";
+  if (mins < 60) return `${mins}m ago`;
+  const hrs = Math.floor(mins / 60);
+  if (hrs < 48) return `${hrs}h ${mins % 60}m ago`;
+  return `${Math.floor(hrs / 24)}d ago`;
+}
+
+function updateFreshnessBar() {
+  const d = lineupsData();
+  if (!d) {
+    DOM.freshnessText.textContent = "No lineup data yet — will load when published.";
+    return;
+  }
+  const key = currentTab === "boards" ? "crew_boards" : "train_lineup";
+  const capturedAt = (d.meta.captured_at || {})[key] || "";
+  const when = capturedAt ? capturedAt.slice(0, 16).replace("T", " ") : "unknown";
+  const age = formatAge(capturedAt);
+  const cacheNote = LINEUPS.fromCache ? " · offline copy" : "";
+  DOM.freshnessText.textContent =
+    `Data as of ${when} UTC${age ? ` (${age})` : ""}${cacheNote}`;
+}
+
+function crewNames(list) {
+  return (list || [])
+    .map((m) => (m && m.name ? m.name : ""))
+    .filter(Boolean)
+    .join(" ");
+}
+
+function renderLineupsView() {
+  const d = lineupsData();
+  if (!d) return "No lineup data available yet.\n\nThe feed appears here once the Data Processor publishes it.";
+  updateFreshnessBar();
+
+  const code = DOM.stationSelect.value;
+  const st = (d.train_lineup.stations || []).find((s) => s.location_code === code)
+    || (d.train_lineup.stations || [])[0];
+  if (!st) return "No stations in the current lineup snapshot.";
+
+  const lines = [];
+  lines.push(`${(st.name || st.location_code).toUpperCase()} — ${st.trains.length} trains`);
+  lines.push("");
+
+  st.trains.forEach((t) => {
+    const rc = t.rc ? "  RC" : "";
+    lines.push(`${t.date_time}  ${t.train_asgn}${rc}  ${t.status || ""}`.trimEnd());
+    const eng = `ENG ${t.eng_crew_pool || "?"}×${t.eng_crew_count || "0"}`;
+    const trn = `TRN ${t.trn_crew_pool || "?"}×${t.trn_crew_count || "0"}`;
+    lines.push(`  ${eng} · ${trn}`);
+    const names = crewNames(t.eng_crew) + " " + crewNames(t.trn_crew);
+    if (names.trim()) lines.push(`  Crew: ${names.trim()}`);
+    if (t.information) lines.push(`  ${t.information}`);
+    lines.push("");
+  });
+
+  return lines.join("\n");
+}
+
+function renderBoardsView() {
+  const d = lineupsData();
+  if (!d) return "No crew board data available yet.\n\nThe feed appears here once the Data Processor publishes it.";
+  updateFreshnessBar();
+
+  const idx = parseInt(DOM.boardSelect.value, 10) || 0;
+  const b = (d.crew_boards.boards || [])[idx];
+  if (!b) return "No boards in the current snapshot.";
+
+  const lines = [];
+  lines.push(`${b.label || b.screen_title}  [${b.subdistrict || ""}]`);
+  lines.push("");
+
+  if (!b.rows || !b.rows.length) {
+    lines.push("(no one on this board in the last sweep)");
+    return lines.join("\n");
+  }
+
+  lines.push("POS  TURN   CR  NAME    ST");
+  b.rows.forEach((r) => {
+    const pos = String(r.position || "").padStart(3);
+    const turn = String(r.turn_asgn || "").padEnd(6);
+    const cr = String(r.craft_code || "").padEnd(3);
+    const nm = String(r.employee_name || "").padEnd(7);
+    const stc = String(r.status_code || "");
+    const away = r.home_away ? "  AWAY" : "";
+    lines.push(`${pos}  ${turn} ${cr} ${nm} ${stc}${away}`);
   });
 
   return lines.join("\n");

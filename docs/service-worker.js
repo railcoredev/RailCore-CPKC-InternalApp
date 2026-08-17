@@ -1,6 +1,9 @@
-// service-worker.js — RailCore CPKC Worker App v3.8
-const CACHE_NAME = "railcore-cpkc-worker-v38";
+// service-worker.js — RailCore CPKC Worker App v3.9
+const CACHE_NAME = "railcore-cpkc-worker-v39";
 
+// Only files that actually exist: addAll() rejects the whole install if any
+// asset 404s (this is what silently broke v38 updates — it listed four
+// data/*.json files that were never published).
 const CORE_ASSETS = [
   "./",
   "./index.html",
@@ -8,11 +11,7 @@ const CORE_ASSETS = [
   "./app.js",
   "./data_loader.js",
   "./manifest.webmanifest",
-  // Data snapshots (local offline bundles)
-  "./data/subdivisions.json",
-  "./data/sidings.json",
-  "./data/crossings.json",
-  "./data/yards.json"
+  "./data/railcore_snapshot.json"
 ];
 
 // INSTALL — cache everything
@@ -20,6 +19,7 @@ self.addEventListener("install", event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => cache.addAll(CORE_ASSETS))
   );
+  self.skipWaiting();
 });
 
 // ACTIVATE — clean old caches
@@ -31,16 +31,19 @@ self.addEventListener("activate", event => {
           .filter(key => key !== CACHE_NAME)
           .map(key => caches.delete(key))
       )
-    )
+    ).then(() => self.clients.claim())
   );
 });
 
-// FETCH — network first for HTML, cache first for everything else
+// FETCH — network first for HTML and live data JSON, cache first otherwise
 self.addEventListener("fetch", event => {
   const req = event.request;
+  const isHtml = req.headers.get("accept")?.includes("text/html");
+  // Live feeds (lineups every ~5 min) must always try the network so the
+  // app shows the freshest picture, falling back to cache when offline.
+  const isLiveData = req.url.includes("/data/");
 
-  // HTML gets network-first so updates show up without reload hell
-  if (req.headers.get("accept")?.includes("text/html")) {
+  if (isHtml || isLiveData) {
     event.respondWith(
       fetch(req)
         .then(res => {

@@ -1,6 +1,29 @@
 // data_loader.js
 // Loads the CPKC snapshot for the worker app (CPKC-only).
 
+// Live lineups feed (train lineups + crew boards), published by the CPKC
+// Data Processor after every extraction sweep. Offline-first: the last good
+// copy is kept in localStorage so the app ALWAYS renders data with its age —
+// a failed fetch means "show cached + say how old", never an error screen.
+async function loadLineupsSnapshot() {
+  const url = 'data/lineups_snapshot.json';
+  const CACHE_KEY = 'railcore_lineups_cache_v1';
+  try {
+    const res = await fetch(url, { cache: 'no-store' });
+    if (!res.ok) throw new Error('Lineups HTTP ' + res.status);
+    const json = await res.json();
+    try { localStorage.setItem(CACHE_KEY, JSON.stringify(json)); } catch (_) {}
+    return { data: json, fromCache: false };
+  } catch (err) {
+    console.warn('Lineups fetch failed, trying cached copy:', err);
+    try {
+      const cached = localStorage.getItem(CACHE_KEY);
+      if (cached) return { data: JSON.parse(cached), fromCache: true };
+    } catch (_) {}
+    return { data: null, fromCache: false };
+  }
+}
+
 async function loadRailCoreSnapshot() {
   const url = 'data/railcore_snapshot.json';
 

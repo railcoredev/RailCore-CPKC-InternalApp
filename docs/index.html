@@ -140,6 +140,20 @@
             >
               Track Lengths
             </button>
+            <button
+              class="tab-button"
+              data-tab="lineups"
+              id="tabLineups"
+            >
+              Lineups
+            </button>
+            <button
+              class="tab-button"
+              data-tab="boards"
+              id="tabBoards"
+            >
+              Boards
+            </button>
           </nav>
         </div>
         <!-- ========== END STICKY CONTROL PANEL ========== -->
@@ -154,6 +168,27 @@
             </select>
           </div>
 
+          <!-- Station dropdown (Lineups tab) -->
+          <div id="stationBlock" class="yard-block hidden">
+            <div class="field-label">STATION</div>
+            <select id="stationSelect" class="pill-input pill-select">
+              <!-- Populated by app.js from LINEUPS.train_lineup.stations -->
+            </select>
+          </div>
+
+          <!-- Crew board dropdown (Boards tab) -->
+          <div id="boardBlock" class="yard-block hidden">
+            <div class="field-label">CREW BOARD</div>
+            <select id="boardSelect" class="pill-input pill-select">
+              <!-- Populated by app.js from LINEUPS.crew_boards.boards -->
+            </select>
+          </div>
+
+          <!-- Data freshness (Lineups / Boards tabs): separate from app version -->
+          <div id="freshnessBar" class="yard-block hidden">
+            <div id="freshnessText" class="pill-input pill-readonly">–</div>
+          </div>
+
           <pre id="resultsOutput" class="results-output">
 Loading RailCore snapshot…
           </pre>
@@ -161,7 +196,7 @@ Loading RailCore snapshot…
 
         <!-- FOOTER (always at bottom of the card) -->
         <footer class="app-footer">
-          RAILCORE CPKC WORKER APP · V3.8.1
+          RAILCORE CPKC WORKER APP · V3.9.0
         </footer>
       </section>
     </main>
