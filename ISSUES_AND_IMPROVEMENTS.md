@@ -22,9 +22,28 @@ everything else after. Update this instead of scattering notes.
 | 5 | Names | Crew names published as initials (public Pages). Full names need private hosting (token/API). | BY DESIGN for now |
 | 6 | Ref cards | Only 5 subs + Elgin index have cards; catalog recognizes 59 subdivisions. Elgin index card not yet reachable in the app UI. | OPEN |
 | 7 | Processor | Collection watchdog missing: scheduler death is silent (died 08-05, unnoticed 12 days). Dead-man alert recommended. | OPEN |
+| 9 | Processor | Timed slots get marked done-for-the-day even when they FAIL and capture nothing (08-17: five empty slot runs all marked done). Should only mark done on success. | OPEN |
 | 8 | Backup | snapshots/ + railops.db (the unregenerable truth) have no automated offsite backup. | OPEN (high value) |
 
 ## Fixed
+- 2026-08-17 (pm): **History-sweep gap after outages** (operator caught it):
+  start date was always now-minus-lookback with no check of when history
+  last actually ran, and the last-run anchor was never read back from the
+  state file on restart — the 12-day outage left Aug 6–14 unrequested.
+  Fixed: gap-aware anchoring (extends the window back to the last successful
+  sweep, capped at 14 days, one-day overlap; dedup makes overlap free) +
+  anchor persisted across restarts. Backfill of Aug 4–17 run via the new
+  mechanism itself.
+- 2026-08-17 (pm): **District-prompt recovery typed into the wrong fields.**
+  Operator video caught it: on the E083 invalid-dist variant of the PSTS02
+  DISTRICT/SUB-DISTRICT prompt the cursor parks in SELECTION, not DISTRICT,
+  so recovery's "8I/OT" landed in the wrong boxes ~50 straight times. The
+  wedge killed the history sweep and left FIVE overdue timed slots
+  (seniority, truth audit, finance x2, vacation) capturing NOTHING — empty
+  run dirs, no error to the operator ("proceeds without extracting"). Fix:
+  Home keystroke (keylog-verified mapping) forces the cursor to DISTRICT
+  before typing (navigator.py answer_district_prompt). Video → frames →
+  cross-check-against-parsed-data workflow found it; keep using that.
 - 2026-08-17: SW v38 install silently failed (CORE_ASSETS listed 4 missing
   files) → app updates never applied. Fixed in v3.9.0.
 - 2026-08-17: railcore_snapshot.json was invalid JSON (JS comments) → app ran
