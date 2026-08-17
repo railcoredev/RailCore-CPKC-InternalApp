@@ -119,6 +119,16 @@ check-for-updates has a race where a still-installing worker misses the
 skipWaiting message; noted for a future shell fix). P2/P3 (document reader
 reflow + sticky section headings) remain — next portal work package.
 
+**THE MERGE (Portal v0.8.0, 2026-08-17 evening): BUILT, awaiting operator
+test.** modules/liveops in railcore-portal = My Train + Lineups + Boards +
+Ref Cards + alerts, header bell with live badge, fed by this repo's
+GitHub feed (works anywhere, no USB). Verified in browser: feed 9m fresh,
+full names, bell->alerts from any panel, ref cards. THIS standalone app
+stays deployed unchanged until the operator tests and approves the merge;
+then it becomes the feed-hosting repo only. To deploy the merged portal to
+the phone: serve railcore-portal on 8080 + adb reverse + app menu 'Check
+for updates' (x2 or force-stop once — known SW race).
+
 ## Decisions log
 - 2026-08-17: One app = RailCore-CPKC-InternalApp; feeds live in this repo's
   docs/data/; GitHub Pages = free middleman for single-user phase.
