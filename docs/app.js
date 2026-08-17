@@ -142,12 +142,17 @@ function updateHomeTiles() {
   const d = lineupsData();
   const tl = document.getElementById("tileSubLineups");
   const cb = document.getElementById("tileSubBoards");
+  const mt = document.getElementById("tileSubMytrain");
   if (d) {
     const cap = (d.meta.captured_at || {});
     const age = formatAge(cap.train_lineup);
     const cacheNote = LINEUPS.fromCache ? " · offline" : "";
     tl.textContent = `${d.train_lineup.train_count} trains · ${age || "?"}${cacheNote}`;
     cb.textContent = `${d.crew_boards.board_count} boards · ${formatAge(cap.crew_boards) || "?"}${cacheNote}`;
+    const nAlerts = (d.alerts || []).length;
+    mt.textContent = nAlerts
+      ? `⚠ ${nAlerts} alert${nAlerts === 1 ? "" : "s"} · find your train fast`
+      : "Find where a train sits, fast";
   } else {
     tl.textContent = "no data yet";
     cb.textContent = "no data yet";
@@ -527,6 +532,25 @@ function renderBoardsView() {
 // Search every station's lineup for a symbol fragment: two taps from app
 // open to "where does my train sit".
 
+function renderAlerts(d) {
+  const alerts = d.alerts || [];
+  if (!alerts.length) return "";
+  const lines = ["⚠ ALERTS (candidates — verify before acting)", ""];
+  alerts.forEach((a) => {
+    if (a.type === "runaround_candidate") {
+      lines.push(`${(a.when || "").replace("T", " ")}  ${a.train} went to ${a.went_to || "?"} (${a.their_turn || "?"})`);
+      lines.push(`  ${a.note || ""}`);
+    } else {
+      lines.push(`${(a.when || "").replace("T", " ")}  ${a.train}`);
+      lines.push(`  ${a.note || ""}`);
+    }
+    lines.push("");
+  });
+  lines.push("────────────────────");
+  lines.push("");
+  return lines.join("\n");
+}
+
 function renderMyTrainView() {
   const d = lineupsData();
   if (!d) return "No lineup data available yet.";
@@ -541,7 +565,8 @@ function renderMyTrainView() {
       const base = String(t.train_asgn || "").split("-")[0];
       if (base) symbols.add(base);
     }));
-    return "Type at least 2 characters of a train symbol.\n\n" +
+    return renderAlerts(d) +
+      "Type at least 2 characters of a train symbol.\n\n" +
       `On the board right now (${symbols.size} symbols):\n` +
       [...symbols].sort().join("  ");
   }
