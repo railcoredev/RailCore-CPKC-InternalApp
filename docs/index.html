@@ -63,6 +63,10 @@
               <div class="tile-title">Track Lengths</div>
               <div class="tile-sub" id="tileSubTracks">Yard tracks</div>
             </button>
+            <button class="tile" data-section="rsa" id="rsaTile">
+              <div class="tile-title">Remote RSA</div>
+              <div class="tile-sub" id="tileSubRsa">Approve login from anywhere</div>
+            </button>
           </div>
 
           <div class="emergency-row">
@@ -203,6 +207,23 @@
               </select>
             </div>
 
+            <!-- REMOTE RSA (rsa) -->
+            <div id="rsaBlock" class="field-block hidden">
+              <div class="field-label">GITHUB TOKEN (set once — stored on this device only)</div>
+              <input id="rsaToken" class="pill-input" type="password" autocomplete="off"
+                     placeholder="fine-grained PAT, Contents RW on the approve repo" />
+              <div class="field-label" style="margin-top:8px">APPROVE REPO</div>
+              <input id="rsaRepo" class="pill-input" type="text" autocomplete="off"
+                     placeholder="railcoredev/railcore-approve" />
+              <div class="field-label" style="margin-top:8px">RSA CODE (from your token — expires in 90s)</div>
+              <div class="field-row">
+                <input id="rsaCode" class="pill-input" type="text" inputmode="numeric"
+                       autocomplete="one-time-code" placeholder="6-8 digits" />
+                <button id="rsaSend" class="btn btn-primary">Send</button>
+              </div>
+              <div id="rsaResult" class="field-label" style="margin-top:8px"></div>
+            </div>
+
             <!-- CREW BOARD (boards) -->
             <div id="boardBlock" class="field-block hidden">
               <div class="field-label">CREW BOARD</div>
@@ -232,7 +253,7 @@ Loading…
 
         <!-- FOOTER -->
         <footer class="app-footer">
-          RAILCORE CPKC WORKER APP · V4.2.3
+          RAILCORE CPKC WORKER APP · V4.3.0
         </footer>
       </section>
     </main>

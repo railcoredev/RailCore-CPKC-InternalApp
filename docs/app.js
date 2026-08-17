@@ -20,6 +20,7 @@ const DOM = {};
 // freshness bar: truthful data age beats a clean layout.
 const SECTIONS = {
   notifications: { title: "NOTIFICATIONS", blocks: ["freshnessBar"] },
+  rsa:       { title: "REMOTE RSA",     blocks: ["rsaBlock"] },
   mytrain:   { title: "MY TRAIN",       blocks: ["findBlock", "freshnessBar"] },
   lineups:   { title: "TRAIN LINEUPS",  blocks: ["stationBlock", "freshnessBar"] },
   boards:    { title: "CREW BOARDS",    blocks: ["boardBlock", "freshnessBar"] },
@@ -30,7 +31,8 @@ const SECTIONS = {
 };
 
 const ALL_BLOCKS = ["stateBlock", "subdivisionBlock", "spacingBlock", "viewBlock",
-                    "findBlock", "yardBlock", "stationBlock", "boardBlock", "freshnessBar"];
+                    "findBlock", "yardBlock", "stationBlock", "boardBlock",
+                    "rsaBlock", "freshnessBar"];
 
 document.addEventListener("DOMContentLoaded", () => {
   cacheDom();
@@ -123,6 +125,8 @@ async function initApp() {
   }
 
   updateHomeTiles();
+  bindRsa();
+  collectionBanner();
 }
 
 // ===================== NAVIGATION =====================
@@ -182,6 +186,7 @@ function updateHomeTiles() {
   if (REFERENCE && REFERENCE.subdivisions) {
     rf.textContent = `${REFERENCE.subdivisions.length} subdivision cards`;
   }
+  collectionBanner();
   const sd = document.getElementById("tileSubSidings");
   if (SNAPSHOT && SNAPSHOT.sidings) {
     sd.textContent = `${SNAPSHOT.sidings.length} controlled sidings`;
@@ -895,6 +900,71 @@ function renderReferenceView() {
     lines.push(card.footer);
   }
   return lines.join("\n");
+}
+
+// ===================== REMOTE RSA APPROVE =====================
+// The operator types the RSA code HERE; it lands as a one-shot file in a
+// PRIVATE repo the operator owns, and the laptop's login advancer (parked
+// at rsa_wait) consumes it within ~10s and types it into the login page.
+// The human still provides the factor; only the keyboard moved. Token is
+// device-local; the code expires server-side after 90 seconds.
+
+function bindRsa() {
+  const tok = document.getElementById("rsaToken");
+  const repo = document.getElementById("rsaRepo");
+  const code = document.getElementById("rsaCode");
+  const send = document.getElementById("rsaSend");
+  const result = document.getElementById("rsaResult");
+  if (!send) return;
+  tok.value = localStorage.getItem("railcore_rsa_token") || "";
+  repo.value = localStorage.getItem("railcore_rsa_repo") || "railcoredev/railcore-approve";
+  tok.addEventListener("input", () => localStorage.setItem("railcore_rsa_token", tok.value.trim()));
+  repo.addEventListener("input", () => localStorage.setItem("railcore_rsa_repo", repo.value.trim()));
+  send.addEventListener("click", async () => {
+    const t = tok.value.trim(), r = repo.value.trim(), c = code.value.trim();
+    if (!t || !r || !c) { result.textContent = "Need token, repo, and code."; return; }
+    result.textContent = "Sending…";
+    try {
+      const path = `rsa/code-${Date.now()}.json`;
+      const body = {
+        message: "rsa approve",
+        content: btoa(JSON.stringify({
+          code: c, created_at: new Date().toISOString() })),
+      };
+      const resp = await fetch(`https://api.github.com/repos/${r}/contents/${path}`, {
+        method: "PUT",
+        headers: {
+          "Authorization": `Bearer ${t}`,
+          "Accept": "application/vnd.github+json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body),
+      });
+      if (resp.ok) {
+        result.textContent = "✓ Sent. The laptop picks it up within ~10s and logs in. Code expires in 90s.";
+        code.value = "";
+      } else {
+        result.textContent = `Failed (${resp.status}): check token/repo.`;
+      }
+    } catch (e) {
+      result.textContent = "Network error: " + e.message;
+    }
+  });
+}
+
+function collectionBanner() {
+  // Home tile doubles as the collection-state banner.
+  const d = lineupsData();
+  const sub = document.getElementById("tileSubRsa");
+  if (!sub) return;
+  const st = d && d.meta ? d.meta.collection_state : "";
+  if (st === "awaiting_login") {
+    sub.textContent = "⚠ COLLECTION PAUSED — RSA needed. Tap to approve.";
+  } else if (st === "active") {
+    sub.textContent = "Collection running — nothing needed.";
+  } else {
+    sub.textContent = "Approve login from anywhere";
+  }
 }
 
 // ===================== SHARED ACTIONS =====================
