@@ -2,7 +2,7 @@
  "meta": {
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-17T19:21:43+00:00",
+  "generated_at": "2026-08-17T19:23:32+00:00",
   "names_mode": "initials",
   "source_runs": {
    "train_lineup": "sched_20260817_141642",
@@ -2188,8 +2188,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 08m",
-         "minutes": 428
+         "label": "7h 06m",
+         "minutes": 426
         },
         "name": "B.T.",
         "tags": [
@@ -2221,8 +2221,8 @@
         "craft": "CO",
         "hos": {
          "band": "green",
-         "label": "7h 08m",
-         "minutes": 428
+         "label": "7h 06m",
+         "minutes": 426
         },
         "name": "W.J.",
         "tags": [
@@ -2301,8 +2301,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 53m",
-         "minutes": 533
+         "label": "8h 51m",
+         "minutes": 531
         },
         "name": "K.R.",
         "tags": [
@@ -2313,8 +2313,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 53m",
-         "minutes": 533
+         "label": "8h 51m",
+         "minutes": 531
         },
         "name": "R.S.",
         "tags": [
@@ -2441,12 +2441,12 @@
        {
         "craft": "EN",
         "name": "H.M.",
-        "on_in": "0h 23m"
+        "on_in": "0h 21m"
        },
        {
         "craft": "AE",
         "name": "Y.C.",
-        "on_in": "0h 23m"
+        "on_in": "0h 21m"
        }
       ],
       "eng_crew_count": "0",
@@ -4170,8 +4170,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 08m",
-         "minutes": 488
+         "label": "8h 06m",
+         "minutes": 486
         },
         "name": "R.K."
        },
@@ -4179,8 +4179,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 08m",
-         "minutes": 488
+         "label": "8h 06m",
+         "minutes": 486
         },
         "name": "J.D."
        }
@@ -4218,8 +4218,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 38m",
-         "minutes": 398
+         "label": "6h 36m",
+         "minutes": 396
         },
         "name": "H.J."
        },
@@ -4227,8 +4227,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 38m",
-         "minutes": 398
+         "label": "6h 36m",
+         "minutes": 396
         },
         "name": "C.J."
        }
@@ -4266,8 +4266,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "9h 39m",
-         "minutes": 579
+         "label": "9h 37m",
+         "minutes": 577
         },
         "name": "L.D."
        },
@@ -4275,8 +4275,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "9h 39m",
-         "minutes": 579
+         "label": "9h 37m",
+         "minutes": 577
         },
         "name": "C.J."
        }
@@ -4314,8 +4314,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "11h 53m",
-         "minutes": 713
+         "label": "11h 51m",
+         "minutes": 711
         },
         "name": "B.C."
        },
@@ -4323,8 +4323,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "11h 53m",
-         "minutes": 713
+         "label": "11h 51m",
+         "minutes": 711
         },
         "name": "D.S."
        }
@@ -4362,8 +4362,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 38m",
-         "minutes": 638
+         "label": "10h 36m",
+         "minutes": 636
         },
         "name": "D.Z."
        },
@@ -4371,8 +4371,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "10h 38m",
-         "minutes": 638
+         "label": "10h 36m",
+         "minutes": 636
         },
         "name": "L.D."
        }
@@ -5518,8 +5518,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "5h 53m",
-         "minutes": 353
+         "label": "5h 51m",
+         "minutes": 351
         },
         "name": "C.D."
        },
@@ -5527,8 +5527,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "5h 53m",
-         "minutes": 353
+         "label": "5h 51m",
+         "minutes": 351
         },
         "name": "L.N."
        }
@@ -5827,8 +5827,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "9h 23m",
-         "minutes": 563
+         "label": "9h 21m",
+         "minutes": 561
         },
         "name": "G.B."
        },
@@ -5836,8 +5836,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "9h 23m",
-         "minutes": 563
+         "label": "9h 21m",
+         "minutes": 561
         },
         "name": "P.T."
        }
@@ -7862,6 +7862,7 @@
  },
  "alerts": [
   {
+   "id": "P1|252-18|04541|2026-08-18",
    "type": "upstream_unlisting",
    "train": "252-18",
    "when": "2026-08-18T00:01",
@@ -7869,6 +7870,7 @@
    "note": "Dropped from 04541 lineup while still posted at 04640."
   },
   {
+   "id": "P1|252-19|04541|2026-08-19",
    "type": "upstream_unlisting",
    "train": "252-19",
    "when": "2026-08-19T00:01",
@@ -7876,6 +7878,7 @@
    "note": "Dropped from 04541 lineup while still posted at 04640."
   },
   {
+   "id": "P1|252-20|04541|2026-08-20",
    "type": "upstream_unlisting",
    "train": "252-20",
    "when": "2026-08-20T00:01",
@@ -7883,6 +7886,7 @@
    "note": "Dropped from 04541 lineup while still posted at 04640."
   },
   {
+   "id": "P1|252-21|04541|2026-08-21",
    "type": "upstream_unlisting",
    "train": "252-21",
    "when": "2026-08-21T00:01",
@@ -7890,6 +7894,7 @@
    "note": "Dropped from 04541 lineup while still posted at 04640."
   },
   {
+   "id": "P1|252-18|04540|2026-08-18",
    "type": "upstream_unlisting",
    "train": "252-18",
    "when": "2026-08-18T00:01",
@@ -7897,6 +7902,7 @@
    "note": "Dropped from 04540 lineup while still posted at 04640."
   },
   {
+   "id": "P1|180-18|04541|2026-08-18",
    "type": "upstream_unlisting",
    "train": "180-18",
    "when": "2026-08-18T19:20",
@@ -7904,6 +7910,7 @@
    "note": "Dropped from 04541 lineup while still posted at 04640."
   },
   {
+   "id": "P1|252-19|04540|2026-08-19",
    "type": "upstream_unlisting",
    "train": "252-19",
    "when": "2026-08-19T00:01",
@@ -7911,6 +7918,7 @@
    "note": "Dropped from 04540 lineup while still posted at 04640."
   },
   {
+   "id": "P1|180-19|04541|2026-08-19",
    "type": "upstream_unlisting",
    "train": "180-19",
    "when": "2026-08-19T19:20",
@@ -7918,6 +7926,7 @@
    "note": "Dropped from 04541 lineup while still posted at 04640."
   },
   {
+   "id": "P1|252-20|04540|2026-08-20",
    "type": "upstream_unlisting",
    "train": "252-20",
    "when": "2026-08-20T00:01",
@@ -7925,6 +7934,7 @@
    "note": "Dropped from 04540 lineup while still posted at 04640."
   },
   {
+   "id": "P1|180-20|04541|2026-08-20",
    "type": "upstream_unlisting",
    "train": "180-20",
    "when": "2026-08-20T19:20",
@@ -7932,6 +7942,7 @@
    "note": "Dropped from 04541 lineup while still posted at 04640."
   },
   {
+   "id": "P1|252-21|04540|2026-08-21",
    "type": "upstream_unlisting",
    "train": "252-21",
    "when": "2026-08-21T00:01",
@@ -7939,6 +7950,7 @@
    "note": "Dropped from 04540 lineup while still posted at 04640."
   },
   {
+   "id": "P1|641-610|04540|2026-08-17",
    "type": "upstream_unlisting",
    "train": "641-610",
    "when": "2026-08-17T23:00",
@@ -7946,22 +7958,34 @@
    "note": "Dropped from 04540 lineup while still posted at 04541."
   },
   {
+   "id": "RAC|LUDWIG,(AARON)|253-15|2026-08-17",
    "type": "runaround_candidate",
    "train": "253-15",
    "when": "2026-08-17T12:01",
    "detected_at": "2026-08-17T13:04:07",
    "went_to": "L.D.",
    "their_turn": "SW05/SW",
-   "note": "Possible runaround while you were first out. Candidate only \u2014 verify against calling rules."
+   "planned_pool": "",
+   "call_by": "",
+   "note": "Possible runaround while you were first out.",
+   "rule": "",
+   "remedy": "",
+   "verify": []
   },
   {
+   "id": "RAC|LUDWIG,(AARON)|261-18|2026-08-17",
    "type": "runaround_candidate",
    "train": "261-18",
    "when": "2026-08-17T13:00",
    "detected_at": "2026-08-17T13:04:07",
    "went_to": "D.Z.",
    "their_turn": "MU03/SW",
-   "note": "Possible runaround while you were first out. Candidate only \u2014 verify against calling rules."
+   "planned_pool": "",
+   "call_by": "",
+   "note": "Possible runaround while you were first out.",
+   "rule": "",
+   "remedy": "",
+   "verify": []
   }
  ]
 }
