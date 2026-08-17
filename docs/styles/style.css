@@ -32,6 +32,48 @@ body {
   padding: 8px 16px 4px;
 }
 
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bell-btn {
+  position: relative;
+  background: #121a27;
+  border: 1px solid rgba(145, 162, 198, 0.5);
+  border-radius: 999px;
+  font-size: 1.15rem;
+  padding: 7px 12px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.bell-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: #ff6600;
+  color: #05070d;
+  font-size: 0.68rem;
+  font-weight: 800;
+  border-radius: 999px;
+  padding: 2px 6px;
+}
+
+.notif-group-title {
+  margin: 10px 0 4px;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #9ba4c3;
+}
+
+.alert-card.quiet {
+  border-color: rgba(145, 162, 198, 0.4);
+  background: linear-gradient(160deg, #141c2b 0%, #0a101c 100%);
+}
+
 .logo-row {
   font-size: 1.8rem;
   font-weight: 800;

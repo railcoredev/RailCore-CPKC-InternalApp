@@ -19,6 +19,7 @@ const DOM = {};
 // Which control blocks each section shows. Every data section carries the
 // freshness bar: truthful data age beats a clean layout.
 const SECTIONS = {
+  notifications: { title: "NOTIFICATIONS", blocks: ["freshnessBar"] },
   mytrain:   { title: "MY TRAIN",       blocks: ["findBlock", "freshnessBar"] },
   lineups:   { title: "TRAIN LINEUPS",  blocks: ["stationBlock", "freshnessBar"] },
   boards:    { title: "CREW BOARDS",    blocks: ["boardBlock", "freshnessBar"] },
@@ -42,6 +43,8 @@ function cacheDom() {
   DOM.sectionPanel = document.getElementById("sectionPanel");
   DOM.homeButton = document.getElementById("homeButton");
   DOM.sectionTitle = document.getElementById("sectionTitle");
+  DOM.bellButton = document.getElementById("bellButton");
+  DOM.bellBadge = document.getElementById("bellBadge");
 
   DOM.stateSummary = document.getElementById("stateSummary");
   DOM.subdivisionSelect = document.getElementById("subdivisionSelect");
@@ -69,6 +72,7 @@ function wireEvents() {
     tile.addEventListener("click", () => openSection(tile.dataset.section));
   });
   DOM.homeButton.addEventListener("click", goHome);
+  DOM.bellButton.addEventListener("click", () => openSection("notifications"));
 
   DOM.applyButton.addEventListener("click", renderCurrentView);
 
@@ -127,9 +131,9 @@ function openSection(sectionId) {
   const show = new Set(SECTIONS[sectionId].blocks);
   ALL_BLOCKS.forEach((id) => DOM[id].classList.toggle("hidden", !show.has(id)));
 
-  // Alert cards live on the My Train section.
-  DOM.alertsPanel.classList.toggle("hidden", sectionId !== "mytrain");
-  if (sectionId === "mytrain") renderAlertCards();
+  // Alert cards live in the Notifications section (bell in the header).
+  DOM.alertsPanel.classList.toggle("hidden", sectionId !== "notifications");
+  if (sectionId === "notifications") renderAlertCards();
 
   updateFreshnessBar();
   renderCurrentView();
@@ -154,10 +158,11 @@ function updateHomeTiles() {
     const cacheNote = LINEUPS.fromCache ? " · offline" : "";
     tl.textContent = `${d.train_lineup.train_count} trains · ${age || "?"}${cacheNote}`;
     cb.textContent = `${d.crew_boards.board_count} boards · ${formatAge(cap.crew_boards) || "?"}${cacheNote}`;
-    const nAlerts = visibleAlerts().length;
-    mt.textContent = nAlerts
-      ? `⚠ ${nAlerts} alert${nAlerts === 1 ? "" : "s"} · find your train fast`
+    const runarounds = visibleAlerts().filter((a) => a.type === "runaround_candidate").length;
+    mt.textContent = runarounds
+      ? `⚠ ${runarounds} possible runaround${runarounds === 1 ? "" : "s"} · find your train fast`
       : "Find where a train sits, fast";
+    updateBellBadge();
   } else {
     tl.textContent = "no data yet";
     cb.textContent = "no data yet";
@@ -564,15 +569,47 @@ function visibleAlerts() {
   return (d && d.alerts ? d.alerts : []).filter((a) => !handled[a.id]);
 }
 
+function updateBellBadge() {
+  const n = visibleAlerts().length;
+  DOM.bellBadge.textContent = String(n);
+  DOM.bellBadge.classList.toggle("hidden", n === 0);
+}
+
 function renderAlertCards() {
   const panel = DOM.alertsPanel;
   panel.innerHTML = "";
   const alerts = visibleAlerts();
-  if (!alerts.length) return;
+  updateBellBadge();
+  if (!alerts.length) {
+    const empty = document.createElement("div");
+    empty.className = "notif-group-title";
+    empty.textContent = "No notifications. All clear.";
+    panel.appendChild(empty);
+    return;
+  }
 
-  alerts.forEach((a) => {
+  const runarounds = alerts.filter((a) => a.type === "runaround_candidate");
+  const quiet = alerts.filter((a) => a.type !== "runaround_candidate");
+
+  if (runarounds.length) {
+    const h = document.createElement("div");
+    h.className = "notif-group-title";
+    h.textContent = "Possible runarounds";
+    panel.appendChild(h);
+    runarounds.forEach((a) => panel.appendChild(buildAlertCard(a, false)));
+  }
+  if (quiet.length) {
+    const h = document.createElement("div");
+    h.className = "notif-group-title";
+    h.textContent = `Train watch — hidden-late-train flags (${quiet.length})`;
+    panel.appendChild(h);
+    quiet.forEach((a) => panel.appendChild(buildAlertCard(a, true)));
+  }
+}
+
+function buildAlertCard(a, isQuiet) {
     const card = document.createElement("div");
-    card.className = "alert-card";
+    card.className = isQuiet ? "alert-card quiet" : "alert-card";
 
     const head = document.createElement("div");
     head.className = "alert-head";
@@ -609,13 +646,29 @@ function renderAlertCards() {
 
     const actions = document.createElement("div");
     actions.className = "alert-actions hidden";
-    const btnClaimed = document.createElement("button");
-    btnClaimed.className = "btn btn-primary btn-small";
-    btnClaimed.textContent = "I filed a claim";
-    btnClaimed.addEventListener("click", (e) => {
-      e.stopPropagation();
-      setAlertState(a.id, "claimed");
-    });
+    if (a.type === "runaround_candidate") {
+      const btnClaimed = document.createElement("button");
+      btnClaimed.className = "btn btn-primary btn-small";
+      btnClaimed.textContent = "I filed a claim";
+      btnClaimed.addEventListener("click", (e) => {
+        e.stopPropagation();
+        setAlertState(a.id, "claimed");
+      });
+      actions.appendChild(btnClaimed);
+    }
+    if (a.type === "upstream_unlisting" && a.station) {
+      // Deep link: jump to the Lineups screen at the flagged station.
+      const btnView = document.createElement("button");
+      btnView.className = "btn btn-primary btn-small";
+      btnView.textContent = "View lineup";
+      btnView.addEventListener("click", (e) => {
+        e.stopPropagation();
+        openSection("lineups");
+        DOM.stationSelect.value = a.station;
+        renderCurrentView();
+      });
+      actions.appendChild(btnView);
+    }
     const btnDismiss = document.createElement("button");
     btnDismiss.className = "btn btn-secondary btn-small";
     btnDismiss.textContent = "Dismiss";
@@ -623,7 +676,6 @@ function renderAlertCards() {
       e.stopPropagation();
       setAlertState(a.id, "dismissed");
     });
-    actions.appendChild(btnClaimed);
     actions.appendChild(btnDismiss);
 
     head.addEventListener("click", () => {
@@ -634,8 +686,7 @@ function renderAlertCards() {
     card.appendChild(head);
     card.appendChild(body);
     card.appendChild(actions);
-    panel.appendChild(card);
-  });
+    return card;
 }
 
 function renderMyTrainView() {
