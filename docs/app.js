@@ -721,17 +721,40 @@ function renderMyStatus(d) {
   const lines = [`— YOU (${me}) — CURRENT —`];
   let found = false;
 
-  // Latest ticket = current/most recent call (from the warehouse via feed).
   const mine = (d.my_status || []).find((s) =>
     (s.name || "").toUpperCase().startsWith(me) || me.startsWith((s.name || "").toUpperCase()));
   const tickets = mine ? mine.tickets || [] : [];
-  if (tickets.length) {
-    const t = tickets[0];
-    lines.push(`Latest call: ${t.train} (${t.craft}, turn ${t.turn}/${t.pool})`);
-    lines.push(`  ${t.date} on-duty ${t.on_duty}` +
-      (t.off_duty ? ` — tied up ${t.off_duty}` : " — no tie-up recorded"));
-    if (t.dep || t.arr) lines.push(`  Leg: ${t.dep || "?"} → ${t.arr || "?"}`);
-    if (!t.off_duty) { const h = hosLine(t); if (h) lines.push(h); }
+
+  // CURRENT = a ticket that is live NOW (operator 2026-08-17): called but
+  // not yet on duty (future on-duty), or on duty with no tie-up recorded,
+  // within a 16h envelope. A tie-up or an old on-duty = HISTORY.
+  function ticketOnMs(t) {
+    try {
+      return new Date(`${t.date}T${t.on_duty.slice(0,2)}:${t.on_duty.slice(2)}:00`).getTime();
+    } catch (_) { return NaN; }
+  }
+  function isActive(t) {
+    if (t.off_duty) return false;
+    const on = ticketOnMs(t);
+    if (isNaN(on)) return false;
+    const hrs = (Date.now() - on) / 36e5;
+    return hrs < 16; // future call (negative) or an open tour
+  }
+  const current = tickets.find(isActive);
+  const past = tickets.filter((t) => t !== current);
+
+  if (current) {
+    const on = ticketOnMs(current);
+    const future = on > Date.now();
+    lines.push((future ? "Called for: " : "ON DUTY: ") +
+      `${current.train} (${current.craft}, turn ${current.turn}/${current.pool})`);
+    lines.push(`  ${current.date} on-duty ${current.on_duty}` +
+      (future ? ` — in ${Math.round((on - Date.now())/36e5 * 10)/10}h` : ""));
+    if (current.dep || current.arr) lines.push(`  Leg: ${current.dep || "?"} → ${current.arr || "?"}`);
+    if (!future) { const h = hosLine(current); if (h) lines.push(h); }
+  } else {
+    lines.push("No active call in captured data" +
+      (tickets.length ? ` (latest ticket ${tickets[0].date})` : "") + ".");
   }
 
   (d.crew_boards.boards || []).forEach((b) => {
@@ -757,10 +780,16 @@ function renderMyStatus(d) {
     lines.push("Not currently on any captured board or crew list.");
   }
 
-  if (tickets.length > 1) {
+  if (past.length) {
     lines.push("");
     lines.push("— HISTORY —");
-    tickets.slice(1, 11).forEach((t) => {
+    // First history entry keeps the full detail (operator preference).
+    const h0 = past[0];
+    lines.push(`${h0.train} (${h0.craft}, turn ${h0.turn}/${h0.pool})`);
+    lines.push(`  ${h0.date} on-duty ${h0.on_duty}` +
+      (h0.off_duty ? ` — tied up ${h0.off_duty}` : ""));
+    if (h0.dep || h0.arr) lines.push(`  Leg: ${h0.dep || "?"} → ${h0.arr || "?"}`);
+    past.slice(1, 11).forEach((t) => {
       lines.push(`${t.date}  ${t.on_duty}  ${t.train}  (${t.craft} ${t.turn}/${t.pool})` +
         (t.off_duty ? `  tied up ${t.off_duty}` : ""));
     });

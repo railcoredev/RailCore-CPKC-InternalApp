@@ -1,5 +1,5 @@
 // service-worker.js — RailCore CPKC Worker App v4.0
-const CACHE_NAME = "railcore-cpkc-worker-v422";
+const CACHE_NAME = "railcore-cpkc-worker-v423";
 
 // Only files that actually exist: addAll() rejects the whole install if any
 // asset 404s (this is what silently broke v38 updates — it listed four
