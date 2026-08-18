@@ -1137,7 +1137,65 @@ async function loadPersonalFeed() {
 }
 
 function renderPayView() {
+  showText();
   DOM.resultsOutput.textContent = "Loading private pay feed…";
+  loadPersonalFeed().then((d) => {
+    if (currentSection !== "pay") return;
+    if (d.error) { showText(); DOM.resultsOutput.textContent = d.error; return; }
+    // TABLES first (operator: mockup layout preferred), text detail last.
+    const box = el("div");
+    box.appendChild(el("div", "table-title",
+      `PRIVATE — ${d.meta.member} · FRA starts: ${d.fra_starts.streak} consecutive (6 = off the board)`));
+
+    // Weekly table + gray half totals
+    const halves = {};
+    const wrows = (d.weekly || []).map((w) => {
+      const dt = new Date(w.week_of);
+      const half = `${w.week_of.slice(0, 7)}-${dt.getUTCDate() <= 15 ? "H1" : "H2"}`;
+      halves[half] = halves[half] || { earned: 0, starts: 0 };
+      halves[half].earned += w.earned; halves[half].starts += w.trips;
+      return [w.week_of, "$" + w.earned.toFixed(2), w.trips,
+              "$" + d.guarantee_reference.EN_weekly_geb + " ref",
+              w.claims_pending ? w.claims_pending + " pending" : "—"];
+    });
+    Object.keys(halves).sort().reverse().forEach((h) => {
+      const r = [h + " TOTAL", "$" + halves[h].earned.toFixed(2),
+                 halves[h].starts, "", ""];
+      r._cls = "row-off";
+      wrows.push(r);
+    });
+    box.appendChild(el("div", "table-title", "WEEKLY — bid weeks Sat→Fri"));
+    const wt = buildTable(["Week of", "Earned", "Starts", "Guarantee", "Claims"], wrows);
+    wrows.forEach((r, i) => { if (r._cls) wt.querySelectorAll("tbody tr")[i].className = r._cls; });
+    box.appendChild(wt);
+
+    // Starts table
+    const srows = (d.trips || []).map((tr) => {
+      const r = [tr.date, tr.train, tr.craft || "",
+        tr.hours != null ? tr.hours.toFixed(2) : "—",
+        tr.paid != null ? "$" + tr.paid.toFixed(2) : "—",
+        tr.expected != null ? "$" + tr.expected.toFixed(2) : "—",
+        (tr.delta != null && Math.abs(tr.delta) > 0.05)
+          ? (tr.delta > 0 ? "+" : "") + "$" + tr.delta.toFixed(2) + " ⚠" : "✓",
+        tr.status || ""];
+      return r;
+    });
+    box.appendChild(el("div", "table-title", "STARTS — work tours only, paid vs expected"));
+    box.appendChild(buildTable(["Date", "Train", "Seat", "Hrs", "Paid", "Expected", "Δ", "Status"], srows));
+
+    // Claims / other lines table
+    const orows = (d.other_lines || []).map((o) => [
+      o.date, o.msc || "?", o.train,
+      o.paid != null ? (o.amt_type === "H" ? o.paid.toFixed(2) + "h" : "$" + o.paid.toFixed(2)) : "—",
+      o.status || ""]);
+    box.appendChild(el("div", "table-title", "CLAIMS · MEALS · HELD-AWAY (never counted as starts)"));
+    box.appendChild(buildTable(["Date", "Code", "Assignment", "Amount", "Status"], orows));
+    box.appendChild(el("div", "table-title",
+      `Feed generated ${localTime(d.meta.generated_at)} · expected pay from cited rules`));
+    showTable(box);
+  });
+  return;
+  // (legacy text path below retained for reference; unreachable)
   loadPersonalFeed().then((d) => {
     if (currentSection !== "pay") return;
     if (d.error) { DOM.resultsOutput.textContent = d.error; return; }
