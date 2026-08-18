@@ -71,6 +71,15 @@ everything else after. Update this instead of scattering notes.
 3. Submit-claim button that prefills the miscellaneous-claim entry screen —
    BLOCKED until that screen is scanned/mapped (not yet captured).
 
+## To-do (Aaron, 2026-08-18)
+- **Call-change detector**: when a captured call for a watched member changes
+  between sweeps (train symbol, craft seat, on-duty time, annulment), push an
+  alert through the existing flag→app pipeline — "your 781 is now an 859-088,
+  on duty 18:30, CO seat." Ground truth for the need: 2026-08-17 the operator's
+  781 call was swapped to 859-088 while collection was parked; the system only
+  caught it in the after-the-fact history sweep. Deferred by the operator in
+  favor of higher-impact work (he hears changes from the caller anyway).
+
 ## Roadmap (Aaron's direction, 2026-08-17)
 1. ✅ Portal home + sections (v4.0.0): My Train quick-find, Lineups, Boards,
    Ref Cards, Crossings, Sidings, Track Lengths.
