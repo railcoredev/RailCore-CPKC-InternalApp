@@ -71,6 +71,41 @@ everything else after. Update this instead of scattering notes.
 3. Submit-claim button that prefills the miscellaneous-claim entry screen —
    BLOCKED until that screen is scanned/mapped (not yet captured).
 
+## V5 REVISION 1 (operator design review of the renderings, 2026-08-18)
+
+Reviewed https://claude.ai/code/artifact/b8f6ed2d-b428-46e4-999d-7d68c893f9ce
+More revisions coming; sections not yet discussed proceed on Claude's design.
+1. ✅ LOCKED: Home. 2. ✅ LOCKED: Train Lineups.
+3. Reference time at page bottom in LOCAL time (Central for now) — UTC
+   internal only, everything displayed is local.
+4. NEW SCREEN: Train History — lineup-style table w/ crews, rows clickable
+   for details, show on-duty + tie-up times where captured.
+5. Me-card verbiage: use the RAILROAD'S codes (the mark-off board's own
+   codes), and "Return <day time>" instead of "marked back".
+6. Bookoff code legend captured from PSTS90 field help (operator screenshot):
+   S=Sick P=Personal Leave U=Union Business N=Company Business
+   V=Annual Vacation C=Up To Place — grounds laid_off + me-card vocabulary.
+7. PL/SD daily allotments captured (Owen R. table): per-terminal daily
+   slots — Ottumwa 1/day, Davenport 4/day, Savanna/Mason City/KC 2 Mon-Thu
+   1 Fri-Sun, Marquette 2/day. BLET section below fold still wanted.
+8. Files received: August days off + Ottumwa Engineer/Conductor AV 2026
+   workbooks → extract into scheduled-off data (Time Off + availability).
+9. Pay: "Trips" → "STARTS", counted PER HALF (half-month pay period);
+   runaround claims count as neither starts nor trips — claims separate.
+10. Weekly rows expand on tap → breakdown (starts, claims, meals, etc.).
+11. Half totals: gray summary row under each half's weeks (H1/H2 = same
+    split the metrics packs use).
+12. Guarantee: keep reference line; future expandable guarantee section.
+13. ✅ LOCKED: greyed-out marked-off members on boards (now with real codes).
+14. Projection board: show BOTH seats — the AE/CO pairing under each
+    projected engineer (pool turns already carry both; extraboard pairs
+    first-out from the matching board).
+15. Auto-update requirement: all views recompute per sweep on any input
+    change (already the architecture; vacation/AV data closes the
+    "who's off" gap).
+16. Document uploads w/ auto-supersession: fresher doc replaces active
+    copy, old kept (ties to source-library roadmap).
+
 ## V5 ONE-APP UI OVERHAUL (Aaron, 2026-08-18 evening — the big list)
 
 Operator verdict: happy with progress + data, NOT happy with the look.
