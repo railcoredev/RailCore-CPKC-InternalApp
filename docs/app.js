@@ -20,6 +20,7 @@ const DOM = {};
 // freshness bar: truthful data age beats a clean layout.
 const SECTIONS = {
   notifications: { title: "NOTIFICATIONS", blocks: ["freshnessBar"] },
+  refmenu:   { title: "REFERENCE",      blocks: ["refMenuBlock"] },
   rsa:       { title: "REMOTE RSA",     blocks: ["rsaBlock"] },
   mytrain:   { title: "MY TRAIN",       blocks: ["findBlock", "freshnessBar"] },
   lineups:   { title: "TRAIN LINEUPS",  blocks: ["stationBlock", "freshnessBar"] },
@@ -32,7 +33,7 @@ const SECTIONS = {
 
 const ALL_BLOCKS = ["stateBlock", "subdivisionBlock", "spacingBlock", "viewBlock",
                     "findBlock", "yardBlock", "stationBlock", "boardBlock",
-                    "rsaBlock", "freshnessBar"];
+                    "refMenuBlock", "rsaBlock", "freshnessBar"];
 
 document.addEventListener("DOMContentLoaded", () => {
   cacheDom();
@@ -337,6 +338,11 @@ function renderCurrentView() {
     text = renderReferenceView();
   } else if (currentSection === "mytrain") {
     text = renderMyTrainView();
+  } else if (currentSection === "refmenu" || currentSection === "rsa" ||
+             currentSection === "notifications") {
+    // menu/control sections own their panel; no results text below
+    DOM.resultsOutput.textContent = "";
+    return;
   }
 
   if (!text.trim()) {

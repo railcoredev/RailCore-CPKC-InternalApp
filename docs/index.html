@@ -47,21 +47,9 @@
               <div class="tile-title">Crew Boards</div>
               <div class="tile-sub" id="tileSubBoards">–</div>
             </button>
-            <button class="tile" data-section="reference">
-              <div class="tile-title">Ref Cards</div>
-              <div class="tile-sub" id="tileSubReference">Subdivision cheat sheets</div>
-            </button>
-            <button class="tile" data-section="crossings">
-              <div class="tile-title">Crossings</div>
-              <div class="tile-sub" id="tileSubCrossings">FRA inventory + spacing</div>
-            </button>
-            <button class="tile" data-section="sidings">
-              <div class="tile-title">Sidings</div>
-              <div class="tile-sub" id="tileSubSidings">Controlled sidings by MP</div>
-            </button>
-            <button class="tile" data-section="tracks">
-              <div class="tile-title">Track Lengths</div>
-              <div class="tile-sub" id="tileSubTracks">Yard tracks</div>
+            <button class="tile" data-section="refmenu">
+              <div class="tile-title">Reference</div>
+              <div class="tile-sub" id="tileSubRefmenu">Cards · crossings · sidings · tracks</div>
             </button>
             <button class="tile" data-section="rsa" id="rsaTile">
               <div class="tile-title">Remote RSA</div>
@@ -207,6 +195,28 @@
               </select>
             </div>
 
+            <!-- REFERENCE SUB-MENU (refmenu): tiles -> pages -->
+            <div id="refMenuBlock" class="field-block hidden">
+              <div class="tile-grid">
+                <button class="tile" data-section="reference">
+                  <div class="tile-title">Ref Cards</div>
+                  <div class="tile-sub" id="tileSubReference">Subdivision cheat sheets</div>
+                </button>
+                <button class="tile" data-section="crossings">
+                  <div class="tile-title">Crossings</div>
+                  <div class="tile-sub" id="tileSubCrossings">FRA inventory + spacing</div>
+                </button>
+                <button class="tile" data-section="sidings">
+                  <div class="tile-title">Sidings</div>
+                  <div class="tile-sub" id="tileSubSidings">Controlled sidings by MP</div>
+                </button>
+                <button class="tile" data-section="tracks">
+                  <div class="tile-title">Track Lengths</div>
+                  <div class="tile-sub" id="tileSubTracks">Yard tracks</div>
+                </button>
+              </div>
+            </div>
+
             <!-- REMOTE RSA (rsa) -->
             <div id="rsaBlock" class="field-block hidden">
               <div id="rsaLive" class="field-label" style="margin-bottom:10px;font-weight:600">Checking laptop status…</div>
@@ -254,7 +264,7 @@ Loading…
 
         <!-- FOOTER -->
         <footer class="app-footer">
-          RAILCORE CPKC WORKER APP · V4.3.2
+          RAILCORE CPKC WORKER APP · V4.4.0
         </footer>
       </section>
     </main>
