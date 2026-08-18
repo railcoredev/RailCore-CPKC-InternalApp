@@ -103,9 +103,16 @@ com.ironhorse.timebook.timebook).** Its main menu is itself a tile grid
 | Time Off | PL/vacation balances (needs scheduled_off parse fix) | blocked |
 | Paychecks | paycheck vs claims reconciliation (catches denied-paid-elsewhere) | todo |
 | ADO Matrix | ado_matrix_2026.json | ENCODED + prediction-integrated |
-Our structural advantage over Iron Horse: it depends on the railroader
-typing every trip in; our records flow from the mainframe captures with
-expected-pay math attached (27/28 validated to the penny).
+Below-fold tiles (captured 2026-08-18 pm): PTO Days -> PL/PTO balances
+(needs scheduled_off parse); Jobs Held -> job_assignments_observations +
+7-day-mark bid history; Wages -> pay_rules.json rate reference; Settings.
+**Design principle (operator, 2026-08-18): we are NOT copying Iron Horse —
+its categories are the taxonomy; OUR system pre-populates them from the
+captures so it's not manual entry. Manual entry stays as a correction or
+secondary column (some people like typing theirs in): captured value and
+operator value are SEPARATE columns, never overwriting each other —
+provenance visible, and a captured-vs-operator disagreement is itself a
+signal (usually a claim).**
 
 **B. Financial layer — NOT STARTED (operator raised 2026-08-18).**
 Iron Horse-style categories + data collection into the app:
