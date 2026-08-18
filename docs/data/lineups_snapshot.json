@@ -4,7 +4,7 @@
   "collection_message": "Login incomplete (RSA pending); will keep retrying.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-18T07:04:01+00:00",
+  "generated_at": "2026-08-18T07:24:03+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260817_165739",
@@ -2234,8 +2234,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 41m",
-         "minutes": 41
+         "label": "0h 21m",
+         "minutes": 21
         },
         "name": "HANK,(MATT)"
        },
@@ -2243,8 +2243,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 41m",
-         "minutes": 41
+         "label": "0h 21m",
+         "minutes": 21
         },
         "name": "YORK,(CHRISTOPHER)"
        }
@@ -4142,28 +4142,9 @@
       "trn_planned_crew": []
      },
      {
-      "crewed": true,
+      "crewed": false,
       "date_time": "08/17-2133",
-      "eng_crew": [
-       {
-        "craft": "EN",
-        "hos": {
-         "band": "orange",
-         "label": "0h 11m",
-         "minutes": 11
-        },
-        "name": "BRESHEARS,(CHRIS)"
-       },
-       {
-        "craft": "AE",
-        "hos": {
-         "band": "orange",
-         "label": "0h 11m",
-         "minutes": 11
-        },
-        "name": "DORSEY,(STETSON)"
-       }
-      ],
+      "eng_crew": [],
       "eng_crew_count": "0",
       "eng_crew_district": "8IOT",
       "eng_crew_pool": "OB",
