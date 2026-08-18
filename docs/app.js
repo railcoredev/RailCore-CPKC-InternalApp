@@ -909,6 +909,37 @@ function renderReferenceView() {
 // The human still provides the factor; only the keyboard moved. Token is
 // device-local; the code expires server-side after 90 seconds.
 
+async function pollRsaStatus() {
+  // Live laptop feedback: the login advancer posts its stage to
+  // status/login_status.json in the approve repo on every stage change
+  // ("ready for code" -> "code received" -> "LOGIN SUCCESSFUL"). Shown
+  // here so the operator knows exactly when to send and whether it took.
+  const el = document.getElementById("rsaLive");
+  const block = document.getElementById("rsaBlock");
+  if (!el || !block || block.classList.contains("hidden")) return;
+  const t = (localStorage.getItem("railcore_rsa_token") || "").trim();
+  const r = (localStorage.getItem("railcore_rsa_repo") || "railcoredev/railcore-approve").trim();
+  if (!t) { el.textContent = "Set the token below to see live laptop status."; return; }
+  try {
+    const resp = await fetch(`https://api.github.com/repos/${r}/contents/status/login_status.json`, {
+      headers: { "Authorization": `Bearer ${t}`, "Accept": "application/vnd.github+json" },
+      cache: "no-store",
+    });
+    if (!resp.ok) { el.textContent = "No laptop status posted yet."; return; }
+    const j = await resp.json();
+    const s = JSON.parse(atob(j.content));
+    const age = Math.max(0, Math.round((Date.now() - new Date(s.at).getTime()) / 1000));
+    const ageTxt = age < 120 ? `${age}s ago` : age < 5400 ? `${Math.round(age / 60)}m ago`
+               : `${(age / 3600).toFixed(1)}h ago`;
+    const icon = s.stage === "login_successful" ? "✅"
+             : s.stage === "rsa_wait" ? "🟢"
+             : s.stage === "code_rejected" ? "⚠️" : "⏳";
+    el.textContent = `${icon} ${s.message} (${ageTxt})`;
+  } catch (e) {
+    el.textContent = "Status check failed: " + e.message;
+  }
+}
+
 function bindRsa() {
   const tok = document.getElementById("rsaToken");
   const repo = document.getElementById("rsaRepo");
@@ -916,6 +947,8 @@ function bindRsa() {
   const send = document.getElementById("rsaSend");
   const result = document.getElementById("rsaResult");
   if (!send) return;
+  pollRsaStatus();
+  setInterval(pollRsaStatus, 8000);
   tok.value = localStorage.getItem("railcore_rsa_token") || "";
   repo.value = localStorage.getItem("railcore_rsa_repo") || "railcoredev/railcore-approve";
   tok.addEventListener("input", () => localStorage.setItem("railcore_rsa_token", tok.value.trim()));
