@@ -116,11 +116,13 @@ events with an empty board list; "Projection: pending rules" placeholder
 correct by design. Redesign: explicit labels (YOU / Your board / Boardmates
 / Recent), fresh my-status query, projection strip when the engine earns it.
 
-**Merge vision (operator): program UI + app + old portal → one web app**,
-keeping the program's train-lineup look (now replicated in app v4.6.0).
-Long-term: the app IS the one UI; the processor goes headless (captures +
-publishes). Program-only screens (Data Capture, Analytics, Explorer)
-migrate or stay on the laptop as admin tools — decide per screen.
+**Two surfaces, one truth (operator, corrected 2026-08-18 evening):**
+the LAPTOP PROGRAM stays and gets DEEPER — more settings, the ability to
+change things, run reports, manage capture — it is the control room. The
+APP is the road view: everything needed away from the laptop, same truth,
+same look where it matters (train-lineup view replicated in v4.6.0).
+Accessible from both; presentation bugs are the only permitted difference,
+and those get fixed. The old portal still folds into the app and retires.
 
 ## MASTER LIST (Aaron, 2026-08-18 — consolidated direction)
 
