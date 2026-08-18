@@ -72,6 +72,16 @@ everything else after. Update this instead of scattering notes.
    BLOCKED until that screen is scanned/mapped (not yet captured).
 
 ## To-do (Aaron, 2026-08-18)
+- **Full-history reprocess + coverage audit → true-data baseline**: reprocess
+  every snapshot ever captured through the current (better) parsers, then
+  audit the timeline for capture gaps — exactly when data was and wasn't
+  flowing, per screen type. Output: a coverage map (day × screen-type),
+  gap register with causes where known (RSA parks, the Aug 5–17 outage,
+  keystroke wedges), and a clean regenerated metrics layer. That becomes the
+  "true data" baseline that gets logged and committed properly (replacing
+  the uncommitted known-suspect Feb regenerations), and the foundation for
+  monthly + yearly comparisons, charting, and trend tracking. Operator: not
+  now — queued.
 - **Call-change detector**: when a captured call for a watched member changes
   between sweeps (train symbol, craft seat, on-duty time, annulment), push an
   alert through the existing flag→app pipeline — "your 781 is now an 859-088,
