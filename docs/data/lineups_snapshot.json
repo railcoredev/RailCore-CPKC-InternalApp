@@ -4,7 +4,7 @@
   "collection_message": "Login incomplete (RSA pending); will keep retrying.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-18T12:24:54+00:00",
+  "generated_at": "2026-08-18T12:44:58+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260817_165739",
