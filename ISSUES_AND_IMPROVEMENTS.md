@@ -104,6 +104,24 @@ remaining) replicated in the app for trains AND crews.
 6. After parity: portal modules (Documents, Infrastructure) fold in as
    tiles; portal retired (originals kept per standing rule).
 
+**Projection board display spec (operator, 2026-08-18 evening):** a
+crew-board-style table PLUS train ID and projected time columns — "a
+projected lineup in addition to what we currently have." Renders two ways:
+the full board view, and a one-line "YOUR NEXT: train X, projected ~HH:MM"
+strip on the me-card / My Train. Ships only after silent-mode accuracy.
+
+**Bug (program ui_v2 Crew Boards me-card):** underlabeled (the "with ..."
+list is BOARDMATES but never says so) and serving stale Aug-5 personal
+events with an empty board list; "Projection: pending rules" placeholder
+correct by design. Redesign: explicit labels (YOU / Your board / Boardmates
+/ Recent), fresh my-status query, projection strip when the engine earns it.
+
+**Merge vision (operator): program UI + app + old portal → one web app**,
+keeping the program's train-lineup look (now replicated in app v4.6.0).
+Long-term: the app IS the one UI; the processor goes headless (captures +
+publishes). Program-only screens (Data Capture, Analytics, Explorer)
+migrate or stay on the laptop as admin tools — decide per screen.
+
 ## MASTER LIST (Aaron, 2026-08-18 — consolidated direction)
 
 **A. Layout decision — the web app wins.** Operator: "not a huge fan of the
