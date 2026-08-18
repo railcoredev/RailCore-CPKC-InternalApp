@@ -316,7 +316,10 @@ body {
 }
 
 .hidden {
-  display: none;
+  /* Utility class must beat any component display rule that follows it
+     (.section-panel{display:flex} was overriding this by source order --
+     the stacked home+section bug the operator kept seeing). */
+  display: none !important;
 }
 
 /* Results text */
