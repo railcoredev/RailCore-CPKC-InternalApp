@@ -21,6 +21,7 @@ const DOM = {};
 const SECTIONS = {
   notifications: { title: "NOTIFICATIONS", blocks: ["freshnessBar"] },
   refmenu:   { title: "REFERENCE",      blocks: ["refMenuBlock"] },
+  pay:       { title: "PAY (PRIVATE)",  blocks: ["freshnessBar"] },
   rsa:       { title: "REMOTE RSA",     blocks: ["rsaBlock"] },
   mytrain:   { title: "MY TRAIN",       blocks: ["findBlock", "freshnessBar"] },
   lineups:   { title: "TRAIN LINEUPS",  blocks: ["stationBlock", "freshnessBar"] },
@@ -338,6 +339,9 @@ function renderCurrentView() {
     text = renderReferenceView();
   } else if (currentSection === "mytrain") {
     text = renderMyTrainView();
+  } else if (currentSection === "pay") {
+    renderPayView();   // async: fetches the PRIVATE feed, writes output itself
+    return;
   } else if (currentSection === "refmenu" || currentSection === "rsa" ||
              currentSection === "notifications") {
     // menu/control sections own their panel; no results text below
@@ -907,6 +911,75 @@ function renderReferenceView() {
     lines.push(card.footer);
   }
   return lines.join("\n");
+}
+
+// ===================== PAY (PRIVATE FEED) =====================
+// Personal/financial data NEVER rides the public Pages feed. The processor
+// publishes personal_feed.json into the operator's PRIVATE approve repo;
+// this section reads it with the same device-stored token as Remote RSA.
+// Iron Horse taxonomy, our data: everything pre-populated from captures;
+// expected pay from the cited rules (27/28 validated to the penny).
+
+let PERSONAL = null;
+
+async function loadPersonalFeed() {
+  const t = (localStorage.getItem("railcore_rsa_token") || "").trim();
+  const r = (localStorage.getItem("railcore_rsa_repo") || "railcoredev/railcore-approve").trim();
+  if (!t) return { error: "Set your token in the Remote RSA screen first — pay data is private and needs it." };
+  try {
+    const resp = await fetch(`https://api.github.com/repos/${r}/contents/personal/personal_feed.json`, {
+      headers: { "Authorization": `Bearer ${t}`, "Accept": "application/vnd.github+json" },
+      cache: "no-store",
+    });
+    if (!resp.ok) return { error: `No personal feed yet (HTTP ${resp.status}).` };
+    const j = await resp.json();
+    PERSONAL = JSON.parse(atob(j.content.replace(/\s/g, "")));
+    return PERSONAL;
+  } catch (e) {
+    return { error: "Fetch failed: " + e.message };
+  }
+}
+
+function renderPayView() {
+  DOM.resultsOutput.textContent = "Loading private pay feed…";
+  loadPersonalFeed().then((d) => {
+    if (currentSection !== "pay") return;
+    if (d.error) { DOM.resultsOutput.textContent = d.error; return; }
+    const L = [];
+    L.push(`PRIVATE — ${d.meta.member}`);
+    L.push(`Feed generated ${String(d.meta.generated_at).slice(0, 16).replace("T", " ")}`);
+    L.push("");
+    L.push(`FRA STARTS: ${d.fra_starts.streak} consecutive (6 = auto off the board)`);
+    L.push("");
+    L.push("WEEKLY (bid weeks, Sat→Fri)");
+    L.push(`  EN GEB guarantee reference: $${d.guarantee_reference.EN_weekly_geb}`);
+    (d.weekly || []).forEach((w) => {
+      L.push(`  wk of ${w.week_of}: $${w.earned.toFixed(2)} · ${w.trips} trips` +
+        (w.claims_pending ? ` · ${w.claims_pending} claim(s) pending` : ""));
+    });
+    L.push("");
+    L.push("TRIPS (paid vs expected — Δ beyond ±$0.05 is a flag)");
+    (d.trips || []).forEach((tr) => {
+      let line = `  ${tr.date} ${tr.train} ${tr.craft || ""}`;
+      if (tr.hours != null) line += ` ${tr.hours.toFixed(2)}h`;
+      if (tr.paid != null) line += ` paid $${tr.paid.toFixed(2)}`;
+      if (tr.expected != null) line += ` exp $${tr.expected.toFixed(2)}`;
+      if (tr.delta != null && Math.abs(tr.delta) > 0.05) {
+        line += `  Δ ${tr.delta > 0 ? "+" : ""}$${tr.delta.toFixed(2)} ⚠`;
+      }
+      if (tr.status) line += `  [${tr.status}]`;
+      L.push(line);
+    });
+    L.push("");
+    L.push("OTHER LINES (claims, meals, held-away)");
+    (d.other_lines || []).forEach((o) => {
+      let line = `  ${o.date} ${o.msc || "?"} ${o.train}`;
+      if (o.paid != null) line += o.amt_type === "H" ? ` ${o.paid.toFixed(2)}h` : ` $${o.paid.toFixed(2)}`;
+      if (o.status) line += `  [${o.status}]`;
+      L.push(line);
+    });
+    DOM.resultsOutput.textContent = L.join("\n");
+  });
 }
 
 // ===================== REMOTE RSA APPROVE =====================
