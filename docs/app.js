@@ -537,15 +537,16 @@ function renderBoardsView() {
     lines.push("(no one on this board in the last sweep)");
     return lines.join("\n");
   }
-  lines.push("POS  TURN   CR  NAME    ST");
+  lines.push("POS  TURN   CR  NAME                     MTOD MTPD");
   b.rows.forEach((r) => {
     const pos = String(r.position || "").padStart(3);
     const turn = String(r.turn_asgn || "").padEnd(6);
     const cr = String(r.craft_code || "").padEnd(3);
-    const nm = String(r.employee_name || "").padEnd(7);
+    const nm = String(r.employee_name || "").padEnd(24);
+    const hours = String(r.turn_hours || "").trim(); // verbatim from the board
     const stc = String(r.status_code || "");
     const away = r.home_away ? "  AWAY" : "";
-    lines.push(`${pos}  ${turn} ${cr} ${nm} ${stc}${away}`);
+    lines.push(`${pos}  ${turn} ${cr} ${nm}${hours ? " " + hours : ""}${stc ? "  " + stc : ""}${away}`);
   });
   return lines.join("\n");
 }
