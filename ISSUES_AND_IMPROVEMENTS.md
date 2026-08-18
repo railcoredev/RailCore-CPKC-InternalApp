@@ -71,6 +71,46 @@ everything else after. Update this instead of scattering notes.
 3. Submit-claim button that prefills the miscellaneous-claim entry screen —
    BLOCKED until that screen is scanned/mapped (not yet captured).
 
+## MASTER LIST (Aaron, 2026-08-18 — consolidated direction)
+
+**A. Layout decision — the web app wins.** Operator: "not a huge fan of the
+portal's layout; I like the web page layout better; incorporate everything
+together." Architecture: MAIN SCREEN of tiles → some tiles open a SUB-MENU
+→ pages; tiles that don't need a sub-menu go straight to their page.
+1. Adopt this app (tile home) as THE one app; portal-only capabilities fold
+   in as tiles/sub-menus: Documents (pinned bundle browse/search),
+   Infrastructure packs, Operations pilot content.
+2. Sub-menu tier: e.g. "Reference" tile → Ref Cards / Crossings / Sidings /
+   Track Lengths; "Live Ops" tile → My Train / Lineups / Boards; direct
+   tiles for My Train (primary), Remote RSA, Notifications.
+3. Portal shell retires only after feature parity (originals kept until
+   tested — standing rule).
+
+**B. Financial layer — NOT STARTED (operator raised 2026-08-18).**
+Iron Horse-style categories + data collection into the app:
+1. Study the Iron Horse app's category model (what railroaders track:
+   trips, claims, guarantees, mileage/rate classes) — map to our data.
+2. Pay rules as data (same rulebook architecture): basic day, RA ½-day,
+   called-and-released, held-away meal, guarantee credit/forfeit — every
+   rate cited to the agreement.
+3. Per-trip earnings from captured timeslips (4×/day finance sweeps);
+   trip → expected pay vs actual pay; discrepancy = claim candidate.
+4. Claim OUTCOME lineage (existing to-do; WAIT APP → paid/denied/
+   paid-on-another-line).
+5. Monthly/yearly earnings rollups + charts (depends on the true-data
+   baseline / coverage audit below).
+
+**C. Standing queue (unchanged, in priority order):**
+1. Vacation timed-slot navigation fix (currently DISABLED — it was killing
+   sessions; scheduled_off parsing also dead).
+2. Prediction engine: silent grading continues; master projection sheet
+   (C11) is the v1 target.
+3. Call-change detector (deferred by operator).
+4. Full-history reprocess + coverage-gap audit → true-data baseline →
+   monthly/yearly comparisons.
+5. 7.1.F position bulletin capture; misc-claim screen scan (unblocks
+   submit-claim prefill); OT sign-up list source.
+
 ## To-do (Aaron, 2026-08-18)
 - **Full-history reprocess + coverage audit → true-data baseline**: reprocess
   every snapshot ever captured through the current (better) parsers, then
