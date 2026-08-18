@@ -4,7 +4,7 @@
   "collection_message": "Login incomplete (RSA pending); will keep retrying.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-18T04:43:38+00:00",
+  "generated_at": "2026-08-18T05:03:41+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260817_165739",
@@ -2234,8 +2234,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 01m",
-         "minutes": 181
+         "label": "2h 41m",
+         "minutes": 161
         },
         "name": "HANK,(MATT)"
        },
@@ -2243,8 +2243,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 01m",
-         "minutes": 181
+         "label": "2h 41m",
+         "minutes": 161
         },
         "name": "YORK,(CHRISTOPHER)"
        }
@@ -4082,28 +4082,9 @@
       "trn_planned_crew": []
      },
      {
-      "crewed": true,
+      "crewed": false,
       "date_time": "08/17-2100",
-      "eng_crew": [
-       {
-        "craft": "EN",
-        "hos": {
-         "band": "orange",
-         "label": "0h 17m",
-         "minutes": 17
-        },
-        "name": "LIENEMAN,(DENNIS)"
-       },
-       {
-        "craft": "AE",
-        "hos": {
-         "band": "orange",
-         "label": "0h 17m",
-         "minutes": 17
-        },
-        "name": "CLAPP,(JASON)"
-       }
-      ],
+      "eng_crew": [],
       "eng_crew_count": "1",
       "eng_crew_district": "8IDA",
       "eng_crew_pool": "DA",
@@ -4168,8 +4149,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "2h 31m",
-         "minutes": 151
+         "label": "2h 11m",
+         "minutes": 131
         },
         "name": "BRESHEARS,(CHRIS)"
        },
@@ -4177,8 +4158,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "2h 31m",
-         "minutes": 151
+         "label": "2h 11m",
+         "minutes": 131
         },
         "name": "DORSEY,(STETSON)"
        }
@@ -5566,28 +5547,9 @@
       "trn_planned_crew": []
      },
      {
-      "crewed": true,
+      "crewed": false,
       "date_time": "08/17-1930",
-      "eng_crew": [
-       {
-        "craft": "EN",
-        "hos": {
-         "band": "orange",
-         "label": "0h 01m",
-         "minutes": 1
-        },
-        "name": "GERST,(BRADEN)"
-       },
-       {
-        "craft": "AE",
-        "hos": {
-         "band": "orange",
-         "label": "0h 01m",
-         "minutes": 1
-        },
-        "name": "POOLE,(TREVOR)"
-       }
-      ],
+      "eng_crew": [],
       "eng_crew_count": "1",
       "eng_crew_district": "KSPB",
       "eng_crew_pool": "PS",
