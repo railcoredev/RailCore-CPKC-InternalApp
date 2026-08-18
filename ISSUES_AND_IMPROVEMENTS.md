@@ -86,6 +86,27 @@ together." Architecture: MAIN SCREEN of tiles → some tiles open a SUB-MENU
 3. Portal shell retires only after feature parity (originals kept until
    tested — standing rule).
 
+**B-0. Iron Horse Timebook recon (2026-08-18, from the operator's phone —
+com.ironhorse.timebook.timebook).** Its main menu is itself a tile grid
+(validating the layout decision). Categories → our mapping:
+| Iron Horse tile | Our equivalent | State |
+|---|---|---|
+| Add New Record | auto-captured timeslips (no manual entry needed!) | LIVE |
+| Pay Totals | claims amount_cents rollups (pay engine) | data live, UI todo |
+| Hour Totals | ticket on/off-duty hours | data live, UI todo |
+| Stats | starts/OT/miles summaries | todo |
+| Records | trip history (my_status) | LIVE in app |
+| Weekly Pay | weekly rollup **vs GEB guarantee $1,732.21 check** | todo |
+| Starts | start counts + FRA 6-start countdown | engine live, UI todo |
+| Subs Qualified | personal_qualifications table | data live, UI todo |
+| Work Notes | per-trip operator notes | new feature |
+| Time Off | PL/vacation balances (needs scheduled_off parse fix) | blocked |
+| Paychecks | paycheck vs claims reconciliation (catches denied-paid-elsewhere) | todo |
+| ADO Matrix | ado_matrix_2026.json | ENCODED + prediction-integrated |
+Our structural advantage over Iron Horse: it depends on the railroader
+typing every trip in; our records flow from the mainframe captures with
+expected-pay math attached (27/28 validated to the penny).
+
 **B. Financial layer — NOT STARTED (operator raised 2026-08-18).**
 Iron Horse-style categories + data collection into the app:
 1. Study the Iron Horse app's category model (what railroaders track:
