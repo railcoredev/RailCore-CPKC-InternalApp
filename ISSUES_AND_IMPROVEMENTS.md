@@ -71,6 +71,39 @@ everything else after. Update this instead of scattering notes.
 3. Submit-claim button that prefills the miscellaneous-claim entry screen —
    BLOCKED until that screen is scanned/mapped (not yet captured).
 
+## V5 ONE-APP UI OVERHAUL (Aaron, 2026-08-18 evening — the big list)
+
+Operator verdict: happy with progress + data, NOT happy with the look.
+Directives, in his words: one app ("I just click on the app, I don't care
+what it does after that"); columns and rows for ALL data so everything
+lines up; sections are their own PAGE (no scrolling down to a panel);
+tiles + dropdown menus; zoom + scroll every direction is fine; wants the
+program's train-lineup view (inbound crews / outbound crews / time
+remaining) replicated in the app for trains AND crews.
+
+1. **One icon**: install the PWA from Chrome (Add to Home Screen) — it is
+   already installable w/ OTA updates; retire the portal WebAPK icon.
+   Standalone display mode = never looks like a browser.
+2. **Page navigation**: tile tap REPLACES the screen with that section as
+   its own page (no shared panel to scroll to). Back = home tile grid.
+   Dropdown menus for in-page pickers stay.
+3. **Tables everywhere**: real <table> rendering with sticky headers,
+   horizontal scroll containers, pinch-zoom friendly:
+   - Train lineups: DATE/TIME · TRAIN · STATUS · ORD · ENG INBOUND (crew +
+     rest-remaining) · ENG OUTBOUND · TRN crew — mirroring the ui_v2
+     program view the operator likes (inbound/outbound/time-remaining).
+   - Crew boards: POS · TURN · CR · NAME · MTOD · MTPD (+ flags).
+   - Pay: trips table (date/train/hours/paid/expected/Δ), weekly table.
+   - Ref cards / cheat sheets: column-aligned tables per card section.
+   - My Train: current + history as rows.
+4. **Feed enrichment**: publish the inbound/outbound crew + rest-remaining
+   fields the program view computes (they exist in the API; carry them in
+   lineups_snapshot.json) so the app can render the same picture.
+5. Keep: whole-page vertical scroll; wide tables scroll horizontally
+   inside their own container; freshness/update info at the bottom.
+6. After parity: portal modules (Documents, Infrastructure) fold in as
+   tiles; portal retired (originals kept per standing rule).
+
 ## MASTER LIST (Aaron, 2026-08-18 — consolidated direction)
 
 **A. Layout decision — the web app wins.** Operator: "not a huge fan of the
