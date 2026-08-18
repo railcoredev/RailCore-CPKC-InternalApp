@@ -136,6 +136,8 @@ async function initApp() {
 function openSection(sectionId) {
   if (!SECTIONS[sectionId]) return;
   currentSection = sectionId;
+  showText();                 // table renderers opt back in per render
+  window.scrollTo(0, 0);      // sections are their own page (V5)
 
   DOM.homePanel.classList.add("hidden");
   DOM.sectionPanel.classList.remove("hidden");
@@ -155,6 +157,7 @@ function openSection(sectionId) {
 
 function goHome() {
   currentSection = null;
+  window.scrollTo(0, 0);
   DOM.sectionPanel.classList.add("hidden");
   DOM.homePanel.classList.remove("hidden");
   updateHomeTiles();
@@ -332,7 +335,9 @@ function renderCurrentView() {
   } else if (currentSection === "tracks") {
     text = renderTrackLengthsView();
   } else if (currentSection === "lineups") {
-    text = renderLineupsView();
+    const r = renderLineupsTable();
+    if (r === null) return;
+    text = r;
   } else if (currentSection === "boards") {
     text = renderBoardsView();
   } else if (currentSection === "reference") {
@@ -512,6 +517,106 @@ function formatTrainLines(t, lines) {
   if (names.trim()) lines.push(`  Crew: ${names.trim()}`);
   if (t.information) lines.push(`  ${t.information}`);
   lines.push("");
+}
+
+// ===== V5 TABLE FRAMEWORK =====
+// Columns-and-rows directive (operator 2026-08-18): real tables, sticky
+// headers, horizontal scroll in-container. Renderers that build tables
+// write into #tableOutput; text renderers keep using the <pre>.
+
+function showTable(node) {
+  const to = document.getElementById("tableOutput");
+  to.innerHTML = "";
+  to.appendChild(node);
+  to.classList.remove("hidden");
+  DOM.resultsOutput.classList.add("hidden");
+}
+
+function showText() {
+  const to = document.getElementById("tableOutput");
+  to.classList.add("hidden");
+  DOM.resultsOutput.classList.remove("hidden");
+}
+
+function el(tag, cls, text) {
+  const e = document.createElement(tag);
+  if (cls) e.className = cls;
+  if (text != null) e.textContent = text;
+  return e;
+}
+
+function buildTable(headers, rows) {
+  // rows: array of arrays; cells are strings or DOM nodes
+  const wrap = el("div", "scroll-x");
+  const table = el("table", "rc-table");
+  const thead = el("thead");
+  const hr = el("tr");
+  headers.forEach((h) => hr.appendChild(el("th", null, h)));
+  thead.appendChild(hr);
+  table.appendChild(thead);
+  const tbody = el("tbody");
+  rows.forEach((r) => {
+    const tr = el("tr");
+    r.forEach((cell) => {
+      const td = el("td");
+      if (cell instanceof Node) td.appendChild(cell);
+      else td.textContent = cell == null ? "" : String(cell);
+      tr.appendChild(td);
+    });
+    tbody.appendChild(tr);
+  });
+  table.appendChild(tbody);
+  wrap.appendChild(table);
+  return wrap;
+}
+
+function crewCell(members) {
+  // [{craft,name,hos:{band,label},on_in,tags}] -> chips with colored time
+  const box = el("span");
+  (members || []).forEach((m) => {
+    const chip = el("span", "crew-chip");
+    chip.appendChild(el("span", null, `${m.craft || ""} ${m.name || ""}`));
+    if (m.hos && m.hos.label) {
+      chip.appendChild(el("span", ` hos-${m.hos.band || "green"}`, ` ${m.hos.label}`));
+    } else if (m.on_in) {
+      chip.appendChild(el("span", " hos-green", ` on in ${m.on_in}`));
+    }
+    if (m.tags && m.tags.length) {
+      chip.appendChild(el("span", " tag-dim", ` ${m.tags.join(",")}`));
+    }
+    box.appendChild(chip);
+  });
+  return box;
+}
+
+function renderLineupsTable() {
+  const d = lineupsData();
+  if (!d) { showText(); return "No lineup data available yet."; }
+  updateFreshnessBar();
+  const code = DOM.stationSelect.value;
+  const st = (d.train_lineup.stations || []).find((s) => s.location_code === code)
+    || (d.train_lineup.stations || [])[0];
+  if (!st) { showText(); return "No stations in the current lineup snapshot."; }
+
+  const rows = (st.trains || []).map((t) => [
+    t.date_time || "",
+    t.train_asgn || "",
+    t.status || "",
+    t.ordered || "",
+    t.rc || "",
+    crewCell(t.eng_crew),
+    crewCell(t.trn_crew),
+    (t.eng_crew_pool ? `${t.eng_crew_district || ""}${t.eng_crew_pool}` : (t.eng_planned_crew || "")),
+    t.information || "",
+  ]);
+  const box = el("div");
+  box.appendChild(el("div", "table-title",
+    `${(st.name || st.location_code).toUpperCase()} — ${st.trains.length} trains`));
+  box.appendChild(buildTable(
+    ["Date/Time", "Train", "Status", "Ord", "RC", "Eng Crew", "Trn Crew", "Pool", "Info"],
+    rows));
+  showTable(box);
+  return null;   // table mode: nothing for the <pre>
 }
 
 function renderLineupsView() {

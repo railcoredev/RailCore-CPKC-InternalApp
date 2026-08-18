@@ -502,3 +502,55 @@ body {
   display: flex;
   gap: 8px;
 }
+
+
+/* ===== V5 TABLE FRAMEWORK (columns-and-rows directive 2026-08-18) ===== */
+.table-output { margin-top: 10px; }
+.scroll-x {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid #2a2f45;
+  border-radius: 10px;
+}
+.rc-table {
+  border-collapse: collapse;
+  width: max-content;
+  min-width: 100%;
+  font-size: 0.78rem;
+}
+.rc-table th, .rc-table td {
+  padding: 6px 10px;
+  text-align: left;
+  white-space: nowrap;
+  border-bottom: 1px solid #232840;
+}
+.rc-table thead th {
+  position: sticky;
+  top: 0;
+  background: #171b2e;
+  color: #9aa3c7;
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.rc-table tbody tr:nth-child(even) { background: rgba(255,255,255,0.02); }
+.rc-table .num { text-align: right; }
+.crew-chip {
+  display: inline-block;
+  margin: 1px 4px 1px 0;
+  padding: 1px 7px;
+  border-radius: 8px;
+  background: #20263e;
+  font-size: 0.74rem;
+}
+.hos-green  { color: #4ade80; font-weight: 600; }
+.hos-yellow { color: #facc15; font-weight: 600; }
+.hos-red    { color: #f87171; font-weight: 600; }
+.tag-dim    { color: #8b93b8; font-size: 0.68rem; }
+.table-title {
+  font-size: 0.82rem;
+  color: #9aa3c7;
+  margin: 12px 2px 6px;
+  letter-spacing: 0.04em;
+}
