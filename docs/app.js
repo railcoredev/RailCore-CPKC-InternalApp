@@ -25,6 +25,7 @@ const SECTIONS = {
   rsa:       { title: "REMOTE RSA",     blocks: ["rsaBlock"] },
   mytrain:   { title: "MY TRAIN",       blocks: ["findBlock", "freshnessBar"] },
   lineups:   { title: "TRAIN LINEUPS",  blocks: ["stationBlock", "freshnessBar"] },
+  history:   { title: "TRAIN HISTORY",  blocks: ["freshnessBar"] },
   boards:    { title: "CREW BOARDS",    blocks: ["boardBlock", "freshnessBar"] },
   reference: { title: "REF CARDS",      blocks: ["subdivisionBlock", "freshnessBar"] },
   crossings: { title: "CROSSINGS",      blocks: ["stateBlock", "subdivisionBlock", "spacingBlock", "viewBlock", "freshnessBar"] },
@@ -338,8 +339,14 @@ function renderCurrentView() {
     const r = renderLineupsTable();
     if (r === null) return;
     text = r;
+  } else if (currentSection === "history") {
+    const r = renderHistoryTable();
+    if (r === null) return;
+    text = r;
   } else if (currentSection === "boards") {
-    text = renderBoardsView();
+    const r = renderBoardsTable();
+    if (r === null) return;
+    text = r;
   } else if (currentSection === "reference") {
     text = renderReferenceView();
   } else if (currentSection === "mytrain") {
@@ -493,11 +500,13 @@ function updateFreshnessBar() {
   }
   const key = currentSection === "boards" ? "crew_boards" : "train_lineup";
   const capturedAt = (d.meta.captured_at || {})[key] || "";
-  const when = capturedAt ? capturedAt.slice(0, 16).replace("T", " ") : "unknown";
+  // Operator rule: everything DISPLAYED is local time (Central for now).
+  const when = capturedAt ? localTime(capturedAt) : "unknown";
   const age = formatAge(capturedAt);
   const cacheNote = LINEUPS.fromCache ? " · offline copy" : "";
   DOM.freshnessText.textContent =
-    `Data as of ${when} UTC${age ? ` (${age})` : ""}${cacheNote}`;
+    `Data as of ${when}${age ? ` (${age})` : ""}${cacheNote}` +
+    ` · reference time ${localTime(new Date().toISOString())}`;
 }
 
 function crewNames(list) {
@@ -543,6 +552,18 @@ function el(tag, cls, text) {
   if (cls) e.className = cls;
   if (text != null) e.textContent = text;
   return e;
+}
+
+// Local-time display (operator: everything shown is LOCAL — Central for
+// now; UTC stays internal). ISO or feed timestamps -> "MM/DD HH:MM CT".
+function localTime(iso) {
+  if (!iso) return "";
+  const d = new Date(iso);
+  if (isNaN(d.getTime())) return String(iso);
+  const s = d.toLocaleString("en-US", { timeZone: "America/Chicago",
+    month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit",
+    hour12: false });
+  return s.replace(",", "") + " CT";
 }
 
 function buildTable(headers, rows) {
@@ -619,6 +640,40 @@ function renderLineupsTable() {
   return null;   // table mode: nothing for the <pre>
 }
 
+function renderHistoryTable() {
+  const d = lineupsData();
+  if (!d || !d.train_history || !d.train_history.length) {
+    showText();
+    return "Train history appears after the next processor restart publishes the enriched feed.";
+  }
+  updateFreshnessBar();
+  const rows = [];
+  d.train_history.forEach((tr, i) => {
+    const crew = el("span");
+    (tr.members || []).forEach((m) => {
+      const chip = el("span", "crew-chip", `${m.craft || ""} ${m.name || ""}`);
+      crew.appendChild(chip);
+    });
+    const rowEl = [
+      tr.date ? tr.date.slice(5) : "",
+      tr.train || "",
+      tr.on_duty || "—",
+      tr.off_duty || "—",
+      `${tr.depart || "?"}→${tr.arrive || "?"}`,
+      crew,
+      tr.pool || "",
+    ];
+    rows.push(rowEl);
+  });
+  const box = el("div");
+  box.appendChild(el("div", "table-title",
+    `RECENT TRAINS — last 48h · ${d.train_history.length} trains · on/off duty times as captured`));
+  box.appendChild(buildTable(
+    ["Date", "Train", "On Duty", "Tie Up", "Route", "Crew", "Pool"], rows));
+  showTable(box);
+  return null;
+}
+
 function renderLineupsView() {
   const d = lineupsData();
   if (!d) return "No lineup data available yet.\n\nThe feed appears here once the Data Processor publishes it.";
@@ -634,6 +689,42 @@ function renderLineupsView() {
   lines.push("");
   st.trains.forEach((t) => formatTrainLines(t, lines));
   return lines.join("\n");
+}
+
+function renderBoardsTable() {
+  const d = lineupsData();
+  if (!d) { showText(); return "No crew board data available yet."; }
+  updateFreshnessBar();
+  const idx = parseInt(DOM.boardSelect.value, 10) || 0;
+  const b = (d.crew_boards.boards || [])[idx];
+  if (!b) { showText(); return "No boards in the current snapshot."; }
+  const myName = (localStorage.getItem("railcore_my_name") || "").trim().toUpperCase();
+  const rows = [];
+  (b.rows || []).forEach((r) => {
+    const raw = String(r.raw_line || "");
+    const starred = /\*\w{0,2}\s+\d{3,4}\s+\d{3}/.test(raw);
+    const hours = String(r.turn_hours || "").trim().split(/\s+/);
+    const nameEl = el("span", null, r.employee_name || "");
+    const isMe = myName && String(r.employee_name || "").toUpperCase().startsWith(myName.slice(0, 12));
+    if (isMe) nameEl.textContent += "  ◀ you";
+    const tr = [
+      r.position || "", r.turn_asgn || "", (starred ? "*" : "") + (r.craft_code || ""),
+      nameEl, hours[0] || "—", hours[1] || "—",
+      r.status_code || (starred ? "marked off" : ""),
+    ];
+    tr._cls = (starred ? "row-off " : "") + (isMe ? "row-me" : "");
+    rows.push(tr);
+  });
+  const box = el("div");
+  box.appendChild(el("div", "table-title",
+    `${b.screen_title || b.label} · position order = calling order`));
+  const wrap = buildTable(["Pos", "Turn", "CR", "Name", "MTOD", "MTPD", "Status"], rows);
+  // row classes (greyed marked-off, highlighted me — operator locked-in)
+  const trs = wrap.querySelectorAll("tbody tr");
+  rows.forEach((r, i) => { if (r._cls) trs[i].className = r._cls.trim(); });
+  box.appendChild(wrap);
+  showTable(box);
+  return null;
 }
 
 function renderBoardsView() {
@@ -1058,12 +1149,21 @@ function renderPayView() {
     L.push("");
     L.push("WEEKLY (bid weeks, Sat→Fri)");
     L.push(`  EN GEB guarantee reference: $${d.guarantee_reference.EN_weekly_geb}`);
+    // Halves: H1 = 1st–15th, H2 = 16th–end (same split as the pay periods).
+    const halves = {};
     (d.weekly || []).forEach((w) => {
-      L.push(`  wk of ${w.week_of}: $${w.earned.toFixed(2)} · ${w.trips} trips` +
+      L.push(`  wk of ${w.week_of}: $${w.earned.toFixed(2)} · ${w.trips} starts` +
         (w.claims_pending ? ` · ${w.claims_pending} claim(s) pending` : ""));
+      const dt = new Date(w.week_of);
+      const half = `${w.week_of.slice(0, 7)}-${dt.getUTCDate() <= 15 ? "H1" : "H2"}`;
+      halves[half] = halves[half] || { earned: 0, starts: 0 };
+      halves[half].earned += w.earned; halves[half].starts += w.trips;
+    });
+    Object.keys(halves).sort().reverse().forEach((h) => {
+      L.push(`    — ${h} total: $${halves[h].earned.toFixed(2)} · ${halves[h].starts} starts`);
     });
     L.push("");
-    L.push("TRIPS (paid vs expected — Δ beyond ±$0.05 is a flag)");
+    L.push("STARTS (work tours only — claims never count as starts)");
     (d.trips || []).forEach((tr) => {
       let line = `  ${tr.date} ${tr.train} ${tr.craft || ""}`;
       if (tr.hours != null) line += ` ${tr.hours.toFixed(2)}h`;
