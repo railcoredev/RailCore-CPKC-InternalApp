@@ -348,9 +348,13 @@ function renderCurrentView() {
     if (r === null) return;
     text = r;
   } else if (currentSection === "reference") {
-    text = renderReferenceView();
+    const r = renderReferenceTable();
+    if (r === null) return;
+    text = r;
   } else if (currentSection === "mytrain") {
-    text = renderMyTrainView();
+    const r = renderMyTrainTable();
+    if (r === null) return;
+    text = r;
   } else if (currentSection === "pay") {
     renderPayView();   // async: fetches the PRIVATE feed, writes output itself
     return;
@@ -1013,6 +1017,60 @@ function renderMyStatus(d) {
   return lines.join("\n");
 }
 
+function renderMyTrainTable() {
+  const d = lineupsData();
+  if (!d) { showText(); return "No lineup data available yet."; }
+  const q = (DOM.trainFindInput.value || "").trim().toUpperCase();
+  const box = el("div");
+
+  // RIGHT NOW card (operator: current = where I am right now)
+  const me = (d.my_status || [])[0];
+  if (me && me.tickets && me.tickets.length) {
+    const cur = me.tickets[0];
+    box.appendChild(el("div", "table-title",
+      `RIGHT NOW — ${me.name || ""}: last ticket ${cur.train || ""} ` +
+      `(${cur.craft || ""}) on ${cur.date || ""}, ` +
+      `${cur.on_duty || "?"} → ${cur.off_duty || "on duty / not tied up"}`));
+    const hrows = me.tickets.slice(0, 14).map((tk) => [
+      tk.date || "", tk.train || "", tk.craft || "",
+      tk.on_duty || "—", tk.off_duty || "—",
+      `${tk.dep || "?"}→${tk.arr || "?"}`,
+      tk.pool ? `${tk.pool}${tk.turn ? "/" + tk.turn : ""}` : "",
+    ]);
+    box.appendChild(el("div", "table-title", "YOUR HISTORY — captured tickets"));
+    box.appendChild(buildTable(
+      ["Date", "Train", "Seat", "On", "Off", "Route", "Pool"], hrows));
+  }
+
+  if (q.length >= 2) {
+    const rows = [];
+    (d.train_lineup.stations || []).forEach((st) => {
+      (st.trains || []).forEach((tr) => {
+        if (!String(tr.train_asgn || "").toUpperCase().includes(q)) return;
+        const crew = el("span");
+        (tr.eng_crew || []).concat(tr.trn_crew || []).forEach((m) => {
+          const chip = el("span", "crew-chip", `${m.craft || ""} ${m.name || ""}`);
+          if (m.hos && m.hos.label) chip.appendChild(el("span", ` hos-${m.hos.band || "green"}`, ` ${m.hos.label}`));
+          crew.appendChild(chip);
+        });
+        rows.push([(st.name || st.location_code), tr.date_time || "",
+                   tr.train_asgn || "", tr.status || "", crew,
+                   (tr.eng_crew_pool ? `${tr.eng_crew_district || ""}${tr.eng_crew_pool}` : "")]);
+      });
+    });
+    box.appendChild(el("div", "table-title",
+      `"${q}" — ${rows.length} listing${rows.length === 1 ? "" : "s"} across the corridor`));
+    if (rows.length) {
+      box.appendChild(buildTable(["Station", "Date/Time", "Train", "Status", "Crew", "Pool"], rows));
+    }
+  } else {
+    box.appendChild(el("div", "table-title",
+      "Type at least 2 characters of a train symbol to search every station."));
+  }
+  showTable(box);
+  return null;
+}
+
 function renderMyTrainView() {
   const d = lineupsData();
   if (!d) return "No lineup data available yet.";
@@ -1052,6 +1110,49 @@ function renderMyTrainView() {
 // ===================== SUBDIVISION REFERENCE (cheat-sheet cards) =====================
 // Data: docs/data/subdivision_reference.json, compiled by the CPKC
 // Subdivision CheatSheets program from reviewed, source-cited card data.
+
+function renderReferenceTable() {
+  if (!REFERENCE || !REFERENCE.subdivisions) {
+    showText(); return "Reference cards not available yet.";
+  }
+  const card = REFERENCE.subdivisions.find((c) => c.id === currentSubdivisionId)
+    || REFERENCE.subdivisions[0];
+  if (!card) { showText(); return "No card for this subdivision."; }
+  const box = el("div");
+  box.appendChild(el("div", "table-title",
+    `${card.name || card.id}${card.effective ? " · effective " + card.effective : ""}`));
+
+  if (card.facts && card.facts.length) {
+    box.appendChild(buildTable(["Item", "Value"],
+      card.facts.map((f) => [f.label || "", f.value || ""])));
+  }
+  if (card.directionNote) {
+    box.appendChild(el("div", "table-title", card.directionNote));
+  }
+  if (card.station && card.station.rows) {
+    box.appendChild(el("div", "table-title",
+      card.station.title || "STATIONS BY MILEPOST"));
+    box.appendChild(buildTable(["MP", "MOP", "Location", "Notes"],
+      card.station.rows.map((r) => [r.mp || "", r.mop || "",
+        (r.sub ? "   " : "") + (r.loc || ""), r.notes || ""])));
+  }
+  (card.back || []).forEach((sec) => {
+    if (!sec.title) return;
+    box.appendChild(el("div", "table-title", sec.title));
+    if (sec.type === "table" && sec.rows && sec.rows.length) {
+      const width = Math.max(...sec.rows.map((r) => r.length));
+      const headers = Array.from({length: width}, (_, i) => sec.headers && sec.headers[i] ? sec.headers[i] : " ");
+      box.appendChild(buildTable(headers, sec.rows));
+    } else if (sec.items) {
+      box.appendChild(buildTable(["", "Item"],
+        sec.items.map((it) => [it.lead || "", it.text || ""])));
+    }
+  });
+  box.appendChild(el("div", "table-title",
+    "Reviewed card data · verify before use"));
+  showTable(box);
+  return null;
+}
 
 function renderReferenceView() {
   if (!REFERENCE || !REFERENCE.subdivisions) {
