@@ -106,6 +106,19 @@ More revisions coming; sections not yet discussed proceed on Claude's design.
 16. Document uploads w/ auto-supersession: fresher doc replaces active
     copy, old kept (ties to source-library roadmap).
 
+**Ref-card enhancements (operator, 2026-08-18 late):**
+1. Milepost LADDER view per sub: stations/sidings/detectors + PUBLIC
+   CROSSINGS interleaved in MP order; crossing rows dimmed w/ street, DOT#,
+   protection, and distance-since-previous-crossing. BLOCKED on data
+   verification first: current snapshot shows 0 crossings keyed to the
+   Chicago Sub — investigate FRA inventory subdivision keying before any
+   UI (a ladder with missing crossings lies by omission).
+2. Radio DIAL-UP codes for switches (Chicago Sub first): NOT in extracted
+   card data — needs timetable extraction via the CheatSheets provenance
+   pipeline, or an operator photo of the timetable page to encode directly.
+   Then a Dial-up column on the sidings table.
+3. Double-spaced/roomier siding rows (CSS).
+
 ## V5 ONE-APP UI OVERHAUL (Aaron, 2026-08-18 evening — the big list)
 
 Operator verdict: happy with progress + data, NOT happy with the look.
