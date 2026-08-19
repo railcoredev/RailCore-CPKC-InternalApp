@@ -106,6 +106,15 @@ More revisions coming; sections not yet discussed proceed on Claude's design.
 16. Document uploads w/ auto-supersession: fresher doc replaces active
     copy, old kept (ties to source-library roadmap).
 
+**BUG to diagnose (operator 2026-08-19):** yellow "NO ON DUTY ASSIGNMENT
+FOUND / TRY SELECTION" at the bottom of the MAIN screen, repeating 4-5x.
+CICS field-validation reply -- a screen got a selection/assignment context
+it couldn't place (wrong-field/wrong-screen-state family). A loop is
+retrying it. Capture WHICH task/screen generates it (add a screen-text
+grep to the recovery path) and fix the offending navigation. Also still
+open: operational_flags.dedup_key UNIQUE collision (harmless, expired
+re-flag) firing every sweep -- fix the dedup upsert.
+
 **Ref-card enhancements (operator, 2026-08-18 late):**
 1. Milepost LADDER view per sub: stations/sidings/detectors + PUBLIC
    CROSSINGS interleaved in MP order; crossing rows dimmed w/ street, DOT#,
