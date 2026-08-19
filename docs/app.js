@@ -288,23 +288,43 @@ function populateBoardSelect() {
   });
 }
 
-// Default every picker to the logged-on member's HOME TERMINAL (operator
-// 2026-08-19). The feed's my_status carries home_terminal from the
-// seniority-derived roster; Ottumwa is the fallback when the feed hasn't
-// republished yet. The user can still switch freely afterwards.
+// Default every picker to WHERE THE LOGGED-ON MEMBER IS (operator
+// 2026-08-19): the arrival station of their newest ticket -- tie up in
+// Kansas City, the app opens on Kansas City; tie up at home (or sit on
+// days off, whose last tie-up WAS home), it opens on the home terminal.
+// Falls back to roster home_terminal, then Ottumwa. Switching afterwards
+// is unchanged.
 const TERMINAL_DEFAULTS = {
   OT: { station: "04664", sub: "cpkc_ottumwa", board: /OTT/i },
   DA: { station: "04640", sub: "cpkc_davenport", board: /DAV|NAHANT/i },
   KC: { station: "04690", sub: "cpkc_kc", board: /KC/i },
 };
+// Station code -> terminal, mirroring the processor's corridor map.
+const STATION_TERMINAL = {
+  "04664": "OT", "04649": "OT", "04689": "OT",
+  "04690": "KC",
+  "04640": "DA", "04617": "DA", "04541": "DA", "04540": "DA",
+};
 
 function applyHomeTerminalDefaults() {
   const d = lineupsData();
   const me = d && d.my_status && d.my_status[0];
-  const term = (me && me.home_terminal) || "OT";
-  const def = TERMINAL_DEFAULTS[term] || TERMINAL_DEFAULTS.OT;
+  const homeTerm = (me && me.home_terminal) || "OT";
 
-  if ([...DOM.stationSelect.options].some((o) => o.value === def.station)) {
+  // Current location = newest ticket's arrival (dep for turnarounds
+  // missing an arr). my_status tickets are newest-first.
+  const t0 = me && me.tickets && me.tickets[0];
+  const lastLoc = t0 && (t0.arr || t0.dep);
+  const locTerm = (lastLoc && STATION_TERMINAL[lastLoc]) || homeTerm;
+  const def = TERMINAL_DEFAULTS[locTerm] || TERMINAL_DEFAULTS.OT;
+
+  // Station: prefer the exact tie-up station when the lineup covers it
+  // (Bensenville etc. still win the station picker even when the
+  // board/sub mapping doesn't know their terminal).
+  const stationOpts = [...DOM.stationSelect.options].map((o) => o.value);
+  if (lastLoc && stationOpts.includes(lastLoc)) {
+    DOM.stationSelect.value = lastLoc;
+  } else if (stationOpts.includes(def.station)) {
     DOM.stationSelect.value = def.station;
   }
   if (SNAPSHOT && (SNAPSHOT.subdivisions || []).some((s) => s.id === def.sub)) {
