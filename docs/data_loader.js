@@ -18,6 +18,19 @@ async function loadSubdivisionReference() {
   }
 }
 
+// Quiet zones (GCOR 5.8.4), transcribed from the reviewed cheat-sheet cards.
+// Used to stamp MP-ladder rows that fall inside a zone.
+async function loadQuietZones() {
+  try {
+    const res = await fetch('data/quiet_zones.json', { cache: 'no-store' });
+    if (!res.ok) throw new Error('Quiet zones HTTP ' + res.status);
+    return await res.json();
+  } catch (err) {
+    console.warn('Quiet zones unavailable:', err);
+    return null;
+  }
+}
+
 async function loadLineupsSnapshot() {
   const url = 'data/lineups_snapshot.json';
   const CACHE_KEY = 'railcore_lineups_cache_v1';

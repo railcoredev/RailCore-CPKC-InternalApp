@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "dataset": "Quiet zones by subdivision (GCOR 5.8.4)",
+    "source": "Transcribed verbatim from the reviewed CPKC Subdivision CheatSheets cards (CPKC US Eastern Region Timetable, eff. July 1, 2024). Ranges where the card gives a span; explicit MP lists where the card names individual crossings (crossings BETWEEN listed MPs are not necessarily in the zone).",
+    "types": {
+      "CQ": "continuous quiet zone",
+      "PQ": "partial quiet zone (hours shown)"
+    }
+  },
+  "zones": {
+    "cpkc_elgin": [
+      { "type": "CQ", "name": "Chicago (Oak Park - Harlem)", "mp_start": 9.16, "mp_end": 9.79 },
+      { "type": "PQ", "name": "Elmwood Park (73rd Ave - Grand Ave)", "mp_start": 9.95, "mp_end": 10.51, "hours": "2200-0600" },
+      { "type": "CQ", "name": "Bensenville (Thatcher - Church)", "mp_start": 11.4, "mp_end": 17.58 },
+      { "type": "CQ", "name": "Wood Dale (Ash - Wood Dale Rd)", "mp_start": 18.48, "mp_end": 19.17 },
+      { "type": "CQ", "name": "Itasca (Prospect - Catalpa)", "mp_start": 20.25, "mp_end": 21.37 },
+      { "type": "PQ", "name": "Roselle (Park/Prospect/Roselle Rd)", "mp_start": 24.37, "mp_end": 24.59, "hours": "0001-0500" },
+      { "type": "CQ", "name": "Roselle (Rodenburg)", "mps": [26.17] },
+      { "type": "CQ", "name": "Bartlett (Prospect - Spaulding Rd)", "mp_start": 29.51, "mp_end": 32.67 }
+    ],
+    "cpkc_davenport": [
+      { "type": "CQ", "name": "Clinton", "mps": [154.0, 154.2, 154.7, 154.8, 154.9, 156.2, 156.4, 156.8, 157.1, 157.2] }
+    ],
+    "cpkc_ottumwa": [
+      { "type": "CQ", "name": "Muscatine", "mps": [218.8, 219.2, 219.3, 219.4, 219.9] }
+    ]
+  }
+}

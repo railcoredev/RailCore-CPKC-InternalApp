@@ -9,6 +9,7 @@
 let SNAPSHOT = null;         // reference snapshot (subs, crossings, sidings, yards)
 let LINEUPS = null;          // live feed: { data, fromCache } from loadLineupsSnapshot()
 let REFERENCE = null;        // cheat-sheet cards from loadSubdivisionReference()
+let QUIET_ZONES = null;      // GCOR 5.8.4 zones from loadQuietZones()
 
 let currentSection = null;   // null = home; else a SECTIONS key
 let currentSubdivisionId = null;
@@ -115,6 +116,7 @@ async function initApp() {
   SNAPSHOT = await loadRailCoreSnapshot();
   LINEUPS = await loadLineupsSnapshot();
   REFERENCE = await loadSubdivisionReference();
+  QUIET_ZONES = await loadQuietZones();
 
   populateStateSummary();
   populateSubdivisionSelect();
@@ -1160,15 +1162,31 @@ function renderReferenceTable() {
       .filter((c) => c.subdivision_id === card.id)
       .map((c) => ({ mp: Number(c.mp), kind: "crossing", c }));
     if (xs.length) {
+      // Quiet-zone stamp (GCOR 5.8.4, operator 2026-08-19): every ladder
+      // line whose MP falls inside a zone says so. Card-spanned zones match
+      // by range; card-listed zones match only their named crossing MPs
+      // (crossings BETWEEN listed MPs are not necessarily in the zone).
+      const qzones = (QUIET_ZONES && QUIET_ZONES.zones &&
+                      QUIET_ZONES.zones[card.id]) || [];
+      const qzLabel = (mp) => {
+        for (const z of qzones) {
+          const inZone = z.mps
+            ? z.mps.some((m) => Math.abs(m - mp) <= 0.05)
+            : (mp >= z.mp_start && mp <= z.mp_end);
+          if (inZone) return z.hours ? `QUIET ZONE ${z.hours}` : "QUIET ZONE";
+        }
+        return "";
+      };
       const sts = card.station.rows
         .filter((r) => r.mp !== undefined && r.mp !== null && String(r.mp) !== "")
         .map((r) => ({ mp: Number(r.mp), kind: "station", r }));
       const ladder = xs.concat(sts).sort((a2, b2) => a2.mp - b2.mp);
       let prevX = null;
       const rows = ladder.map((it) => {
+        const qz = qzLabel(it.mp);
         if (it.kind === "station") {
-          const row = [String(it.r.mp), it.r.loc || "", "", "STATION",
-                       "", it.r.notes || ""];
+          const row = [String(it.r.mp), it.r.loc || "", "", "STATION", qz,
+                       it.r.notes || ""];
           row._cls = "row-me";
           return row;
         }
@@ -1177,7 +1195,8 @@ function renderReferenceTable() {
         prevX = it.mp;
         const row = [String(it.c.mp),
           `${it.c.road_common || it.c.road_name || ""}${it.c.city ? " · " + it.c.city : ""}`,
-          gap, "crossing", it.c.protection || "", it.c.dot_number || ""];
+          gap, "crossing", [it.c.protection || "", qz].filter(Boolean).join(" · "),
+          it.c.dot_number || ""];
         row._cls = "row-off";
         return row;
       });
