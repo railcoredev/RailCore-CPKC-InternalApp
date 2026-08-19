@@ -1,5 +1,10 @@
 // service-worker.js — RailCore CPKC Worker App v4.0
-const CACHE_NAME = "railcore-cpkc-worker-v4101";
+// RELEASE RULE: bump this with EVERY release, same as the ?v= stamps in
+// index.html. The manifest is precached, so a stale CACHE_NAME serves a
+// stale manifest forever -- live 2026-08-19: phones held the v4101
+// manifest (broken icon paths) through six releases, so installs fell
+// back to the generic letter shortcut.
+const CACHE_NAME = "railcore-cpkc-worker-v4108";
 
 // Only files that actually exist: addAll() rejects the whole install if any
 // asset 404s (this is what silently broke v38 updates — it listed four
