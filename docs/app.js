@@ -1135,6 +1135,43 @@ function renderReferenceTable() {
     box.appendChild(buildTable(["MP", "MOP", "Location", "Notes"],
       card.station.rows.map((r) => [r.mp || "", r.mop || "",
         (r.sub ? "   " : "") + (r.loc || ""), r.notes || ""])));
+
+    // MILEPOST LADDER (operator 2026-08-18): stations + public crossings
+    // interleaved in MP order; crossing rows dimmed, with the distance
+    // since the PREVIOUS crossing so spacing reads in line order.
+    const xs = ((SNAPSHOT && SNAPSHOT.crossings) || [])
+      .filter((c) => c.subdivision_id === card.id)
+      .map((c) => ({ mp: Number(c.mp), kind: "crossing", c }));
+    if (xs.length) {
+      const sts = card.station.rows
+        .filter((r) => r.mp !== undefined && r.mp !== null && String(r.mp) !== "")
+        .map((r) => ({ mp: Number(r.mp), kind: "station", r }));
+      const ladder = xs.concat(sts).sort((a2, b2) => a2.mp - b2.mp);
+      let prevX = null;
+      const rows = ladder.map((it) => {
+        if (it.kind === "station") {
+          const row = [String(it.r.mp), it.r.loc || "", "STATION",
+                       "", "", it.r.notes || ""];
+          row._cls = "row-me";
+          return row;
+        }
+        const gap = prevX === null ? "" :
+          Math.round((it.mp - prevX) * 5280).toLocaleString() + " ft";
+        prevX = it.mp;
+        const row = [String(it.c.mp),
+          `${it.c.road_common || it.c.road_name || ""}${it.c.city ? " · " + it.c.city : ""}`,
+          "crossing", it.c.protection || "", gap, it.c.dot_number || ""];
+        row._cls = "row-off";
+        return row;
+      });
+      box.appendChild(el("div", "table-title",
+        `MILEPOST LADDER — stations + ${xs.length} public crossings in line order · ` +
+        `FRA mileposts shown verbatim: branch/spur crossings may interleave, and a ` +
+        `gap that spans a branch boundary is not a real distance`));
+      const lt = buildTable(["MP", "Feature", "Type", "Protection", "Gap since prev xing", "DOT# / Notes"], rows);
+      rows.forEach((r, i) => { if (r._cls) lt.querySelectorAll("tbody tr")[i].className = r._cls; });
+      box.appendChild(lt);
+    }
   }
   (card.back || []).forEach((sec) => {
     if (!sec.title) return;
