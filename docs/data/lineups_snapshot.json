@@ -4,7 +4,7 @@
   "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-19T08:57:57+00:00",
+  "generated_at": "2026-08-19T09:19:05+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260819_005402",
@@ -4250,8 +4250,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "9h 57m",
-         "minutes": 597
+         "label": "9h 36m",
+         "minutes": 576
         },
         "name": "WHITWORTH,(JOHN)",
         "tags": [
@@ -4262,8 +4262,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "9h 57m",
-         "minutes": 597
+         "label": "9h 36m",
+         "minutes": 576
         },
         "name": "VINES,(VICTOR)",
         "tags": [
