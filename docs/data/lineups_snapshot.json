@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "active",
-  "collection_message": "Light sweep sched_20260819_172630.",
+  "collection_message": "Light sweep sched_20260819_173233.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-19T22:32:21+00:00",
+  "generated_at": "2026-08-19T22:33:27+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260819_172630",
@@ -2353,7 +2353,7 @@
        {
         "craft": "ET",
         "name": "IYOHA,(OSAYANDE)",
-        "on_in": "0h 58m",
+        "on_in": "0h 57m",
         "tags": [
          "ET"
         ]
@@ -2453,8 +2453,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 28m",
-         "minutes": 88
+         "label": "1h 27m",
+         "minutes": 87
         },
         "name": "SEXTON,(JOHN)"
        }
@@ -2484,8 +2484,8 @@
         "craft": "CO",
         "hos": {
          "band": "orange",
-         "label": "1h 28m",
-         "minutes": 88
+         "label": "1h 27m",
+         "minutes": 87
         },
         "name": "BELL,(NOLAN)"
        },
@@ -2493,8 +2493,8 @@
         "craft": "TT",
         "hos": {
          "band": "orange",
-         "label": "1h 28m",
-         "minutes": 88
+         "label": "1h 27m",
+         "minutes": 87
         },
         "name": "HESTER,(JAIMEL)"
        }
@@ -4138,8 +4138,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 13m",
-         "minutes": 493
+         "label": "8h 12m",
+         "minutes": 492
         },
         "name": "GLASGOW,(STEVE)"
        },
@@ -4147,8 +4147,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 13m",
-         "minutes": 493
+         "label": "8h 12m",
+         "minutes": 492
         },
         "name": "AKERS,(MATTHEW)"
        }
@@ -4187,8 +4187,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 28m",
-         "minutes": 628
+         "label": "10h 27m",
+         "minutes": 627
         },
         "name": "HARTMAN,(JAMES)"
        },
@@ -4196,8 +4196,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "10h 28m",
-         "minutes": 628
+         "label": "10h 27m",
+         "minutes": 627
         },
         "name": "CARAPIA,(JUAN)"
        },
@@ -4205,8 +4205,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "10h 28m",
-         "minutes": 628
+         "label": "10h 27m",
+         "minutes": 627
         },
         "name": "KEOMANIVONG,(SONNY)"
        }
@@ -4274,12 +4274,12 @@
        {
         "craft": "EN",
         "name": "DUNCAN,(ZACH)",
-        "on_in": "0h 58m"
+        "on_in": "0h 57m"
        },
        {
         "craft": "AE",
         "name": "PETERSON,(DARREN)",
-        "on_in": "0h 58m"
+        "on_in": "0h 57m"
        }
       ],
       "eng_crew_count": "0",
@@ -4315,12 +4315,12 @@
        {
         "craft": "EN",
         "name": "ROBERTS,(KIMBERLY)",
-        "on_in": "0h 23m"
+        "on_in": "0h 22m"
        },
        {
         "craft": "AE",
         "name": "JAMESON,(DANIELLE)",
-        "on_in": "0h 23m"
+        "on_in": "0h 22m"
        }
       ],
       "eng_crew_count": "1",
@@ -5742,12 +5742,12 @@
        {
         "craft": "EN",
         "name": "GERST,(BRADEN)",
-        "on_in": "0h 48m"
+        "on_in": "0h 47m"
        },
        {
         "craft": "AE",
         "name": "HATFIELD,(JARROD)",
-        "on_in": "0h 48m"
+        "on_in": "0h 47m"
        }
       ],
       "eng_crew_count": "1",
@@ -8234,6 +8234,7 @@
  "my_status": [
   {
    "name": "LUDWIG,(AARON)",
+   "home_terminal": "OT",
    "tickets": [
     {
      "date": "2026-08-17",

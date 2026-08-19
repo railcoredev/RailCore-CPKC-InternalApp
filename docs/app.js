@@ -128,6 +128,7 @@ async function initApp() {
     currentSubdivisionId = SNAPSHOT.subdivisions[0].id;
     DOM.subdivisionSelect.value = currentSubdivisionId;
   }
+  applyHomeTerminalDefaults();
 
   updateHomeTiles();
   bindRsa();
@@ -285,6 +286,34 @@ function populateBoardSelect() {
     opt.textContent = b.label || b.screen_title || `Board ${i + 1}`;
     sel.appendChild(opt);
   });
+}
+
+// Default every picker to the logged-on member's HOME TERMINAL (operator
+// 2026-08-19). The feed's my_status carries home_terminal from the
+// seniority-derived roster; Ottumwa is the fallback when the feed hasn't
+// republished yet. The user can still switch freely afterwards.
+const TERMINAL_DEFAULTS = {
+  OT: { station: "04664", sub: "cpkc_ottumwa", board: /OTT/i },
+  DA: { station: "04640", sub: "cpkc_davenport", board: /DAV|NAHANT/i },
+  KC: { station: "04690", sub: "cpkc_kc", board: /KC/i },
+};
+
+function applyHomeTerminalDefaults() {
+  const d = lineupsData();
+  const me = d && d.my_status && d.my_status[0];
+  const term = (me && me.home_terminal) || "OT";
+  const def = TERMINAL_DEFAULTS[term] || TERMINAL_DEFAULTS.OT;
+
+  if ([...DOM.stationSelect.options].some((o) => o.value === def.station)) {
+    DOM.stationSelect.value = def.station;
+  }
+  if (SNAPSHOT && (SNAPSHOT.subdivisions || []).some((s) => s.id === def.sub)) {
+    currentSubdivisionId = def.sub;
+    DOM.subdivisionSelect.value = def.sub;
+  }
+  const boards = d ? d.crew_boards.boards || [] : [];
+  const bi = boards.findIndex((b) => def.board.test(b.label || b.screen_title || ""));
+  if (bi >= 0) DOM.boardSelect.value = String(bi);
 }
 
 // ===================== RENDER DISPATCH =====================
