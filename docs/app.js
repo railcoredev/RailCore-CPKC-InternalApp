@@ -1167,8 +1167,8 @@ function renderReferenceTable() {
       let prevX = null;
       const rows = ladder.map((it) => {
         if (it.kind === "station") {
-          const row = [String(it.r.mp), it.r.loc || "", "STATION",
-                       "", "", it.r.notes || ""];
+          const row = [String(it.r.mp), it.r.loc || "", "", "STATION",
+                       "", it.r.notes || ""];
           row._cls = "row-me";
           return row;
         }
@@ -1177,7 +1177,7 @@ function renderReferenceTable() {
         prevX = it.mp;
         const row = [String(it.c.mp),
           `${it.c.road_common || it.c.road_name || ""}${it.c.city ? " · " + it.c.city : ""}`,
-          "crossing", it.c.protection || "", gap, it.c.dot_number || ""];
+          gap, "crossing", it.c.protection || "", it.c.dot_number || ""];
         row._cls = "row-off";
         return row;
       });
@@ -1185,7 +1185,7 @@ function renderReferenceTable() {
         `MILEPOST LADDER — stations + ${xs.length} public crossings in line order · ` +
         `FRA mileposts shown verbatim: branch/spur crossings may interleave, and a ` +
         `gap that spans a branch boundary is not a real distance`));
-      const lt = buildTable(["MP", "Feature", "Type", "Protection", "Gap since prev xing", "DOT# / Notes"], rows);
+      const lt = buildTable(["MP", "Feature", "Gap since prev xing", "Type", "Protection", "DOT# / Notes"], rows);
       rows.forEach((r, i) => { if (r._cls) lt.querySelectorAll("tbody tr")[i].className = r._cls; });
       box.appendChild(lt);
     }
