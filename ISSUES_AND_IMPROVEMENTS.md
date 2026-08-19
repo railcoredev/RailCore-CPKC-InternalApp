@@ -71,6 +71,91 @@ everything else after. Update this instead of scattering notes.
 3. Submit-claim button that prefills the miscellaneous-claim entry screen —
    BLOCKED until that screen is scanned/mapped (not yet captured).
 
+## FULL-CHAT AUDIT — verified request ledger (2026-08-19, operator-ordered)
+
+Every operator request from the whole session, verified against what
+actually shipped. Statuses: DONE (verified live) · PARTIAL · TODO ·
+WAITING ON OPERATOR · BY DESIGN.
+
+### DONE — verified
+- ADO matrix encoded + prediction-integrated (10/10 vs published table)
+- Remote RSA end-to-end (3 live logins; expired-page auto-restart; Enter on
+  landing; live status line; held-code fix for the expiry race)
+- Calling-procedures homework -> notes + rulebook + engine signals
+- Ticket-change blind test (781->859-088, graded by operator)
+- Full last names everywhere; local Central time + reference time at bottom
+- Boards: MTOD/MTPD times; greyed marked-off members (locked); position
+  order = calling order (craft-sort bug dead)
+- Pay: STARTS per half (claims never count), gray half totals, tables
+  layout per mockup; 21/21 trips reconcile to the penny (join bug fixed)
+- Tables migrated: lineups (crew chips + HOS colors), boards, pay, train
+  history, My Train (RIGHT NOW + history), ref cards
+- MP ladder w/ inline crossings + honest branch caveat (v4.9.0)
+- Sections open as their own page (.hidden !important root cause)
+- Seniority roster dedup (latest capture, rank-keyed) + assignment field
+  split (*E marker / clean assignment)
+- Bookoff: dedup + home terminal from the SENIORITY roster (canonical),
+  auto-refreshed each capture; OT filter clean (was +45 foreign)
+- operational_flags dedup collision fixed (UPSERT reopen)
+- Crew-capture district assert (empty-boards root cause); blind-F3 exits
+  killed in all executors; vacation slot disabled w/ reason
+- Dead-man watchdog (self-heal + health publish + app health strip) +
+  sha-conflict resilience + heartbeat
+- Prediction engine v0.1 silent w/ turn-level grading; pay rules + holiday
+  blend (28/28); train service map; AV schedule wired; MUSSINGTON answered
+
+### PARTIAL / IN PROGRESS
+- REFACTOR: step 1 done (shared canonical_name util). Blueprint split of
+  server.py (6210 lines / 94 routes) = the main body, next.
+- Train History: table live; rows NOT yet clickable for detail expand.
+- Roomier siding rows: CSS utility shipped but NOT applied to tables yet.
+- Seniority as canonical CURRENT ASSIGNMENT: clean field exposed on the
+  endpoint; not yet consumed by other views (me-profile will).
+- Iron Horse mapping done; the actual sub-views (Hour Totals, Paychecks,
+  Jobs Held) not built; operator hasn't picked priority.
+
+### TODO (post-refactor queue, rough order)
+1. Analytics + report writing redesign (usable builder; pool-turn reports)
+   -- gated on data-correctness pass below
+2. Full-history reprocess + coverage-gap audit -> true-data baseline ->
+   then monthly/yearly comparisons + charts
+3. ME PROFILE (My Train -> everything-about-me view)
+4. Weekly pay rows tap-to-expand breakdown
+5. Train History row click -> details
+6. Inbound/outbound crew split on lineups (feed enrichment)
+7. Me-card into app w/ railroad codes + "Return" verbiage
+8. Projection board tile (ships when accuracy earns it) + AE/CO pairing
+9. Tables for Crossings / Sidings / Tracks (+ apply roomy rows)
+10. Portal fold-ins (Documents, Infrastructure tiles) -> retire portal icon
+11. One icon: install PWA to home screen, delete portal WebAPK
+12. Document upload w/ auto-supersession (source library)
+13. Vacation/PL parse fix (scheduled_off empty) + supervised vacation-slot
+    re-enable; PSTS90 parser column-shift fix
+14. Offsite backup of snapshots + railops.db (high value)
+15. Watchdog as Windows boot task (survive reboot); ntfy push should be
+    SILENT (operator: no sounds -- drop Priority:high before enabling)
+16. Claim OUTCOME tracking (incl. denied-paid-on-another-line); submit-claim
+    prefill (blocked on misc-claim screen scan)
+17. Call-change detector (operator-deferred)
+18. Timed slots marked done even when failed (known issue #9)
+19. Train Details display bug (data verified intact; needs operator to name
+    train+terminal in the act)
+20. Radio dial-up column on sidings (blocked on timetable extraction/photo)
+
+### WAITING ON OPERATOR
+- Posted layoff-code list from work (defines M/L/W/H/F/G/Q/E/%/0)
+- BLET half of the PL/SD allotment table
+- Timetable page w/ switch dial-ups (photo)
+- Which Iron Horse sub-views first
+- Train Details: name the train+terminal when it looks wrong
+- "NO ON DUTY ASSIGNMENT" screen id (operator will identify; benign)
+- Where the 7.1.F position bulletin lives in CMA
+- ntfy topic if phone push wanted (silent)
+
+### BY DESIGN (not missing)
+- Projection not visible in app until hit rate proven (currently 71%/7,
+  growing); Thu 08-20 08:24 mark-back = next falsifiable check
+
 ## NEXT PHASE — operator vision dump 2026-08-19 (fragmented, organized here)
 
 **Governing idea (operator's words):** "reusing a bunch of information, just
