@@ -71,6 +71,48 @@ everything else after. Update this instead of scattering notes.
 3. Submit-claim button that prefills the miscellaneous-claim entry screen —
    BLOCKED until that screen is scanned/mapped (not yet captured).
 
+## NEXT PHASE — operator vision dump 2026-08-19 (fragmented, organized here)
+
+**Governing idea (operator's words):** "reusing a bunch of information, just
+putting it in different locations and linking it to different information to
+create different views." One truth, many lenses. This IS the one-story
+architecture -- every screen below is a re-view of existing data.
+
+**Sequencing decision:** REFACTOR FIRST (server.py 6210-line monolith ->
+blueprints), then the batch below. Timing amortizes cleanup over the coming
+features; risk is viewer-only (collection is a separate process, never
+paused). Shape blueprints around these domains: crew, warehouse/analytics,
+detail, personal/me-profile, flags/projection.
+
+**A. Data-correctness pass (prerequisite for reports).** "Ensure all the
+data is correct." = the full-history reprocess + coverage-gap audit ->
+true-data baseline. Reports are only as honest as this.
+
+**B. Analytics + Report writing (the big next domain).** Current report
+builder is "ugly and extremely difficult to use" -- operator tried to build
+his own report, not user-friendly. Redesign: a genuinely usable report
+builder. Known report types wanted: POOL TURN NUMBER reports (turn-level
+stats per pool), plus the existing metrics. This is where the laptop
+program deepens (control-room role).
+
+**C. Train Details page.** Operator: "was set up quite nicely," info
+"disappeared." Data verified intact at warehouse level -> DISPLAY bug on
+that panel. NEED: operator to name the specific train+terminal in the act
+so it can be diffed. Then restore/polish the layout.
+
+**D. Projection -> app.** Currently silent backend (v0.1, ~71%/7 graded).
+Not yet a visible tile by design (ships when accuracy proven). Operator
+expects to see it (remembers the rendering). Surface it when earned; until
+then show its grading status honestly.
+
+**E. MY TRAIN -> ME PROFILE (the centerpiece).** My Train becomes the
+operator's full personal dashboard, everything in one spot, all linked:
+projection (when I get called next) · current status/assignment (where I am
+right now) · financial (pay/starts/claims) · train history · days off (ADO
+rest days) · FRA starts · seniority standing. A single "everything about
+me" view assembled from the data already flowing. Primary tile, primary
+screen.
+
 ## V5 REVISION 1 (operator design review of the renderings, 2026-08-18)
 
 Reviewed https://claude.ai/code/artifact/b8f6ed2d-b428-46e4-999d-7d68c893f9ce
