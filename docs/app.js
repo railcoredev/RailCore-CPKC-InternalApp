@@ -1134,9 +1134,24 @@ function renderReferenceTable() {
   if (card.station && card.station.rows) {
     box.appendChild(el("div", "table-title",
       card.station.title || "STATIONS BY MILEPOST"));
-    box.appendChild(buildTable(["MP", "MOP", "Location", "Notes"],
-      card.station.rows.map((r) => [r.mp || "", r.mop || "",
-        (r.sub ? "   " : "") + (r.loc || ""), r.notes || ""])));
+    // Radio dial-up columns (operator 2026-08-19): remote switch request
+    // codes (GCOR 8.19.1), rendered only where the card carries them
+    // (Chicago Sub today; other subs stay four-column).
+    const hasSw = card.station.rows.some((r) => r.swN || r.swR || r.swQ);
+    if (hasSw) {
+      box.appendChild(buildTable(
+        ["MP", "MOP", "Location", "Sw Nml", "Sw Rev", "Sw Qry", "Notes"],
+        card.station.rows.map((r) => [r.mp || "", r.mop || "",
+          (r.sub ? "   " : "") + (r.loc || ""),
+          r.swN || "", r.swR || "", r.swQ || "", r.notes || ""])));
+      if (card.station.caption) {
+        box.appendChild(el("div", "table-title", card.station.caption));
+      }
+    } else {
+      box.appendChild(buildTable(["MP", "MOP", "Location", "Notes"],
+        card.station.rows.map((r) => [r.mp || "", r.mop || "",
+          (r.sub ? "   " : "") + (r.loc || ""), r.notes || ""])));
+    }
 
     // MILEPOST LADDER (operator 2026-08-18): stations + public crossings
     // interleaved in MP order; crossing rows dimmed, with the distance
