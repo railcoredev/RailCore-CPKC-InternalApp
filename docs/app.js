@@ -627,22 +627,26 @@ function renderLineupsTable() {
     || (d.train_lineup.stations || [])[0];
   if (!st) { showText(); return "No stations in the current lineup snapshot."; }
 
+  // Operator 2026-08-19: label crews by DIRECTION, not craft. Inbound = the
+  // crew bringing the train from the previous station (usually populated);
+  // Outbound = the crew called to take it out of here (appears from the
+  // moment they're called, ~2h before on-duty). Craft rides on each chip.
   const rows = (st.trains || []).map((t) => [
     t.date_time || "",
     t.train_asgn || "",
     t.status || "",
     t.ordered || "",
     t.rc || "",
-    crewCell(t.eng_crew),
-    crewCell(t.trn_crew),
-    (t.eng_crew_pool ? `${t.eng_crew_district || ""}${t.eng_crew_pool}` : (t.eng_planned_crew || "")),
+    crewCell((t.eng_crew || []).concat(t.trn_crew || [])),
+    crewCell((t.eng_planned_crew || []).concat(t.trn_planned_crew || [])),
+    (t.eng_crew_pool ? `${t.eng_crew_district || ""}${t.eng_crew_pool}` : ""),
     t.information || "",
   ]);
   const box = el("div");
   box.appendChild(el("div", "table-title",
     `${(st.name || st.location_code).toUpperCase()} — ${st.trains.length} trains`));
   box.appendChild(buildTable(
-    ["Date/Time", "Train", "Status", "Ord", "RC", "Eng Crew", "Trn Crew", "Pool", "Info"],
+    ["Date/Time", "Train", "Status", "Ord", "RC", "Inbound Crew", "Outbound Crew", "Pool", "Info"],
     rows));
   showTable(box);
   return null;   // table mode: nothing for the <pre>
