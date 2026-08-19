@@ -130,6 +130,8 @@ async function initApp() {
   updateHomeTiles();
   bindRsa();
   collectionBanner();
+  pollHealth();
+  setInterval(pollHealth, 60000);
 }
 
 // ===================== NAVIGATION =====================
@@ -1464,6 +1466,68 @@ function bindRsa() {
       result.textContent = "Network error: " + e.message;
     }
   });
+}
+
+// ===== DEAD-MAN HEALTH (operator 2026-08-19) =====
+// Two independent signals so a death is never silent:
+//  (a) token-free: the public feed's own age -- if the newest capture is
+//      older than STALE during active hours, collection has likely stopped.
+//  (b) authoritative: the watchdog's health.json in the private approve
+//      repo (needs the stored token) -- distinguishes 'process died' from
+//      'laptop off' and reports auto-restart.
+const HEALTH_STALE_MIN = 20;
+
+function pollHealth() {
+  const strip = document.getElementById("healthStrip");
+  if (!strip) return;
+
+  function paint(cls, text) {
+    strip.className = "health-strip " + cls;
+    strip.textContent = text;
+    strip.classList.toggle("hidden", cls === "ok");
+  }
+
+  // (a) token-free staleness from the feed we already have
+  const d = lineupsData();
+  let feedAgeMin = null;
+  if (d && d.meta && d.meta.captured_at) {
+    const times = Object.values(d.meta.captured_at).filter(Boolean)
+      .map((x) => new Date(x).getTime()).filter((n) => !isNaN(n));
+    if (times.length) feedAgeMin = Math.round((Date.now() - Math.max(...times)) / 60000);
+  }
+
+  // (b) authoritative watchdog verdict if we have a token
+  const tok = (localStorage.getItem("railcore_rsa_token") || "").trim();
+  const repo = (localStorage.getItem("railcore_rsa_repo") || "railcoredev/railcore-approve").trim();
+  const applyFeed = () => {
+    if (feedAgeMin != null && feedAgeMin > HEALTH_STALE_MIN) {
+      paint("stale", `⚠ Data ${feedAgeMin}m old — collection may be down`);
+    } else {
+      paint("ok", "");
+    }
+  };
+  if (!tok) { applyFeed(); return; }
+
+  fetch(`https://api.github.com/repos/${repo}/contents/status/health.json`, {
+    headers: { "Authorization": `Bearer ${tok}`, "Accept": "application/vnd.github+json" },
+    cache: "no-store",
+  }).then((r) => r.ok ? r.json() : null).then((j) => {
+    if (!j) { applyFeed(); return; }
+    const h = JSON.parse(atob(j.content.replace(/\s/g, "")));
+    const checkedAgeMin = Math.round((Date.now() - new Date(h.checked_at).getTime()) / 60000);
+    if (checkedAgeMin > 5) {
+      // watchdog itself is silent -> fall back to feed age, note it
+      applyFeed();
+      if (feedAgeMin == null || feedAgeMin <= HEALTH_STALE_MIN) {
+        paint("stale", `⚠ Watchdog silent ${checkedAgeMin}m — status uncertain`);
+      }
+      return;
+    }
+    if (h.status === "down") paint("down", `🔴 ${h.message}`);
+    else if (h.status === "stale") paint("stale", `⚠ ${h.message}`);
+    else if (h.status === "parked") paint("parked", "Nightly outage — sweeps paused");
+    else paint("ok", "");
+  }).catch(applyFeed);
 }
 
 function collectionBanner() {
