@@ -1531,12 +1531,22 @@ function pollHealth() {
 }
 
 function collectionBanner() {
-  // Home tile doubles as the collection-state banner.
+  // Home tile doubles as the collection-state banner. NEVER trust stale
+  // meta (operator caught 'running' while the laptop sat at the RSA
+  // prompt, 2026-08-19): if the feed itself is old, the state claim
+  // inside it is old too -- say so instead of repeating it.
   const d = lineupsData();
   const sub = document.getElementById("tileSubRsa");
   if (!sub) return;
+  let ageMin = null;
+  if (d && d.meta && d.meta.generated_at) {
+    const t0 = new Date(d.meta.generated_at).getTime();
+    if (!isNaN(t0)) ageMin = Math.round((Date.now() - t0) / 60000);
+  }
   const st = d && d.meta ? d.meta.collection_state : "";
-  if (st === "awaiting_login") {
+  if (ageMin != null && ageMin > 20) {
+    sub.textContent = `⚠ Status uncertain — feed ${ageMin}m old. Tap to check / approve.`;
+  } else if (st === "awaiting_login") {
     sub.textContent = "⚠ COLLECTION PAUSED — RSA needed. Tap to approve.";
   } else if (st === "active") {
     sub.textContent = "Collection running — nothing needed.";
