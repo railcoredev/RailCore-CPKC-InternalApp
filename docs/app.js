@@ -1702,6 +1702,74 @@ function renderPayView() {
 // The human still provides the factor; only the keyboard moved. Token is
 // device-local; the code expires server-side after 90 seconds.
 
+async function sendRsaCode(c) {
+  // ONE send path -- the Remote RSA screen and the floating box both use it.
+  const t = (localStorage.getItem("railcore_rsa_token") || "").trim();
+  const r = (localStorage.getItem("railcore_rsa_repo") || "railcoredev/railcore-approve").trim();
+  if (!t || !r) return "Set token + repo on the Remote RSA screen first.";
+  if (!c) return "Enter the code.";
+  try {
+    const path = `rsa/code-${Date.now()}.json`;
+    const body = { message: "rsa approve",
+                   content: btoa(JSON.stringify({ code: c, created_at: new Date().toISOString() })) };
+    const resp = await fetch(`https://api.github.com/repos/${r}/contents/${path}`, {
+      method: "PUT",
+      headers: { "Authorization": `Bearer ${t}`, "Accept": "application/vnd.github+json",
+                 "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+    });
+    return resp.ok
+      ? "✓ Sent. The laptop picks it up within ~10s. Code expires in 90s."
+      : `Failed (${resp.status}): check token/repo.`;
+  } catch (e) {
+    return "Network error: " + e.message;
+  }
+}
+
+// FLOATING RSA BOX (operator 2026-08-20): when the laptop is waiting at
+// the login, the entry field sits ON TOP of every page -- title, code
+// field, send. Appears with the need, leaves when the login moves on.
+function updateRsaFloat() {
+  const ls = window.LOGIN_STATUS;
+  const need = ls && ["rsa_wait", "code_rejected", "session_expired"].includes(ls.stage);
+  let box = document.getElementById("rsaFloat");
+  if (!need) { if (box) box.remove(); return; }
+  if (box) return;                     // already showing
+  box = document.createElement("div");
+  box.id = "rsaFloat";
+  box.style.cssText =
+    "position:fixed;left:12px;right:12px;bottom:18px;z-index:9999;" +
+    "background:#10151f;border:2px solid #ff6600;border-radius:14px;" +
+    "padding:14px;box-shadow:0 6px 24px rgba(0,0,0,.6)";
+  const title = document.createElement("div");
+  title.textContent = "🔑 RSA CODE — laptop is waiting";
+  title.style.cssText = "color:#ff6600;font-weight:700;margin-bottom:8px;letter-spacing:.03em";
+  const row = document.createElement("div");
+  row.style.cssText = "display:flex;gap:8px";
+  const inp = document.createElement("input");
+  inp.type = "text"; inp.inputMode = "numeric"; inp.autocomplete = "one-time-code";
+  inp.placeholder = "6-8 digits";
+  inp.style.cssText = "flex:1;padding:12px;border-radius:10px;border:1px solid #39415a;" +
+                      "background:#0a0e16;color:#fff;font-size:1.1em";
+  const btn = document.createElement("button");
+  btn.textContent = "Send";
+  btn.style.cssText = "padding:12px 20px;border-radius:10px;border:none;" +
+                      "background:#ff6600;color:#fff;font-weight:700;font-size:1em";
+  const res = document.createElement("div");
+  res.style.cssText = "color:#8b93a7;margin-top:8px;font-size:.85em";
+  res.textContent = (ls && ls.message) || "";
+  btn.addEventListener("click", async () => {
+    res.textContent = "Sending…";
+    const msg = await sendRsaCode(inp.value.trim());
+    res.textContent = msg;
+    if (msg.startsWith("✓")) inp.value = "";
+  });
+  inp.addEventListener("keydown", (e) => { if (e.key === "Enter") btn.click(); });
+  row.appendChild(inp); row.appendChild(btn);
+  box.appendChild(title); box.appendChild(row); box.appendChild(res);
+  document.body.appendChild(box);
+}
+
 async function pollRsaStatus() {
   // Live laptop feedback: the login advancer posts its stage to
   // status/login_status.json in the approve repo on every stage change
@@ -1726,6 +1794,7 @@ async function pollRsaStatus() {
     // stage drives the HOME TILE too, not just this screen.
     window.LOGIN_STATUS = s;
     collectionBanner();
+    updateRsaFloat();
     if (!visible) return;
     const age = Math.max(0, Math.round((Date.now() - new Date(s.at).getTime()) / 1000));
     const ageTxt = age < 120 ? `${age}s ago` : age < 5400 ? `${Math.round(age / 60)}m ago`
@@ -1786,34 +1855,9 @@ function bindRsa() {
   nSys.addEventListener("change", saveNotifPrefs);
   nPer.addEventListener("change", saveNotifPrefs);
   send.addEventListener("click", async () => {
-    const t = tok.value.trim(), r = repo.value.trim(), c = code.value.trim();
-    if (!t || !r || !c) { result.textContent = "Need token, repo, and code."; return; }
-    result.textContent = "Sending…";
-    try {
-      const path = `rsa/code-${Date.now()}.json`;
-      const body = {
-        message: "rsa approve",
-        content: btoa(JSON.stringify({
-          code: c, created_at: new Date().toISOString() })),
-      };
-      const resp = await fetch(`https://api.github.com/repos/${r}/contents/${path}`, {
-        method: "PUT",
-        headers: {
-          "Authorization": `Bearer ${t}`,
-          "Accept": "application/vnd.github+json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(body),
-      });
-      if (resp.ok) {
-        result.textContent = "✓ Sent. The laptop picks it up within ~10s and logs in. Code expires in 90s.";
-        code.value = "";
-      } else {
-        result.textContent = `Failed (${resp.status}): check token/repo.`;
-      }
-    } catch (e) {
-      result.textContent = "Network error: " + e.message;
-    }
+    const msg = await sendRsaCode(code.value.trim());
+    result.textContent = msg;
+    if (msg.startsWith("✓")) code.value = "";
   });
 }
 
