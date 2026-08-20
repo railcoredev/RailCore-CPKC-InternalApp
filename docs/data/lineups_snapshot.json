@@ -4,7 +4,7 @@
   "collection_message": "Light sweep sched_20260819_195938.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-20T01:00:16+00:00",
+  "generated_at": "2026-08-20T01:00:41+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260819_195433",
@@ -2324,8 +2324,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "10h 30m",
-         "minutes": 630
+         "label": "10h 29m",
+         "minutes": 629
         },
         "name": "IYOHA,(OSAYANDE)",
         "tags": [
@@ -4203,8 +4203,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "9h 55m",
-         "minutes": 595
+         "label": "9h 54m",
+         "minutes": 594
         },
         "name": "ROBERTS,(KIMBERLY)"
        },
@@ -4212,8 +4212,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "9h 55m",
-         "minutes": 595
+         "label": "9h 54m",
+         "minutes": 594
         },
         "name": "JAMESON,(DANIELLE)"
        }
@@ -4252,8 +4252,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 00m",
-         "minutes": 480
+         "label": "7h 59m",
+         "minutes": 479
         },
         "name": "HARTMAN,(JAMES)"
        },
@@ -4261,8 +4261,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 00m",
-         "minutes": 480
+         "label": "7h 59m",
+         "minutes": 479
         },
         "name": "CARAPIA,(JUAN)"
        },
@@ -4270,8 +4270,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "8h 00m",
-         "minutes": 480
+         "label": "7h 59m",
+         "minutes": 479
         },
         "name": "KEOMANIVONG,(SONNY)"
        }
@@ -4340,8 +4340,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 30m",
-         "minutes": 630
+         "label": "10h 29m",
+         "minutes": 629
         },
         "name": "DUNCAN,(ZACH)"
        },
@@ -4349,8 +4349,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "10h 30m",
-         "minutes": 630
+         "label": "10h 29m",
+         "minutes": 629
         },
         "name": "PETERSON,(DARREN)"
        }
@@ -5745,8 +5745,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 20m",
-         "minutes": 620
+         "label": "10h 19m",
+         "minutes": 619
         },
         "name": "GERST,(BRADEN)"
        },
@@ -5754,8 +5754,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "10h 20m",
-         "minutes": 620
+         "label": "10h 19m",
+         "minutes": 619
         },
         "name": "HATFIELD,(JARROD)"
        }
@@ -7782,6 +7782,7 @@
    "employee_number": "001135902",
    "assignment": "EX0013EN",
    "availability": null,
+   "board_rest": null,
    "tickets": [
     {
      "date": "2026-08-17",
