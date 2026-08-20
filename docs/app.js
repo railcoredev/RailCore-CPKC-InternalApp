@@ -1189,7 +1189,10 @@ function myStatusRows(me) {
   const bp = me.board_position;
   if (bp && bp.ordinal) {
     const ord = ["", "1st out", "2nd out", "3rd out"][bp.ordinal] || `${bp.ordinal}th out`;
-    rows.push(["BOARD POSITION", `${ord} of ${bp.of} (${bp.board || ""})`]);
+    // marker rides verbatim from the captured board row (one source --
+    // the card must never tell a different story than the board view)
+    const mark = bp.marker && bp.marker !== bp.craft ? ` · board shows ${bp.marker}` : "";
+    rows.push(["BOARD POSITION", `${ord} of ${bp.of} (${bp.board || ""})${mark}`]);
     if (bp.ordinal === 1) { band = "orange"; label = `1st OUT — ${bp.board || "board"}`; }
   }
   if (t0 && r.offDt) {
