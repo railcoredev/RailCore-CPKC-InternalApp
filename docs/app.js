@@ -180,10 +180,25 @@ function updateHomeTiles() {
     const cacheNote = LINEUPS.fromCache ? " · offline" : "";
     tl.textContent = `${d.train_lineup.train_count} trains · ${age || "?"}${cacheNote}`;
     cb.textContent = `${d.crew_boards.board_count} boards · ${formatAge(cap.crew_boards) || "?"}${cacheNote}`;
-    const runarounds = visibleAlerts().filter((a) => a.type === "runaround_candidate").length;
-    mt.textContent = runarounds
-      ? `⚠ ${runarounds} possible runaround${runarounds === 1 ? "" : "s"} · find your train fast`
-      : "Find where a train sits, fast";
+    // The top tile IS the Me summary (operator 2026-08-19): name +
+    // living status; tapping it opens the full card. Runaround alerts
+    // ride along when present.
+    const me = (d.my_status || [])[0];
+    const title = document.getElementById("tileTitleMe");
+    if (me && title) {
+      title.textContent = me.name || "Me";
+      const st = myCurrentStatus(me);
+      const runarounds = visibleAlerts().filter((a) => a.type === "runaround_candidate").length;
+      mt.textContent = st.label +
+        (runarounds ? ` · ⚠ ${runarounds} possible runaround${runarounds === 1 ? "" : "s"}` : "");
+      mt.style.color = { orange: "#ff6600", green: "#3ddc84",
+                         yellow: "#ffcf40", blue: "#6aa9ff" }[st.band] || "";
+    } else {
+      const runarounds = visibleAlerts().filter((a) => a.type === "runaround_candidate").length;
+      mt.textContent = runarounds
+        ? `⚠ ${runarounds} possible runaround${runarounds === 1 ? "" : "s"} · find your train fast`
+        : "Find where a train sits, fast";
+    }
     updateBellBadge();
   } else {
     tl.textContent = "no data yet";
