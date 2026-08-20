@@ -1749,11 +1749,15 @@ function updateRsaFloat() {
   const inp = document.createElement("input");
   inp.type = "text"; inp.inputMode = "numeric"; inp.autocomplete = "one-time-code";
   inp.placeholder = "6-8 digits";
-  inp.style.cssText = "flex:1;padding:12px;border-radius:10px;border:1px solid #39415a;" +
+  // min-width:0 lets the input shrink inside flex -- without it the
+  // browser's intrinsic input width shoves the button out of the card
+  inp.style.cssText = "flex:1;min-width:0;box-sizing:border-box;padding:12px;" +
+                      "border-radius:10px;border:1px solid #39415a;" +
                       "background:#0a0e16;color:#fff;font-size:1.1em";
   const btn = document.createElement("button");
   btn.textContent = "Send";
-  btn.style.cssText = "padding:12px 20px;border-radius:10px;border:none;" +
+  btn.style.cssText = "flex-shrink:0;box-sizing:border-box;padding:12px 20px;" +
+                      "border-radius:10px;border:none;" +
                       "background:#ff6600;color:#fff;font-weight:700;font-size:1em";
   const res = document.createElement("div");
   res.style.cssText = "color:#8b93a7;margin-top:8px;font-size:.85em";
