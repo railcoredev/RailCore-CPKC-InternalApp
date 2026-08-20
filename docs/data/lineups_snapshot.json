@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "active",
-  "collection_message": "Light sweep sched_20260820_114305.",
+  "collection_message": "Timed slot seniority@02:00.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-20T16:49:02+00:00",
+  "generated_at": "2026-08-20T16:54:25+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260820_114305",
@@ -2114,8 +2114,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 41m",
-         "minutes": 221
+         "label": "3h 36m",
+         "minutes": 216
         },
         "name": "PIATZ,(FRANK)"
        },
@@ -2123,8 +2123,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 41m",
-         "minutes": 221
+         "label": "3h 36m",
+         "minutes": 216
         },
         "name": "HASKE,(JUSTIN)"
        },
@@ -2132,8 +2132,8 @@
         "craft": "ET",
         "hos": {
          "band": "yellow",
-         "label": "3h 41m",
-         "minutes": 221
+         "label": "3h 36m",
+         "minutes": 216
         },
         "name": "PARKHURST,(CODY)"
        }
@@ -2262,8 +2262,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 41m",
-         "minutes": 641
+         "label": "10h 36m",
+         "minutes": 636
         },
         "name": "SEXTON,(SAM)",
         "tags": [
@@ -2274,8 +2274,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "10h 41m",
-         "minutes": 641
+         "label": "10h 36m",
+         "minutes": 636
         },
         "name": "BARAKS,(RON)",
         "tags": [
@@ -2286,8 +2286,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "10h 41m",
-         "minutes": 641
+         "label": "10h 36m",
+         "minutes": 636
         },
         "name": "HAGEN,(ANTHONY)",
         "tags": [
@@ -4105,8 +4105,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 41m",
-         "minutes": 221
+         "label": "3h 36m",
+         "minutes": 216
         },
         "name": "BELCHER,(JOHN)",
         "tags": [
@@ -4117,8 +4117,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 41m",
-         "minutes": 221
+         "label": "3h 36m",
+         "minutes": 216
         },
         "name": "FULTZ,(CALEB)",
         "tags": [
@@ -4160,8 +4160,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 26m",
-         "minutes": 446
+         "label": "7h 21m",
+         "minutes": 441
         },
         "name": "CASHATT,(DAKOTA)"
        },
@@ -4169,8 +4169,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 26m",
-         "minutes": 446
+         "label": "7h 21m",
+         "minutes": 441
         },
         "name": "COMSTOCK,(JUSTYCE)"
        }
@@ -4209,8 +4209,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 31m",
-         "minutes": 451
+         "label": "7h 26m",
+         "minutes": 446
         },
         "name": "LOERCH,(JORDAN)"
        },
@@ -4218,8 +4218,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 31m",
-         "minutes": 451
+         "label": "7h 26m",
+         "minutes": 446
         },
         "name": "COLLINS,(THADD)"
        }
@@ -4287,12 +4287,12 @@
        {
         "craft": "EN",
         "name": "WHITING,(STEVE)",
-        "on_in": "0h 12m"
+        "on_in": "0h 07m"
        },
        {
         "craft": "AE",
         "name": "ROSALES,(EDGAR)",
-        "on_in": "0h 12m"
+        "on_in": "0h 07m"
        }
       ],
       "eng_crew_count": "0",
@@ -5745,8 +5745,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 11m",
-         "minutes": 491
+         "label": "8h 06m",
+         "minutes": 486
         },
         "name": "STRAUSS,(WILLIAM)"
        },
@@ -5754,8 +5754,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 11m",
-         "minutes": 491
+         "label": "8h 06m",
+         "minutes": 486
         },
         "name": "KNIGHTS,(JARRETT)"
        }
@@ -6094,8 +6094,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 10m",
-         "minutes": 10
+         "label": "0h 05m",
+         "minutes": 5
         },
         "name": "CATES,(TODD)"
        }
@@ -6125,8 +6125,8 @@
         "craft": "CO",
         "hos": {
          "band": "orange",
-         "label": "0h 10m",
-         "minutes": 10
+         "label": "0h 05m",
+         "minutes": 5
         },
         "name": "SULLIVAN,(MIKE)"
        }
@@ -8636,7 +8636,17 @@
     "of": 4,
     "craft": "E",
     "marker": "*E",
-    "captured_at": "2026-08-20T16:44:48.534654+00:00"
+    "captured_at": "2026-08-20T16:44:48.534654+00:00",
+    "all_boards": [
+     {
+      "board": "OTTUMWA ENG XTRA BRD POSITION",
+      "ordinal": 3,
+      "of": 4,
+      "craft": "E",
+      "marker": "*E",
+      "captured_at": "2026-08-20T16:44:48.534654+00:00"
+     }
+    ]
    },
    "employee_number": "001135902",
    "assignment": "EX0013EN",
