@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-20T17:15:46+00:00",
+  "generated_at": "2026-08-20T17:36:01+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260820_120919",
@@ -2114,8 +2114,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 14m",
-         "minutes": 194
+         "label": "2h 54m",
+         "minutes": 174
         },
         "name": "PIATZ,(FRANK)"
        },
@@ -2123,8 +2123,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 14m",
-         "minutes": 194
+         "label": "2h 54m",
+         "minutes": 174
         },
         "name": "HASKE,(JUSTIN)"
        },
@@ -2132,8 +2132,8 @@
         "craft": "ET",
         "hos": {
          "band": "yellow",
-         "label": "3h 14m",
-         "minutes": 194
+         "label": "2h 54m",
+         "minutes": 174
         },
         "name": "PARKHURST,(CODY)"
        }
@@ -2262,8 +2262,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 14m",
-         "minutes": 614
+         "label": "9h 54m",
+         "minutes": 594
         },
         "name": "SEXTON,(SAM)",
         "tags": [
@@ -2274,8 +2274,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "10h 14m",
-         "minutes": 614
+         "label": "9h 54m",
+         "minutes": 594
         },
         "name": "BARAKS,(RON)",
         "tags": [
@@ -2286,8 +2286,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "10h 14m",
-         "minutes": 614
+         "label": "9h 54m",
+         "minutes": 594
         },
         "name": "HAGEN,(ANTHONY)",
         "tags": [
@@ -4075,8 +4075,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 14m",
-         "minutes": 194
+         "label": "2h 54m",
+         "minutes": 174
         },
         "name": "BELCHER,(JOHN)",
         "tags": [
@@ -4087,8 +4087,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 14m",
-         "minutes": 194
+         "label": "2h 54m",
+         "minutes": 174
         },
         "name": "FULTZ,(CALEB)",
         "tags": [
@@ -4130,8 +4130,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 59m",
-         "minutes": 419
+         "label": "6h 39m",
+         "minutes": 399
         },
         "name": "CASHATT,(DAKOTA)"
        },
@@ -4139,8 +4139,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 59m",
-         "minutes": 419
+         "label": "6h 39m",
+         "minutes": 399
         },
         "name": "COMSTOCK,(JUSTYCE)"
        }
@@ -4179,8 +4179,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 04m",
-         "minutes": 424
+         "label": "6h 44m",
+         "minutes": 404
         },
         "name": "LOERCH,(JORDAN)"
        },
@@ -4188,8 +4188,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 04m",
-         "minutes": 424
+         "label": "6h 44m",
+         "minutes": 404
         },
         "name": "COLLINS,(THADD)"
        }
@@ -4288,8 +4288,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "11h 45m",
-         "minutes": 705
+         "label": "11h 25m",
+         "minutes": 685
         },
         "name": "WHITING,(STEVE)"
        },
@@ -4297,8 +4297,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "11h 45m",
-         "minutes": 705
+         "label": "11h 25m",
+         "minutes": 685
         },
         "name": "ROSALES,(EDGAR)"
        }
@@ -5753,8 +5753,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 44m",
-         "minutes": 464
+         "label": "7h 24m",
+         "minutes": 444
         },
         "name": "STRAUSS,(WILLIAM)"
        },
@@ -5762,8 +5762,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 44m",
-         "minutes": 464
+         "label": "7h 24m",
+         "minutes": 444
         },
         "name": "KNIGHTS,(JARRETT)"
        }
