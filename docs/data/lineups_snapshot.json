@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; recovering (auto-login + RSA).",
+  "collection_message": "Session lost; waiting at the RSA prompt.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-20T03:29:23+00:00",
+  "generated_at": "2026-08-20T03:29:28+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260819_222423",
