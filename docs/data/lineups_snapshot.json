@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Awaiting login after session loss.",
+  "collection_message": "Session lost; waiting at the RSA prompt.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-20T04:10:48+00:00",
+  "generated_at": "2026-08-20T04:11:50+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260819_222423",
@@ -2234,8 +2234,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "7h 19m",
-         "minutes": 439
+         "label": "7h 18m",
+         "minutes": 438
         },
         "name": "IYOHA,(OSAYANDE)",
         "tags": [
@@ -2426,12 +2426,12 @@
        {
         "craft": "EN",
         "name": "BLASER,(RYAN)",
-        "on_in": "0h 24m"
+        "on_in": "0h 23m"
        },
        {
         "craft": "AE",
         "name": "BORMANN,(HAYDEN)",
-        "on_in": "0h 24m"
+        "on_in": "0h 23m"
        }
       ],
       "eng_crew_count": "0",
@@ -4154,8 +4154,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 44m",
-         "minutes": 404
+         "label": "6h 43m",
+         "minutes": 403
         },
         "name": "ROBERTS,(KIMBERLY)"
        },
@@ -4163,8 +4163,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 44m",
-         "minutes": 404
+         "label": "6h 43m",
+         "minutes": 403
         },
         "name": "JAMESON,(DANIELLE)"
        }
@@ -4203,8 +4203,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "4h 49m",
-         "minutes": 289
+         "label": "4h 48m",
+         "minutes": 288
         },
         "name": "HARTMAN,(JAMES)"
        },
@@ -4212,8 +4212,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "4h 49m",
-         "minutes": 289
+         "label": "4h 48m",
+         "minutes": 288
         },
         "name": "CARAPIA,(JUAN)"
        },
@@ -4221,8 +4221,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "4h 49m",
-         "minutes": 289
+         "label": "4h 48m",
+         "minutes": 288
         },
         "name": "KEOMANIVONG,(SONNY)"
        }
@@ -4291,8 +4291,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 19m",
-         "minutes": 439
+         "label": "7h 18m",
+         "minutes": 438
         },
         "name": "DUNCAN,(ZACH)"
        },
@@ -4300,8 +4300,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 19m",
-         "minutes": 439
+         "label": "7h 18m",
+         "minutes": 438
         },
         "name": "PETERSON,(DARREN)"
        }
@@ -5936,8 +5936,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 09m",
-         "minutes": 429
+         "label": "7h 08m",
+         "minutes": 428
         },
         "name": "GERST,(BRADEN)"
        },
@@ -5945,8 +5945,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 09m",
-         "minutes": 429
+         "label": "7h 08m",
+         "minutes": 428
         },
         "name": "HATFIELD,(JARROD)"
        }
