@@ -1709,18 +1709,24 @@ async function pollRsaStatus() {
   // here so the operator knows exactly when to send and whether it took.
   const el = document.getElementById("rsaLive");
   const block = document.getElementById("rsaBlock");
-  if (!el || !block || block.classList.contains("hidden")) return;
+  const visible = el && block && !block.classList.contains("hidden");
   const t = (localStorage.getItem("railcore_rsa_token") || "").trim();
   const r = (localStorage.getItem("railcore_rsa_repo") || "railcoredev/railcore-approve").trim();
-  if (!t) { el.textContent = "Set the token below to see live laptop status."; return; }
+  if (!t) { if (visible) el.textContent = "Set the token below to see live laptop status."; return; }
   try {
     const resp = await fetch(`https://api.github.com/repos/${r}/contents/status/login_status.json`, {
       headers: { "Authorization": `Bearer ${t}`, "Accept": "application/vnd.github+json" },
       cache: "no-store",
     });
-    if (!resp.ok) { el.textContent = "No laptop status posted yet."; return; }
+    if (!resp.ok) { if (visible) el.textContent = "No laptop status posted yet."; return; }
     const j = await resp.json();
     const s = JSON.parse(atob(j.content));
+    // ONE SOURCE (operator 2026-08-20, caught live: tile said "running"
+    // while the laptop sat at the RSA prompt): the advancer's own posted
+    // stage drives the HOME TILE too, not just this screen.
+    window.LOGIN_STATUS = s;
+    collectionBanner();
+    if (!visible) return;
     const age = Math.max(0, Math.round((Date.now() - new Date(s.at).getTime()) / 1000));
     const ageTxt = age < 120 ? `${age}s ago` : age < 5400 ? `${Math.round(age / 60)}m ago`
                : `${(age / 3600).toFixed(1)}h ago`;
@@ -1886,8 +1892,16 @@ function collectionBanner() {
     const t0 = new Date(d.meta.generated_at).getTime();
     if (!isNaN(t0)) ageMin = Math.round((Date.now() - t0) / 60000);
   }
+  const ls = window.LOGIN_STATUS;
   const st = d && d.meta ? d.meta.collection_state : "";
-  if (ageMin != null && ageMin > 20) {
+  const waitingStages = ["web_form", "rsa_wait", "session_expired", "cma_link",
+                         "cma_link_wait", "cma_tile", "green_signon", "code_rejected"];
+  if (ls && waitingStages.includes(ls.stage)) {
+    // the laptop itself says it is mid-login -- that beats any feed snapshot
+    sub.textContent = ls.stage === "rsa_wait"
+      ? "⚠ RSA NEEDED — laptop is at the prompt. Tap to send."
+      : `⏳ Logging in (${ls.stage.replace(/_/g, " ")}) — tap to watch.`;
+  } else if (ageMin != null && ageMin > 20) {
     sub.textContent = `⚠ Status uncertain — feed ${ageMin}m old. Tap to check / approve.`;
   } else if (st === "awaiting_login") {
     sub.textContent = "⚠ COLLECTION PAUSED — RSA needed. Tap to approve.";
