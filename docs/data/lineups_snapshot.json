@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "active",
-  "collection_message": "Light sweep sched_20260820_082313.",
+  "collection_message": "Light sweep sched_20260820_083315.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-20T13:29:10+00:00",
+  "generated_at": "2026-08-20T13:36:53+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260820_082313",
@@ -2174,8 +2174,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 06m",
-         "minutes": 186
+         "label": "2h 58m",
+         "minutes": 178
         },
         "name": "BLASER,(RYAN)"
        },
@@ -2183,8 +2183,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 06m",
-         "minutes": 186
+         "label": "2h 58m",
+         "minutes": 178
         },
         "name": "BORMANN,(HAYDEN)"
        }
@@ -2223,8 +2223,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "5h 11m",
-         "minutes": 311
+         "label": "5h 03m",
+         "minutes": 303
         },
         "name": "BESSER,(TIMOTHY)"
        },
@@ -2232,8 +2232,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "5h 11m",
-         "minutes": 311
+         "label": "5h 03m",
+         "minutes": 303
         },
         "name": "WARUIMBO,(JOE)"
        },
@@ -2241,8 +2241,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "5h 11m",
-         "minutes": 311
+         "label": "5h 03m",
+         "minutes": 303
         },
         "name": "REAVES,(DALTON)"
        }
@@ -2311,8 +2311,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 01m",
-         "minutes": 421
+         "label": "6h 53m",
+         "minutes": 413
         },
         "name": "PIATZ,(FRANK)"
        },
@@ -2320,8 +2320,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 01m",
-         "minutes": 421
+         "label": "6h 53m",
+         "minutes": 413
         },
         "name": "HASKE,(JUSTIN)"
        },
@@ -2329,8 +2329,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "7h 01m",
-         "minutes": 421
+         "label": "6h 53m",
+         "minutes": 413
         },
         "name": "PARKHURST,(CODY)"
        }
@@ -2422,9 +2422,34 @@
       "trn_planned_crew": []
      },
      {
-      "crewed": false,
+      "crewed": true,
       "date_time": "08/20-1735",
-      "eng_crew": [],
+      "eng_crew": [
+       {
+        "craft": "EN",
+        "name": "SEXTON,(SAM)",
+        "on_in": "1h 53m",
+        "tags": [
+         "recrew"
+        ]
+       },
+       {
+        "craft": "AE",
+        "name": "BARAKS,(RON)",
+        "on_in": "1h 53m",
+        "tags": [
+         "recrew"
+        ]
+       },
+       {
+        "craft": "ET",
+        "name": "HAGEN,(ANTHONY)",
+        "on_in": "1h 53m",
+        "tags": [
+         "recrew"
+        ]
+       }
+      ],
       "eng_crew_count": "0",
       "eng_crew_district": "8IDA",
       "eng_crew_pool": "DA",
@@ -4205,8 +4230,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "9h 26m",
-         "minutes": 566
+         "label": "9h 18m",
+         "minutes": 558
         },
         "name": "FIGUEROA,(CEDRIC)",
         "tags": [
@@ -4217,7 +4242,32 @@
       "eng_crew_count": "1",
       "eng_crew_district": "8IDA",
       "eng_crew_pool": "DA",
-      "eng_planned_crew": [],
+      "eng_planned_crew": [
+       {
+        "craft": "EN",
+        "name": "SEXTON,(SAM)",
+        "on_in": "1h 53m",
+        "tags": [
+         "recrew"
+        ]
+       },
+       {
+        "craft": "AE",
+        "name": "BARAKS,(RON)",
+        "on_in": "1h 53m",
+        "tags": [
+         "recrew"
+        ]
+       },
+       {
+        "craft": "ET",
+        "name": "HAGEN,(ANTHONY)",
+        "on_in": "1h 53m",
+        "tags": [
+         "recrew"
+        ]
+       }
+      ],
       "hours_in_future": "",
       "information": "PLANNED ORDER FROM MTP",
       "location_code": "04664",
@@ -4239,8 +4289,8 @@
         "craft": "CO",
         "hos": {
          "band": "green",
-         "label": "9h 26m",
-         "minutes": 566
+         "label": "9h 18m",
+         "minutes": 558
         },
         "name": "ADKINS,(CHRISTOPHER)",
         "tags": [
@@ -4261,8 +4311,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 01m",
-         "minutes": 421
+         "label": "6h 53m",
+         "minutes": 413
         },
         "name": "BELCHER,(JOHN)",
         "tags": [
@@ -4273,8 +4323,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 01m",
-         "minutes": 421
+         "label": "6h 53m",
+         "minutes": 413
         },
         "name": "FULTZ,(CALEB)",
         "tags": [
@@ -4316,8 +4366,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 01m",
-         "minutes": 361
+         "label": "5h 53m",
+         "minutes": 353
         },
         "name": "LOCHNER,(DEREK)"
        },
@@ -4325,8 +4375,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 01m",
-         "minutes": 361
+         "label": "5h 53m",
+         "minutes": 353
         },
         "name": "GRELK,(RUGER)"
        }
@@ -4365,8 +4415,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 46m",
-         "minutes": 646
+         "label": "10h 38m",
+         "minutes": 638
         },
         "name": "CASHATT,(DAKOTA)"
        },
@@ -4374,8 +4424,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "10h 46m",
-         "minutes": 646
+         "label": "10h 38m",
+         "minutes": 638
         },
         "name": "COMSTOCK,(JUSTYCE)"
        }
@@ -4444,8 +4494,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 51m",
-         "minutes": 651
+         "label": "10h 43m",
+         "minutes": 643
         },
         "name": "LOERCH,(JORDAN)"
        },
@@ -4453,8 +4503,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "10h 51m",
-         "minutes": 651
+         "label": "10h 43m",
+         "minutes": 643
         },
         "name": "COLLINS,(THADD)"
        }
@@ -6209,8 +6259,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "11h 31m",
-         "minutes": 691
+         "label": "11h 23m",
+         "minutes": 683
         },
         "name": "STRAUSS,(WILLIAM)"
        },
@@ -6218,8 +6268,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "11h 31m",
-         "minutes": 691
+         "label": "11h 23m",
+         "minutes": 683
         },
         "name": "KNIGHTS,(JARRETT)"
        }
@@ -8726,9 +8776,10 @@
    "home_terminal": "OT",
    "board_position": {
     "board": "OTTUMWA ENG XTRA BRD POSITION",
-    "ordinal": 2,
-    "of": 2,
+    "ordinal": 3,
+    "of": 3,
     "craft": "E",
+    "marker": "*E",
     "captured_at": "2026-08-20T13:24:56.748355+00:00"
    },
    "employee_number": "001135902",
@@ -8880,6 +8931,38 @@
   }
  ],
  "train_history": [
+  {
+   "date": "2026-08-20",
+   "train": "261-20",
+   "on_duty": "1030",
+   "off_duty": null,
+   "depart": "04664",
+   "arrive": "04640",
+   "pool": "DA",
+   "members": [
+    {
+     "craft": "ET",
+     "name": "HAGEN,(ANTHONY)BV",
+     "turn": "XX04",
+     "on_duty": "1030",
+     "off_duty": null
+    },
+    {
+     "craft": "AE",
+     "name": "BARAKS,(RON)QBV",
+     "turn": "DA23",
+     "on_duty": "1030",
+     "off_duty": null
+    },
+    {
+     "craft": "EN",
+     "name": "SEXTON,(SAM)BV",
+     "turn": "DA19",
+     "on_duty": "1030",
+     "off_duty": null
+    }
+   ]
+  },
   {
    "date": "2026-08-20",
    "train": "577-30201",
@@ -9624,6 +9707,31 @@
   },
   {
    "date": "2026-08-19",
+   "train": "180-19",
+   "on_duty": "1830",
+   "off_duty": "0800",
+   "depart": "04541",
+   "arrive": "04664",
+   "pool": "OB",
+   "members": [
+    {
+     "craft": "AE",
+     "name": "PETERSON,(DARREN)BV",
+     "turn": "XX01",
+     "on_duty": "1830",
+     "off_duty": "0800"
+    },
+    {
+     "craft": "EN",
+     "name": "DUNCAN,(ZACH)BV",
+     "turn": "XX01",
+     "on_duty": "1830",
+     "off_duty": "0800"
+    }
+   ]
+  },
+  {
+   "date": "2026-08-19",
    "train": "KU83LCL",
    "on_duty": "1830",
    "off_duty": "0430",
@@ -9669,31 +9777,6 @@
      "turn": "XX03",
      "on_duty": "1830",
      "off_duty": "0527"
-    }
-   ]
-  },
-  {
-   "date": "2026-08-19",
-   "train": "180-19",
-   "on_duty": "1830",
-   "off_duty": null,
-   "depart": "04541",
-   "arrive": "04664",
-   "pool": "OB",
-   "members": [
-    {
-     "craft": "EN",
-     "name": "DUNCAN,(ZACH)BV",
-     "turn": "XX01",
-     "on_duty": "1830",
-     "off_duty": null
-    },
-    {
-     "craft": "AE",
-     "name": "PETERSON,(DARREN)BV",
-     "turn": "XX01",
-     "on_duty": "1830",
-     "off_duty": null
     }
    ]
   },
