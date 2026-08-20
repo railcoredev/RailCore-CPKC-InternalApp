@@ -193,12 +193,16 @@ function updateHomeTiles() {
     const title = document.getElementById("tileTitleMe");
     if (me && title) {
       title.textContent = me.name || "Me";
-      const st = myCurrentStatus(me);
+      const st = myStatusRows(me);
       const runarounds = visibleAlerts().filter((a) => a.type === "runaround_candidate").length;
-      mt.textContent = st.label +
-        (runarounds ? ` · ⚠ ${runarounds} possible runaround${runarounds === 1 ? "" : "s"}` : "");
-      mt.style.color = { orange: "#ff6600", green: "#3ddc84",
-                         yellow: "#ffcf40", blue: "#6aa9ff" }[st.band] || "";
+      mt.textContent = "";
+      mt.appendChild(kvRows(st.rows, BAND_COLORS[st.band]));
+      if (runarounds) {
+        const warn = el("div", null,
+          `⚠ ${runarounds} possible runaround${runarounds === 1 ? "" : "s"}`);
+        warn.style.color = "#ff6600";
+        mt.appendChild(warn);
+      }
     } else {
       const runarounds = visibleAlerts().filter((a) => a.type === "runaround_candidate").length;
       mt.textContent = runarounds
@@ -1161,8 +1165,33 @@ function myStatusRows(me) {
   }
 
   const away = t0 && t0.arr && homeSt && t0.arr !== homeSt;
-  const where = away ? `AT HOTEL — ${t0.arr}` : "AT HOME — on the board";
+  // Re-entry (feed-computed from operator rules): a member inside their
+  // ADO days off is NOT on the board -- say so, and count down.
+  const re = me.reentry;
+  const reDt = re && re.at ? new Date(re.at) : null;
+  let where = away ? `AT HOTEL — ${t0.arr}` : "AT HOME — on the board";
+  if (reDt && reDt > now && re.into_rest_days) {
+    where = "DAYS OFF (ADO)";
+    band = "blue";
+  }
   rows.push(["STATUS", where]);
+  if (reDt) {
+    if (reDt > now) {
+      const mins = Math.round((reDt - now) / 6e4);
+      const cd = `in ${Math.floor(mins / 60)}h ${String(mins % 60).padStart(2, "0")}m`;
+      rows.push(["BACK ON BOARD", `${fmtClock(reDt)} ${localDay(reDt)} — ${cd}`]);
+      if (label.startsWith("AT HOME")) label = `${where} — back ${fmtClock(reDt)} ${localDay(reDt)}`;
+      else label = `${where} — back ${fmtClock(reDt)} ${localDay(reDt)}`;
+    } else {
+      rows.push(["ON BOARD SINCE", `${fmtClock(reDt)} ${localDay(reDt)}`]);
+    }
+  }
+  const bp = me.board_position;
+  if (bp && bp.ordinal) {
+    const ord = ["", "1st out", "2nd out", "3rd out"][bp.ordinal] || `${bp.ordinal}th out`;
+    rows.push(["BOARD POSITION", `${ord} of ${bp.of} (${bp.board || ""})`]);
+    if (bp.ordinal === 1) { band = "orange"; label = `1st OUT — ${bp.board || "board"}`; }
+  }
   if (t0 && r.offDt) {
     rows.push(["TIED UP", `${t0.off_duty} ${localDay(r.offDt)} (${t0.train})`]);
   }
@@ -1182,7 +1211,7 @@ function myStatusRows(me) {
     }
     if (now >= restDt) {
       rows.push(["REST", `RESTED — since ${br.rested_at} (board)`]);
-      band = "green"; label = `${where} — rested`;
+      if (band !== "blue") { band = "green"; label = `${where} — rested`; }
     } else {
       rows.push(["REST", `resting — rested at ${br.rested_at} ${localDay(restDt)} (board)`]);
       band = "yellow"; label = `${where} — rested at ${br.rested_at}`;
@@ -1196,7 +1225,7 @@ function myStatusRows(me) {
   } else if (t0 && r.offDt && r.restEnd) {
     if (now >= r.restEnd) {
       rows.push(["REST", `RESTED — since ${fmtClock(r.restEnd)} ${localDay(r.restEnd)}`]);
-      band = "green"; label = `${where} — rested`;
+      if (band !== "blue") { band = "green"; label = `${where} — rested`; }
     } else {
       rows.push(["REST", `resting — rested at ${fmtClock(r.restEnd)} ${localDay(r.restEnd)}`]);
       band = "yellow"; label = `${where} — rested at ${fmtClock(r.restEnd)}`;
