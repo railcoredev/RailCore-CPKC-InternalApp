@@ -1074,29 +1074,100 @@ function renderMyStatus(d) {
   return lines.join("\n");
 }
 
+// Current status for the Me card (operator 2026-08-19): one line that
+// changes with life on the railroad -- on a train, called, at the hotel
+// (rested or not), days off, booked off, or home on the board.
+function myCurrentStatus(me) {
+  const now = new Date();
+  const t0 = me.tickets && me.tickets[0];
+  const mk = (tk, hhmm) => {
+    if (!tk || !tk.date || !hhmm) return null;
+    const dt = new Date(`${tk.date}T${hhmm.slice(0, 2)}:${hhmm.slice(2)}:00`);
+    return isNaN(dt) ? null : dt;
+  };
+  const onDt = t0 && mk(t0, t0.on_duty);
+  let offDt = t0 && mk(t0, t0.off_duty);
+  if (onDt && offDt && offDt < onDt) offDt = new Date(offDt.getTime() + 864e5);
+
+  const av = me.availability || {};
+  const homeSt = (TERMINAL_DEFAULTS[me.home_terminal || "OT"] || {}).station;
+
+  if (onDt && onDt > now) {
+    return { label: `CALLED — ${t0.train}, on duty ${t0.on_duty} ${localDay(onDt)}`, band: "orange" };
+  }
+  if (onDt && !offDt && (now - onDt) < 14 * 36e5) {
+    return { label: `ON A TRAIN — ${t0.train} (${t0.craft}), on duty ${t0.on_duty}`, band: "orange" };
+  }
+  if (t0 && offDt && t0.arr && homeSt && t0.arr !== homeSt) {
+    const restedAt = new Date(offDt.getTime() + 10 * 36e5);
+    return now >= restedAt
+      ? { label: `AT HOTEL (${t0.arr}) — RESTED, tied up ${t0.off_duty}`, band: "green" }
+      : { label: `AT HOTEL (${t0.arr}) — resting, rested at ${restedAt.getHours()}:${String(restedAt.getMinutes()).padStart(2, "0")}`, band: "yellow" };
+  }
+  if (av.state === "rest_day") return { label: "DAYS OFF (ADO rest day)", band: "blue" };
+  if (av.state === "booked_off") return { label: "BOOKED OFF", band: "blue" };
+  if (av.state === "annual_vacation") return { label: "ANNUAL VACATION", band: "blue" };
+  const tied = t0 && t0.off_duty ? ` — tied up ${t0.off_duty} ${t0.date}` : "";
+  return { label: `AT HOME — on the board${tied}`, band: "green" };
+}
+
+function localDay(dt) {
+  return `${String(dt.getMonth() + 1).padStart(2, "0")}/${String(dt.getDate()).padStart(2, "0")}`;
+}
+
+let meExpanded = false;
+
 function renderMyTrainTable() {
   const d = lineupsData();
   if (!d) { showText(); return "No lineup data available yet."; }
   const q = (DOM.trainFindInput.value || "").trim().toUpperCase();
   const box = el("div");
 
-  // RIGHT NOW card (operator: current = where I am right now)
+  // ME card (operator 2026-08-19): identity row, then a status line that
+  // opens into history + limited financials on tap.
   const me = (d.my_status || [])[0];
-  if (me && me.tickets && me.tickets.length) {
-    const cur = me.tickets[0];
-    box.appendChild(el("div", "table-title",
-      `RIGHT NOW — ${me.name || ""}: last ticket ${cur.train || ""} ` +
-      `(${cur.craft || ""}) on ${cur.date || ""}, ` +
-      `${cur.on_duty || "?"} → ${cur.off_duty || "on duty / not tied up"}`));
-    const hrows = me.tickets.slice(0, 14).map((tk) => [
-      tk.date || "", tk.train || "", tk.craft || "",
-      tk.on_duty || "—", tk.off_duty || "—",
-      `${tk.dep || "?"}→${tk.arr || "?"}`,
-      tk.pool ? `${tk.pool}${tk.turn ? "/" + tk.turn : ""}` : "",
-    ]);
-    box.appendChild(el("div", "table-title", "YOUR HISTORY — captured tickets"));
-    box.appendChild(buildTable(
-      ["Date", "Train", "Seat", "On", "Off", "Route", "Pool"], hrows));
+  if (me) {
+    box.appendChild(buildTable(["Name", "Emp #", "Assignment"],
+      [[me.name || "", me.employee_number || "—", me.assignment || "—"]]));
+
+    const st = myCurrentStatus(me);
+    const stRow = el("div", "table-title me-status");
+    stRow.style.cursor = "pointer";
+    stRow.textContent = `● ${st.label}  ${meExpanded ? "▾" : "▸"} tap for history + pay`;
+    stRow.style.color = { orange: "#ff6600", green: "#3ddc84",
+                          yellow: "#ffcf40", blue: "#6aa9ff" }[st.band] || "";
+    stRow.onclick = () => { meExpanded = !meExpanded; renderCurrentView(); };
+    box.appendChild(stRow);
+
+    if (meExpanded && me.tickets && me.tickets.length) {
+      const hrows = me.tickets.slice(0, 14).map((tk) => [
+        tk.date || "", tk.train || "", tk.craft || "",
+        tk.on_duty || "—", tk.off_duty || "—",
+        `${tk.dep || "?"}→${tk.arr || "?"}`,
+        tk.pool ? `${tk.pool}${tk.turn ? "/" + tk.turn : ""}` : "",
+      ]);
+      box.appendChild(el("div", "table-title", "MY TRAINS — captured tickets"));
+      box.appendChild(buildTable(
+        ["Date", "Train", "Seat", "On", "Off", "Route", "Pool"], hrows));
+
+      const fin = el("div", "table-title", "PAY — loading…");
+      box.appendChild(fin);
+      loadPersonalFeed().then((p) => {
+        if (!p || !p.weeks) { fin.textContent = "PAY — set your token in Remote RSA to see totals."; return; }
+        const halves = {};
+        p.weeks.forEach((w) => {
+          const dt = new Date(w.week_of + "T00:00:00Z");
+          const half = `${w.week_of.slice(0, 7)}-${dt.getUTCDate() <= 15 ? "H1" : "H2"}`;
+          halves[half] = halves[half] || { earned: 0, starts: 0 };
+          halves[half].earned += w.earned; halves[half].starts += w.trips;
+        });
+        const keys = Object.keys(halves).sort().reverse();
+        const cur = keys[0], last = keys[1];
+        fin.textContent = "PAY — " +
+          (cur ? `this half (${cur}): $${halves[cur].earned.toFixed(2)} · ${halves[cur].starts} starts` : "") +
+          (last ? `  |  last half (${last}): $${halves[last].earned.toFixed(2)} · ${halves[last].starts} starts` : "");
+      }).catch(() => { fin.textContent = "PAY — unavailable."; });
+    }
   }
 
   if (q.length >= 2) {
