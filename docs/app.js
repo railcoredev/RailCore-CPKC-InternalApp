@@ -788,6 +788,10 @@ function renderBoardsTable() {
   const rows = [];
   (b.rows || []).forEach((r) => {
     const raw = String(r.raw_line || "");
+    // The '*' on a board row is a QUALIFICATION marker (under a year in
+    // craft), NOT unavailability -- operator taught this twice (NEER
+    // 2026-08-19; reaffirmed 2026-08-20 on his own fresh mark-back row).
+    // Show it verbatim; never dim, never say "marked off" because of it.
     const starred = /\*\w{0,2}\s+\d{3,4}\s+\d{3}/.test(raw);
     const hours = String(r.turn_hours || "").trim().split(/\s+/);
     const nameEl = el("span", null, r.employee_name || "");
@@ -796,9 +800,9 @@ function renderBoardsTable() {
     const tr = [
       r.position || "", r.turn_asgn || "", (starred ? "*" : "") + (r.craft_code || ""),
       nameEl, hours[0] || "—", hours[1] || "—",
-      r.status_code || (starred ? "marked off" : ""),
+      r.status_code || "",
     ];
-    tr._cls = (starred ? "row-off " : "") + (isMe ? "row-me" : "");
+    tr._cls = (isMe ? "row-me" : "");
     rows.push(tr);
   });
   const box = el("div");
