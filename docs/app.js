@@ -1746,6 +1746,39 @@ function bindRsa() {
   repo.value = localStorage.getItem("railcore_rsa_repo") || "railcoredev/railcore-approve";
   tok.addEventListener("input", () => localStorage.setItem("railcore_rsa_token", tok.value.trim()));
   repo.addEventListener("input", () => localStorage.setItem("railcore_rsa_repo", repo.value.trim()));
+
+  // Notification levels (operator 2026-08-20): the phone owns the dial.
+  // Saved locally AND published to the private repo; the laptop reads it
+  // before every send.
+  const nSys = document.getElementById("notifLevelSystem");
+  const nPer = document.getElementById("notifLevelPersonal");
+  const nRes = document.getElementById("notifPrefResult");
+  nSys.value = localStorage.getItem("railcore_notif_system") || "2";
+  nPer.value = localStorage.getItem("railcore_notif_personal") || "2";
+  async function saveNotifPrefs() {
+    localStorage.setItem("railcore_notif_system", nSys.value);
+    localStorage.setItem("railcore_notif_personal", nPer.value);
+    const t2 = tok.value.trim(), r2 = repo.value.trim();
+    if (!t2 || !r2) { nRes.textContent = "Saved on phone. Set token to sync to laptop."; return; }
+    try {
+      const path = "settings/notify_prefs.json";
+      const headers = { "Authorization": `Bearer ${t2}`,
+                        "Accept": "application/vnd.github+json" };
+      let sha;
+      const cur = await fetch(`https://api.github.com/repos/${r2}/contents/${path}`, { headers, cache: "no-store" });
+      if (cur.ok) sha = (await cur.json()).sha;
+      const body = { message: "notify prefs",
+                     content: btoa(JSON.stringify({ system: +nSys.value, personal: +nPer.value,
+                                                    updated_at: new Date().toISOString() })) };
+      if (sha) body.sha = sha;
+      const resp = await fetch(`https://api.github.com/repos/${r2}/contents/${path}`, {
+        method: "PUT", headers: { ...headers, "Content-Type": "application/json" },
+        body: JSON.stringify(body) });
+      nRes.textContent = resp.ok ? "✓ Levels synced to the laptop." : `Sync failed (${resp.status}).`;
+    } catch (e) { nRes.textContent = "Sync error: " + e.message; }
+  }
+  nSys.addEventListener("change", saveNotifPrefs);
+  nPer.addEventListener("change", saveNotifPrefs);
   send.addEventListener("click", async () => {
     const t = tok.value.trim(), r = repo.value.trim(), c = code.value.trim();
     if (!t || !r || !c) { result.textContent = "Need token, repo, and code."; return; }
