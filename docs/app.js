@@ -797,6 +797,17 @@ function renderBoardsTable() {
     const nameEl = el("span", null, r.employee_name || "");
     const isMe = myName && String(r.employee_name || "").toUpperCase().startsWith(myName.slice(0, 12));
     if (isMe) nameEl.textContent += "  ◀ you";
+    // ON <train>: screen truth cross-referenced by the feed -- another
+    // board in the SAME sweep literally printed "ON <train>" for this
+    // member (e.g. the OB turn-order screen while the position board
+    // still lists their turn standing). Absence of the badge claims
+    // nothing (only some screens carry it). Operator 2026-08-20:
+    // Stonehouse on the SW board AND on 180-20 -- both true; say so.
+    // Appended AFTER the "◀ you" textContent write (textContent wipes
+    // child nodes -- the v4.4.0 CSS lesson's DOM cousin).
+    if (r.on_train) {
+      nameEl.appendChild(el("span", "on-train-chip", ` ON ${r.on_train}`));
+    }
     const tr = [
       r.position || "", r.turn_asgn || "", (starred ? "*" : "") + (r.craft_code || ""),
       nameEl, hours[0] || "—", hours[1] || "—",
@@ -842,7 +853,8 @@ function renderBoardsView() {
     const hours = String(r.turn_hours || "").trim(); // verbatim from the board
     const stc = String(r.status_code || "");
     const away = r.home_away ? "  AWAY" : "";
-    lines.push(`${pos}  ${turn} ${cr} ${nm}${hours ? " " + hours : ""}${stc ? "  " + stc : ""}${away}`);
+    const onTrain = r.on_train ? `  ON ${r.on_train}` : "";
+    lines.push(`${pos}  ${turn} ${cr} ${nm}${hours ? " " + hours : ""}${stc ? "  " + stc : ""}${away}${onTrain}`);
   });
   return lines.join("\n");
 }

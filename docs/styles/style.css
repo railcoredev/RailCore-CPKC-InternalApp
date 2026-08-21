@@ -561,6 +561,8 @@ body {
 
 .rc-table tr.row-off td { color: #6f7692; }
 .rc-table tr.row-me td { background: rgba(255,102,0,0.09) !important; }
+/* member currently out on a train (screen-truth cross-reference) */
+.on-train-chip { color: #4caf7d; font-size: 0.85em; white-space: nowrap; }
 
 
 /* roomier rows for reference/siding tables (operator request) */

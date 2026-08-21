@@ -459,3 +459,12 @@ for updates' (x2 or force-stop once — known SW race).
 - 2026-08-17: names_mode=initials until private hosting exists.
 - 2026-08-17: DataHyperstore-Test repo stays frozen (E6); do not publish
   new data there.
+
+## V4.10.20 (2026-08-20 night) — ON-train board badge
+- Boards: a member also printed "ON <train>" by ANOTHER screen in the same
+  sweep now shows a green " ON <symbol>" chip after their name (table +
+  text views). Screen truth only — the feed cross-references raw board
+  lines within one run; no inference; absence claims nothing. Trigger:
+  operator caught STONEHOUSE first-out on the SW position board while on
+  180-20 covering OB's open MU02 turn — CMA shows both, both true (weekly
+  sheet SWAE01 + tickets + both boards cross-confirmed). SW cache v4120.
