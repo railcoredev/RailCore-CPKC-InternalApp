@@ -35,7 +35,11 @@ async function loadLineupsSnapshot() {
   const url = 'data/lineups_snapshot.json';
   const CACHE_KEY = 'railcore_lineups_cache_v1';
   try {
-    const res = await fetch(url, { cache: 'no-store' });
+    // Cache-bust: cache:'no-store' only bypasses the browser cache, NOT the
+    // GitHub Pages CDN edge cache -- which served the SAME url a stale copy
+    // for ~10 min even on a hard refresh (operator 2026-08-22: refreshed but
+    // still stale). A unique query param makes each request a CDN cache miss.
+    const res = await fetch(url + '?t=' + Date.now(), { cache: 'no-store' });
     if (!res.ok) throw new Error('Lineups HTTP ' + res.status);
     const json = await res.json();
     try { localStorage.setItem(CACHE_KEY, JSON.stringify(json)); } catch (_) {}
@@ -54,7 +58,7 @@ async function loadRailCoreSnapshot() {
   const url = 'data/railcore_snapshot.json';
 
   try {
-    const res = await fetch(url, { cache: 'no-store' });
+    const res = await fetch(url + '?t=' + Date.now(), { cache: 'no-store' });
     if (!res.ok) {
       console.warn('Snapshot fetch failed with status', res.status);
       throw new Error('Snapshot HTTP error');

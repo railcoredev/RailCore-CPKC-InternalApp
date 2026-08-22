@@ -141,6 +141,17 @@ async function initApp() {
   collectionBanner();
   pollHealth();
   setInterval(pollHealth, 60000);
+  // Auto-refresh the board while the app is FOREGROUNDED (operator
+  // 2026-08-22: a "6 out" notification was correct but the open app stayed
+  // stale -- there was no poll, only reload-on-reopen). Mirrors the
+  // visibilitychange reload on a 60s timer; the data_loader cache-bust keeps
+  // each pull fresh past the GitHub Pages CDN.
+  setInterval(async () => {
+    if (document.hidden) return;
+    LINEUPS = await loadLineupsSnapshot();
+    updateHomeTiles();
+    renderCurrentView();
+  }, 60000);
 }
 
 // ===================== NAVIGATION =====================
