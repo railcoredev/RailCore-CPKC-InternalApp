@@ -1,10 +1,10 @@
 {
  "meta": {
-  "collection_state": "active",
-  "collection_message": "Light sweep sched_20260822_122456.",
+  "collection_state": "awaiting_login",
+  "collection_message": "Session lost; recovering (auto-login + RSA).",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-22T17:27:12+00:00",
+  "generated_at": "2026-08-22T17:29:56+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260822_122456",
@@ -2353,12 +2353,12 @@
        {
         "craft": "EN",
         "name": "HANK,(MATT)",
-        "on_in": "0h 03m"
+        "on_in": "0h 00m"
        },
        {
         "craft": "AE",
         "name": "HARDEN,(LEVI)",
-        "on_in": "0h 03m"
+        "on_in": "0h 00m"
        }
       ],
       "eng_crew_count": "0",
@@ -4141,8 +4141,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 48m",
-         "minutes": 468
+         "label": "7h 45m",
+         "minutes": 465
         },
         "name": "CADY,(AARON)"
        },
@@ -4150,8 +4150,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 48m",
-         "minutes": 468
+         "label": "7h 45m",
+         "minutes": 465
         },
         "name": "OLDFIELD,(COLTON)"
        }
@@ -4190,8 +4190,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "9h 08m",
-         "minutes": 548
+         "label": "9h 05m",
+         "minutes": 545
         },
         "name": "LOCHNER,(DEREK)"
        },
@@ -4199,8 +4199,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "9h 08m",
-         "minutes": 548
+         "label": "9h 05m",
+         "minutes": 545
         },
         "name": "HATFIELD,(JARROD)"
        }
@@ -4230,8 +4230,8 @@
         "craft": "TT",
         "hos": {
          "band": "green",
-         "label": "9h 08m",
-         "minutes": 548
+         "label": "9h 05m",
+         "minutes": 545
         },
         "name": "CONWELL,(JOSHUA)"
        }
@@ -4249,8 +4249,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "11h 08m",
-         "minutes": 668
+         "label": "11h 05m",
+         "minutes": 665
         },
         "name": "FIGUEROA,(CEDRIC)",
         "tags": [
@@ -4261,8 +4261,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "11h 08m",
-         "minutes": 668
+         "label": "11h 05m",
+         "minutes": 665
         },
         "name": "LINDLY,(DONALD)",
         "tags": [
@@ -5960,8 +5960,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 03m",
-         "minutes": 483
+         "label": "8h 00m",
+         "minutes": 480
         },
         "name": "JACKMAN,(MATT)"
        },
@@ -5969,8 +5969,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 03m",
-         "minutes": 483
+         "label": "8h 00m",
+         "minutes": 480
         },
         "name": "BOER,(BRANDON)"
        }
