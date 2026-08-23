@@ -27,7 +27,8 @@ const SECTIONS = {
   mytrain:   { title: "MY TRAIN",       blocks: ["findBlock", "freshnessBar"] },
   lineups:   { title: "TRAIN LINEUPS",  blocks: ["stationBlock", "freshnessBar"] },
   history:   { title: "TRAIN HISTORY",  blocks: ["freshnessBar"] },
-  boards:    { title: "CREW BOARDS",    blocks: ["personFindBlock", "boardBlock", "freshnessBar"] },
+  boards:    { title: "CREW BOARDS",    blocks: ["boardBlock", "freshnessBar"] },
+  search:    { title: "SEARCH",         blocks: ["searchBlock", "freshnessBar"] },
   reference: { title: "REF CARDS",      blocks: ["subdivisionBlock", "freshnessBar"] },
   crossings: { title: "CROSSINGS",      blocks: ["stateBlock", "subdivisionBlock", "spacingBlock", "viewBlock", "freshnessBar"] },
   sidings:   { title: "SIDINGS",        blocks: ["subdivisionBlock", "freshnessBar"] },
@@ -36,7 +37,7 @@ const SECTIONS = {
 
 const ALL_BLOCKS = ["stateBlock", "subdivisionBlock", "spacingBlock", "viewBlock",
                     "findBlock", "yardBlock", "stationBlock", "boardBlock",
-                    "personFindBlock", "refMenuBlock", "rsaBlock", "freshnessBar"];
+                    "searchBlock", "refMenuBlock", "rsaBlock", "freshnessBar"];
 
 document.addEventListener("DOMContentLoaded", () => {
   cacheDom();
@@ -62,7 +63,7 @@ function cacheDom() {
   DOM.printButton = document.getElementById("printButton");
   DOM.downloadButton = document.getElementById("downloadButton");
   DOM.trainFindInput = document.getElementById("trainFindInput");
-  DOM.personFindInput = document.getElementById("personFindInput");
+  DOM.searchInput = document.getElementById("searchInput");
   DOM.myNameInput = document.getElementById("myNameInput");
 
   DOM.yardSelect = document.getElementById("yardSelect");
@@ -103,7 +104,7 @@ function wireEvents() {
   DOM.stationSelect.addEventListener("change", renderCurrentView);
   DOM.boardSelect.addEventListener("change", renderCurrentView);
   DOM.trainFindInput.addEventListener("input", renderCurrentView);
-  DOM.personFindInput.addEventListener("input", renderCurrentView);
+  DOM.searchInput.addEventListener("input", renderCurrentView);
   DOM.myNameInput.value = localStorage.getItem("railcore_my_name") || "";
   DOM.myNameInput.addEventListener("input", () => {
     try { localStorage.setItem("railcore_my_name", DOM.myNameInput.value.trim()); }
@@ -178,6 +179,7 @@ function openSection(sectionId) {
   updateFreshnessBar();
   renderCurrentView();
   if (sectionId === "mytrain") DOM.trainFindInput.focus();
+  if (sectionId === "search") DOM.searchInput.focus();
 }
 
 function goHome() {
@@ -436,6 +438,10 @@ function renderCurrentView() {
     text = r;
   } else if (currentSection === "boards") {
     const r = renderBoardsTable();
+    if (r === null) return;
+    text = r;
+  } else if (currentSection === "search") {
+    const r = renderSearchView();
     if (r === null) return;
     text = r;
   } else if (currentSection === "reference") {
@@ -808,11 +814,12 @@ function renderLineupsView() {
 
 // PERSON SEARCH (operator 2026-08-23): type a name, see their current status
 // like a mini My Card -- on a train (which one), on a board (position, rest),
-// or last tie-up. Sources are the same published feed the tables use: board
-// rows (position/turn/MTOD verbatim) + train history members. Honest about
-// what it doesn't know: rest is labeled (board) when from MTOD, (est +10h)
-// when derived from a tie-up, and absent when neither exists.
-function renderPersonSearch(d, q) {
+// or last tie-up. Sources: the published ROSTER (every employee, any home
+// terminal -- the TILLIS fix), board rows (position/turn/MTOD verbatim) and
+// train history members. Honest about what it doesn't know: rest is labeled
+// (board) when from MTOD, (est +10h) when derived from a tie-up, and absent
+// when neither exists. Appends person cards into `box`; returns match count.
+function buildPersonResults(d, q, box) {
   const now = new Date();
   const mk = (dateStr, hhmm) => {
     if (!dateStr || !hhmm || !/^\d{4}$/.test(hhmm)) return null;
@@ -851,12 +858,19 @@ function renderPersonSearch(d, q) {
       }
     });
   });
+  // ROSTER: the whole network, any home terminal. Fills in anyone the boards/
+  // history don't show, and stamps craft + home on everyone it knows.
+  (d.roster || []).forEach((r) => {
+    const nm = String(r.name || "");
+    if (!nm.toUpperCase().includes(q)) return;
+    const p = (people[keyOf(nm)] = people[keyOf(nm)] || { name: nm, boards: [] });
+    p.roster = r;
+  });
 
-  const box = el("div");
   const keys = Object.keys(people);
   box.appendChild(el("div", "table-title",
-    keys.length ? `PERSON SEARCH — "${q}" · ${keys.length} match${keys.length === 1 ? "" : "es"}`
-                : `PERSON SEARCH — no one matching "${q}" on the boards or recent trains`));
+    keys.length ? `PEOPLE — ${keys.length} match${keys.length === 1 ? "" : "es"}`
+                : `PEOPLE — no one matching "${q}"`));
   keys.sort().slice(0, 6).forEach((k) => {
     const p = people[k];
     const rows = [];
@@ -896,6 +910,12 @@ function renderPersonSearch(d, q) {
     if (p.lastTrain) {
       rows.push(["LAST TRAIN", `${p.lastTrain.train} — tied up ${fmtClock(p.lastTrain.off)} ${localDay(p.lastTrain.off)}`]);
     }
+    if (p.roster) {
+      rows.push(["ROSTER", `${p.roster.craft || "?"} · home ${p.roster.home_terminal || "?"}`]);
+    }
+    if (!rows.length) {
+      rows.push(["STATUS", "on the roster — no board row or recent train in the feed"]);
+    }
     if (!band) {                      // same readiness colors as My Card
       if (restedNow === false) band = "grey";
       else if (bestPos === 1) band = "red";
@@ -905,9 +925,62 @@ function renderPersonSearch(d, q) {
     const title = el("div", "table-title", p.name);
     if (band) title.style.color = BAND_COLORS[band];
     box.appendChild(title);
-    box.appendChild(kvRows(rows.length ? rows : [["STATUS", "seen in the feed — no board row or recent train"]],
-                           band ? BAND_COLORS[band] : null));
+    box.appendChild(kvRows(rows, band ? BAND_COLORS[band] : null));
   });
+  return keys.length;
+}
+
+// SEARCH section (operator 2026-08-23): ONE box on its own home tile --
+// people AND trains, results sectioned separately below.
+function renderSearchView() {
+  const d = lineupsData();
+  if (!d) { showText(); return "No data available yet."; }
+  updateFreshnessBar();
+  const q = ((DOM.searchInput && DOM.searchInput.value) || "").trim().toUpperCase();
+  if (q.length < 2) {
+    showText();
+    return "Type at least 2 characters — a name (TILLIS, MARKO) or a train (181, 253-05).\n\n" +
+           "People searches the whole roster (any home terminal), the boards and recent trains.\n" +
+           "Trains searches every station's lineup and the last 48h of train history.";
+  }
+  const box = el("div");
+  buildPersonResults(d, q, box);
+
+  // TRAINS — current lineup listings across every station...
+  const trows = [];
+  (d.train_lineup.stations || []).forEach((st) => {
+    (st.trains || []).forEach((tr) => {
+      if (!String(tr.train_asgn || "").toUpperCase().includes(q)) return;
+      const crew = el("span");
+      (tr.eng_crew || []).concat(tr.trn_crew || []).forEach((m) => {
+        const chip = el("span", "crew-chip", `${m.craft || ""} ${m.name || ""}`);
+        if (m.hos && m.hos.label) chip.appendChild(el("span", ` hos-${m.hos.band || "green"}`, ` ${m.hos.label}`));
+        crew.appendChild(chip);
+      });
+      trows.push([(st.name || st.location_code), tr.date_time || "",
+                  tr.train_asgn || "", tr.status || "", crew,
+                  (tr.eng_crew_pool ? `${tr.eng_crew_district || ""}${tr.eng_crew_pool}` : "")]);
+    });
+  });
+  // ...and recent history (as-run) matches.
+  const hrows = [];
+  (d.train_history || []).forEach((tr) => {
+    if (!String(tr.train || "").toUpperCase().includes(q)) return;
+    hrows.push([tr.date ? tr.date.slice(5) : "", tr.train || "",
+                tr.on_duty || "—", tr.off_duty || "—",
+                `${tr.depart || "?"}→${tr.arrive || "?"}`, tr.pool || ""]);
+  });
+  box.appendChild(el("div", "table-title",
+    (trows.length + hrows.length)
+      ? `TRAINS — ${trows.length} on the lineup · ${hrows.length} in the last 48h`
+      : `TRAINS — nothing matching "${q}"`));
+  if (trows.length) {
+    box.appendChild(buildTable(["Station", "Date/Time", "Train", "Status", "Crew", "Pool"], trows));
+  }
+  if (hrows.length) {
+    box.appendChild(el("div", "table-title", "AS RUN (history)"));
+    box.appendChild(buildTable(["Date", "Train", "On Duty", "Tie Up", "Route", "Pool"], hrows));
+  }
   showTable(box);
   return null;
 }
@@ -916,8 +989,6 @@ function renderBoardsTable() {
   const d = lineupsData();
   if (!d) { showText(); return "No crew board data available yet."; }
   updateFreshnessBar();
-  const pq = ((DOM.personFindInput && DOM.personFindInput.value) || "").trim().toUpperCase();
-  if (pq.length >= 2) return renderPersonSearch(d, pq);
   const idx = parseInt(DOM.boardSelect.value, 10) || 0;
   const b = (d.crew_boards.boards || [])[idx];
   if (!b) { showText(); return "No boards in the current snapshot."; }

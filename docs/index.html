@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <link rel="manifest" href="manifest.webmanifest" />
-  <link rel="stylesheet" href="styles/style.css?v=4124" />
-  <link rel="icon" href="icons/railcore-192.png?v=4124" />
+  <link rel="stylesheet" href="styles/style.css?v=4125" />
+  <link rel="icon" href="icons/railcore-192.png?v=4125" />
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
 
   <meta name="theme-color" content="#ff6600" />
@@ -52,6 +52,10 @@
             <button class="tile" data-section="history">
               <div class="tile-title">Train History</div>
               <div class="tile-sub" id="tileSubHistory">Recent trains as they ran</div>
+            </button>
+            <button class="tile" data-section="search">
+              <div class="tile-title">Search</div>
+              <div class="tile-sub" id="tileSubSearch">Anyone · any train — one box</div>
             </button>
             <button class="tile" data-section="pay">
               <div class="tile-title">Pay</div>
@@ -260,16 +264,16 @@
               <div id="notifPrefResult" class="field-label" style="margin-top:6px"></div>
             </div>
 
-            <!-- FIND A PERSON (boards) -->
-            <div id="personFindBlock" class="field-block hidden">
-              <div class="field-label">FIND A PERSON — current status</div>
+            <!-- SEARCH (people + trains) -->
+            <div id="searchBlock" class="field-block hidden">
+              <div class="field-label">SEARCH — a person or a train</div>
               <input
-                id="personFindInput"
+                id="searchInput"
                 class="pill-input"
                 type="text"
                 inputmode="search"
                 autocomplete="off"
-                placeholder="e.g. STANSBERRY, MARKO, SCOTT"
+                placeholder="e.g. TILLIS, MARKO, 181, 253-05"
               />
             </div>
 
@@ -310,8 +314,8 @@ Loading…
   </div>
 
   <!-- DATA + APP LOGIC -->
-  <script src="data_loader.js?v=4124"></script>
-  <script src="app.js?v=4124"></script>
+  <script src="data_loader.js?v=4125"></script>
+  <script src="app.js?v=4125"></script>
   <script>
     // Offline support + installability. Without this registration the
     // service worker never runs (gap present since v3.8).
