@@ -744,29 +744,40 @@ function renderHistoryTable() {
     return "Train history appears after the next processor restart publishes the enriched feed.";
   }
   updateFreshnessBar();
-  const rows = [];
-  d.train_history.forEach((tr, i) => {
-    const crew = el("span");
-    (tr.members || []).forEach((m) => {
-      const chip = el("span", "crew-chip", `${m.craft || ""} ${m.name || ""}`);
-      crew.appendChild(chip);
-    });
-    const rowEl = [
-      tr.date ? tr.date.slice(5) : "",
-      tr.train || "",
-      tr.on_duty || "—",
-      tr.off_duty || "—",
-      `${tr.depart || "?"}→${tr.arrive || "?"}`,
-      crew,
-      tr.pool || "",
-    ];
-    rows.push(rowEl);
+  // Segregate by DEPARTURE TERMINAL (operator 2026-08-23): keep it ONE page,
+  // grouped by the initial terminal so it reads easily.
+  const TERM_NAME = { OT: "OTTUMWA", DA: "DAVENPORT", KC: "KANSAS CITY" };
+  const groups = {};
+  d.train_history.forEach((tr) => {
+    const term = STATION_TERMINAL[tr.depart] || tr.depart || "?";
+    (groups[term] = groups[term] || []).push(tr);
   });
   const box = el("div");
   box.appendChild(el("div", "table-title",
-    `RECENT TRAINS — last 48h · ${d.train_history.length} trains · on/off duty times as captured`));
-  box.appendChild(buildTable(
-    ["Date", "Train", "On Duty", "Tie Up", "Route", "Crew", "Pool"], rows));
+    `RECENT TRAINS — last 48h · ${d.train_history.length} trains · by departure terminal`));
+  const order = ["OT", "DA", "KC"];
+  const rank = (t) => (order.indexOf(t) < 0 ? 99 : order.indexOf(t));
+  Object.keys(groups).sort((a, b) => rank(a) - rank(b)).forEach((term) => {
+    const list = groups[term];
+    box.appendChild(el("div", "table-title",
+      `${TERM_NAME[term] || term}  ·  ${list.length} train${list.length === 1 ? "" : "s"}`));
+    const rows = list.map((tr) => {
+      const crew = el("span");
+      (tr.members || []).forEach((m) =>
+        crew.appendChild(el("span", "crew-chip", `${m.craft || ""} ${m.name || ""}`)));
+      return [
+        tr.date ? tr.date.slice(5) : "",
+        tr.train || "",
+        tr.on_duty || "—",
+        tr.off_duty || "—",
+        `${tr.depart || "?"}→${tr.arrive || "?"}`,
+        crew,
+        tr.pool || "",
+      ];
+    });
+    box.appendChild(buildTable(
+      ["Date", "Train", "On Duty", "Tie Up", "Route", "Crew", "Pool"], rows));
+  });
   showTable(box);
   return null;
 }
@@ -1196,7 +1207,8 @@ function myStatusRows(me) {
   // ADO days off is NOT on the board -- say so, and count down.
   const re = me.reentry;
   const reDt = re && re.at ? new Date(re.at) : null;
-  let where = away ? `AT HOTEL — ${t0.arr}` : "AT HOME — on the board";
+  let where = away ? `AT HOTEL — ${t0.arr}` : "AT HOME";
+  let restedNow = null;   // true=rested, false=resting (Aaron's readiness colors)
   if (reDt && reDt > now && re.into_rest_days) {
     where = "DAYS OFF (ADO)";
     band = "blue";
@@ -1220,7 +1232,7 @@ function myStatusRows(me) {
     // the card must never tell a different story than the board view)
     const mark = bp.marker && bp.marker !== bp.craft ? ` · board shows ${bp.marker}` : "";
     rows.push(["BOARD POSITION", `${ord} of ${bp.of} (${bp.board || ""})${mark}`]);
-    if (bp.ordinal === 1) { band = "orange"; label = `1st OUT — ${bp.board || "board"}`; }
+    if (bp.ordinal === 1) { label = `1st OUT — ${bp.board || "board"}`; }
   }
   if (t0 && r.offDt) {
     rows.push(["TIED UP", `${t0.off_duty} ${localDay(r.offDt)} (${t0.train})`]);
@@ -1241,10 +1253,11 @@ function myStatusRows(me) {
     }
     if (now >= restDt) {
       rows.push(["REST", `RESTED — since ${br.rested_at} (board)`]);
-      if (band !== "blue") { band = "green"; label = `${where} — rested`; }
+      restedNow = true;
+      if (band !== "blue") label = `${where} — rested`;
     } else {
       rows.push(["REST", `resting — rested at ${br.rested_at} ${localDay(restDt)} (board)`]);
-      band = "yellow"; label = `${where} — rested at ${br.rested_at}`;
+      restedNow = false; label = `${where} — rested at ${br.rested_at}`;
     }
     if (br.prev_duty) {
       const pd = `${+br.prev_duty.slice(0, 2)}h ${br.prev_duty.slice(2)}m`;
@@ -1255,14 +1268,36 @@ function myStatusRows(me) {
   } else if (t0 && r.offDt && r.restEnd) {
     if (now >= r.restEnd) {
       rows.push(["REST", `RESTED — since ${fmtClock(r.restEnd)} ${localDay(r.restEnd)}`]);
-      if (band !== "blue") { band = "green"; label = `${where} — rested`; }
+      restedNow = true;
+      if (band !== "blue") label = `${where} — rested`;
     } else {
       rows.push(["REST", `resting — rested at ${fmtClock(r.restEnd)} ${localDay(r.restEnd)}`]);
-      band = "yellow"; label = `${where} — rested at ${fmtClock(r.restEnd)}`;
+      restedNow = false; label = `${where} — rested at ${fmtClock(r.restEnd)}`;
     }
     if (r.extraMin > 0) {
       rows.push(["TOW-IN", `${Math.floor(r.extraMin / 60)}h ${String(r.extraMin % 60).padStart(2, "0")}m past 12 added to rest`]);
     }
+  }
+
+  // Readiness headline + color (operator 2026-08-23). The STATUS line reads
+  // e.g. "AT HOME — 4th out, rested"; the color MEANS readiness:
+  //   red    = 1st out (rested) -> you're NEXT
+  //   yellow = 2nd/3rd out      -> about to go to work
+  //   green  = available (rested, on board) but further out
+  //   grey   = resting          -> on the board but not callable yet
+  //   blue   = scheduled off (days off / booked off / vacation)
+  const ordName = bp && bp.ordinal
+    ? (["", "1st out", "2nd out", "3rd out"][bp.ordinal] || `${bp.ordinal}th out`) : "";
+  if (rows[0] && rows[0][0] === "STATUS" && !String(rows[0][1]).startsWith("DAYS OFF")) {
+    rows[0][1] = where
+      + (ordName ? ` — ${ordName}` : "")
+      + (restedNow === null ? "" : (restedNow ? ", rested" : ", resting"));
+  }
+  if (band !== "blue") {                 // blue = scheduled off, leave it
+    if (restedNow === false) band = "grey";              // resting -> not callable
+    else if (bp && bp.ordinal === 1) band = "red";       // 1st out -> you're next
+    else if (bp && (bp.ordinal === 2 || bp.ordinal === 3)) band = "yellow";
+    else band = "green";                                 // available, further out
   }
   return { rows, band, label };
 }
@@ -1273,7 +1308,8 @@ function myCurrentStatus(me) {
 }
 
 const BAND_COLORS = { orange: "#ff6600", green: "#3ddc84",
-                      yellow: "#ffcf40", blue: "#6aa9ff" };
+                      yellow: "#ffcf40", blue: "#6aa9ff",
+                      red: "#ff3b30", grey: "#8b93a7" };
 
 function kvRows(pairs, color) {
   const wrap = el("div");
