@@ -1043,9 +1043,11 @@ function renderBookoffsView() {
     const t = b.terminal || "?";
     (groups[t] = groups[t] || []).push(b);
   });
+  const carried = list.filter((b) => b.carryover).length;
   const box = el("div");
   box.appendChild(el("div", "table-title",
-    `BOOKED OFF — ${list.length} members · last capture within 36h · by terminal`));
+    `BOOKED OFF — ${list.length} members · by terminal`
+    + (carried ? ` · ${carried} carried† from older captures` : "")));
   const order = ["OT", "DA", "KC"];
   const rank = (t) => (order.indexOf(t) < 0 ? 99 : order.indexOf(t));
   Object.keys(groups).sort((a, b) => rank(a) - rank(b)).forEach((term) => {
@@ -1056,13 +1058,21 @@ function renderBookoffsView() {
         b.name || "",
         // the CODE as the bookoff screen lists it, meaning in parens when known
         (b.code || "?") + (b.label ? ` (${b.label})` : ""),
-        b.since ? b.since.slice(5) : "—",
+        (b.since ? b.since.slice(5) : "—") + (b.carryover ? " †" : ""),
         b.assignment || "",
       ]);
     box.appendChild(el("div", "table-title",
       `${TERM_NAME[term] || term}  ·  ${rows.length} booked off`));
     box.appendChild(buildTable(["Name", "Code", "Since", "Turn"], rows));
   });
+  if (carried) {
+    const fn = el("div", null,
+      "† from an older capture (the bookoff screen only lists each day's "
+      + "entries) — no return to work observed since; drops off once they "
+      + "work a ticket or stand on a board again.");
+    fn.style.cssText = "color:#8b93a7;font-size:.82em;padding:8px 0";
+    box.appendChild(fn);
+  }
   showTable(box);
   return null;
 }
