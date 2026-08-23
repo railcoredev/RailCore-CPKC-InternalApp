@@ -29,6 +29,7 @@ const SECTIONS = {
   history:   { title: "TRAIN HISTORY",  blocks: ["freshnessBar"] },
   boards:    { title: "CREW BOARDS",    blocks: ["boardBlock", "freshnessBar"] },
   search:    { title: "SEARCH",         blocks: ["searchBlock", "freshnessBar"] },
+  bookoffs:  { title: "BOOKOFFS",       blocks: ["freshnessBar"] },
   reference: { title: "REF CARDS",      blocks: ["subdivisionBlock", "freshnessBar"] },
   crossings: { title: "CROSSINGS",      blocks: ["stateBlock", "subdivisionBlock", "spacingBlock", "viewBlock", "freshnessBar"] },
   sidings:   { title: "SIDINGS",        blocks: ["subdivisionBlock", "freshnessBar"] },
@@ -442,6 +443,10 @@ function renderCurrentView() {
     text = r;
   } else if (currentSection === "search") {
     const r = renderSearchView();
+    if (r === null) return;
+    text = r;
+  } else if (currentSection === "bookoffs") {
+    const r = renderBookoffsView();
     if (r === null) return;
     text = r;
   } else if (currentSection === "reference") {
@@ -1016,6 +1021,47 @@ function renderSearchView() {
     box.appendChild(el("div", "table-title", "AS RUN (history)"));
     box.appendChild(buildTable(["Date", "Train", "On Duty", "Tie Up", "Route", "Pool"], hrows));
   }
+  showTable(box);
+  return null;
+}
+
+// BOOKOFFS page (operator 2026-08-23): one page, everyone currently booked
+// off, sectioned by terminal (from the ASSIGNMENT prefix -- the row's
+// subdistrict is only the inquiry screen), with dates and decoded codes.
+function renderBookoffsView() {
+  const d = lineupsData();
+  if (!d) { showText(); return "No data available yet."; }
+  updateFreshnessBar();
+  const list = d.bookoffs || [];
+  if (!list.length) {
+    showText();
+    return "No current bookoffs in the feed (or the bookoff capture hasn't run in the last 36h).";
+  }
+  const TERM_NAME = { OT: "OTTUMWA", DA: "DAVENPORT", KC: "KANSAS CITY" };
+  const groups = {};
+  list.forEach((b) => {
+    const t = b.terminal || "?";
+    (groups[t] = groups[t] || []).push(b);
+  });
+  const box = el("div");
+  box.appendChild(el("div", "table-title",
+    `BOOKED OFF — ${list.length} members · last capture within 36h · by terminal`));
+  const order = ["OT", "DA", "KC"];
+  const rank = (t) => (order.indexOf(t) < 0 ? 99 : order.indexOf(t));
+  Object.keys(groups).sort((a, b) => rank(a) - rank(b)).forEach((term) => {
+    const rows = groups[term]
+      .slice()
+      .sort((a, b) => (a.since < b.since ? 1 : -1) || a.name.localeCompare(b.name))
+      .map((b) => [
+        b.name || "",
+        b.label ? `${b.label} (${b.code})` : `code ${b.code || "?"} (not in legend)`,
+        b.since ? b.since.slice(5) : "—",
+        b.assignment || "",
+      ]);
+    box.appendChild(el("div", "table-title",
+      `${TERM_NAME[term] || term}  ·  ${rows.length} booked off`));
+    box.appendChild(buildTable(["Name", "Why", "Since", "Turn"], rows));
+  });
   showTable(box);
   return null;
 }
