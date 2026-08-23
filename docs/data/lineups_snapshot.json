@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "active",
-  "collection_message": "Light sweep sched_20260823_104916.",
+  "collection_message": "Light sweep sched_20260823_105520.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-23T15:55:08+00:00",
+  "generated_at": "2026-08-23T15:57:13+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260823_104916",
@@ -2473,12 +2473,12 @@
        {
         "craft": "EN",
         "name": "GLASGOW,(STEVE)",
-        "on_in": "0h 10m"
+        "on_in": "0h 08m"
        },
        {
         "craft": "AE",
         "name": "AKERS,(MATTHEW)",
-        "on_in": "0h 10m"
+        "on_in": "0h 08m"
        }
       ],
       "eng_crew_count": "0",
@@ -4411,8 +4411,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 05m",
-         "minutes": 365
+         "label": "6h 03m",
+         "minutes": 363
         },
         "name": "WHITWORTH,(JOHN)"
        },
@@ -4420,8 +4420,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 05m",
-         "minutes": 365
+         "label": "6h 03m",
+         "minutes": 363
         },
         "name": "ELLIOTT,(SCOTT)"
        }
@@ -4460,8 +4460,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 05m",
-         "minutes": 365
+         "label": "6h 03m",
+         "minutes": 363
         },
         "name": "HOUSE,(JOSH)"
        },
@@ -4469,8 +4469,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 05m",
-         "minutes": 365
+         "label": "6h 03m",
+         "minutes": 363
         },
         "name": "PEREZ,(NICHOLAS)"
        }
@@ -4509,8 +4509,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 50m",
-         "minutes": 410
+         "label": "6h 48m",
+         "minutes": 408
         },
         "name": "DUNCAN,(ZACH)"
        },
@@ -4518,8 +4518,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 50m",
-         "minutes": 410
+         "label": "6h 48m",
+         "minutes": 408
         },
         "name": "MOZQUEDA,(ERNESTO)"
        }
@@ -4558,8 +4558,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 35m",
-         "minutes": 635
+         "label": "10h 33m",
+         "minutes": 633
         },
         "name": "JACKMAN,(MATT)"
        },
@@ -4567,8 +4567,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "10h 35m",
-         "minutes": 635
+         "label": "10h 33m",
+         "minutes": 633
         },
         "name": "BOER,(BRANDON)"
        }
@@ -4606,12 +4606,12 @@
        {
         "craft": "EN",
         "name": "LINEBAUGH,(MATT)",
-        "on_in": "1h 35m"
+        "on_in": "1h 33m"
        },
        {
         "craft": "AE",
         "name": "COMSTOCK,(JUSTYCE)",
-        "on_in": "1h 35m"
+        "on_in": "1h 33m"
        }
       ],
       "eng_crew_count": "0",
@@ -6153,12 +6153,12 @@
        {
         "craft": "EN",
         "name": "HATFIELD,(JARROD)",
-        "on_in": "1h 20m"
+        "on_in": "1h 18m"
        },
        {
         "craft": "AE",
         "name": "STONEHOUSE,(ZACH)",
-        "on_in": "1h 20m"
+        "on_in": "1h 18m"
        }
       ],
       "eng_crew_count": "1",
@@ -6185,7 +6185,7 @@
        {
         "craft": "TT",
         "name": "CONWELL,(JOSHUA)",
-        "on_in": "1h 20m"
+        "on_in": "1h 18m"
        }
       ],
       "trn_crew_count": "1",
@@ -6561,8 +6561,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 04m",
-         "minutes": 64
+         "label": "1h 02m",
+         "minutes": 62
         },
         "name": "CATES,(TODD)"
        }
@@ -6592,8 +6592,8 @@
         "craft": "CO",
         "hos": {
          "band": "orange",
-         "label": "1h 04m",
-         "minutes": 64
+         "label": "1h 02m",
+         "minutes": 62
         },
         "name": "JOHNSON,(JUSTIN)"
        }
@@ -8822,24 +8822,7 @@
   {
    "name": "LUDWIG,(AARON)",
    "home_terminal": "OT",
-   "board_position": {
-    "board": "OTTUMWA ENG XTRA BRD POSITION",
-    "ordinal": 4,
-    "of": 6,
-    "craft": "E",
-    "marker": "*E",
-    "captured_at": "2026-08-23T15:51:00.785558+00:00",
-    "all_boards": [
-     {
-      "board": "OTTUMWA ENG XTRA BRD POSITION",
-      "ordinal": 4,
-      "of": 6,
-      "craft": "E",
-      "marker": "*E",
-      "captured_at": "2026-08-23T15:51:00.785558+00:00"
-     }
-    ]
-   },
+   "board_position": null,
    "employee_number": "001135902",
    "assignment": "EX0013EN",
    "availability": {
@@ -8847,11 +8830,7 @@
     "reentry_at": "2026-08-22T21:51"
    },
    "board_rest": null,
-   "reentry": {
-    "at": "2026-08-22T21:50",
-    "basis": "rest",
-    "into_rest_days": false
-   },
+   "reentry": null,
    "tickets": [
     {
      "date": "2026-08-22",
@@ -21732,434 +21711,472 @@
    "code": "M",
    "label": "Off Miles/Days",
    "assignment": "EX0020EN",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "OT"
   },
   {
    "name": "AMOUZ,(ADJIWANOU)BVAE",
    "code": "M",
    "label": "Off Miles/Days",
    "assignment": "DADA28AE",
-   "since": "2026-08-22"
-  },
-  {
-   "name": "AMOUZ,(ADJIWANOU)BVAE@D",
-   "code": "L",
-   "label": "Leave of Absence",
-   "assignment": "DADA28AE",
-   "since": "2026-08-21"
+   "since": "2026-08-22",
+   "terminal": "DA"
   },
   {
    "name": "BESSER,(TIMOTHY)QBV",
    "code": "M",
    "label": "Off Miles/Days",
    "assignment": "EX0019EN",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "OT"
   },
   {
    "name": "BLASER,(RYAN)BV",
    "code": "S",
    "label": "Off Sickness",
    "assignment": "EX0011EN",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "OT"
   },
   {
    "name": "BORMANN,(HAYDEN)BVAE",
    "code": "S",
    "label": "Off Sickness",
    "assignment": "DADA27AE",
-   "since": "2026-08-23"
+   "since": "2026-08-23",
+   "terminal": "DA"
   },
   {
    "name": "BORUSHASKI,(GUNNAR)BV E",
    "code": "M",
    "label": "Off Miles/Days",
    "assignment": "DADA20AE",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "DA"
   },
   {
    "name": "BORUSHASKI,(SAM)ALL",
    "code": "M",
    "label": "Off Miles/Days",
    "assignment": "EX0007CO",
-   "since": "2026-08-22"
-  },
-  {
-   "name": "BRADLEY,(CONOR)QBV",
-   "code": "S",
-   "label": "Off Sickness",
-   "assignment": "EX0008EN",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "OT"
   },
   {
    "name": "BRADLEY,(CONOR)QBV@D",
    "code": "S",
    "label": "Off Sickness",
    "assignment": "EX0008EN",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "OT"
   },
   {
    "name": "BUTLER,(JASON)QBV",
    "code": "W",
    "label": "Personal Leave Day",
    "assignment": "DADA17EN",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "DA"
   },
   {
    "name": "CASHATT,(DAKOTA)IFG",
    "code": "0",
    "label": "",
    "assignment": "SWSW04EN",
-   "since": "2026-08-22"
-  },
-  {
-   "name": "CASHATT,(DAKOTA)IFG @D",
-   "code": "0",
-   "label": "",
-   "assignment": "SWSW04EN",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "OT"
   },
   {
    "name": "CAVINS,(NOAH)QBV",
    "code": "L",
    "label": "Leave of Absence",
    "assignment": "DADA05EN",
-   "since": "2026-08-21"
+   "since": "2026-08-21",
+   "terminal": "DA"
   },
   {
    "name": "CLAPP,(JASON)IFGBV",
    "code": "S",
    "label": "Off Sickness",
    "assignment": "SWSW06AE",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "OT"
   },
   {
    "name": "CLIFTON,(BRIAN)NQRD",
    "code": "W",
    "label": "Personal Leave Day",
    "assignment": "XDAT03CO",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "DA"
   },
   {
    "name": "DEKEYZER,(BRIAN)BV RC",
    "code": "M",
    "label": "Off Miles/Days",
    "assignment": "EX0003EN",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "OT"
   },
   {
    "name": "EHRMANN,(CHRIS)BV",
    "code": "S",
    "label": "Off Sickness",
    "assignment": "DADA25EN",
-   "since": "2026-08-21"
+   "since": "2026-08-21",
+   "terminal": "DA"
   },
   {
    "name": "ELDRIDGE,(DYLAN)QBV NVE",
    "code": "L",
    "label": "Leave of Absence",
    "assignment": "DADA22AE",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "DA"
   },
   {
    "name": "FERNANDEZ,(DANILO)",
    "code": "L",
    "label": "Leave of Absence",
    "assignment": "EXXX02ET",
-   "since": "2026-08-23"
+   "since": "2026-08-23",
+   "terminal": "OT"
   },
   {
    "name": "FLYNN,(CASEY)QBV",
    "code": "0",
    "label": "",
    "assignment": "DADA20EN",
-   "since": "2026-08-23"
+   "since": "2026-08-23",
+   "terminal": "DA"
   },
   {
    "name": "FRENCH,(BEN)BV",
    "code": "V",
    "label": "Off on Vacation",
    "assignment": "EXXX06E7",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "OT"
   },
   {
    "name": "GANZER,(GRANT)BVAE",
    "code": "V",
    "label": "Off on Vacation",
    "assignment": "EXXX07E7",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "OT"
   },
   {
    "name": "GANZER,(JASON)NQBV",
    "code": "L",
    "label": "Leave of Absence",
    "assignment": "EX0021EN",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "OT"
   },
   {
    "name": "GOODELL,(SETH)P",
    "code": "V",
    "label": "Off on Vacation",
    "assignment": "EX0001EN",
-   "since": "2026-08-15"
+   "since": "2026-08-15",
+   "terminal": "OT"
   },
   {
    "name": "HAGEN,(ANTHONY)BV",
    "code": "S",
    "label": "Off Sickness",
    "assignment": "EXXX06ET",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "OT"
   },
   {
    "name": "HANK,(MATT)ALL",
    "code": "M",
    "label": "Off Miles/Days",
    "assignment": "DADA18EN",
-   "since": "2026-08-23"
+   "since": "2026-08-23",
+   "terminal": "DA"
   },
   {
    "name": "HARDEN,(LEVI)QBVAE",
    "code": "S",
    "label": "Off Sickness",
    "assignment": "DADA17AE",
-   "since": "2026-08-23"
+   "since": "2026-08-23",
+   "terminal": "DA"
   },
   {
    "name": "HASKE,(JUSTIN)ALL",
    "code": "M",
    "label": "Off Miles/Days",
    "assignment": "EX0012EN",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "OT"
   },
   {
    "name": "HILLERY,(RYAN)QBV",
    "code": "0",
    "label": "",
    "assignment": "DADA03EN",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "DA"
   },
   {
    "name": "KACZMAREK,(DAN)P",
    "code": "M",
    "label": "Off Miles/Days",
    "assignment": "EX0007EN",
-   "since": "2026-08-21"
+   "since": "2026-08-21",
+   "terminal": "OT"
   },
   {
    "name": "KARGL,(ROB)BV RC",
    "code": "V",
    "label": "Off on Vacation",
    "assignment": "EXXX01E7",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "OT"
   },
   {
    "name": "KNIGHTS,(JARRETT)*NQBV",
    "code": "M",
    "label": "Off Miles/Days",
    "assignment": "EX0012CO",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "OT"
   },
   {
    "name": "LASCHE,(DAVID)QBVAE",
    "code": "W",
    "label": "Personal Leave Day",
    "assignment": "DADA19AE",
-   "since": "2026-08-23"
+   "since": "2026-08-23",
+   "terminal": "DA"
   },
   {
    "name": "LEMM,(SAM)BV/MQ",
    "code": "V",
    "label": "Off on Vacation",
    "assignment": "EXXX02E7",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "OT"
   },
   {
    "name": "LOERCH,(JORDAN)P",
    "code": "M",
    "label": "Off Miles/Days",
    "assignment": "EX0012EN",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "OT"
   },
   {
    "name": "LYTLE,(JUSTIN)QBV",
    "code": "V",
    "label": "Off on Vacation",
    "assignment": "EXXX03E7",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "OT"
   },
   {
    "name": "MANTHEI,(BRYAN)QBVAE",
    "code": "M",
    "label": "Off Miles/Days",
    "assignment": "DADA04AE",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "DA"
   },
   {
    "name": "MARZOFKA,(BRAYDEN)*NQSV",
    "code": "S",
    "label": "Off Sickness",
    "assignment": "XDAT04CO",
-   "since": "2026-08-23"
+   "since": "2026-08-23",
+   "terminal": "DA"
   },
   {
    "name": "MCBRIDE,(KELTON)P",
    "code": "V",
    "label": "Off on Vacation",
    "assignment": "EXXX01E7",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "OT"
   },
   {
    "name": "MCKEE,(RODNEY)QBV",
    "code": "V",
    "label": "Off on Vacation",
    "assignment": "EXXX04E7",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "OT"
   },
   {
    "name": "MERRELL,(CHARISE)QBVAE",
    "code": "L",
    "label": "Leave of Absence",
    "assignment": "DADA14AE",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "DA"
   },
   {
    "name": "MILLER,(MIKE)QSAVNQBV R",
    "code": "N",
    "label": "C&V/O (uncertain -- verify)",
    "assignment": "EXXX10E7",
-   "since": "2026-08-21"
+   "since": "2026-08-21",
+   "terminal": "OT"
   },
   {
    "name": "OLSON,(ANDREW)QBVAE",
    "code": "M",
    "label": "Off Miles/Days",
    "assignment": "EX0004EN",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "OT"
   },
   {
    "name": "PAGE,(GARRISON)QBV *E",
    "code": "M",
    "label": "Off Miles/Days",
    "assignment": "EX0028EN",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "OT"
   },
   {
    "name": "PARKHURST,(CODY)BV",
    "code": "M",
    "label": "Off Miles/Days",
    "assignment": "EXXX05ET",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "OT"
   },
   {
    "name": "PILLOW,(JOSHUA)NQBVEN",
    "code": "W",
    "label": "Personal Leave Day",
    "assignment": "EX0016EN",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "OT"
   },
   {
    "name": "RADA,(DANIEL)NQBVEN",
    "code": "S",
    "label": "Off Sickness",
    "assignment": "EX0009EN",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "OT"
   },
   {
    "name": "REAVES,(DALTON)NQS",
    "code": "M",
    "label": "Off Miles/Days",
    "assignment": "EXXX01ET",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "OT"
   },
   {
    "name": "RITTER,(RYAN)NQRD RC",
    "code": "0",
    "label": "",
    "assignment": "XDAT01EN",
-   "since": "2026-08-23"
+   "since": "2026-08-23",
+   "terminal": "DA"
   },
   {
    "name": "SEXTON,(SAM)BV RC",
    "code": "S",
    "label": "Off Sickness",
    "assignment": "DADA19EN",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "DA"
   },
   {
    "name": "SINDT,(STEVEN)ALL",
    "code": "M",
    "label": "Off Miles/Days",
    "assignment": "DADA12AE",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "DA"
   },
   {
    "name": "SPERSTAD,(JOHN)QBV R",
    "code": "M",
    "label": "Off Miles/Days",
    "assignment": "DADA12EN",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "DA"
   },
   {
    "name": "STRAUSS,(WILLIAM)NQBV",
    "code": "M",
    "label": "Off Miles/Days",
    "assignment": "EX0004EN",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "OT"
   },
   {
    "name": "STROPES,(THOMAS)BV",
    "code": "V",
    "label": "Off on Vacation",
    "assignment": "EXXX05E7",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "OT"
   },
   {
    "name": "TAYLOR,(WILLIAM)NQBV@DIF",
    "code": "M",
    "label": "Off Miles/Days",
    "assignment": "EX0007EN",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "OT"
   },
   {
    "name": "THOMAS,(EDWARD)QBV VRU",
    "code": "L",
    "label": "Leave of Absence",
    "assignment": "DADA27EN",
-   "since": "2026-08-23"
+   "since": "2026-08-23",
+   "terminal": "DA"
   },
   {
    "name": "TILLIS,(ETHAN)NQBV",
    "code": "V",
    "label": "Off on Vacation",
    "assignment": "EXXX01E7",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "OT"
   },
   {
    "name": "TURNER,(TERRELL)B IFG",
    "code": "V",
    "label": "Off on Vacation",
    "assignment": "OBOB14EN",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "OT"
   },
   {
    "name": "URMY,(PHIL)QBV RC",
    "code": "M",
    "label": "Off Miles/Days",
    "assignment": "DADA04EN",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "DA"
   },
   {
    "name": "VINES,(VICTOR)BV",
    "code": "S",
    "label": "Off Sickness",
    "assignment": "DADA03AE",
-   "since": "2026-08-22"
+   "since": "2026-08-22",
+   "terminal": "DA"
   },
   {
    "name": "WARRENBURG,(CHRIS)",
    "code": "L",
    "label": "Leave of Absence",
    "assignment": "SWSW06EN",
-   "since": "2026-08-23"
+   "since": "2026-08-23",
+   "terminal": "OT"
   }
  ]
 }
