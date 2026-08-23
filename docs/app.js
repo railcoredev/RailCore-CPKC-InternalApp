@@ -866,6 +866,14 @@ function buildPersonResults(d, q, box) {
     const p = (people[keyOf(nm)] = people[keyOf(nm)] || { name: nm, boards: [] });
     p.roster = r;
   });
+  // BOOKOFFS: who is marked off right now and why (PSTS90 capture, decoded).
+  // This is why someone is on NO board -- TILLIS: V = Off on Vacation.
+  (d.bookoffs || []).forEach((b) => {
+    const nm = String(b.name || "");
+    if (!nm.toUpperCase().includes(q)) return;
+    const p = (people[keyOf(nm)] = people[keyOf(nm)] || { name: nm, boards: [] });
+    if (!p.bookoff) p.bookoff = b;
+  });
 
   const keys = Object.keys(people);
   box.appendChild(el("div", "table-title",
@@ -879,6 +887,11 @@ function buildPersonResults(d, q, box) {
       band = "orange";
       rows.push(["STATUS", `ON A TRAIN — ${p.onTrain.train} (${p.onTrain.craft})`]);
       rows.push(["ON DUTY", `${fmtClock(p.onTrain.on)} ${localDay(p.onTrain.on)} · ${p.onTrain.route}`]);
+    } else if (p.bookoff) {
+      band = "blue";
+      rows.push(["STATUS", `BOOKED OFF — ${p.bookoff.label || p.bookoff.code}`
+        + (p.bookoff.code && p.bookoff.label ? ` (${p.bookoff.code})` : "")
+        + (p.bookoff.since ? ` since ${p.bookoff.since.slice(5)}` : "")]);
     }
     // Board rows (dedup by screen): position/turn verbatim; MTOD rest if shown.
     const seen = new Set();
@@ -899,7 +912,9 @@ function buildPersonResults(d, q, box) {
                           : `resting — rested at ${hours[0]} (board)`;
       }
     });
-    if (!restLine && !p.onTrain && p.lastTrain && p.lastTrain.off) {
+    if (!restLine && !p.onTrain && !p.bookoff && p.lastTrain && p.lastTrain.off) {
+      // (skipped when booked off -- a rest estimate on a marked-off member
+      // reads as 'available', which is the opposite of the truth)
       const est = new Date(p.lastTrain.off.getTime() + 10 * 36e5);
       restedNow = est <= now;
       restLine = restedNow
