@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "active",
-  "collection_message": "Light sweep sched_20260823_103209.",
+  "collection_message": "Light sweep sched_20260823_104311.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-23T15:38:02+00:00",
+  "generated_at": "2026-08-23T15:46:11+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260823_103209",
@@ -2503,12 +2503,12 @@
        {
         "craft": "EN",
         "name": "GLASGOW,(STEVE)",
-        "on_in": "0h 27m"
+        "on_in": "0h 19m"
        },
        {
         "craft": "AE",
         "name": "AKERS,(MATTHEW)",
-        "on_in": "0h 27m"
+        "on_in": "0h 19m"
        }
       ],
       "eng_crew_count": "0",
@@ -4411,8 +4411,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 22m",
-         "minutes": 382
+         "label": "6h 14m",
+         "minutes": 374
         },
         "name": "WHITWORTH,(JOHN)"
        },
@@ -4420,8 +4420,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 22m",
-         "minutes": 382
+         "label": "6h 14m",
+         "minutes": 374
         },
         "name": "ELLIOTT,(SCOTT)"
        }
@@ -4460,8 +4460,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 22m",
-         "minutes": 382
+         "label": "6h 14m",
+         "minutes": 374
         },
         "name": "HOUSE,(JOSH)"
        },
@@ -4469,8 +4469,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 22m",
-         "minutes": 382
+         "label": "6h 14m",
+         "minutes": 374
         },
         "name": "PEREZ,(NICHOLAS)"
        }
@@ -4509,8 +4509,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 07m",
-         "minutes": 427
+         "label": "6h 59m",
+         "minutes": 419
         },
         "name": "DUNCAN,(ZACH)"
        },
@@ -4518,8 +4518,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 07m",
-         "minutes": 427
+         "label": "6h 59m",
+         "minutes": 419
         },
         "name": "MOZQUEDA,(ERNESTO)"
        }
@@ -4558,8 +4558,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 52m",
-         "minutes": 652
+         "label": "10h 44m",
+         "minutes": 644
         },
         "name": "JACKMAN,(MATT)"
        },
@@ -4567,8 +4567,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "10h 52m",
-         "minutes": 652
+         "label": "10h 44m",
+         "minutes": 644
         },
         "name": "BOER,(BRANDON)"
        }
@@ -4600,9 +4600,20 @@
       "trn_planned_crew": []
      },
      {
-      "crewed": false,
+      "crewed": true,
       "date_time": "08/23-2046",
-      "eng_crew": [],
+      "eng_crew": [
+       {
+        "craft": "EN",
+        "name": "LINEBAUGH,(MATT)",
+        "on_in": "1h 44m"
+       },
+       {
+        "craft": "AE",
+        "name": "COMSTOCK,(JUSTYCE)",
+        "on_in": "1h 44m"
+       }
+      ],
       "eng_crew_count": "0",
       "eng_crew_district": "8IOT",
       "eng_crew_pool": "OB",
@@ -6076,13 +6087,24 @@
     "name": "Kansas City",
     "trains": [
      {
-      "crewed": false,
+      "crewed": true,
       "date_time": "08/23-1230",
       "eng_crew": [],
       "eng_crew_count": "3",
       "eng_crew_district": "8IOT",
       "eng_crew_pool": "SW",
-      "eng_planned_crew": [],
+      "eng_planned_crew": [
+       {
+        "craft": "EN",
+        "name": "LINEBAUGH,(MATT)",
+        "on_in": "1h 44m"
+       },
+       {
+        "craft": "AE",
+        "name": "COMSTOCK,(JUSTYCE)",
+        "on_in": "1h 44m"
+       }
+      ],
       "hours_in_future": "",
       "information": "ACTUAL ORDER FROM MTP",
       "location_code": "04690",
@@ -6166,9 +6188,20 @@
       "trn_planned_crew": []
      },
      {
-      "crewed": false,
+      "crewed": true,
       "date_time": "08/23-1515",
-      "eng_crew": [],
+      "eng_crew": [
+       {
+        "craft": "EN",
+        "name": "HATFIELD,(JARROD)",
+        "on_in": "1h 29m"
+       },
+       {
+        "craft": "AE",
+        "name": "STONEHOUSE,(ZACH)",
+        "on_in": "1h 29m"
+       }
+      ],
       "eng_crew_count": "1",
       "eng_crew_district": "KSPB",
       "eng_crew_pool": "PS",
@@ -6189,7 +6222,13 @@
       "subdistrict": "",
       "train_asgn": "180-22",
       "train_type": "C",
-      "trn_crew": [],
+      "trn_crew": [
+       {
+        "craft": "TT",
+        "name": "CONWELL,(JOSHUA)",
+        "on_in": "1h 29m"
+       }
+      ],
       "trn_crew_count": "1",
       "trn_crew_district": "KSPB",
       "trn_crew_pool": "PS",
@@ -6563,8 +6602,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 21m",
-         "minutes": 81
+         "label": "1h 13m",
+         "minutes": 73
         },
         "name": "CATES,(TODD)"
        }
@@ -6594,8 +6633,8 @@
         "craft": "CO",
         "hos": {
          "band": "orange",
-         "label": "1h 21m",
-         "minutes": 81
+         "label": "1h 13m",
+         "minutes": 73
         },
         "name": "JOHNSON,(JUSTIN)"
        }
@@ -8804,24 +8843,7 @@
   {
    "name": "LUDWIG,(AARON)",
    "home_terminal": "OT",
-   "board_position": {
-    "board": "OTTUMWA ENG XTRA BRD POSITION",
-    "ordinal": 4,
-    "of": 6,
-    "craft": "E",
-    "marker": "*E",
-    "captured_at": "2026-08-23T15:33:53.666415+00:00",
-    "all_boards": [
-     {
-      "board": "OTTUMWA ENG XTRA BRD POSITION",
-      "ordinal": 4,
-      "of": 6,
-      "craft": "E",
-      "marker": "*E",
-      "captured_at": "2026-08-23T15:33:53.666415+00:00"
-     }
-    ]
-   },
+   "board_position": null,
    "employee_number": "001135902",
    "assignment": "EX0013EN",
    "availability": {
@@ -8829,11 +8851,7 @@
     "reentry_at": "2026-08-22T21:51"
    },
    "board_rest": null,
-   "reentry": {
-    "at": "2026-08-22T21:50",
-    "basis": "rest",
-    "into_rest_days": false
-   },
+   "reentry": null,
    "tickets": [
     {
      "date": "2026-08-22",
@@ -8971,6 +8989,63 @@
   }
  ],
  "train_history": [
+  {
+   "date": "2026-08-23",
+   "train": "181-20",
+   "on_duty": "1230",
+   "off_duty": null,
+   "depart": "04690",
+   "arrive": "04664",
+   "pool": "SW",
+   "members": [
+    {
+     "craft": "AE",
+     "name": "COMSTOCK,(JUSTYCE)B/IFG",
+     "turn": "SW04",
+     "on_duty": "1230",
+     "off_duty": null
+    },
+    {
+     "craft": "EN",
+     "name": "LINEBAUGH,(MATT)IFGP",
+     "turn": "SW08",
+     "on_duty": "1230",
+     "off_duty": null
+    }
+   ]
+  },
+  {
+   "date": "2026-08-23",
+   "train": "180-22",
+   "on_duty": "1215",
+   "off_duty": null,
+   "depart": "04664",
+   "arrive": "04690",
+   "pool": "SW",
+   "members": [
+    {
+     "craft": "TT",
+     "name": "CONWELL,(JOSHUA)NAHANTONLY",
+     "turn": "FM01",
+     "on_duty": "1215",
+     "off_duty": null
+    },
+    {
+     "craft": "AE",
+     "name": "STONEHOUSE,(ZACH)BV",
+     "turn": "SW01",
+     "on_duty": "1215",
+     "off_duty": null
+    },
+    {
+     "craft": "EN",
+     "name": "HATFIELD,(JARROD)IFG",
+     "turn": "SW09",
+     "on_duty": "1215",
+     "off_duty": null
+    }
+   ]
+  },
   {
    "date": "2026-08-23",
    "train": "261-24",
@@ -9586,7 +9661,7 @@
    "date": "2026-08-22",
    "train": "KK20",
    "on_duty": "2359",
-   "off_duty": null,
+   "off_duty": "1030",
    "depart": "04690",
    "arrive": "04690",
    "pool": "LO",
@@ -9596,14 +9671,14 @@
      "name": "JOHNSON,(JUSTIN)BN",
      "turn": "OKAT20",
      "on_duty": "2359",
-     "off_duty": null
+     "off_duty": "1030"
     },
     {
      "craft": "EN",
      "name": "CATES,(TODD)NQRD",
      "turn": "OKAT20",
      "on_duty": "2359",
-     "off_duty": null
+     "off_duty": "1030"
     }
    ]
   },
@@ -10250,7 +10325,7 @@
    "members": [
     {
      "craft": "TT",
-     "name": "CONWELL,(JOSHUA)",
+     "name": "CONWELL,(JOSHUA)NAHANTONLY",
      "turn": "FM01",
      "on_duty": "0935",
      "off_duty": "1740"
@@ -12352,6 +12427,324 @@
      "off_duty": "1129"
     }
    ]
+  },
+  {
+   "date": "2026-08-20",
+   "train": "KK20",
+   "on_duty": "2359",
+   "off_duty": "1015",
+   "depart": "04690",
+   "arrive": "04690",
+   "pool": "LO",
+   "members": [
+    {
+     "craft": "CO",
+     "name": "SULLIVAN,(MIKE)",
+     "turn": "XKCT01",
+     "on_duty": "2359",
+     "off_duty": "1015"
+    },
+    {
+     "craft": "EN",
+     "name": "CATES,(TODD)NQRD",
+     "turn": "XKCT01",
+     "on_duty": "2359",
+     "off_duty": "1015"
+    }
+   ]
+  },
+  {
+   "date": "2026-08-20",
+   "train": "2253-19 PL",
+   "on_duty": "2345",
+   "off_duty": "0905",
+   "depart": "04855",
+   "arrive": "04690",
+   "pool": "KA",
+   "members": [
+    {
+     "craft": "EN",
+     "name": "LOUGHMILLER,(BARRY)P",
+     "turn": "KA03",
+     "on_duty": "2345",
+     "off_duty": "0905"
+    }
+   ]
+  },
+  {
+   "date": "2026-08-20",
+   "train": "D859-089",
+   "on_duty": "2320",
+   "off_duty": "1045",
+   "depart": "04664",
+   "arrive": "04640",
+   "pool": "DA",
+   "members": [
+    {
+     "craft": "AE",
+     "name": "AKERS,(MATTHEW)QBVAE",
+     "turn": "DA09",
+     "on_duty": "2320",
+     "off_duty": "1045"
+    },
+    {
+     "craft": "EN",
+     "name": "GLASGOW,(STEVE)NQBV",
+     "turn": "DA09",
+     "on_duty": "2320",
+     "off_duty": "1045"
+    }
+   ]
+  },
+  {
+   "date": "2026-08-20",
+   "train": "253-18",
+   "on_duty": "2300",
+   "off_duty": "1130",
+   "depart": "04664",
+   "arrive": "04640",
+   "pool": "DA",
+   "members": [
+    {
+     "craft": "AE",
+     "name": "AMOUZ,(ADJIWANOU)BVAE@D",
+     "turn": "DA28",
+     "on_duty": "2300",
+     "off_duty": "1125"
+    },
+    {
+     "craft": "EN",
+     "name": "SPERSTAD,(JOHN)QBV",
+     "turn": "DA12",
+     "on_duty": "2300",
+     "off_duty": "1130"
+    }
+   ]
+  },
+  {
+   "date": "2026-08-20",
+   "train": "252-21",
+   "on_duty": "2245",
+   "off_duty": "1219",
+   "depart": "04540",
+   "arrive": "04640",
+   "pool": "DA",
+   "members": [
+    {
+     "craft": "AE",
+     "name": "FULKERSON,(DAN)BV",
+     "turn": "DA24",
+     "on_duty": "2245",
+     "off_duty": "1219"
+    },
+    {
+     "craft": "EN",
+     "name": "EHRMANN,(CHRIS)BV",
+     "turn": "DA25",
+     "on_duty": "2245",
+     "off_duty": "1219"
+    }
+   ]
+  },
+  {
+   "date": "2026-08-20",
+   "train": "280-19",
+   "on_duty": "2205",
+   "off_duty": "0920",
+   "depart": "04664",
+   "arrive": "04690",
+   "pool": "SW",
+   "members": [
+    {
+     "craft": "AE",
+     "name": "PATTERSON,(DELRON)BV",
+     "turn": "SW05",
+     "on_duty": "2205",
+     "off_duty": "0920"
+    },
+    {
+     "craft": "EN",
+     "name": "LIENEMAN,(DENNIS)QUPIFG",
+     "turn": "SW05",
+     "on_duty": "2205",
+     "off_duty": "0920"
+    }
+   ]
+  },
+  {
+   "date": "2026-08-20",
+   "train": "357-529",
+   "on_duty": "2110",
+   "off_duty": "0808",
+   "depart": "04640",
+   "arrive": "04617",
+   "pool": "DA",
+   "members": [
+    {
+     "craft": "EN",
+     "name": "ALLEY,(MARK)",
+     "turn": "MU04",
+     "on_duty": "2110",
+     "off_duty": "0807"
+    },
+    {
+     "craft": "AE",
+     "name": "DEKEYZER,(BRIAN)BV",
+     "turn": "MU04",
+     "on_duty": "2110",
+     "off_duty": "0808"
+    }
+   ]
+  },
+  {
+   "date": "2026-08-20",
+   "train": "576-305",
+   "on_duty": "2110",
+   "off_duty": "0705",
+   "depart": "04640",
+   "arrive": "04664",
+   "pool": "DA",
+   "members": [
+    {
+     "craft": "AE",
+     "name": "RADA,(DANIEL)NQBVEN",
+     "turn": "MU03",
+     "on_duty": "2110",
+     "off_duty": "0705"
+    },
+    {
+     "craft": "EN",
+     "name": "KARGL,(ROB)BV",
+     "turn": "DA13",
+     "on_duty": "2110",
+     "off_duty": "0705"
+    }
+   ]
+  },
+  {
+   "date": "2026-08-20",
+   "train": "261-21",
+   "on_duty": "2110",
+   "off_duty": "0950",
+   "depart": "04664",
+   "arrive": "04640",
+   "pool": "DA",
+   "members": [
+    {
+     "craft": "AE",
+     "name": "SARGENT,(AUSTIN)BV",
+     "turn": "DA15",
+     "on_duty": "2110",
+     "off_duty": "0950"
+    },
+    {
+     "craft": "EN",
+     "name": "HAUT,(MICHAEL)QBVAE",
+     "turn": "DA07",
+     "on_duty": "2110",
+     "off_duty": "0950"
+    }
+   ]
+  },
+  {
+   "date": "2026-08-20",
+   "train": "357-530RC",
+   "on_duty": "2040",
+   "off_duty": "0710",
+   "depart": "04664",
+   "arrive": "04664",
+   "pool": "EW",
+   "members": [
+    {
+     "craft": "EN",
+     "name": "RISH,(LUCUS)IFG",
+     "turn": "MU03",
+     "on_duty": "2040",
+     "off_duty": "0710"
+    },
+    {
+     "craft": "CO",
+     "name": "MOZQUEDA,(ERNESTO)*",
+     "turn": "MU03",
+     "on_duty": "2040",
+     "off_duty": "0710"
+    }
+   ]
+  },
+  {
+   "date": "2026-08-20",
+   "train": "261-20",
+   "on_duty": "2030",
+   "off_duty": "0440",
+   "depart": "04640",
+   "arrive": "04617",
+   "pool": "DA",
+   "members": [
+    {
+     "craft": "AE",
+     "name": "HOWARD,(MATTHEW)QBV",
+     "turn": "MU02",
+     "on_duty": "2030",
+     "off_duty": "0440"
+    },
+    {
+     "craft": "EN",
+     "name": "ELLIOTT,(SCOTT)BV",
+     "turn": "MU03",
+     "on_duty": "2030",
+     "off_duty": "0440"
+    }
+   ]
+  },
+  {
+   "date": "2026-08-20",
+   "train": "K75-20",
+   "on_duty": "2000",
+   "off_duty": "0730",
+   "depart": "04640",
+   "arrive": "04640",
+   "pool": "LO",
+   "members": [
+    {
+     "craft": "B1",
+     "name": "MARZOFKA,(BRAYDEN)*NQSV",
+     "turn": "ODVT75",
+     "on_duty": "2000",
+     "off_duty": "0725"
+    },
+    {
+     "craft": "CO",
+     "name": "RAYA,(OCTAVIO)*NQBV",
+     "turn": "ODVT75",
+     "on_duty": "2000",
+     "off_duty": "0727"
+    },
+    {
+     "craft": "EN",
+     "name": "RITTER,(RYAN)NQRD",
+     "turn": "ODVT75",
+     "on_duty": "2000",
+     "off_duty": "0730"
+    }
+   ]
+  },
+  {
+   "date": "2026-08-20",
+   "train": "K68X-20CO",
+   "on_duty": "1920",
+   "off_duty": "1005",
+   "depart": "04640",
+   "arrive": "04640",
+   "pool": "EW",
+   "members": [
+    {
+     "craft": "CO",
+     "name": "NEPTUNE,(TYLER)QBVAE",
+     "turn": "MU01",
+     "on_duty": "1920",
+     "off_duty": "1005"
+    }
+   ]
   }
  ],
  "roster": [
@@ -12899,6 +13292,11 @@
    "name": "CONWELL,(JOSHUA)",
    "craft": "TT",
    "home_terminal": "OT"
+  },
+  {
+   "name": "CONWELL,(JOSHUA)NAHANTONLY",
+   "craft": "TT",
+   "home_terminal": ""
   },
   {
    "name": "COOK,(CHUCK)",
@@ -14452,7 +14850,7 @@
   },
   {
    "name": "STONEHOUSE,(ZACH)BV",
-   "craft": "EN",
+   "craft": "AE",
    "home_terminal": "OT"
   },
   {
