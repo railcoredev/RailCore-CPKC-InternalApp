@@ -1,18 +1,18 @@
 {
  "meta": {
   "collection_state": "active",
-  "collection_message": "Light sweep sched_20260823_075710.",
+  "collection_message": "Light sweep sched_20260823_080300.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-23T13:02:48+00:00",
+  "generated_at": "2026-08-23T13:07:18+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260823_075710",
-   "crew_boards": "sched_20260823_075710"
+   "crew_boards": "sched_20260823_080300"
   },
   "captured_at": {
    "train_lineup": "2026-08-23T12:58:27.994342+00:00",
-   "crew_boards": "2026-08-23T13:00:11.549845+00:00"
+   "crew_boards": "2026-08-23T13:04:48.514235+00:00"
   }
  },
  "train_lineup": {
@@ -2294,8 +2294,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "2h 32m",
-         "minutes": 152
+         "label": "2h 28m",
+         "minutes": 148
         },
         "name": "KING,(BILLY)"
        },
@@ -2303,8 +2303,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "2h 32m",
-         "minutes": 152
+         "label": "2h 28m",
+         "minutes": 148
         },
         "name": "RUSSELL,(DAN)"
        }
@@ -2403,8 +2403,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "9h 57m",
-         "minutes": 597
+         "label": "9h 53m",
+         "minutes": 593
         },
         "name": "STONE,(JOSH)",
         "tags": [
@@ -2415,8 +2415,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "9h 57m",
-         "minutes": 597
+         "label": "9h 53m",
+         "minutes": 593
         },
         "name": "BROWN,(BENJAMIN)",
         "tags": [
@@ -4384,8 +4384,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "4h 12m",
-         "minutes": 252
+         "label": "4h 08m",
+         "minutes": 248
         },
         "name": "CARROW,(ROBERT)"
        },
@@ -4393,8 +4393,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "4h 12m",
-         "minutes": 252
+         "label": "4h 08m",
+         "minutes": 248
         },
         "name": "MASSEY,(COLLIN)"
        }
@@ -4463,8 +4463,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 52m",
-         "minutes": 412
+         "label": "6h 48m",
+         "minutes": 408
         },
         "name": "EHRMANN,(CHRIS)"
        },
@@ -4472,8 +4472,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 52m",
-         "minutes": 412
+         "label": "6h 48m",
+         "minutes": 408
         },
         "name": "MERRELL,(CHARISE)"
        }
@@ -4512,8 +4512,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 57m",
-         "minutes": 537
+         "label": "8h 53m",
+         "minutes": 533
         },
         "name": "WHITWORTH,(JOHN)"
        },
@@ -4521,8 +4521,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 57m",
-         "minutes": 537
+         "label": "8h 53m",
+         "minutes": 533
         },
         "name": "ELLIOTT,(SCOTT)"
        }
@@ -4561,8 +4561,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "9h 42m",
-         "minutes": 582
+         "label": "9h 38m",
+         "minutes": 578
         },
         "name": "DUNCAN,(ZACH)"
        },
@@ -4570,8 +4570,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "9h 42m",
-         "minutes": 582
+         "label": "9h 38m",
+         "minutes": 578
         },
         "name": "MOZQUEDA,(ERNESTO)"
        }
@@ -4610,8 +4610,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 57m",
-         "minutes": 537
+         "label": "8h 53m",
+         "minutes": 533
         },
         "name": "HOUSE,(JOSH)"
        },
@@ -4619,8 +4619,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 57m",
-         "minutes": 537
+         "label": "8h 53m",
+         "minutes": 533
         },
         "name": "PEREZ,(NICHOLAS)"
        }
@@ -4779,8 +4779,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "2h 57m",
-         "minutes": 177
+         "label": "2h 53m",
+         "minutes": 173
         },
         "name": "MARKO,(CAIN)"
        },
@@ -4788,8 +4788,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "2h 57m",
-         "minutes": 177
+         "label": "2h 53m",
+         "minutes": 173
         },
         "name": "STEVENS,(DALTON)"
        }
@@ -7879,10 +7879,10 @@
       "pool": "",
       "position": "001",
       "raw_line": "  SCOTT,(ZACHARY)BVIFG    *E 0010 001                                       00",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "",
       "screen_title": "OTTUMWA ENG XTRA BRD POSITION",
-      "snapshot_date": "2026-08-23T12:58:52.462760+00:00",
+      "snapshot_date": "2026-08-23T13:03:29.387598+00:00",
       "status_code": "",
       "subdistrict": "OT",
       "term": "",
@@ -7901,10 +7901,10 @@
       "pool": "",
       "position": "002",
       "raw_line": "  FELLER,(DANIEL)NQBV      E 0006 002                                       00",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "",
       "screen_title": "OTTUMWA ENG XTRA BRD POSITION",
-      "snapshot_date": "2026-08-23T12:58:52.462760+00:00",
+      "snapshot_date": "2026-08-23T13:03:29.387598+00:00",
       "status_code": "",
       "subdistrict": "OT",
       "term": "",
@@ -7923,10 +7923,10 @@
       "pool": "",
       "position": "003",
       "raw_line": "  RISH,(LUCUS)IFG  @D      E 0008 003                                       00",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "",
       "screen_title": "OTTUMWA ENG XTRA BRD POSITION",
-      "snapshot_date": "2026-08-23T12:58:52.462760+00:00",
+      "snapshot_date": "2026-08-23T13:03:29.387598+00:00",
       "status_code": "",
       "subdistrict": "OT",
       "term": "",
@@ -7945,10 +7945,10 @@
       "pool": "",
       "position": "004",
       "raw_line": "  LUDWIG,(AARON)BV        *E 0013 004                                       00",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "",
       "screen_title": "OTTUMWA ENG XTRA BRD POSITION",
-      "snapshot_date": "2026-08-23T12:58:52.462760+00:00",
+      "snapshot_date": "2026-08-23T13:03:29.387598+00:00",
       "status_code": "",
       "subdistrict": "OT",
       "term": "",
@@ -7967,10 +7967,10 @@
       "pool": "",
       "position": "005",
       "raw_line": "  FIGUEROA,(CEDRIC)BV  IFG E 0005 005                  1015 1220            00",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "",
       "screen_title": "OTTUMWA ENG XTRA BRD POSITION",
-      "snapshot_date": "2026-08-23T12:58:52.462760+00:00",
+      "snapshot_date": "2026-08-23T13:03:29.387598+00:00",
       "status_code": "",
       "subdistrict": "OT",
       "term": "",
@@ -7998,10 +7998,10 @@
       "pool": "OB",
       "position": "001",
       "raw_line": "  EN MU01 4 001 STANSBERRY,(CHANDLER)BVI      << OPEN TURN >>",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "OPEN",
       "screen_title": "OB POOLS IN OTT TURN ORDER",
-      "snapshot_date": "2026-08-23T12:59:00.137102+00:00",
+      "snapshot_date": "2026-08-23T13:03:37.053017+00:00",
       "status_code": "<<",
       "subdistrict": "OT",
       "term": "T",
@@ -8020,10 +8020,10 @@
       "pool": "OB",
       "position": "001",
       "raw_line": "  AE OB14 4 001 MOFFITT,(LUCAS)         *E",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "",
       "screen_title": "OB POOLS IN OTT TURN ORDER",
-      "snapshot_date": "2026-08-23T12:59:00.137102+00:00",
+      "snapshot_date": "2026-08-23T13:03:37.053017+00:00",
       "status_code": "*E",
       "subdistrict": "OT",
       "term": "T",
@@ -8043,10 +8043,10 @@
       "pool": "OB",
       "position": "999",
       "raw_line": "  AE OB13 3 999 STEVENS,(DALTON)BVIFG   *E B0 ON  252-23",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "B0",
       "screen_title": "OB POOLS IN OTT TURN ORDER",
-      "snapshot_date": "2026-08-23T12:59:00.137102+00:00",
+      "snapshot_date": "2026-08-23T13:03:37.053017+00:00",
       "status_code": "*E",
       "subdistrict": "OT",
       "term": "T",
@@ -8066,10 +8066,10 @@
       "pool": "OB",
       "position": "999",
       "raw_line": "  EN OB13 3 999 MARKO,(CAIN)BVEN         E B0 ON  252-23",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "B0",
       "screen_title": "OB POOLS IN OTT TURN ORDER",
-      "snapshot_date": "2026-08-23T12:59:00.137102+00:00",
+      "snapshot_date": "2026-08-23T13:03:37.053017+00:00",
       "status_code": "E",
       "subdistrict": "OT",
       "term": "T",
@@ -8088,10 +8088,10 @@
       "pool": "OB",
       "position": "001",
       "raw_line": "  EN OB14 0 001 TURNER,(TERRELL)B IFG    E",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "",
       "screen_title": "OB POOLS IN OTT TURN ORDER",
-      "snapshot_date": "2026-08-23T12:59:02.569625+00:00",
+      "snapshot_date": "2026-08-23T13:03:39.488185+00:00",
       "status_code": "E",
       "subdistrict": "OT",
       "term": "T",
@@ -8119,10 +8119,10 @@
       "pool": "OB",
       "position": "001",
       "raw_line": "  EN OB14 0 001 TURNER,(TERRELL)B IFG    E",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "",
       "screen_title": "OB POOLS IN OTT POSITION",
-      "snapshot_date": "2026-08-23T12:59:07.814082+00:00",
+      "snapshot_date": "2026-08-23T13:03:44.738249+00:00",
       "status_code": "E",
       "subdistrict": "OT",
       "term": "0",
@@ -8158,10 +8158,10 @@
       "pool": "OB",
       "position": "001",
       "raw_line": "  EN MU01 4 001 STANSBERRY,(CHANDLER)BVI                    1441 1442",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "1442",
       "screen_title": "OB POOLS IN IMS POSITION",
-      "snapshot_date": "2026-08-23T12:59:18.339178+00:00",
+      "snapshot_date": "2026-08-23T13:03:55.255270+00:00",
       "status_code": "1441",
       "subdistrict": "OT",
       "term": "4",
@@ -8180,10 +8180,10 @@
       "pool": "OB",
       "position": "001",
       "raw_line": "  AE OB14 4 001 MOFFITT,(LUCAS)         *E                  1441 1441",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "1441",
       "screen_title": "OB POOLS IN IMS POSITION",
-      "snapshot_date": "2026-08-23T12:59:18.339178+00:00",
+      "snapshot_date": "2026-08-23T13:03:55.255270+00:00",
       "status_code": "*E",
       "subdistrict": "OT",
       "term": "4",
@@ -8211,10 +8211,10 @@
       "pool": "DA",
       "position": "001",
       "raw_line": "  EN DA09 1 001 GLASGOW,(STEVE)NQBV      E",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "",
       "screen_title": "DA POOLS IN OTT POSITION",
-      "snapshot_date": "2026-08-23T12:59:23.600854+00:00",
+      "snapshot_date": "2026-08-23T13:04:00.529701+00:00",
       "status_code": "E",
       "subdistrict": "OT",
       "term": "1",
@@ -8233,10 +8233,10 @@
       "pool": "DA",
       "position": "001",
       "raw_line": "  AE DA09 1 001 AKERS,(MATTHEW)QBVAE    *E",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "",
       "screen_title": "DA POOLS IN OTT POSITION",
-      "snapshot_date": "2026-08-23T12:59:23.600854+00:00",
+      "snapshot_date": "2026-08-23T13:04:00.529701+00:00",
       "status_code": "*E",
       "subdistrict": "OT",
       "term": "1",
@@ -8255,10 +8255,10 @@
       "pool": "DA",
       "position": "002",
       "raw_line": "  EN DA02 1 002 CADY,(AARON)ALL          E",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "",
       "screen_title": "DA POOLS IN OTT POSITION",
-      "snapshot_date": "2026-08-23T12:59:23.600854+00:00",
+      "snapshot_date": "2026-08-23T13:04:00.529701+00:00",
       "status_code": "E",
       "subdistrict": "OT",
       "term": "1",
@@ -8277,10 +8277,10 @@
       "pool": "DA",
       "position": "002",
       "raw_line": "  AE MU08 1 002 OLDFIELD,(COLTON)BVAE   *E",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "",
       "screen_title": "DA POOLS IN OTT POSITION",
-      "snapshot_date": "2026-08-23T12:59:23.600854+00:00",
+      "snapshot_date": "2026-08-23T13:04:00.529701+00:00",
       "status_code": "*E",
       "subdistrict": "OT",
       "term": "1",
@@ -8299,10 +8299,10 @@
       "pool": "DA",
       "position": "003",
       "raw_line": "  EN DA14 1 003 PIATZ,(FRANK)ALL         E                  1305 1309",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "1305",
       "screen_title": "DA POOLS IN OTT POSITION",
-      "snapshot_date": "2026-08-23T12:59:26.042305+00:00",
+      "snapshot_date": "2026-08-23T13:04:02.962780+00:00",
       "status_code": "E",
       "subdistrict": "OT",
       "term": "1",
@@ -8321,10 +8321,10 @@
       "pool": "DA",
       "position": "003",
       "raw_line": "  AE DA11 1 003 YORK,(CHRISTOPHER)QBV    E                  1305 1305",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "1305",
       "screen_title": "DA POOLS IN OTT POSITION",
-      "snapshot_date": "2026-08-23T12:59:26.042305+00:00",
+      "snapshot_date": "2026-08-23T13:04:02.962780+00:00",
       "status_code": "E",
       "subdistrict": "OT",
       "term": "1",
@@ -8360,10 +8360,10 @@
       "pool": "SW",
       "position": "001",
       "raw_line": "  EN SW09 0 001 HATFIELD,(JARROD)IFG     E",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "",
       "screen_title": "SW POOLS IN OTT POSITION",
-      "snapshot_date": "2026-08-23T12:59:36.548324+00:00",
+      "snapshot_date": "2026-08-23T13:04:13.484519+00:00",
       "status_code": "E",
       "subdistrict": "OT",
       "term": "0",
@@ -8382,10 +8382,10 @@
       "pool": "SW",
       "position": "001",
       "raw_line": "  AE SW01 0 001 STONEHOUSE,(ZACH)BV     *E",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "",
       "screen_title": "SW POOLS IN OTT POSITION",
-      "snapshot_date": "2026-08-23T12:59:36.548324+00:00",
+      "snapshot_date": "2026-08-23T13:04:13.484519+00:00",
       "status_code": "*E",
       "subdistrict": "OT",
       "term": "0",
@@ -8404,10 +8404,10 @@
       "pool": "SW",
       "position": "001",
       "raw_line": "  ET XX03 0 001 NELSON,(GARRET)BV 252/253",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "",
       "screen_title": "SW POOLS IN OTT POSITION",
-      "snapshot_date": "2026-08-23T12:59:36.548324+00:00",
+      "snapshot_date": "2026-08-23T13:04:13.484519+00:00",
       "status_code": "",
       "subdistrict": "OT",
       "term": "0",
@@ -8426,10 +8426,10 @@
       "pool": "SW",
       "position": "001",
       "raw_line": "  TT FM01 0 001 CONWELL,(JOSHUA)",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "",
       "screen_title": "SW POOLS IN OTT POSITION",
-      "snapshot_date": "2026-08-23T12:59:36.548324+00:00",
+      "snapshot_date": "2026-08-23T13:04:13.484519+00:00",
       "status_code": "",
       "subdistrict": "OT",
       "term": "0",
@@ -8448,10 +8448,10 @@
       "pool": "SW",
       "position": "002",
       "raw_line": "  EN SW01 0 002 LOCHNER,(DEREK)          E",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "",
       "screen_title": "SW POOLS IN OTT POSITION",
-      "snapshot_date": "2026-08-23T12:59:36.548324+00:00",
+      "snapshot_date": "2026-08-23T13:04:13.484519+00:00",
       "status_code": "E",
       "subdistrict": "OT",
       "term": "0",
@@ -8470,10 +8470,10 @@
       "pool": "SW",
       "position": "002",
       "raw_line": "  AE SW05 0 002 PATTERSON,(DELRON)BV    *E",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "",
       "screen_title": "SW POOLS IN OTT POSITION",
-      "snapshot_date": "2026-08-23T12:59:36.548324+00:00",
+      "snapshot_date": "2026-08-23T13:04:13.484519+00:00",
       "status_code": "*E",
       "subdistrict": "OT",
       "term": "0",
@@ -8492,10 +8492,10 @@
       "pool": "SW",
       "position": "002",
       "raw_line": "  ET SW01 0 002 KEOMANIVONG,(SONNY)NQB",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "",
       "screen_title": "SW POOLS IN OTT POSITION",
-      "snapshot_date": "2026-08-23T12:59:36.548324+00:00",
+      "snapshot_date": "2026-08-23T13:04:13.484519+00:00",
       "status_code": "",
       "subdistrict": "OT",
       "term": "0",
@@ -8514,10 +8514,10 @@
       "pool": "SW",
       "position": "003",
       "raw_line": "  EN SW03 0 003 GERST,(BRADEN)BV         E     01",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "01",
       "screen_title": "SW POOLS IN OTT POSITION",
-      "snapshot_date": "2026-08-23T12:59:38.978439+00:00",
+      "snapshot_date": "2026-08-23T13:04:15.916031+00:00",
       "status_code": "E",
       "subdistrict": "OT",
       "term": "0",
@@ -8536,10 +8536,10 @@
       "pool": "SW",
       "position": "003",
       "raw_line": "  AE SW02 0 003 LINDLY,(DONALD)NQBVEN    E                  1015 1015",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "1015",
       "screen_title": "SW POOLS IN OTT POSITION",
-      "snapshot_date": "2026-08-23T12:59:38.978439+00:00",
+      "snapshot_date": "2026-08-23T13:04:15.916031+00:00",
       "status_code": "E",
       "subdistrict": "OT",
       "term": "0",
@@ -8558,10 +8558,10 @@
       "pool": "SW",
       "position": "004",
       "raw_line": "  AE SW03 0 004 HARTMAN,(JAMES)          E",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "",
       "screen_title": "SW POOLS IN OTT POSITION",
-      "snapshot_date": "2026-08-23T12:59:38.978439+00:00",
+      "snapshot_date": "2026-08-23T13:04:15.916031+00:00",
       "status_code": "E",
       "subdistrict": "OT",
       "term": "0",
@@ -8580,10 +8580,10 @@
       "pool": "SW",
       "position": "900",
       "raw_line": "  EN SW04 0 900 CASHATT,(DAKOTA)IFG      E 00                    1658",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "00",
       "screen_title": "SW POOLS IN OTT POSITION",
-      "snapshot_date": "2026-08-23T12:59:38.978439+00:00",
+      "snapshot_date": "2026-08-23T13:04:15.916031+00:00",
       "status_code": "E",
       "subdistrict": "OT",
       "term": "0",
@@ -8611,10 +8611,10 @@
       "pool": "SW",
       "position": "001",
       "raw_line": "  EN SW08 3 001 LINEBAUGH,(MATT)IFGP     E",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "",
       "screen_title": "SW POOLS IN KC  POSITION",
-      "snapshot_date": "2026-08-23T12:59:46.660337+00:00",
+      "snapshot_date": "2026-08-23T13:04:23.623850+00:00",
       "status_code": "E",
       "subdistrict": "OT",
       "term": "3",
@@ -8633,10 +8633,10 @@
       "pool": "SW",
       "position": "001",
       "raw_line": "  AE SW04 3 001 COMSTOCK,(JUSTYCE)B/IFG *E",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "",
       "screen_title": "SW POOLS IN KC  POSITION",
-      "snapshot_date": "2026-08-23T12:59:46.660337+00:00",
+      "snapshot_date": "2026-08-23T13:04:23.623850+00:00",
       "status_code": "",
       "subdistrict": "OT",
       "term": "3",
@@ -8672,10 +8672,10 @@
       "pool": "",
       "position": "001",
       "raw_line": "  KILGORE,(JONATHAN)*        0009 001                                       00",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "",
       "screen_title": "OTT SWITCHMAN XTRABRD POSITION",
-      "snapshot_date": "2026-08-23T13:00:11.549845+00:00",
+      "snapshot_date": "2026-08-23T13:04:48.514235+00:00",
       "status_code": "",
       "subdistrict": "OT",
       "term": "",
@@ -8694,10 +8694,10 @@
       "pool": "",
       "position": "002",
       "raw_line": "  BRADLEY,(COLTON)*IFGNVR    0006 002                                       00",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "",
       "screen_title": "OTT SWITCHMAN XTRABRD POSITION",
-      "snapshot_date": "2026-08-23T13:00:11.549845+00:00",
+      "snapshot_date": "2026-08-23T13:04:48.514235+00:00",
       "status_code": "",
       "subdistrict": "OT",
       "term": "",
@@ -8716,10 +8716,10 @@
       "pool": "",
       "position": "003",
       "raw_line": "  ADKINS,(CHRISTOPHER)IFG    0008 003                                       00",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "",
       "screen_title": "OTT SWITCHMAN XTRABRD POSITION",
-      "snapshot_date": "2026-08-23T13:00:11.549845+00:00",
+      "snapshot_date": "2026-08-23T13:04:48.514235+00:00",
       "status_code": "",
       "subdistrict": "OT",
       "term": "",
@@ -8738,10 +8738,10 @@
       "pool": "",
       "position": "004",
       "raw_line": "  PEREZ,(JASPER)*            0001 004                                       00",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "",
       "screen_title": "OTT SWITCHMAN XTRABRD POSITION",
-      "snapshot_date": "2026-08-23T13:00:11.549845+00:00",
+      "snapshot_date": "2026-08-23T13:04:48.514235+00:00",
       "status_code": "",
       "subdistrict": "OT",
       "term": "",
@@ -8760,10 +8760,10 @@
       "pool": "",
       "position": "005",
       "raw_line": "  GRELK,(RUGER)*             0011 005                                       00",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "",
       "screen_title": "OTT SWITCHMAN XTRABRD POSITION",
-      "snapshot_date": "2026-08-23T13:00:11.549845+00:00",
+      "snapshot_date": "2026-08-23T13:04:48.514235+00:00",
       "status_code": "",
       "subdistrict": "OT",
       "term": "",
@@ -8782,10 +8782,10 @@
       "pool": "",
       "position": "006",
       "raw_line": "  CARAPIA,(JUAN)*            0003 006                                       00",
-      "run_id": "sched_20260823_075710",
+      "run_id": "sched_20260823_080300",
       "sc": "",
       "screen_title": "OTT SWITCHMAN XTRABRD POSITION",
-      "snapshot_date": "2026-08-23T13:00:11.549845+00:00",
+      "snapshot_date": "2026-08-23T13:04:48.514235+00:00",
       "status_code": "",
       "subdistrict": "OT",
       "term": "",
@@ -8799,9 +8799,9 @@
     "subdistrict": "OT"
    }
   ],
-  "captured_at": "2026-08-23T13:00:11.549845+00:00",
+  "captured_at": "2026-08-23T13:04:48.514235+00:00",
   "row_count": 38,
-  "run_id": "sched_20260823_075710"
+  "run_id": "sched_20260823_080300"
  },
  "alerts": [
   {
@@ -8844,7 +8844,7 @@
     "of": 5,
     "craft": "E",
     "marker": "*E",
-    "captured_at": "2026-08-23T12:58:52.462760+00:00",
+    "captured_at": "2026-08-23T13:03:29.387598+00:00",
     "all_boards": [
      {
       "board": "OTTUMWA ENG XTRA BRD POSITION",
@@ -8852,7 +8852,7 @@
       "of": 5,
       "craft": "E",
       "marker": "*E",
-      "captured_at": "2026-08-23T12:58:52.462760+00:00"
+      "captured_at": "2026-08-23T13:03:29.387598+00:00"
      }
     ]
    },
