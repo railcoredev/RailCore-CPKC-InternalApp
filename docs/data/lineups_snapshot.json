@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-23T10:24:11+00:00",
+  "generated_at": "2026-08-23T10:44:20+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260823_004916",
@@ -2264,8 +2264,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 21m",
-         "minutes": 81
+         "label": "1h 01m",
+         "minutes": 61
         },
         "name": "WOLF,(JOSHUA)"
        },
@@ -2273,8 +2273,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "1h 21m",
-         "minutes": 81
+         "label": "1h 01m",
+         "minutes": 61
         },
         "name": "SELS,(DOUG)"
        }
@@ -2373,8 +2373,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "4h 36m",
-         "minutes": 276
+         "label": "4h 16m",
+         "minutes": 256
         },
         "name": "FLYNN,(CASEY)"
        },
@@ -2382,8 +2382,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "4h 36m",
-         "minutes": 276
+         "label": "4h 16m",
+         "minutes": 256
         },
         "name": "HARING,(ALEX)"
        }
@@ -2452,8 +2452,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "5h 11m",
-         "minutes": 311
+         "label": "4h 51m",
+         "minutes": 291
         },
         "name": "KING,(BILLY)"
        },
@@ -2461,8 +2461,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "5h 11m",
-         "minutes": 311
+         "label": "4h 51m",
+         "minutes": 291
         },
         "name": "RUSSELL,(DAN)"
        }
@@ -4427,8 +4427,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 51m",
-         "minutes": 411
+         "label": "6h 31m",
+         "minutes": 391
         },
         "name": "CARROW,(ROBERT)"
        },
@@ -4436,8 +4436,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 51m",
-         "minutes": 411
+         "label": "6h 31m",
+         "minutes": 391
         },
         "name": "MASSEY,(COLLIN)"
        }
@@ -4656,8 +4656,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "5h 36m",
-         "minutes": 336
+         "label": "5h 16m",
+         "minutes": 316
         },
         "name": "MARKO,(CAIN)"
        },
@@ -4665,8 +4665,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "5h 36m",
-         "minutes": 336
+         "label": "5h 16m",
+         "minutes": 316
         },
         "name": "STEVENS,(DALTON)"
        }
