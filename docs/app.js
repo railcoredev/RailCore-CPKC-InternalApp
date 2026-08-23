@@ -752,6 +752,18 @@ function renderHistoryTable() {
     return "Train history appears after the next processor restart publishes the enriched feed.";
   }
   updateFreshnessBar();
+  // The feed now carries 7 days (for the person search's LAST TRAIN); this
+  // PAGE stays the 48h view it advertises.
+  const cutoff = new Date(Date.now() - 48 * 36e5);
+  const recent = d.train_history.filter((tr) => {
+    const t = new Date((tr.date || "1970-01-01") + "T00:00:00");
+    if (tr.on_duty && /^\d{4}$/.test(tr.on_duty)) {
+      t.setHours(+tr.on_duty.slice(0, 2), +tr.on_duty.slice(2), 0, 0);
+    } else {
+      t.setHours(23, 59, 0, 0);        // date-only rows: keep the whole day
+    }
+    return t >= cutoff;
+  });
   // Segregate by the DEPARTURE STATION CODE itself (operator 2026-08-23:
   // "route code" -- Muscatine 04649 is its OWN section, NOT folded into
   // Ottumwa 04664). One page, no dropdown; a section per departure point.
@@ -761,13 +773,13 @@ function renderHistoryTable() {
     "04541": "BENSENVILLE IMS", "04540": "BENSENVILLE",
   };
   const groups = {};
-  d.train_history.forEach((tr) => {
+  recent.forEach((tr) => {
     const code = tr.depart || "?";
     (groups[code] = groups[code] || []).push(tr);
   });
   const box = el("div");
   box.appendChild(el("div", "table-title",
-    `RECENT TRAINS — last 48h · ${d.train_history.length} trains · by departure point`));
+    `RECENT TRAINS — last 48h · ${recent.length} trains · by departure point`));
   // Home first (Ottumwa), then the busiest sections.
   const rank = (c) => (c === "04664" ? -1e9 : -(groups[c] || []).length);
   Object.keys(groups).sort((a, b) => rank(a) - rank(b) || a.localeCompare(b)).forEach((code) => {
@@ -894,8 +906,11 @@ function buildPersonResults(d, q, box) {
       rows.push(["ON DUTY", `${fmtClock(p.onTrain.on)} ${localDay(p.onTrain.on)} · ${p.onTrain.route}`]);
     } else if (p.bookoff) {
       band = "blue";
-      rows.push(["STATUS", `BOOKED OFF — ${p.bookoff.label || p.bookoff.code}`
-        + (p.bookoff.code && p.bookoff.label ? ` (${p.bookoff.code})` : "")
+      const what = p.bookoff.label
+        ? `${p.bookoff.label} (${p.bookoff.code})`
+        : `code ${p.bookoff.code} (not in the status legend)`;   // e.g. the
+        // literal '0' PSTS90 shows for some rows -- shown verbatim, not guessed
+      rows.push(["STATUS", `BOOKED OFF — ${what}`
         + (p.bookoff.since ? ` since ${p.bookoff.since.slice(5)}` : "")]);
     }
     // Board rows (dedup by screen): position/turn verbatim; MTOD rest if shown.
@@ -961,7 +976,7 @@ function renderSearchView() {
     showText();
     return "Type at least 2 characters — a name (TILLIS, MARKO) or a train (181, 253-05).\n\n" +
            "People searches the whole roster (any home terminal), the boards and recent trains.\n" +
-           "Trains searches every station's lineup and the last 48h of train history.";
+           "Trains searches every station's lineup and the last 7 days of train history.";
   }
   const box = el("div");
   buildPersonResults(d, q, box);
@@ -992,7 +1007,7 @@ function renderSearchView() {
   });
   box.appendChild(el("div", "table-title",
     (trows.length + hrows.length)
-      ? `TRAINS — ${trows.length} on the lineup · ${hrows.length} in the last 48h`
+      ? `TRAINS — ${trows.length} on the lineup · ${hrows.length} in the last 7 days`
       : `TRAINS — nothing matching "${q}"`));
   if (trows.length) {
     box.appendChild(buildTable(["Station", "Date/Time", "Train", "Status", "Crew", "Pool"], trows));
