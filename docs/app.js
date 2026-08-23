@@ -879,7 +879,12 @@ function buildPersonResults(d, q, box) {
   box.appendChild(el("div", "table-title",
     keys.length ? `PEOPLE — ${keys.length} match${keys.length === 1 ? "" : "es"}`
                 : `PEOPLE — no one matching "${q}"`));
-  keys.sort().slice(0, 6).forEach((k) => {
+  const CAP = 30;                     // show them ALL (count must match the
+  if (keys.length > CAP) {            // list); only trim absurd queries, and
+    box.appendChild(el("div", "table-title",   // SAY so when trimming
+      `showing first ${CAP} of ${keys.length} — keep typing to narrow`));
+  }
+  keys.sort().slice(0, CAP).forEach((k) => {
     const p = people[k];
     const rows = [];
     let band = null;
