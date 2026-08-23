@@ -744,23 +744,28 @@ function renderHistoryTable() {
     return "Train history appears after the next processor restart publishes the enriched feed.";
   }
   updateFreshnessBar();
-  // Segregate by DEPARTURE TERMINAL (operator 2026-08-23): keep it ONE page,
-  // grouped by the initial terminal so it reads easily.
-  const TERM_NAME = { OT: "OTTUMWA", DA: "DAVENPORT", KC: "KANSAS CITY" };
+  // Segregate by the DEPARTURE STATION CODE itself (operator 2026-08-23:
+  // "route code" -- Muscatine 04649 is its OWN section, NOT folded into
+  // Ottumwa 04664). One page, no dropdown; a section per departure point.
+  const STATION_NAME = {
+    "04664": "OTTUMWA", "04649": "MUSCATINE", "04689": "LIBERTY",
+    "04690": "KANSAS CITY", "04640": "NAHANT", "04617": "MARQUETTE",
+    "04541": "BENSENVILLE IMS", "04540": "BENSENVILLE",
+  };
   const groups = {};
   d.train_history.forEach((tr) => {
-    const term = STATION_TERMINAL[tr.depart] || tr.depart || "?";
-    (groups[term] = groups[term] || []).push(tr);
+    const code = tr.depart || "?";
+    (groups[code] = groups[code] || []).push(tr);
   });
   const box = el("div");
   box.appendChild(el("div", "table-title",
-    `RECENT TRAINS — last 48h · ${d.train_history.length} trains · by departure terminal`));
-  const order = ["OT", "DA", "KC"];
-  const rank = (t) => (order.indexOf(t) < 0 ? 99 : order.indexOf(t));
-  Object.keys(groups).sort((a, b) => rank(a) - rank(b)).forEach((term) => {
-    const list = groups[term];
+    `RECENT TRAINS — last 48h · ${d.train_history.length} trains · by departure point`));
+  // Home first (Ottumwa), then the busiest sections.
+  const rank = (c) => (c === "04664" ? -1e9 : -(groups[c] || []).length);
+  Object.keys(groups).sort((a, b) => rank(a) - rank(b) || a.localeCompare(b)).forEach((code) => {
+    const list = groups[code];
     box.appendChild(el("div", "table-title",
-      `${TERM_NAME[term] || term}  ·  ${list.length} train${list.length === 1 ? "" : "s"}`));
+      `${STATION_NAME[code] || code} (${code})  ·  ${list.length} train${list.length === 1 ? "" : "s"}`));
     const rows = list.map((tr) => {
       const crew = el("span");
       (tr.members || []).forEach((m) =>
