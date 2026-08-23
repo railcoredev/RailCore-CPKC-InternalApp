@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "evidence_id": "fra",
+    "source_name": "FRA",
+    "version": "1.0",
+    "effective_date": null,
+    "parser_type": "adaptive",
+    "title": "FRA"
+  },
+  "sections": [
+    {
+      "id": "qcsn10_cma_fra_tie_up_1_1_2025_p001_b000",
+      "title": "Quad Cities Superintendent Notice No. 10",
+      "text": "Quad Cities Superintendent Notice No. 10 \nPage | 1  \n \n                                                  \n \n \nJanuary 1, 2025 \n \nSUBDIVISIONS: Chicago, Davenport, Eldridge, Kansas City, Marquette, Nitrin, Ottumwa, \nRockford, Laredo \nNOTICES IN EFFECT: 1-10 \nNOTICES CANCELLED:     \nSUBJECT: CMA FRA Tie-Up \n \n \nEffective immediately, Train and Engine employees are reminded as to ensure accuracy of information when entering into CMA for \nFRA records on FRA Audit Screen in MAC4.  \n \n \n1. FRA records should be completed at the end of your tour of duty \n \n2. Employees not able to certify their FRA due to exceeding HOS need to complete FRA certification next time on duty \n \n3. In the event you have an error or are unable to certify event due to an error please contact CMC to resolve issue \n \n4. on Need to ensure when tying up that relieved and released locations are accurate for proper tracking of \nqualifications \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nLOGAN IVES – ASST SUPERINTENDENT – QUAD CITIES \nPlease contact your Employee Assistance Program at 1-800-624-5544 [or visit www.eap.ndbh.com; Login: CP] for any social or \npersonal problems that you or your family need assistance with.",
+      "order": 1,
+      "parent_id": null,
+      "source_ref": {
+        "page": 1,
+        "label": "Page 1"
+      }
+    }
+  ]
+}

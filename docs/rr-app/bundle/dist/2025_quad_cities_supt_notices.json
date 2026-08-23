@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "evidence_id": "2025 quad cities supt. notices",
+    "source_name": "Superintendent 2025 Quad Cities Supt. Notices",
+    "version": "1.0",
+    "effective_date": null,
+    "parser_type": "adaptive",
+    "title": "Superintendent 2025 Quad Cities Supt. Notices"
+  },
+  "sections": [
+    {
+      "id": "qcsn27_cancellation_of_superintendent_notice_20_1_7_2025_p001_hdr",
+      "title": "Quad Cities Superintendent Notice No. 27",
+      "text": "Quad Cities Superintendent Notice No. 27 \n \nPage | 1  \n \n                                                  \n \n \n      \nJanuary 7, 2025 \n \nSUBDIVISIONS: Davenport, Marquette, Muscatine, Ottumwa, Savanna \nNOTICES IN EFFECT: 1-19, 21-27 \nNOTICES CANCELLED:     \nSUBJECT: Cancellation of Superintendent Notice #20 \n(Marquette – Coal Train Instructions) \n \n \n \nEffective immediately, Quad Cities Superintendent Notice #20 regarding (Marquette Coal Train Instructions) is hereby \ncancelled. \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nLOGAN IVES – ASST SUPERINTENDENT – QUAD CITIES \nPlease contact your Employee Assistance Program at 1-833-594-0869 [or visit one.telushealth.com; Login: CP] for any social or \npersonal problems that you or your family need assistance with.",
+      "order": 1,
+      "parent_id": null,
+      "source_ref": {
+        "page": 1,
+        "label": "Page 1"
+      }
+    }
+  ]
+}

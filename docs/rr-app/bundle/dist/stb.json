@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "title": "STB Information",
+    "version": "2024.01"
+  },
+  "sections": [
+    {
+      "id": "1001.1",
+      "title": "Scope",
+      "text": "The Surface Transportation Board has jurisdiction over certain rail and other surface transportation matters.",
+      "part": "1001"
+    },
+    {
+      "id": "1152.10",
+      "title": "Definitions",
+      "text": "Class I carrier, Class II carrier, and other terms used in this part are defined in this section.",
+      "part": "1152"
+    }
+  ]
+}

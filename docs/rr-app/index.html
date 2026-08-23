@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rail Reference – RAILCORE</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; width: 100%; background: #0E0F11; color: #E6E8EB; font-family: system-ui, -apple-system, sans-serif; }
+    .rr-load-error { padding: 2rem; text-align: center; color: #C94A4A; }
+    .rr-load-error button { margin-top: 1rem; padding: 0.5rem 1rem; background: #FF6600; border: none; border-radius: 4px; color: #0E0F11; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <!-- Back to the RailCore app (the viewer shell has no home link of its own) -->
+  <a href="../index.html"
+     style="position:fixed;top:8px;right:10px;z-index:10000;padding:4px 10px;
+            background:#1a1d22;border:1px solid #333a44;border-radius:14px;
+            color:#ff6600;font:600 13px system-ui;text-decoration:none;">⌂ RailCore</a>
+  <script type="module">
+    import { initApp, setBundlePaths } from './dist/app.js?v=20260203g';
+    // Bundle lives next to index.html: rr-app/bundle/
+    try {
+      if (typeof window !== 'undefined') {
+        var base = (window.location.pathname || '').replace(/\/index\.html$/i, '').replace(/\/$/, '') || '';
+        var bundleRoot = base ? base + '/bundle' : './bundle';
+        setBundlePaths(bundleRoot);
+      }
+      initApp().catch(function(err) {
+        console.error('initApp error:', err);
+        document.body.innerHTML = '<div class="rr-load-error"><p>Failed to load documents: ' + (err.message || err) + '</p><button onclick="location.reload()">Retry</button></div>';
+      });
+    } catch (err) {
+      console.error('Script error:', err);
+      document.body.innerHTML = '<div class="rr-load-error"><p>Script error: ' + (err.message || err) + '</p><button onclick="location.reload()">Retry</button></div>';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "evidence_id": "general order f",
+    "source_name": "General Order F",
+    "version": "1.0",
+    "effective_date": null,
+    "parser_type": "adaptive",
+    "title": "General Order F"
+  },
+  "sections": [
+    {
+      "id": "subscribing_to_general_orders_and_other_notices_p001_b000",
+      "title": "To subscribe to General Orders, GM Notices, and other bulletins, perform the fo…",
+      "text": "To subscribe to General Orders, GM Notices, and other bulletins, perform the following: \n1. Navigate to CPKC Station. \n2. Hover over Operations. When a list is displayed, click on Operating Rules and \nPractices. \n \n3. Click on the United States flag. \n \n4. Click on the gear icon located in the top right-hand corner of the screen. Then click \nsite contents.",
+      "order": 1,
+      "parent_id": null,
+      "source_ref": {
+        "page": 1,
+        "label": "Page 1"
+      }
+    },
+    {
+      "id": "subscribing_to_general_orders_and_other_notices_p002_b000",
+      "title": "5. A list of site contents will be displayed. Click on the appropriate link for…",
+      "text": "5. A list of site contents will be displayed. Click on the appropriate link for the \nbulletin(s) you would like to subscribe to: \na. US GM and Superintendent Bulletins – Contains General Manager Notices \nSuperintendent Bulletins. \nb. US Operating Rules & Practices – Contains General Orders, Rule Books, \nSystem Bulletins, etc.",
+      "order": 2,
+      "parent_id": null,
+      "source_ref": {
+        "page": 2,
+        "label": "Page 2"
+      }
+    },
+    {
+      "id": "subscribing_to_general_orders_and_other_notices_p003_b000",
+      "title": "6. After clicking on the desired link, the SharePoint page will reload.  Find t…",
+      "text": "6. After clicking on the desired link, the SharePoint page will reload.  Find the folder for \nwhich you would like to set up alerts. \na. Important Note: If you subscribe to the parent folder, you will receive \nnotifications for changes to all sub folders. Example: Subscribing to the \nGeneral Order Folder will send updates for every US General Order. If you \nonly want certain General Orders, click on the General Order Folder, then \nnavigate to the specific General Order for which you would like to subscribe. \n7. Click on the three dots “…” located next to the folder name. A list will appear. \n8. Click “Alert me.”",
+      "order": 3,
+      "parent_id": null,
+      "source_ref": {
+        "page": 3,
+        "label": "Page 3"
+      }
+    },
+    {
+      "id": "subscribing_to_general_orders_and_other_notices_p004_b000",
+      "title": "9. Make sure your name is entered in the users section, select “new items are a…",
+      "text": "9. Make sure your name is entered in the users section, select “new items are added,” \nin the change type section, then click OK.",
+      "order": 4,
+      "parent_id": null,
+      "source_ref": {
+        "page": 4,
+        "label": "Page 4"
+      }
+    },
+    {
+      "id": "subscribing_to_general_orders_and_other_notices_p005_b000",
+      "title": "10. You will receive an email from SharePoint confirming your subscription.",
+      "text": "10. You will receive an email from SharePoint confirming your subscription. \n \n11. You change your alerts using the “My Alerts on this Site” link. \n12. Repeat the above steps for each subscription.",
+      "order": 5,
+      "parent_id": null,
+      "source_ref": {
+        "page": 5,
+        "label": "Page 5"
+      }
+    }
+  ]
+}

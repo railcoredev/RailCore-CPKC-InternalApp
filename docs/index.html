@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <link rel="manifest" href="manifest.webmanifest" />
-  <link rel="stylesheet" href="styles/style.css?v=4131" />
-  <link rel="icon" href="icons/railcore-192.png?v=4131" />
+  <link rel="stylesheet" href="styles/style.css?v=4132" />
+  <link rel="icon" href="icons/railcore-192.png?v=4132" />
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
 
   <meta name="theme-color" content="#ff6600" />
@@ -69,6 +69,12 @@
               <div class="tile-title">Reference</div>
               <div class="tile-sub" id="tileSubRefmenu">Cards · crossings · sidings · tracks</div>
             </button>
+            <!-- Documents: the revived Rail Reference doc viewer (rr-app) —
+                 a self-contained subpage; plain link so app.js is untouched. -->
+            <a class="tile" href="rr-app/index.html" style="text-decoration:none">
+              <div class="tile-title">Documents</div>
+              <div class="tile-sub" id="tileSubDocuments">Rulebooks · timetables · notices — searchable</div>
+            </a>
             <button class="tile" data-section="rsa" id="rsaTile">
               <div class="tile-title">Remote RSA</div>
               <div class="tile-sub" id="tileSubRsa">Approve login from anywhere</div>
@@ -318,8 +324,8 @@ Loading…
   </div>
 
   <!-- DATA + APP LOGIC -->
-  <script src="data_loader.js?v=4131"></script>
-  <script src="app.js?v=4131"></script>
+  <script src="data_loader.js?v=4132"></script>
+  <script src="app.js?v=4132"></script>
   <script>
     // Offline support + installability. Without this registration the
     // service worker never runs (gap present since v3.8).

@@ -1,0 +1,1 @@
+{"version":3,"file":"DocumentViewer.d.ts","sourceRoot":"","sources":["../../src/ui/DocumentViewer.ts"],"names":[],"mappings":"AAAA;;;;GAIG;AAsDH,MAAM,WAAW,qBAAqB;IACpC,WAAW,CAAC,EAAE,MAAM,CAAC;CACtB;AAED;;;GAGG;AACH,wBAAgB,kBAAkB,CAChC,UAAU,EAAE,MAAM,EAClB,SAAS,EAAE,MAAM,EACjB,MAAM,EAAE,MAAM,IAAI,EAClB,OAAO,CAAC,EAAE,qBAAqB,GAC9B,IAAI,CAoON"}

@@ -1,0 +1,15 @@
+{
+    "updated_at":  "2026-02-03T00:25:50Z",
+    "bundle_version":  "2026.02.02.183000",
+    "evidence_ids":  [
+                         "fra_cfr",
+                         "gcor_9th",
+                         "air_brake",
+                         "cpkc_ssi",
+                         "timetable_eastern",
+                         "timetable_southern",
+                         "cpkc_te_safety",
+                         "bensenville_notices_2025",
+                         "quad_cities_notices_2025"
+                     ]
+}
