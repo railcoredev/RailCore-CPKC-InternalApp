@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-23T03:43:27+00:00",
+  "generated_at": "2026-08-23T04:03:36+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260822_221712",
@@ -2294,8 +2294,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 47m",
-         "minutes": 107
+         "label": "1h 26m",
+         "minutes": 86
         },
         "name": "HANK,(MATT)"
        },
@@ -2303,8 +2303,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "1h 47m",
-         "minutes": 107
+         "label": "1h 26m",
+         "minutes": 86
         },
         "name": "HARDEN,(LEVI)"
        }
@@ -2343,8 +2343,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 02m",
-         "minutes": 482
+         "label": "7h 41m",
+         "minutes": 461
         },
         "name": "WOLF,(JOSHUA)"
        },
@@ -2352,8 +2352,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 02m",
-         "minutes": 482
+         "label": "7h 41m",
+         "minutes": 461
         },
         "name": "SELS,(DOUG)"
        }
@@ -2452,8 +2452,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "11h 52m",
-         "minutes": 712
+         "label": "11h 31m",
+         "minutes": 691
         },
         "name": "KING,(BILLY)"
        },
@@ -2461,8 +2461,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "11h 52m",
-         "minutes": 712
+         "label": "11h 31m",
+         "minutes": 691
         },
         "name": "RUSSELL,(DAN)"
        }
@@ -2501,8 +2501,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "11h 17m",
-         "minutes": 677
+         "label": "10h 56m",
+         "minutes": 656
         },
         "name": "FLYNN,(CASEY)"
        },
@@ -2510,8 +2510,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "11h 17m",
-         "minutes": 677
+         "label": "10h 56m",
+         "minutes": 656
         },
         "name": "HARING,(ALEX)"
        }
@@ -4386,8 +4386,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 37m",
-         "minutes": 517
+         "label": "8h 16m",
+         "minutes": 496
         },
         "name": "PIATZ,(FRANK)"
        },
@@ -4395,8 +4395,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 37m",
-         "minutes": 517
+         "label": "8h 16m",
+         "minutes": 496
         },
         "name": "YORK,(CHRISTOPHER)"
        }
@@ -4703,13 +4703,21 @@
       "eng_crew": [
        {
         "craft": "EN",
-        "name": "MARKO,(CAIN)",
-        "on_in": "0h 17m"
+        "hos": {
+         "band": "green",
+         "label": "11h 56m",
+         "minutes": 716
+        },
+        "name": "MARKO,(CAIN)"
        },
        {
         "craft": "AE",
-        "name": "STEVENS,(DALTON)",
-        "on_in": "0h 17m"
+        "hos": {
+         "band": "green",
+         "label": "11h 56m",
+         "minutes": 716
+        },
+        "name": "STEVENS,(DALTON)"
        }
       ],
       "eng_crew_count": "0",
@@ -5952,8 +5960,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 32m",
-         "minutes": 392
+         "label": "6h 11m",
+         "minutes": 371
         },
         "name": "CALLAHAN,(TIM)",
         "tags": [
@@ -5964,8 +5972,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 32m",
-         "minutes": 392
+         "label": "6h 11m",
+         "minutes": 371
         },
         "name": "MILLER-SWAIN,(ALEX)",
         "tags": [
