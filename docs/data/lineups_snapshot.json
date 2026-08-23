@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "active",
-  "collection_message": "Light sweep sched_20260823_101517.",
+  "collection_message": "Light sweep sched_20260823_102107.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-23T15:20:56+00:00",
+  "generated_at": "2026-08-23T15:22:33+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260823_101517",
@@ -2503,12 +2503,12 @@
        {
         "craft": "EN",
         "name": "GLASGOW,(STEVE)",
-        "on_in": "0h 44m"
+        "on_in": "0h 42m"
        },
        {
         "craft": "AE",
         "name": "AKERS,(MATTHEW)",
-        "on_in": "0h 44m"
+        "on_in": "0h 42m"
        }
       ],
       "eng_crew_count": "0",
@@ -4411,8 +4411,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "4h 34m",
-         "minutes": 274
+         "label": "4h 32m",
+         "minutes": 272
         },
         "name": "EHRMANN,(CHRIS)"
        },
@@ -4420,8 +4420,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "4h 34m",
-         "minutes": 274
+         "label": "4h 32m",
+         "minutes": 272
         },
         "name": "MERRELL,(CHARISE)"
        }
@@ -4460,8 +4460,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 39m",
-         "minutes": 399
+         "label": "6h 37m",
+         "minutes": 397
         },
         "name": "WHITWORTH,(JOHN)"
        },
@@ -4469,8 +4469,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 39m",
-         "minutes": 399
+         "label": "6h 37m",
+         "minutes": 397
         },
         "name": "ELLIOTT,(SCOTT)"
        }
@@ -4509,8 +4509,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 39m",
-         "minutes": 399
+         "label": "6h 37m",
+         "minutes": 397
         },
         "name": "HOUSE,(JOSH)"
        },
@@ -4518,8 +4518,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 39m",
-         "minutes": 399
+         "label": "6h 37m",
+         "minutes": 397
         },
         "name": "PEREZ,(NICHOLAS)"
        }
@@ -4558,8 +4558,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 24m",
-         "minutes": 444
+         "label": "7h 22m",
+         "minutes": 442
         },
         "name": "DUNCAN,(ZACH)"
        },
@@ -4567,8 +4567,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 24m",
-         "minutes": 444
+         "label": "7h 22m",
+         "minutes": 442
         },
         "name": "MOZQUEDA,(ERNESTO)"
        }
@@ -4607,8 +4607,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "11h 09m",
-         "minutes": 669
+         "label": "11h 07m",
+         "minutes": 667
         },
         "name": "JACKMAN,(MATT)"
        },
@@ -4616,8 +4616,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "11h 09m",
-         "minutes": 669
+         "label": "11h 07m",
+         "minutes": 667
         },
         "name": "BOER,(BRANDON)"
        }
@@ -8808,24 +8808,7 @@
   {
    "name": "LUDWIG,(AARON)",
    "home_terminal": "OT",
-   "board_position": {
-    "board": "OTTUMWA ENG XTRA BRD POSITION",
-    "ordinal": 4,
-    "of": 6,
-    "craft": "E",
-    "marker": "*E",
-    "captured_at": "2026-08-23T15:17:01.793590+00:00",
-    "all_boards": [
-     {
-      "board": "OTTUMWA ENG XTRA BRD POSITION",
-      "ordinal": 4,
-      "of": 6,
-      "craft": "E",
-      "marker": "*E",
-      "captured_at": "2026-08-23T15:17:01.793590+00:00"
-     }
-    ]
-   },
+   "board_position": null,
    "employee_number": "001135902",
    "assignment": "EX0013EN",
    "availability": {
@@ -8833,11 +8816,7 @@
     "reentry_at": "2026-08-22T21:51"
    },
    "board_rest": null,
-   "reentry": {
-    "at": "2026-08-22T21:50",
-    "basis": "rest",
-    "into_rest_days": false
-   },
+   "reentry": null,
    "tickets": [
     {
      "date": "2026-08-22",
