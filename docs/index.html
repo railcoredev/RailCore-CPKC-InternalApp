@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <link rel="manifest" href="manifest.webmanifest" />
-  <link rel="stylesheet" href="styles/style.css?v=4123" />
-  <link rel="icon" href="icons/railcore-192.png?v=4123" />
+  <link rel="stylesheet" href="styles/style.css?v=4124" />
+  <link rel="icon" href="icons/railcore-192.png?v=4124" />
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
 
   <meta name="theme-color" content="#ff6600" />
@@ -260,6 +260,19 @@
               <div id="notifPrefResult" class="field-label" style="margin-top:6px"></div>
             </div>
 
+            <!-- FIND A PERSON (boards) -->
+            <div id="personFindBlock" class="field-block hidden">
+              <div class="field-label">FIND A PERSON — current status</div>
+              <input
+                id="personFindInput"
+                class="pill-input"
+                type="text"
+                inputmode="search"
+                autocomplete="off"
+                placeholder="e.g. STANSBERRY, MARKO, SCOTT"
+              />
+            </div>
+
             <!-- CREW BOARD (boards) -->
             <div id="boardBlock" class="field-block hidden">
               <div class="field-label">CREW BOARD</div>
@@ -297,8 +310,8 @@ Loading…
   </div>
 
   <!-- DATA + APP LOGIC -->
-  <script src="data_loader.js?v=4123"></script>
-  <script src="app.js?v=4123"></script>
+  <script src="data_loader.js?v=4124"></script>
+  <script src="app.js?v=4124"></script>
   <script>
     // Offline support + installability. Without this registration the
     // service worker never runs (gap present since v3.8).

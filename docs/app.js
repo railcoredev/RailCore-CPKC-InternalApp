@@ -27,7 +27,7 @@ const SECTIONS = {
   mytrain:   { title: "MY TRAIN",       blocks: ["findBlock", "freshnessBar"] },
   lineups:   { title: "TRAIN LINEUPS",  blocks: ["stationBlock", "freshnessBar"] },
   history:   { title: "TRAIN HISTORY",  blocks: ["freshnessBar"] },
-  boards:    { title: "CREW BOARDS",    blocks: ["boardBlock", "freshnessBar"] },
+  boards:    { title: "CREW BOARDS",    blocks: ["personFindBlock", "boardBlock", "freshnessBar"] },
   reference: { title: "REF CARDS",      blocks: ["subdivisionBlock", "freshnessBar"] },
   crossings: { title: "CROSSINGS",      blocks: ["stateBlock", "subdivisionBlock", "spacingBlock", "viewBlock", "freshnessBar"] },
   sidings:   { title: "SIDINGS",        blocks: ["subdivisionBlock", "freshnessBar"] },
@@ -36,7 +36,7 @@ const SECTIONS = {
 
 const ALL_BLOCKS = ["stateBlock", "subdivisionBlock", "spacingBlock", "viewBlock",
                     "findBlock", "yardBlock", "stationBlock", "boardBlock",
-                    "refMenuBlock", "rsaBlock", "freshnessBar"];
+                    "personFindBlock", "refMenuBlock", "rsaBlock", "freshnessBar"];
 
 document.addEventListener("DOMContentLoaded", () => {
   cacheDom();
@@ -62,6 +62,7 @@ function cacheDom() {
   DOM.printButton = document.getElementById("printButton");
   DOM.downloadButton = document.getElementById("downloadButton");
   DOM.trainFindInput = document.getElementById("trainFindInput");
+  DOM.personFindInput = document.getElementById("personFindInput");
   DOM.myNameInput = document.getElementById("myNameInput");
 
   DOM.yardSelect = document.getElementById("yardSelect");
@@ -102,6 +103,7 @@ function wireEvents() {
   DOM.stationSelect.addEventListener("change", renderCurrentView);
   DOM.boardSelect.addEventListener("change", renderCurrentView);
   DOM.trainFindInput.addEventListener("input", renderCurrentView);
+  DOM.personFindInput.addEventListener("input", renderCurrentView);
   DOM.myNameInput.value = localStorage.getItem("railcore_my_name") || "";
   DOM.myNameInput.addEventListener("input", () => {
     try { localStorage.setItem("railcore_my_name", DOM.myNameInput.value.trim()); }
@@ -804,10 +806,118 @@ function renderLineupsView() {
   return lines.join("\n");
 }
 
+// PERSON SEARCH (operator 2026-08-23): type a name, see their current status
+// like a mini My Card -- on a train (which one), on a board (position, rest),
+// or last tie-up. Sources are the same published feed the tables use: board
+// rows (position/turn/MTOD verbatim) + train history members. Honest about
+// what it doesn't know: rest is labeled (board) when from MTOD, (est +10h)
+// when derived from a tie-up, and absent when neither exists.
+function renderPersonSearch(d, q) {
+  const now = new Date();
+  const mk = (dateStr, hhmm) => {
+    if (!dateStr || !hhmm || !/^\d{4}$/.test(hhmm)) return null;
+    const t = new Date(dateStr + "T00:00:00");
+    t.setHours(+hhmm.slice(0, 2), +hhmm.slice(2), 0, 0);
+    return t;
+  };
+  const keyOf = (name) => {
+    const m = /^[A-Z-]+,\(?[A-Z]+\)?/.exec(String(name || "").toUpperCase());
+    return m ? m[0].replace(/[()]/g, "") : String(name || "").toUpperCase();
+  };
+  const people = {};   // key -> {name, boards:[], onTrain, lastTrain}
+  (d.crew_boards.boards || []).forEach((b) => {
+    (b.rows || []).forEach((r) => {
+      const nm = String(r.employee_name || "");
+      if (!nm.toUpperCase().includes(q)) return;
+      const p = (people[keyOf(nm)] = people[keyOf(nm)] || { name: nm, boards: [] });
+      p.boards.push(r);
+    });
+  });
+  (d.train_history || []).forEach((tr) => {
+    (tr.members || []).forEach((m) => {
+      const nm = String(m.name || "");
+      if (!nm.toUpperCase().includes(q)) return;
+      const p = (people[keyOf(nm)] = people[keyOf(nm)] || { name: nm, boards: [] });
+      const on = mk(tr.date, m.on_duty || tr.on_duty);
+      const off = (m.off_duty || tr.off_duty)
+        ? mk(tr.date, m.off_duty || tr.off_duty) : null;
+      const rec = { train: tr.train, craft: m.craft || "", on, off,
+                    route: `${tr.depart || "?"}→${tr.arrive || "?"}` };
+      if (off && off < on) off.setTime(off.getTime() + 864e5);   // past-midnight tie-up
+      if (!off && on && (now - on) < 14 * 36e5) {
+        if (!p.onTrain || on > p.onTrain.on) p.onTrain = rec;
+      } else if (off && (!p.lastTrain || off > p.lastTrain.off)) {
+        p.lastTrain = rec;
+      }
+    });
+  });
+
+  const box = el("div");
+  const keys = Object.keys(people);
+  box.appendChild(el("div", "table-title",
+    keys.length ? `PERSON SEARCH — "${q}" · ${keys.length} match${keys.length === 1 ? "" : "es"}`
+                : `PERSON SEARCH — no one matching "${q}" on the boards or recent trains`));
+  keys.sort().slice(0, 6).forEach((k) => {
+    const p = people[k];
+    const rows = [];
+    let band = null;
+    if (p.onTrain) {
+      band = "orange";
+      rows.push(["STATUS", `ON A TRAIN — ${p.onTrain.train} (${p.onTrain.craft})`]);
+      rows.push(["ON DUTY", `${fmtClock(p.onTrain.on)} ${localDay(p.onTrain.on)} · ${p.onTrain.route}`]);
+    }
+    // Board rows (dedup by screen): position/turn verbatim; MTOD rest if shown.
+    const seen = new Set();
+    let bestPos = null, restedNow = null, restLine = null;
+    p.boards.forEach((r) => {
+      const t = r.screen_title || "";
+      if (seen.has(t)) return; seen.add(t);
+      const hours = String(r.turn_hours || "").trim().split(/\s+/);
+      rows.push(["BOARD", `${t} — pos ${r.position || "?"}${r.turn_asgn ? ` · turn ${r.turn_asgn}` : ""}`]);
+      const posN = parseInt(r.position, 10);
+      if (posN && (bestPos === null || posN < bestPos)) bestPos = posN;
+      if (!restLine && /^\d{4}$/.test(hours[0] || "")) {
+        const rDt = new Date(now);
+        rDt.setHours(+hours[0].slice(0, 2), +hours[0].slice(2), 0, 0);
+        const rested = rDt <= now;
+        restedNow = rested;
+        restLine = rested ? `RESTED — since ${hours[0]} (board)`
+                          : `resting — rested at ${hours[0]} (board)`;
+      }
+    });
+    if (!restLine && !p.onTrain && p.lastTrain && p.lastTrain.off) {
+      const est = new Date(p.lastTrain.off.getTime() + 10 * 36e5);
+      restedNow = est <= now;
+      restLine = restedNow
+        ? `RESTED — since ~${fmtClock(est)} (est: tie-up +10h)`
+        : `resting — rested ~${fmtClock(est)} ${localDay(est)} (est: tie-up +10h)`;
+    }
+    if (restLine) rows.push(["REST", restLine]);
+    if (p.lastTrain) {
+      rows.push(["LAST TRAIN", `${p.lastTrain.train} — tied up ${fmtClock(p.lastTrain.off)} ${localDay(p.lastTrain.off)}`]);
+    }
+    if (!band) {                      // same readiness colors as My Card
+      if (restedNow === false) band = "grey";
+      else if (bestPos === 1) band = "red";
+      else if (bestPos === 2 || bestPos === 3) band = "yellow";
+      else if (restedNow === true) band = "green";
+    }
+    const title = el("div", "table-title", p.name);
+    if (band) title.style.color = BAND_COLORS[band];
+    box.appendChild(title);
+    box.appendChild(kvRows(rows.length ? rows : [["STATUS", "seen in the feed — no board row or recent train"]],
+                           band ? BAND_COLORS[band] : null));
+  });
+  showTable(box);
+  return null;
+}
+
 function renderBoardsTable() {
   const d = lineupsData();
   if (!d) { showText(); return "No crew board data available yet."; }
   updateFreshnessBar();
+  const pq = ((DOM.personFindInput && DOM.personFindInput.value) || "").trim().toUpperCase();
+  if (pq.length >= 2) return renderPersonSearch(d, pq);
   const idx = parseInt(DOM.boardSelect.value, 10) || 0;
   const b = (d.crew_boards.boards || [])[idx];
   if (!b) { showText(); return "No boards in the current snapshot."; }
