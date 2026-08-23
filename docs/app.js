@@ -911,10 +911,10 @@ function buildPersonResults(d, q, box) {
       rows.push(["ON DUTY", `${fmtClock(p.onTrain.on)} ${localDay(p.onTrain.on)} · ${p.onTrain.route}`]);
     } else if (p.bookoff) {
       band = "blue";
-      const what = p.bookoff.label
-        ? `${p.bookoff.label} (${p.bookoff.code})`
-        : `code ${p.bookoff.code} (not in the status legend)`;   // e.g. the
-        // literal '0' PSTS90 shows for some rows -- shown verbatim, not guessed
+      // CODE first, exactly as the bookoff screen lists it (operator
+      // 2026-08-23); meaning in parens when the legend knows it.
+      const what = (p.bookoff.code || "?")
+        + (p.bookoff.label ? ` (${p.bookoff.label})` : "");
       rows.push(["STATUS", `BOOKED OFF — ${what}`
         + (p.bookoff.since ? ` since ${p.bookoff.since.slice(5)}` : "")]);
     }
@@ -1054,13 +1054,14 @@ function renderBookoffsView() {
       .sort((a, b) => (a.since < b.since ? 1 : -1) || a.name.localeCompare(b.name))
       .map((b) => [
         b.name || "",
-        b.label ? `${b.label} (${b.code})` : `code ${b.code || "?"} (not in legend)`,
+        // the CODE as the bookoff screen lists it, meaning in parens when known
+        (b.code || "?") + (b.label ? ` (${b.label})` : ""),
         b.since ? b.since.slice(5) : "—",
         b.assignment || "",
       ]);
     box.appendChild(el("div", "table-title",
       `${TERM_NAME[term] || term}  ·  ${rows.length} booked off`));
-    box.appendChild(buildTable(["Name", "Why", "Since", "Turn"], rows));
+    box.appendChild(buildTable(["Name", "Code", "Since", "Turn"], rows));
   });
   showTable(box);
   return null;
