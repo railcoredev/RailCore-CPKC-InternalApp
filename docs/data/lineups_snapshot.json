@@ -1,10 +1,10 @@
 {
  "meta": {
-  "collection_state": "active",
-  "collection_message": "Light sweep sched_20260824_175635.",
+  "collection_state": "awaiting_login",
+  "collection_message": "Session lost; waiting at the RSA prompt.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-24T23:01:02+00:00",
+  "generated_at": "2026-08-24T23:21:57+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260824_175635",
@@ -2234,8 +2234,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "9h 19m",
-         "minutes": 559
+         "label": "8h 58m",
+         "minutes": 538
         },
         "name": "MUSSINGTON,(SOMORI)"
        },
@@ -2243,8 +2243,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "9h 19m",
-         "minutes": 559
+         "label": "8h 58m",
+         "minutes": 538
         },
         "name": "LEPPERT,(RICHARD)"
        }
@@ -2313,8 +2313,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "11h 14m",
-         "minutes": 674
+         "label": "10h 53m",
+         "minutes": 653
         },
         "name": "WHITWORTH,(JOHN)"
        },
@@ -2322,8 +2322,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "11h 14m",
-         "minutes": 674
+         "label": "10h 53m",
+         "minutes": 653
         },
         "name": "ELLIOTT,(SCOTT)"
        }
@@ -4078,8 +4078,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "2h 44m",
-         "minutes": 164
+         "label": "2h 23m",
+         "minutes": 143
         },
         "name": "BELCHER,(JOHN)"
        },
@@ -4087,8 +4087,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "2h 44m",
-         "minutes": 164
+         "label": "2h 23m",
+         "minutes": 143
         },
         "name": "COLLINS,(THADD)"
        }
@@ -4157,8 +4157,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 14m",
-         "minutes": 434
+         "label": "6h 53m",
+         "minutes": 413
         },
         "name": "HATFIELD,(JARROD)"
        },
@@ -4166,8 +4166,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 14m",
-         "minutes": 434
+         "label": "6h 53m",
+         "minutes": 413
         },
         "name": "STONEHOUSE,(ZACH)"
        }
@@ -4197,8 +4197,8 @@
         "craft": "TT",
         "hos": {
          "band": "green",
-         "label": "7h 14m",
-         "minutes": 434
+         "label": "6h 53m",
+         "minutes": 413
         },
         "name": "CONWELL,(JOSHUA)"
        }
@@ -4216,8 +4216,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "11h 59m",
-         "minutes": 719
+         "label": "11h 38m",
+         "minutes": 698
         },
         "name": "MYRICK,(CHEVAS)"
        },
@@ -4225,8 +4225,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "11h 59m",
-         "minutes": 719
+         "label": "11h 38m",
+         "minutes": 698
         },
         "name": "BORMANN,(HAYDEN)"
        }
@@ -5711,8 +5711,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 44m",
-         "minutes": 524
+         "label": "8h 23m",
+         "minutes": 503
         },
         "name": "JACKMAN,(MATT)",
         "tags": [
@@ -5723,8 +5723,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 44m",
-         "minutes": 524
+         "label": "8h 23m",
+         "minutes": 503
         },
         "name": "LINDLY,(DONALD)",
         "tags": [
@@ -5735,8 +5735,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "8h 44m",
-         "minutes": 524
+         "label": "8h 23m",
+         "minutes": 503
         },
         "name": "FERNANDEZ,(DANILO)",
         "tags": [
@@ -5868,8 +5868,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 59m",
-         "minutes": 659
+         "label": "10h 38m",
+         "minutes": 638
         },
         "name": "ROBERTS,(KIMBERLY)"
        },
@@ -5877,8 +5877,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "10h 59m",
-         "minutes": 659
+         "label": "10h 38m",
+         "minutes": 638
         },
         "name": "HARTMAN,(JAMES)"
        }
