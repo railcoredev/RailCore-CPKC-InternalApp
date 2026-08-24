@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-24T19:35:29+00:00",
-  "bundle_version": "2026.08.24.193529",
+  "updated_at": "2026-08-24T20:20:23+00:00",
+  "bundle_version": "2026.08.24.202023",
   "evidence_ids": [
     "fra_cfr",
     "gcor",
@@ -17,6 +17,7 @@
     "hazmat",
     "cpkc_instructions_for_remote_control_operation",
     "gm_notices_us_east",
-    "gm_notices_midwest"
+    "gm_notices_midwest",
+    "dp_placement"
   ]
 }
