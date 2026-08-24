@@ -1983,7 +1983,7 @@ function renderPayView() {
     // Claims / other lines table
     const orows = (d.other_lines || []).map((o) => [
       o.date, o.msc || "?", o.train,
-      o.paid != null ? (o.amt_type === "H" ? o.paid.toFixed(2) + "h" : "$" + o.paid.toFixed(2)) : "—",
+      o.paid != null ? "$" + o.paid.toFixed(2) : "—",
       o.status || ""]);
     box.appendChild(el("div", "table-title", "CLAIMS · MEALS · HELD-AWAY (never counted as starts)"));
     box.appendChild(buildTable(["Date", "Code", "Assignment", "Amount", "Status"], orows));
@@ -2034,7 +2034,7 @@ function renderPayView() {
     L.push("OTHER LINES (claims, meals, held-away)");
     (d.other_lines || []).forEach((o) => {
       let line = `  ${o.date} ${o.msc || "?"} ${o.train}`;
-      if (o.paid != null) line += o.amt_type === "H" ? ` ${o.paid.toFixed(2)}h` : ` $${o.paid.toFixed(2)}`;
+      if (o.paid != null) line += ` $${o.paid.toFixed(2)}`;
       if (o.status) line += `  [${o.status}]`;
       L.push(line);
     });
