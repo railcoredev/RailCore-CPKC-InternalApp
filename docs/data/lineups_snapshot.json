@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-23T23:47:08+00:00",
+  "generated_at": "2026-08-24T00:07:23+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260823_184048",
@@ -2204,8 +2204,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 28m",
-         "minutes": 448
+         "label": "7h 08m",
+         "minutes": 428
         },
         "name": "CADY,(AARON)"
        },
@@ -2213,8 +2213,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 28m",
-         "minutes": 448
+         "label": "7h 08m",
+         "minutes": 428
         },
         "name": "OLDFIELD,(COLTON)"
        }
@@ -2253,8 +2253,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "9h 28m",
-         "minutes": 568
+         "label": "9h 08m",
+         "minutes": 548
         },
         "name": "PIATZ,(FRANK)"
        },
@@ -2262,8 +2262,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "9h 28m",
-         "minutes": 568
+         "label": "9h 08m",
+         "minutes": 548
         },
         "name": "YORK,(CHRISTOPHER)"
        }
@@ -2450,18 +2450,30 @@
       "eng_crew": [
        {
         "craft": "EN",
-        "name": "BURROUGHS,(CHARLES)",
-        "on_in": "0h 18m"
+        "hos": {
+         "band": "green",
+         "label": "11h 58m",
+         "minutes": 718
+        },
+        "name": "BURROUGHS,(CHARLES)"
        },
        {
         "craft": "AE",
-        "name": "HOFFMAN,(ALAN)",
-        "on_in": "0h 18m"
+        "hos": {
+         "band": "green",
+         "label": "11h 58m",
+         "minutes": 718
+        },
+        "name": "HOFFMAN,(ALAN)"
        },
        {
         "craft": "ET",
-        "name": "IYOHA,(OSAYANDE)",
-        "on_in": "0h 18m"
+        "hos": {
+         "band": "green",
+         "label": "11h 58m",
+         "minutes": 718
+        },
+        "name": "IYOHA,(OSAYANDE)"
        }
       ],
       "eng_crew_count": "0",
@@ -4424,8 +4436,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 23m",
-         "minutes": 383
+         "label": "6h 03m",
+         "minutes": 363
         },
         "name": "LOUGHMILLER,(BARRY)"
        },
@@ -4433,8 +4445,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 23m",
-         "minutes": 383
+         "label": "6h 03m",
+         "minutes": 363
         },
         "name": "DORSEY,(STETSON)"
        }
@@ -4473,8 +4485,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "9h 43m",
-         "minutes": 583
+         "label": "9h 23m",
+         "minutes": 563
         },
         "name": "BENTLEY,(BRANDON)"
        },
@@ -4482,8 +4494,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "9h 43m",
-         "minutes": 583
+         "label": "9h 23m",
+         "minutes": 563
         },
         "name": "WARUIMBO,(JOE)"
        },
@@ -4491,8 +4503,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "9h 43m",
-         "minutes": 583
+         "label": "9h 23m",
+         "minutes": 563
         },
         "name": "STRADLING,(DALLIN)"
        }
@@ -4561,8 +4573,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "11h 43m",
-         "minutes": 703
+         "label": "11h 23m",
+         "minutes": 683
         },
         "name": "STANSBERRY,(CHANDLER)"
        },
@@ -4570,8 +4582,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "11h 43m",
-         "minutes": 703
+         "label": "11h 23m",
+         "minutes": 683
         },
         "name": "MOFFITT,(LUCAS)"
        }
@@ -6086,8 +6098,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "9h 13m",
-         "minutes": 553
+         "label": "8h 53m",
+         "minutes": 533
         },
         "name": "LOCHNER,(DEREK)"
        },
@@ -6095,8 +6107,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "9h 13m",
-         "minutes": 553
+         "label": "8h 53m",
+         "minutes": 533
         },
         "name": "PATTERSON,(DELRON)"
        },
@@ -6104,8 +6116,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "9h 13m",
-         "minutes": 553
+         "label": "8h 53m",
+         "minutes": 533
         },
         "name": "KEOMANIVONG,(SONNY)"
        }
@@ -24030,5 +24042,3019 @@
    "carryover": true,
    "last_confirmed": "2026-08-21"
   }
- ]
+ ],
+ "station_map": {
+  "00004": {
+   "name": "KANSAS CITY (2MT)",
+   "terminal": ""
+  },
+  "00009": {
+   "name": "BLUE VALLEY",
+   "terminal": ""
+  },
+  "00023": {
+   "name": "GRANDVIEW",
+   "terminal": ""
+  },
+  "00027": {
+   "name": "INT. FREIGHT GATEWAY",
+   "terminal": ""
+  },
+  "00033": {
+   "name": "JAUDON",
+   "terminal": ""
+  },
+  "00053": {
+   "name": "DREXEL",
+   "terminal": ""
+  },
+  "00062": {
+   "name": "AMSTERDAM",
+   "terminal": ""
+  },
+  "00081": {
+   "name": "HUME",
+   "terminal": ""
+  },
+  "00099": {
+   "name": "EVE",
+   "terminal": ""
+  },
+  "00118": {
+   "name": "MULBERRY",
+   "terminal": ""
+  },
+  "00128": {
+   "name": "PITTSBURG",
+   "terminal": ""
+  },
+  "00134": {
+   "name": "EMPIRE",
+   "terminal": ""
+  },
+  "00140": {
+   "name": "ASBURY",
+   "terminal": ""
+  },
+  "00155": {
+   "name": "JOPLIN",
+   "terminal": ""
+  },
+  "00160": {
+   "name": "SAGINAW",
+   "terminal": ""
+  },
+  "00170": {
+   "name": "DALBY",
+   "terminal": ""
+  },
+  "00174": {
+   "name": "NEOSHO",
+   "terminal": ""
+  },
+  "00181": {
+   "name": "McELHANY (CP 181)",
+   "terminal": ""
+  },
+  "00201": {
+   "name": "NOEL",
+   "terminal": ""
+  },
+  "00215": {
+   "name": "DORSEY",
+   "terminal": ""
+  },
+  "00217": {
+   "name": "DECATUR",
+   "terminal": ""
+  },
+  "00222": {
+   "name": "GENTRY",
+   "terminal": ""
+  },
+  "00224": {
+   "name": "FLINT CREEK",
+   "terminal": ""
+  },
+  "00229": {
+   "name": "SILOAM SPRINGS",
+   "terminal": ""
+  },
+  "00236": {
+   "name": "WATTS",
+   "terminal": ""
+  },
+  "00244": {
+   "name": "WESTVILLE",
+   "terminal": ""
+  },
+  "00258": {
+   "name": "PITTSBURG (2 MT)",
+   "terminal": ""
+  },
+  "00268": {
+   "name": "CAVE SPRINGS",
+   "terminal": ""
+  },
+  "00281": {
+   "name": "MARBLE CITY",
+   "terminal": ""
+  },
+  "00291": {
+   "name": "SALLISAW",
+   "terminal": ""
+  },
+  "00299": {
+   "name": "GANS",
+   "terminal": ""
+  },
+  "00310": {
+   "name": "MONONA",
+   "terminal": ""
+  },
+  "00312": {
+   "name": "POSTVILLE",
+   "terminal": ""
+  },
+  "00313": {
+   "name": "OSSIAN",
+   "terminal": ""
+  },
+  "00314": {
+   "name": "CALMAR",
+   "terminal": ""
+  },
+  "00315": {
+   "name": "FORT ATKINSON",
+   "terminal": ""
+  },
+  "00316": {
+   "name": "Jackson Jct.",
+   "terminal": ""
+  },
+  "00317": {
+   "name": "Lawler",
+   "terminal": ""
+  },
+  "00318": {
+   "name": "NEW HAMPTON",
+   "terminal": ""
+  },
+  "00319": {
+   "name": "Ionia",
+   "terminal": ""
+  },
+  "00320": {
+   "name": "CHARLES CITY",
+   "terminal": ""
+  },
+  "00322": {
+   "name": "RUDD",
+   "terminal": ""
+  },
+  "00324": {
+   "name": "NORA JCT",
+   "terminal": ""
+  },
+  "00325": {
+   "name": "Portland",
+   "terminal": ""
+  },
+  "00326": {
+   "name": "MASON CITY",
+   "terminal": ""
+  },
+  "00327": {
+   "name": "Clear Lake",
+   "terminal": ""
+  },
+  "00328": {
+   "name": "Ventura",
+   "terminal": ""
+  },
+  "00329": {
+   "name": "Tank Spur",
+   "terminal": ""
+  },
+  "00331": {
+   "name": "GARNER",
+   "terminal": ""
+  },
+  "00333": {
+   "name": "BRITT",
+   "terminal": ""
+  },
+  "00334": {
+   "name": "Hutchins",
+   "terminal": ""
+  },
+  "00335": {
+   "name": "WESLEY",
+   "terminal": ""
+  },
+  "00337": {
+   "name": "ALGONA",
+   "terminal": ""
+  },
+  "00338": {
+   "name": "HEAVENER",
+   "terminal": ""
+  },
+  "00339": {
+   "name": "WHITTEMORE",
+   "terminal": ""
+  },
+  "00340": {
+   "name": "CYLINDER",
+   "terminal": ""
+  },
+  "00341": {
+   "name": "EMMETSBURG",
+   "terminal": ""
+  },
+  "00342": {
+   "name": "RUTHVEN",
+   "terminal": ""
+  },
+  "00343": {
+   "name": "Dickens",
+   "terminal": ""
+  },
+  "00344": {
+   "name": "SPENCER",
+   "terminal": ""
+  },
+  "00346": {
+   "name": "Everly",
+   "terminal": ""
+  },
+  "00347": {
+   "name": "HARTLEY",
+   "terminal": ""
+  },
+  "00348": {
+   "name": "SANBORN",
+   "terminal": ""
+  },
+  "00349": {
+   "name": "SHELDON",
+   "terminal": ""
+  },
+  "00351": {
+   "name": "PLYMOUTH",
+   "terminal": ""
+  },
+  "00352": {
+   "name": "Grafton",
+   "terminal": ""
+  },
+  "00353": {
+   "name": "Carpenter",
+   "terminal": ""
+  },
+  "00354": {
+   "name": "RAMSEY",
+   "terminal": ""
+  },
+  "00355": {
+   "name": "LYLE",
+   "terminal": ""
+  },
+  "00356": {
+   "name": "Mona-Absolute Energy",
+   "terminal": ""
+  },
+  "00357": {
+   "name": "Varco",
+   "terminal": ""
+  },
+  "00358": {
+   "name": "AUSTIN",
+   "terminal": ""
+  },
+  "00359": {
+   "name": "LANSING",
+   "terminal": ""
+  },
+  "00360": {
+   "name": "BLOOMING PRAIRIE",
+   "terminal": ""
+  },
+  "00361": {
+   "name": "OWATONNA JCT",
+   "terminal": ""
+  },
+  "00362": {
+   "name": "OWATONNA",
+   "terminal": ""
+  },
+  "00364": {
+   "name": "FARIBAULT",
+   "terminal": ""
+  },
+  "00365": {
+   "name": "Hollandale Jct. Wye",
+   "terminal": ""
+  },
+  "00366": {
+   "name": "Hayward",
+   "terminal": ""
+  },
+  "00367": {
+   "name": "ALBERT LEA",
+   "terminal": ""
+  },
+  "00368": {
+   "name": "Armstrong",
+   "terminal": ""
+  },
+  "00369": {
+   "name": "Alden",
+   "terminal": ""
+  },
+  "00370": {
+   "name": "ALEX JCT.",
+   "terminal": ""
+  },
+  "00371": {
+   "name": "WELLS",
+   "terminal": ""
+  },
+  "00372": {
+   "name": "Easton",
+   "terminal": ""
+  },
+  "00373": {
+   "name": "DELAVAN",
+   "terminal": ""
+  },
+  "00374": {
+   "name": "WINNEBAGO",
+   "terminal": ""
+  },
+  "00375": {
+   "name": "Huntley",
+   "terminal": ""
+  },
+  "00376": {
+   "name": "GRANADA",
+   "terminal": ""
+  },
+  "00377": {
+   "name": "FAIRMONT",
+   "terminal": ""
+  },
+  "00378": {
+   "name": "WELCOME JCT",
+   "terminal": ""
+  },
+  "00379": {
+   "name": "WELCOME",
+   "terminal": ""
+  },
+  "00380": {
+   "name": "SHERBURN",
+   "terminal": ""
+  },
+  "00381": {
+   "name": "ALPHA",
+   "terminal": ""
+  },
+  "00382": {
+   "name": "JACKSON",
+   "terminal": ""
+  },
+  "00385": {
+   "name": "COMUS",
+   "terminal": ""
+  },
+  "00386": {
+   "name": "POTTER",
+   "terminal": ""
+  },
+  "00402": {
+   "name": "VANDERVOORT",
+   "terminal": ""
+  },
+  "00405": {
+   "name": "HATTON",
+   "terminal": ""
+  },
+  "00409": {
+   "name": "WICKES",
+   "terminal": ""
+  },
+  "00421": {
+   "name": "GILLHAM",
+   "terminal": ""
+  },
+  "00433": {
+   "name": "DEQUEEN",
+   "terminal": ""
+  },
+  "00438": {
+   "name": "WADE",
+   "terminal": ""
+  },
+  "00450": {
+   "name": "WINTHROP",
+   "terminal": ""
+  },
+  "00464": {
+   "name": "WILTON",
+   "terminal": ""
+  },
+  "00469": {
+   "name": "ASHDOWN",
+   "terminal": ""
+  },
+  "00488": {
+   "name": "TEXARKANA",
+   "terminal": ""
+  },
+  "00494": {
+   "name": "JURY",
+   "terminal": ""
+  },
+  "00518": {
+   "name": "SANDRA",
+   "terminal": ""
+  },
+  "00526": {
+   "name": "JANESVILLE",
+   "terminal": ""
+  },
+  "00531": {
+   "name": "WEST YARD",
+   "terminal": ""
+  },
+  "00533": {
+   "name": "SHORELINE",
+   "terminal": ""
+  },
+  "00534": {
+   "name": "ROCKFORD",
+   "terminal": ""
+  },
+  "00541": {
+   "name": "EAST MOLINE (BNSF)",
+   "terminal": ""
+  },
+  "00542": {
+   "name": "PORT BYRON",
+   "terminal": ""
+  },
+  "00544": {
+   "name": "NITRIN",
+   "terminal": ""
+  },
+  "00545": {
+   "name": "CEFFCO",
+   "terminal": ""
+  },
+  "00549": {
+   "name": "BLANCHARD",
+   "terminal": ""
+  },
+  "00550": {
+   "name": "CP 550 (East MT)",
+   "terminal": ""
+  },
+  "00552": {
+   "name": "NORTH SHREVEPORT",
+   "terminal": ""
+  },
+  "00554": {
+   "name": "SHREVEPORT YARD",
+   "terminal": ""
+  },
+  "00562": {
+   "name": "BOSSIER YARD",
+   "terminal": ""
+  },
+  "00567": {
+   "name": "FORBING",
+   "terminal": ""
+  },
+  "00577": {
+   "name": "FRIESON",
+   "terminal": ""
+  },
+  "00580": {
+   "name": "BAYOU PIERRE",
+   "terminal": ""
+  },
+  "00589": {
+   "name": "MADISON",
+   "terminal": ""
+  },
+  "00591": {
+   "name": "SOUTH WINDSOR",
+   "terminal": ""
+  },
+  "00592": {
+   "name": "DE FOREST",
+   "terminal": ""
+  },
+  "00594": {
+   "name": "ARLINGTON",
+   "terminal": ""
+  },
+  "00595": {
+   "name": "POYNETTE",
+   "terminal": ""
+  },
+  "00596": {
+   "name": "COLUMBIA",
+   "terminal": ""
+  },
+  "00597": {
+   "name": "MANLEY",
+   "terminal": ""
+  },
+  "00599": {
+   "name": "TRENTON",
+   "terminal": ""
+  },
+  "00602": {
+   "name": "NEW HOPE",
+   "terminal": ""
+  },
+  "00605": {
+   "name": "BENSON",
+   "terminal": ""
+  },
+  "00607": {
+   "name": "NEW HOPE",
+   "terminal": ""
+  },
+  "00611": {
+   "name": "CONVERSE",
+   "terminal": ""
+  },
+  "00615": {
+   "name": "14TH AVE NORTH",
+   "terminal": ""
+  },
+  "00623": {
+   "name": "ZWOLLE",
+   "terminal": ""
+  },
+  "00627": {
+   "name": "LORING",
+   "terminal": ""
+  },
+  "00628": {
+   "name": "NESBITT",
+   "terminal": ""
+  },
+  "00629": {
+   "name": "ATWOOD",
+   "terminal": ""
+  },
+  "00633": {
+   "name": "ST. LOUIS PARK",
+   "terminal": ""
+  },
+  "00634": {
+   "name": "MANY",
+   "terminal": ""
+  },
+  "00635": {
+   "name": "GOLDEN VALLEY",
+   "terminal": ""
+  },
+  "00640": {
+   "name": "FISHER",
+   "terminal": ""
+  },
+  "00650": {
+   "name": "CHESTNUT ST",
+   "terminal": ""
+  },
+  "00654": {
+   "name": "MERRIAM PARK",
+   "terminal": ""
+  },
+  "00660": {
+   "name": "ANACOCO",
+   "terminal": ""
+  },
+  "00669": {
+   "name": "LEESVILLE",
+   "terminal": ""
+  },
+  "00680": {
+   "name": "NEAME",
+   "terminal": ""
+  },
+  "00684": {
+   "name": "WITHROW",
+   "terminal": ""
+  },
+  "00686": {
+   "name": "BALD EAGLE",
+   "terminal": ""
+  },
+  "00687": {
+   "name": "AUTO CLUB",
+   "terminal": ""
+  },
+  "00689": {
+   "name": "LEXINGTON INDUSTRIAL PARK",
+   "terminal": ""
+  },
+  "00690": {
+   "name": "DERIDDER",
+   "terminal": ""
+  },
+  "00705": {
+   "name": "SINGER",
+   "terminal": ""
+  },
+  "00719": {
+   "name": "DEQUINCY",
+   "terminal": ""
+  },
+  "00724": {
+   "name": "HELME",
+   "terminal": ""
+  },
+  "00729": {
+   "name": "LUCAS",
+   "terminal": ""
+  },
+  "00736": {
+   "name": "STARKS",
+   "terminal": ""
+  },
+  "00741": {
+   "name": "RULIFF",
+   "terminal": ""
+  },
+  "00748": {
+   "name": "LaMARS",
+   "terminal": ""
+  },
+  "00749": {
+   "name": "ROSHOLT",
+   "terminal": ""
+  },
+  "00751": {
+   "name": "MAURICEVILLE",
+   "terminal": ""
+  },
+  "00761": {
+   "name": "VIDOR",
+   "terminal": ""
+  },
+  "00769": {
+   "name": "CHAISON",
+   "terminal": ""
+  },
+  "00779": {
+   "name": "NECHES JCT.",
+   "terminal": ""
+  },
+  "00787": {
+   "name": "PORT ARTHUR",
+   "terminal": ""
+  },
+  "00897": {
+   "name": "GULLY",
+   "terminal": ""
+  },
+  "00898": {
+   "name": "TRAIL",
+   "terminal": ""
+  },
+  "00899": {
+   "name": "OKLEE",
+   "terminal": ""
+  },
+  "00904": {
+   "name": "KIEF",
+   "terminal": ""
+  },
+  "00905": {
+   "name": "BUTTE",
+   "terminal": ""
+  },
+  "00907": {
+   "name": "RUSO",
+   "terminal": ""
+  },
+  "00908": {
+   "name": "BENEDICT",
+   "terminal": ""
+  },
+  "00909": {
+   "name": "MAX",
+   "terminal": ""
+  },
+  "00910": {
+   "name": "DOUGLAS",
+   "terminal": ""
+  },
+  "00911": {
+   "name": "RYDER",
+   "terminal": ""
+  },
+  "00912": {
+   "name": "MAKOTI",
+   "terminal": ""
+  },
+  "00913": {
+   "name": "PRAIRIE JCT",
+   "terminal": ""
+  },
+  "00916": {
+   "name": "PARSHALL",
+   "terminal": ""
+  },
+  "00917": {
+   "name": "NEWTOWN",
+   "terminal": ""
+  },
+  "01003": {
+   "name": "STOCKTON",
+   "terminal": ""
+  },
+  "01008": {
+   "name": "LEWISTON",
+   "terminal": ""
+  },
+  "01009": {
+   "name": "UTICA",
+   "terminal": ""
+  },
+  "01011": {
+   "name": "FOSTERS",
+   "terminal": ""
+  },
+  "01012": {
+   "name": "ST CHARLES",
+   "terminal": ""
+  },
+  "01018": {
+   "name": "EYOTA",
+   "terminal": ""
+  },
+  "01021": {
+   "name": "PLAINVIEW SPUR",
+   "terminal": ""
+  },
+  "01024": {
+   "name": "ROCHESTER",
+   "terminal": ""
+  },
+  "01027": {
+   "name": "BYRON",
+   "terminal": ""
+  },
+  "01030": {
+   "name": "KASSON",
+   "terminal": ""
+  },
+  "01033": {
+   "name": "DODGE CENTER",
+   "terminal": ""
+  },
+  "01036": {
+   "name": "CLAREMONT",
+   "terminal": ""
+  },
+  "01039": {
+   "name": "MERIDEN",
+   "terminal": ""
+  },
+  "01043": {
+   "name": "NELSON",
+   "terminal": ""
+  },
+  "01047": {
+   "name": "GIBSLAND",
+   "terminal": ""
+  },
+  "01055": {
+   "name": "ARCADIA",
+   "terminal": ""
+  },
+  "01057": {
+   "name": "WASECA",
+   "terminal": ""
+  },
+  "01060": {
+   "name": "OTISCO",
+   "terminal": ""
+  },
+  "01063": {
+   "name": "NEW RICHLAND",
+   "terminal": ""
+  },
+  "01066": {
+   "name": "HARTLAND",
+   "terminal": ""
+  },
+  "01072": {
+   "name": "RUSTON",
+   "terminal": ""
+  },
+  "01079": {
+   "name": "PLANT",
+   "terminal": ""
+  },
+  "01081": {
+   "name": "JANESVILLE",
+   "terminal": ""
+  },
+  "01084": {
+   "name": "EAGLE LAKE",
+   "terminal": ""
+  },
+  "01087": {
+   "name": "LIME SIDING",
+   "terminal": ""
+  },
+  "01088": {
+   "name": "CALHOUN",
+   "terminal": ""
+  },
+  "01093": {
+   "name": "MANKATO",
+   "terminal": ""
+  },
+  "01096": {
+   "name": "JUDSON",
+   "terminal": ""
+  },
+  "01100": {
+   "name": "FITZMORRIS",
+   "terminal": ""
+  },
+  "01102": {
+   "name": "NEW ULM",
+   "terminal": ""
+  },
+  "01103": {
+   "name": "MONROE",
+   "terminal": ""
+  },
+  "01105": {
+   "name": "ESSIG",
+   "terminal": ""
+  },
+  "01107": {
+   "name": "MAGENTA",
+   "terminal": ""
+  },
+  "01108": {
+   "name": "SLEEPY EYE",
+   "terminal": ""
+  },
+  "01111": {
+   "name": "COBDEN",
+   "terminal": ""
+  },
+  "01114": {
+   "name": "HARVESTLAND COOP",
+   "terminal": ""
+  },
+  "01117": {
+   "name": "SPRINGFIELD",
+   "terminal": ""
+  },
+  "01120": {
+   "name": "SANBORN",
+   "terminal": ""
+  },
+  "01123": {
+   "name": "LAMBERTON",
+   "terminal": ""
+  },
+  "01126": {
+   "name": "REVERE",
+   "terminal": ""
+  },
+  "01129": {
+   "name": "WALNUT GROVE",
+   "terminal": ""
+  },
+  "01132": {
+   "name": "TRACY",
+   "terminal": ""
+  },
+  "01134": {
+   "name": "SHANNON",
+   "terminal": ""
+  },
+  "01139": {
+   "name": "DELHI",
+   "terminal": ""
+  },
+  "01157": {
+   "name": "TALLULAH",
+   "terminal": ""
+  },
+  "01173": {
+   "name": "BOVAY",
+   "terminal": ""
+  },
+  "01177": {
+   "name": "VICKSBURG",
+   "terminal": ""
+  },
+  "01185": {
+   "name": "NEWMANS",
+   "terminal": ""
+  },
+  "01192": {
+   "name": "SMITHS",
+   "terminal": ""
+  },
+  "01196": {
+   "name": "EDWARDS",
+   "terminal": ""
+  },
+  "01206": {
+   "name": "CENTURY",
+   "terminal": ""
+  },
+  "01218": {
+   "name": "DIXON",
+   "terminal": ""
+  },
+  "01220": {
+   "name": "MONUMENT",
+   "terminal": ""
+  },
+  "01227": {
+   "name": "JACKSON",
+   "terminal": ""
+  },
+  "01229": {
+   "name": "WHITFIELD",
+   "terminal": ""
+  },
+  "01232": {
+   "name": "GREENFIELD",
+   "terminal": ""
+  },
+  "01237": {
+   "name": "BRANDON",
+   "terminal": ""
+  },
+  "01242": {
+   "name": "RANKIN",
+   "terminal": ""
+  },
+  "01249": {
+   "name": "PELAHATCHIE",
+   "terminal": ""
+  },
+  "01255": {
+   "name": "HARMON",
+   "terminal": ""
+  },
+  "01257": {
+   "name": "MORTON",
+   "terminal": ""
+  },
+  "01268": {
+   "name": "FOREST",
+   "terminal": ""
+  },
+  "01277": {
+   "name": "LAKE",
+   "terminal": ""
+  },
+  "01287": {
+   "name": "NEWTON",
+   "terminal": ""
+  },
+  "01295": {
+   "name": "HICKORY",
+   "terminal": ""
+  },
+  "01306": {
+   "name": "MEEHAN",
+   "terminal": ""
+  },
+  "01318": {
+   "name": "MERIDIAN",
+   "terminal": ""
+  },
+  "01370": {
+   "name": "ROODHOUSE (West Wye Switch)",
+   "terminal": ""
+  },
+  "01600": {
+   "name": "ROSENBERG",
+   "terminal": ""
+  },
+  "01625": {
+   "name": "KENDLETON",
+   "terminal": ""
+  },
+  "01640": {
+   "name": "WHARTON",
+   "terminal": ""
+  },
+  "01650": {
+   "name": "EL CAMPO",
+   "terminal": ""
+  },
+  "01665": {
+   "name": "LOUISE",
+   "terminal": ""
+  },
+  "01685": {
+   "name": "EDNA",
+   "terminal": ""
+  },
+  "01690": {
+   "name": "EL TORO",
+   "terminal": ""
+  },
+  "01695": {
+   "name": "TELFERNER",
+   "terminal": ""
+  },
+  "01705": {
+   "name": "THRASHER",
+   "terminal": ""
+  },
+  "01890": {
+   "name": "HATIESBURG",
+   "terminal": ""
+  },
+  "01894": {
+   "name": "PALMER",
+   "terminal": ""
+  },
+  "01900": {
+   "name": "CAMP SHELBY",
+   "terminal": ""
+  },
+  "01902": {
+   "name": "MCLAURIN",
+   "terminal": ""
+  },
+  "01907": {
+   "name": "BROOKLYN",
+   "terminal": ""
+  },
+  "01916": {
+   "name": "MAXIE",
+   "terminal": ""
+  },
+  "01925": {
+   "name": "WIGGINS",
+   "terminal": ""
+  },
+  "01931": {
+   "name": "PERKINSTON",
+   "terminal": ""
+  },
+  "01936": {
+   "name": "MCHENRY",
+   "terminal": ""
+  },
+  "01945": {
+   "name": "HOVEY",
+   "terminal": ""
+  },
+  "01951": {
+   "name": "LYMAN",
+   "terminal": ""
+  },
+  "01960": {
+   "name": "GULFPORT",
+   "terminal": ""
+  },
+  "01977": {
+   "name": "DELISLE JCT.",
+   "terminal": ""
+  },
+  "02000": {
+   "name": "CORINTH",
+   "terminal": ""
+  },
+  "02003": {
+   "name": "LAREDO",
+   "terminal": ""
+  },
+  "02012": {
+   "name": "RIENZI",
+   "terminal": ""
+  },
+  "02017": {
+   "name": "MILAGRO",
+   "terminal": ""
+  },
+  "02020": {
+   "name": "BOONEVILLE",
+   "terminal": ""
+  },
+  "02025": {
+   "name": "KILLAM",
+   "terminal": ""
+  },
+  "02041": {
+   "name": "SALTILLO",
+   "terminal": ""
+  },
+  "02049": {
+   "name": "BRUNI",
+   "terminal": ""
+  },
+  "02050": {
+   "name": "TUPELO",
+   "terminal": ""
+  },
+  "02062": {
+   "name": "HEBBRONVILLE",
+   "terminal": ""
+  },
+  "02067": {
+   "name": "OKOLONA",
+   "terminal": ""
+  },
+  "02070": {
+   "name": "GLEN",
+   "terminal": ""
+  },
+  "02075": {
+   "name": "EGYPT",
+   "terminal": ""
+  },
+  "02077": {
+   "name": "REALITOS",
+   "terminal": ""
+  },
+  "02085": {
+   "name": "PRAIRIE",
+   "terminal": ""
+  },
+  "02089": {
+   "name": "MULDON",
+   "terminal": ""
+  },
+  "02096": {
+   "name": "WEST POINT",
+   "terminal": ""
+  },
+  "02102": {
+   "name": "TIBBEE",
+   "terminal": ""
+  },
+  "02106": {
+   "name": "MAYHEW",
+   "terminal": ""
+  },
+  "02109": {
+   "name": "SAN DIEGO",
+   "terminal": ""
+  },
+  "02110": {
+   "name": "ARTESIA",
+   "terminal": ""
+  },
+  "02119": {
+   "name": "ALICE",
+   "terminal": ""
+  },
+  "02129": {
+   "name": "BENTONVILLE",
+   "terminal": ""
+  },
+  "02131": {
+   "name": "MACON",
+   "terminal": ""
+  },
+  "02141": {
+   "name": "SHUQULAK",
+   "terminal": ""
+  },
+  "02143": {
+   "name": "SPEAR",
+   "terminal": ""
+  },
+  "02145": {
+   "name": "ROBSTOWN",
+   "terminal": ""
+  },
+  "02146": {
+   "name": "WAHALAK",
+   "terminal": ""
+  },
+  "02160": {
+   "name": "SUCARNOCHEE",
+   "terminal": ""
+  },
+  "02176": {
+   "name": "LAUDERDALE",
+   "terminal": ""
+  },
+  "02189": {
+   "name": "MARION",
+   "terminal": ""
+  },
+  "02500": {
+   "name": "ABERDEEN",
+   "terminal": ""
+  },
+  "02729": {
+   "name": "BUHLER",
+   "terminal": ""
+  },
+  "02733": {
+   "name": "GULF STATES UTILITIES",
+   "terminal": ""
+  },
+  "02736": {
+   "name": "MOSSVILLE",
+   "terminal": ""
+  },
+  "02740": {
+   "name": "WESTLAKE",
+   "terminal": ""
+  },
+  "02814": {
+   "name": "COLUMBUS, MS",
+   "terminal": ""
+  },
+  "03009": {
+   "name": "CURTIS",
+   "terminal": ""
+  },
+  "03023": {
+   "name": "Koss Storage",
+   "terminal": ""
+  },
+  "03026": {
+   "name": "NINOCK",
+   "terminal": ""
+  },
+  "03043": {
+   "name": "I.P. PASS",
+   "terminal": ""
+  },
+  "03044": {
+   "name": "COUSHATTA",
+   "terminal": ""
+  },
+  "03058": {
+   "name": "KRAFT",
+   "terminal": ""
+  },
+  "03062": {
+   "name": "CAMPTI",
+   "terminal": ""
+  },
+  "03063": {
+   "name": "PORT OF NATCHITOCHES",
+   "terminal": ""
+  },
+  "03082": {
+   "name": "MONTGOMERY",
+   "terminal": ""
+  },
+  "03097": {
+   "name": "COLFAX",
+   "terminal": ""
+  },
+  "03114": {
+   "name": "BARRETT",
+   "terminal": ""
+  },
+  "03133": {
+   "name": "LATANIER",
+   "terminal": ""
+  },
+  "03141": {
+   "name": "BIJOU",
+   "terminal": ""
+  },
+  "03143": {
+   "name": "Reno",
+   "terminal": ""
+  },
+  "03149": {
+   "name": "HESSMER",
+   "terminal": ""
+  },
+  "03167": {
+   "name": "HYDE",
+   "terminal": ""
+  },
+  "03173": {
+   "name": "KELLER",
+   "terminal": ""
+  },
+  "03175": {
+   "name": "BATCHELOR",
+   "terminal": ""
+  },
+  "03176": {
+   "name": "MORGANZA",
+   "terminal": ""
+  },
+  "03177": {
+   "name": "NEW ROADS",
+   "terminal": ""
+  },
+  "03195": {
+   "name": "LABARRE",
+   "terminal": ""
+  },
+  "03225": {
+   "name": "LOBDELL",
+   "terminal": ""
+  },
+  "03227": {
+   "name": "BATON ROUGE",
+   "terminal": ""
+  },
+  "03236": {
+   "name": "ESSEN",
+   "terminal": ""
+  },
+  "03251": {
+   "name": "GONZALES",
+   "terminal": ""
+  },
+  "03259": {
+   "name": "BARMEN",
+   "terminal": ""
+  },
+  "03261": {
+   "name": "MCELROY",
+   "terminal": ""
+  },
+  "03269": {
+   "name": "GRAMERCY",
+   "terminal": ""
+  },
+  "03276": {
+   "name": "RESERVE",
+   "terminal": ""
+  },
+  "03280": {
+   "name": "MONTEGUT",
+   "terminal": ""
+  },
+  "03287": {
+   "name": "NORCO",
+   "terminal": ""
+  },
+  "03295": {
+   "name": "FRELLSEN",
+   "terminal": ""
+  },
+  "03308": {
+   "name": "NEW ORLEANS",
+   "terminal": ""
+  },
+  "03848": {
+   "name": "CPF 468",
+   "terminal": ""
+  },
+  "03883": {
+   "name": "COLONIE",
+   "terminal": ""
+  },
+  "03944": {
+   "name": "COHOES",
+   "terminal": ""
+  },
+  "03946": {
+   "name": "WATERFORD",
+   "terminal": ""
+  },
+  "03955": {
+   "name": "MOHAWK",
+   "terminal": ""
+  },
+  "03958": {
+   "name": "BALLSTON",
+   "terminal": ""
+  },
+  "03959": {
+   "name": "SARATOGA SPRINGS",
+   "terminal": ""
+  },
+  "03972": {
+   "name": "FORT ED",
+   "terminal": ""
+  },
+  "03978": {
+   "name": "WHITEHALL SIDING",
+   "terminal": ""
+  },
+  "03979": {
+   "name": "FORT TICONDEROGA",
+   "terminal": ""
+  },
+  "03982": {
+   "name": "PORT HENRY",
+   "terminal": ""
+  },
+  "03983": {
+   "name": "WESTPORT",
+   "terminal": ""
+  },
+  "03984": {
+   "name": "WADHAMS",
+   "terminal": ""
+  },
+  "03988": {
+   "name": "ROCKLAND",
+   "terminal": ""
+  },
+  "03989": {
+   "name": "PORT KENT",
+   "terminal": ""
+  },
+  "03991": {
+   "name": "BLUFF POINT",
+   "terminal": ""
+  },
+  "03992": {
+   "name": "PLATTSBURGH",
+   "terminal": ""
+  },
+  "03996": {
+   "name": "ROUSES POINT",
+   "terminal": ""
+  },
+  "04526": {
+   "name": "HANSON PARK",
+   "terminal": ""
+  },
+  "04527": {
+   "name": "GALEWOOD",
+   "terminal": ""
+  },
+  "04528": {
+   "name": "MARS",
+   "terminal": ""
+  },
+  "04529": {
+   "name": "MONT CLARE",
+   "terminal": ""
+  },
+  "04531": {
+   "name": "ELMWOOD PARK",
+   "terminal": ""
+  },
+  "04532": {
+   "name": "RIVER GROVE",
+   "terminal": ""
+  },
+  "04533": {
+   "name": "FRANKLIN PARK",
+   "terminal": ""
+  },
+  "04534": {
+   "name": "MANNHEIM",
+   "terminal": ""
+  },
+  "04540": {
+   "name": "BENSENVILLE YARD",
+   "terminal": "DA"
+  },
+  "04545": {
+   "name": "TOWER B17",
+   "terminal": ""
+  },
+  "04547": {
+   "name": "WOOD DALE",
+   "terminal": ""
+  },
+  "04548": {
+   "name": "ITASCA",
+   "terminal": ""
+  },
+  "04550": {
+   "name": "MEDINAH",
+   "terminal": ""
+  },
+  "04551": {
+   "name": "ROSELLE",
+   "terminal": ""
+  },
+  "04552": {
+   "name": "SCHAUMBURG",
+   "terminal": ""
+  },
+  "04553": {
+   "name": "HANOVER PARK",
+   "terminal": ""
+  },
+  "04554": {
+   "name": "BARTLETT",
+   "terminal": ""
+  },
+  "04555": {
+   "name": "SPAULDING",
+   "terminal": ""
+  },
+  "04556": {
+   "name": "TOWER B35",
+   "terminal": ""
+  },
+  "04557": {
+   "name": "ELGIN",
+   "terminal": ""
+  },
+  "04559": {
+   "name": "HAMPSHIRE",
+   "terminal": ""
+  },
+  "04561": {
+   "name": "PINGREE GROVE",
+   "terminal": ""
+  },
+  "04563": {
+   "name": "GENOA",
+   "terminal": ""
+  },
+  "04566": {
+   "name": "Kirkland",
+   "terminal": ""
+  },
+  "04568": {
+   "name": "DAVIS JCT",
+   "terminal": ""
+  },
+  "04569": {
+   "name": "Byron",
+   "terminal": ""
+  },
+  "04570": {
+   "name": "Leaf River",
+   "terminal": ""
+  },
+  "04571": {
+   "name": "ADELINE",
+   "terminal": ""
+  },
+  "04572": {
+   "name": "Forreston",
+   "terminal": ""
+  },
+  "04573": {
+   "name": "KITTREDGE",
+   "terminal": ""
+  },
+  "04574": {
+   "name": "Red Barn",
+   "terminal": ""
+  },
+  "04576": {
+   "name": "Lanark",
+   "terminal": ""
+  },
+  "04580": {
+   "name": "EAST SAVANNA",
+   "terminal": ""
+  },
+  "04581": {
+   "name": "SAVANNA",
+   "terminal": ""
+  },
+  "04583": {
+   "name": "LAKE SOUTH",
+   "terminal": ""
+  },
+  "04584": {
+   "name": "DEER CREEK",
+   "terminal": ""
+  },
+  "04586": {
+   "name": "Lyons",
+   "terminal": ""
+  },
+  "04587": {
+   "name": "CLINTON",
+   "terminal": ""
+  },
+  "04588": {
+   "name": "CAMANCHE",
+   "terminal": ""
+  },
+  "04590": {
+   "name": "PRINCETON",
+   "terminal": ""
+  },
+  "04591": {
+   "name": "LE CLAIRE",
+   "terminal": ""
+  },
+  "04592": {
+   "name": "PLEASANT VALLEY",
+   "terminal": ""
+  },
+  "04593": {
+   "name": "Riverdale",
+   "terminal": ""
+  },
+  "04594": {
+   "name": "BETTENDORF",
+   "terminal": ""
+  },
+  "04596": {
+   "name": "ELDRIDGE",
+   "terminal": ""
+  },
+  "04597": {
+   "name": "MT JOY",
+   "terminal": ""
+  },
+  "04598": {
+   "name": "WATERWORKS",
+   "terminal": ""
+  },
+  "04600": {
+   "name": "WEST DAVENPORT",
+   "terminal": ""
+  },
+  "04603": {
+   "name": "GREEN ISLAND",
+   "terminal": ""
+  },
+  "04604": {
+   "name": "BELLEVUE",
+   "terminal": ""
+  },
+  "04606": {
+   "name": "WOOD",
+   "terminal": ""
+  },
+  "04607": {
+   "name": "DUBUQUE JCT",
+   "terminal": ""
+  },
+  "04608": {
+   "name": "DUBUQUE",
+   "terminal": ""
+  },
+  "04609": {
+   "name": "BLUFF",
+   "terminal": ""
+  },
+  "04610": {
+   "name": "EDMORE",
+   "terminal": ""
+  },
+  "04612": {
+   "name": "TURKEY RIVER",
+   "terminal": ""
+  },
+  "04613": {
+   "name": "ECKARDS",
+   "terminal": ""
+  },
+  "04614": {
+   "name": "GUTTENBERG",
+   "terminal": ""
+  },
+  "04615": {
+   "name": "Clayton",
+   "terminal": ""
+  },
+  "04616": {
+   "name": "MCGREGOR",
+   "terminal": ""
+  },
+  "04617": {
+   "name": "MARQUETTE",
+   "terminal": "DA"
+  },
+  "04618": {
+   "name": "HARPERS FERRY",
+   "terminal": ""
+  },
+  "04619": {
+   "name": "Lansing",
+   "terminal": ""
+  },
+  "04620": {
+   "name": "KAINS",
+   "terminal": ""
+  },
+  "04621": {
+   "name": "NEW ALBIN",
+   "terminal": ""
+  },
+  "04640": {
+   "name": "NAHANT",
+   "terminal": "DA"
+  },
+  "04643": {
+   "name": "MONTPELIER NORTH",
+   "terminal": ""
+  },
+  "04644": {
+   "name": "MONTPELIER",
+   "terminal": ""
+  },
+  "04645": {
+   "name": "IPSCO",
+   "terminal": ""
+  },
+  "04646": {
+   "name": "HEINZ",
+   "terminal": ""
+  },
+  "04649": {
+   "name": "MUSCATINE",
+   "terminal": "OT"
+  },
+  "04650": {
+   "name": "FRUITLAND",
+   "terminal": ""
+  },
+  "04651": {
+   "name": "LETTS",
+   "terminal": ""
+  },
+  "04653": {
+   "name": "Fredonia",
+   "terminal": ""
+  },
+  "04655": {
+   "name": "COTTER",
+   "terminal": ""
+  },
+  "04657": {
+   "name": "Ainsworth",
+   "terminal": ""
+  },
+  "04658": {
+   "name": "WASHINGTON",
+   "terminal": ""
+  },
+  "04659": {
+   "name": "RUBIO",
+   "terminal": ""
+  },
+  "04660": {
+   "name": "LINBY",
+   "terminal": ""
+  },
+  "04661": {
+   "name": "Farson",
+   "terminal": ""
+  },
+  "04662": {
+   "name": "RUTLEDGE",
+   "terminal": ""
+  },
+  "04663": {
+   "name": "LAWLER",
+   "terminal": ""
+  },
+  "04664": {
+   "name": "OTTUMWA",
+   "terminal": "OT"
+  },
+  "04665": {
+   "name": "BLAKESBURG",
+   "terminal": ""
+  },
+  "04666": {
+   "name": "MORAVIA",
+   "terminal": ""
+  },
+  "04667": {
+   "name": "APNC JCT",
+   "terminal": ""
+  },
+  "04669": {
+   "name": "SEYMOUR",
+   "terminal": ""
+  },
+  "04670": {
+   "name": "SEWAL",
+   "terminal": ""
+  },
+  "04671": {
+   "name": "POWERSVILLE",
+   "terminal": ""
+  },
+  "04672": {
+   "name": "Lucerne",
+   "terminal": ""
+  },
+  "04673": {
+   "name": "NEWTOWN",
+   "terminal": ""
+  },
+  "04674": {
+   "name": "Harris",
+   "terminal": ""
+  },
+  "04677": {
+   "name": "CHULA",
+   "terminal": ""
+  },
+  "04678": {
+   "name": "CHILLICOTHE",
+   "terminal": ""
+  },
+  "04680": {
+   "name": "BRAYMER",
+   "terminal": ""
+  },
+  "04682": {
+   "name": "POLO",
+   "terminal": ""
+  },
+  "04684": {
+   "name": "LAWSON JCT",
+   "terminal": ""
+  },
+  "04686": {
+   "name": "EXCELSIOR SPRINGS",
+   "terminal": ""
+  },
+  "04688": {
+   "name": "MOSEBY JCT",
+   "terminal": ""
+  },
+  "04689": {
+   "name": "LIBERTY",
+   "terminal": "OT"
+  },
+  "04690": {
+   "name": "JOINT AGENCY",
+   "terminal": "KC"
+  },
+  "04696": {
+   "name": "AIRLINE JCT",
+   "terminal": ""
+  },
+  "04705": {
+   "name": "CANAL STREET",
+   "terminal": ""
+  },
+  "04707": {
+   "name": "TOWER A 2 WESTERN AVE",
+   "terminal": ""
+  },
+  "04711": {
+   "name": "HEALY",
+   "terminal": ""
+  },
+  "04713": {
+   "name": "GRAYLAND",
+   "terminal": ""
+  },
+  "04716": {
+   "name": "MAYFAIR",
+   "terminal": ""
+  },
+  "04717": {
+   "name": "FOREST GLEN",
+   "terminal": ""
+  },
+  "04719": {
+   "name": "EDGEBROOK",
+   "terminal": ""
+  },
+  "04722": {
+   "name": "MORTON GROVE",
+   "terminal": ""
+  },
+  "04723": {
+   "name": "GOLF",
+   "terminal": ""
+  },
+  "04724": {
+   "name": "GLENVIEW",
+   "terminal": ""
+  },
+  "04728": {
+   "name": "SHERMER",
+   "terminal": ""
+  },
+  "04732": {
+   "name": "NORTHBROOK",
+   "terminal": ""
+  },
+  "04733": {
+   "name": "DEERFIELD",
+   "terminal": ""
+  },
+  "04734": {
+   "name": "LAKE FOREST",
+   "terminal": ""
+  },
+  "04740": {
+   "name": "RONDOUT",
+   "terminal": ""
+  },
+  "04744": {
+   "name": "WADSWORTH",
+   "terminal": ""
+  },
+  "04746": {
+   "name": "TRUESDELL",
+   "terminal": ""
+  },
+  "04752": {
+   "name": "STURTEVANT",
+   "terminal": ""
+  },
+  "04755": {
+   "name": "CALEDONIA",
+   "terminal": ""
+  },
+  "04758": {
+   "name": "LAKE",
+   "terminal": ""
+  },
+  "04760": {
+   "name": "MILWAUKEE",
+   "terminal": ""
+  },
+  "04762": {
+   "name": "ELM GROVE",
+   "terminal": ""
+  },
+  "04765": {
+   "name": "BROOKFIELD",
+   "terminal": ""
+  },
+  "04766": {
+   "name": "DUPLAINVILLE",
+   "terminal": ""
+  },
+  "04768": {
+   "name": "PEWAUKEE",
+   "terminal": ""
+  },
+  "04771": {
+   "name": "NASHOTAH",
+   "terminal": ""
+  },
+  "04772": {
+   "name": "OCONOMOWOC",
+   "terminal": ""
+  },
+  "04773": {
+   "name": "IXONIA",
+   "terminal": ""
+  },
+  "04774": {
+   "name": "WATERTOWN",
+   "terminal": ""
+  },
+  "04778": {
+   "name": "REESEVILLE",
+   "terminal": ""
+  },
+  "04781": {
+   "name": "COLUMBUS",
+   "terminal": ""
+  },
+  "04782": {
+   "name": "FALL RIVER",
+   "terminal": ""
+  },
+  "04784": {
+   "name": "DODGE WEST",
+   "terminal": ""
+  },
+  "04785": {
+   "name": "EAST RIO",
+   "terminal": ""
+  },
+  "04786": {
+   "name": "RIO",
+   "terminal": ""
+  },
+  "04787": {
+   "name": "WYOCENA",
+   "terminal": ""
+  },
+  "04789": {
+   "name": "PORTAGE JCT",
+   "terminal": ""
+  },
+  "04792": {
+   "name": "PORTAGE WEST",
+   "terminal": ""
+  },
+  "04793": {
+   "name": "LEWISTON",
+   "terminal": ""
+  },
+  "04794": {
+   "name": "WISCONSIN DELLS",
+   "terminal": ""
+  },
+  "04795": {
+   "name": "KILBOURN",
+   "terminal": ""
+  },
+  "04796": {
+   "name": "LYNDON",
+   "terminal": ""
+  },
+  "04797": {
+   "name": "MILE CREEK",
+   "terminal": ""
+  },
+  "04801": {
+   "name": "NEW LISBON",
+   "terminal": ""
+  },
+  "04802": {
+   "name": "CAMP DOUGLAS",
+   "terminal": ""
+  },
+  "04803": {
+   "name": "MONROE",
+   "terminal": ""
+  },
+  "04804": {
+   "name": "TOMAH",
+   "terminal": ""
+  },
+  "04805": {
+   "name": "TUNNEL CITY",
+   "terminal": ""
+  },
+  "04807": {
+   "name": "RAYMORE",
+   "terminal": ""
+  },
+  "04808": {
+   "name": "CAMP MCCOY",
+   "terminal": ""
+  },
+  "04811": {
+   "name": "SPARTA",
+   "terminal": ""
+  },
+  "04813": {
+   "name": "BANGOR",
+   "terminal": ""
+  },
+  "04814": {
+   "name": "WEST SALEM",
+   "terminal": ""
+  },
+  "04815": {
+   "name": "MEDARY",
+   "terminal": ""
+  },
+  "04817": {
+   "name": "LA CROSSE",
+   "terminal": ""
+  },
+  "04818": {
+   "name": "RIVER JCT",
+   "terminal": ""
+  },
+  "04820": {
+   "name": "DONEHOWER",
+   "terminal": ""
+  },
+  "04821": {
+   "name": "HOMER",
+   "terminal": ""
+  },
+  "04822": {
+   "name": "WINONA",
+   "terminal": ""
+  },
+  "04823": {
+   "name": "TOWER CK",
+   "terminal": ""
+  },
+  "04825": {
+   "name": "MINNESOTA CITY",
+   "terminal": ""
+  },
+  "04827": {
+   "name": "WEAVER",
+   "terminal": ""
+  },
+  "04828": {
+   "name": "KELLOGG",
+   "terminal": ""
+  },
+  "04829": {
+   "name": "MIDLAND",
+   "terminal": ""
+  },
+  "04830": {
+   "name": "WABASHA",
+   "terminal": ""
+  },
+  "04831": {
+   "name": "LAKEVIEW",
+   "terminal": ""
+  },
+  "04832": {
+   "name": "LAKE CITY",
+   "terminal": ""
+  },
+  "04833": {
+   "name": "FRONTENAC",
+   "terminal": ""
+  },
+  "04835": {
+   "name": "RED WING",
+   "terminal": ""
+  },
+  "04836": {
+   "name": "GOODVIEW",
+   "terminal": ""
+  },
+  "04838": {
+   "name": "DUKE",
+   "terminal": ""
+  },
+  "04840": {
+   "name": "BLACKBIRD",
+   "terminal": ""
+  },
+  "04841": {
+   "name": "VERMILLION",
+   "terminal": ""
+  },
+  "04842": {
+   "name": "EAST HASTINGS",
+   "terminal": ""
+  },
+  "04843": {
+   "name": "HASTINGS",
+   "terminal": ""
+  },
+  "04844": {
+   "name": "ST CROIX",
+   "terminal": ""
+  },
+  "04847": {
+   "name": "CHEMOLITE",
+   "terminal": ""
+  },
+  "04848": {
+   "name": "COTTAGE GROVE",
+   "terminal": ""
+  },
+  "04849": {
+   "name": "NEWPORT",
+   "terminal": ""
+  },
+  "04850": {
+   "name": "ST PAUL YARD",
+   "terminal": ""
+  },
+  "04858": {
+   "name": "ORCHID",
+   "terminal": ""
+  },
+  "04860": {
+   "name": "SOO JCT",
+   "terminal": ""
+  },
+  "04861": {
+   "name": "PARKWAY",
+   "terminal": ""
+  },
+  "04862": {
+   "name": "CARDIGAN JCT",
+   "terminal": ""
+  },
+  "04863": {
+   "name": "NEW BRIGHTON",
+   "terminal": ""
+  },
+  "04866": {
+   "name": "SHOREHAM",
+   "terminal": ""
+  },
+  "04870": {
+   "name": "CAMDEN",
+   "terminal": ""
+  },
+  "04871": {
+   "name": "HUMBOLDT YARD",
+   "terminal": ""
+  },
+  "04872": {
+   "name": "CRYSTAL",
+   "terminal": ""
+  },
+  "04873": {
+   "name": "MN&S JCT",
+   "terminal": ""
+  },
+  "04874": {
+   "name": "HAMEL",
+   "terminal": ""
+  },
+  "04875": {
+   "name": "MANNIX SPUR",
+   "terminal": ""
+  },
+  "04876": {
+   "name": "LORETTO",
+   "terminal": ""
+  },
+  "04877": {
+   "name": "ROCKFORD",
+   "terminal": ""
+  },
+  "04878": {
+   "name": "DICKINSON",
+   "terminal": ""
+  },
+  "04879": {
+   "name": "BUFFALO",
+   "terminal": ""
+  },
+  "04880": {
+   "name": "MAPLE LAKE",
+   "terminal": ""
+  },
+  "04881": {
+   "name": "ANNANDALE",
+   "terminal": ""
+  },
+  "04882": {
+   "name": "SOUTH HAVEN",
+   "terminal": ""
+  },
+  "04883": {
+   "name": "KIMBALL",
+   "terminal": ""
+  },
+  "04884": {
+   "name": "WATKINS",
+   "terminal": ""
+  },
+  "04885": {
+   "name": "EDEN VALLEY",
+   "terminal": ""
+  },
+  "04886": {
+   "name": "PAYNESVILLE",
+   "terminal": ""
+  },
+  "04887": {
+   "name": "REGAL",
+   "terminal": ""
+  },
+  "04889": {
+   "name": "BROOTEN",
+   "terminal": ""
+  },
+  "04890": {
+   "name": "SEDAN",
+   "terminal": ""
+  },
+  "04891": {
+   "name": "FORADA",
+   "terminal": ""
+  },
+  "04892": {
+   "name": "ALEXANDRIA",
+   "terminal": ""
+  },
+  "04893": {
+   "name": "CARLOS",
+   "terminal": ""
+  },
+  "04895": {
+   "name": "PARKERS PRAIRIE",
+   "terminal": ""
+  },
+  "04897": {
+   "name": "HENNING",
+   "terminal": ""
+  },
+  "04898": {
+   "name": "OTTERTAIL",
+   "terminal": ""
+  },
+  "04899": {
+   "name": "RICHVILLE",
+   "terminal": ""
+  },
+  "04900": {
+   "name": "MURRAY",
+   "terminal": ""
+  },
+  "04901": {
+   "name": "DENT",
+   "terminal": ""
+  },
+  "04902": {
+   "name": "VERGAS",
+   "terminal": ""
+  },
+  "04903": {
+   "name": "DETROIT LAKES",
+   "terminal": ""
+  },
+  "04904": {
+   "name": "CALLAWAY",
+   "terminal": ""
+  },
+  "04905": {
+   "name": "OGEMA",
+   "terminal": ""
+  },
+  "04906": {
+   "name": "WAUBUN",
+   "terminal": ""
+  },
+  "04907": {
+   "name": "MAHNOMEN",
+   "terminal": ""
+  },
+  "04908": {
+   "name": "BEJOU",
+   "terminal": ""
+  },
+  "04910": {
+   "name": "WINGER",
+   "terminal": ""
+  },
+  "04911": {
+   "name": "ERSKINE",
+   "terminal": ""
+  },
+  "04912": {
+   "name": "BROOKS",
+   "terminal": ""
+  },
+  "04913": {
+   "name": "PLUMMER",
+   "terminal": ""
+  },
+  "04914": {
+   "name": "HAZEL",
+   "terminal": ""
+  },
+  "04915": {
+   "name": "T R FALLS",
+   "terminal": ""
+  },
+  "04918": {
+   "name": "NEWFOLDEN",
+   "terminal": ""
+  },
+  "04919": {
+   "name": "STRANDQUIST",
+   "terminal": ""
+  },
+  "04920": {
+   "name": "KARLSTAD",
+   "terminal": ""
+  },
+  "04921": {
+   "name": "HALMA",
+   "terminal": ""
+  },
+  "04922": {
+   "name": "LAKE BRONSON",
+   "terminal": ""
+  },
+  "04923": {
+   "name": "LANCASTER",
+   "terminal": ""
+  },
+  "04924": {
+   "name": "ORLEANS",
+   "terminal": ""
+  },
+  "04925": {
+   "name": "NOYES",
+   "terminal": ""
+  },
+  "04930": {
+   "name": "GLENWOOD",
+   "terminal": ""
+  },
+  "04932": {
+   "name": "LOWRY",
+   "terminal": ""
+  },
+  "04933": {
+   "name": "FARWELL",
+   "terminal": ""
+  },
+  "04934": {
+   "name": "KENSINGTON",
+   "terminal": ""
+  },
+  "04935": {
+   "name": "HOFFMAN",
+   "terminal": ""
+  },
+  "04936": {
+   "name": "BARRETT",
+   "terminal": ""
+  },
+  "04937": {
+   "name": "ELBOW LAKE",
+   "terminal": ""
+  },
+  "04938": {
+   "name": "WENDELL",
+   "terminal": ""
+  },
+  "04939": {
+   "name": "NASHUA",
+   "terminal": ""
+  },
+  "04940": {
+   "name": "B.N. JCT WEST WYE",
+   "terminal": ""
+  },
+  "04941": {
+   "name": "TENNEY",
+   "terminal": ""
+  },
+  "04942": {
+   "name": "FAIRMOUNT",
+   "terminal": ""
+  },
+  "04943": {
+   "name": "VEBLEN JCT",
+   "terminal": ""
+  },
+  "04944": {
+   "name": "OSWALD",
+   "terminal": ""
+  },
+  "04945": {
+   "name": "HANKINSON",
+   "terminal": ""
+  },
+  "04946": {
+   "name": "EAGLE",
+   "terminal": ""
+  },
+  "04947": {
+   "name": "MUD LAKE",
+   "terminal": ""
+  },
+  "04949": {
+   "name": "MANTADOR",
+   "terminal": ""
+  },
+  "04951": {
+   "name": "WYNDMERE",
+   "terminal": ""
+  },
+  "04952": {
+   "name": "MCLEOD",
+   "terminal": ""
+  },
+  "04953": {
+   "name": "ANSELM",
+   "terminal": ""
+  },
+  "04954": {
+   "name": "RANSOM JCT",
+   "terminal": ""
+  },
+  "04955": {
+   "name": "ENDERLIN",
+   "terminal": ""
+  },
+  "04956": {
+   "name": "LUCCA",
+   "terminal": ""
+  },
+  "04957": {
+   "name": "FINGAL",
+   "terminal": ""
+  },
+  "04958": {
+   "name": "CUBA",
+   "terminal": ""
+  },
+  "04960": {
+   "name": "VALLEY CITY",
+   "terminal": ""
+  },
+  "04961": {
+   "name": "ROGERS",
+   "terminal": ""
+  },
+  "04962": {
+   "name": "LEAL",
+   "terminal": ""
+  },
+  "04963": {
+   "name": "WIMBLEDON",
+   "terminal": ""
+  },
+  "04964": {
+   "name": "COURTENAY",
+   "terminal": ""
+  },
+  "04965": {
+   "name": "KENSAL",
+   "terminal": ""
+  },
+  "04966": {
+   "name": "BORDULAC",
+   "terminal": ""
+  },
+  "04968": {
+   "name": "CARRINGTON",
+   "terminal": ""
+  },
+  "04969": {
+   "name": "CATHAY",
+   "terminal": ""
+  },
+  "04970": {
+   "name": "EMRICK",
+   "terminal": ""
+  },
+  "04971": {
+   "name": "FESSENDEN",
+   "terminal": ""
+  },
+  "04972": {
+   "name": "MANFRED",
+   "terminal": ""
+  },
+  "04973": {
+   "name": "HARVEY",
+   "terminal": ""
+  },
+  "04974": {
+   "name": "MARTIN",
+   "terminal": ""
+  },
+  "04975": {
+   "name": "ANAMOOSE",
+   "terminal": ""
+  },
+  "04976": {
+   "name": "DRAKE",
+   "terminal": ""
+  },
+  "04977": {
+   "name": "BALFOUR",
+   "terminal": ""
+  },
+  "04979": {
+   "name": "VOLTAIRE",
+   "terminal": ""
+  },
+  "04980": {
+   "name": "VELVA",
+   "terminal": ""
+  },
+  "04981": {
+   "name": "SAWYER",
+   "terminal": ""
+  },
+  "04982": {
+   "name": "LOGAN",
+   "terminal": ""
+  },
+  "04985": {
+   "name": "MINOT",
+   "terminal": ""
+  },
+  "04986": {
+   "name": "SPIRAL",
+   "terminal": ""
+  },
+  "04988": {
+   "name": "BURLINGTON",
+   "terminal": ""
+  },
+  "04989": {
+   "name": "FOXHOLM",
+   "terminal": ""
+  },
+  "04990": {
+   "name": "CARPIO",
+   "terminal": ""
+  },
+  "04992": {
+   "name": "KENMARE",
+   "terminal": ""
+  },
+  "04993": {
+   "name": "BOWBELLS",
+   "terminal": ""
+  },
+  "04994": {
+   "name": "FLAXTON",
+   "terminal": ""
+  },
+  "04995": {
+   "name": "PORTAL",
+   "terminal": ""
+  },
+  "04996": {
+   "name": "BADEN",
+   "terminal": ""
+  },
+  "05083": {
+   "name": "DOYLINE",
+   "terminal": ""
+  },
+  "06336": {
+   "name": "CAMERON",
+   "terminal": ""
+  },
+  "06356": {
+   "name": "FORT SMITH (Via A&M to MP 6.0)",
+   "terminal": ""
+  },
+  "06900": {
+   "name": "COUNCE",
+   "terminal": ""
+  },
+  "06901": {
+   "name": "PRESTON",
+   "terminal": ""
+  },
+  "06902": {
+   "name": "BESSIE",
+   "terminal": ""
+  },
+  "06906": {
+   "name": "SHARPS",
+   "terminal": ""
+  },
+  "06913": {
+   "name": "FIVEPOINTS",
+   "terminal": ""
+  },
+  "06915": {
+   "name": "MONROE",
+   "terminal": ""
+  },
+  "06916": {
+   "name": "YELLOW CREEK",
+   "terminal": ""
+  },
+  "07083": {
+   "name": "SIBLEY",
+   "terminal": ""
+  },
+  "09000": {
+   "name": "TEXAS JCT.",
+   "terminal": ""
+  },
+  "09004": {
+   "name": "HAMMOCK",
+   "terminal": ""
+  },
+  "09035": {
+   "name": "FOX",
+   "terminal": ""
+  },
+  "09049": {
+   "name": "JEFFERSON",
+   "terminal": ""
+  },
+  "09061": {
+   "name": "LASSATER",
+   "terminal": ""
+  },
+  "09076": {
+   "name": "HUGHES SPRINGS",
+   "terminal": ""
+  },
+  "09079": {
+   "name": "VEALS",
+   "terminal": ""
+  },
+  "09089": {
+   "name": "CASON",
+   "terminal": ""
+  },
+  "09090": {
+   "name": "WELSH",
+   "terminal": ""
+  },
+  "09098": {
+   "name": "PITTSBURG (UP RRX)",
+   "terminal": ""
+  },
+  "09101": {
+   "name": "MONTICELLO",
+   "terminal": ""
+  },
+  "09105": {
+   "name": "LEESBURG",
+   "terminal": ""
+  },
+  "09118": {
+   "name": "WINNSBORO",
+   "terminal": ""
+  },
+  "09131": {
+   "name": "COMO",
+   "terminal": ""
+  },
+  "09136": {
+   "name": "TUGCO",
+   "terminal": ""
+  },
+  "09140": {
+   "name": "SULPHUR SPRINGS",
+   "terminal": ""
+  },
+  "09148": {
+   "name": "BRASHEAR",
+   "terminal": ""
+  },
+  "09172": {
+   "name": "GREENVILLE",
+   "terminal": ""
+  },
+  "09185": {
+   "name": "FARMERSVILLE",
+   "terminal": ""
+  },
+  "09192": {
+   "name": "COPEVILLE",
+   "terminal": ""
+  },
+  "09200": {
+   "name": "ALLIANCE JCT.",
+   "terminal": ""
+  },
+  "09201": {
+   "name": "WYLIE YARD",
+   "terminal": ""
+  },
+  "09205": {
+   "name": "SACHSE",
+   "terminal": ""
+  },
+  "09210": {
+   "name": "GARLAND",
+   "terminal": ""
+  },
+  "09215": {
+   "name": "DALLAS JCT",
+   "terminal": ""
+  },
+  "09316": {
+   "name": "WHITE ROCK",
+   "terminal": ""
+  },
+  "09322": {
+   "name": "RICHARDSON",
+   "terminal": ""
+  },
+  "09328": {
+   "name": "COWLEY",
+   "terminal": ""
+  },
+  "09343": {
+   "name": "LEWISVILLE",
+   "terminal": ""
+  },
+  "09354": {
+   "name": "MINCHIN",
+   "terminal": ""
+  },
+  "09357": {
+   "name": "DENTON",
+   "terminal": ""
+  },
+  "09361": {
+   "name": "METRO JCT.",
+   "terminal": ""
+  },
+  "11910": {
+   "name": "COCKRELL",
+   "terminal": ""
+  },
+  "12030": {
+   "name": "PROUTY",
+   "terminal": ""
+  },
+  "12100": {
+   "name": "YEOMANS",
+   "terminal": ""
+  },
+  "12120": {
+   "name": "REES",
+   "terminal": ""
+  },
+  "12160": {
+   "name": "CLEMENTS",
+   "terminal": ""
+  },
+  "12270": {
+   "name": "MURRAYVILLE",
+   "terminal": ""
+  },
+  "12370": {
+   "name": "ROODHOUSE (West Wye Switch)",
+   "terminal": ""
+  },
+  "22512": {
+   "name": "GODFREY",
+   "terminal": ""
+  },
+  "22520": {
+   "name": "GODFREY",
+   "terminal": ""
+  },
+  "22810": {
+   "name": "EAST ST. LOUIS",
+   "terminal": ""
+  },
+  "23200": {
+   "name": "WOODSON",
+   "terminal": ""
+  },
+  "32380": {
+   "name": "JACKSONVILLE",
+   "terminal": ""
+  },
+  "42420": {
+   "name": "WHITEHALL",
+   "terminal": ""
+  },
+  "42510": {
+   "name": "CARROLLTON",
+   "terminal": ""
+  },
+  "42590": {
+   "name": "KANE",
+   "terminal": ""
+  },
+  "42640": {
+   "name": "JERSEYVILLE",
+   "terminal": ""
+  },
+  "42680": {
+   "name": "SHERMAN",
+   "terminal": ""
+  },
+  "42710": {
+   "name": "DELHI",
+   "terminal": ""
+  },
+  "52220": {
+   "name": "ARTHUR",
+   "terminal": ""
+  },
+  "52420": {
+   "name": "DRAKE",
+   "terminal": ""
+  },
+  "52460": {
+   "name": "HILLVIEW",
+   "terminal": ""
+  },
+  "52510": {
+   "name": "PEARL (Illinois River Bridge)",
+   "terminal": ""
+  },
+  "52660": {
+   "name": "PLEASANT HILL",
+   "terminal": ""
+  },
+  "52750": {
+   "name": "LOUISIANA (BNSF RRX)",
+   "terminal": ""
+  },
+  "52870": {
+   "name": "BOWLING GREEN",
+   "terminal": ""
+  },
+  "52940": {
+   "name": "CURRYVILLE",
+   "terminal": ""
+  },
+  "53020": {
+   "name": "VANDALIA",
+   "terminal": ""
+  },
+  "53110": {
+   "name": "LADDONIA",
+   "terminal": ""
+  },
+  "53160": {
+   "name": "RUSH HILL",
+   "terminal": ""
+  },
+  "53260": {
+   "name": "MEXICO DEPOT",
+   "terminal": ""
+  },
+  "53270": {
+   "name": "MEXICO (Includes Hill Trk)",
+   "terminal": ""
+  },
+  "53310": {
+   "name": "THOMPSON",
+   "terminal": ""
+  },
+  "53440": {
+   "name": "CENTRALIA",
+   "terminal": ""
+  },
+  "53520": {
+   "name": "CLARK",
+   "terminal": ""
+  },
+  "53610": {
+   "name": "HIGBEE",
+   "terminal": ""
+  },
+  "53660": {
+   "name": "YATES",
+   "terminal": ""
+  },
+  "53720": {
+   "name": "ARMSTRONG",
+   "terminal": ""
+  },
+  "53810": {
+   "name": "GLASGOW",
+   "terminal": ""
+  },
+  "53830": {
+   "name": "HARMONY",
+   "terminal": ""
+  },
+  "53900": {
+   "name": "GILLIAM",
+   "terminal": ""
+  },
+  "53930": {
+   "name": "SLATER",
+   "terminal": ""
+  },
+  "54050": {
+   "name": "MARSHALL",
+   "terminal": ""
+  },
+  "54210": {
+   "name": "BLACKBURN",
+   "terminal": ""
+  },
+  "54240": {
+   "name": "ALMA",
+   "terminal": ""
+  },
+  "54290": {
+   "name": "CORDER",
+   "terminal": ""
+  },
+  "54340": {
+   "name": "HIGGINSVILLE",
+   "terminal": ""
+  },
+  "54410": {
+   "name": "MAYVIEW",
+   "terminal": ""
+  },
+  "54480": {
+   "name": "ODESSA",
+   "terminal": ""
+  },
+  "54550": {
+   "name": "BATES CITY",
+   "terminal": ""
+  },
+  "54590": {
+   "name": "OAK GROVE",
+   "terminal": ""
+  },
+  "54630": {
+   "name": "GRAIN VALLEY",
+   "terminal": ""
+  },
+  "54670": {
+   "name": "BLUE SPRINGS",
+   "terminal": ""
+  },
+  "54780": {
+   "name": "INDEPENDENCE",
+   "terminal": ""
+  },
+  "04541": {
+   "name": "04541",
+   "terminal": "DA"
+  }
+ }
 }
