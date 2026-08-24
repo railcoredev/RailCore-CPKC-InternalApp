@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Awaiting login after session loss.",
+  "collection_message": "Session lost; waiting at the RSA prompt.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-24T07:12:27+00:00",
+  "generated_at": "2026-08-24T07:13:30+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260824_004958",
@@ -2234,8 +2234,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "4h 53m",
-         "minutes": 293
+         "label": "4h 51m",
+         "minutes": 291
         },
         "name": "BURROUGHS,(CHARLES)"
        },
@@ -2243,8 +2243,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "4h 53m",
-         "minutes": 293
+         "label": "4h 51m",
+         "minutes": 291
         },
         "name": "HOFFMAN,(ALAN)"
        },
@@ -2252,8 +2252,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "4h 53m",
-         "minutes": 293
+         "label": "4h 51m",
+         "minutes": 291
         },
         "name": "IYOHA,(OSAYANDE)"
        }
@@ -2442,8 +2442,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 38m",
-         "minutes": 638
+         "label": "10h 36m",
+         "minutes": 636
         },
         "name": "EHRMANN,(CHRIS)"
        },
@@ -2451,8 +2451,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "10h 38m",
-         "minutes": 638
+         "label": "10h 36m",
+         "minutes": 636
         },
         "name": "MERRELL,(CHARISE)"
        }
@@ -4447,8 +4447,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 33m",
-         "minutes": 633
+         "label": "10h 31m",
+         "minutes": 631
         },
         "name": "FELLER,(DANIEL)",
         "tags": [
@@ -4481,8 +4481,8 @@
         "craft": "CO",
         "hos": {
          "band": "green",
-         "label": "10h 33m",
-         "minutes": 633
+         "label": "10h 31m",
+         "minutes": 631
         },
         "name": "PEREZ,(JASPER)",
         "tags": [
@@ -4503,8 +4503,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "4h 18m",
-         "minutes": 258
+         "label": "4h 16m",
+         "minutes": 256
         },
         "name": "STANSBERRY,(CHANDLER)"
        },
@@ -4512,8 +4512,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "4h 18m",
-         "minutes": 258
+         "label": "4h 16m",
+         "minutes": 256
         },
         "name": "MOFFITT,(LUCAS)"
        }
