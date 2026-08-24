@@ -26,7 +26,25 @@
         var bundleRoot = base ? base + '/bundle' : './bundle';
         setBundlePaths(bundleRoot);
       }
-      initApp().catch(function(err) {
+      initApp().then(function() {
+        // Deep-link support (2026-08-24): rr-app/index.html#q=<query> pre-runs
+        // the viewer's own Search tab -- the main app's Search tile hands off
+        // here instead of double-loading the doc bundle. Retry briefly: the
+        // search input mounts after the bundle load completes.
+        var m = /[#&]q=([^&]+)/.exec(window.location.hash || '');
+        if (m) {
+          var q = decodeURIComponent(m[1]);
+          var tries = 0;
+          var t = setInterval(function() {
+            var inp = document.querySelector('.rr-app-main input');
+            if (inp) {
+              clearInterval(t);
+              inp.value = q;
+              inp.dispatchEvent(new Event('input', { bubbles: true }));
+            } else if (++tries > 40) { clearInterval(t); }
+          }, 250);
+        }
+      }).catch(function(err) {
         console.error('initApp error:', err);
         document.body.innerHTML = '<div class="rr-load-error"><p>Failed to load documents: ' + (err.message || err) + '</p><button onclick="location.reload()">Retry</button></div>';
       });

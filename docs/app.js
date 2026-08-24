@@ -1021,6 +1021,16 @@ function renderSearchView() {
     box.appendChild(el("div", "table-title", "AS RUN (history)"));
     box.appendChild(buildTable(["Date", "Train", "On Duty", "Tie Up", "Route", "Pool"], hrows));
   }
+  // RULES & DOCUMENTS: zero-payload hand-off to the doc viewer's own
+  // full-bundle search (rr-app deep link pre-fills its Search tab). We do
+  // NOT re-download the multi-MB bundle into this app just to search it.
+  box.appendChild(el("div", "table-title", "RULES & DOCUMENTS"));
+  const docLink = el("a", null,
+    `Search the rulebooks, timetables, notices & orders for "${q}" →`);
+  docLink.href = "rr-app/index.html#q=" + encodeURIComponent(q);
+  docLink.style.cssText = "display:block;padding:6px 0;color:#ff6600;" +
+    "text-decoration:none;font-weight:600";
+  box.appendChild(docLink);
   showTable(box);
   return null;
 }
