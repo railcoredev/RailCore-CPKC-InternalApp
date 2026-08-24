@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "active",
-  "collection_message": "Light sweep sched_20260824_114106.",
+  "collection_message": "Light sweep sched_20260824_114717.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-24T16:46:57+00:00",
+  "generated_at": "2026-08-24T16:48:56+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260824_114106",
@@ -2354,8 +2354,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 48m",
-         "minutes": 468
+         "label": "7h 46m",
+         "minutes": 466
         },
         "name": "JOHNSON,(CHAD)",
         "tags": [
@@ -2366,8 +2366,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 48m",
-         "minutes": 468
+         "label": "7h 46m",
+         "minutes": 466
         },
         "name": "FRIEND,(JONATHON)",
         "tags": [
@@ -4245,8 +4245,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 08m",
-         "minutes": 428
+         "label": "7h 06m",
+         "minutes": 426
         },
         "name": "POFFENBERGER,(TODD)"
        },
@@ -4254,8 +4254,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 08m",
-         "minutes": 428
+         "label": "7h 06m",
+         "minutes": 426
         },
         "name": "RECKNAGEL,(LUKE)"
        },
@@ -4263,8 +4263,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "7h 08m",
-         "minutes": 428
+         "label": "7h 06m",
+         "minutes": 426
         },
         "name": "PARKHURST,(CODY)"
        }
@@ -4333,8 +4333,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 58m",
-         "minutes": 58
+         "label": "0h 56m",
+         "minutes": 56
         },
         "name": "FELLER,(DANIEL)",
         "tags": [
@@ -4367,8 +4367,8 @@
         "craft": "CO",
         "hos": {
          "band": "orange",
-         "label": "0h 58m",
-         "minutes": 58
+         "label": "0h 56m",
+         "minutes": 56
         },
         "name": "PEREZ,(JASPER)",
         "tags": [
@@ -4389,8 +4389,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 48m",
-         "minutes": 468
+         "label": "7h 46m",
+         "minutes": 466
         },
         "name": "BRESHEARS,(CHRIS)"
        },
@@ -4398,8 +4398,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 48m",
-         "minutes": 468
+         "label": "7h 46m",
+         "minutes": 466
         },
         "name": "KRUGER,(COLE)"
        }
@@ -4438,8 +4438,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "11h 13m",
-         "minutes": 673
+         "label": "11h 11m",
+         "minutes": 671
         },
         "name": "STONE,(JOSH)"
        },
@@ -4447,8 +4447,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "11h 13m",
-         "minutes": 673
+         "label": "11h 11m",
+         "minutes": 671
         },
         "name": "AKERS,(MATTHEW)"
        }
@@ -4487,8 +4487,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 58m",
-         "minutes": 538
+         "label": "8h 56m",
+         "minutes": 536
         },
         "name": "BELCHER,(JOHN)"
        },
@@ -4496,8 +4496,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 58m",
-         "minutes": 538
+         "label": "8h 56m",
+         "minutes": 536
         },
         "name": "COLLINS,(THADD)"
        }
@@ -6072,8 +6072,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 33m",
-         "minutes": 513
+         "label": "8h 31m",
+         "minutes": 511
         },
         "name": "HOUSE,(JOSH)"
        },
@@ -6081,8 +6081,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 33m",
-         "minutes": 513
+         "label": "8h 31m",
+         "minutes": 511
         },
         "name": "PEREZ,(NICHOLAS)"
        }
@@ -8984,16 +8984,6 @@
    "train": "252-24",
    "when": "2026-08-24T18:35",
    "detected_at": "2026-08-24T09:22:38",
-   "station": "04690",
-   "downstream": "04664",
-   "note": "Dropped from 04690 lineup while still posted at 04664."
-  },
-  {
-   "id": "P1|375-550|04690|2026-08-24",
-   "type": "upstream_unlisting",
-   "train": "375-550",
-   "when": "2026-08-24T06:45",
-   "detected_at": "2026-08-24T07:21:30",
    "station": "04690",
    "downstream": "04664",
    "note": "Dropped from 04690 lineup while still posted at 04664."
