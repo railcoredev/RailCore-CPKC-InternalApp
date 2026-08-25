@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-25T02:33:03+00:00",
+  "generated_at": "2026-08-25T02:53:13+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260824_175635",
@@ -2234,8 +2234,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "5h 47m",
-         "minutes": 347
+         "label": "5h 27m",
+         "minutes": 327
         },
         "name": "MUSSINGTON,(SOMORI)"
        },
@@ -2243,8 +2243,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "5h 47m",
-         "minutes": 347
+         "label": "5h 27m",
+         "minutes": 327
         },
         "name": "LEPPERT,(RICHARD)"
        }
@@ -2313,8 +2313,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 42m",
-         "minutes": 462
+         "label": "7h 22m",
+         "minutes": 442
         },
         "name": "WHITWORTH,(JOHN)"
        },
@@ -2322,8 +2322,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 42m",
-         "minutes": 462
+         "label": "7h 22m",
+         "minutes": 442
         },
         "name": "ELLIOTT,(SCOTT)"
        }
@@ -4138,8 +4138,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 42m",
-         "minutes": 222
+         "label": "3h 22m",
+         "minutes": 202
         },
         "name": "HATFIELD,(JARROD)"
        },
@@ -4147,8 +4147,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 42m",
-         "minutes": 222
+         "label": "3h 22m",
+         "minutes": 202
         },
         "name": "STONEHOUSE,(ZACH)"
        }
@@ -4178,8 +4178,8 @@
         "craft": "TT",
         "hos": {
          "band": "yellow",
-         "label": "3h 42m",
-         "minutes": 222
+         "label": "3h 22m",
+         "minutes": 202
         },
         "name": "CONWELL,(JOSHUA)"
        }
@@ -4197,8 +4197,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 27m",
-         "minutes": 507
+         "label": "8h 07m",
+         "minutes": 487
         },
         "name": "MYRICK,(CHEVAS)"
        },
@@ -4206,8 +4206,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 27m",
-         "minutes": 507
+         "label": "8h 07m",
+         "minutes": 487
         },
         "name": "BORMANN,(HAYDEN)"
        }
@@ -5692,8 +5692,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "5h 12m",
-         "minutes": 312
+         "label": "4h 52m",
+         "minutes": 292
         },
         "name": "JACKMAN,(MATT)",
         "tags": [
@@ -5704,8 +5704,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "5h 12m",
-         "minutes": 312
+         "label": "4h 52m",
+         "minutes": 292
         },
         "name": "LINDLY,(DONALD)",
         "tags": [
@@ -5716,8 +5716,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "5h 12m",
-         "minutes": 312
+         "label": "4h 52m",
+         "minutes": 292
         },
         "name": "FERNANDEZ,(DANILO)",
         "tags": [
@@ -5849,8 +5849,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 27m",
-         "minutes": 447
+         "label": "7h 07m",
+         "minutes": 427
         },
         "name": "ROBERTS,(KIMBERLY)"
        },
@@ -5858,8 +5858,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 27m",
-         "minutes": 447
+         "label": "7h 07m",
+         "minutes": 427
         },
         "name": "HARTMAN,(JAMES)"
        }
@@ -22245,10 +22245,10 @@
    "last_confirmed": "2026-08-25"
   },
   {
-   "name": "TILLIS,(ETHAN)NQBV",
+   "name": "TILLIS,(ETHAN)",
    "code": "V",
    "label": "Off on Vacation",
-   "assignment": "0001",
+   "assignment": "",
    "since": "2026-08-24",
    "terminal": "OT",
    "carryover": false,
