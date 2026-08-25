@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Awaiting login after session loss.",
+  "collection_message": "Session lost; waiting at the RSA prompt.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-25T08:16:07+00:00",
+  "generated_at": "2026-08-25T08:17:11+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260824_175635",
@@ -2234,8 +2234,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 04m",
-         "minutes": 4
+         "label": "0h 03m",
+         "minutes": 3
         },
         "name": "MUSSINGTON,(SOMORI)"
        },
@@ -2243,8 +2243,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 04m",
-         "minutes": 4
+         "label": "0h 03m",
+         "minutes": 3
         },
         "name": "LEPPERT,(RICHARD)"
        }
@@ -2313,8 +2313,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 59m",
-         "minutes": 119
+         "label": "1h 58m",
+         "minutes": 118
         },
         "name": "WHITWORTH,(JOHN)"
        },
@@ -2322,8 +2322,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "1h 59m",
-         "minutes": 119
+         "label": "1h 58m",
+         "minutes": 118
         },
         "name": "ELLIOTT,(SCOTT)"
        }
@@ -4168,8 +4168,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "2h 44m",
-         "minutes": 164
+         "label": "2h 43m",
+         "minutes": 163
         },
         "name": "MYRICK,(CHEVAS)"
        },
@@ -4177,8 +4177,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "2h 44m",
-         "minutes": 164
+         "label": "2h 43m",
+         "minutes": 163
         },
         "name": "BORMANN,(HAYDEN)"
        }
@@ -5783,8 +5783,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 44m",
-         "minutes": 104
+         "label": "1h 43m",
+         "minutes": 103
         },
         "name": "ROBERTS,(KIMBERLY)"
        },
@@ -5792,8 +5792,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "1h 44m",
-         "minutes": 104
+         "label": "1h 43m",
+         "minutes": 103
         },
         "name": "HARTMAN,(JAMES)"
        }
