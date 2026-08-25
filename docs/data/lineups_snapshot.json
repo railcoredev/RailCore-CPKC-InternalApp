@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-25T06:52:18+00:00",
+  "generated_at": "2026-08-25T07:12:28+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260824_175635",
@@ -2234,8 +2234,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 28m",
-         "minutes": 88
+         "label": "1h 08m",
+         "minutes": 68
         },
         "name": "MUSSINGTON,(SOMORI)"
        },
@@ -2243,8 +2243,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "1h 28m",
-         "minutes": 88
+         "label": "1h 08m",
+         "minutes": 68
         },
         "name": "LEPPERT,(RICHARD)"
        }
@@ -2313,8 +2313,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 23m",
-         "minutes": 203
+         "label": "3h 03m",
+         "minutes": 183
         },
         "name": "WHITWORTH,(JOHN)"
        },
@@ -2322,8 +2322,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 23m",
-         "minutes": 203
+         "label": "3h 03m",
+         "minutes": 183
         },
         "name": "ELLIOTT,(SCOTT)"
        }
@@ -4167,18 +4167,18 @@
        {
         "craft": "EN",
         "hos": {
-         "band": "green",
-         "label": "4h 08m",
-         "minutes": 248
+         "band": "yellow",
+         "label": "3h 48m",
+         "minutes": 228
         },
         "name": "MYRICK,(CHEVAS)"
        },
        {
         "craft": "AE",
         "hos": {
-         "band": "green",
-         "label": "4h 08m",
-         "minutes": 248
+         "band": "yellow",
+         "label": "3h 48m",
+         "minutes": 228
         },
         "name": "BORMANN,(HAYDEN)"
        }
@@ -5663,8 +5663,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 53m",
-         "minutes": 53
+         "label": "0h 33m",
+         "minutes": 33
         },
         "name": "JACKMAN,(MATT)",
         "tags": [
@@ -5675,8 +5675,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 53m",
-         "minutes": 53
+         "label": "0h 33m",
+         "minutes": 33
         },
         "name": "LINDLY,(DONALD)",
         "tags": [
@@ -5687,8 +5687,8 @@
         "craft": "ET",
         "hos": {
          "band": "orange",
-         "label": "0h 53m",
-         "minutes": 53
+         "label": "0h 33m",
+         "minutes": 33
         },
         "name": "FERNANDEZ,(DANILO)",
         "tags": [
@@ -5820,8 +5820,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 08m",
-         "minutes": 188
+         "label": "2h 48m",
+         "minutes": 168
         },
         "name": "ROBERTS,(KIMBERLY)"
        },
@@ -5829,8 +5829,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 08m",
-         "minutes": 188
+         "label": "2h 48m",
+         "minutes": 168
         },
         "name": "HARTMAN,(JAMES)"
        }
@@ -8141,16 +8141,6 @@
    "station": "04540",
    "downstream": "04640",
    "note": "Dropped from 04540 lineup while still posted at 04640."
-  },
-  {
-   "id": "P1|181-21|04690|2026-08-24",
-   "type": "upstream_unlisting",
-   "train": "181-21",
-   "when": "2026-08-24T20:10",
-   "detected_at": "2026-08-24T19:50:46",
-   "station": "04690",
-   "downstream": "04640",
-   "note": "Dropped from 04690 lineup while still posted at 04640."
   },
   {
    "id": "P1|253-23|04690|2026-08-24",
