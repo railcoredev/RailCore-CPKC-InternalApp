@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Awaiting login after session loss.",
+  "collection_message": "Session lost; waiting at the RSA prompt.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-25T10:23:30+00:00",
+  "generated_at": "2026-08-25T10:24:34+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260824_175635",
@@ -4130,8 +4130,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 36m",
-         "minutes": 36
+         "label": "0h 35m",
+         "minutes": 35
         },
         "name": "MYRICK,(CHEVAS)"
        },
@@ -4139,8 +4139,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 36m",
-         "minutes": 36
+         "label": "0h 35m",
+         "minutes": 35
         },
         "name": "BORMANN,(HAYDEN)"
        }
