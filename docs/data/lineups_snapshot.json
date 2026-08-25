@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-25T07:34:45+00:00",
+  "generated_at": "2026-08-25T07:54:55+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260824_175635",
@@ -2234,8 +2234,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 45m",
-         "minutes": 45
+         "label": "0h 25m",
+         "minutes": 25
         },
         "name": "MUSSINGTON,(SOMORI)"
        },
@@ -2243,8 +2243,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 45m",
-         "minutes": 45
+         "label": "0h 25m",
+         "minutes": 25
         },
         "name": "LEPPERT,(RICHARD)"
        }
@@ -2313,8 +2313,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "2h 40m",
-         "minutes": 160
+         "label": "2h 20m",
+         "minutes": 140
         },
         "name": "WHITWORTH,(JOHN)"
        },
@@ -2322,8 +2322,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "2h 40m",
-         "minutes": 160
+         "label": "2h 20m",
+         "minutes": 140
         },
         "name": "ELLIOTT,(SCOTT)"
        }
@@ -4168,8 +4168,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 25m",
-         "minutes": 205
+         "label": "3h 05m",
+         "minutes": 185
         },
         "name": "MYRICK,(CHEVAS)"
        },
@@ -4177,8 +4177,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 25m",
-         "minutes": 205
+         "label": "3h 05m",
+         "minutes": 185
         },
         "name": "BORMANN,(HAYDEN)"
        }
@@ -5656,46 +5656,9 @@
       "trn_planned_crew": []
      },
      {
-      "crewed": true,
+      "crewed": false,
       "date_time": "08/24-2300",
-      "eng_crew": [
-       {
-        "craft": "EN",
-        "hos": {
-         "band": "orange",
-         "label": "0h 10m",
-         "minutes": 10
-        },
-        "name": "JACKMAN,(MATT)",
-        "tags": [
-         "01"
-        ]
-       },
-       {
-        "craft": "AE",
-        "hos": {
-         "band": "orange",
-         "label": "0h 10m",
-         "minutes": 10
-        },
-        "name": "LINDLY,(DONALD)",
-        "tags": [
-         "01"
-        ]
-       },
-       {
-        "craft": "ET",
-        "hos": {
-         "band": "orange",
-         "label": "0h 10m",
-         "minutes": 10
-        },
-        "name": "FERNANDEZ,(DANILO)",
-        "tags": [
-         "01"
-        ]
-       }
-      ],
+      "eng_crew": [],
       "eng_crew_count": "1",
       "eng_crew_district": "KSPB",
       "eng_crew_pool": "PS",
@@ -5820,8 +5783,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "2h 25m",
-         "minutes": 145
+         "label": "2h 05m",
+         "minutes": 125
         },
         "name": "ROBERTS,(KIMBERLY)"
        },
@@ -5829,8 +5792,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "2h 25m",
-         "minutes": 145
+         "label": "2h 05m",
+         "minutes": 125
         },
         "name": "HARTMAN,(JAMES)"
        }
