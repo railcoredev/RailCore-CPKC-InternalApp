@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Awaiting login after session loss.",
+  "collection_message": "Session lost; waiting at the RSA prompt.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-25T10:02:18+00:00",
+  "generated_at": "2026-08-25T10:03:22+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260824_175635",
@@ -2294,8 +2294,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 13m",
-         "minutes": 13
+         "label": "0h 12m",
+         "minutes": 12
         },
         "name": "WHITWORTH,(JOHN)"
        },
@@ -2303,8 +2303,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 13m",
-         "minutes": 13
+         "label": "0h 12m",
+         "minutes": 12
         },
         "name": "ELLIOTT,(SCOTT)"
        }
@@ -4149,8 +4149,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 58m",
-         "minutes": 58
+         "label": "0h 57m",
+         "minutes": 57
         },
         "name": "MYRICK,(CHEVAS)"
        },
@@ -4158,8 +4158,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 58m",
-         "minutes": 58
+         "label": "0h 57m",
+         "minutes": 57
         },
         "name": "BORMANN,(HAYDEN)"
        }
