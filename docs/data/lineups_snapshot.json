@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Awaiting login after session loss.",
+  "collection_message": "Session lost; waiting at the RSA prompt.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-26T23:35:59+00:00",
+  "generated_at": "2026-08-26T23:37:04+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260826_110450",
@@ -4280,8 +4280,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "4h 09m",
-         "minutes": 249
+         "label": "4h 08m",
+         "minutes": 248
         },
         "name": "HAUT,(MICHAEL)"
        },
@@ -4289,8 +4289,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "4h 09m",
-         "minutes": 249
+         "label": "4h 08m",
+         "minutes": 248
         },
         "name": "KINER,(ERICK)"
        }
@@ -4359,8 +4359,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "4h 54m",
-         "minutes": 294
+         "label": "4h 53m",
+         "minutes": 293
         },
         "name": "TAYLOR,(WILLIAM)"
        },
@@ -4368,8 +4368,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "4h 54m",
-         "minutes": 294
+         "label": "4h 53m",
+         "minutes": 293
         },
         "name": "SCOTT,(ZACHARY)"
        }
@@ -4408,8 +4408,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "4h 24m",
-         "minutes": 264
+         "label": "4h 23m",
+         "minutes": 263
         },
         "name": "BURROUGHS,(CHARLES)"
        },
@@ -4417,8 +4417,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "4h 24m",
-         "minutes": 264
+         "label": "4h 23m",
+         "minutes": 263
         },
         "name": "OLDFIELD,(COLTON)"
        }
@@ -4457,8 +4457,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 54m",
-         "minutes": 234
+         "label": "3h 53m",
+         "minutes": 233
         },
         "name": "CASHATT,(DAKOTA)"
        },
@@ -4466,8 +4466,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 54m",
-         "minutes": 234
+         "label": "3h 53m",
+         "minutes": 233
         },
         "name": "JAMESON,(DANIELLE)"
        }
@@ -5952,8 +5952,8 @@
         "craft": "ET",
         "hos": {
          "band": "orange",
-         "label": "1h 39m",
-         "minutes": 99
+         "label": "1h 38m",
+         "minutes": 98
         },
         "name": "KEOMANIVONG,(SONNY)",
         "tags": [
