@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-26T10:24:57+00:00",
+  "generated_at": "2026-08-26T10:45:08+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260825_220912",
@@ -2564,8 +2564,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 50m",
-         "minutes": 50
+         "label": "0h 30m",
+         "minutes": 30
         },
         "name": "GOEKEN,(JUSTIN)"
        },
@@ -2573,8 +2573,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 50m",
-         "minutes": 50
+         "label": "0h 30m",
+         "minutes": 30
         },
         "name": "GANZER,(JASON)"
        },
@@ -2582,8 +2582,8 @@
         "craft": "ET",
         "hos": {
          "band": "orange",
-         "label": "0h 50m",
-         "minutes": 50
+         "label": "0h 30m",
+         "minutes": 30
         },
         "name": "REAVES,(DALTON)"
        }
@@ -2652,8 +2652,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 20m",
-         "minutes": 200
+         "label": "3h 00m",
+         "minutes": 180
         },
         "name": "MYRICK,(CHEVAS)"
        },
@@ -2661,8 +2661,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 20m",
-         "minutes": 200
+         "label": "3h 00m",
+         "minutes": 180
         },
         "name": "BORMANN,(HAYDEN)"
        }
@@ -2761,8 +2761,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "2h 45m",
-         "minutes": 165
+         "label": "2h 25m",
+         "minutes": 145
         },
         "name": "CADY,(AARON)"
        },
@@ -2770,8 +2770,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "2h 45m",
-         "minutes": 165
+         "label": "2h 25m",
+         "minutes": 145
         },
         "name": "HARDEN,(LEVI)"
        },
@@ -2779,8 +2779,8 @@
         "craft": "ET",
         "hos": {
          "band": "yellow",
-         "label": "2h 45m",
-         "minutes": 165
+         "label": "2h 25m",
+         "minutes": 145
         },
         "name": "STRADLING,(DALLIN)"
        }
@@ -2909,8 +2909,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 05m",
-         "minutes": 365
+         "label": "5h 45m",
+         "minutes": 345
         },
         "name": "HILLERY,(RYAN)"
        },
@@ -2918,8 +2918,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 05m",
-         "minutes": 365
+         "label": "5h 45m",
+         "minutes": 345
         },
         "name": "HOFFMAN,(ALAN)"
        },
@@ -2927,8 +2927,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "6h 05m",
-         "minutes": 365
+         "label": "5h 45m",
+         "minutes": 345
         },
         "name": "IYOHA,(OSAYANDE)"
        }
