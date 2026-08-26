@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-26T04:39:18+00:00",
+  "generated_at": "2026-08-26T04:59:28+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260825_220912",
@@ -2564,8 +2564,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 36m",
-         "minutes": 396
+         "label": "6h 16m",
+         "minutes": 376
         },
         "name": "GOEKEN,(JUSTIN)"
        },
@@ -2573,8 +2573,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 36m",
-         "minutes": 396
+         "label": "6h 16m",
+         "minutes": 376
         },
         "name": "GANZER,(JASON)"
        },
@@ -2582,8 +2582,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "6h 36m",
-         "minutes": 396
+         "label": "6h 16m",
+         "minutes": 376
         },
         "name": "REAVES,(DALTON)"
        }
@@ -2652,8 +2652,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "9h 06m",
-         "minutes": 546
+         "label": "8h 46m",
+         "minutes": 526
         },
         "name": "MYRICK,(CHEVAS)"
        },
@@ -2661,8 +2661,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "9h 06m",
-         "minutes": 546
+         "label": "8h 46m",
+         "minutes": 526
         },
         "name": "BORMANN,(HAYDEN)"
        }
@@ -2761,8 +2761,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 31m",
-         "minutes": 511
+         "label": "8h 11m",
+         "minutes": 491
         },
         "name": "CADY,(AARON)"
        },
@@ -2770,8 +2770,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 31m",
-         "minutes": 511
+         "label": "8h 11m",
+         "minutes": 491
         },
         "name": "HARDEN,(LEVI)"
        },
@@ -2779,8 +2779,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "8h 31m",
-         "minutes": 511
+         "label": "8h 11m",
+         "minutes": 491
         },
         "name": "STRADLING,(DALLIN)"
        }
@@ -2909,8 +2909,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "11h 51m",
-         "minutes": 711
+         "label": "11h 31m",
+         "minutes": 691
         },
         "name": "HILLERY,(RYAN)"
        },
@@ -2918,8 +2918,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "11h 51m",
-         "minutes": 711
+         "label": "11h 31m",
+         "minutes": 691
         },
         "name": "HOFFMAN,(ALAN)"
        },
@@ -2927,8 +2927,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "11h 51m",
-         "minutes": 711
+         "label": "11h 31m",
+         "minutes": 691
         },
         "name": "IYOHA,(OSAYANDE)"
        }
@@ -4622,9 +4622,9 @@
        {
         "craft": "EN",
         "hos": {
-         "band": "yellow",
-         "label": "2h 06m",
-         "minutes": 126
+         "band": "orange",
+         "label": "1h 46m",
+         "minutes": 106
         },
         "name": "SPERSTAD,(JOHN)",
         "tags": [
@@ -4634,9 +4634,9 @@
        {
         "craft": "AE",
         "hos": {
-         "band": "yellow",
-         "label": "2h 06m",
-         "minutes": 126
+         "band": "orange",
+         "label": "1h 46m",
+         "minutes": 106
         },
         "name": "ROBINSON,(SHERRON)",
         "tags": [
@@ -4668,9 +4668,9 @@
        {
         "craft": "TT",
         "hos": {
-         "band": "yellow",
-         "label": "2h 06m",
-         "minutes": 126
+         "band": "orange",
+         "label": "1h 46m",
+         "minutes": 106
         },
         "name": "ODINSON,(VIDAR)",
         "tags": [
@@ -6047,8 +6047,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 21m",
-         "minutes": 201
+         "label": "3h 01m",
+         "minutes": 181
         },
         "name": "BELCHER,(JOHN)"
        },
@@ -6056,8 +6056,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 21m",
-         "minutes": 201
+         "label": "3h 01m",
+         "minutes": 181
         },
         "name": "COLLINS,(THADD)"
        }
@@ -22450,10 +22450,10 @@
    "last_confirmed": "2026-08-26"
   },
   {
-   "name": "BURCH,(RICK)M/P",
+   "name": "BURCH,(RICK)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "KA04",
+   "assignment": "",
    "since": "2026-08-25",
    "terminal": "KC",
    "carryover": false,
@@ -22970,10 +22970,10 @@
    "last_confirmed": "2026-08-26"
   },
   {
-   "name": "MOFFITT,(JASON)P",
+   "name": "MOFFITT,(JASON)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "KA04",
+   "assignment": "",
    "since": "2026-08-23",
    "terminal": "KC",
    "carryover": false,
