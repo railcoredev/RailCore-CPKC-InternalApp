@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "active",
-  "collection_message": "Light sweep sched_20260826_221404.",
+  "collection_message": "Light sweep sched_20260826_221955.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-27T03:19:43+00:00",
+  "generated_at": "2026-08-27T03:23:58+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260826_221404",
@@ -2443,12 +2443,12 @@
        {
         "craft": "EN",
         "name": "NEUBERG,(RUSSELL)",
-        "on_in": "0h 25m"
+        "on_in": "0h 21m"
        },
        {
         "craft": "AE",
         "name": "LASCHE,(DAVID)",
-        "on_in": "0h 25m"
+        "on_in": "0h 21m"
        }
       ],
       "eng_crew_count": "0",
@@ -2475,7 +2475,7 @@
        {
         "craft": "TT",
         "name": "ODINSON,(VIDAR)",
-        "on_in": "0h 25m"
+        "on_in": "0h 21m"
        }
       ],
       "trn_crew_count": "0",
@@ -2521,8 +2521,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 15m",
-         "minutes": 615
+         "label": "10h 11m",
+         "minutes": 611
         },
         "name": "WHITWORTH,(JOHN)"
        },
@@ -2530,8 +2530,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "10h 15m",
-         "minutes": 615
+         "label": "10h 11m",
+         "minutes": 611
         },
         "name": "AMOUZ,(ADJIWANOU)"
        },
@@ -2539,8 +2539,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "10h 15m",
-         "minutes": 615
+         "label": "10h 11m",
+         "minutes": 611
         },
         "name": "HAGEN,(ANTHONY)"
        }
@@ -2579,8 +2579,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "11h 40m",
-         "minutes": 700
+         "label": "11h 36m",
+         "minutes": 696
         },
         "name": "FLYNN,(CASEY)"
        },
@@ -2588,8 +2588,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "11h 40m",
-         "minutes": 700
+         "label": "11h 36m",
+         "minutes": 696
         },
         "name": "SINDT,(STEVEN)"
        }
@@ -2657,7 +2657,7 @@
        {
         "craft": "EN",
         "name": "SPERSTAD,(JOHN)",
-        "on_in": "1h 10m",
+        "on_in": "1h 06m",
         "tags": [
          "recrew"
         ]
@@ -2665,7 +2665,7 @@
        {
         "craft": "AE",
         "name": "ROBINSON,(SHERRON)",
-        "on_in": "1h 10m",
+        "on_in": "1h 06m",
         "tags": [
          "recrew"
         ]
@@ -2794,12 +2794,12 @@
        {
         "craft": "EN",
         "name": "HANK,(MATT)",
-        "on_in": "0h 40m"
+        "on_in": "0h 36m"
        },
        {
         "craft": "AE",
         "name": "MERRELL,(CHARISE)",
-        "on_in": "0h 40m"
+        "on_in": "0h 36m"
        }
       ],
       "eng_crew_count": "0",
@@ -2826,7 +2826,7 @@
        {
         "craft": "TT",
         "name": "LE,(HUY)",
-        "on_in": "0h 40m"
+        "on_in": "0h 36m"
        }
       ],
       "trn_crew_count": "0",
@@ -4377,7 +4377,7 @@
        {
         "craft": "EN",
         "name": "RISH,(LUCUS)",
-        "on_in": "1h 05m",
+        "on_in": "1h 01m",
         "tags": [
          "recrew"
         ]
@@ -4407,7 +4407,7 @@
        {
         "craft": "CO",
         "name": "KNIGHTS,(JARRETT)",
-        "on_in": "1h 05m",
+        "on_in": "1h 01m",
         "tags": [
          "recrew"
         ]
@@ -4426,8 +4426,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 10m",
-         "minutes": 610
+         "label": "10h 06m",
+         "minutes": 606
         },
         "name": "MOFFITT,(JASON)"
        },
@@ -4435,8 +4435,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "10h 10m",
-         "minutes": 610
+         "label": "10h 06m",
+         "minutes": 606
         },
         "name": "BURCH,(RICK)"
        }
@@ -4474,12 +4474,12 @@
        {
         "craft": "EN",
         "name": "PILLOW,(JOSHUA)",
-        "on_in": "1h 30m"
+        "on_in": "1h 26m"
        },
        {
         "craft": "AE",
         "name": "DACOSTA,(HERCULANO)",
-        "on_in": "1h 30m"
+        "on_in": "1h 26m"
        }
       ],
       "eng_crew_count": "0",
@@ -4515,7 +4515,7 @@
        {
         "craft": "EN",
         "name": "EDWARDS,(DERICK)",
-        "on_in": "1h 20m",
+        "on_in": "1h 16m",
         "tags": [
          "recrew"
         ]
@@ -4523,7 +4523,7 @@
        {
         "craft": "AE",
         "name": "FULKERSON,(DAN)",
-        "on_in": "1h 20m",
+        "on_in": "1h 16m",
         "tags": [
          "recrew"
         ]
@@ -4531,7 +4531,7 @@
        {
         "craft": "ET",
         "name": "STRADLING,(DALLIN)",
-        "on_in": "1h 20m",
+        "on_in": "1h 16m",
         "tags": [
          "recrew"
         ]
@@ -4571,8 +4571,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 40m",
-         "minutes": 520
+         "label": "8h 36m",
+         "minutes": 516
         },
         "name": "TURNER,(TERRELL)",
         "tags": [
@@ -4583,8 +4583,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 40m",
-         "minutes": 520
+         "label": "8h 36m",
+         "minutes": 516
         },
         "name": "NEER,(DUSTIN)",
         "tags": [
@@ -5952,8 +5952,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 10m",
-         "minutes": 430
+         "label": "7h 06m",
+         "minutes": 426
         },
         "name": "LINEBAUGH,(MATT)"
        },
@@ -5961,8 +5961,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 10m",
-         "minutes": 430
+         "label": "7h 06m",
+         "minutes": 426
         },
         "name": "BRADLEY,(COLTON)"
        }
@@ -6210,7 +6210,7 @@
        {
         "craft": "ET",
         "name": "BROSE,(CAREY)",
-        "on_in": "1h 25m",
+        "on_in": "1h 21m",
         "tags": [
          "ET"
         ]
