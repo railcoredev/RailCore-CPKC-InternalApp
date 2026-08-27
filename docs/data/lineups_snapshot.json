@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Login incomplete (RSA pending); will keep retrying.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-27T20:22:01+00:00",
+  "generated_at": "2026-08-27T20:35:51+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260827_145540",
@@ -4280,8 +4280,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 08m",
-         "minutes": 188
+         "label": "2h 54m",
+         "minutes": 174
         },
         "name": "LEWIS,(BRANDON)"
        },
@@ -4289,8 +4289,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 08m",
-         "minutes": 188
+         "label": "2h 54m",
+         "minutes": 174
         },
         "name": "FULTZ,(CALEB)"
        }
@@ -4359,8 +4359,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 08m",
-         "minutes": 428
+         "label": "6h 54m",
+         "minutes": 414
         },
         "name": "EHRMANN,(CHRIS)"
        },
@@ -4368,8 +4368,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 08m",
-         "minutes": 428
+         "label": "6h 54m",
+         "minutes": 414
         },
         "name": "LEPPERT,(RICHARD)"
        }
@@ -4408,8 +4408,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 08m",
-         "minutes": 188
+         "label": "2h 54m",
+         "minutes": 174
         },
         "name": "LEWIS,(BRANDON)"
        },
@@ -4417,8 +4417,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 08m",
-         "minutes": 188
+         "label": "2h 54m",
+         "minutes": 174
         },
         "name": "FULTZ,(CALEB)"
        }
@@ -4457,8 +4457,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "9h 38m",
-         "minutes": 578
+         "label": "9h 24m",
+         "minutes": 564
         },
         "name": "LOUGHMILLER,(BARRY)"
        },
@@ -4466,8 +4466,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "9h 38m",
-         "minutes": 578
+         "label": "9h 24m",
+         "minutes": 564
         },
         "name": "DORSEY,(STETSON)"
        }
@@ -5892,8 +5892,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 39m",
-         "minutes": 399
+         "label": "6h 25m",
+         "minutes": 385
         },
         "name": "STANSBERRY,(CHANDLER)"
        },
@@ -5901,8 +5901,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 39m",
-         "minutes": 399
+         "label": "6h 25m",
+         "minutes": 385
         },
         "name": "ADKINS,(CHRISTOPHER)"
        }
@@ -6061,8 +6061,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "9h 53m",
-         "minutes": 593
+         "label": "9h 39m",
+         "minutes": 579
         },
         "name": "TAYLOR,(WILLIAM)"
        },
@@ -6070,8 +6070,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "9h 53m",
-         "minutes": 593
+         "label": "9h 39m",
+         "minutes": 579
         },
         "name": "LANDGREBE,(NICHOLAS)"
        }
