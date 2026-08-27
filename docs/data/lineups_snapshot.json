@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-27T16:05:15+00:00",
+  "generated_at": "2026-08-27T16:25:26+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260827_005406",
@@ -2504,8 +2504,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 25m",
-         "minutes": 25
+         "label": "0h 05m",
+         "minutes": 5
         },
         "name": "SPERSTAD,(JOHN)",
         "tags": [
@@ -2516,8 +2516,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 25m",
-         "minutes": 25
+         "label": "0h 05m",
+         "minutes": 5
         },
         "name": "ROBINSON,(SHERRON)",
         "tags": [
@@ -4268,22 +4268,9 @@
     "name": "Ottumwa",
     "trains": [
      {
-      "crewed": true,
+      "crewed": false,
       "date_time": "08/27-0148",
-      "eng_crew": [
-       {
-        "craft": "EN",
-        "hos": {
-         "band": "orange",
-         "label": "0h 20m",
-         "minutes": 20
-        },
-        "name": "RISH,(LUCUS)",
-        "tags": [
-         "recrew"
-        ]
-       }
-      ],
+      "eng_crew": [],
       "eng_crew_count": "1",
       "eng_crew_district": "8IDA",
       "eng_crew_pool": "DA",
@@ -4304,20 +4291,7 @@
       "subdistrict": "",
       "train_asgn": "253-25",
       "train_type": "C",
-      "trn_crew": [
-       {
-        "craft": "CO",
-        "hos": {
-         "band": "orange",
-         "label": "0h 20m",
-         "minutes": 20
-        },
-        "name": "KNIGHTS,(JARRETT)",
-        "tags": [
-         "recrew"
-        ]
-       }
-      ],
+      "trn_crew": [],
       "trn_crew_count": "1",
       "trn_crew_district": "8IDA",
       "trn_crew_pool": "DA",
@@ -4361,8 +4335,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 45m",
-         "minutes": 45
+         "label": "0h 25m",
+         "minutes": 25
         },
         "name": "PILLOW,(JOSHUA)"
        },
@@ -4370,8 +4344,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 45m",
-         "minutes": 45
+         "label": "0h 25m",
+         "minutes": 25
         },
         "name": "DACOSTA,(HERCULANO)"
        }
@@ -4410,8 +4384,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 35m",
-         "minutes": 35
+         "label": "0h 15m",
+         "minutes": 15
         },
         "name": "EDWARDS,(DERICK)",
         "tags": [
@@ -4422,8 +4396,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 35m",
-         "minutes": 35
+         "label": "0h 15m",
+         "minutes": 15
         },
         "name": "FULKERSON,(DAN)",
         "tags": [
@@ -4434,8 +4408,8 @@
         "craft": "ET",
         "hos": {
          "band": "orange",
-         "label": "0h 35m",
-         "minutes": 35
+         "label": "0h 15m",
+         "minutes": 15
         },
         "name": "STRADLING,(DALLIN)",
         "tags": [
@@ -4477,8 +4451,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "2h 40m",
-         "minutes": 160
+         "label": "2h 20m",
+         "minutes": 140
         },
         "name": "PIATZ,(FRANK)",
         "tags": [
@@ -4489,8 +4463,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "2h 40m",
-         "minutes": 160
+         "label": "2h 20m",
+         "minutes": 140
         },
         "name": "YORK,(CHRISTOPHER)",
         "tags": [
@@ -6098,8 +6072,8 @@
         "craft": "ET",
         "hos": {
          "band": "orange",
-         "label": "0h 40m",
-         "minutes": 40
+         "label": "0h 20m",
+         "minutes": 20
         },
         "name": "BROSE,(CAREY)",
         "tags": [
@@ -21170,10 +21144,10 @@
    "last_confirmed": "2026-08-27"
   },
   {
-   "name": "HATFIELD,(JARROD)IFG",
+   "name": "HATFIELD,(JARROD)",
    "code": "W",
    "label": "Personal Leave Day",
-   "assignment": "SW09",
+   "assignment": "",
    "since": "2026-08-27",
    "terminal": "OT",
    "carryover": false,
@@ -21700,10 +21674,10 @@
    "last_confirmed": "2026-08-27"
   },
   {
-   "name": "STONEHOUSE,(ZACH)BV",
+   "name": "STONEHOUSE,(ZACH)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "SW01",
+   "assignment": "",
    "since": "2026-08-25",
    "terminal": "OT",
    "carryover": false,
