@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-27T17:51:34+00:00",
+  "generated_at": "2026-08-27T18:11:46+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260827_005406",
@@ -4370,8 +4370,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 53m",
-         "minutes": 53
+         "label": "0h 33m",
+         "minutes": 33
         },
         "name": "PIATZ,(FRANK)",
         "tags": [
@@ -4382,8 +4382,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 53m",
-         "minutes": 53
+         "label": "0h 33m",
+         "minutes": 33
         },
         "name": "YORK,(CHRISTOPHER)",
         "tags": [
