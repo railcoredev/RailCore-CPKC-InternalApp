@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-27T18:34:06+00:00",
+  "generated_at": "2026-08-27T18:54:16+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260827_005406",
@@ -4363,34 +4363,9 @@
       "trn_planned_crew": []
      },
      {
-      "crewed": true,
+      "crewed": false,
       "date_time": "08/27-0746",
-      "eng_crew": [
-       {
-        "craft": "EN",
-        "hos": {
-         "band": "orange",
-         "label": "0h 11m",
-         "minutes": 11
-        },
-        "name": "PIATZ,(FRANK)",
-        "tags": [
-         "recrew"
-        ]
-       },
-       {
-        "craft": "AE",
-        "hos": {
-         "band": "orange",
-         "label": "0h 11m",
-         "minutes": 11
-        },
-        "name": "YORK,(CHRISTOPHER)",
-        "tags": [
-         "recrew"
-        ]
-       }
-      ],
+      "eng_crew": [],
       "eng_crew_count": "0",
       "eng_crew_district": "8IOT",
       "eng_crew_pool": "SW",
