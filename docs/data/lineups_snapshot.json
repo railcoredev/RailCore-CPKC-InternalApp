@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Awaiting login after session loss.",
+  "collection_message": "Session lost; waiting at the RSA prompt.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-27T15:21:40+00:00",
+  "generated_at": "2026-08-27T15:22:44+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260827_005406",
@@ -2354,8 +2354,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 23m",
-         "minutes": 23
+         "label": "0h 22m",
+         "minutes": 22
         },
         "name": "NEUBERG,(RUSSELL)"
        },
@@ -2363,8 +2363,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 23m",
-         "minutes": 23
+         "label": "0h 22m",
+         "minutes": 22
         },
         "name": "LASCHE,(DAVID)"
        }
@@ -2394,8 +2394,8 @@
         "craft": "TT",
         "hos": {
          "band": "orange",
-         "label": "0h 23m",
-         "minutes": 23
+         "label": "0h 22m",
+         "minutes": 22
         },
         "name": "ODINSON,(VIDAR)"
        }
@@ -2533,8 +2533,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 08m",
-         "minutes": 68
+         "label": "1h 07m",
+         "minutes": 67
         },
         "name": "SPERSTAD,(JOHN)",
         "tags": [
@@ -2545,8 +2545,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "1h 08m",
-         "minutes": 68
+         "label": "1h 07m",
+         "minutes": 67
         },
         "name": "ROBINSON,(SHERRON)",
         "tags": [
@@ -2678,8 +2678,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 38m",
-         "minutes": 38
+         "label": "0h 37m",
+         "minutes": 37
         },
         "name": "HANK,(MATT)"
        },
@@ -2687,8 +2687,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 38m",
-         "minutes": 38
+         "label": "0h 37m",
+         "minutes": 37
         },
         "name": "MERRELL,(CHARISE)"
        }
@@ -2718,8 +2718,8 @@
         "craft": "TT",
         "hos": {
          "band": "orange",
-         "label": "0h 38m",
-         "minutes": 38
+         "label": "0h 37m",
+         "minutes": 37
         },
         "name": "LE,(HUY)"
        }
@@ -4333,8 +4333,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 03m",
-         "minutes": 63
+         "label": "1h 02m",
+         "minutes": 62
         },
         "name": "RISH,(LUCUS)",
         "tags": [
@@ -4367,8 +4367,8 @@
         "craft": "CO",
         "hos": {
          "band": "orange",
-         "label": "1h 03m",
-         "minutes": 63
+         "label": "1h 02m",
+         "minutes": 62
         },
         "name": "KNIGHTS,(JARRETT)",
         "tags": [
@@ -4419,8 +4419,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 28m",
-         "minutes": 88
+         "label": "1h 27m",
+         "minutes": 87
         },
         "name": "PILLOW,(JOSHUA)"
        },
@@ -4428,8 +4428,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "1h 28m",
-         "minutes": 88
+         "label": "1h 27m",
+         "minutes": 87
         },
         "name": "DACOSTA,(HERCULANO)"
        }
@@ -4468,8 +4468,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 18m",
-         "minutes": 78
+         "label": "1h 17m",
+         "minutes": 77
         },
         "name": "EDWARDS,(DERICK)",
         "tags": [
@@ -4480,8 +4480,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "1h 18m",
-         "minutes": 78
+         "label": "1h 17m",
+         "minutes": 77
         },
         "name": "FULKERSON,(DAN)",
         "tags": [
@@ -4492,8 +4492,8 @@
         "craft": "ET",
         "hos": {
          "band": "orange",
-         "label": "1h 18m",
-         "minutes": 78
+         "label": "1h 17m",
+         "minutes": 77
         },
         "name": "STRADLING,(DALLIN)",
         "tags": [
@@ -4535,8 +4535,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 23m",
-         "minutes": 203
+         "label": "3h 22m",
+         "minutes": 202
         },
         "name": "PIATZ,(FRANK)",
         "tags": [
@@ -4547,8 +4547,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 23m",
-         "minutes": 203
+         "label": "3h 22m",
+         "minutes": 202
         },
         "name": "YORK,(CHRISTOPHER)",
         "tags": [
@@ -6156,8 +6156,8 @@
         "craft": "ET",
         "hos": {
          "band": "orange",
-         "label": "1h 23m",
-         "minutes": 83
+         "label": "1h 22m",
+         "minutes": 82
         },
         "name": "BROSE,(CAREY)",
         "tags": [
