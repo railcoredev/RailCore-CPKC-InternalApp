@@ -4,7 +4,7 @@
   "collection_message": "Login incomplete (RSA pending); will keep retrying.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-28T00:49:00+00:00",
+  "generated_at": "2026-08-28T01:56:51+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260827_145540",
@@ -4339,18 +4339,18 @@
        {
         "craft": "EN",
         "hos": {
-         "band": "yellow",
-         "label": "2h 41m",
-         "minutes": 161
+         "band": "orange",
+         "label": "1h 33m",
+         "minutes": 93
         },
         "name": "EHRMANN,(CHRIS)"
        },
        {
         "craft": "AE",
         "hos": {
-         "band": "yellow",
-         "label": "2h 41m",
-         "minutes": 161
+         "band": "orange",
+         "label": "1h 33m",
+         "minutes": 93
         },
         "name": "LEPPERT,(RICHARD)"
        }
@@ -4419,8 +4419,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "5h 11m",
-         "minutes": 311
+         "label": "4h 03m",
+         "minutes": 243
         },
         "name": "LOUGHMILLER,(BARRY)"
        },
@@ -4428,8 +4428,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "5h 11m",
-         "minutes": 311
+         "label": "4h 03m",
+         "minutes": 243
         },
         "name": "DORSEY,(STETSON)"
        }
@@ -5853,18 +5853,18 @@
        {
         "craft": "EN",
         "hos": {
-         "band": "yellow",
-         "label": "2h 12m",
-         "minutes": 132
+         "band": "orange",
+         "label": "1h 04m",
+         "minutes": 64
         },
         "name": "STANSBERRY,(CHANDLER)"
        },
        {
         "craft": "AE",
         "hos": {
-         "band": "yellow",
-         "label": "2h 12m",
-         "minutes": 132
+         "band": "orange",
+         "label": "1h 04m",
+         "minutes": 64
         },
         "name": "ADKINS,(CHRISTOPHER)"
        }
@@ -6023,8 +6023,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "5h 26m",
-         "minutes": 326
+         "label": "4h 18m",
+         "minutes": 258
         },
         "name": "TAYLOR,(WILLIAM)"
        },
@@ -6032,8 +6032,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "5h 26m",
-         "minutes": 326
+         "label": "4h 18m",
+         "minutes": 258
         },
         "name": "LANDGREBE,(NICHOLAS)"
        }
