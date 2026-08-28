@@ -1,10 +1,10 @@
 {
  "meta": {
-  "collection_state": "active",
-  "collection_message": "Light sweep sched_20260828_172522.",
+  "collection_state": "awaiting_login",
+  "collection_message": "Session lost; waiting at the RSA prompt.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-28T22:30:14+00:00",
+  "generated_at": "2026-08-28T22:51:02+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260828_172522",
@@ -2354,8 +2354,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "9h 50m",
-         "minutes": 590
+         "label": "9h 29m",
+         "minutes": 569
         },
         "name": "EHRMANN,(CHRIS)"
        },
@@ -2363,8 +2363,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "9h 50m",
-         "minutes": 590
+         "label": "9h 29m",
+         "minutes": 569
         },
         "name": "LEPPERT,(RICHARD)"
        }
@@ -2523,8 +2523,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "11h 15m",
-         "minutes": 675
+         "label": "10h 54m",
+         "minutes": 654
         },
         "name": "KING,(BILLY)"
        },
@@ -2532,8 +2532,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "11h 15m",
-         "minutes": 675
+         "label": "10h 54m",
+         "minutes": 654
         },
         "name": "IYOHA,(OSAYANDE)"
        }
@@ -2722,8 +2722,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 30m",
-         "minutes": 90
+         "label": "1h 09m",
+         "minutes": 69
         },
         "name": "SEXTON,(JOHN)"
        },
@@ -2731,8 +2731,8 @@
         "craft": "ET",
         "hos": {
          "band": "orange",
-         "label": "1h 30m",
-         "minutes": 90
+         "label": "1h 09m",
+         "minutes": 69
         },
         "name": "GREEN,(DALTON)"
        }
@@ -2762,8 +2762,8 @@
         "craft": "CO",
         "hos": {
          "band": "orange",
-         "label": "1h 30m",
-         "minutes": 90
+         "label": "1h 09m",
+         "minutes": 69
         },
         "name": "NEECE,(PHIL)"
        }
@@ -4527,8 +4527,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "11h 50m",
-         "minutes": 710
+         "label": "11h 29m",
+         "minutes": 689
         },
         "name": "POFFENBERGER,(TODD)"
        },
@@ -4536,8 +4536,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "11h 50m",
-         "minutes": 710
+         "label": "11h 29m",
+         "minutes": 689
         },
         "name": "BERNDT,(JON)"
        }
@@ -6082,8 +6082,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 15m",
-         "minutes": 495
+         "label": "7h 54m",
+         "minutes": 474
         },
         "name": "LOUGHMILLER,(BARRY)"
        },
@@ -6091,8 +6091,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 15m",
-         "minutes": 495
+         "label": "7h 54m",
+         "minutes": 474
         },
         "name": "DORSEY,(STETSON)"
        }
