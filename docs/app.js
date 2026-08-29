@@ -1459,6 +1459,22 @@ function myRestInfo(t0) {
   return { onDt, offDt, restEnd, extraMin };
 }
 
+function myCrewMates(me, t0) {
+  // Who's on the call WITH him -- from the captured train-history entry
+  // for that train+date (the same rows the Train History page serves).
+  const d = lineupsData();
+  if (!d || !t0 || !t0.train || !t0.date) return "";
+  const meKey = (me.name || "").split(",")[0].toUpperCase();
+  const ent = (d.train_history || []).find((h) =>
+    h.date === t0.date && (h.train === t0.train
+      || (h.train || "").split("-")[0] === (t0.train || "").split("-")[0]));
+  if (!ent) return "";
+  return (ent.members || [])
+    .filter((mb) => (mb.name || "").split(",")[0].toUpperCase() !== meKey)
+    .map((mb) => `${(mb.name || "").split(",")[0]} (${mb.craft || "?"})`)
+    .join(", ");
+}
+
 function myStatusRows(me) {
   const now = new Date();
   const t0 = me.tickets && me.tickets[0];
@@ -1472,6 +1488,8 @@ function myStatusRows(me) {
     band = "orange"; label = `CALLED — ${t0.train}`;
     rows.push(["STATUS", "CALLED"], ["TRAIN", `${t0.train} (${t0.craft || ""})`],
               ["ON DUTY", `${t0.on_duty} ${localDay(r.onDt)}`]);
+    const mates = myCrewMates(me, t0);
+    if (mates) rows.push(["WITH", mates]);
     return { rows, band, label };
   }
   if (r.onDt && !r.offDt && (now - r.onDt) < 14 * 36e5) {
@@ -1479,6 +1497,8 @@ function myStatusRows(me) {
     rows.push(["STATUS", "ON A TRAIN"], ["TRAIN", `${t0.train} (${t0.craft || ""})`],
               ["ON DUTY", `${t0.on_duty} ${localDay(r.onDt)}`],
               ["ROUTE", `${t0.dep || "?"} → ${t0.arr || "?"}`]);
+    const mates2 = myCrewMates(me, t0);
+    if (mates2) rows.push(["WITH", mates2]);
     return { rows, band, label };
   }
   if (av.state === "rest_day") {
