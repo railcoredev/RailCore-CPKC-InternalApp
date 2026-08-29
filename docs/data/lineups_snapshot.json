@@ -4,7 +4,7 @@
   "collection_message": "Login incomplete (RSA pending); will keep retrying.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-29T09:45:08+00:00",
+  "generated_at": "2026-08-29T10:46:16+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260829_005357",
@@ -2434,9 +2434,9 @@
        {
         "craft": "TT",
         "hos": {
-         "band": "yellow",
-         "label": "2h 10m",
-         "minutes": 130
+         "band": "orange",
+         "label": "1h 09m",
+         "minutes": 69
         },
         "name": "CONWELL,(JOSHUA)",
         "tags": [
@@ -2456,18 +2456,18 @@
        {
         "craft": "EN",
         "hos": {
-         "band": "yellow",
-         "label": "2h 45m",
-         "minutes": 165
+         "band": "orange",
+         "label": "1h 44m",
+         "minutes": 104
         },
         "name": "ELLIOTT,(SCOTT)"
        },
        {
         "craft": "AE",
         "hos": {
-         "band": "yellow",
-         "label": "2h 45m",
-         "minutes": 165
+         "band": "orange",
+         "label": "1h 44m",
+         "minutes": 104
         },
         "name": "HOWARD,(MATTHEW)"
        }
@@ -2496,9 +2496,9 @@
        {
         "craft": "TT",
         "hos": {
-         "band": "yellow",
-         "label": "2h 45m",
-         "minutes": 165
+         "band": "orange",
+         "label": "1h 44m",
+         "minutes": 104
         },
         "name": "ODINSON,(VIDAR)"
        }
@@ -2666,8 +2666,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 59m",
-         "minutes": 479
+         "label": "6h 58m",
+         "minutes": 418
         },
         "name": "FLYNN,(CASEY)"
        },
@@ -2675,8 +2675,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 59m",
-         "minutes": 479
+         "label": "6h 58m",
+         "minutes": 418
         },
         "name": "LASCHE,(DAVID)"
        }
@@ -2706,8 +2706,8 @@
         "craft": "TT",
         "hos": {
          "band": "green",
-         "label": "7h 59m",
-         "minutes": 479
+         "label": "6h 58m",
+         "minutes": 418
         },
         "name": "LE,(HUY)"
        }
@@ -4471,8 +4471,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "5h 55m",
-         "minutes": 355
+         "label": "4h 54m",
+         "minutes": 294
         },
         "name": "OLSON,(ANDREW)"
        },
@@ -4480,8 +4480,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "5h 55m",
-         "minutes": 355
+         "label": "4h 54m",
+         "minutes": 294
         },
         "name": "PILLOW,(JOSHUA)"
        }
@@ -4580,8 +4580,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 00m",
-         "minutes": 480
+         "label": "6h 59m",
+         "minutes": 419
         },
         "name": "TAYLOR,(WILLIAM)"
        },
@@ -4589,8 +4589,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 00m",
-         "minutes": 480
+         "label": "6h 59m",
+         "minutes": 419
         },
         "name": "LANDGREBE,(NICHOLAS)"
        }
@@ -6195,8 +6195,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 00m",
-         "minutes": 480
+         "label": "6h 59m",
+         "minutes": 419
         },
         "name": "LIENEMAN,(DENNIS)"
        },
@@ -6204,8 +6204,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 00m",
-         "minutes": 480
+         "label": "6h 59m",
+         "minutes": 419
         },
         "name": "JAMESON,(DANIELLE)"
        }
