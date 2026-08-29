@@ -916,7 +916,8 @@ function buildPersonResults(d, q, box) {
       const what = (p.bookoff.code || "?")
         + (p.bookoff.label ? ` (${p.bookoff.label})` : "");
       rows.push(["STATUS", `BOOKED OFF — ${what}`
-        + (p.bookoff.since ? ` since ${p.bookoff.since.slice(5)}` : "")]);
+        + (p.bookoff.since ? ` since ${p.bookoff.since.slice(5)}`
+          + (p.bookoff.time ? ` ${p.bookoff.time}` : "") : "")]);
     }
     // Board rows (dedup by screen): position/turn verbatim; MTOD rest if shown.
     const seen = new Set();
@@ -1068,7 +1069,7 @@ function renderBookoffsView() {
         b.name || "",
         // the CODE as the bookoff screen lists it, meaning in parens when known
         (b.code || "?") + (b.label ? ` (${b.label})` : ""),
-        (b.since ? b.since.slice(5) : "—") + (b.carryover ? " †" : ""),
+        (b.since ? b.since.slice(5) + (b.time ? " " + b.time : "") : "—") + (b.carryover ? " †" : ""),
         b.assignment || "",
       ]);
     box.appendChild(el("div", "table-title",
@@ -1482,6 +1483,24 @@ function myStatusRows(me) {
   }
   if (av.state === "rest_day") {
     return { rows: [["STATUS", "DAYS OFF — ADO rest day"]], band: "blue", label: "DAYS OFF (ADO)" };
+  }
+  if (me.bookoff) {
+    const bo = me.bookoff;
+    const what = (bo.code || "?") + (bo.label ? ` (${bo.label})` : "");
+    const since = bo.since ? bo.since.slice(5) + (bo.time ? ` ${bo.time}` : "") : "";
+    const rows2 = [["STATUS", `BOOKED OFF — ${what}`]];
+    if (since) rows2.push(["SINCE", since]);
+    // Back on board: a live future re-entry counts down; otherwise an
+    // open-ended code (sick etc.) has no set return -- say so, honestly.
+    const reB = me.reentry && me.reentry.at ? new Date(me.reentry.at) : null;
+    if (reB && reB > now) {
+      const mins = Math.round((reB - now) / 6e4);
+      rows2.push(["BACK ON BOARD",
+        `${fmtClock(reB)} ${localDay(reB)} — in ${Math.floor(mins / 60)}h ${String(mins % 60).padStart(2, "0")}m`]);
+    } else {
+      rows2.push(["BACK ON BOARD", "when you mark up — no set return for this code"]);
+    }
+    return { rows: rows2, band: "blue", label: `BOOKED OFF — ${bo.code || "?"}` };
   }
   if (av.state === "booked_off") {
     return { rows: [["STATUS", "BOOKED OFF"]], band: "blue", label: "BOOKED OFF" };
