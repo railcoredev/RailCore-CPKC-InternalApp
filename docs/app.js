@@ -1539,6 +1539,22 @@ function myStatusRows(me) {
       rows.push(["ON BOARD SINCE", `${fmtClock(sinceDt)} ${localDay(sinceDt)}`]);
     }
   }
+  // PROJECTED (operator 2026-08-29): the train he's projected out on,
+  // when, and who with -- ADVISORY, straight from the projection model,
+  // never a promise. Only future calls; called/on-train branches already
+  // returned above.
+  const pj = me.projection;
+  if (pj && pj.at) {
+    const pjDt = new Date(pj.at);
+    if (pjDt > now) {
+      const mates = (pj.with || []).map((w) => {
+        const short = (w.name || "").split(",")[0];
+        return `${short} (${w.craft || "?"})`;
+      }).join(", ");
+      rows.push(["PROJECTED", `${pj.train} at ${fmtClock(pjDt)} ${localDay(pjDt)}`
+        + (mates ? ` — with ${mates}` : "") + " · advisory"]);
+    }
+  }
   const bp = me.board_position;
   if (bp && bp.ordinal) {
     const ord = ["", "1st out", "2nd out", "3rd out"][bp.ordinal] || `${bp.ordinal}th out`;
