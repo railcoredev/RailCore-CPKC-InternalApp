@@ -1100,7 +1100,9 @@ window.StatusDashboard = (function() {
                 <td class="metric-link" data-target="pool-reports" data-terminal="${t.terminal}">${fmtInt(t.turnSets)}</td>
                 <td class="metric-link" data-target="pool-reports" data-terminal="${t.terminal}">${fmtInt(t.crewSlots)}</td>
                 <td>${fmtRatio(t.turnSets > 0 ? t.poolOnlyTrains / t.turnSets : null)}</td>
-                <td>${fmtRatio(t.crewSlots > 0 ? t.poolOnlyStarts / t.crewSlots : null)}</td>
+                <td>${t.startsEaWeekly != null
+                    ? fmtRatio(t.startsEaWeekly) + (t.weeklyPartial ? '†' : '')
+                    : fmtRatio(t.crewSlots > 0 ? t.poolOnlyStarts / t.crewSlots : null)}</td>
             </tr>
             ${(state.mode === 'month' && state.showMonthlyHalves ? (halvesByTerminal[t.terminal] || []).map((h) => `
                 <tr class="half-subrow">
@@ -1154,11 +1156,13 @@ window.StatusDashboard = (function() {
                             <td><strong>${fmtInt(totals.turnSets)}</strong></td>
                             <td><strong>${fmtInt(totals.crewSlots)}</strong></td>
                             <td><strong>${fmtRatio(totals.turnSets > 0 ? totals.poolOnlyTrains / totals.turnSets : null)}</strong></td>
-                            <td><strong>${fmtRatio(totals.crewSlots > 0 ? totals.poolOnlyStarts / totals.crewSlots : null)}</strong></td>
+                            <td><strong>${totals.startsEaWeekly != null
+                                ? fmtRatio(totals.startsEaWeekly) + (totals.weeklyPartial ? '†' : '')
+                                : fmtRatio(totals.crewSlots > 0 ? totals.poolOnlyStarts / totals.crewSlots : null)}</strong></td>
                                 </tr>
                     </tbody>
                 </table>
-                <div class="table-note">Trains/Turn = assigned-pool trains over pool turns. Starts/Ea = pool starts over crew slots (the seats: a 10-turn pool holds ~20 people) -- the average starts per individual working that pool. EW/yard/local work has no turns and stays out of both ratios (operator ruling 2026-08-29); their counts remain in Trains, Starts, and the cover columns.</div>
+                <div class="table-note">Trains/Turn = assigned-pool trains over pool turns. Starts/Ea = WEEKLY: each week's pool starts over that week's assigned individuals (weekly marks, both crafts), summed across the window -- a 9-turn week and a 10-turn week each count with their own people (operator ruling 2026-08-29). † = marks don't cover the full window (collection began 2026-08-22); windows with no marks fall back to pool starts over scheduled seats. EW/yard/local work stays out of both ratios.</div>
             </div>
         `;
     }
@@ -1379,7 +1383,16 @@ window.StatusDashboard = (function() {
                                         const poolJobs = terminalMap.byPool?.[String(p.pool || '').toUpperCase()] || [];
                                         return `
                                             <details class="pool-tree-terminal" style="margin: 8px 0 0 16px;">
-                                                <summary>${p.pool} — Trains ${fmtInt(p.trains)}${p.coveredByEw ? '*' : ''}, Starts ${fmtInt(p.starts)}, Pool Turns ${fmtInt(p.turnSets)}${p.crewSlots > 0 ? ` | Starts/Ea: ${fmtRatio(p.starts / p.crewSlots)}` : ''} | Recrew: ${fmtInt(p.recrew || 0)}</summary>
+                                                <summary>${p.pool} — Trains ${fmtInt(p.trains)}${p.coveredByEw ? '*' : ''}, Starts ${fmtInt(p.starts)}, Pool Turns ${fmtInt(p.turnSets)}${p.startsEaWeekly != null ? ` | Starts/Ea (weekly): ${fmtRatio(p.startsEaWeekly)}${p.weeklyPartial ? '†' : ''}` : (p.crewSlots > 0 ? ` | Starts/Ea (seats): ${fmtRatio(p.starts / p.crewSlots)}` : '')} | Recrew: ${fmtInt(p.recrew || 0)}</summary>
+                                                ${(p.weeklyRows && p.weeklyRows.length) ? `
+                                                <table class="status-table compact" style="margin:6px 0;">
+                                                    <thead><tr><th>Week of</th><th>Assigned</th><th>Starts</th><th>Starts/Ea</th></tr></thead>
+                                                    <tbody>
+                                                    ${p.weeklyRows.map((w) => `
+                                                        <tr><td>${w.week_of}</td><td>${fmtInt(w.assigned)}</td><td>${fmtInt(w.starts)}</td><td>${fmtRatio(w.ratio)}</td></tr>`).join('')}
+                                                    <tr class="total-row"><td><strong>window</strong></td><td></td><td><strong>${fmtInt(p.weeklyRows.reduce((s, w) => s + w.starts, 0))}</strong></td><td><strong>${fmtRatio(p.startsEaWeekly)}${p.weeklyPartial ? '†' : ''}</strong></td></tr>
+                                                    </tbody>
+                                                </table>` : ''}
                                                 ${p.coveredByEw ? `<div class="doclib-hitcount">* ${fmtInt(p.coveredByEw)} of these trains were covered by the extra board — credit stays with ${p.pool}</div>` : ''}
                                                 <table class="status-table compact" style="margin-top:8px;">
                                                     <thead>
@@ -1809,7 +1822,9 @@ window.StatusDashboard = (function() {
             return;
         }
         const selectedWindowMeta = getWindowMeta(selectedPacks);
-        const [data, comparisons, assignmentBreakdownByTerminal] = await Promise.all([
+        const mainWins = Array.from(new Set(
+            selectedPacks.map((p) => `${p.month}|${p.half}`)));
+        const [data, comparisons, assignmentBreakdownByTerminal, mainTimes] = await Promise.all([
             buildOverviewData(selectedPacks),
             (async () => {
                 const windows = [
@@ -1866,7 +1881,49 @@ window.StatusDashboard = (function() {
                 return compareData;
             })(),
             buildTerminalAssignmentBreakdown(selectedWindowMeta.startDate, selectedWindowMeta.endDate),
+            fetchJson('/api/pool-times?wins=' + encodeURIComponent(mainWins.join(',')))
+                .catch(() => null),
         ]);
+        // WEEKLY Starts/Ea (operator ruling 2026-08-29: assignments change
+        // weekly -- SW's 9-turn weeks and 10-turn weeks each count with
+        // their own people; window value = SUM of weekly starts-per-
+        // assigned). Attach per pool row and roll terminals up by week.
+        const mtPools = (mainTimes && mainTimes.pools) || {};
+        const totByWeek = {};
+        let totPartial = false, totAny = false;
+        (data.terminals || []).forEach((t) => {
+            const byWeek = {};
+            let partial = false, any = false;
+            (t.poolRows || []).forEach((r) => {
+                const cell = mtPools[`${r.pool}@${t.terminal}`];
+                if (cell && cell.weekly && cell.weekly.length) {
+                    r.startsEaWeekly = cell.starts_ea_weekly;
+                    r.weeklyRows = cell.weekly;
+                    r.weeklyPartial = cell.weekly_partial;
+                    if (poolCategory(r.pool) === 'POOL') {
+                        any = true;
+                        partial = partial || cell.weekly_partial;
+                        cell.weekly.forEach((w) => {
+                            const b = byWeek[w.week_of] = byWeek[w.week_of] || { a: 0, s: 0 };
+                            b.a += w.assigned; b.s += w.starts;
+                            const tb = totByWeek[w.week_of] = totByWeek[w.week_of] || { a: 0, s: 0 };
+                            tb.a += w.assigned; tb.s += w.starts;
+                        });
+                    }
+                }
+            });
+            if (any) {
+                t.startsEaWeekly = Math.round(Object.values(byWeek)
+                    .reduce((s, w) => s + (w.a ? w.s / w.a : 0), 0) * 100) / 100;
+                t.weeklyPartial = partial;
+                totAny = true; totPartial = totPartial || partial;
+            }
+        });
+        if (totAny) {
+            data.totals.startsEaWeekly = Math.round(Object.values(totByWeek)
+                .reduce((s, w) => s + (w.a ? w.s / w.a : 0), 0) * 100) / 100;
+            data.totals.weeklyPartial = totPartial;
+        }
         window.__cpkc_comparisons = comparisons;
         renderDashboard(data.terminals, data.totals, data.terminalHalfRows || [], comparisons, assignmentBreakdownByTerminal);
     }
