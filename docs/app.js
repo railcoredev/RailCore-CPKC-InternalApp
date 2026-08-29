@@ -1529,7 +1529,14 @@ function myStatusRows(me) {
       if (label.startsWith("AT HOME")) label = `${where} — back ${fmtClock(reDt)} ${localDay(reDt)}`;
       else label = `${where} — back ${fmtClock(reDt)} ${localDay(reDt)}`;
     } else {
-      rows.push(["ON BOARD SINCE", `${fmtClock(reDt)} ${localDay(reDt)}`]);
+      // ON BOARD SINCE must be the freshest TRUE return signal: the state
+      // engine's observed mark-up (availability.reentry_at) outranks stale
+      // ticket-math reentry (card said "since Mon 17:40" after a Thu-Sat
+      // sick book-off; truth was marked up 06:02 Sat -- operator 2026-08-29).
+      let sinceDt = reDt;
+      const avRe = av.reentry_at ? new Date(av.reentry_at) : null;
+      if (avRe && avRe > sinceDt && avRe <= now) sinceDt = avRe;
+      rows.push(["ON BOARD SINCE", `${fmtClock(sinceDt)} ${localDay(sinceDt)}`]);
     }
   }
   const bp = me.board_position;
