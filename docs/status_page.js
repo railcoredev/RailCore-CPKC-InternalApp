@@ -94,9 +94,6 @@ window.StatusDashboard = (function() {
         }
     }
 
-    // PORTED TO THE APP (2026-08-29): the page's data comes from
-    // data/status_pack.json -- pre-answered responses from the SAME ui_v2
-    // endpoints the status app serves locally (one truth, no re-math).
     let PACK = null;
     async function loadPack() {
         if (PACK) return PACK;
@@ -113,7 +110,7 @@ window.StatusDashboard = (function() {
                 const w = pk.windows[`${m[1]}/${m[2]}/${m[3]}`] || {};
                 if (m[4] === 'summary') return w.summary || null;
                 if (m[4] === 'pool-summary') return w.pool_summary || null;
-                return { trains: [] };   // fetched by the page, never read
+                return { trains: [] };
             }
             m = url.match(/\/api\/pool-times\?wins=(.+)$/);
             if (m) {
@@ -574,7 +571,7 @@ window.StatusDashboard = (function() {
                 .map((r) => ({
                     ...r,
                     trainsPerTurn: r.turnSets > 0 ? (r.trains / r.turnSets) : null,
-                    startsPerTurn: r.turnSets > 0 ? (r.starts / r.turnSets) : null
+                    startsPerTurn: r.crewSlots > 0 ? (r.starts / r.crewSlots) : null
                 }));
         });
 
@@ -1103,7 +1100,7 @@ window.StatusDashboard = (function() {
                 <td class="metric-link" data-target="pool-reports" data-terminal="${t.terminal}">${fmtInt(t.turnSets)}</td>
                 <td class="metric-link" data-target="pool-reports" data-terminal="${t.terminal}">${fmtInt(t.crewSlots)}</td>
                 <td>${fmtRatio(t.turnSets > 0 ? t.poolOnlyTrains / t.turnSets : null)}</td>
-                <td>${fmtRatio(t.turnSets > 0 ? t.poolOnlyStarts / t.turnSets : null)}</td>
+                <td>${fmtRatio(t.crewSlots > 0 ? t.poolOnlyStarts / t.crewSlots : null)}</td>
             </tr>
             ${(state.mode === 'month' && state.showMonthlyHalves ? (halvesByTerminal[t.terminal] || []).map((h) => `
                 <tr class="half-subrow">
@@ -1140,7 +1137,7 @@ window.StatusDashboard = (function() {
                                 <th>Pool Turns</th>
                             <th>Crew Slots</th>
                             <th>Trains/Turn</th>
-                            <th>Starts/Turn</th>
+                            <th>Starts/Ea</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -1157,11 +1154,11 @@ window.StatusDashboard = (function() {
                             <td><strong>${fmtInt(totals.turnSets)}</strong></td>
                             <td><strong>${fmtInt(totals.crewSlots)}</strong></td>
                             <td><strong>${fmtRatio(totals.turnSets > 0 ? totals.poolOnlyTrains / totals.turnSets : null)}</strong></td>
-                            <td><strong>${fmtRatio(totals.turnSets > 0 ? totals.poolOnlyStarts / totals.turnSets : null)}</strong></td>
+                            <td><strong>${fmtRatio(totals.crewSlots > 0 ? totals.poolOnlyStarts / totals.crewSlots : null)}</strong></td>
                                 </tr>
                     </tbody>
                 </table>
-                <div class="table-note">Trains/Turn and Starts/Turn are POOL-scoped: assigned-pool trains and pool starts over pool turns. EW, yard, and local work has no turns and stays out of these two ratios (their counts remain in Trains, Starts, and the cover columns).</div>
+                <div class="table-note">Trains/Turn = assigned-pool trains over pool turns. Starts/Ea = pool starts over crew slots (the seats: a 10-turn pool holds ~20 people) -- the average starts per individual working that pool. EW/yard/local work has no turns and stays out of both ratios (operator ruling 2026-08-29); their counts remain in Trains, Starts, and the cover columns.</div>
             </div>
         `;
     }
@@ -1382,7 +1379,7 @@ window.StatusDashboard = (function() {
                                         const poolJobs = terminalMap.byPool?.[String(p.pool || '').toUpperCase()] || [];
                                         return `
                                             <details class="pool-tree-terminal" style="margin: 8px 0 0 16px;">
-                                                <summary>${p.pool} — Trains ${fmtInt(p.trains)}${p.coveredByEw ? '*' : ''}, Starts ${fmtInt(p.starts)}, Pool Turns ${fmtInt(p.turnSets)}${p.turnSets > 0 ? ` | Starts/Turn assigned: ${fmtRatio(p.starts / p.turnSets)}` : ''} | Recrew: ${fmtInt(p.recrew || 0)}</summary>
+                                                <summary>${p.pool} — Trains ${fmtInt(p.trains)}${p.coveredByEw ? '*' : ''}, Starts ${fmtInt(p.starts)}, Pool Turns ${fmtInt(p.turnSets)}${p.crewSlots > 0 ? ` | Starts/Ea: ${fmtRatio(p.starts / p.crewSlots)}` : ''} | Recrew: ${fmtInt(p.recrew || 0)}</summary>
                                                 ${p.coveredByEw ? `<div class="doclib-hitcount">* ${fmtInt(p.coveredByEw)} of these trains were covered by the extra board — credit stays with ${p.pool}</div>` : ''}
                                                 <table class="status-table compact" style="margin-top:8px;">
                                                     <thead>
@@ -1394,7 +1391,7 @@ window.StatusDashboard = (function() {
                                                             <th>Pool Turns</th>
                                                             <th>Crew Slots</th>
                                                             <th>Trains/Turn</th>
-                                                            <th>Starts/Turn</th>
+                                                            <th>Starts/Ea</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -1462,7 +1459,7 @@ window.StatusDashboard = (function() {
                                                             <th>Pool Turns</th>
                                                             <th>Crew Slots</th>
                                                             <th>Trains/Turn</th>
-                                                            <th>Starts/Turn</th>
+                                                            <th>Starts/Ea</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
