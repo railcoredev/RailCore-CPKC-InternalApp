@@ -4,7 +4,7 @@
 // stale manifest forever -- live 2026-08-19: phones held the v4101
 // manifest (broken icon paths) through six releases, so installs fell
 // back to the generic letter shortcut.
-const CACHE_NAME = "railcore-cpkc-worker-v4149";
+const CACHE_NAME = "railcore-cpkc-worker-v4150";
 
 // Only files that actually exist: addAll() rejects the whole install if any
 // asset 404s (this is what silently broke v38 updates — it listed four

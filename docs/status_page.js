@@ -561,6 +561,14 @@ window.StatusDashboard = (function() {
                 }
             });
             termRec.categoryRows = categoryRows;
+            // Pool-scoped numerators for the per-turn ratios (operator
+            // 2026-08-29 'something seems off': EW/yard/local starts were
+            // divided by POOL turns -- 62 EW starts inflated OT H2
+            // Starts/Turn from 20.8 to 25.9. Turns only exist for pools,
+            // so only pool trains/starts belong on top.)
+            termRec.poolOnlyStarts = poolRows.reduce((s, r) =>
+                s + (poolCategory(r.pool) === 'POOL' ? r.starts : 0), 0);
+            termRec.poolOnlyTrains = termRec.coverage.assigned;
             termRec.poolRows = poolRows
                 .sort((a, b) => b.trains - a.trains)
                 .map((r) => ({
@@ -573,6 +581,8 @@ window.StatusDashboard = (function() {
         const totals = {
             trains: terminals.reduce((s, t) => s + t.trains, 0),
             starts: terminals.reduce((s, t) => s + t.starts, 0),
+            poolOnlyTrains: terminals.reduce((s, t) => s + (t.poolOnlyTrains || 0), 0),
+            poolOnlyStarts: terminals.reduce((s, t) => s + (t.poolOnlyStarts || 0), 0),
             turnSets: terminals.reduce((s, t) => s + t.turnSets, 0),
             crewSlots: terminals.reduce((s, t) => s + t.crewSlots, 0),
             recrew: terminals.reduce((s, t) => s + (t.recrew || 0), 0),
@@ -1092,8 +1102,8 @@ window.StatusDashboard = (function() {
                 <td class="metric-link" data-target="analytics-reports" data-terminal="${t.terminal}" data-report-id="train-family">${fmtInt(t.split)}</td>
                 <td class="metric-link" data-target="pool-reports" data-terminal="${t.terminal}">${fmtInt(t.turnSets)}</td>
                 <td class="metric-link" data-target="pool-reports" data-terminal="${t.terminal}">${fmtInt(t.crewSlots)}</td>
-                <td>${fmtRatio(t.turnSets > 0 ? t.trains / t.turnSets : null)}</td>
-                <td>${fmtRatio(t.turnSets > 0 ? t.starts / t.turnSets : null)}</td>
+                <td>${fmtRatio(t.turnSets > 0 ? t.poolOnlyTrains / t.turnSets : null)}</td>
+                <td>${fmtRatio(t.turnSets > 0 ? t.poolOnlyStarts / t.turnSets : null)}</td>
             </tr>
             ${(state.mode === 'month' && state.showMonthlyHalves ? (halvesByTerminal[t.terminal] || []).map((h) => `
                 <tr class="half-subrow">
@@ -1146,11 +1156,12 @@ window.StatusDashboard = (function() {
                             <td><strong>${fmtInt(totals.split)}</strong></td>
                             <td><strong>${fmtInt(totals.turnSets)}</strong></td>
                             <td><strong>${fmtInt(totals.crewSlots)}</strong></td>
-                            <td><strong>${fmtRatio(totals.turnSets > 0 ? totals.trains / totals.turnSets : null)}</strong></td>
-                            <td><strong>${fmtRatio(totals.turnSets > 0 ? totals.starts / totals.turnSets : null)}</strong></td>
+                            <td><strong>${fmtRatio(totals.turnSets > 0 ? totals.poolOnlyTrains / totals.turnSets : null)}</strong></td>
+                            <td><strong>${fmtRatio(totals.turnSets > 0 ? totals.poolOnlyStarts / totals.turnSets : null)}</strong></td>
                                 </tr>
                     </tbody>
                 </table>
+                <div class="table-note">Trains/Turn and Starts/Turn are POOL-scoped: assigned-pool trains and pool starts over pool turns. EW, yard, and local work has no turns and stays out of these two ratios (their counts remain in Trains, Starts, and the cover columns).</div>
             </div>
         `;
     }
