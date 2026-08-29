@@ -1,0 +1,550 @@
+/* Extracted from ui_v2/app.css for the ported Status page --
+   scoped under #tableOutput so app styles stay untouched.
+   Regenerate when the status app's look changes. */
+
+#tableOutput .placeholder {
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+#tableOutput .kpi-value {
+  font-size: 32px;
+  font-weight: 700;
+  color: #22c55e;
+  margin-bottom: 8px;
+}
+
+#tableOutput .kpi-label {
+  font-size: 14px;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+#tableOutput .no-data {
+  text-align: center;
+  color: #9ca3af;
+  padding: 40px;
+  font-style: italic;
+}
+
+#tableOutput /* Loading and Placeholder */
+.pool-reports .placeholder, #tableOutput .pool-reports .loading {
+  padding: 40px;
+  text-align: center;
+  color: #6b7280;
+  font-style: italic;
+}
+
+#tableOutput /* ============================================
+   STATUS DASHBOARD
+   ============================================ */
+
+.status-dashboard {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#tableOutput .dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+#tableOutput .dashboard-header h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #e6e8ea;
+}
+
+#tableOutput .header-date {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+#tableOutput .dashboard-section {
+  background: #111721;
+  border: 1px solid #1f2a37;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+#tableOutput .dashboard-section h3 {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  color: #e6e8ea;
+}
+
+#tableOutput .status-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#tableOutput .status-table th, #tableOutput .status-table td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid #1f2a37;
+}
+
+#tableOutput .status-table th {
+  background: #0b0f14;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #9ca3af;
+}
+
+#tableOutput .status-table td {
+  font-size: 14px;
+  color: #e6e8ea;
+}
+
+#tableOutput .status-table .total-row {
+  background: #1a2332;
+}
+
+#tableOutput .status-table .total-row td {
+  font-weight: 600;
+  border-top: 2px solid #374151;
+}
+
+#tableOutput .table-note {
+  margin-top: 12px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+#tableOutput .action-btn {
+  background: #1f2a37;
+  border: 1px solid #374151;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-size: 14px;
+  color: #e6e8ea;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#tableOutput .action-btn:hover {
+  background: #374151;
+  border-color: #4b5563;
+}
+
+#tableOutput .no-data {
+  color: #6b7280;
+  font-size: 14px;
+  padding: 20px;
+  text-align: center;
+}
+
+#tableOutput .exec-overview {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 1560px;
+  margin: 0 auto;
+}
+
+#tableOutput .exec-controls {
+  background: #111721;
+  border: 1px solid #1f2a37;
+  border-radius: 8px;
+  padding: 14px;
+}
+
+#tableOutput .exec-controls summary {
+  cursor: pointer;
+  color: #cbd5e1;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#tableOutput .exec-controls-bottom {
+  margin-top: 8px;
+}
+
+#tableOutput .exec-mode-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+#tableOutput .exec-mode-btn {
+  background: #0b0f14;
+  border: 1px solid #2c3645;
+  color: #d1d5db;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#tableOutput .exec-mode-btn.active {
+  border-color: #f59e0b;
+  background: #1b2330;
+}
+
+#tableOutput .exec-control-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: end;
+}
+
+#tableOutput .exec-control {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+#tableOutput .exec-check {
+  min-width: 170px;
+}
+
+#tableOutput .exec-check label {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  color: #d1d5db;
+  font-size: 12px;
+}
+
+#tableOutput .exec-check-inline {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  color: #d1d5db;
+}
+
+#tableOutput .exec-control select, #tableOutput .exec-control input {
+  background: #0b0f14;
+  color: #e5e7eb;
+  border: 1px solid #2c3645;
+  border-radius: 6px;
+  padding: 6px 8px;
+}
+
+#tableOutput .exec-kpi-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+}
+
+#tableOutput .exec-kpi {
+  background: #111721;
+  border: 1px solid #1f2a37;
+  border-radius: 8px;
+  padding: 12px;
+  position: relative;
+}
+
+#tableOutput .kpi-link-hint {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  font-size: 10px;
+  color: #60a5fa;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+#tableOutput .kpi-label {
+  color: #9ca3af;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+#tableOutput .kpi-value {
+  color: #e6e8ea;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+#tableOutput .kpi-sub {
+  font-size: 11px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+#tableOutput .section-range {
+  font-size: 11px;
+  color: #9ca3af;
+  margin-bottom: 8px;
+}
+
+#tableOutput .exec-detail-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#tableOutput .exec-detail-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #9ca3af;
+  font-weight: 700;
+}
+
+#tableOutput .exec-detail-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+#tableOutput .exec-detail-btn, #tableOutput .exec-detail-toggle {
+  background: #111721;
+  border: 1px solid #1f2a37;
+  color: #d1d5db;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#tableOutput .exec-detail-body {
+  margin-top: 12px;
+}
+
+#tableOutput .exec-detail-body .dashboard-section {
+  margin-top: 0;
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+#tableOutput .psts17b-screen {
+  border: 1px solid #1f2a37;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #0c121a 0%, #0b0f14 100%);
+  padding: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+#tableOutput .psts17b-title {
+  font-family: Consolas, "Courier New", monospace;
+  color: #e5e7eb;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+#tableOutput .psts17b-meta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 11px;
+  color: #d1d5db;
+  margin-bottom: 6px;
+}
+
+#tableOutput .psts17b-sep {
+  border-top: 1px solid #1f2a37;
+  margin: 6px 0 8px 0;
+}
+
+#tableOutput .psts17b-subhead {
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 11px;
+  color: #9ca3af;
+  margin-bottom: 6px;
+  letter-spacing: 0.2px;
+}
+
+#tableOutput .psts17b-table th, #tableOutput .psts17b-table td {
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 11px;
+}
+
+#tableOutput .exec-train-detail-body {
+  margin-top: 8px;
+}
+
+#tableOutput .psts17b-footer {
+  margin-top: 8px;
+  padding-top: 6px;
+  border-top: 1px dashed #1f2a37;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+#tableOutput .psts17b-crew-lines-title {
+  margin-top: 8px;
+  margin-bottom: 4px;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+#tableOutput .psts17b-crew-lines {
+  margin: 0;
+  padding: 8px;
+  border: 1px solid #1f2a37;
+  border-radius: 6px;
+  background: #09101a;
+  color: #d1d5db;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 11px;
+  white-space: pre-wrap;
+  max-height: 180px;
+  overflow: auto;
+}
+
+#tableOutput .exec-compare-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+#tableOutput .exec-compare-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #e5e7eb;
+}
+
+#tableOutput .exec-compare-range {
+  font-size: 11px;
+  color: #9ca3af;
+  margin-top: 2px;
+  margin-bottom: 8px;
+}
+
+#tableOutput .exec-compare-metrics {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4px;
+  font-size: 12px;
+  color: #d1d5db;
+}
+
+#tableOutput .exec-compare-delta {
+  color: #9ca3af;
+  margin-top: 4px;
+  padding-top: 4px;
+  border-top: 1px dashed #253041;
+}
+
+#tableOutput .metric-link {
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: color 0.15s ease;
+}
+
+#tableOutput .metric-link:hover {
+  color: #fbbf24;
+}
+
+#tableOutput .pool-tree-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#tableOutput .pool-tree-terminal {
+  border: 1px solid #1f2a37;
+  border-radius: 8px;
+  background: #0b0f14;
+  padding: 9px 10px;
+}
+
+#tableOutput .pool-tree-terminal summary {
+  cursor: pointer;
+  color: #e5e7eb;
+  font-weight: 600;
+  margin-bottom: 6px;
+  line-height: 1.35;
+}
+
+#tableOutput .pool-tree-terminal .pool-tree-terminal {
+  background: #0d131c;
+  border-color: #253041;
+}
+
+#tableOutput .exec-train-node {
+  border-color: #2a3b55;
+  background: #0f1722;
+}
+
+#tableOutput .exec-train-node summary {
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 11px;
+  color: #dbe6f5;
+}
+
+#tableOutput .status-table.compact th, #tableOutput .status-table.compact td {
+  padding: 8px 10px;
+  font-size: 13px;
+}
+
+#tableOutput .half-subrow td {
+  color: #9ca3af;
+  font-size: 12px;
+  background: #0f141c;
+}
+
+#tableOutput .category-subrow td {
+  color: #94a3b8;
+  font-size: 12px;
+  background: #0d131b;
+}
+
+#tableOutput .exec-recon {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  font-size: 13px;
+}
+
+#tableOutput .recon-pass {
+  color: #10b981;
+}
+
+#tableOutput .recon-fail {
+  color: #ef4444;
+}
+
+#tableOutput .data-table.compact {
+  font-size: 12px;
+}
+
+#tableOutput .data-table.compact th, #tableOutput .data-table.compact td {
+  padding: 8px 12px;
+}
+
+#tableOutput /* Window Filters terminal checkboxes (2026-08-26) */
+.exec-term-checks label.exec-mode-btn { display: inline-flex; gap: 7px; align-items: center; cursor: pointer; }
+
+#tableOutput .exec-term-checks input[type="checkbox"] { accent-color: #F45A28; margin: 0; }
+
+#tableOutput /* Window-card per-pool times table + two-column metrics (2026-08-26) */
+.exec-compare-2col { display: grid; grid-template-columns: 1fr 1fr; gap: 2px 12px; }
+
+#tableOutput .exec-compare-2col .exec-compare-delta, #tableOutput .exec-compare-2col .exec-times-table { grid-column: 1 / -1; }
+
+#tableOutput .exec-times-table { width: 100%; border-collapse: collapse; margin-top: 6px; font-size: .85em; }
+
+#tableOutput .exec-times-table th, #tableOutput .exec-times-table td { padding: 2px 8px; text-align: right; border-bottom: 1px solid rgba(128,128,128,.18); }
+
+#tableOutput .exec-times-table th:first-child, #tableOutput .exec-times-table td:first-child { text-align: left; opacity: .75; }
+
+#tableOutput .exec-times-table th { opacity: .8; }
+
+#tableOutput .exec-times-total { font-weight: 700; border-left: 1px solid rgba(128,128,128,.35); }

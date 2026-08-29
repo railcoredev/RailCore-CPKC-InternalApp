@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "active",
-  "collection_message": "Light sweep sched_20260829_135847.",
+  "collection_message": "Light sweep sched_20260829_140456.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-29T19:04:45+00:00",
+  "generated_at": "2026-08-29T19:07:16+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260829_135847",
@@ -2444,8 +2444,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "5h 10m",
-         "minutes": 310
+         "label": "5h 08m",
+         "minutes": 308
         },
         "name": "SPERSTAD,(JOHN)",
         "tags": [
@@ -2456,8 +2456,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "5h 10m",
-         "minutes": 310
+         "label": "5h 08m",
+         "minutes": 308
         },
         "name": "AMOUZ,(ADJIWANOU)",
         "tags": [
@@ -2529,8 +2529,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 40m",
-         "minutes": 220
+         "label": "3h 38m",
+         "minutes": 218
         },
         "name": "NEUBERG,(RUSSELL)"
        },
@@ -2538,8 +2538,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 40m",
-         "minutes": 220
+         "label": "3h 38m",
+         "minutes": 218
         },
         "name": "BORUSHASKI,(GUNNAR)"
        }
@@ -4594,8 +4594,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "5h 25m",
-         "minutes": 325
+         "label": "5h 23m",
+         "minutes": 323
         },
         "name": "CASHATT,(DAKOTA)"
        },
@@ -4603,8 +4603,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "5h 25m",
-         "minutes": 325
+         "label": "5h 23m",
+         "minutes": 323
         },
         "name": "BOER,(BRANDON)"
        }
@@ -4643,8 +4643,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 55m",
-         "minutes": 655
+         "label": "10h 53m",
+         "minutes": 653
         },
         "name": "HANK,(MATT)"
        },
@@ -4652,8 +4652,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "10h 55m",
-         "minutes": 655
+         "label": "10h 53m",
+         "minutes": 653
         },
         "name": "FRIEND,(JONATHON)"
        }
@@ -4692,8 +4692,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 10m",
-         "minutes": 610
+         "label": "10h 08m",
+         "minutes": 608
         },
         "name": "KARGL,(ROB)",
         "tags": [
@@ -4704,8 +4704,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "10h 10m",
-         "minutes": 610
+         "label": "10h 08m",
+         "minutes": 608
         },
         "name": "HARDEN,(LEVI)",
         "tags": [
@@ -4747,8 +4747,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "9h 25m",
-         "minutes": 565
+         "label": "9h 23m",
+         "minutes": 563
         },
         "name": "MOFFITT,(JASON)"
        },
@@ -4756,8 +4756,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "9h 25m",
-         "minutes": 565
+         "label": "9h 23m",
+         "minutes": 563
         },
         "name": "BURCH,(RICK)"
        }
@@ -6631,12 +6631,12 @@
        {
         "craft": "EN",
         "name": "LOCHNER,(DEREK)",
-        "on_in": "0h 40m"
+        "on_in": "0h 38m"
        },
        {
         "craft": "AE",
         "name": "LUDWIG,(AARON)",
-        "on_in": "0h 40m"
+        "on_in": "0h 38m"
        }
       ],
       "eng_crew_count": "1",

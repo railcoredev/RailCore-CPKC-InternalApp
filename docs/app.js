@@ -30,6 +30,7 @@ const SECTIONS = {
   boards:    { title: "CREW BOARDS",    blocks: ["boardBlock", "freshnessBar"] },
   search:    { title: "SEARCH",         blocks: ["searchBlock", "freshnessBar"] },
   bookoffs:  { title: "BOOKOFFS",       blocks: ["freshnessBar"] },
+  status:    { title: "STATUS PAGE",    blocks: ["freshnessBar"] },
   reference: { title: "REF CARDS",      blocks: ["subdivisionBlock", "freshnessBar"] },
   crossings: { title: "CROSSINGS",      blocks: ["stateBlock", "subdivisionBlock", "spacingBlock", "viewBlock", "freshnessBar"] },
   sidings:   { title: "SIDINGS",        blocks: ["subdivisionBlock", "freshnessBar"] },
@@ -460,6 +461,9 @@ function renderCurrentView() {
   } else if (currentSection === "pay") {
     renderPayView();   // async: fetches the PRIVATE feed, writes output itself
     return;
+  } else if (currentSection === "status") {
+    renderStatusSection();   // ported Executive Overview, owns its DOM
+    return;
   } else if (currentSection === "refmenu" || currentSection === "rsa" ||
              currentSection === "notifications") {
     // menu/control sections own their panel; no results text below
@@ -638,6 +642,25 @@ function formatTrainLines(t, lines) {
 // Columns-and-rows directive (operator 2026-08-18): real tables, sticky
 // headers, horizontal scroll in-container. Renderers that build tables
 // write into #tableOutput; text renderers keep using the <pre>.
+
+// Ported Executive Overview (the status app's first screen, verbatim --
+// operator 2026-08-29: "keep the train status page the way it is and
+// bring it to the app"). Data: lazily fetched data/status_pack.json.
+let statusHost = null;
+let statusMounted = false;
+function renderStatusSection() {
+  updateFreshnessBar();
+  if (!statusHost) {
+    statusHost = document.createElement("div");
+    statusHost.id = "status-dashboard-container";
+    statusHost.className = "status-dashboard";
+  }
+  showTable(statusHost);
+  if (!statusMounted && window.StatusDashboard) {
+    statusMounted = true;
+    window.StatusDashboard.init("status-dashboard-container");
+  }
+}
 
 function showTable(node) {
   const to = document.getElementById("tableOutput");
