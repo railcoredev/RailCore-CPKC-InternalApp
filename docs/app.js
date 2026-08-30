@@ -422,6 +422,7 @@ function getCurrentYard() {
 
 function renderCurrentView() {
   if (!currentSection) return;
+  if (currentSection !== "status") document.body.classList.remove("status-fw");
 
   let text = "";
   if (currentSection === "crossings") {
@@ -649,6 +650,7 @@ function formatTrainLines(t, lines) {
 let statusHost = null;
 let statusMounted = false;
 function renderStatusSection() {
+  document.body.classList.add("status-fw");
   updateFreshnessBar();
   if (!statusHost) {
     statusHost = document.createElement("div");
@@ -1543,6 +1545,25 @@ function myStatusRows(me) {
     const mates2 = myCrewMates(me, t0);
     if (mates2) rows.push(["WITH", mates2]);
     return { rows, band, label };
+  }
+  // CALLED, from the LINEUP crew (operator 2026-08-30: "I got called but
+  // I'm not showing up... in between being called and being on duty").
+  // The crew office put him on an ordered train before any work ticket
+  // exists and after he left the position board -- this is the only page
+  // that knew, buried in the Ottumwa lineup. A real call outranks the
+  // advisory projection and any stale board/rest state; a live on-train
+  // ticket (handled above) still wins.
+  if (me.called) {
+    const c = me.called;
+    const rowsC = [["STATUS", "CALLED"],
+                   ["TRAIN", `${c.train || "?"}${c.my_craft ? ` (${c.my_craft})` : ""}`]];
+    if (c.date_time) rowsC.push(["CALL", `${c.date_time}${c.status ? ` · ${c.status}` : ""}`]);
+    if (c.origin) rowsC.push(["FROM", c.origin]);
+    if (c.my_hos && c.my_hos.label) rowsC.push(["HOS", c.my_hos.label]);
+    const mates = (c.with || []).map((w) =>
+      `${(w.name || "").split(",")[0]} (${w.craft || "?"})`).join(", ");
+    if (mates) rowsC.push(["WITH", mates]);
+    return { rows: rowsC, band: "orange", label: `CALLED — ${c.train || "train"}` };
   }
   if (av.state === "rest_day") {
     return { rows: [["STATUS", "DAYS OFF — ADO rest day"]], band: "blue", label: "DAYS OFF (ADO)" };

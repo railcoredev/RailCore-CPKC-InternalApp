@@ -613,3 +613,22 @@
 #tableOutput .drill-head { display:block; font-weight:600; }
 #tableOutput .drill-head .drill-craft { font-weight:400; color:#9ca3af; font-size:0.9em; }
 #tableOutput .drill-sub { display:block; margin-top:2px; font-size:0.82rem; color:#9ca3af; font-weight:400; }
+
+/* ===== FULL-WIDTH STATUS PAGE (operator 2026-08-30: "I would like it to
+   be full width of the screen") -- break out of the centered narrow
+   app-card and shed the desktop-sized nested padding on phones. Toggled
+   by body.status-fw (added in renderStatusSection, cleared on any other
+   section). ===== */
+body.status-fw .app-card {
+  max-width: none;
+  margin: 4px 2px 8px;
+  padding: 6px 4px;
+}
+body.status-fw .results-panel { padding: 4px; }
+body.status-fw #tableOutput { padding: 0; }
+#tableOutput .status-dashboard { padding: 8px; max-width: none; }
+@media (max-width: 640px) {
+  #tableOutput .status-dashboard { padding: 6px 4px; }
+  #tableOutput .dashboard-section { padding: 12px 8px; }
+  #tableOutput .exec-detail-body .dashboard-section { padding: 10px 6px; }
+}
