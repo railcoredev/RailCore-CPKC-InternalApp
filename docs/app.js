@@ -2077,18 +2077,28 @@ function renderPayView() {
       const half = `${w.week_of.slice(0, 7)}-${dt.getUTCDate() <= 15 ? "H1" : "H2"}`;
       halves[half] = halves[half] || { earned: 0, starts: 0 };
       halves[half].earned += w.earned; halves[half].starts += w.trips;
-      return [w.week_of, "$" + w.earned.toFixed(2), w.trips,
-              "$" + d.guarantee_reference.EN_weekly_geb + " ref",
+      // ASSIGNMENT + conditional GUARANTEE (operator 2026-08-30): the
+      // extra-board GEB guarantee only applies on extra-board weeks -- on
+      // a pool turn there's no guarantee to beat, so show '—'. When on the
+      // extra board, flag whether earnings BEAT it (green) or fell short.
+      const asg = w.assignment || "—";
+      let guar = "—";
+      if (w.on_extra_board) {
+        const g = d.guarantee_reference.EN_weekly_geb;
+        const beat = w.earned >= g;
+        guar = `$${g}${beat ? " ✓ beat" : " ✗ short"}`;
+      }
+      return [w.week_of, asg, "$" + w.earned.toFixed(2), w.trips, guar,
               w.claims_pending ? w.claims_pending + " pending" : "—"];
     });
     Object.keys(halves).sort().reverse().forEach((h) => {
-      const r = [h + " TOTAL", "$" + halves[h].earned.toFixed(2),
+      const r = [h + " TOTAL", "", "$" + halves[h].earned.toFixed(2),
                  halves[h].starts, "", ""];
       r._cls = "row-off";
       wrows.push(r);
     });
     box.appendChild(el("div", "table-title", "WEEKLY — bid weeks Sat→Fri"));
-    const wt = buildTable(["Week of", "Earned", "Starts", "Guarantee", "Claims"], wrows);
+    const wt = buildTable(["Week of", "Assignment", "Earned", "Starts", "Guarantee", "Claims"], wrows);
     wrows.forEach((r, i) => { if (r._cls) wt.querySelectorAll("tbody tr")[i].className = r._cls; });
     box.appendChild(wt);
 
