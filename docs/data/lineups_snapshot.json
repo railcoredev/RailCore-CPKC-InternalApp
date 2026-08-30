@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "parked",
-  "collection_message": "Parked for nightly outage; reopens in ~6 min.",
+  "collection_message": "Parked for nightly outage; reopens in ~0 min.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-30T06:24:25+00:00",
+  "generated_at": "2026-08-30T06:30:39+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260829_145954",
@@ -4609,18 +4609,18 @@
        {
         "craft": "EN",
         "hos": {
-         "band": "yellow",
-         "label": "2h 06m",
-         "minutes": 126
+         "band": "orange",
+         "label": "1h 59m",
+         "minutes": 119
         },
         "name": "CALLAHAN,(TIM)"
        },
        {
         "craft": "AE",
         "hos": {
-         "band": "yellow",
-         "label": "2h 06m",
-         "minutes": 126
+         "band": "orange",
+         "label": "1h 59m",
+         "minutes": 119
         },
         "name": "LONG,(ALEXANDER)"
        }
@@ -6315,8 +6315,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 21m",
-         "minutes": 81
+         "label": "1h 14m",
+         "minutes": 74
         },
         "name": "LOCHNER,(DEREK)"
        },
@@ -6324,8 +6324,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "1h 21m",
-         "minutes": 81
+         "label": "1h 14m",
+         "minutes": 74
         },
         "name": "LUDWIG,(AARON)"
        }

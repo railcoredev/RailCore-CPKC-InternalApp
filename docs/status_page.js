@@ -475,6 +475,12 @@ window.StatusDashboard = (function() {
                             row.trains_covering;
                     }
                     if (row.turns_weeks) poolRec.turnsWeeks = row.turns_weeks;
+                    if (row.turns_by_craft) {
+                        poolRec.turnsByCraft = poolRec.turnsByCraft || {};
+                        Object.entries(row.turns_by_craft).forEach(([cr, n]) => {
+                            poolRec.turnsByCraft[cr] = Math.max(poolRec.turnsByCraft[cr] || 0, n);
+                        });
+                    }
                 }
             });
             const turnsByPool = aggregatePackPoolTurns((poolSummary && poolSummary.pools) || []);
@@ -566,6 +572,16 @@ window.StatusDashboard = (function() {
             termRec.poolOnlyStarts = poolRows.reduce((s, r) =>
                 s + (poolCategory(r.pool) === 'POOL' ? r.starts : 0), 0);
             termRec.poolOnlyTrains = termRec.coverage.assigned;
+            // craft-split turns (operator 2026-08-30: the phantom temp
+            // turn hid on the AE side -- EN vs AE must be visible)
+            termRec.turnsByCraft = {};
+            poolRows.forEach((r) => {
+                if (poolCategory(r.pool) === 'POOL' && r.turnsByCraft) {
+                    Object.entries(r.turnsByCraft).forEach(([cr, n]) => {
+                        termRec.turnsByCraft[cr] = (termRec.turnsByCraft[cr] || 0) + n;
+                    });
+                }
+            });
             termRec.poolRows = poolRows
                 .sort((a, b) => b.trains - a.trains)
                 .map((r) => ({
@@ -1097,7 +1113,7 @@ window.StatusDashboard = (function() {
                 <td class="metric-link" data-target="analytics-reports" data-terminal="${t.terminal}" data-report-id="workload-balance">${fmtInt(t.starts)}</td>
                 <td class="metric-link" data-target="analytics-reports" data-terminal="${t.terminal}" data-report-id="recrew-frequency">${fmtInt(t.recrew)}</td>
                 <td class="metric-link" data-target="analytics-reports" data-terminal="${t.terminal}" data-report-id="train-family">${fmtInt(t.split)}</td>
-                <td class="metric-link" data-target="pool-reports" data-terminal="${t.terminal}">${fmtInt(t.turnSets)}</td>
+                <td class="metric-link" data-target="pool-reports" data-terminal="${t.terminal}">${fmtInt(t.turnSets)}${(t.turnsByCraft && t.turnsByCraft.EN != null && t.turnsByCraft.AE != null) ? `<div class="kpi-sub">EN ${fmtInt(t.turnsByCraft.EN)} · AE ${fmtInt(t.turnsByCraft.AE)}</div>` : ''}</td>
                 <td class="metric-link" data-target="pool-reports" data-terminal="${t.terminal}">${fmtInt(t.crewSlots)}</td>
                 <td>${fmtRatio(t.turnSets > 0 ? t.poolOnlyTrains / t.turnSets : null)}</td>
                 <td>${t.startsEaWeekly != null
@@ -1383,13 +1399,13 @@ window.StatusDashboard = (function() {
                                         const poolJobs = terminalMap.byPool?.[String(p.pool || '').toUpperCase()] || [];
                                         return `
                                             <details class="pool-tree-terminal" style="margin: 8px 0 0 16px;">
-                                                <summary>${p.pool} — Trains ${fmtInt(p.trains)}${p.coveredByEw ? '*' : ''}, Starts ${fmtInt(p.starts)}, Pool Turns ${fmtInt(p.turnSets)}${p.startsEaWeekly != null ? ` | Starts/Ea (weekly): ${fmtRatio(p.startsEaWeekly)}${p.weeklyPartial ? '†' : ''}` : (p.crewSlots > 0 ? ` | Starts/Ea (seats): ${fmtRatio(p.starts / p.crewSlots)}` : '')} | Recrew: ${fmtInt(p.recrew || 0)}</summary>
+                                                <summary>${p.pool} — Trains ${fmtInt(p.trains)}${p.coveredByEw ? '*' : ''}, Starts ${fmtInt(p.starts)}, Pool Turns ${fmtInt(p.turnSets)}${(p.turnsByCraft && p.turnsByCraft.EN != null) ? ` (EN ${fmtInt(p.turnsByCraft.EN)} · AE ${fmtInt(p.turnsByCraft.AE || 0)})` : ''}${p.startsEaWeekly != null ? ` | Starts/Ea (weekly): ${fmtRatio(p.startsEaWeekly)}${p.weeklyPartial ? '†' : ''}` : (p.crewSlots > 0 ? ` | Starts/Ea (seats): ${fmtRatio(p.starts / p.crewSlots)}` : '')} | Recrew: ${fmtInt(p.recrew || 0)}</summary>
                                                 ${(p.weeklyRows && p.weeklyRows.length) ? `
                                                 <table class="status-table compact" style="margin:6px 0;">
                                                     <thead><tr><th>Week of</th><th>Assigned</th><th>Starts</th><th>Starts/Ea</th></tr></thead>
                                                     <tbody>
                                                     ${p.weeklyRows.map((w) => `
-                                                        <tr><td>${w.week_of}</td><td>${fmtInt(w.assigned)}</td><td>${fmtInt(w.starts)}</td><td>${fmtRatio(w.ratio)}</td></tr>`).join('')}
+                                                        <tr><td>${w.week_of}</td><td>${fmtInt(w.assigned)}${(w.by_craft && (w.by_craft.EN != null || w.by_craft.AE != null)) ? ` (EN ${fmtInt(w.by_craft.EN || 0)} · AE ${fmtInt(w.by_craft.AE || 0)})` : ''}</td><td>${fmtInt(w.starts)}</td><td>${fmtRatio(w.ratio)}</td></tr>`).join('')}
                                                     <tr class="total-row"><td><strong>window</strong></td><td></td><td><strong>${fmtInt(p.weeklyRows.reduce((s, w) => s + w.starts, 0))}</strong></td><td><strong>${fmtRatio(p.startsEaWeekly)}${p.weeklyPartial ? '†' : ''}</strong></td></tr>
                                                     </tbody>
                                                 </table>` : ''}
