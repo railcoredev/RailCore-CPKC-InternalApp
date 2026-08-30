@@ -979,8 +979,17 @@ window.StatusDashboard = (function() {
         };
         const row = (label, fn, tot) => `<tr><td>${label}</td>${cols.map(
             (col) => `<td>${fn(times[col.key] || {},
-                              poolRowFor(col.pool, col.term))}</td>`
+                              poolRowFor(col.pool, col.term), col.key)}</td>`
             ).join('')}<td class="exec-times-total">${tot}</td></tr>`;
+        // seat split for the time rows (operator 2026-08-30: engineers
+        // called on their rest run a different cadence -- EN vs AE per
+        // pool; CO seats fold into AE upstream)
+        const craftSub = (key, vk) => {
+            const en = times[key + '|EN'] || {};
+            const ae = times[key + '|AE'] || {};
+            if (en[vk] == null && ae[vk] == null) return '';
+            return `<div class="kpi-sub">EN ${fmtHours(en[vk])} · AE ${fmtHours(ae[vk])}</div>`;
+        };
         return `
             <table class="exec-times-table">
                 <thead><tr><th></th>${cols.map(
@@ -993,12 +1002,12 @@ window.StatusDashboard = (function() {
                     ${row('Split', (s, pr) => pr.splits != null ? fmtInt(pr.splits) : '—', fmtInt(totals.splits))}
                     ${row('Assigned', (s) => s.workers != null ? fmtInt(s.workers) : '—', fmtInt(totals.workers))}
                     ${row('Starts/Ea', (s) => (s.workers && s.starts != null) ? (s.starts / s.workers).toFixed(1) : '—', totals.workers ? (totals.tstarts / totals.workers).toFixed(1) : '—')}
-                    ${row('Cycle', (s) => fmtHours(s.cycle_h), fmtHours(totals.cycle))}
-                    ${row('Home', (s) => fmtHours(s.home_h), fmtHours(totals.home))}
-                    ${row('Rested', (s) => fmtHours(s.rested_h), fmtHours(totals.rested))}
+                    ${row('Cycle', (s, pr, k) => fmtHours(s.cycle_h) + craftSub(k, 'cycle_h'), fmtHours(totals.cycle))}
+                    ${row('Home', (s, pr, k) => fmtHours(s.home_h) + craftSub(k, 'home_h'), fmtHours(totals.home))}
+                    ${row('Rested', (s, pr, k) => fmtHours(s.rested_h) + craftSub(k, 'rested_h'), fmtHours(totals.rested))}
                 </tbody>
             </table>
-            <div class="doclib-hitcount">Assigned: road pools = WEEKLY ASSIGNMENT (marks) — who held the turns that window (pre-2026-08-22 windows use the worked-the-turn proxy, labeled). Starts/Ea = the POOL'S OWN starts by its assigned people ÷ all assigned (average; idle assigned count). EW/YD/LOCAL = everyone who worked the board. TOTAL Assigned = distinct individuals, counted once.</div>
+            <div class="doclib-hitcount">Assigned: road pools = WEEKLY ASSIGNMENT (marks) — who held the turns that window (pre-2026-08-22 windows use the worked-the-turn proxy, labeled). Starts/Ea = the POOL'S OWN starts by its assigned people ÷ all assigned (average; idle assigned count). EW/YD/LOCAL = everyone who worked the board. TOTAL Assigned = distinct individuals, counted once. Time rows show the EN · AE seat split beneath each pool (CO seats fold into AE; person-month modal seat).</div>
             ${cols.map((col) => {
                 const tw = poolRowFor(col.pool, col.term).turnsWeeks;
                 if (!tw) return '';
