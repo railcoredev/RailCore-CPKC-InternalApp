@@ -1399,13 +1399,13 @@ window.StatusDashboard = (function() {
                                         const poolJobs = terminalMap.byPool?.[String(p.pool || '').toUpperCase()] || [];
                                         return `
                                             <details class="pool-tree-terminal" style="margin: 8px 0 0 16px;">
-                                                <summary>${p.pool} — Trains ${fmtInt(p.trains)}${p.coveredByEw ? '*' : ''}, Starts ${fmtInt(p.starts)}, Pool Turns ${fmtInt(p.turnSets)}${(p.turnsByCraft && p.turnsByCraft.EN != null) ? ` (EN ${fmtInt(p.turnsByCraft.EN)} · AE ${fmtInt(p.turnsByCraft.AE || 0)})` : ''}${p.startsEaWeekly != null ? ` | Starts/Ea (weekly): ${fmtRatio(p.startsEaWeekly)}${p.weeklyPartial ? '†' : ''}` : (p.crewSlots > 0 ? ` | Starts/Ea (seats): ${fmtRatio(p.starts / p.crewSlots)}` : '')} | Recrew: ${fmtInt(p.recrew || 0)}</summary>
+                                                <summary>${p.pool} — Trains ${fmtInt(p.trains)}${p.coveredByEw ? '*' : ''}, Starts ${fmtInt(p.starts)}, Pool Turns ${fmtInt(p.turnSets)}${(p.turnsByCraft && p.turnsByCraft.EN != null) ? ` (EN ${fmtInt(p.turnsByCraft.EN)} · AE ${fmtInt(p.turnsByCraft.AE || 0)})` : ''}${p.startsEaWeekly != null ? ` | Starts/Ea (weekly): ${fmtRatio(p.startsEaWeekly)}${p.weeklyPartial ? '†' : ''}${(p.startsEaByCraft && p.startsEaByCraft.EN != null) ? ` — EN ${fmtRatio(p.startsEaByCraft.EN)} · AE ${fmtRatio(p.startsEaByCraft.AE)}` : ''}` : (p.crewSlots > 0 ? ` | Starts/Ea (seats): ${fmtRatio(p.starts / p.crewSlots)}` : '')} | Recrew: ${fmtInt(p.recrew || 0)}</summary>
                                                 ${(p.weeklyRows && p.weeklyRows.length) ? `
                                                 <table class="status-table compact" style="margin:6px 0;">
-                                                    <thead><tr><th>Week of</th><th>Assigned</th><th>Starts</th><th>Starts/Ea</th></tr></thead>
+                                                    <thead><tr><th>Week of</th><th>Assigned</th><th>Starts (EN · AE)</th><th>Starts/Ea (EN · AE)</th></tr></thead>
                                                     <tbody>
                                                     ${p.weeklyRows.map((w) => `
-                                                        <tr><td>${w.week_of}</td><td>${fmtInt(w.assigned)}${(w.by_craft && (w.by_craft.EN != null || w.by_craft.AE != null)) ? ` (EN ${fmtInt(w.by_craft.EN || 0)} · AE ${fmtInt(w.by_craft.AE || 0)})` : ''}</td><td>${fmtInt(w.starts)}</td><td>${fmtRatio(w.ratio)}</td></tr>`).join('')}
+                                                        <tr><td>${w.week_of}</td><td>${fmtInt(w.assigned)}${(w.by_craft && (w.by_craft.EN != null || w.by_craft.AE != null)) ? ` (EN ${fmtInt(w.by_craft.EN || 0)} · AE ${fmtInt(w.by_craft.AE || 0)})` : ''}</td><td>${fmtInt(w.starts)}${(w.starts_by_craft && (w.starts_by_craft.EN != null || w.starts_by_craft.AE != null)) ? ` (${fmtInt(w.starts_by_craft.EN || 0)} · ${fmtInt(w.starts_by_craft.AE || 0)})` : ''}</td><td>${fmtRatio(w.ratio)}${(w.ratio_by_craft && (w.ratio_by_craft.EN != null || w.ratio_by_craft.AE != null)) ? ` (${fmtRatio(w.ratio_by_craft.EN)} · ${fmtRatio(w.ratio_by_craft.AE)})` : ''}</td></tr>`).join('')}
                                                     <tr class="total-row"><td><strong>window</strong></td><td></td><td><strong>${fmtInt(p.weeklyRows.reduce((s, w) => s + w.starts, 0))}</strong></td><td><strong>${fmtRatio(p.startsEaWeekly)}${p.weeklyPartial ? '†' : ''}</strong></td></tr>
                                                     </tbody>
                                                 </table>` : ''}
@@ -1914,6 +1914,7 @@ window.StatusDashboard = (function() {
                 const cell = mtPools[`${r.pool}@${t.terminal}`];
                 if (cell && cell.weekly && cell.weekly.length) {
                     r.startsEaWeekly = cell.starts_ea_weekly;
+                    r.startsEaByCraft = cell.starts_ea_by_craft;
                     r.weeklyRows = cell.weekly;
                     r.weeklyPartial = cell.weekly_partial;
                     if (poolCategory(r.pool) === 'POOL') {
