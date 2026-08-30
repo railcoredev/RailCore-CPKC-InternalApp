@@ -970,6 +970,27 @@ window.StatusDashboard = (function() {
         const totals = {
             trains: sumBy((s, pr) => pr.trains),
             starts: sumBy((s, pr) => pr.starts),
+            startsEaWeekly: (() => {
+                // Terminal-level weekly Starts/Ea: per week, sum pool
+                // starts and pool assigned across the road-pool columns,
+                // divide, then sum across weeks -- same method as the
+                // terminal table (NOT sum-of-pool-averages, NOT window
+                // starts/workers). Weekly-consistent for any window.
+                const byWeek = {};
+                let any = false;
+                cols.forEach((col) => {
+                    if (['SW','OB','KA','DA'].indexOf(col.pool) < 0) return;
+                    const s = times[col.key] || {};
+                    (s.weekly || []).forEach((w) => {
+                        any = true;
+                        const b = byWeek[w.week_of] = byWeek[w.week_of] || { a: 0, s: 0 };
+                        b.a += w.assigned; b.s += w.starts;
+                    });
+                });
+                if (!any) return null;
+                return Math.round(Object.values(byWeek)
+                    .reduce((sum, w) => sum + (w.a ? w.s / w.a : 0), 0) * 100) / 100;
+            })(),
             recrew: sumBy((s, pr) => pr.recrew),
             splits: sumBy((s, pr) => pr.splits),
             workers: distinctWorkers,
@@ -1001,7 +1022,7 @@ window.StatusDashboard = (function() {
                     ${row('Recrew', (s, pr) => pr.recrew != null ? fmtInt(pr.recrew) : '—', fmtInt(totals.recrew))}
                     ${row('Split', (s, pr) => pr.splits != null ? fmtInt(pr.splits) : '—', fmtInt(totals.splits))}
                     ${row('Assigned', (s) => s.workers != null ? fmtInt(s.workers) : '—', fmtInt(totals.workers))}
-                    ${row('Starts/Ea', (s) => (s.workers && s.starts != null) ? (s.starts / s.workers).toFixed(1) : '—', totals.workers ? (totals.tstarts / totals.workers).toFixed(1) : '—')}
+                    ${row('Starts/Ea', (s) => (s.starts_ea_weekly != null) ? (fmtRatio(s.starts_ea_weekly) + (s.weekly_partial ? '†' : '')) : ((s.workers && s.starts != null) ? (s.starts / s.workers).toFixed(1) : '—'), fmtRatio(totals.startsEaWeekly))}
                     ${row('Cycle', (s, pr, k) => fmtHours(s.cycle_h) + craftSub(k, 'cycle_h'), fmtHours(totals.cycle))}
                     ${row('Home', (s, pr, k) => fmtHours(s.home_h) + craftSub(k, 'home_h'), fmtHours(totals.home))}
                     ${row('Rested', (s, pr, k) => fmtHours(s.rested_h) + craftSub(k, 'rested_h'), fmtHours(totals.rested))}
