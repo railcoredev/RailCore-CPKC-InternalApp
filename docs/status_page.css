@@ -563,15 +563,53 @@
 #tableOutput .exec-times-table th, #tableOutput .exec-times-table td {
   white-space: nowrap;
 }
-/* KPI cards: keep the VIEW DETAIL hint from overlapping the label */
-#tableOutput .exec-kpi { overflow: hidden; }
+/* KPI cards (operator 2026-08-31: "not the easiest to look at"): the
+   whole card is a .metric-link, so its dotted underline bled onto EVERY
+   line -- kill decoration on card text, keep the card tappable, and make
+   'View detail' one clean tag at the bottom-right instead of a stacked
+   header colliding with the label. */
+#tableOutput .exec-kpi.metric-link { text-decoration: none; }
+#tableOutput .exec-kpi.metric-link * { text-decoration: none; }
+#tableOutput .exec-kpi {
+  overflow: hidden;
+  padding-bottom: 22px;   /* room for the corner tag */
+}
 #tableOutput .exec-kpi .kpi-link-hint {
-  position: static;
-  display: block;
-  margin-top: 2px;
+  position: absolute;
+  right: 12px;
+  bottom: 8px;
+  top: auto;
+  font-size: 10px;
+  color: #60a5fa;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
   white-space: nowrap;
 }
+#tableOutput .kpi-label { text-decoration: none; }
+
+/* WIDE TABLES: pin the row-label column so it stays put while the pool
+   columns swipe sideways (operator: pools-as-columns is correct, but a
+   phone loses the labels off-screen). */
+#tableOutput .status-table td:first-child,
+#tableOutput .status-table th:first-child,
+#tableOutput .exec-times-table td:first-child,
+#tableOutput .exec-times-table th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background: #111721;
+  box-shadow: 1px 0 0 #1f2a37;
+}
+#tableOutput .status-table thead th:first-child,
+#tableOutput .exec-times-table thead th:first-child { z-index: 3; }
+
 @media (max-width: 640px) {
   #tableOutput .exec-kpi-strip { grid-template-columns: repeat(2, 1fr) !important; }
   #tableOutput .status-table, #tableOutput .exec-times-table { font-size: 0.8rem; }
 }
+
+/* Pool drilldown summary (operator 2026-08-31: run-on wrapped 8 lines) --
+   two clean lines: bold headline + muted sub-stats */
+#tableOutput .drill-head { display:block; font-weight:600; }
+#tableOutput .drill-head .drill-craft { font-weight:400; color:#9ca3af; font-size:0.9em; }
+#tableOutput .drill-sub { display:block; margin-top:2px; font-size:0.82rem; color:#9ca3af; font-weight:400; }

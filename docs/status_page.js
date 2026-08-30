@@ -1408,7 +1408,10 @@ window.StatusDashboard = (function() {
                                         const poolJobs = terminalMap.byPool?.[String(p.pool || '').toUpperCase()] || [];
                                         return `
                                             <details class="pool-tree-terminal" style="margin: 8px 0 0 16px;">
-                                                <summary>${p.pool} — Trains ${fmtInt(p.trains)}${p.coveredByEw ? '*' : ''}, Starts ${fmtInt(p.starts)}, Pool Turns ${fmtInt(p.turnSets)}${(p.turnsByCraft && p.turnsByCraft.EN != null) ? ` (EN ${fmtInt(p.turnsByCraft.EN)} · AE ${fmtInt(p.turnsByCraft.AE || 0)})` : ''}${p.startsEaWeekly != null ? ` | Starts/Ea (weekly): ${fmtRatio(p.startsEaWeekly)}${p.weeklyPartial ? '†' : ''}${(p.startsEaByCraft && p.startsEaByCraft.EN != null) ? ` — EN ${fmtRatio(p.startsEaByCraft.EN)} · AE ${fmtRatio(p.startsEaByCraft.AE)}` : ''}` : (p.crewSlots > 0 ? ` | Starts/Ea (seats): ${fmtRatio(p.starts / p.crewSlots)}` : '')} | Recrew: ${fmtInt(p.recrew || 0)}</summary>
+                                                <summary>
+                                                  <span class="drill-head">${p.pool}${p.coveredByEw ? '*' : ''} — ${fmtInt(p.trains)} trains · ${fmtInt(p.starts)} starts · ${fmtInt(p.turnSets)} turns${(p.turnsByCraft && p.turnsByCraft.EN != null) ? ` <span class="drill-craft">(EN ${fmtInt(p.turnsByCraft.EN)} · AE ${fmtInt(p.turnsByCraft.AE || 0)})</span>` : ''}</span>
+                                                  <span class="drill-sub">${p.startsEaWeekly != null ? `Starts/Ea ${fmtRatio(p.startsEaWeekly)}${p.weeklyPartial ? '†' : ''}${(p.startsEaByCraft && p.startsEaByCraft.EN != null) ? ` (EN ${fmtRatio(p.startsEaByCraft.EN)} · AE ${fmtRatio(p.startsEaByCraft.AE)})` : ''}` : (p.crewSlots > 0 ? `Starts/Ea ${fmtRatio(p.starts / p.crewSlots)}` : '')} · Recrew ${fmtInt(p.recrew || 0)}</span>
+                                                </summary>
                                                 ${(p.weeklyRows && p.weeklyRows.length) ? `
                                                 <table class="status-table compact" style="margin:6px 0;">
                                                     <thead><tr><th>Week of</th><th>Assigned</th><th>Starts (EN · AE)</th><th>Starts/Ea (EN · AE)</th></tr></thead>
