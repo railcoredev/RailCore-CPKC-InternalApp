@@ -1142,9 +1142,25 @@ function renderBoardsTable() {
     if (r.on_train) {
       nameEl.appendChild(el("span", "on-train-chip", ` ON ${r.on_train}`));
     }
+    // REST (operator 2026-08-30: away boards print no MTOD, so the page
+    // read as 'everybody rested'): calculated from the same projection
+    // layer as the Me card. Board MTOD stays authoritative where shown.
+    let restCell = "—";
+    if (r.rest_state) {
+      const ru = r.rest_until ? new Date(r.rest_until) : null;
+      const now = new Date();
+      if (r.rest_state === "on_train") restCell = "on train";
+      else if (r.rest_state === "booked_off") restCell = "off";
+      else if (ru && ru > now) {
+        const hhmm = `${String(ru.getHours()).padStart(2, "0")}${String(ru.getMinutes()).padStart(2, "0")}`;
+        const sameDay = ru.toDateString() === now.toDateString();
+        restCell = `til ${hhmm}${sameDay ? "" : " " + (ru.getMonth() + 1) + "/" + ru.getDate()}`;
+      } else restCell = "rested";
+    }
     const tr = [
       r.position || "", r.turn_asgn || "", (starred ? "*" : "") + (r.craft_code || ""),
       nameEl, hours[0] || "—", hours[1] || "—",
+      restCell,
       r.status_code || "",
     ];
     tr._cls = (isMe ? "row-me" : "");
@@ -1153,11 +1169,15 @@ function renderBoardsTable() {
   const box = el("div");
   box.appendChild(el("div", "table-title",
     `${b.screen_title || b.label} · position order = calling order`));
-  const wrap = buildTable(["Pos", "Turn", "CR", "Name", "MTOD", "MTPD", "Status"], rows);
+  const wrap = buildTable(["Pos", "Turn", "CR", "Name", "MTOD", "MTPD", "Rest", "Mark"], rows);
   // row classes (greyed marked-off, highlighted me — operator locked-in)
   const trs = wrap.querySelectorAll("tbody tr");
   rows.forEach((r, i) => { if (r._cls) trs[i].className = r._cls.trim(); });
   box.appendChild(wrap);
+  box.appendChild(el("div", "table-title",
+    "REST = calculated from tie-ups + rest rules (this screen prints no "
+    + "MTOD). MTOD/MTPD are board-verbatim where shown. MARK = the "
+    + "trailing board marker, verbatim (* = under a year in craft)."));
   showTable(box);
   return null;
 }

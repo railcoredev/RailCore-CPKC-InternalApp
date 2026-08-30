@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "active",
-  "collection_message": "Light sweep sched_20260830_050719.",
+  "collection_message": "Light sweep sched_20260830_051333.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-30T10:13:23+00:00",
+  "generated_at": "2026-08-30T10:15:50+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260830_050719",
@@ -2534,8 +2534,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "4h 57m",
-         "minutes": 297
+         "label": "4h 54m",
+         "minutes": 294
         },
         "name": "OLSON,(ANDREW)"
        },
@@ -2543,8 +2543,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "4h 57m",
-         "minutes": 297
+         "label": "4h 54m",
+         "minutes": 294
         },
         "name": "PILLOW,(JOSHUA)"
        }
@@ -2613,8 +2613,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "11h 07m",
-         "minutes": 667
+         "label": "11h 04m",
+         "minutes": 664
         },
         "name": "RUSSELL,(DAN)"
        }
@@ -2644,8 +2644,8 @@
         "craft": "CO",
         "hos": {
          "band": "green",
-         "label": "11h 07m",
-         "minutes": 667
+         "label": "11h 04m",
+         "minutes": 664
         },
         "name": "HAGEN,(ANTHONY)"
        }
@@ -2663,8 +2663,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 47m",
-         "minutes": 647
+         "label": "10h 44m",
+         "minutes": 644
         },
         "name": "CADY,(AARON)"
        },
@@ -2672,8 +2672,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "10h 47m",
-         "minutes": 647
+         "label": "10h 44m",
+         "minutes": 644
         },
         "name": "BARAKS,(RON)"
        }
@@ -4518,8 +4518,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 47m",
-         "minutes": 647
+         "label": "10h 44m",
+         "minutes": 644
         },
         "name": "GLASGOW,(STEVE)"
        },
@@ -4527,8 +4527,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "10h 47m",
-         "minutes": 647
+         "label": "10h 44m",
+         "minutes": 644
         },
         "name": "GANZER,(JASON)"
        }
@@ -4567,8 +4567,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 47m",
-         "minutes": 467
+         "label": "7h 44m",
+         "minutes": 464
         },
         "name": "LIENEMAN,(DENNIS)",
         "tags": [
@@ -4579,8 +4579,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 47m",
-         "minutes": 467
+         "label": "7h 44m",
+         "minutes": 464
         },
         "name": "JAMESON,(DANIELLE)",
         "tags": [
@@ -4621,12 +4621,12 @@
        {
         "craft": "EN",
         "name": "JOHNSON,(CHAD)",
-        "on_in": "0h 17m"
+        "on_in": "0h 14m"
        },
        {
         "craft": "AE",
         "name": "NEUBERG,(RUSSELL)",
-        "on_in": "0h 17m"
+        "on_in": "0h 14m"
        }
       ],
       "eng_crew_count": "1",
@@ -6229,8 +6229,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "11h 47m",
-         "minutes": 707
+         "label": "11h 44m",
+         "minutes": 704
         },
         "name": "CASHATT,(DAKOTA)"
        },
@@ -6238,8 +6238,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "11h 47m",
-         "minutes": 707
+         "label": "11h 44m",
+         "minutes": 704
         },
         "name": "BOER,(BRANDON)"
        },
@@ -6247,8 +6247,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "11h 47m",
-         "minutes": 707
+         "label": "11h 44m",
+         "minutes": 704
         },
         "name": "KEOMANIVONG,(SONNY)"
        }
@@ -7962,7 +7962,9 @@
       "turn_asgn": "0009",
       "turn_hours": "",
       "turn_info": "00",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "on_board",
+      "rest_until": "2026-08-30T01:36"
      }
     ],
     "screen_title": "OTTUMWA ENG XTRA BRD POSITION",
@@ -7993,7 +7995,9 @@
       "turn_asgn": "OB13",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "resting",
+      "rest_until": "2026-08-30T05:58"
      },
      {
       "craft_code": "AE",
@@ -8015,7 +8019,9 @@
       "turn_asgn": "OB13",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "resting",
+      "rest_until": "2026-08-30T05:58"
      },
      {
       "craft_code": "AE",
@@ -8037,7 +8043,9 @@
       "turn_asgn": "OB14",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "on_board",
+      "rest_until": "2026-08-30T05:13"
      },
      {
       "craft_code": "EN",
@@ -8059,7 +8067,9 @@
       "turn_asgn": "OB14",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "resting",
+      "rest_until": "2026-08-28T19:28"
      }
     ],
     "screen_title": "OB POOLS IN OTT TURN ORDER",
@@ -8090,7 +8100,9 @@
       "turn_asgn": "OB14",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "on_board",
+      "rest_until": "2026-08-30T05:13"
      }
     ],
     "screen_title": "OB POOLS IN OTT POSITION",
@@ -8129,7 +8141,9 @@
       "turn_asgn": "OB13",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "resting",
+      "rest_until": "2026-08-30T05:58"
      },
      {
       "craft_code": "AE",
@@ -8151,7 +8165,9 @@
       "turn_asgn": "OB13",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "resting",
+      "rest_until": "2026-08-30T05:58"
      }
     ],
     "screen_title": "OB POOLS IN IMS POSITION",
@@ -8182,7 +8198,9 @@
       "turn_asgn": "DA17",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "on_board",
+      "rest_until": "2026-08-30T05:13"
      },
      {
       "craft_code": "AE",
@@ -8204,7 +8222,9 @@
       "turn_asgn": "MU01",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "on_board",
+      "rest_until": "2026-08-30T05:13"
      },
      {
       "craft_code": "EN",
@@ -8226,7 +8246,9 @@
       "turn_asgn": "DA18",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "on_board",
+      "rest_until": "2026-08-30T05:00"
      },
      {
       "craft_code": "AE",
@@ -8248,7 +8270,9 @@
       "turn_asgn": "DA02",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "on_board",
+      "rest_until": "2026-08-30T05:00"
      },
      {
       "craft_code": "EN",
@@ -8270,7 +8294,9 @@
       "turn_asgn": "DA25",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "resting",
+      "rest_until": "2026-08-30T07:10"
      },
      {
       "craft_code": "AE",
@@ -8292,7 +8318,9 @@
       "turn_asgn": "DA25",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "resting",
+      "rest_until": "2026-08-30T07:10"
      },
      {
       "craft_code": "EN",
@@ -8314,7 +8342,9 @@
       "turn_asgn": "MU06",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "resting",
+      "rest_until": "2026-08-30T10:10"
      },
      {
       "craft_code": "AE",
@@ -8336,7 +8366,9 @@
       "turn_asgn": "DA22",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "resting",
+      "rest_until": "2026-08-30T10:10"
      }
     ],
     "screen_title": "DA POOLS IN OTT POSITION",
@@ -8367,7 +8399,9 @@
       "turn_asgn": "MU02",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "resting",
+      "rest_until": "2026-08-30T06:03"
      },
      {
       "craft_code": "AE",
@@ -8389,7 +8423,9 @@
       "turn_asgn": "MU02",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "resting",
+      "rest_until": "2026-08-30T06:03"
      },
      {
       "craft_code": "TT",
@@ -8411,7 +8447,9 @@
       "turn_asgn": "MU01",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "resting",
+      "rest_until": "2026-08-30T10:37"
      },
      {
       "craft_code": "EN",
@@ -8433,7 +8471,9 @@
       "turn_asgn": "MU03",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "resting",
+      "rest_until": "2026-08-30T06:05"
      },
      {
       "craft_code": "AE",
@@ -8455,7 +8495,9 @@
       "turn_asgn": "MU03",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "resting",
+      "rest_until": "2026-08-30T06:05"
      },
      {
       "craft_code": "EN",
@@ -8477,7 +8519,9 @@
       "turn_asgn": "KA04",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "resting",
+      "rest_until": "2026-08-30T08:47"
      },
      {
       "craft_code": "AE",
@@ -8499,7 +8543,9 @@
       "turn_asgn": "KA04",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "resting",
+      "rest_until": "2026-08-30T08:47"
      },
      {
       "craft_code": "EN",
@@ -8521,7 +8567,9 @@
       "turn_asgn": "MU01",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "resting",
+      "rest_until": "2026-08-30T10:37"
      },
      {
       "craft_code": "AE",
@@ -8543,7 +8591,9 @@
       "turn_asgn": "MU01",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "resting",
+      "rest_until": "2026-08-30T10:37"
      }
     ],
     "screen_title": "KA POOLS IN OTT POSITION",
@@ -8574,7 +8624,9 @@
       "turn_asgn": "SW06",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "on_board",
+      "rest_until": "2026-08-30T03:22"
      },
      {
       "craft_code": "AE",
@@ -8596,7 +8648,9 @@
       "turn_asgn": "SW06",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "on_board",
+      "rest_until": "2026-08-30T03:22"
      },
      {
       "craft_code": "ET",
@@ -8618,7 +8672,9 @@
       "turn_asgn": "SW01",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "working",
+      "rest_until": null
      },
      {
       "craft_code": "TT",
@@ -8640,7 +8696,9 @@
       "turn_asgn": "FM01",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "resting",
+      "rest_until": "2026-08-30T07:12"
      },
      {
       "craft_code": "ET",
@@ -8662,7 +8720,9 @@
       "turn_asgn": "XX03",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "on_board",
+      "rest_until": "2026-08-30T03:22"
      },
      {
       "craft_code": "ET",
@@ -8684,7 +8744,9 @@
       "turn_asgn": "XX04",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "on_board",
+      "rest_until": "2026-08-30T03:22"
      }
     ],
     "screen_title": "SW POOLS IN OTT POSITION",
@@ -8715,7 +8777,9 @@
       "turn_asgn": "SW02",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "on_board",
+      "rest_until": "2026-08-30T01:36"
      },
      {
       "craft_code": "AE",
@@ -8737,7 +8801,9 @@
       "turn_asgn": "SW01",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "on_board",
+      "rest_until": "2026-08-30T01:36"
      },
      {
       "craft_code": "EN",
@@ -8759,7 +8825,9 @@
       "turn_asgn": "SW08",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "on_board",
+      "rest_until": "2026-08-30T05:00"
      },
      {
       "craft_code": "AE",
@@ -8781,7 +8849,9 @@
       "turn_asgn": "SW05",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "on_board",
+      "rest_until": "2026-08-30T05:00"
      },
      {
       "craft_code": "EN",
@@ -8803,7 +8873,9 @@
       "turn_asgn": "SW07",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "resting",
+      "rest_until": "2026-08-30T05:45"
      },
      {
       "craft_code": "AE",
@@ -8825,7 +8897,9 @@
       "turn_asgn": "SW04",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "resting",
+      "rest_until": "2026-08-30T05:45"
      },
      {
       "craft_code": "EN",
@@ -8847,7 +8921,9 @@
       "turn_asgn": "SW01",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "resting",
+      "rest_until": "2026-08-30T10:55"
      },
      {
       "craft_code": "AE",
@@ -8869,7 +8945,9 @@
       "turn_asgn": "SW02",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "resting",
+      "rest_until": "2026-08-30T10:55"
      },
      {
       "craft_code": "EN",
@@ -8891,7 +8969,9 @@
       "turn_asgn": "MU01",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "working",
+      "rest_until": null
      },
      {
       "craft_code": "AE",
@@ -8913,7 +8993,9 @@
       "turn_asgn": "SW08",
       "turn_hours": "",
       "turn_info": "",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "working",
+      "rest_until": null
      }
     ],
     "screen_title": "SW POOLS IN KC  POSITION",
@@ -8952,7 +9034,9 @@
       "turn_asgn": "0012",
       "turn_hours": "",
       "turn_info": "00",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "on_board",
+      "rest_until": "2026-08-30T01:36"
      },
      {
       "craft_code": "",
@@ -8974,7 +9058,9 @@
       "turn_asgn": "0002",
       "turn_hours": "",
       "turn_info": "00",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "on_board",
+      "rest_until": "2026-08-30T01:36"
      },
      {
       "craft_code": "",
@@ -8996,7 +9082,9 @@
       "turn_asgn": "0010",
       "turn_hours": "",
       "turn_info": "00",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "on_board",
+      "rest_until": "2026-08-30T01:36"
      },
      {
       "craft_code": "",
@@ -9018,7 +9106,9 @@
       "turn_asgn": "0005",
       "turn_hours": "",
       "turn_info": "00",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "on_board",
+      "rest_until": "2026-08-30T01:36"
      },
      {
       "craft_code": "",
@@ -9040,7 +9130,9 @@
       "turn_asgn": "0008",
       "turn_hours": "",
       "turn_info": "00",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "on_board",
+      "rest_until": "2026-08-30T01:36"
      },
      {
       "craft_code": "",
@@ -9062,7 +9154,9 @@
       "turn_asgn": "0001",
       "turn_hours": "",
       "turn_info": "00",
-      "ushr": ""
+      "ushr": "",
+      "rest_state": "on_board",
+      "rest_until": "2026-08-30T01:36"
      }
     ],
     "screen_title": "OTT SWITCHMAN XTRABRD POSITION",
