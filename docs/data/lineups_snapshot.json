@@ -4,7 +4,7 @@
   "collection_message": "Login incomplete (RSA pending); will keep retrying.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-29T23:42:25+00:00",
+  "generated_at": "2026-08-30T00:43:40+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260829_145954",
@@ -2437,34 +2437,9 @@
     "name": "Nahant",
     "trains": [
      {
-      "crewed": true,
+      "crewed": false,
       "date_time": "08/29-1526",
-      "eng_crew": [
-       {
-        "craft": "EN",
-        "hos": {
-         "band": "orange",
-         "label": "0h 33m",
-         "minutes": 33
-        },
-        "name": "SPERSTAD,(JOHN)",
-        "tags": [
-         "recrew"
-        ]
-       },
-       {
-        "craft": "AE",
-        "hos": {
-         "band": "orange",
-         "label": "0h 33m",
-         "minutes": 33
-        },
-        "name": "AMOUZ,(ADJIWANOU)",
-        "tags": [
-         "recrew"
-        ]
-       }
-      ],
+      "eng_crew": [],
       "eng_crew_count": "0",
       "eng_crew_district": "8IDA",
       "eng_crew_pool": "DA",
@@ -4515,8 +4490,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 18m",
-         "minutes": 378
+         "label": "5h 16m",
+         "minutes": 316
         },
         "name": "HANK,(MATT)"
        },
@@ -4524,8 +4499,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 18m",
-         "minutes": 378
+         "label": "5h 16m",
+         "minutes": 316
         },
         "name": "FRIEND,(JONATHON)"
        }
@@ -4564,8 +4539,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "5h 33m",
-         "minutes": 333
+         "label": "4h 31m",
+         "minutes": 271
         },
         "name": "KARGL,(ROB)",
         "tags": [
@@ -4576,8 +4551,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "5h 33m",
-         "minutes": 333
+         "label": "4h 31m",
+         "minutes": 271
         },
         "name": "HARDEN,(LEVI)",
         "tags": [
@@ -4618,18 +4593,18 @@
        {
         "craft": "EN",
         "hos": {
-         "band": "green",
-         "label": "4h 48m",
-         "minutes": 288
+         "band": "yellow",
+         "label": "3h 46m",
+         "minutes": 226
         },
         "name": "MOFFITT,(JASON)"
        },
        {
         "craft": "AE",
         "hos": {
-         "band": "green",
-         "label": "4h 48m",
-         "minutes": 288
+         "band": "yellow",
+         "label": "3h 46m",
+         "minutes": 226
         },
         "name": "BURCH,(RICK)"
        }
@@ -4698,8 +4673,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 48m",
-         "minutes": 528
+         "label": "7h 46m",
+         "minutes": 466
         },
         "name": "CALLAHAN,(TIM)"
        },
@@ -4707,8 +4682,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 48m",
-         "minutes": 528
+         "label": "7h 46m",
+         "minutes": 466
         },
         "name": "LONG,(ALEXANDER)"
        }
@@ -6403,8 +6378,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 03m",
-         "minutes": 483
+         "label": "7h 01m",
+         "minutes": 421
         },
         "name": "LOCHNER,(DEREK)"
        },
@@ -6412,8 +6387,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 03m",
-         "minutes": 483
+         "label": "7h 01m",
+         "minutes": 421
         },
         "name": "LUDWIG,(AARON)"
        }
@@ -21736,7 +21711,7 @@
    "time": "00:01",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "BELCHER,(JOHN)",
@@ -21747,7 +21722,7 @@
    "time": "15:55",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "BESSER,(TIMOTHY)",
@@ -21758,7 +21733,7 @@
    "time": "12:19",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "BLASER,(RYAN)",
@@ -21769,7 +21744,7 @@
    "time": "21:14",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "BORMANN,(HAYDEN)",
@@ -21780,7 +21755,7 @@
    "time": "17:22",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "BORUSHASKI,(SAM)",
@@ -21791,7 +21766,7 @@
    "time": "20:23",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "BRADLEY,(COLTON)*IFGNVR",
@@ -21802,7 +21777,7 @@
    "time": "17:01",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "BRESHEARS,(CHRIS)",
@@ -21813,7 +21788,7 @@
    "time": "12:17",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "BROSE,(CAREY)",
@@ -21824,7 +21799,7 @@
    "time": "16:24",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "BROWN,(BENJAMIN)",
@@ -21835,7 +21810,7 @@
    "time": "20:06",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "BURROUGHS,(CHARLES)NQBV",
@@ -21846,7 +21821,7 @@
    "time": "00:01",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "CARAPIA,(JUAN)*IFG",
@@ -21857,7 +21832,7 @@
    "time": "21:13",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "CARTER,(DARIAN)",
@@ -21868,7 +21843,7 @@
    "time": "00:01",
    "terminal": "",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "CLAPP,(JASON)IFGBV",
@@ -21879,7 +21854,7 @@
    "time": "15:51",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "CONLIN,(ERIC)",
@@ -21890,7 +21865,7 @@
    "time": "20:59",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "DACOSTA,(HERCULANO)BV",
@@ -21901,7 +21876,7 @@
    "time": "12:18",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "DEKEYZER,(BRIAN)",
@@ -21912,7 +21887,7 @@
    "time": "18:24",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "DORSEY,(STETSON)P",
@@ -21923,7 +21898,7 @@
    "time": "00:34",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "DUNCAN,(ZACH)BV @D",
@@ -21934,7 +21909,7 @@
    "time": "17:01",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "DUYVEJONCK,(MARK)",
@@ -21945,7 +21920,7 @@
    "time": "00:01",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "EBERLINE,(DRAKE)",
@@ -21956,7 +21931,7 @@
    "time": "00:01",
    "terminal": "",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "ELDRIDGE,(DYLAN)",
@@ -21967,7 +21942,7 @@
    "time": "10:00",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "ELLIOTT,(SCOTT)",
@@ -21978,7 +21953,7 @@
    "time": "10:09",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "FELLER,(DANIEL)NQBV @D",
@@ -21989,7 +21964,7 @@
    "time": "02:15",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "FERNANDEZ,(DANILO)",
@@ -22000,7 +21975,7 @@
    "time": "12:55",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "FRENCH,(BEN)",
@@ -22011,7 +21986,7 @@
    "time": "22:02",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "GANZER,(GRANT)",
@@ -22022,7 +21997,7 @@
    "time": "22:02",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "GANZER,(JASON)",
@@ -22033,7 +22008,7 @@
    "time": "00:01",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "GERST,(BRADEN)",
@@ -22044,7 +22019,7 @@
    "time": "00:01",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "GOODELL,(SETH)",
@@ -22055,7 +22030,7 @@
    "time": "17:22",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "GRELK,(RUGER)*",
@@ -22066,7 +22041,7 @@
    "time": "09:49",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "GRUSZECZKA,(ED)",
@@ -22077,7 +22052,7 @@
    "time": "00:01",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "HAGEN,(ANTHONY)",
@@ -22088,7 +22063,7 @@
    "time": "13:16",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "HALE,(KEVON)",
@@ -22099,7 +22074,7 @@
    "time": "17:12",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "HARING,(ALEX)",
@@ -22110,7 +22085,7 @@
    "time": "00:01",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "HARTMAN,(JAMES)",
@@ -22121,7 +22096,7 @@
    "time": "18:18",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "HATFIELD,(JARROD)IFG",
@@ -22132,7 +22107,7 @@
    "time": "00:01",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "HERREN,(BRANDON)",
@@ -22143,7 +22118,7 @@
    "time": "00:01",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "HILLERY,(RYAN)QBV@D",
@@ -22154,7 +22129,7 @@
    "time": "17:22",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "HOLMES-GRAYSON,(MARK)",
@@ -22165,7 +22140,7 @@
    "time": "01:32",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "HORTON,(BRYAN)",
@@ -22176,7 +22151,7 @@
    "time": "00:01",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "HOWARD,(MATTHEW)",
@@ -22187,7 +22162,7 @@
    "time": "07:50",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "IYOHA,(OSAYANDE)BV",
@@ -22198,7 +22173,7 @@
    "time": "07:58",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "JOHNSTON,(JERIMIAH)",
@@ -22209,7 +22184,7 @@
    "time": "00:01",
    "terminal": "",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "KACZMAREK,(DAN)",
@@ -22220,7 +22195,7 @@
    "time": "14:50",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "KEOMANIVONG,(SONNY)NQB",
@@ -22231,7 +22206,7 @@
    "time": "13:16",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "KINER,(ERICK)QBVAE",
@@ -22242,7 +22217,7 @@
    "time": "21:20",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "KRUGER,(COLE)",
@@ -22253,7 +22228,7 @@
    "time": "09:26",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "LANDGREBE,(NICHOLAS) @D",
@@ -22264,7 +22239,7 @@
    "time": "14:51",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "LAPOINT,(CAMERON)",
@@ -22275,7 +22250,7 @@
    "time": "21:31",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "LASCHE,(DAVID)QBVAE",
@@ -22286,7 +22261,7 @@
    "time": "12:46",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "LAWRENCE,(BRYCEN)",
@@ -22297,7 +22272,7 @@
    "time": "13:11",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "LEMM,(SAM)",
@@ -22308,7 +22283,7 @@
    "time": "00:01",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "LEWIS,(BRANDON)",
@@ -22319,7 +22294,7 @@
    "time": "22:02",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "LINDLY,(DONALD)",
@@ -22330,7 +22305,7 @@
    "time": "00:01",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "LOCKHART,(CAMERON)",
@@ -22341,7 +22316,7 @@
    "time": "00:01",
    "terminal": "",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "LOUGHMILLER,(BARRY)P",
@@ -22352,7 +22327,7 @@
    "time": "00:34",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "LUNN,(LESLIE)",
@@ -22363,7 +22338,7 @@
    "time": "15:33",
    "terminal": "",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "LYTLE,(JUSTIN)",
@@ -22374,7 +22349,7 @@
    "time": "18:47",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "MANLEY,(GEORGE)",
@@ -22385,7 +22360,7 @@
    "time": "18:32",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "MANTHEI,(BRYAN)",
@@ -22396,7 +22371,7 @@
    "time": "16:59",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "MARKO,(CAIN)BVEN",
@@ -22407,7 +22382,7 @@
    "time": "20:39",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "MCBRIDE,(KELTON)",
@@ -22418,7 +22393,7 @@
    "time": "00:01",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "MCCHANE,(MIKE)QBVAE",
@@ -22429,7 +22404,7 @@
    "time": "00:01",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "MCCORMICK,(ADAM)",
@@ -22440,7 +22415,7 @@
    "time": "01:58",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "MCKEE,(RODNEY)",
@@ -22451,7 +22426,7 @@
    "time": "00:01",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "MCQUISTON,(DAKOTA)",
@@ -22462,7 +22437,7 @@
    "time": "20:25",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "MERRELL,(CHARISE)",
@@ -22473,7 +22448,7 @@
    "time": "00:01",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "MILLER,(MIKE)",
@@ -22484,7 +22459,7 @@
    "time": "12:26",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "MILLER-SWAIN,(ALEX)",
@@ -22495,7 +22470,7 @@
    "time": "16:32",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "MLEKUSH,(DARREN)",
@@ -22506,7 +22481,7 @@
    "time": "20:29",
    "terminal": "",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "MOFFITT,(LUCAS)BVAE @D",
@@ -22517,7 +22492,7 @@
    "time": "15:51",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "MOONEY,(KORY)",
@@ -22528,7 +22503,7 @@
    "time": "15:52",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "MURPHY,(ADAM)",
@@ -22539,7 +22514,7 @@
    "time": "14:30",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "MUSSINGTON,(SOMORI)",
@@ -22550,7 +22525,7 @@
    "time": "22:09",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "MYRICK,(CHEVAS)",
@@ -22561,7 +22536,7 @@
    "time": "17:28",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "NEITZEL,(BRODY)",
@@ -22572,7 +22547,7 @@
    "time": "00:01",
    "terminal": "",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "OLDFIELD,(COLTON)BVAE",
@@ -22583,7 +22558,7 @@
    "time": "06:12",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "ONKEN,(WILLIAM)",
@@ -22594,7 +22569,7 @@
    "time": "00:01",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "PARKHURST,(CODY)BV",
@@ -22605,7 +22580,7 @@
    "time": "13:16",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "PIATZ,(FRANK)ALL",
@@ -22616,7 +22591,7 @@
    "time": "12:35",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "RADA,(DANIEL)",
@@ -22627,7 +22602,7 @@
    "time": "14:54",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "REAVES,(DALTON)",
@@ -22638,7 +22613,7 @@
    "time": "12:44",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "RECKNAGEL,(LUKE)BVAE",
@@ -22649,7 +22624,7 @@
    "time": "05:52",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "ROBERTSON,(OWEN)",
@@ -22660,7 +22635,7 @@
    "time": "11:37",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "ROBINSON,(SHERRON)BV",
@@ -22671,7 +22646,7 @@
    "time": "12:18",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "RODRIGUEZ,(JUSTIN)",
@@ -22682,7 +22657,7 @@
    "time": "18:08",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "ROSS,(JANA)",
@@ -22693,7 +22668,7 @@
    "time": "14:51",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "RUSSELL,(DAN)QBV",
@@ -22704,7 +22679,7 @@
    "time": "14:14",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "SARGENT,(AUSTIN)",
@@ -22715,7 +22690,7 @@
    "time": "07:51",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "SELS,(DOUG)",
@@ -22726,7 +22701,7 @@
    "time": "12:18",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "SEXTON,(SAM)BV",
@@ -22737,7 +22712,7 @@
    "time": "18:22",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "STANSBERRY,(CHANDLER)BVI",
@@ -22748,7 +22723,7 @@
    "time": "00:01",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "STECKER,(ANDREW)",
@@ -22759,7 +22734,7 @@
    "time": "02:45",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "STONE,(JOSH)QBV",
@@ -22770,7 +22745,7 @@
    "time": "05:49",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "STRADLING,(DALLIN)QBV",
@@ -22781,7 +22756,7 @@
    "time": "10:39",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "STROPES,(THOMAS)",
@@ -22792,7 +22767,7 @@
    "time": "22:02",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "TAYLOR,(WILLIAM)NQBV@DIFGE",
@@ -22803,7 +22778,7 @@
    "time": "14:51",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "THOMAS,(EDWARD)",
@@ -22814,7 +22789,7 @@
    "time": "17:21",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "TRAN,(AARON)",
@@ -22825,7 +22800,7 @@
    "time": "00:01",
    "terminal": "",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "TURNER,(TERRELL)B IFG",
@@ -22836,7 +22811,7 @@
    "time": "12:17",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "VANZO,(NEAL)",
@@ -22847,7 +22822,7 @@
    "time": "15:30",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "WARRENBURG,(CHRIS) @D",
@@ -22858,7 +22833,7 @@
    "time": "21:45",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "WARUIMBO,(JOE)",
@@ -22869,7 +22844,7 @@
    "time": "17:22",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "WEST,(TAYLOR)",
@@ -22880,7 +22855,7 @@
    "time": "21:13",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "WHITLEY,(CHRIS)",
@@ -22891,7 +22866,7 @@
    "time": "07:48",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "WHITWORTH,(JOHN)",
@@ -22902,7 +22877,7 @@
    "time": "00:01",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "WOLF,(JOSHUA)",
@@ -22913,7 +22888,7 @@
    "time": "06:10",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   },
   {
    "name": "YORK,(CHRISTOPHER)QBV",
@@ -22924,7 +22899,7 @@
    "time": "12:34",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-08-29"
+   "last_confirmed": "2026-08-30"
   }
  ],
  "bookoffs_source": "engine",
