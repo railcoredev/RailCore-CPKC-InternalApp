@@ -226,12 +226,20 @@ export function mountDocBrowser(container, options) {
     }
     const browseLayout = document.createElement('div');
     browseLayout.className = 'rr-doc-browse-layout';
+    // columns live in the stylesheet, NOT inline -- an inline
+    // grid-template-columns beat the phone media query and squeezed the
+    // rules text into a 15-character sliver (operator, 2026-08-30)
     browseLayout.style.cssText =
-        'display:grid;grid-template-columns:minmax(200px,1fr) minmax(0,2fr);gap:1rem;min-height:0;flex:1;align-items:stretch;overflow:hidden;';
+        'display:grid;gap:1rem;min-height:0;flex:1;align-items:stretch;overflow:hidden;';
     browseLayout.setAttribute('aria-label', 'Sections and reader');
     const layoutStyle = document.createElement('style');
     layoutStyle.textContent = `
-    @media (max-width: 640px) { .rr-doc-browse-layout { grid-template-columns: 1fr; } .rr-doc-toc-column { min-height: 14rem; } }
+    .rr-doc-browse-layout { grid-template-columns: minmax(200px,1fr) minmax(0,2fr); }
+    @media (max-width: 640px) {
+      .rr-doc-browse-layout { grid-template-columns: 1fr; }
+      .rr-doc-toc-column { min-height: 0; max-height: 14rem; overflow-y: auto; }
+      .rr-doc-reader { min-height: 20rem; }
+    }
     .rr-doc-reader { overflow-y: auto; }
     .rr-doc-reader [data-section-id] { min-height: 0; }
     .rr-doc-reader .rr-doc-section-header {

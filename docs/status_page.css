@@ -548,3 +548,30 @@
 #tableOutput .exec-times-table th { opacity: .8; }
 
 #tableOutput .exec-times-total { font-weight: 700; border-left: 1px solid rgba(128,128,128,.35); }
+
+/* ===== PHONE READABILITY PASS (operator walkthrough 2026-08-30:
+   "counts and train status page... kind of hard to read") ===== */
+/* wide tables scroll sideways at full size instead of squishing */
+#tableOutput .status-table,
+#tableOutput .exec-times-table {
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+}
+#tableOutput .status-table th, #tableOutput .status-table td,
+#tableOutput .exec-times-table th, #tableOutput .exec-times-table td {
+  white-space: nowrap;
+}
+/* KPI cards: keep the VIEW DETAIL hint from overlapping the label */
+#tableOutput .exec-kpi { overflow: hidden; }
+#tableOutput .exec-kpi .kpi-link-hint {
+  position: static;
+  display: block;
+  margin-top: 2px;
+  white-space: nowrap;
+}
+@media (max-width: 640px) {
+  #tableOutput .exec-kpi-strip { grid-template-columns: repeat(2, 1fr) !important; }
+  #tableOutput .status-table, #tableOutput .exec-times-table { font-size: 0.8rem; }
+}
