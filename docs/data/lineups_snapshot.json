@@ -4,7 +4,7 @@
   "collection_message": "Login incomplete (RSA pending); will keep retrying.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-08-30T00:43:40+00:00",
+  "generated_at": "2026-08-30T01:44:54+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260829_145954",
@@ -4490,8 +4490,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "5h 16m",
-         "minutes": 316
+         "label": "4h 15m",
+         "minutes": 255
         },
         "name": "HANK,(MATT)"
        },
@@ -4499,8 +4499,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "5h 16m",
-         "minutes": 316
+         "label": "4h 15m",
+         "minutes": 255
         },
         "name": "FRIEND,(JONATHON)"
        }
@@ -4538,9 +4538,9 @@
        {
         "craft": "EN",
         "hos": {
-         "band": "green",
-         "label": "4h 31m",
-         "minutes": 271
+         "band": "yellow",
+         "label": "3h 30m",
+         "minutes": 210
         },
         "name": "KARGL,(ROB)",
         "tags": [
@@ -4550,9 +4550,9 @@
        {
         "craft": "AE",
         "hos": {
-         "band": "green",
-         "label": "4h 31m",
-         "minutes": 271
+         "band": "yellow",
+         "label": "3h 30m",
+         "minutes": 210
         },
         "name": "HARDEN,(LEVI)",
         "tags": [
@@ -4594,8 +4594,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 46m",
-         "minutes": 226
+         "label": "2h 45m",
+         "minutes": 165
         },
         "name": "MOFFITT,(JASON)"
        },
@@ -4603,8 +4603,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 46m",
-         "minutes": 226
+         "label": "2h 45m",
+         "minutes": 165
         },
         "name": "BURCH,(RICK)"
        }
@@ -4673,8 +4673,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 46m",
-         "minutes": 466
+         "label": "6h 45m",
+         "minutes": 405
         },
         "name": "CALLAHAN,(TIM)"
        },
@@ -4682,8 +4682,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 46m",
-         "minutes": 466
+         "label": "6h 45m",
+         "minutes": 405
         },
         "name": "LONG,(ALEXANDER)"
        }
@@ -6378,8 +6378,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 01m",
-         "minutes": 421
+         "label": "6h 00m",
+         "minutes": 360
         },
         "name": "LOCHNER,(DEREK)"
        },
@@ -6387,8 +6387,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 01m",
-         "minutes": 421
+         "label": "6h 00m",
+         "minutes": 360
         },
         "name": "LUDWIG,(AARON)"
        }
@@ -22253,10 +22253,10 @@
    "last_confirmed": "2026-08-30"
   },
   {
-   "name": "LASCHE,(DAVID)QBVAE",
+   "name": "LASCHE,(DAVID)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "DA19",
+   "assignment": "",
    "since": "2026-08-29",
    "time": "12:46",
    "terminal": "DA",
@@ -22374,10 +22374,10 @@
    "last_confirmed": "2026-08-30"
   },
   {
-   "name": "MARKO,(CAIN)BVEN",
+   "name": "MARKO,(CAIN)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "OB13",
+   "assignment": "",
    "since": "2026-08-26",
    "time": "20:39",
    "terminal": "OT",
@@ -22638,10 +22638,10 @@
    "last_confirmed": "2026-08-30"
   },
   {
-   "name": "ROBINSON,(SHERRON)BV",
+   "name": "ROBINSON,(SHERRON)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "DA10",
+   "assignment": "",
    "since": "2026-08-27",
    "time": "12:18",
    "terminal": "DA",
