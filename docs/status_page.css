@@ -629,6 +629,16 @@ body.status-fw #tableOutput { padding: 0; }
 #tableOutput .status-dashboard { padding: 8px; max-width: none; }
 @media (max-width: 640px) {
   #tableOutput .status-dashboard { padding: 6px 4px; }
-  #tableOutput .dashboard-section { padding: 12px 8px; }
-  #tableOutput .exec-detail-body .dashboard-section { padding: 10px 6px; }
+  #tableOutput .dashboard-section { padding: 10px 7px; }
+  #tableOutput .exec-detail-body .dashboard-section { padding: 0; }
+  /* SECONDARY LAYER (operator 2026-08-30: "tight when you open the
+     secondary layer") -- each nested pool-tree level was stacking ~10px
+     per side; trim them and the drill tables so depth doesn't starve the
+     content. */
+  #tableOutput .pool-tree-terminal { padding: 8px 6px; }
+  #tableOutput .pool-tree-terminal .pool-tree-terminal { padding: 7px 5px; }
+  #tableOutput .exec-train-node { padding: 6px 5px; }
+  #tableOutput .status-table.compact th,
+  #tableOutput .status-table.compact td { padding: 6px 6px; font-size: 12px; }
+  #tableOutput .exec-detail-header { padding: 0 2px; }
 }
