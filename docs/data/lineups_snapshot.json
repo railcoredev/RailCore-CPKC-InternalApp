@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Awaiting login after session loss.",
+  "collection_message": "Session lost; waiting at the RSA prompt.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-01T03:34:25+00:00",
+  "generated_at": "2026-09-01T03:35:39+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260831_210404",
@@ -2654,8 +2654,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "11h 11m",
-         "minutes": 671
+         "label": "11h 09m",
+         "minutes": 669
         },
         "name": "WOLF,(JOSHUA)"
        },
@@ -2663,8 +2663,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "11h 11m",
-         "minutes": 671
+         "label": "11h 09m",
+         "minutes": 669
         },
         "name": "HARDEN,(LEVI)"
        }
@@ -2694,8 +2694,8 @@
         "craft": "TT",
         "hos": {
          "band": "green",
-         "label": "11h 11m",
-         "minutes": 671
+         "label": "11h 09m",
+         "minutes": 669
         },
         "name": "HESTER,(JAIMEL)"
        }
@@ -2743,8 +2743,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 36m",
-         "minutes": 516
+         "label": "8h 34m",
+         "minutes": 514
         },
         "name": "DACOSTA,(HERCULANO)"
        },
@@ -2752,8 +2752,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 36m",
-         "minutes": 516
+         "label": "8h 34m",
+         "minutes": 514
         },
         "name": "FULKERSON,(DAN)"
        }
@@ -6584,8 +6584,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 41m",
-         "minutes": 221
+         "label": "3h 39m",
+         "minutes": 219
         },
         "name": "JACKMAN,(MATT)"
        },
@@ -6593,8 +6593,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 41m",
-         "minutes": 221
+         "label": "3h 39m",
+         "minutes": 219
         },
         "name": "LUDWIG,(AARON)"
        },
@@ -6602,8 +6602,8 @@
         "craft": "ET",
         "hos": {
          "band": "yellow",
-         "label": "3h 41m",
-         "minutes": 221
+         "label": "3h 39m",
+         "minutes": 219
         },
         "name": "NELSON,(GARRET)"
        }
@@ -9457,8 +9457,8 @@
     "my_craft": "AE",
     "my_hos": {
      "band": "yellow",
-     "label": "3h 41m",
-     "minutes": 221
+     "label": "3h 39m",
+     "minutes": 219
     },
     "with": [
      {
