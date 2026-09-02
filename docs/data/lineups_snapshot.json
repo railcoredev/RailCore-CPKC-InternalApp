@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Awaiting login after session loss.",
+  "collection_message": "Session lost; waiting at the RSA prompt.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-02T14:24:37+00:00",
+  "generated_at": "2026-09-02T14:25:53+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260902_085855",
@@ -4250,8 +4250,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 20m",
-         "minutes": 200
+         "label": "3h 19m",
+         "minutes": 199
         },
         "name": "LINEBAUGH,(MATT)"
        },
@@ -4259,8 +4259,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 20m",
-         "minutes": 200
+         "label": "3h 19m",
+         "minutes": 199
         },
         "name": "FELLER,(DANIEL)"
        }
@@ -4299,8 +4299,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 05m",
-         "minutes": 365
+         "label": "6h 04m",
+         "minutes": 364
         },
         "name": "CADY,(AARON)"
        },
@@ -4308,8 +4308,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 05m",
-         "minutes": 365
+         "label": "6h 04m",
+         "minutes": 364
         },
         "name": "BORUSHASKI,(GUNNAR)"
        }
@@ -4339,8 +4339,8 @@
         "craft": "TT",
         "hos": {
          "band": "green",
-         "label": "6h 05m",
-         "minutes": 365
+         "label": "6h 04m",
+         "minutes": 364
         },
         "name": "HESTER,(JAIMEL)"
        }
