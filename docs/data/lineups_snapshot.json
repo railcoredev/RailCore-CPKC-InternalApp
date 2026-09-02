@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-01T23:45:52+00:00",
+  "generated_at": "2026-09-02T00:06:13+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260901_175124",
@@ -2504,8 +2504,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "4h 59m",
-         "minutes": 299
+         "label": "4h 39m",
+         "minutes": 279
         },
         "name": "KARGL,(ROB)",
         "tags": [
@@ -2516,8 +2516,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "4h 59m",
-         "minutes": 299
+         "label": "4h 39m",
+         "minutes": 279
         },
         "name": "AKERS,(MATTHEW)",
         "tags": [
@@ -2528,8 +2528,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "4h 59m",
-         "minutes": 299
+         "label": "4h 39m",
+         "minutes": 279
         },
         "name": "IYOHA,(OSAYANDE)",
         "tags": [
@@ -4497,8 +4497,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 44m",
-         "minutes": 464
+         "label": "7h 24m",
+         "minutes": 444
         },
         "name": "TILLIS,(ETHAN)",
         "tags": [
@@ -4531,8 +4531,8 @@
         "craft": "CO",
         "hos": {
          "band": "green",
-         "label": "7h 44m",
-         "minutes": 464
+         "label": "7h 24m",
+         "minutes": 444
         },
         "name": "MASSEY,(COLLIN)",
         "tags": [
@@ -4553,8 +4553,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 59m",
-         "minutes": 239
+         "label": "3h 39m",
+         "minutes": 219
         },
         "name": "REESE,(MATT)"
        },
@@ -4562,8 +4562,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 59m",
-         "minutes": 239
+         "label": "3h 39m",
+         "minutes": 219
         },
         "name": "LONG,(ALEXANDER)"
        }
@@ -4602,8 +4602,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 59m",
-         "minutes": 659
+         "label": "10h 39m",
+         "minutes": 639
         },
         "name": "DUNCAN,(ZACH)",
         "tags": [
@@ -4636,8 +4636,8 @@
         "craft": "CO",
         "hos": {
          "band": "green",
-         "label": "10h 59m",
-         "minutes": 659
+         "label": "10h 39m",
+         "minutes": 639
         },
         "name": "MOZQUEDA,(ERNESTO)",
         "tags": [
@@ -4718,8 +4718,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 44m",
-         "minutes": 524
+         "label": "8h 24m",
+         "minutes": 504
         },
         "name": "JACKMAN,(MATT)"
        },
@@ -4727,8 +4727,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 44m",
-         "minutes": 524
+         "label": "8h 24m",
+         "minutes": 504
         },
         "name": "LUDWIG,(AARON)"
        },
@@ -4736,8 +4736,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "8h 44m",
-         "minutes": 524
+         "label": "8h 24m",
+         "minutes": 504
         },
         "name": "NELSON,(GARRET)"
        }
@@ -4774,13 +4774,21 @@
       "eng_crew": [
        {
         "craft": "EN",
-        "name": "HAUT,(MICHAEL)",
-        "on_in": "0h 09m"
+        "hos": {
+         "band": "green",
+         "label": "11h 49m",
+         "minutes": 709
+        },
+        "name": "HAUT,(MICHAEL)"
        },
        {
         "craft": "AE",
-        "name": "ROBINSON,(SHERRON)",
-        "on_in": "0h 09m"
+        "hos": {
+         "band": "green",
+         "label": "11h 49m",
+         "minutes": 709
+        },
+        "name": "ROBINSON,(SHERRON)"
        }
       ],
       "eng_crew_count": "0",
@@ -4817,8 +4825,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 34m",
-         "minutes": 634
+         "label": "10h 14m",
+         "minutes": 614
         },
         "name": "STROPES,(THOMAS)"
        },
@@ -4826,8 +4834,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "10h 34m",
-         "minutes": 634
+         "label": "10h 14m",
+         "minutes": 614
         },
         "name": "DAU,(AUSTIN)"
        }
@@ -4857,8 +4865,8 @@
         "craft": "TT",
         "hos": {
          "band": "green",
-         "label": "10h 34m",
-         "minutes": 634
+         "label": "10h 14m",
+         "minutes": 614
         },
         "name": "LE,(HUY)"
        }
@@ -4876,8 +4884,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 14m",
-         "minutes": 614
+         "label": "9h 54m",
+         "minutes": 594
         },
         "name": "LOCHNER,(DEREK)",
         "tags": [
@@ -4888,8 +4896,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "10h 14m",
-         "minutes": 614
+         "label": "9h 54m",
+         "minutes": 594
         },
         "name": "PATTERSON,(DELRON)",
         "tags": [
@@ -4900,8 +4908,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "10h 14m",
-         "minutes": 614
+         "label": "9h 54m",
+         "minutes": 594
         },
         "name": "FERNANDEZ,(DANILO)",
         "tags": [
@@ -4971,13 +4979,21 @@
       "eng_crew": [
        {
         "craft": "EN",
-        "name": "TURNER,(TERRELL)",
-        "on_in": "0h 14m"
+        "hos": {
+         "band": "green",
+         "label": "11h 54m",
+         "minutes": 714
+        },
+        "name": "TURNER,(TERRELL)"
        },
        {
         "craft": "AE",
-        "name": "MOFFITT,(LUCAS)",
-        "on_in": "0h 14m"
+        "hos": {
+         "band": "green",
+         "label": "11h 54m",
+         "minutes": 714
+        },
+        "name": "MOFFITT,(LUCAS)"
        }
       ],
       "eng_crew_count": "0",
@@ -6610,8 +6626,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 14m",
-         "minutes": 614
+         "label": "9h 54m",
+         "minutes": 594
         },
         "name": "CARROW,(ROBERT)"
        },
@@ -6619,8 +6635,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "10h 14m",
-         "minutes": 614
+         "label": "9h 54m",
+         "minutes": 594
         },
         "name": "POOLE,(TREVOR)"
        },
@@ -6628,8 +6644,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "10h 14m",
-         "minutes": 614
+         "label": "9h 54m",
+         "minutes": 594
         },
         "name": "MURPHY,(ADAM)"
        }
@@ -9090,8 +9106,8 @@
     "my_craft": "AE",
     "my_hos": {
      "band": "green",
-     "label": "8h 44m",
-     "minutes": 524
+     "label": "8h 24m",
+     "minutes": 504
     },
     "with": [
      {
@@ -22082,7 +22098,7 @@
    "time": "22:02",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "ALLEY,(MARK)",
@@ -22093,7 +22109,7 @@
    "time": "00:01",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "AMOUZ,(ADJIWANOU)",
@@ -22104,7 +22120,7 @@
    "time": "21:46",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "BARAKS,(RON)",
@@ -22115,7 +22131,7 @@
    "time": "15:04",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "BELL,(NOLAN)",
@@ -22126,7 +22142,7 @@
    "time": "16:52",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "BERNDT,(JON)",
@@ -22137,7 +22153,7 @@
    "time": "16:45",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "BESSER,(TIMOTHY)",
@@ -22148,7 +22164,7 @@
    "time": "12:19",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "BLASER,(RYAN)",
@@ -22159,7 +22175,7 @@
    "time": "21:14",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "BOER,(BRANDON)BVAEIFG@D *E",
@@ -22170,7 +22186,7 @@
    "time": "16:18",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "BORUSHASKI,(GUNNAR)",
@@ -22181,7 +22197,7 @@
    "time": "17:41",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "BORUSHASKI,(SAM)",
@@ -22192,7 +22208,7 @@
    "time": "22:09",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "BRADLEY,(CONOR)",
@@ -22203,7 +22219,7 @@
    "time": "16:43",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "BROSE,(CAREY)",
@@ -22214,7 +22230,7 @@
    "time": "16:24",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "BROWN,(BENJAMIN)",
@@ -22225,7 +22241,7 @@
    "time": "05:06",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "BURCH,(RICK)M/P",
@@ -22236,7 +22252,7 @@
    "time": "14:53",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "CALLAHAN,(TIM)",
@@ -22247,7 +22263,7 @@
    "time": "16:18",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "CARTER,(DARIAN)",
@@ -22258,7 +22274,7 @@
    "time": "00:01",
    "terminal": "",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "CASHATT,(DAKOTA)IFG",
@@ -22269,7 +22285,7 @@
    "time": "03:16",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "COMSTOCK,(JUSTYCE)B/IFG@*E",
@@ -22280,7 +22296,7 @@
    "time": "21:44",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "CONLIN,(ERIC)",
@@ -22291,7 +22307,7 @@
    "time": "00:01",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "DEKEYZER,(BRIAN)",
@@ -22302,7 +22318,7 @@
    "time": "18:24",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "DUYVEJONCK,(MARK)",
@@ -22313,7 +22329,7 @@
    "time": "16:43",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "EAKINS,(JUSTIN)",
@@ -22324,7 +22340,7 @@
    "time": "16:44",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "EBERLINE,(DRAKE)",
@@ -22335,7 +22351,7 @@
    "time": "00:01",
    "terminal": "",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "EDWARDS,(DERICK)",
@@ -22346,7 +22362,7 @@
    "time": "20:23",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "ELLIOTT,(SCOTT)",
@@ -22357,7 +22373,7 @@
    "time": "16:20",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "FLYNN,(CASEY)",
@@ -22368,7 +22384,7 @@
    "time": "17:44",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "FULKERSON,(DAN)",
@@ -22379,7 +22395,7 @@
    "time": "05:54",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "FULTZ,(CALEB)IFG",
@@ -22390,7 +22406,7 @@
    "time": "22:01",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "GANZER,(GRANT)",
@@ -22401,7 +22417,7 @@
    "time": "14:24",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "GERST,(BRADEN)",
@@ -22412,7 +22428,7 @@
    "time": "00:01",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "GLASGOW,(STEVE)NQBV",
@@ -22423,7 +22439,7 @@
    "time": "16:21",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "GOODELL,(SETH)",
@@ -22434,7 +22450,7 @@
    "time": "16:21",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "GRUSZECZKA,(ED)",
@@ -22445,7 +22461,7 @@
    "time": "00:01",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "HALE,(KEVON)",
@@ -22456,7 +22472,7 @@
    "time": "17:12",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "HARDEN,(LEVI)QBVAE",
@@ -22467,7 +22483,7 @@
    "time": "06:25",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "HASKE,(JUSTIN)",
@@ -22478,7 +22494,7 @@
    "time": "01:53",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "HATFIELD,(JARROD)IFG",
@@ -22489,7 +22505,7 @@
    "time": "00:01",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "HILLERY,(RYAN)",
@@ -22500,7 +22516,7 @@
    "time": "00:01",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "HOFFMAN,(ALAN)",
@@ -22511,7 +22527,7 @@
    "time": "20:28",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "HOLMES-GRAYSON,(MARK)",
@@ -22522,7 +22538,7 @@
    "time": "01:32",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "JOHNSTON,(JERIMIAH)",
@@ -22533,7 +22549,7 @@
    "time": "00:01",
    "terminal": "",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "KACZMAREK,(DAN)",
@@ -22544,7 +22560,7 @@
    "time": "14:50",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "KINER,(ERICK)",
@@ -22555,7 +22571,7 @@
    "time": "00:01",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "KNIGHTS,(JARRETT)*NQBV",
@@ -22566,7 +22582,7 @@
    "time": "21:45",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "KRUGER,(COLE)",
@@ -22577,7 +22593,7 @@
    "time": "00:01",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "LAPOINT,(CAMERON)IFG",
@@ -22588,7 +22604,7 @@
    "time": "23:48",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "LAWRENCE,(BRYCEN)",
@@ -22599,7 +22615,7 @@
    "time": "13:11",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "LEMM,(SAM)",
@@ -22610,7 +22626,7 @@
    "time": "22:05",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "LEPPERT,(RICHARD)",
@@ -22621,7 +22637,7 @@
    "time": "16:20",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "LINDLY,(DONALD)",
@@ -22632,7 +22648,7 @@
    "time": "00:01",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "LOCKHART,(CAMERON)",
@@ -22643,7 +22659,7 @@
    "time": "00:01",
    "terminal": "",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "LOERCH,(JORDAN)P",
@@ -22654,7 +22670,7 @@
    "time": "01:47",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "MANTHEI,(BRYAN)",
@@ -22665,7 +22681,7 @@
    "time": "16:59",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "MCBRIDE,(KELTON)",
@@ -22676,7 +22692,7 @@
    "time": "00:01",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "MCCHANE,(MIKE)",
@@ -22687,7 +22703,7 @@
    "time": "00:01",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "MCCORMICK,(ADAM)",
@@ -22698,7 +22714,7 @@
    "time": "01:58",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "MCQUISTON,(DAKOTA)",
@@ -22709,7 +22725,7 @@
    "time": "20:25",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "MERRELL,(CHARISE)",
@@ -22720,7 +22736,7 @@
    "time": "00:01",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "MILBURN,(KEN)",
@@ -22731,7 +22747,7 @@
    "time": "09:41",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "MILLER,(MIKE)",
@@ -22742,7 +22758,7 @@
    "time": "12:26",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "MLEKUSH,(DARREN)",
@@ -22753,7 +22769,7 @@
    "time": "20:29",
    "terminal": "",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "MOFFITT,(JASON)P",
@@ -22764,7 +22780,7 @@
    "time": "14:54",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "MOONEY,(KORY)",
@@ -22775,7 +22791,7 @@
    "time": "07:44",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "NEER,(DUSTIN)BVAE",
@@ -22786,7 +22802,7 @@
    "time": "16:27",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "NEITZEL,(BRODY)",
@@ -22797,7 +22813,7 @@
    "time": "00:01",
    "terminal": "",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "NEPTUNE,(TYLER)",
@@ -22808,7 +22824,7 @@
    "time": "12:46",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "OLSON,(ANDREW)",
@@ -22819,7 +22835,7 @@
    "time": "21:56",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "ONKEN,(WILLIAM)",
@@ -22830,7 +22846,7 @@
    "time": "00:01",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "PAGE,(GARRISON)QBV @D E RC",
@@ -22841,7 +22857,7 @@
    "time": "12:47",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "PETERSON,(DARREN)BV",
@@ -22852,7 +22868,7 @@
    "time": "17:34",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "PILLOW,(JOSHUA)",
@@ -22863,7 +22879,7 @@
    "time": "21:15",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "RADA,(DANIEL)",
@@ -22874,7 +22890,7 @@
    "time": "16:21",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "RAYA,(OCTAVIO)",
@@ -22885,7 +22901,7 @@
    "time": "05:53",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "RISH,(LUCUS)IFG",
@@ -22896,7 +22912,7 @@
    "time": "21:14",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "RODRIGUEZ,(JUSTIN)",
@@ -22907,7 +22923,7 @@
    "time": "18:08",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "ROSS,(JANA)",
@@ -22918,7 +22934,7 @@
    "time": "00:01",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "SEXTON,(SAM)",
@@ -22929,7 +22945,7 @@
    "time": "00:01",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "SINDT,(STEVEN)",
@@ -22940,7 +22956,7 @@
    "time": "15:53",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "SPERSTAD,(JOHN)",
@@ -22951,7 +22967,7 @@
    "time": "15:54",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "STECKER,(ANDREW)",
@@ -22962,7 +22978,7 @@
    "time": "02:45",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "STRAUSS,(WILLIAM)NQBV",
@@ -22973,7 +22989,7 @@
    "time": "05:04",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "SULLIVAN,(MIKE)",
@@ -22984,7 +23000,7 @@
    "time": "13:56",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "TAYLOR,(WILLIAM)",
@@ -22995,7 +23011,7 @@
    "time": "00:01",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "THOMAS,(EDWARD)",
@@ -23006,7 +23022,7 @@
    "time": "00:30",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "TRAN,(AARON)",
@@ -23017,7 +23033,7 @@
    "time": "00:01",
    "terminal": "",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "URMY,(PHIL)",
@@ -23028,7 +23044,7 @@
    "time": "01:52",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "VINES,(VICTOR)",
@@ -23039,7 +23055,7 @@
    "time": "08:06",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "WARRENBURG,(CHRIS)",
@@ -23050,7 +23066,7 @@
    "time": "06:00",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "WARUIMBO,(JOE)",
@@ -23061,7 +23077,7 @@
    "time": "17:22",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "WHITING,(STEVE)",
@@ -23072,7 +23088,7 @@
    "time": "16:44",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   },
   {
    "name": "WHITWORTH,(JOHN)",
@@ -23083,7 +23099,7 @@
    "time": "00:01",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-01"
+   "last_confirmed": "2026-09-02"
   }
  ],
  "bookoffs_source": "engine",
