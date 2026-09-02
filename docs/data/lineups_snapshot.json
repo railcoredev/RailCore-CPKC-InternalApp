@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Awaiting login after session loss.",
+  "collection_message": "Session lost; waiting at the RSA prompt.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-02T02:15:41+00:00",
+  "generated_at": "2026-09-02T02:16:55+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260901_175124",
@@ -2504,8 +2504,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "2h 29m",
-         "minutes": 149
+         "label": "2h 28m",
+         "minutes": 148
         },
         "name": "KARGL,(ROB)",
         "tags": [
@@ -2516,8 +2516,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "2h 29m",
-         "minutes": 149
+         "label": "2h 28m",
+         "minutes": 148
         },
         "name": "AKERS,(MATTHEW)",
         "tags": [
@@ -2528,8 +2528,8 @@
         "craft": "ET",
         "hos": {
          "band": "yellow",
-         "label": "2h 29m",
-         "minutes": 149
+         "label": "2h 28m",
+         "minutes": 148
         },
         "name": "IYOHA,(OSAYANDE)",
         "tags": [
@@ -4497,8 +4497,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "5h 14m",
-         "minutes": 314
+         "label": "5h 13m",
+         "minutes": 313
         },
         "name": "TILLIS,(ETHAN)",
         "tags": [
@@ -4531,8 +4531,8 @@
         "craft": "CO",
         "hos": {
          "band": "green",
-         "label": "5h 14m",
-         "minutes": 314
+         "label": "5h 13m",
+         "minutes": 313
         },
         "name": "MASSEY,(COLLIN)",
         "tags": [
@@ -4553,8 +4553,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 29m",
-         "minutes": 89
+         "label": "1h 28m",
+         "minutes": 88
         },
         "name": "REESE,(MATT)"
        },
@@ -4562,8 +4562,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "1h 29m",
-         "minutes": 89
+         "label": "1h 28m",
+         "minutes": 88
         },
         "name": "LONG,(ALEXANDER)"
        }
@@ -4602,8 +4602,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 29m",
-         "minutes": 509
+         "label": "8h 28m",
+         "minutes": 508
         },
         "name": "DUNCAN,(ZACH)",
         "tags": [
@@ -4636,8 +4636,8 @@
         "craft": "CO",
         "hos": {
          "band": "green",
-         "label": "8h 29m",
-         "minutes": 509
+         "label": "8h 28m",
+         "minutes": 508
         },
         "name": "MOZQUEDA,(ERNESTO)",
         "tags": [
@@ -4718,8 +4718,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 14m",
-         "minutes": 374
+         "label": "6h 13m",
+         "minutes": 373
         },
         "name": "JACKMAN,(MATT)"
        },
@@ -4727,8 +4727,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 14m",
-         "minutes": 374
+         "label": "6h 13m",
+         "minutes": 373
         },
         "name": "LUDWIG,(AARON)"
        },
@@ -4736,8 +4736,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "6h 14m",
-         "minutes": 374
+         "label": "6h 13m",
+         "minutes": 373
         },
         "name": "NELSON,(GARRET)"
        }
@@ -4776,8 +4776,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "9h 39m",
-         "minutes": 579
+         "label": "9h 38m",
+         "minutes": 578
         },
         "name": "HAUT,(MICHAEL)"
        },
@@ -4785,8 +4785,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "9h 39m",
-         "minutes": 579
+         "label": "9h 38m",
+         "minutes": 578
         },
         "name": "ROBINSON,(SHERRON)"
        }
@@ -4825,8 +4825,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 04m",
-         "minutes": 484
+         "label": "8h 03m",
+         "minutes": 483
         },
         "name": "STROPES,(THOMAS)"
        },
@@ -4834,8 +4834,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 04m",
-         "minutes": 484
+         "label": "8h 03m",
+         "minutes": 483
         },
         "name": "DAU,(AUSTIN)"
        }
@@ -4865,8 +4865,8 @@
         "craft": "TT",
         "hos": {
          "band": "green",
-         "label": "8h 04m",
-         "minutes": 484
+         "label": "8h 03m",
+         "minutes": 483
         },
         "name": "LE,(HUY)"
        }
@@ -4884,8 +4884,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 44m",
-         "minutes": 464
+         "label": "7h 43m",
+         "minutes": 463
         },
         "name": "LOCHNER,(DEREK)",
         "tags": [
@@ -4896,8 +4896,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 44m",
-         "minutes": 464
+         "label": "7h 43m",
+         "minutes": 463
         },
         "name": "PATTERSON,(DELRON)",
         "tags": [
@@ -4908,8 +4908,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "7h 44m",
-         "minutes": 464
+         "label": "7h 43m",
+         "minutes": 463
         },
         "name": "FERNANDEZ,(DANILO)",
         "tags": [
@@ -4981,8 +4981,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "9h 44m",
-         "minutes": 584
+         "label": "9h 43m",
+         "minutes": 583
         },
         "name": "TURNER,(TERRELL)"
        },
@@ -4990,8 +4990,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "9h 44m",
-         "minutes": 584
+         "label": "9h 43m",
+         "minutes": 583
         },
         "name": "MOFFITT,(LUCAS)"
        }
@@ -6626,8 +6626,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 44m",
-         "minutes": 464
+         "label": "7h 43m",
+         "minutes": 463
         },
         "name": "CARROW,(ROBERT)"
        },
@@ -6635,8 +6635,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 44m",
-         "minutes": 464
+         "label": "7h 43m",
+         "minutes": 463
         },
         "name": "POOLE,(TREVOR)"
        },
@@ -6644,8 +6644,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "7h 44m",
-         "minutes": 464
+         "label": "7h 43m",
+         "minutes": 463
         },
         "name": "MURPHY,(ADAM)"
        }
@@ -9106,8 +9106,8 @@
     "my_craft": "AE",
     "my_hos": {
      "band": "green",
-     "label": "6h 14m",
-     "minutes": 374
+     "label": "6h 13m",
+     "minutes": 373
     },
     "with": [
      {
