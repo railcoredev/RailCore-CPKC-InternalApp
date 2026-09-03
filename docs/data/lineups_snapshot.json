@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Awaiting login after session loss.",
+  "collection_message": "Session lost; waiting at the RSA prompt.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-03T23:22:14+00:00",
+  "generated_at": "2026-09-03T23:23:28+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260903_055100",
@@ -2414,8 +2414,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 38m",
-         "minutes": 98
+         "label": "1h 37m",
+         "minutes": 97
         },
         "name": "PILLOW,(JOSHUA)"
        },
@@ -2423,8 +2423,8 @@
         "craft": "ET",
         "hos": {
          "band": "orange",
-         "label": "1h 38m",
-         "minutes": 98
+         "label": "1h 37m",
+         "minutes": 97
         },
         "name": "GREEN,(DALTON)"
        }
@@ -2454,8 +2454,8 @@
         "craft": "CO",
         "hos": {
          "band": "orange",
-         "label": "1h 38m",
-         "minutes": 98
+         "label": "1h 37m",
+         "minutes": 97
         },
         "name": "NEECE,(PHIL)"
        }
@@ -4459,8 +4459,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 08m",
-         "minutes": 8
+         "label": "0h 07m",
+         "minutes": 7
         },
         "name": "JAMESON,(DANIELLE)"
        },
@@ -4468,8 +4468,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 08m",
-         "minutes": 8
+         "label": "0h 07m",
+         "minutes": 7
         },
         "name": "CARAPIA,(JUAN)"
        }
@@ -4508,8 +4508,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 38m",
-         "minutes": 38
+         "label": "0h 37m",
+         "minutes": 37
         },
         "name": "BRESHEARS,(CHRIS)"
        },
@@ -4517,8 +4517,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 38m",
-         "minutes": 38
+         "label": "0h 37m",
+         "minutes": 37
         },
         "name": "GOODELL,(SETH)"
        }
@@ -6003,8 +6003,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 03m",
-         "minutes": 63
+         "label": "1h 02m",
+         "minutes": 62
         },
         "name": "ROBERTS,(KIMBERLY)"
        },
@@ -6012,8 +6012,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "1h 03m",
-         "minutes": 63
+         "label": "1h 02m",
+         "minutes": 62
         },
         "name": "LUDWIG,(AARON)"
        }
@@ -9092,8 +9092,8 @@
     "my_craft": "AE",
     "my_hos": {
      "band": "orange",
-     "label": "1h 03m",
-     "minutes": 63
+     "label": "1h 02m",
+     "minutes": 62
     },
     "with": [
      {
