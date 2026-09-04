@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Awaiting login after session loss.",
+  "collection_message": "Session lost; waiting at the RSA prompt.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-04T00:05:25+00:00",
+  "generated_at": "2026-09-04T00:06:40+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260903_055100",
@@ -2414,8 +2414,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 55m",
-         "minutes": 55
+         "label": "0h 53m",
+         "minutes": 53
         },
         "name": "PILLOW,(JOSHUA)"
        },
@@ -2423,8 +2423,8 @@
         "craft": "ET",
         "hos": {
          "band": "orange",
-         "label": "0h 55m",
-         "minutes": 55
+         "label": "0h 53m",
+         "minutes": 53
         },
         "name": "GREEN,(DALTON)"
        }
@@ -2454,8 +2454,8 @@
         "craft": "CO",
         "hos": {
          "band": "orange",
-         "label": "0h 55m",
-         "minutes": 55
+         "label": "0h 53m",
+         "minutes": 53
         },
         "name": "NEECE,(PHIL)"
        }
@@ -5965,8 +5965,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 20m",
-         "minutes": 20
+         "label": "0h 18m",
+         "minutes": 18
         },
         "name": "ROBERTS,(KIMBERLY)"
        },
@@ -5974,8 +5974,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 20m",
-         "minutes": 20
+         "label": "0h 18m",
+         "minutes": 18
         },
         "name": "LUDWIG,(AARON)"
        }
@@ -9054,8 +9054,8 @@
     "my_craft": "AE",
     "my_hos": {
      "band": "orange",
-     "label": "0h 20m",
-     "minutes": 20
+     "label": "0h 18m",
+     "minutes": 18
     },
     "with": [
      {
