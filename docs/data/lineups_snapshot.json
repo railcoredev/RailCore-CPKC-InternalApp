@@ -1,10 +1,10 @@
 {
  "meta": {
-  "collection_state": "active",
-  "collection_message": "Light sweep sched_20260904_145925.",
+  "collection_state": "awaiting_login",
+  "collection_message": "Session lost; waiting at the RSA prompt.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-04T20:06:36+00:00",
+  "generated_at": "2026-09-04T20:27:32+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260904_145925",
@@ -2684,8 +2684,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 38m",
-         "minutes": 98
+         "label": "1h 17m",
+         "minutes": 77
         },
         "name": "WHITING,(STEVE)"
        },
@@ -2693,8 +2693,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "1h 38m",
-         "minutes": 98
+         "label": "1h 17m",
+         "minutes": 77
         },
         "name": "BRADLEY,(CONOR)"
        }
@@ -2823,8 +2823,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 18m",
-         "minutes": 618
+         "label": "9h 57m",
+         "minutes": 597
         },
         "name": "RUSSELL,(DAN)",
         "tags": [
@@ -2835,8 +2835,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "10h 18m",
-         "minutes": 618
+         "label": "9h 57m",
+         "minutes": 597
         },
         "name": "ELDRIDGE,(DYLAN)",
         "tags": [
@@ -4534,8 +4534,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 08m",
-         "minutes": 188
+         "label": "2h 47m",
+         "minutes": 167
         },
         "name": "GLASGOW,(STEVE)"
        },
@@ -4543,8 +4543,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 08m",
-         "minutes": 188
+         "label": "2h 47m",
+         "minutes": 167
         },
         "name": "BORMANN,(HAYDEN)"
        }
@@ -4583,8 +4583,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 23m",
-         "minutes": 383
+         "label": "6h 02m",
+         "minutes": 362
         },
         "name": "LEMM,(SAM)"
        },
@@ -4592,8 +4592,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 23m",
-         "minutes": 383
+         "label": "6h 02m",
+         "minutes": 362
         },
         "name": "HARDEN,(LEVI)"
        }
@@ -4623,8 +4623,8 @@
         "craft": "TT",
         "hos": {
          "band": "green",
-         "label": "6h 23m",
-         "minutes": 383
+         "label": "6h 02m",
+         "minutes": 362
         },
         "name": "HESTER,(JAIMEL)"
        }
@@ -4672,8 +4672,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 23m",
-         "minutes": 443
+         "label": "7h 02m",
+         "minutes": 422
         },
         "name": "SEXTON,(SAM)",
         "tags": [
@@ -4684,8 +4684,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 23m",
-         "minutes": 443
+         "label": "7h 02m",
+         "minutes": 422
         },
         "name": "KING,(BILLY)",
         "tags": [
@@ -4696,8 +4696,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "7h 23m",
-         "minutes": 443
+         "label": "7h 02m",
+         "minutes": 422
         },
         "name": "REAVES,(DALTON)",
         "tags": [
@@ -4769,8 +4769,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 23m",
-         "minutes": 503
+         "label": "8h 02m",
+         "minutes": 482
         },
         "name": "JACKMAN,(MATT)"
        },
@@ -4778,8 +4778,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 23m",
-         "minutes": 503
+         "label": "8h 02m",
+         "minutes": 482
         },
         "name": "CLAPP,(JASON)"
        },
@@ -4787,8 +4787,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "8h 23m",
-         "minutes": 503
+         "label": "8h 02m",
+         "minutes": 482
         },
         "name": "KEOMANIVONG,(SONNY)"
        }
@@ -4826,12 +4826,12 @@
        {
         "craft": "EN",
         "name": "PILLOW,(JOSHUA)",
-        "on_in": "0h 38m"
+        "on_in": "0h 17m"
        },
        {
         "craft": "AE",
         "name": "BARAKS,(RON)",
-        "on_in": "0h 38m"
+        "on_in": "0h 17m"
        }
       ],
       "eng_crew_count": "0",
@@ -6164,8 +6164,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 58m",
-         "minutes": 238
+         "label": "3h 37m",
+         "minutes": 217
         },
         "name": "TAYLOR,(WILLIAM)"
        },
@@ -6173,8 +6173,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 58m",
-         "minutes": 238
+         "label": "3h 37m",
+         "minutes": 217
         },
         "name": "GRELK,(RUGER)"
        }
@@ -6453,8 +6453,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 48m",
-         "minutes": 108
+         "label": "1h 27m",
+         "minutes": 87
         },
         "name": "MARKO,(CAIN)"
        },
@@ -6462,8 +6462,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "1h 48m",
-         "minutes": 108
+         "label": "1h 27m",
+         "minutes": 87
         },
         "name": "BOER,(BRANDON)"
        }
@@ -6502,8 +6502,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 38m",
-         "minutes": 218
+         "label": "3h 17m",
+         "minutes": 197
         },
         "name": "HATFIELD,(JARROD)"
        },
@@ -6511,8 +6511,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 38m",
-         "minutes": 218
+         "label": "3h 17m",
+         "minutes": 197
         },
         "name": "CONWELL,(JOSHUA)"
        }
