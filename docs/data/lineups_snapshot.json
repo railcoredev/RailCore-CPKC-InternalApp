@@ -1,10 +1,10 @@
 {
  "meta": {
-  "collection_state": "active",
-  "collection_message": "Light sweep sched_20260903_213946.",
+  "collection_state": "awaiting_login",
+  "collection_message": "Session lost; recovering (auto-login + RSA).",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-04T02:44:01+00:00",
+  "generated_at": "2026-09-04T02:44:48+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260903_213946",
@@ -2564,8 +2564,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 16m",
-         "minutes": 196
+         "label": "3h 15m",
+         "minutes": 195
         },
         "name": "JOHNSON,(CHAD)",
         "tags": [
@@ -2598,8 +2598,8 @@
         "craft": "CO",
         "hos": {
          "band": "yellow",
-         "label": "3h 16m",
-         "minutes": 196
+         "label": "3h 15m",
+         "minutes": 195
         },
         "name": "RECKNAGEL,(LUKE)",
         "tags": [
@@ -2620,8 +2620,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 16m",
-         "minutes": 376
+         "label": "6h 15m",
+         "minutes": 375
         },
         "name": "GANZER,(JASON)"
        },
@@ -2629,8 +2629,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 16m",
-         "minutes": 376
+         "label": "6h 15m",
+         "minutes": 375
         },
         "name": "BARAKS,(RON)"
        }
@@ -2669,8 +2669,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 26m",
-         "minutes": 506
+         "label": "8h 25m",
+         "minutes": 505
         },
         "name": "WHITLEY,(CHRIS)"
        },
@@ -2678,8 +2678,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 26m",
-         "minutes": 506
+         "label": "8h 25m",
+         "minutes": 505
         },
         "name": "ROSS,(JANA)"
        }
@@ -2718,8 +2718,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "9h 26m",
-         "minutes": 566
+         "label": "9h 25m",
+         "minutes": 565
         },
         "name": "GOEKEN,(JUSTIN)"
        },
@@ -2727,8 +2727,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "9h 26m",
-         "minutes": 566
+         "label": "9h 25m",
+         "minutes": 565
         },
         "name": "OLDFIELD,(COLTON)"
        }
@@ -2767,8 +2767,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 36m",
-         "minutes": 516
+         "label": "8h 35m",
+         "minutes": 515
         },
         "name": "WOLF,(JOSHUA)"
        },
@@ -2776,8 +2776,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 36m",
-         "minutes": 516
+         "label": "8h 35m",
+         "minutes": 515
         },
         "name": "HOWARD,(MATTHEW)"
        }
@@ -2995,12 +2995,12 @@
        {
         "craft": "EN",
         "name": "THOMAS,(EDWARD)",
-        "on_in": "1h 16m"
+        "on_in": "1h 15m"
        },
        {
         "craft": "AE",
         "name": "SARGENT,(AUSTIN)",
-        "on_in": "1h 16m"
+        "on_in": "1h 15m"
        }
       ],
       "eng_crew_count": "0",
@@ -3157,8 +3157,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "9h 16m",
-         "minutes": 556
+         "label": "9h 15m",
+         "minutes": 555
         },
         "name": "TURCINHODZIC,(SANI)"
        }
@@ -3188,8 +3188,8 @@
         "craft": "CO",
         "hos": {
          "band": "green",
-         "label": "9h 16m",
-         "minutes": 556
+         "label": "9h 15m",
+         "minutes": 555
         },
         "name": "RAYA,(OCTAVIO)"
        }
@@ -4593,8 +4593,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "4h 16m",
-         "minutes": 256
+         "label": "4h 15m",
+         "minutes": 255
         },
         "name": "MCKEE,(RODNEY)"
        },
@@ -4602,8 +4602,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "4h 16m",
-         "minutes": 256
+         "label": "4h 15m",
+         "minutes": 255
         },
         "name": "FULKERSON,(DAN)"
        }
@@ -4642,8 +4642,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "4h 01m",
-         "minutes": 241
+         "label": "4h 00m",
+         "minutes": 240
         },
         "name": "STRAUSS,(WILLIAM)"
        },
@@ -4651,8 +4651,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "4h 01m",
-         "minutes": 241
+         "label": "4h 00m",
+         "minutes": 240
         },
         "name": "COMSTOCK,(JUSTYCE)"
        }
@@ -4691,8 +4691,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 51m",
-         "minutes": 471
+         "label": "7h 50m",
+         "minutes": 470
         },
         "name": "DUYVEJONCK,(MARK)"
        },
@@ -4700,8 +4700,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 51m",
-         "minutes": 471
+         "label": "7h 50m",
+         "minutes": 470
         },
         "name": "BROWN,(BENJAMIN)"
        }
@@ -4739,12 +4739,12 @@
        {
         "craft": "EN",
         "name": "LASCHE,(DAVID)",
-        "on_in": "0h 06m"
+        "on_in": "0h 05m"
        },
        {
         "craft": "AE",
         "name": "IYOHA,(OSAYANDE)",
-        "on_in": "0h 06m"
+        "on_in": "0h 05m"
        }
       ],
       "eng_crew_count": "0",
@@ -4781,8 +4781,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 46m",
-         "minutes": 646
+         "label": "10h 45m",
+         "minutes": 645
         },
         "name": "LOUGHMILLER,(BARRY)",
         "tags": [
@@ -4793,8 +4793,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "10h 46m",
-         "minutes": 646
+         "label": "10h 45m",
+         "minutes": 645
         },
         "name": "DORSEY,(STETSON)",
         "tags": [
