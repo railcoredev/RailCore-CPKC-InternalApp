@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-04T00:49:52+00:00",
+  "generated_at": "2026-09-04T01:10:13+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260903_055100",
@@ -2407,28 +2407,9 @@
     "name": "Nahant",
     "trains": [
      {
-      "crewed": true,
+      "crewed": false,
       "date_time": "09/03-0800",
-      "eng_crew": [
-       {
-        "craft": "EN",
-        "hos": {
-         "band": "orange",
-         "label": "0h 10m",
-         "minutes": 10
-        },
-        "name": "PILLOW,(JOSHUA)"
-       },
-       {
-        "craft": "ET",
-        "hos": {
-         "band": "orange",
-         "label": "0h 10m",
-         "minutes": 10
-        },
-        "name": "GREEN,(DALTON)"
-       }
-      ],
+      "eng_crew": [],
       "eng_crew_count": "",
       "eng_crew_district": "",
       "eng_crew_pool": "",
@@ -2449,17 +2430,7 @@
       "subdistrict": "",
       "train_asgn": "K73-03",
       "train_type": "C",
-      "trn_crew": [
-       {
-        "craft": "CO",
-        "hos": {
-         "band": "orange",
-         "label": "0h 10m",
-         "minutes": 10
-        },
-        "name": "NEECE,(PHIL)"
-       }
-      ],
+      "trn_crew": [],
       "trn_crew_count": "",
       "trn_crew_district": "",
       "trn_crew_pool": "",
