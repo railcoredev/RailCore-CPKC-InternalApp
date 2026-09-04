@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-04T00:06:40+00:00",
+  "generated_at": "2026-09-04T00:27:02+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260903_055100",
@@ -2414,8 +2414,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 53m",
-         "minutes": 53
+         "label": "0h 33m",
+         "minutes": 33
         },
         "name": "PILLOW,(JOSHUA)"
        },
@@ -2423,8 +2423,8 @@
         "craft": "ET",
         "hos": {
          "band": "orange",
-         "label": "0h 53m",
-         "minutes": 53
+         "label": "0h 33m",
+         "minutes": 33
         },
         "name": "GREEN,(DALTON)"
        }
@@ -2454,8 +2454,8 @@
         "craft": "CO",
         "hos": {
          "band": "orange",
-         "label": "0h 53m",
-         "minutes": 53
+         "label": "0h 33m",
+         "minutes": 33
         },
         "name": "NEECE,(PHIL)"
        }
@@ -5958,28 +5958,9 @@
       "trn_planned_crew": []
      },
      {
-      "crewed": true,
+      "crewed": false,
       "date_time": "09/03-1145",
-      "eng_crew": [
-       {
-        "craft": "EN",
-        "hos": {
-         "band": "orange",
-         "label": "0h 18m",
-         "minutes": 18
-        },
-        "name": "ROBERTS,(KIMBERLY)"
-       },
-       {
-        "craft": "AE",
-        "hos": {
-         "band": "orange",
-         "label": "0h 18m",
-         "minutes": 18
-        },
-        "name": "LUDWIG,(AARON)"
-       }
-      ],
+      "eng_crew": [],
       "eng_crew_count": "1",
       "eng_crew_district": "KSPB",
       "eng_crew_pool": "PS",
@@ -9044,26 +9025,7 @@
      "arr": "04541"
     }
    ],
-   "bookoff": null,
-   "called": {
-    "train": "576-312",
-    "origin": "Kansas City",
-    "date_time": "09/03-1145",
-    "status": "PLANNED",
-    "pool": "PS",
-    "my_craft": "AE",
-    "my_hos": {
-     "band": "orange",
-     "label": "0h 18m",
-     "minutes": 18
-    },
-    "with": [
-     {
-      "name": "ROBERTS,(KIMBERLY)",
-      "craft": "EN"
-     }
-    ]
-   }
+   "bookoff": null
   }
  ],
  "train_history": [
