@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Awaiting login after session loss.",
+  "collection_message": "Session lost; waiting at the RSA prompt.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-05T16:58:03+00:00",
+  "generated_at": "2026-09-05T16:59:18+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260905_003044",
@@ -2294,8 +2294,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 47m",
-         "minutes": 107
+         "label": "1h 46m",
+         "minutes": 106
         },
         "name": "NEPTUNE,(TYLER)"
        },
@@ -2303,8 +2303,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "1h 47m",
-         "minutes": 107
+         "label": "1h 46m",
+         "minutes": 106
         },
         "name": "PAGE,(GARRISON)"
        }
@@ -4209,8 +4209,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 32m",
-         "minutes": 32
+         "label": "0h 31m",
+         "minutes": 31
         },
         "name": "PETERSON,(DARREN)"
        },
@@ -4218,8 +4218,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 32m",
-         "minutes": 32
+         "label": "0h 31m",
+         "minutes": 31
         },
         "name": "LANDGREBE,(NICHOLAS)"
        }
