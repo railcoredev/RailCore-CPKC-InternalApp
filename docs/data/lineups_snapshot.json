@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-05T15:32:45+00:00",
+  "generated_at": "2026-09-05T15:53:07+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260905_003044",
@@ -2264,8 +2264,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 57m",
-         "minutes": 57
+         "label": "0h 37m",
+         "minutes": 37
         },
         "name": "SPERSTAD,(JOHN)",
         "tags": [
@@ -2276,8 +2276,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 57m",
-         "minutes": 57
+         "label": "0h 37m",
+         "minutes": 37
         },
         "name": "VINES,(VICTOR)",
         "tags": [
@@ -2319,8 +2319,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 12m",
-         "minutes": 192
+         "label": "2h 52m",
+         "minutes": 172
         },
         "name": "NEPTUNE,(TYLER)"
        },
@@ -2328,8 +2328,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 12m",
-         "minutes": 192
+         "label": "2h 52m",
+         "minutes": 172
         },
         "name": "PAGE,(GARRISON)"
        }
@@ -4204,8 +4204,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 12m",
-         "minutes": 72
+         "label": "0h 52m",
+         "minutes": 52
         },
         "name": "CASHATT,(DAKOTA)"
        },
@@ -4213,8 +4213,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "1h 12m",
-         "minutes": 72
+         "label": "0h 52m",
+         "minutes": 52
         },
         "name": "DUNCAN,(ZACH)"
        }
@@ -4253,8 +4253,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 57m",
-         "minutes": 117
+         "label": "1h 37m",
+         "minutes": 97
         },
         "name": "PETERSON,(DARREN)"
        },
@@ -4262,8 +4262,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "1h 57m",
-         "minutes": 117
+         "label": "1h 37m",
+         "minutes": 97
         },
         "name": "LANDGREBE,(NICHOLAS)"
        }
@@ -20789,10 +20789,10 @@
    "last_confirmed": "2026-09-05"
   },
   {
-   "name": "HARING,(ALEX)QBV",
+   "name": "HARING,(ALEX)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "DA13",
+   "assignment": "",
    "since": "2026-09-02",
    "time": "22:21",
    "terminal": "DA",
