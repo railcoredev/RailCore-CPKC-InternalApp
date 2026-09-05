@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-05T10:29:25+00:00",
+  "generated_at": "2026-09-05T10:49:51+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260905_003044",
@@ -2264,8 +2264,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 01m",
-         "minutes": 361
+         "label": "5h 40m",
+         "minutes": 340
         },
         "name": "SPERSTAD,(JOHN)",
         "tags": [
@@ -2276,8 +2276,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 01m",
-         "minutes": 361
+         "label": "5h 40m",
+         "minutes": 340
         },
         "name": "VINES,(VICTOR)",
         "tags": [
@@ -2319,8 +2319,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 16m",
-         "minutes": 496
+         "label": "7h 55m",
+         "minutes": 475
         },
         "name": "NEPTUNE,(TYLER)"
        },
@@ -2328,8 +2328,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 16m",
-         "minutes": 496
+         "label": "7h 55m",
+         "minutes": 475
         },
         "name": "PAGE,(GARRISON)"
        }
@@ -4143,9 +4143,9 @@
        {
         "craft": "EN",
         "hos": {
-         "band": "green",
-         "label": "4h 11m",
-         "minutes": 251
+         "band": "yellow",
+         "label": "3h 50m",
+         "minutes": 230
         },
         "name": "RISH,(LUCUS)",
         "tags": [
@@ -4177,9 +4177,9 @@
        {
         "craft": "CO",
         "hos": {
-         "band": "green",
-         "label": "4h 11m",
-         "minutes": 251
+         "band": "yellow",
+         "label": "3h 50m",
+         "minutes": 230
         },
         "name": "CARAPIA,(JUAN)",
         "tags": [
@@ -4230,8 +4230,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 16m",
-         "minutes": 376
+         "label": "5h 55m",
+         "minutes": 355
         },
         "name": "CASHATT,(DAKOTA)"
        },
@@ -4239,8 +4239,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 16m",
-         "minutes": 376
+         "label": "5h 55m",
+         "minutes": 355
         },
         "name": "DUNCAN,(ZACH)"
        }
@@ -4279,8 +4279,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 01m",
-         "minutes": 421
+         "label": "6h 40m",
+         "minutes": 400
         },
         "name": "PETERSON,(DARREN)"
        },
@@ -4288,8 +4288,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 01m",
-         "minutes": 421
+         "label": "6h 40m",
+         "minutes": 400
         },
         "name": "LANDGREBE,(NICHOLAS)"
        }
@@ -5984,8 +5984,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 26m",
-         "minutes": 26
+         "label": "0h 05m",
+         "minutes": 5
         },
         "name": "BRESHEARS,(CHRIS)"
        },
@@ -5993,8 +5993,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 26m",
-         "minutes": 26
+         "label": "0h 05m",
+         "minutes": 5
         },
         "name": "GOODELL,(SETH)"
        }
@@ -6213,8 +6213,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 01m",
-         "minutes": 181
+         "label": "2h 40m",
+         "minutes": 160
         },
         "name": "LINEBAUGH,(MATT)"
        },
@@ -6222,8 +6222,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 01m",
-         "minutes": 181
+         "label": "2h 40m",
+         "minutes": 160
         },
         "name": "COMSTOCK,(JUSTYCE)"
        }
