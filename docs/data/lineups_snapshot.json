@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Awaiting login after session loss.",
+  "collection_message": "Session lost; recovering (auto-login + RSA).",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-05T05:56:22+00:00",
+  "generated_at": "2026-09-05T06:31:03+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260905_003044",
@@ -2264,8 +2264,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 34m",
-         "minutes": 634
+         "label": "9h 59m",
+         "minutes": 599
         },
         "name": "SPERSTAD,(JOHN)",
         "tags": [
@@ -2276,8 +2276,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "10h 34m",
-         "minutes": 634
+         "label": "9h 59m",
+         "minutes": 599
         },
         "name": "VINES,(VICTOR)",
         "tags": [
@@ -2318,12 +2318,12 @@
        {
         "craft": "EN",
         "name": "NEPTUNE,(TYLER)",
-        "on_in": "0h 49m"
+        "on_in": "0h 14m"
        },
        {
         "craft": "AE",
         "name": "PAGE,(GARRISON)",
-        "on_in": "0h 49m"
+        "on_in": "0h 14m"
        }
       ],
       "eng_crew_count": "0",
@@ -4136,8 +4136,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 44m",
-         "minutes": 524
+         "label": "8h 09m",
+         "minutes": 489
         },
         "name": "RISH,(LUCUS)",
         "tags": [
@@ -4170,8 +4170,8 @@
         "craft": "CO",
         "hos": {
          "band": "green",
-         "label": "8h 44m",
-         "minutes": 524
+         "label": "8h 09m",
+         "minutes": 489
         },
         "name": "CARAPIA,(JUAN)",
         "tags": [
@@ -4222,8 +4222,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 49m",
-         "minutes": 649
+         "label": "10h 14m",
+         "minutes": 614
         },
         "name": "CASHATT,(DAKOTA)"
        },
@@ -4231,8 +4231,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "10h 49m",
-         "minutes": 649
+         "label": "10h 14m",
+         "minutes": 614
         },
         "name": "DUNCAN,(ZACH)"
        }
@@ -4271,8 +4271,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "11h 34m",
-         "minutes": 694
+         "label": "10h 59m",
+         "minutes": 659
         },
         "name": "PETERSON,(DARREN)"
        },
@@ -4280,8 +4280,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "11h 34m",
-         "minutes": 694
+         "label": "10h 59m",
+         "minutes": 659
         },
         "name": "LANDGREBE,(NICHOLAS)"
        }
@@ -5976,8 +5976,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "4h 59m",
-         "minutes": 299
+         "label": "4h 24m",
+         "minutes": 264
         },
         "name": "BRESHEARS,(CHRIS)"
        },
@@ -5985,8 +5985,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "4h 59m",
-         "minutes": 299
+         "label": "4h 24m",
+         "minutes": 264
         },
         "name": "GOODELL,(SETH)"
        }
@@ -6205,8 +6205,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 34m",
-         "minutes": 454
+         "label": "6h 59m",
+         "minutes": 419
         },
         "name": "LINEBAUGH,(MATT)"
        },
@@ -6214,8 +6214,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 34m",
-         "minutes": 454
+         "label": "6h 59m",
+         "minutes": 419
         },
         "name": "COMSTOCK,(JUSTYCE)"
        }
@@ -20499,10 +20499,10 @@
  ],
  "bookoffs": [
   {
-   "name": "AKERS,(MATTHEW)QBVAE",
+   "name": "AKERS,(MATTHEW)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "DADA02AE",
+   "assignment": "",
    "since": "2026-09-04",
    "time": "21:11",
    "terminal": "DA",
@@ -20510,10 +20510,10 @@
    "last_confirmed": "2026-09-05"
   },
   {
-   "name": "ALLEY,(MARK) BV",
+   "name": "ALLEY,(MARK)",
    "code": "S",
    "label": "Off Sickness",
-   "assignment": "EX0020EN",
+   "assignment": "",
    "since": "2026-09-04",
    "time": "22:24",
    "terminal": "DA",
@@ -20521,10 +20521,10 @@
    "last_confirmed": "2026-09-05"
   },
   {
-   "name": "BEGYN,(ANDREW)BV",
+   "name": "BEGYN,(ANDREW)",
    "code": "0",
    "label": "Hours of Service (FRA rest)",
-   "assignment": "XDAT03EN",
+   "assignment": "",
    "since": "2026-09-03",
    "time": "04:46",
    "terminal": "DA",
@@ -20532,10 +20532,10 @@
    "last_confirmed": "2026-09-05"
   },
   {
-   "name": "BELCHER,(JOHN)P",
+   "name": "BELCHER,(JOHN)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "KAKA01EN",
+   "assignment": "",
    "since": "2026-09-03",
    "time": "07:59",
    "terminal": "KC",
@@ -20543,21 +20543,21 @@
    "last_confirmed": "2026-09-05"
   },
   {
-   "name": "BENTLEY,(BRANDON)NQBV",
+   "name": "BENTLEY,(BRANDON)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "EX0005EN",
+   "assignment": "",
    "since": "2026-09-03",
    "time": "00:01",
    "terminal": "DA",
-   "carryover": true,
-   "last_confirmed": "2026-09-03"
+   "carryover": false,
+   "last_confirmed": "2026-09-05"
   },
   {
    "name": "BESSER,(TIMOTHY)QBV",
    "code": "Q",
    "label": "Supervisor Approved",
-   "assignment": "EX0019EN",
+   "assignment": "MU10",
    "since": "2026-09-05",
    "time": "00:01",
    "terminal": "DA",
@@ -20568,62 +20568,51 @@
    "name": "BRADLEY,(COLTON)*IFG",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "EX0006CO",
+   "assignment": "0006",
    "since": "2026-09-04",
    "time": "11:23",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "BROSE,(CAREY)IFG TO PITT",
+   "name": "BROSE,(CAREY)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "EXXX02ET",
+   "assignment": "",
    "since": "2026-08-27",
    "time": "16:24",
    "terminal": "KC",
-   "carryover": true,
-   "last_confirmed": "2026-08-28"
+   "carryover": false,
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "BROWN,(CHANCE)*",
+   "name": "BROWN,(CHANCE)",
    "code": "S",
    "label": "Off Sickness",
-   "assignment": "EX0004CO",
+   "assignment": "",
    "since": "2026-09-04",
    "time": "10:31",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
-  },
-  {
-   "name": "BUTLER,(JASON)QBV",
-   "code": "L",
-   "label": "Leave of Absence",
-   "assignment": "DADA17EN",
-   "since": "2026-09-03",
-   "time": "21:06",
-   "terminal": "DA",
-   "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
    "name": "CADY,(AARON)ALL",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "DADA02EN",
+   "assignment": "DA02",
    "since": "2026-09-03",
    "time": "18:16",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
    "name": "CALLAHAN,(TIM)",
    "code": "L",
    "label": "Leave of Absence",
-   "assignment": "EX0009EN",
+   "assignment": "",
    "since": "2026-09-04",
    "time": "21:15",
    "terminal": "KC",
@@ -20631,43 +20620,43 @@
    "last_confirmed": "2026-09-05"
   },
   {
-   "name": "CARROW,(ROBERT)NQBV/QIF",
+   "name": "CARROW,(ROBERT)NQBV/QIF@DE",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "EX0002EN",
+   "assignment": "MU01",
    "since": "2026-09-03",
    "time": "16:41",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
    "name": "CARTER,(DARIAN)",
    "code": "N",
    "label": "C&V/O (uncertain -- verify)",
-   "assignment": "EX0001TT",
+   "assignment": "",
    "since": "2026-08-24",
    "time": "00:01",
-   "terminal": "OT",
-   "carryover": true,
-   "last_confirmed": "2026-08-25"
+   "terminal": "",
+   "carryover": false,
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "CATES,(TODD)NQRD",
+   "name": "CATES,(TODD)",
    "code": "L",
    "label": "Leave of Absence",
-   "assignment": "OKAT20EN",
+   "assignment": "",
    "since": "2026-09-04",
    "time": "15:10",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "CAVINS,(NOAH)QBV",
+   "name": "CAVINS,(NOAH)",
    "code": "L",
    "label": "Leave of Absence",
-   "assignment": "DADA05EN",
+   "assignment": "",
    "since": "2026-09-04",
    "time": "20:08",
    "terminal": "DA",
@@ -20675,109 +20664,109 @@
    "last_confirmed": "2026-09-05"
   },
   {
-   "name": "COLLINS,(THADD)P",
+   "name": "COLLINS,(THADD)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "EX0013EN",
+   "assignment": "",
    "since": "2026-09-03",
    "time": "10:07",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "CONLIN,(ERIC)P",
+   "name": "CONLIN,(ERIC)",
    "code": "V",
    "label": "Off on Vacation",
-   "assignment": "EX0008EN",
+   "assignment": "",
    "since": "2026-09-01",
    "time": "00:01",
    "terminal": "KC",
-   "carryover": true,
-   "last_confirmed": "2026-09-03"
+   "carryover": false,
+   "last_confirmed": "2026-09-05"
   },
   {
    "name": "COOK,(CHUCK)",
    "code": "N",
    "label": "C&V/O (uncertain -- verify)",
-   "assignment": "ODVT73EN",
+   "assignment": "",
    "since": "2026-09-02",
    "time": "00:01",
    "terminal": "DA",
-   "carryover": true,
-   "last_confirmed": "2026-09-02"
+   "carryover": false,
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "DACOSTA,(HERCULANO)BV",
+   "name": "DACOSTA,(HERCULANO)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "EX0026EN",
+   "assignment": "",
    "since": "2026-09-03",
    "time": "21:58",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
    "name": "DAU,(AUSTIN)BVAE",
    "code": "0",
    "label": "Hours of Service (FRA rest)",
-   "assignment": "DADA01AE",
+   "assignment": "DA01",
    "since": "2026-09-03",
    "time": "12:21",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
    "name": "EBERLINE,(DRAKE)",
    "code": "N",
    "label": "C&V/O (uncertain -- verify)",
-   "assignment": "EX0006TT",
+   "assignment": "",
    "since": "2026-08-24",
    "time": "00:01",
-   "terminal": "OT",
-   "carryover": true,
-   "last_confirmed": "2026-08-25"
+   "terminal": "",
+   "carryover": false,
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "EHRMANN,(CHRIS)BV",
+   "name": "EHRMANN,(CHRIS)",
    "code": "U",
    "label": "Union Business",
-   "assignment": "DADA25EN",
+   "assignment": "",
    "since": "2026-09-03",
    "time": "22:17",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
    "name": "FELLER,(DANIEL)NQBV",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "EX0006EN",
+   "assignment": "0006",
    "since": "2026-09-04",
    "time": "18:26",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
    "name": "FRENCH,(BEN)BV",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "EX0006EN",
+   "assignment": "MU06",
    "since": "2026-09-04",
    "time": "17:55",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "FRIEND,(JONATHON)QBVAE",
+   "name": "FRIEND,(JONATHON)",
    "code": "0",
    "label": "Hours of Service (FRA rest)",
-   "assignment": "EXXX03E7",
+   "assignment": "",
    "since": "2026-09-03",
    "time": "17:56",
    "terminal": "DA",
@@ -20785,18 +20774,18 @@
    "last_confirmed": "2026-09-05"
   },
   {
-   "name": "FULTZ,(CALEB)IFG",
+   "name": "FULTZ,(CALEB)",
    "code": "S",
    "label": "Off Sickness",
-   "assignment": "EX0016EN",
+   "assignment": "",
    "since": "2026-09-04",
    "time": "17:24",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "GANZER,(GRANT)BVAE",
+   "name": "GANZER,(GRANT)",
    "code": "F",
    "label": "Off Duty Injury",
    "assignment": "",
@@ -20810,95 +20799,95 @@
    "name": "GANZER,(JASON)NQBV",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "EX0021EN",
+   "assignment": "MU02",
    "since": "2026-09-04",
    "time": "04:15",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "GERST,(BRADEN)BV",
+   "name": "GERST,(BRADEN)",
    "code": "F",
    "label": "Off Duty Injury",
-   "assignment": "EXXX09E7",
+   "assignment": "",
    "since": "2026-08-25",
    "time": "00:01",
    "terminal": "OT",
-   "carryover": true,
-   "last_confirmed": "2026-09-02"
+   "carryover": false,
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "GOEKEN,(JUSTIN)ALL",
+   "name": "GOEKEN,(JUSTIN)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "EX0010EN",
+   "assignment": "",
    "since": "2026-09-04",
    "time": "05:59",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "GRUSZECZKA,(ED)NQ/RD",
+   "name": "GRUSZECZKA,(ED)",
    "code": "V",
    "label": "Off on Vacation",
-   "assignment": "EXXX01E7",
+   "assignment": "",
    "since": "2026-08-29",
    "time": "00:01",
    "terminal": "DA",
-   "carryover": true,
-   "last_confirmed": "2026-08-29"
+   "carryover": false,
+   "last_confirmed": "2026-09-05"
   },
   {
    "name": "HALE,(KEVON)",
    "code": "G",
    "label": "On Duty Injury",
-   "assignment": "EXXX10E7",
+   "assignment": "",
    "since": "2026-02-24",
    "time": "17:12",
    "terminal": "KC",
-   "carryover": true,
-   "last_confirmed": "2026-08-31"
+   "carryover": false,
+   "last_confirmed": "2026-09-05"
   },
   {
    "name": "HANK,(MATT)ALL",
    "code": "0",
    "label": "Hours of Service (FRA rest)",
-   "assignment": "DADA18EN",
+   "assignment": "DA18",
    "since": "2026-09-04",
    "time": "02:24",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
    "name": "HARING,(ALEX)QBV",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "DADA13AE",
+   "assignment": "DA13",
    "since": "2026-09-02",
    "time": "22:21",
    "terminal": "DA",
-   "carryover": true,
-   "last_confirmed": "2026-09-03"
+   "carryover": false,
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "HASKE,(JUSTIN)ALL",
+   "name": "HASKE,(JUSTIN)",
    "code": "S",
    "label": "Off Sickness",
-   "assignment": "EX0012EN",
+   "assignment": "",
    "since": "2026-09-04",
    "time": "18:28",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "HILLERY,(RYAN)QBV @D",
+   "name": "HILLERY,(RYAN)",
    "code": "S",
    "label": "Off Sickness",
-   "assignment": "DADA03EN",
+   "assignment": "",
    "since": "2026-09-04",
    "time": "20:36",
    "terminal": "DA",
@@ -20906,32 +20895,32 @@
    "last_confirmed": "2026-09-05"
   },
   {
-   "name": "HOFFMAN,(ALAN)BVAE RC",
+   "name": "HOFFMAN,(ALAN)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "DADA21AE",
+   "assignment": "",
    "since": "2026-09-02",
    "time": "16:35",
    "terminal": "DA",
-   "carryover": true,
-   "last_confirmed": "2026-09-02"
+   "carryover": false,
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "HORTON,(BRYAN)NQRD",
+   "name": "HORTON,(BRYAN)",
    "code": "W",
    "label": "Personal Leave Day",
-   "assignment": "ODVT71CO",
+   "assignment": "",
    "since": "2026-09-04",
    "time": "00:01",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "HOUSE,(JOSH)Q P E",
+   "name": "HOUSE,(JOSH)",
    "code": "V",
    "label": "Off on Vacation",
-   "assignment": "EXXX02E7",
+   "assignment": "",
    "since": "2026-09-05",
    "time": "00:01",
    "terminal": "KC",
@@ -20942,70 +20931,59 @@
    "name": "HUFF,(KEEGAN)",
    "code": "N",
    "label": "C&V/O (uncertain -- verify)",
-   "assignment": "EX0004TT",
+   "assignment": "",
    "since": "2026-08-24",
    "time": "00:01",
-   "terminal": "OT",
+   "terminal": "",
    "carryover": false,
    "last_confirmed": "2026-09-05"
   },
   {
-   "name": "JOHNSON,(CHAD)QBV",
+   "name": "JOHNSON,(CHAD)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "DADA10EN",
+   "assignment": "",
    "since": "2026-09-04",
    "time": "04:14",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "JOHNSON,(JUSTIN)BN",
+   "name": "JOHNSON,(JUSTIN)",
    "code": "W",
    "label": "Personal Leave Day",
-   "assignment": "OKAT20CO",
+   "assignment": "",
    "since": "2026-09-04",
    "time": "00:01",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
    "name": "JOHNSTON,(JERIMIAH)",
    "code": "N",
    "label": "C&V/O (uncertain -- verify)",
-   "assignment": "EX0010TT",
+   "assignment": "",
    "since": "2026-08-24",
    "time": "00:01",
-   "terminal": "OT",
-   "carryover": true,
-   "last_confirmed": "2026-08-28"
+   "terminal": "",
+   "carryover": false,
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "KARGL,(ROB)BV RC",
+   "name": "KARGL,(ROB)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "DADA13EN",
+   "assignment": "",
    "since": "2026-09-02",
    "time": "18:25",
    "terminal": "DA",
-   "carryover": true,
-   "last_confirmed": "2026-09-02"
+   "carryover": false,
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "KILGORE,(JONATHAN)*",
-   "code": "M",
-   "label": "Off Miles/Days",
-   "assignment": "EX0009CO",
-   "since": "2026-09-01",
-   "time": "21:59",
-   "terminal": "OT",
-   "carryover": true,
-   "last_confirmed": "2026-09-03"
-  },
-  {
-   "name": "KINER,(ERICK)QBVAE",
+   "name": "KINER,(ERICK)",
    "code": "L",
    "label": "Leave of Absence",
    "assignment": "",
@@ -21019,7 +20997,7 @@
    "name": "KRUGER,(COLE)P",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "EX0006CO",
+   "assignment": "KA02",
    "since": "2026-09-04",
    "time": "18:24",
    "terminal": "KC",
@@ -21027,54 +21005,43 @@
    "last_confirmed": "2026-09-05"
   },
   {
-   "name": "LAPOINT,(CAMERON)IFG",
+   "name": "LAPOINT,(CAMERON)IFG @D",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "EX0014EN",
+   "assignment": "0014",
    "since": "2026-09-04",
    "time": "09:01",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "LE,(HUY) FAM 2RT EACH DI",
+   "name": "LE,(HUY) FAM 2RT EACH DIR",
    "code": "0",
    "label": "Hours of Service (FRA rest)",
-   "assignment": "DAXX01TT",
+   "assignment": "XX01",
    "since": "2026-09-03",
    "time": "12:23",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
-  },
-  {
-   "name": "LEPPERT,(RICHARD)BV R",
-   "code": "M",
-   "label": "Off Miles/Days",
-   "assignment": "EX0017EN",
-   "since": "2026-09-03",
-   "time": "10:59",
-   "terminal": "DA",
-   "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
    "name": "LIENEMAN,(DENNIS)QUPIFG",
    "code": "0",
    "label": "Hours of Service (FRA rest)",
-   "assignment": "SWSW05EN",
+   "assignment": "SW05",
    "since": "2026-09-04",
    "time": "04:06",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
    "name": "LINDLY,(DONALD)NQBVEN",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "SWSW02AE",
+   "assignment": "SW02",
    "since": "2026-09-04",
    "time": "22:02",
    "terminal": "OT",
@@ -21085,29 +21052,18 @@
    "name": "LOCKHART,(CAMERON)",
    "code": "N",
    "label": "C&V/O (uncertain -- verify)",
-   "assignment": "EX0005TT",
+   "assignment": "",
    "since": "2026-08-24",
    "time": "00:01",
-   "terminal": "OT",
-   "carryover": true,
-   "last_confirmed": "2026-08-25"
-  },
-  {
-   "name": "LOERCH,(JORDAN)P",
-   "code": "S",
-   "label": "Off Sickness",
-   "assignment": "EX0012EN",
-   "since": "2026-09-03",
-   "time": "15:54",
-   "terminal": "KC",
+   "terminal": "",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
    "name": "LONG,(ALEXANDER)PM",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "KAKA02AE",
+   "assignment": "MU02",
    "since": "2026-09-04",
    "time": "18:23",
    "terminal": "KC",
@@ -21115,21 +21071,21 @@
    "last_confirmed": "2026-09-05"
   },
   {
-   "name": "LYTLE,(JUSTIN)QBV",
+   "name": "LYTLE,(JUSTIN)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "DADA21EN",
+   "assignment": "",
    "since": "2026-09-03",
    "time": "16:42",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "MANTHEI,(BRYAN)QBVAE",
+   "name": "MANTHEI,(BRYAN)",
    "code": "F",
    "label": "Off Duty Injury",
-   "assignment": "EXXX10E7",
+   "assignment": "",
    "since": "2026-09-04",
    "time": "22:42",
    "terminal": "DA",
@@ -21137,32 +21093,32 @@
    "last_confirmed": "2026-09-05"
   },
   {
-   "name": "MARZOFKA,(BRAYDEN)*NQSV",
+   "name": "MARZOFKA,(BRAYDEN)",
    "code": "S",
    "label": "Off Sickness",
-   "assignment": "ODVT75CO",
+   "assignment": "",
    "since": "2026-09-04",
    "time": "12:56",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "MASSEY,(COLLIN)",
+   "name": "MASSEY,(COLLIN) @D",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "EX0002CO",
+   "assignment": "0002",
    "since": "2026-09-03",
    "time": "16:41",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "MCBRIDE,(KELTON)P",
+   "name": "MCBRIDE,(KELTON)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "EX0006EN",
+   "assignment": "",
    "since": "2026-09-04",
    "time": "22:02",
    "terminal": "KC",
@@ -21170,10 +21126,10 @@
    "last_confirmed": "2026-09-05"
   },
   {
-   "name": "MCCHANE,(MIKE)QBVAE",
+   "name": "MCCHANE,(MIKE)",
    "code": "W",
    "label": "Personal Leave Day",
-   "assignment": "DADA08AE",
+   "assignment": "",
    "since": "2026-09-05",
    "time": "00:01",
    "terminal": "DA",
@@ -21181,21 +21137,21 @@
    "last_confirmed": "2026-09-05"
   },
   {
-   "name": "MCCULLOCH,(DAVE)NQRD",
+   "name": "MCCULLOCH,(DAVE)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "EX0005CO",
+   "assignment": "",
    "since": "2026-09-03",
    "time": "12:20",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "MCQUISTON,(DAKOTA)IFG",
+   "name": "MCQUISTON,(DAKOTA)",
    "code": "F",
    "label": "Off Duty Injury",
-   "assignment": "EX0010CO",
+   "assignment": "",
    "since": "2026-09-02",
    "time": "01:11",
    "terminal": "KC",
@@ -21203,10 +21159,10 @@
    "last_confirmed": "2026-09-05"
   },
   {
-   "name": "MERRELL,(CHARISE)QBVAE",
+   "name": "MERRELL,(CHARISE)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "DADA14AE",
+   "assignment": "",
    "since": "2026-09-04",
    "time": "22:02",
    "terminal": "DA",
@@ -21214,109 +21170,98 @@
    "last_confirmed": "2026-09-05"
   },
   {
-   "name": "MILLER,(MIKE)QSAVNQBV R",
+   "name": "MILLER,(MIKE)",
    "code": "N",
    "label": "C&V/O (uncertain -- verify)",
-   "assignment": "EXXX10E7",
+   "assignment": "",
    "since": "2026-08-21",
    "time": "12:26",
    "terminal": "DA",
-   "carryover": true,
-   "last_confirmed": "2026-08-22"
+   "carryover": false,
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "MILLER-SWAIN,(ALEX)P",
+   "name": "MILLER-SWAIN,(ALEX)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "EX0005CO",
+   "assignment": "",
    "since": "2026-09-03",
    "time": "05:16",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "MLEKUSH,(DARREN)QBV @OP@",
+   "name": "MLEKUSH,(DARREN)",
    "code": "F",
    "label": "Off Duty Injury",
-   "assignment": "EXXX08E7",
+   "assignment": "",
    "since": "2025-06-12",
    "time": "20:29",
-   "terminal": "OT",
-   "carryover": true,
-   "last_confirmed": "2026-08-19"
+   "terminal": "",
+   "carryover": false,
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "MOFFITT,(LUCAS)BVAE",
+   "name": "MOFFITT,(LUCAS)BVAE @D",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "OBOB14AE",
+   "assignment": "OB14",
    "since": "2026-09-04",
    "time": "15:43",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "MOONEY,(KORY)QBV RC",
+   "name": "MOONEY,(KORY)",
    "code": "N",
    "label": "C&V/O (uncertain -- verify)",
-   "assignment": "ODVT75EN",
+   "assignment": "",
    "since": "2026-08-31",
    "time": "07:44",
    "terminal": "DA",
-   "carryover": true,
-   "last_confirmed": "2026-08-31"
+   "carryover": false,
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "MUSSINGTON,(SOMORI)QB",
+   "name": "MUSSINGTON,(SOMORI)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "EX0002EN",
+   "assignment": "",
    "since": "2026-09-04",
    "time": "04:18",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "MYRICK,(CHEVAS)QSAV",
+   "name": "MYRICK,(CHEVAS)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "EX0013EN",
+   "assignment": "",
    "since": "2026-09-04",
    "time": "01:15",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
-  },
-  {
-   "name": "NEER,(DUSTIN)BVAE",
-   "code": "S",
-   "label": "Off Sickness",
-   "assignment": "SWSW08AE",
-   "since": "2026-09-03",
-   "time": "07:36",
-   "terminal": "OT",
-   "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
    "name": "NEITZEL,(BRODY)",
    "code": "N",
    "label": "C&V/O (uncertain -- verify)",
-   "assignment": "EX0011TT",
+   "assignment": "",
    "since": "2026-08-24",
    "time": "00:01",
-   "terminal": "OT",
-   "carryover": true,
-   "last_confirmed": "2026-08-28"
+   "terminal": "",
+   "carryover": false,
+   "last_confirmed": "2026-09-05"
   },
   {
    "name": "NELSON,(GARRET)BV 859",
    "code": "V",
    "label": "Off on Vacation",
-   "assignment": "EXXX01ET",
+   "assignment": "XX03",
    "since": "2026-09-05",
    "time": "00:01",
    "terminal": "OT",
@@ -21324,10 +21269,10 @@
    "last_confirmed": "2026-09-05"
   },
   {
-   "name": "OLSON,(ANDREW)QBVAE",
+   "name": "OLSON,(ANDREW)",
    "code": "W",
    "label": "Personal Leave Day",
-   "assignment": "DADA09AE",
+   "assignment": "",
    "since": "2026-09-03",
    "time": "00:01",
    "terminal": "DA",
@@ -21335,10 +21280,10 @@
    "last_confirmed": "2026-09-05"
   },
   {
-   "name": "ONKEN,(WILLIAM)BVAE",
+   "name": "ONKEN,(WILLIAM)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "DADA06AE",
+   "assignment": "",
    "since": "2026-09-04",
    "time": "22:02",
    "terminal": "DA",
@@ -21346,87 +21291,87 @@
    "last_confirmed": "2026-09-05"
   },
   {
-   "name": "PARKER,(JERAD)QBV E",
+   "name": "PARKER,(JERAD)",
    "code": "H",
    "label": "Held Out of Service",
-   "assignment": "XDAS02EN",
+   "assignment": "",
    "since": "2026-09-02",
    "time": "11:06",
    "terminal": "DA",
-   "carryover": true,
-   "last_confirmed": "2026-09-02"
+   "carryover": false,
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "PAULSON,(BRYAN)IFG",
+   "name": "PAULSON,(BRYAN)",
    "code": "W",
    "label": "Personal Leave Day",
-   "assignment": "OLIT91CO",
+   "assignment": "",
    "since": "2026-09-04",
    "time": "00:01",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "PEREZ,(NICHOLAS)P",
+   "name": "PEREZ,(NICHOLAS)",
    "code": "0",
    "label": "Hours of Service (FRA rest)",
-   "assignment": "KAKA01AE",
+   "assignment": "",
    "since": "2026-09-02",
    "time": "16:04",
    "terminal": "KC",
-   "carryover": true,
-   "last_confirmed": "2026-09-02"
+   "carryover": false,
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "POFFENBERGER,(TODD)QOT",
+   "name": "POFFENBERGER,(TODD)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "DADA01EN",
+   "assignment": "",
    "since": "2026-09-03",
    "time": "10:09",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
    "name": "POOLE,(TREVOR)*",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "EX0010CO",
+   "assignment": "MU02",
    "since": "2026-09-03",
    "time": "16:41",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "RECKNAGEL,(LUKE)BVAE",
+   "name": "RECKNAGEL,(LUKE)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "DADA18AE",
+   "assignment": "",
    "since": "2026-09-04",
    "time": "04:14",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
    "name": "REESE,(MATT)QBN/P",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "EX0005EN",
+   "assignment": "MU02",
    "since": "2026-09-03",
    "time": "16:40",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "RITTER,(RYAN)NQRD RC",
+   "name": "RITTER,(RYAN)",
    "code": "W",
    "label": "Personal Leave Day",
-   "assignment": "XDAT01EN",
+   "assignment": "",
    "since": "2026-09-05",
    "time": "00:01",
    "terminal": "DA",
@@ -21437,23 +21382,23 @@
    "name": "ROBERTSON,(OWEN)PM",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "EX0014EN",
+   "assignment": "MU03",
    "since": "2026-09-04",
    "time": "15:42",
    "terminal": "KC",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
    "name": "ROBINSON,(SHERRON)BV",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "DADA10AE",
+   "assignment": "DA10",
    "since": "2026-09-03",
    "time": "14:38",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
    "name": "RODRIGUEZ,(JUSTIN)",
@@ -21463,69 +21408,69 @@
    "since": "2026-08-24",
    "time": "18:08",
    "terminal": "DA",
-   "carryover": true,
-   "last_confirmed": "2026-08-25"
+   "carryover": false,
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "ROSALES,(EDGAR)BV",
+   "name": "ROSALES,(EDGAR)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "DADA05AE",
+   "assignment": "",
    "since": "2026-09-03",
    "time": "05:17",
    "terminal": "DA",
-   "carryover": true,
-   "last_confirmed": "2026-09-03"
+   "carryover": false,
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "SCOTT,(ZACHARY)BVIFG",
+   "name": "SCOTT,(ZACHARY)BVIFG @D",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "EX0010EN",
+   "assignment": "0010",
    "since": "2026-09-03",
    "time": "16:41",
-   "terminal": "OT",
-   "carryover": false,
-   "last_confirmed": "2026-09-04"
-  },
-  {
-   "name": "SELS,(DOUG)QBV",
-   "code": "M",
-   "label": "Off Miles/Days",
-   "assignment": "DADA26AE",
-   "since": "2026-09-03",
-   "time": "18:17",
-   "terminal": "DA",
-   "carryover": false,
-   "last_confirmed": "2026-09-04"
-  },
-  {
-   "name": "SISSON,(TYLER)",
-   "code": "N",
-   "label": "C&V/O (uncertain -- verify)",
-   "assignment": "EX0006TT",
-   "since": "2026-08-24",
-   "time": "00:01",
    "terminal": "OT",
    "carryover": false,
    "last_confirmed": "2026-09-05"
   },
   {
-   "name": "STECKER,(ANDREW)NQSA",
+   "name": "SELS,(DOUG)QBV",
+   "code": "M",
+   "label": "Off Miles/Days",
+   "assignment": "DA26",
+   "since": "2026-09-03",
+   "time": "18:17",
+   "terminal": "DA",
+   "carryover": false,
+   "last_confirmed": "2026-09-05"
+  },
+  {
+   "name": "SISSON,(TYLER)",
+   "code": "N",
+   "label": "C&V/O (uncertain -- verify)",
+   "assignment": "",
+   "since": "2026-08-24",
+   "time": "00:01",
+   "terminal": "",
+   "carryover": false,
+   "last_confirmed": "2026-09-05"
+  },
+  {
+   "name": "STECKER,(ANDREW)",
    "code": "G",
    "label": "On Duty Injury",
-   "assignment": "EXXX09E7",
+   "assignment": "",
    "since": "2026-01-02",
    "time": "02:45",
    "terminal": "DA",
-   "carryover": true,
-   "last_confirmed": "2026-08-27"
+   "carryover": false,
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "STEVENS,(DALTON)BVIFG",
+   "name": "STEVENS,(DALTON)BVIFG @D E",
    "code": "L",
    "label": "Leave of Absence",
-   "assignment": "EX0003EN",
+   "assignment": "OB13",
    "since": "2026-09-04",
    "time": "10:16",
    "terminal": "OT",
@@ -21533,10 +21478,10 @@
    "last_confirmed": "2026-09-05"
   },
   {
-   "name": "STONE,(JOSH)QBV",
+   "name": "STONE,(JOSH)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "DADA26EN",
+   "assignment": "",
    "since": "2026-09-04",
    "time": "21:11",
    "terminal": "DA",
@@ -21547,29 +21492,29 @@
    "name": "STONEHOUSE,(ZACH)BVIFG",
    "code": "V",
    "label": "Off on Vacation",
-   "assignment": "SWSW01AE",
+   "assignment": "SW01",
    "since": "2026-09-04",
    "time": "00:01",
    "terminal": "OT",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
    "name": "STROPES,(THOMAS)BV",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "DADA06EN",
+   "assignment": "DA06",
    "since": "2026-09-04",
    "time": "17:57",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "TEEL,(DARRELL)IFG PITT!!",
+   "name": "TEEL,(DARRELL)",
    "code": "V",
    "label": "Off on Vacation",
-   "assignment": "EXXX01E7",
+   "assignment": "",
    "since": "2026-09-05",
    "time": "00:01",
    "terminal": "KC",
@@ -21577,32 +21522,21 @@
    "last_confirmed": "2026-09-05"
   },
   {
-   "name": "TILLIS,(ETHAN)NQBV",
-   "code": "M",
-   "label": "Off Miles/Days",
-   "assignment": "EX0001EN",
-   "since": "2026-09-02",
-   "time": "01:49",
-   "terminal": "OT",
-   "carryover": true,
-   "last_confirmed": "2026-09-03"
-  },
-  {
    "name": "TRAN,(AARON)",
    "code": "N",
    "label": "C&V/O (uncertain -- verify)",
-   "assignment": "EX0007TT",
+   "assignment": "",
    "since": "2026-08-24",
    "time": "00:01",
-   "terminal": "OT",
-   "carryover": true,
-   "last_confirmed": "2026-08-25"
+   "terminal": "",
+   "carryover": false,
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "TURNER,(TERRELL)B IFG",
+   "name": "TURNER,(TERRELL)B IFG @D E",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "OBOB14EN",
+   "assignment": "OB14",
    "since": "2026-09-04",
    "time": "21:10",
    "terminal": "OT",
@@ -21613,7 +21547,7 @@
    "name": "WARRENBURG,(CHRIS)",
    "code": "%",
    "label": "Suspension",
-   "assignment": "EXXX10E7",
+   "assignment": "",
    "since": "2026-09-04",
    "time": "05:43",
    "terminal": "OT",
@@ -21621,21 +21555,21 @@
    "last_confirmed": "2026-09-05"
   },
   {
-   "name": "WEST,(TAYLOR)QBV RC",
+   "name": "WEST,(TAYLOR)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "EX0022EN",
+   "assignment": "",
    "since": "2026-09-04",
    "time": "11:17",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   },
   {
-   "name": "WHITWORTH,(JOHN)QBV",
+   "name": "WHITWORTH,(JOHN)",
    "code": "W",
    "label": "Personal Leave Day",
-   "assignment": "DADA11EN",
+   "assignment": "",
    "since": "2026-09-05",
    "time": "00:01",
    "terminal": "DA",
@@ -21646,15 +21580,15 @@
    "name": "WOLF,(JOSHUA)ALL",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "EX0018EN",
+   "assignment": "MU04",
    "since": "2026-09-04",
    "time": "10:41",
    "terminal": "DA",
    "carryover": false,
-   "last_confirmed": "2026-09-04"
+   "last_confirmed": "2026-09-05"
   }
  ],
- "bookoffs_source": "legacy",
+ "bookoffs_source": "engine",
  "station_map": {
   "00004": {
    "name": "KANSAS CITY (2MT)",
