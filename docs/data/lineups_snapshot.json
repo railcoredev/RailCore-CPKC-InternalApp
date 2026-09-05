@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-05T16:16:02+00:00",
+  "generated_at": "2026-09-05T16:36:26+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260905_003044",
@@ -2257,34 +2257,9 @@
       "trn_planned_crew": []
      },
      {
-      "crewed": true,
+      "crewed": false,
       "date_time": "09/05-0955",
-      "eng_crew": [
-       {
-        "craft": "EN",
-        "hos": {
-         "band": "orange",
-         "label": "0h 14m",
-         "minutes": 14
-        },
-        "name": "SPERSTAD,(JOHN)",
-        "tags": [
-         "recrew"
-        ]
-       },
-       {
-        "craft": "AE",
-        "hos": {
-         "band": "orange",
-         "label": "0h 14m",
-         "minutes": 14
-        },
-        "name": "VINES,(VICTOR)",
-        "tags": [
-         "recrew"
-        ]
-       }
-      ],
+      "eng_crew": [],
       "eng_crew_count": "0",
       "eng_crew_district": "8IDA",
       "eng_crew_pool": "DA",
@@ -2319,8 +2294,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "2h 29m",
-         "minutes": 149
+         "label": "2h 09m",
+         "minutes": 129
         },
         "name": "NEPTUNE,(TYLER)"
        },
@@ -2328,8 +2303,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "2h 29m",
-         "minutes": 149
+         "label": "2h 09m",
+         "minutes": 129
         },
         "name": "PAGE,(GARRISON)"
        }
@@ -4204,8 +4179,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 29m",
-         "minutes": 29
+         "label": "0h 09m",
+         "minutes": 9
         },
         "name": "CASHATT,(DAKOTA)"
        },
@@ -4213,8 +4188,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 29m",
-         "minutes": 29
+         "label": "0h 09m",
+         "minutes": 9
         },
         "name": "DUNCAN,(ZACH)"
        }
@@ -4253,8 +4228,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 14m",
-         "minutes": 74
+         "label": "0h 54m",
+         "minutes": 54
         },
         "name": "PETERSON,(DARREN)"
        },
@@ -4262,8 +4237,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "1h 14m",
-         "minutes": 74
+         "label": "0h 54m",
+         "minutes": 54
         },
         "name": "LANDGREBE,(NICHOLAS)"
        }
