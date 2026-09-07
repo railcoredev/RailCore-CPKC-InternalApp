@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Awaiting login after session loss.",
+  "collection_message": "Session lost; waiting at the RSA prompt.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-07T15:28:22+00:00",
+  "generated_at": "2026-09-07T15:29:38+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260907_073103",
@@ -2478,8 +2478,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "4h 52m",
-         "minutes": 292
+         "label": "4h 50m",
+         "minutes": 290
         },
         "name": "DUYVEJONCK,(MARK)"
        },
@@ -2487,8 +2487,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "4h 52m",
-         "minutes": 292
+         "label": "4h 50m",
+         "minutes": 290
         },
         "name": "BROWN,(BENJAMIN)"
        },
@@ -2496,8 +2496,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "4h 52m",
-         "minutes": 292
+         "label": "4h 50m",
+         "minutes": 290
         },
         "name": "PARKHURST,(CODY)"
        }
@@ -2716,8 +2716,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 37m",
-         "minutes": 397
+         "label": "6h 35m",
+         "minutes": 395
         },
         "name": "STROPES,(THOMAS)"
        },
@@ -2725,8 +2725,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 37m",
-         "minutes": 397
+         "label": "6h 35m",
+         "minutes": 395
         },
         "name": "AKERS,(MATTHEW)"
        },
@@ -2734,8 +2734,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "6h 37m",
-         "minutes": 397
+         "label": "6h 35m",
+         "minutes": 395
         },
         "name": "STRADLING,(DALLIN)"
        }
@@ -2805,18 +2805,18 @@
        {
         "craft": "EN",
         "hos": {
-         "band": "orange",
-         "label": "0h 02m",
-         "minutes": 2
+         "band": "red",
+         "label": "0h 00m",
+         "minutes": 0
         },
         "name": "COLLINS,(THADD)"
        },
        {
         "craft": "AE",
         "hos": {
-         "band": "orange",
-         "label": "0h 02m",
-         "minutes": 2
+         "band": "red",
+         "label": "0h 00m",
+         "minutes": 0
         },
         "name": "LONG,(ALEXANDER)"
        }
@@ -2845,9 +2845,9 @@
        {
         "craft": "TT",
         "hos": {
-         "band": "orange",
-         "label": "0h 02m",
-         "minutes": 2
+         "band": "red",
+         "label": "0h 00m",
+         "minutes": 0
         },
         "name": "SISSON,(TYLER)"
        }
@@ -2865,8 +2865,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "4h 52m",
-         "minutes": 292
+         "label": "4h 50m",
+         "minutes": 290
         },
         "name": "DUYVEJONCK,(MARK)"
        },
@@ -2874,8 +2874,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "4h 52m",
-         "minutes": 292
+         "label": "4h 50m",
+         "minutes": 290
         },
         "name": "BROWN,(BENJAMIN)"
        },
@@ -2883,8 +2883,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "4h 52m",
-         "minutes": 292
+         "label": "4h 50m",
+         "minutes": 290
         },
         "name": "PARKHURST,(CODY)"
        }
@@ -2923,8 +2923,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 37m",
-         "minutes": 397
+         "label": "6h 35m",
+         "minutes": 395
         },
         "name": "STROPES,(THOMAS)"
        },
@@ -2932,8 +2932,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 37m",
-         "minutes": 397
+         "label": "6h 35m",
+         "minutes": 395
         },
         "name": "AKERS,(MATTHEW)"
        },
@@ -2941,8 +2941,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "6h 37m",
-         "minutes": 397
+         "label": "6h 35m",
+         "minutes": 395
         },
         "name": "STRADLING,(DALLIN)"
        }
@@ -2981,8 +2981,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "9h 32m",
-         "minutes": 572
+         "label": "9h 30m",
+         "minutes": 570
         },
         "name": "CASHATT,(DAKOTA)",
         "tags": [
@@ -2993,8 +2993,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "9h 32m",
-         "minutes": 572
+         "label": "9h 30m",
+         "minutes": 570
         },
         "name": "PATTERSON,(DELRON)",
         "tags": [
@@ -3036,8 +3036,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "5h 42m",
-         "minutes": 342
+         "label": "5h 40m",
+         "minutes": 340
         },
         "name": "RISH,(LUCUS)"
        },
@@ -3045,8 +3045,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "5h 42m",
-         "minutes": 342
+         "label": "5h 40m",
+         "minutes": 340
         },
         "name": "ADKINS,(CHRISTOPHER)"
        }
@@ -4321,8 +4321,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 02m",
-         "minutes": 482
+         "label": "8h 00m",
+         "minutes": 480
         },
         "name": "BELCHER,(JOHN)"
        },
@@ -4330,8 +4330,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 02m",
-         "minutes": 482
+         "label": "8h 00m",
+         "minutes": 480
         },
         "name": "BURCH,(RICK)"
        }
