@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-07T22:00:00+00:00",
+  "generated_at": "2026-09-07T22:20:23+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260907_073103",
@@ -2677,41 +2677,13 @@
       "trn_planned_crew": []
      },
      {
-      "crewed": true,
+      "crewed": false,
       "date_time": "09/07-2145",
       "eng_crew": [],
       "eng_crew_count": "1",
       "eng_crew_district": "KSPB",
       "eng_crew_pool": "PS",
-      "eng_planned_crew": [
-       {
-        "craft": "EN",
-        "hos": {
-         "band": "orange",
-         "label": "0h 05m",
-         "minutes": 5
-        },
-        "name": "STROPES,(THOMAS)"
-       },
-       {
-        "craft": "AE",
-        "hos": {
-         "band": "orange",
-         "label": "0h 05m",
-         "minutes": 5
-        },
-        "name": "AKERS,(MATTHEW)"
-       },
-       {
-        "craft": "ET",
-        "hos": {
-         "band": "orange",
-         "label": "0h 05m",
-         "minutes": 5
-        },
-        "name": "STRADLING,(DALLIN)"
-       }
-      ],
+      "eng_planned_crew": [],
       "hours_in_future": "",
       "information": "PLANNED ORDER FROM MTP",
       "location_code": "04640",
@@ -2831,37 +2803,9 @@
       "trn_planned_crew": []
      },
      {
-      "crewed": true,
+      "crewed": false,
       "date_time": "09/07-1250",
-      "eng_crew": [
-       {
-        "craft": "EN",
-        "hos": {
-         "band": "orange",
-         "label": "0h 05m",
-         "minutes": 5
-        },
-        "name": "STROPES,(THOMAS)"
-       },
-       {
-        "craft": "AE",
-        "hos": {
-         "band": "orange",
-         "label": "0h 05m",
-         "minutes": 5
-        },
-        "name": "AKERS,(MATTHEW)"
-       },
-       {
-        "craft": "ET",
-        "hos": {
-         "band": "orange",
-         "label": "0h 05m",
-         "minutes": 5
-        },
-        "name": "STRADLING,(DALLIN)"
-       }
-      ],
+      "eng_crew": [],
       "eng_crew_count": "0",
       "eng_crew_district": "8IOT",
       "eng_crew_pool": "SW",
@@ -2896,8 +2840,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 00m",
-         "minutes": 180
+         "label": "2h 40m",
+         "minutes": 160
         },
         "name": "CASHATT,(DAKOTA)",
         "tags": [
@@ -2908,8 +2852,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 00m",
-         "minutes": 180
+         "label": "2h 40m",
+         "minutes": 160
         },
         "name": "PATTERSON,(DELRON)",
         "tags": [
@@ -4217,8 +4161,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 30m",
-         "minutes": 90
+         "label": "1h 10m",
+         "minutes": 70
         },
         "name": "BELCHER,(JOHN)"
        },
@@ -4226,8 +4170,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "1h 30m",
-         "minutes": 90
+         "label": "1h 10m",
+         "minutes": 70
         },
         "name": "BURCH,(RICK)"
        }
