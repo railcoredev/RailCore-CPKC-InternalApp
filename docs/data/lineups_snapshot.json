@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-07T15:29:38+00:00",
+  "generated_at": "2026-09-07T15:50:01+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260907_073103",
@@ -2478,8 +2478,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "4h 50m",
-         "minutes": 290
+         "label": "4h 30m",
+         "minutes": 270
         },
         "name": "DUYVEJONCK,(MARK)"
        },
@@ -2487,8 +2487,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "4h 50m",
-         "minutes": 290
+         "label": "4h 30m",
+         "minutes": 270
         },
         "name": "BROWN,(BENJAMIN)"
        },
@@ -2496,8 +2496,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "4h 50m",
-         "minutes": 290
+         "label": "4h 30m",
+         "minutes": 270
         },
         "name": "PARKHURST,(CODY)"
        }
@@ -2716,8 +2716,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 35m",
-         "minutes": 395
+         "label": "6h 15m",
+         "minutes": 375
         },
         "name": "STROPES,(THOMAS)"
        },
@@ -2725,8 +2725,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 35m",
-         "minutes": 395
+         "label": "6h 15m",
+         "minutes": 375
         },
         "name": "AKERS,(MATTHEW)"
        },
@@ -2734,8 +2734,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "6h 35m",
-         "minutes": 395
+         "label": "6h 15m",
+         "minutes": 375
         },
         "name": "STRADLING,(DALLIN)"
        }
@@ -2799,28 +2799,9 @@
     "name": "Ottumwa",
     "trains": [
      {
-      "crewed": true,
+      "crewed": false,
       "date_time": "09/07-0845",
-      "eng_crew": [
-       {
-        "craft": "EN",
-        "hos": {
-         "band": "red",
-         "label": "0h 00m",
-         "minutes": 0
-        },
-        "name": "COLLINS,(THADD)"
-       },
-       {
-        "craft": "AE",
-        "hos": {
-         "band": "red",
-         "label": "0h 00m",
-         "minutes": 0
-        },
-        "name": "LONG,(ALEXANDER)"
-       }
-      ],
+      "eng_crew": [],
       "eng_crew_count": "1",
       "eng_crew_district": "8IDA",
       "eng_crew_pool": "DA",
@@ -2841,17 +2822,7 @@
       "subdistrict": "",
       "train_asgn": "CWR-01",
       "train_type": "C",
-      "trn_crew": [
-       {
-        "craft": "TT",
-        "hos": {
-         "band": "red",
-         "label": "0h 00m",
-         "minutes": 0
-        },
-        "name": "SISSON,(TYLER)"
-       }
-      ],
+      "trn_crew": [],
       "trn_crew_count": "1",
       "trn_crew_district": "8IDA",
       "trn_crew_pool": "DA",
@@ -2865,8 +2836,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "4h 50m",
-         "minutes": 290
+         "label": "4h 30m",
+         "minutes": 270
         },
         "name": "DUYVEJONCK,(MARK)"
        },
@@ -2874,8 +2845,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "4h 50m",
-         "minutes": 290
+         "label": "4h 30m",
+         "minutes": 270
         },
         "name": "BROWN,(BENJAMIN)"
        },
@@ -2883,8 +2854,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "4h 50m",
-         "minutes": 290
+         "label": "4h 30m",
+         "minutes": 270
         },
         "name": "PARKHURST,(CODY)"
        }
@@ -2923,8 +2894,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 35m",
-         "minutes": 395
+         "label": "6h 15m",
+         "minutes": 375
         },
         "name": "STROPES,(THOMAS)"
        },
@@ -2932,8 +2903,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 35m",
-         "minutes": 395
+         "label": "6h 15m",
+         "minutes": 375
         },
         "name": "AKERS,(MATTHEW)"
        },
@@ -2941,8 +2912,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "6h 35m",
-         "minutes": 395
+         "label": "6h 15m",
+         "minutes": 375
         },
         "name": "STRADLING,(DALLIN)"
        }
@@ -2981,8 +2952,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "9h 30m",
-         "minutes": 570
+         "label": "9h 10m",
+         "minutes": 550
         },
         "name": "CASHATT,(DAKOTA)",
         "tags": [
@@ -2993,8 +2964,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "9h 30m",
-         "minutes": 570
+         "label": "9h 10m",
+         "minutes": 550
         },
         "name": "PATTERSON,(DELRON)",
         "tags": [
@@ -3036,8 +3007,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "5h 40m",
-         "minutes": 340
+         "label": "5h 20m",
+         "minutes": 320
         },
         "name": "RISH,(LUCUS)"
        },
@@ -3045,8 +3016,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "5h 40m",
-         "minutes": 340
+         "label": "5h 20m",
+         "minutes": 320
         },
         "name": "ADKINS,(CHRISTOPHER)"
        }
@@ -4321,8 +4292,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 00m",
-         "minutes": 480
+         "label": "7h 40m",
+         "minutes": 460
         },
         "name": "BELCHER,(JOHN)"
        },
@@ -4330,8 +4301,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 00m",
-         "minutes": 480
+         "label": "7h 40m",
+         "minutes": 460
         },
         "name": "BURCH,(RICK)"
        }
