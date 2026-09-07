@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-07T20:33:03+00:00",
+  "generated_at": "2026-09-07T20:53:52+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260907_073103",
@@ -2688,8 +2688,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 32m",
-         "minutes": 92
+         "label": "1h 11m",
+         "minutes": 71
         },
         "name": "STROPES,(THOMAS)"
        },
@@ -2697,8 +2697,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "1h 32m",
-         "minutes": 92
+         "label": "1h 11m",
+         "minutes": 71
         },
         "name": "AKERS,(MATTHEW)"
        },
@@ -2706,8 +2706,8 @@
         "craft": "ET",
         "hos": {
          "band": "orange",
-         "label": "1h 32m",
-         "minutes": 92
+         "label": "1h 11m",
+         "minutes": 71
         },
         "name": "STRADLING,(DALLIN)"
        }
@@ -2838,8 +2838,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 32m",
-         "minutes": 92
+         "label": "1h 11m",
+         "minutes": 71
         },
         "name": "STROPES,(THOMAS)"
        },
@@ -2847,8 +2847,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "1h 32m",
-         "minutes": 92
+         "label": "1h 11m",
+         "minutes": 71
         },
         "name": "AKERS,(MATTHEW)"
        },
@@ -2856,8 +2856,8 @@
         "craft": "ET",
         "hos": {
          "band": "orange",
-         "label": "1h 32m",
-         "minutes": 92
+         "label": "1h 11m",
+         "minutes": 71
         },
         "name": "STRADLING,(DALLIN)"
        }
@@ -2896,8 +2896,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "4h 27m",
-         "minutes": 267
+         "label": "4h 06m",
+         "minutes": 246
         },
         "name": "CASHATT,(DAKOTA)",
         "tags": [
@@ -2908,8 +2908,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "4h 27m",
-         "minutes": 267
+         "label": "4h 06m",
+         "minutes": 246
         },
         "name": "PATTERSON,(DELRON)",
         "tags": [
@@ -2951,8 +2951,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 37m",
-         "minutes": 37
+         "label": "0h 16m",
+         "minutes": 16
         },
         "name": "RISH,(LUCUS)"
        },
@@ -2960,8 +2960,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 37m",
-         "minutes": 37
+         "label": "0h 16m",
+         "minutes": 16
         },
         "name": "ADKINS,(CHRISTOPHER)"
        }
@@ -4236,8 +4236,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "2h 57m",
-         "minutes": 177
+         "label": "2h 36m",
+         "minutes": 156
         },
         "name": "BELCHER,(JOHN)"
        },
@@ -4245,8 +4245,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "2h 57m",
-         "minutes": 177
+         "label": "2h 36m",
+         "minutes": 156
         },
         "name": "BURCH,(RICK)"
        }
@@ -18289,10 +18289,10 @@
    "last_confirmed": "2026-09-07"
   },
   {
-   "name": "BRESHEARS,(CHRIS)IFG/P",
+   "name": "BRESHEARS,(CHRIS)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "KA02",
+   "assignment": "",
    "since": "2026-09-05",
    "time": "09:44",
    "terminal": "KC",
