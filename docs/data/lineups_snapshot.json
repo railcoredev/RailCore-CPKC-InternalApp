@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-08T00:09:57+00:00",
+  "generated_at": "2026-09-08T00:30:19+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260907_073103",
@@ -2840,8 +2840,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 50m",
-         "minutes": 50
+         "label": "0h 30m",
+         "minutes": 30
         },
         "name": "CASHATT,(DAKOTA)",
         "tags": [
@@ -2852,8 +2852,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 50m",
-         "minutes": 50
+         "label": "0h 30m",
+         "minutes": 30
         },
         "name": "PATTERSON,(DELRON)",
         "tags": [
