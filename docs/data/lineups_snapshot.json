@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-08T00:31:35+00:00",
+  "generated_at": "2026-09-08T00:52:25+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260907_073103",
@@ -2840,8 +2840,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 28m",
-         "minutes": 28
+         "label": "0h 08m",
+         "minutes": 8
         },
         "name": "CASHATT,(DAKOTA)",
         "tags": [
@@ -2852,8 +2852,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 28m",
-         "minutes": 28
+         "label": "0h 08m",
+         "minutes": 8
         },
         "name": "PATTERSON,(DELRON)",
         "tags": [
@@ -18239,10 +18239,10 @@
    "last_confirmed": "2026-09-08"
   },
   {
-   "name": "CARAPIA,(JUAN)*IFG",
+   "name": "CARAPIA,(JUAN)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "0003",
+   "assignment": "",
    "since": "2026-09-05",
    "time": "08:46",
    "terminal": "OT",
