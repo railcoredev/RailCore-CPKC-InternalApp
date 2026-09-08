@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-08T21:19:57+00:00",
+  "generated_at": "2026-09-08T21:40:19+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260907_073103",
@@ -17462,10 +17462,10 @@
    "last_confirmed": "2026-09-08"
   },
   {
-   "name": "LEMM,(SAM)BV/MQ",
+   "name": "LEMM,(SAM)",
    "code": "W",
    "label": "Personal Leave Day",
-   "assignment": "DA28",
+   "assignment": "",
    "since": "2026-09-07",
    "time": "00:01",
    "terminal": "DA",
