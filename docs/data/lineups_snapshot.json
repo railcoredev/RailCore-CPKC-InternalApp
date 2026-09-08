@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-08T18:04:58+00:00",
+  "generated_at": "2026-09-08T18:25:21+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260907_073103",
@@ -17726,10 +17726,10 @@
    "last_confirmed": "2026-09-08"
   },
   {
-   "name": "PETERSON,(DARREN)BV",
+   "name": "PETERSON,(DARREN)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "OB13",
+   "assignment": "",
    "since": "2026-09-05",
    "time": "13:11",
    "terminal": "OT",
