@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-09T01:18:05+00:00",
+  "generated_at": "2026-09-09T01:38:27+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260907_073103",
@@ -17231,10 +17231,10 @@
    "last_confirmed": "2026-09-09"
   },
   {
-   "name": "GRELK,(RUGER)* @D",
+   "name": "GRELK,(RUGER)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "0011",
+   "assignment": "",
    "since": "2026-09-05",
    "time": "20:45",
    "terminal": "OT",
@@ -17443,7 +17443,7 @@
    "name": "LANDGREBE,(NICHOLAS)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "0007",
+   "assignment": "",
    "since": "2026-09-06",
    "time": "20:56",
    "terminal": "OT",
