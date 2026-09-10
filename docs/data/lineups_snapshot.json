@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-10T22:06:45+00:00",
+  "generated_at": "2026-09-10T22:27:29+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260910_144740",
@@ -2144,8 +2144,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 38m",
-         "minutes": 98
+         "label": "1h 18m",
+         "minutes": 78
         },
         "name": "SEXTON,(SAM)",
         "tags": [
@@ -2156,8 +2156,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "1h 38m",
-         "minutes": 98
+         "label": "1h 18m",
+         "minutes": 78
         },
         "name": "BORMANN,(HAYDEN)",
         "tags": [
@@ -2199,8 +2199,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 23m",
-         "minutes": 23
+         "label": "0h 03m",
+         "minutes": 3
         },
         "name": "EHRMANN,(CHRIS)"
        },
@@ -2208,8 +2208,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 23m",
-         "minutes": 23
+         "label": "0h 03m",
+         "minutes": 3
         },
         "name": "LASCHE,(DAVID)"
        }
@@ -2398,8 +2398,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 23m",
-         "minutes": 503
+         "label": "8h 03m",
+         "minutes": 483
         },
         "name": "WOLF,(JOSHUA)"
        },
@@ -2407,8 +2407,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 23m",
-         "minutes": 503
+         "label": "8h 03m",
+         "minutes": 483
         },
         "name": "BARAKS,(RON)"
        }
@@ -2438,8 +2438,8 @@
         "craft": "TT",
         "hos": {
          "band": "green",
-         "label": "8h 23m",
-         "minutes": 503
+         "label": "8h 03m",
+         "minutes": 483
         },
         "name": "TRAN,(AARON)"
        }
@@ -4023,8 +4023,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "5h 53m",
-         "minutes": 353
+         "label": "5h 33m",
+         "minutes": 333
         },
         "name": "NEUBERG,(RUSSELL)"
        },
@@ -4032,8 +4032,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "5h 53m",
-         "minutes": 353
+         "label": "5h 33m",
+         "minutes": 333
         },
         "name": "HASKE,(JUSTIN)"
        }
@@ -4072,8 +4072,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "11h 08m",
-         "minutes": 668
+         "label": "10h 48m",
+         "minutes": 648
         },
         "name": "SCOTT,(ZACHARY)"
        },
@@ -4081,8 +4081,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "11h 08m",
-         "minutes": 668
+         "label": "10h 48m",
+         "minutes": 648
         },
         "name": "PEREZ,(JASPER)"
        }
@@ -5537,8 +5537,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 13m",
-         "minutes": 193
+         "label": "2h 53m",
+         "minutes": 173
         },
         "name": "CLAPP,(JASON)",
         "tags": [
@@ -5880,8 +5880,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 23m",
-         "minutes": 623
+         "label": "10h 03m",
+         "minutes": 603
         },
         "name": "KACZMAREK,(DAN)"
        },
@@ -5889,8 +5889,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "10h 23m",
-         "minutes": 623
+         "label": "10h 03m",
+         "minutes": 603
         },
         "name": "KRUGER,(COLE)"
        }
@@ -5920,8 +5920,8 @@
         "craft": "TT",
         "hos": {
          "band": "green",
-         "label": "10h 23m",
-         "minutes": 623
+         "label": "10h 03m",
+         "minutes": 603
         },
         "name": "SISSON,(TYLER)"
        }
