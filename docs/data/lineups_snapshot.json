@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-10T14:01:26+00:00",
+  "generated_at": "2026-09-10T14:22:11+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260910_005048",
@@ -2407,28 +2407,9 @@
       "trn_planned_crew": []
      },
      {
-      "crewed": true,
+      "crewed": false,
       "date_time": "09/10-0843",
-      "eng_crew": [
-       {
-        "craft": "EN",
-        "hos": {
-         "band": "orange",
-         "label": "0h 14m",
-         "minutes": 14
-        },
-        "name": "HILLERY,(RYAN)"
-       },
-       {
-        "craft": "AE",
-        "hos": {
-         "band": "orange",
-         "label": "0h 14m",
-         "minutes": 14
-        },
-        "name": "WEST,(TAYLOR)"
-       }
-      ],
+      "eng_crew": [],
       "eng_crew_count": "0",
       "eng_crew_district": "8IDA",
       "eng_crew_pool": "DA",
@@ -2462,18 +2443,18 @@
        {
         "craft": "EN",
         "hos": {
-         "band": "yellow",
-         "label": "2h 14m",
-         "minutes": 134
+         "band": "orange",
+         "label": "1h 53m",
+         "minutes": 113
         },
         "name": "FRENCH,(BEN)"
        },
        {
         "craft": "AE",
         "hos": {
-         "band": "yellow",
-         "label": "2h 14m",
-         "minutes": 134
+         "band": "orange",
+         "label": "1h 53m",
+         "minutes": 113
         },
         "name": "PAGE,(GARRISON)"
        }
@@ -4228,8 +4209,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "5h 04m",
-         "minutes": 304
+         "label": "4h 43m",
+         "minutes": 283
         },
         "name": "URMY,(PHIL)",
         "tags": [
@@ -4240,8 +4221,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "5h 04m",
-         "minutes": 304
+         "label": "4h 43m",
+         "minutes": 283
         },
         "name": "BORUSHASKI,(GUNNAR)",
         "tags": [
@@ -4282,27 +4263,27 @@
        {
         "craft": "EN",
         "hos": {
-         "band": "green",
-         "label": "4h 14m",
-         "minutes": 254
+         "band": "yellow",
+         "label": "3h 53m",
+         "minutes": 233
         },
         "name": "MARKO,(CAIN)"
        },
        {
         "craft": "AE",
         "hos": {
-         "band": "green",
-         "label": "4h 14m",
-         "minutes": 254
+         "band": "yellow",
+         "label": "3h 53m",
+         "minutes": 233
         },
         "name": "STONEHOUSE,(ZACH)"
        },
        {
         "craft": "ET",
         "hos": {
-         "band": "green",
-         "label": "4h 14m",
-         "minutes": 254
+         "band": "yellow",
+         "label": "3h 53m",
+         "minutes": 233
         },
         "name": "FERNANDEZ,(DANILO)"
        }
@@ -6117,8 +6098,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "5h 00m",
-         "minutes": 300
+         "label": "4h 39m",
+         "minutes": 279
         },
         "name": "BRESHEARS,(CHRIS)"
        },
@@ -6126,8 +6107,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "5h 00m",
-         "minutes": 300
+         "label": "4h 39m",
+         "minutes": 279
         },
         "name": "ROBERTSON,(OWEN)"
        }
@@ -6157,8 +6138,8 @@
         "craft": "TT",
         "hos": {
          "band": "green",
-         "label": "5h 00m",
-         "minutes": 300
+         "label": "4h 39m",
+         "minutes": 279
         },
         "name": "HUFF,(KEEGAN)"
        }
