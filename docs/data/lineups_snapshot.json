@@ -1,10 +1,10 @@
 {
  "meta": {
-  "collection_state": "active",
-  "collection_message": "Light sweep sched_20260910_005048.",
+  "collection_state": "awaiting_login",
+  "collection_message": "Session lost; recovering (auto-login + RSA).",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-10T05:57:16+00:00",
+  "generated_at": "2026-09-10T06:31:14+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260910_005048",
@@ -2174,8 +2174,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "5h 58m",
-         "minutes": 358
+         "label": "5h 24m",
+         "minutes": 324
         },
         "name": "WHITWORTH,(JOHN)"
        },
@@ -2183,8 +2183,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "5h 58m",
-         "minutes": 358
+         "label": "5h 24m",
+         "minutes": 324
         },
         "name": "DAU,(AUSTIN)"
        }
@@ -2223,8 +2223,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 03m",
-         "minutes": 183
+         "label": "2h 29m",
+         "minutes": 149
         },
         "name": "KARGL,(ROB)",
         "tags": [
@@ -2235,8 +2235,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 03m",
-         "minutes": 183
+         "label": "2h 29m",
+         "minutes": 149
         },
         "name": "HOFFMAN,(ALAN)",
         "tags": [
@@ -2271,37 +2271,9 @@
       "trn_planned_crew": []
      },
      {
-      "crewed": true,
+      "crewed": false,
       "date_time": "09/10-0300",
-      "eng_crew": [
-       {
-        "craft": "EN",
-        "hos": {
-         "band": "orange",
-         "label": "0h 23m",
-         "minutes": 23
-        },
-        "name": "CADY,(AARON)"
-       },
-       {
-        "craft": "AE",
-        "hos": {
-         "band": "orange",
-         "label": "0h 23m",
-         "minutes": 23
-        },
-        "name": "YORK,(CHRISTOPHER)"
-       },
-       {
-        "craft": "ET",
-        "hos": {
-         "band": "orange",
-         "label": "0h 23m",
-         "minutes": 23
-        },
-        "name": "HAGEN,(ANTHONY)"
-       }
-      ],
+      "eng_crew": [],
       "eng_crew_count": "0",
       "eng_crew_district": "8IDA",
       "eng_crew_pool": "DA",
@@ -2486,8 +2458,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 18m",
-         "minutes": 498
+         "label": "7h 44m",
+         "minutes": 464
         },
         "name": "HILLERY,(RYAN)"
        },
@@ -2495,8 +2467,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 18m",
-         "minutes": 498
+         "label": "7h 44m",
+         "minutes": 464
         },
         "name": "WEST,(TAYLOR)"
        }
@@ -2535,8 +2507,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 18m",
-         "minutes": 618
+         "label": "9h 44m",
+         "minutes": 584
         },
         "name": "FRENCH,(BEN)"
        },
@@ -2544,8 +2516,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "10h 18m",
-         "minutes": 618
+         "label": "9h 44m",
+         "minutes": 584
         },
         "name": "PAGE,(GARRISON)"
        }
@@ -4240,8 +4212,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 13m",
-         "minutes": 433
+         "label": "6h 39m",
+         "minutes": 399
         },
         "name": "BLASER,(RYAN)"
        },
@@ -4249,8 +4221,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 13m",
-         "minutes": 433
+         "label": "6h 39m",
+         "minutes": 399
         },
         "name": "DEKEYZER,(BRIAN)"
        }
@@ -4289,8 +4261,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 33m",
-         "minutes": 393
+         "label": "5h 59m",
+         "minutes": 359
         },
         "name": "HATFIELD,(JARROD)"
        },
@@ -4298,8 +4270,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 33m",
-         "minutes": 393
+         "label": "5h 59m",
+         "minutes": 359
         },
         "name": "BRADLEY,(COLTON)"
        }
@@ -4337,7 +4309,7 @@
        {
         "craft": "EN",
         "name": "URMY,(PHIL)",
-        "on_in": "1h 08m",
+        "on_in": "0h 34m",
         "tags": [
          "recrew"
         ]
@@ -4345,7 +4317,7 @@
        {
         "craft": "AE",
         "name": "BORUSHASKI,(GUNNAR)",
-        "on_in": "1h 08m",
+        "on_in": "0h 34m",
         "tags": [
          "recrew"
         ]
@@ -4383,18 +4355,30 @@
       "eng_crew": [
        {
         "craft": "EN",
-        "name": "MARKO,(CAIN)",
-        "on_in": "0h 18m"
+        "hos": {
+         "band": "green",
+         "label": "11h 44m",
+         "minutes": 704
+        },
+        "name": "MARKO,(CAIN)"
        },
        {
         "craft": "AE",
-        "name": "STONEHOUSE,(ZACH)",
-        "on_in": "0h 18m"
+        "hos": {
+         "band": "green",
+         "label": "11h 44m",
+         "minutes": 704
+        },
+        "name": "STONEHOUSE,(ZACH)"
        },
        {
         "craft": "ET",
-        "name": "FERNANDEZ,(DANILO)",
-        "on_in": "0h 18m"
+        "hos": {
+         "band": "green",
+         "label": "11h 44m",
+         "minutes": 704
+        },
+        "name": "FERNANDEZ,(DANILO)"
        }
       ],
       "eng_crew_count": "1",
@@ -6206,12 +6190,12 @@
        {
         "craft": "EN",
         "name": "BRESHEARS,(CHRIS)",
-        "on_in": "1h 04m"
+        "on_in": "0h 30m"
        },
        {
         "craft": "AE",
         "name": "ROBERTSON,(OWEN)",
-        "on_in": "1h 04m"
+        "on_in": "0h 30m"
        }
       ],
       "eng_crew_count": "0",
@@ -6238,7 +6222,7 @@
        {
         "craft": "TT",
         "name": "HUFF,(KEEGAN)",
-        "on_in": "1h 04m"
+        "on_in": "0h 30m"
        }
       ],
       "trn_crew_count": "0",
