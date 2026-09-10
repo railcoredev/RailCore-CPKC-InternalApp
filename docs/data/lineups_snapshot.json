@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-10T12:09:40+00:00",
+  "generated_at": "2026-09-10T12:30:24+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260910_005048",
@@ -2413,18 +2413,18 @@
        {
         "craft": "EN",
         "hos": {
-         "band": "yellow",
-         "label": "2h 05m",
-         "minutes": 125
+         "band": "orange",
+         "label": "1h 45m",
+         "minutes": 105
         },
         "name": "HILLERY,(RYAN)"
        },
        {
         "craft": "AE",
         "hos": {
-         "band": "yellow",
-         "label": "2h 05m",
-         "minutes": 125
+         "band": "orange",
+         "label": "1h 45m",
+         "minutes": 105
         },
         "name": "WEST,(TAYLOR)"
        }
@@ -2462,18 +2462,18 @@
        {
         "craft": "EN",
         "hos": {
-         "band": "green",
-         "label": "4h 05m",
-         "minutes": 245
+         "band": "yellow",
+         "label": "3h 45m",
+         "minutes": 225
         },
         "name": "FRENCH,(BEN)"
        },
        {
         "craft": "AE",
         "hos": {
-         "band": "green",
-         "label": "4h 05m",
-         "minutes": 245
+         "band": "yellow",
+         "label": "3h 45m",
+         "minutes": 225
         },
         "name": "PAGE,(GARRISON)"
        }
@@ -4168,8 +4168,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 00m",
-         "minutes": 60
+         "label": "0h 40m",
+         "minutes": 40
         },
         "name": "BLASER,(RYAN)"
        },
@@ -4177,8 +4177,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "1h 00m",
-         "minutes": 60
+         "label": "0h 40m",
+         "minutes": 40
         },
         "name": "DEKEYZER,(BRIAN)"
        }
@@ -4210,28 +4210,9 @@
       "trn_planned_crew": []
      },
      {
-      "crewed": true,
+      "crewed": false,
       "date_time": "09/10-0553",
-      "eng_crew": [
-       {
-        "craft": "EN",
-        "hos": {
-         "band": "orange",
-         "label": "0h 20m",
-         "minutes": 20
-        },
-        "name": "HATFIELD,(JARROD)"
-       },
-       {
-        "craft": "AE",
-        "hos": {
-         "band": "orange",
-         "label": "0h 20m",
-         "minutes": 20
-        },
-        "name": "BRADLEY,(COLTON)"
-       }
-      ],
+      "eng_crew": [],
       "eng_crew_count": "1",
       "eng_crew_district": "8IDA",
       "eng_crew_pool": "DA",
@@ -4266,8 +4247,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 55m",
-         "minutes": 415
+         "label": "6h 35m",
+         "minutes": 395
         },
         "name": "URMY,(PHIL)",
         "tags": [
@@ -4278,8 +4259,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 55m",
-         "minutes": 415
+         "label": "6h 35m",
+         "minutes": 395
         },
         "name": "BORUSHASKI,(GUNNAR)",
         "tags": [
@@ -4321,8 +4302,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 05m",
-         "minutes": 365
+         "label": "5h 45m",
+         "minutes": 345
         },
         "name": "MARKO,(CAIN)"
        },
@@ -4330,8 +4311,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 05m",
-         "minutes": 365
+         "label": "5h 45m",
+         "minutes": 345
         },
         "name": "STONEHOUSE,(ZACH)"
        },
@@ -4339,8 +4320,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "6h 05m",
-         "minutes": 365
+         "label": "5h 45m",
+         "minutes": 345
         },
         "name": "FERNANDEZ,(DANILO)"
        }
@@ -6155,8 +6136,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 51m",
-         "minutes": 411
+         "label": "6h 31m",
+         "minutes": 391
         },
         "name": "BRESHEARS,(CHRIS)"
        },
@@ -6164,8 +6145,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 51m",
-         "minutes": 411
+         "label": "6h 31m",
+         "minutes": 391
         },
         "name": "ROBERTSON,(OWEN)"
        }
@@ -6195,8 +6176,8 @@
         "craft": "TT",
         "hos": {
          "band": "green",
-         "label": "6h 51m",
-         "minutes": 411
+         "label": "6h 31m",
+         "minutes": 391
         },
         "name": "HUFF,(KEEGAN)"
        }
@@ -21134,10 +21115,10 @@
    "last_confirmed": "2026-09-10"
   },
   {
-   "name": "AMOUZ,(ADJIWANOU)BVAE",
+   "name": "AMOUZ,(ADJIWANOU)",
    "code": "0",
    "label": "Hours of Service (FRA rest)",
-   "assignment": "DA28",
+   "assignment": "",
    "since": "2026-09-08",
    "time": "02:54",
    "terminal": "DA",
@@ -21497,10 +21478,10 @@
    "last_confirmed": "2026-09-10"
   },
   {
-   "name": "KNIGHTS,(JARRETT)*NQBV",
+   "name": "KNIGHTS,(JARRETT)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "MU03",
+   "assignment": "",
    "since": "2026-09-08",
    "time": "20:50",
    "terminal": "OT",
@@ -21662,10 +21643,10 @@
    "last_confirmed": "2026-09-10"
   },
   {
-   "name": "NEER,(DUSTIN)BVAE",
+   "name": "NEER,(DUSTIN)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "SW08",
+   "assignment": "",
    "since": "2026-09-09",
    "time": "05:34",
    "terminal": "OT",
@@ -21717,10 +21698,10 @@
    "last_confirmed": "2026-09-10"
   },
   {
-   "name": "PEREZ,(NICHOLAS)P",
+   "name": "PEREZ,(NICHOLAS)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "KA01",
+   "assignment": "",
    "since": "2026-09-09",
    "time": "22:02",
    "terminal": "KC",
@@ -21849,10 +21830,10 @@
    "last_confirmed": "2026-09-10"
   },
   {
-   "name": "STRAUSS,(WILLIAM)NQBV@D",
+   "name": "STRAUSS,(WILLIAM)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "0004",
+   "assignment": "",
    "since": "2026-09-08",
    "time": "03:08",
    "terminal": "OT",
@@ -21915,10 +21896,10 @@
    "last_confirmed": "2026-09-10"
   },
   {
-   "name": "WHITLEY,(CHRIS)BV",
+   "name": "WHITLEY,(CHRIS)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "MU05",
+   "assignment": "",
    "since": "2026-09-08",
    "time": "05:12",
    "terminal": "DA",
