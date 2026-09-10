@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Awaiting login after session loss.",
+  "collection_message": "Session lost; waiting at the RSA prompt.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-10T14:22:11+00:00",
+  "generated_at": "2026-09-10T14:23:49+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260910_005048",
@@ -2444,8 +2444,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 53m",
-         "minutes": 113
+         "label": "1h 51m",
+         "minutes": 111
         },
         "name": "FRENCH,(BEN)"
        },
@@ -2453,8 +2453,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "1h 53m",
-         "minutes": 113
+         "label": "1h 51m",
+         "minutes": 111
         },
         "name": "PAGE,(GARRISON)"
        }
@@ -4209,8 +4209,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "4h 43m",
-         "minutes": 283
+         "label": "4h 41m",
+         "minutes": 281
         },
         "name": "URMY,(PHIL)",
         "tags": [
@@ -4221,8 +4221,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "4h 43m",
-         "minutes": 283
+         "label": "4h 41m",
+         "minutes": 281
         },
         "name": "BORUSHASKI,(GUNNAR)",
         "tags": [
@@ -4264,8 +4264,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 53m",
-         "minutes": 233
+         "label": "3h 51m",
+         "minutes": 231
         },
         "name": "MARKO,(CAIN)"
        },
@@ -4273,8 +4273,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 53m",
-         "minutes": 233
+         "label": "3h 51m",
+         "minutes": 231
         },
         "name": "STONEHOUSE,(ZACH)"
        },
@@ -4282,8 +4282,8 @@
         "craft": "ET",
         "hos": {
          "band": "yellow",
-         "label": "3h 53m",
-         "minutes": 233
+         "label": "3h 51m",
+         "minutes": 231
         },
         "name": "FERNANDEZ,(DANILO)"
        }
@@ -6098,8 +6098,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "4h 39m",
-         "minutes": 279
+         "label": "4h 37m",
+         "minutes": 277
         },
         "name": "BRESHEARS,(CHRIS)"
        },
@@ -6107,8 +6107,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "4h 39m",
-         "minutes": 279
+         "label": "4h 37m",
+         "minutes": 277
         },
         "name": "ROBERTSON,(OWEN)"
        }
@@ -6138,8 +6138,8 @@
         "craft": "TT",
         "hos": {
          "band": "green",
-         "label": "4h 39m",
-         "minutes": 279
+         "label": "4h 37m",
+         "minutes": 277
         },
         "name": "HUFF,(KEEGAN)"
        }
