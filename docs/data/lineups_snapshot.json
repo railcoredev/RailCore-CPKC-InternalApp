@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Awaiting login after session loss.",
+  "collection_message": "Session lost; waiting at the RSA prompt.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-11T21:45:41+00:00",
+  "generated_at": "2026-09-11T21:47:20+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260911_061409",
@@ -2058,8 +2058,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 34m",
-         "minutes": 34
+         "label": "0h 33m",
+         "minutes": 33
         },
         "name": "SEXTON,(SAM)",
         "tags": [
@@ -2070,8 +2070,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 34m",
-         "minutes": 34
+         "label": "0h 33m",
+         "minutes": 33
         },
         "name": "MCCHANE,(MIKE)",
         "tags": [
@@ -2109,8 +2109,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 04m",
-         "minutes": 64
+         "label": "1h 03m",
+         "minutes": 63
         },
         "name": "LEMM,(SAM)",
         "tags": [
@@ -2121,8 +2121,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "1h 04m",
-         "minutes": 64
+         "label": "1h 03m",
+         "minutes": 63
         },
         "name": "HOWARD,(MATTHEW)",
         "tags": [
@@ -2194,8 +2194,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "2h 29m",
-         "minutes": 149
+         "label": "2h 28m",
+         "minutes": 148
         },
         "name": "BLASER,(RYAN)"
        },
@@ -2203,8 +2203,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "2h 29m",
-         "minutes": 149
+         "label": "2h 28m",
+         "minutes": 148
         },
         "name": "DEKEYZER,(BRIAN)"
        }
@@ -4019,8 +4019,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 34m",
-         "minutes": 34
+         "label": "0h 33m",
+         "minutes": 33
         },
         "name": "SEXTON,(SAM)",
         "tags": [
@@ -4031,8 +4031,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 34m",
-         "minutes": 34
+         "label": "0h 33m",
+         "minutes": 33
         },
         "name": "MCCHANE,(MIKE)",
         "tags": [
@@ -4134,8 +4134,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 59m",
-         "minutes": 59
+         "label": "0h 58m",
+         "minutes": 58
         },
         "name": "ALLEY,(MARK)",
         "tags": [
@@ -4146,8 +4146,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 59m",
-         "minutes": 59
+         "label": "0h 58m",
+         "minutes": 58
         },
         "name": "VINES,(VICTOR)",
         "tags": [
@@ -4189,8 +4189,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 14m",
-         "minutes": 14
+         "label": "0h 13m",
+         "minutes": 13
         },
         "name": "LOUGHMILLER,(BARRY)"
        },
@@ -4198,8 +4198,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 14m",
-         "minutes": 14
+         "label": "0h 13m",
+         "minutes": 13
         },
         "name": "ROBERTSON,(OWEN)"
        }
@@ -4358,8 +4358,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 42m",
-         "minutes": 102
+         "label": "1h 41m",
+         "minutes": 101
         },
         "name": "JACKMAN,(MATT)"
        },
@@ -4367,8 +4367,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "1h 42m",
-         "minutes": 102
+         "label": "1h 41m",
+         "minutes": 101
         },
         "name": "LUDWIG,(AARON)"
        }
@@ -8050,8 +8050,8 @@
     "my_craft": "AE",
     "my_hos": {
      "band": "orange",
-     "label": "1h 42m",
-     "minutes": 102
+     "label": "1h 41m",
+     "minutes": 101
     },
     "with": [
      {
