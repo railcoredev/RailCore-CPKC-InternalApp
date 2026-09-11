@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-11T22:09:44+00:00",
+  "generated_at": "2026-09-11T22:30:29+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260911_061409",
@@ -2047,38 +2047,13 @@
     "name": "Nahant",
     "trains": [
      {
-      "crewed": true,
+      "crewed": false,
       "date_time": "09/11-0520",
       "eng_crew": [],
       "eng_crew_count": "0",
       "eng_crew_district": "8IDA",
       "eng_crew_pool": "DA",
-      "eng_planned_crew": [
-       {
-        "craft": "EN",
-        "hos": {
-         "band": "orange",
-         "label": "0h 10m",
-         "minutes": 10
-        },
-        "name": "SEXTON,(SAM)",
-        "tags": [
-         "recrew"
-        ]
-       },
-       {
-        "craft": "AE",
-        "hos": {
-         "band": "orange",
-         "label": "0h 10m",
-         "minutes": 10
-        },
-        "name": "MCCHANE,(MIKE)",
-        "tags": [
-         "recrew"
-        ]
-       }
-      ],
+      "eng_planned_crew": [],
       "hours_in_future": "",
       "information": "PLANNED ORDER FROM MTP",
       "location_code": "04640",
@@ -2109,8 +2084,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 40m",
-         "minutes": 40
+         "label": "0h 20m",
+         "minutes": 20
         },
         "name": "LEMM,(SAM)",
         "tags": [
@@ -2121,8 +2096,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 40m",
-         "minutes": 40
+         "label": "0h 20m",
+         "minutes": 20
         },
         "name": "HOWARD,(MATTHEW)",
         "tags": [
@@ -2193,18 +2168,18 @@
        {
         "craft": "EN",
         "hos": {
-         "band": "yellow",
-         "label": "2h 05m",
-         "minutes": 125
+         "band": "orange",
+         "label": "1h 45m",
+         "minutes": 105
         },
         "name": "BLASER,(RYAN)"
        },
        {
         "craft": "AE",
         "hos": {
-         "band": "yellow",
-         "label": "2h 05m",
-         "minutes": 125
+         "band": "orange",
+         "label": "1h 45m",
+         "minutes": 105
         },
         "name": "DEKEYZER,(BRIAN)"
        }
@@ -4012,34 +3987,9 @@
       "trn_planned_crew": []
      },
      {
-      "crewed": true,
+      "crewed": false,
       "date_time": "09/11-1108",
-      "eng_crew": [
-       {
-        "craft": "EN",
-        "hos": {
-         "band": "orange",
-         "label": "0h 10m",
-         "minutes": 10
-        },
-        "name": "SEXTON,(SAM)",
-        "tags": [
-         "recrew"
-        ]
-       },
-       {
-        "craft": "AE",
-        "hos": {
-         "band": "orange",
-         "label": "0h 10m",
-         "minutes": 10
-        },
-        "name": "MCCHANE,(MIKE)",
-        "tags": [
-         "recrew"
-        ]
-       }
-      ],
+      "eng_crew": [],
       "eng_crew_count": "0",
       "eng_crew_district": "8IOT",
       "eng_crew_pool": "SW",
@@ -4134,8 +4084,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 35m",
-         "minutes": 35
+         "label": "0h 15m",
+         "minutes": 15
         },
         "name": "ALLEY,(MARK)",
         "tags": [
@@ -4146,8 +4096,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 35m",
-         "minutes": 35
+         "label": "0h 15m",
+         "minutes": 15
         },
         "name": "VINES,(VICTOR)",
         "tags": [
@@ -4339,8 +4289,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 18m",
-         "minutes": 78
+         "label": "0h 58m",
+         "minutes": 58
         },
         "name": "JACKMAN,(MATT)"
        },
@@ -4348,8 +4298,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "1h 18m",
-         "minutes": 78
+         "label": "0h 58m",
+         "minutes": 58
         },
         "name": "LUDWIG,(AARON)"
        }
@@ -8031,8 +7981,8 @@
     "my_craft": "AE",
     "my_hos": {
      "band": "orange",
-     "label": "1h 18m",
-     "minutes": 78
+     "label": "0h 58m",
+     "minutes": 58
     },
     "with": [
      {
