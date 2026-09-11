@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Awaiting login after session loss.",
+  "collection_message": "Session lost; waiting at the RSA prompt.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-11T22:30:29+00:00",
+  "generated_at": "2026-09-11T22:32:07+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260911_061409",
@@ -2084,8 +2084,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 20m",
-         "minutes": 20
+         "label": "0h 18m",
+         "minutes": 18
         },
         "name": "LEMM,(SAM)",
         "tags": [
@@ -2096,8 +2096,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 20m",
-         "minutes": 20
+         "label": "0h 18m",
+         "minutes": 18
         },
         "name": "HOWARD,(MATTHEW)",
         "tags": [
@@ -2169,8 +2169,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 45m",
-         "minutes": 105
+         "label": "1h 43m",
+         "minutes": 103
         },
         "name": "BLASER,(RYAN)"
        },
@@ -2178,8 +2178,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "1h 45m",
-         "minutes": 105
+         "label": "1h 43m",
+         "minutes": 103
         },
         "name": "DEKEYZER,(BRIAN)"
        }
@@ -4084,8 +4084,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 15m",
-         "minutes": 15
+         "label": "0h 13m",
+         "minutes": 13
         },
         "name": "ALLEY,(MARK)",
         "tags": [
@@ -4096,8 +4096,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 15m",
-         "minutes": 15
+         "label": "0h 13m",
+         "minutes": 13
         },
         "name": "VINES,(VICTOR)",
         "tags": [
@@ -4289,8 +4289,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 58m",
-         "minutes": 58
+         "label": "0h 56m",
+         "minutes": 56
         },
         "name": "JACKMAN,(MATT)"
        },
@@ -4298,8 +4298,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 58m",
-         "minutes": 58
+         "label": "0h 56m",
+         "minutes": 56
         },
         "name": "LUDWIG,(AARON)"
        }
@@ -7981,8 +7981,8 @@
     "my_craft": "AE",
     "my_hos": {
      "band": "orange",
-     "label": "0h 58m",
-     "minutes": 58
+     "label": "0h 56m",
+     "minutes": 56
     },
     "with": [
      {
