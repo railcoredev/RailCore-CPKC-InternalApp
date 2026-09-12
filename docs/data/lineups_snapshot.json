@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-12T11:47:31+00:00",
+  "generated_at": "2026-09-12T12:08:16+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260912_005245",
@@ -2294,8 +2294,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 58m",
-         "minutes": 118
+         "label": "1h 37m",
+         "minutes": 97
         },
         "name": "CADY,(AARON)"
        },
@@ -2303,8 +2303,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "1h 58m",
-         "minutes": 118
+         "label": "1h 37m",
+         "minutes": 97
         },
         "name": "YORK,(CHRISTOPHER)"
        }
@@ -2343,8 +2343,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "2h 43m",
-         "minutes": 163
+         "label": "2h 22m",
+         "minutes": 142
         },
         "name": "HILLERY,(RYAN)"
        },
@@ -2352,8 +2352,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "2h 43m",
-         "minutes": 163
+         "label": "2h 22m",
+         "minutes": 142
         },
         "name": "ELDRIDGE,(DYLAN)"
        }
@@ -2392,8 +2392,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 09m",
-         "minutes": 369
+         "label": "5h 48m",
+         "minutes": 348
         },
         "name": "EAKINS,(JUSTIN)"
        },
@@ -2401,8 +2401,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 09m",
-         "minutes": 369
+         "label": "5h 48m",
+         "minutes": 348
         },
         "name": "SELS,(DOUG)"
        }
@@ -2560,27 +2560,27 @@
        {
         "craft": "EN",
         "hos": {
-         "band": "green",
-         "label": "4h 13m",
-         "minutes": 253
+         "band": "yellow",
+         "label": "3h 52m",
+         "minutes": 232
         },
         "name": "PIATZ,(FRANK)"
        },
        {
         "craft": "AE",
         "hos": {
-         "band": "green",
-         "label": "4h 13m",
-         "minutes": 253
+         "band": "yellow",
+         "label": "3h 52m",
+         "minutes": 232
         },
         "name": "WHITLEY,(CHRIS)"
        },
        {
         "craft": "ET",
         "hos": {
-         "band": "green",
-         "label": "4h 13m",
-         "minutes": 253
+         "band": "yellow",
+         "label": "3h 52m",
+         "minutes": 232
         },
         "name": "HAGEN,(ANTHONY)"
        }
@@ -4245,8 +4245,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "5h 43m",
-         "minutes": 343
+         "label": "5h 22m",
+         "minutes": 322
         },
         "name": "WHITING,(STEVE)"
        },
@@ -4254,8 +4254,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "5h 43m",
-         "minutes": 343
+         "label": "5h 22m",
+         "minutes": 322
         },
         "name": "WARUIMBO,(JOE)"
        }
@@ -8521,24 +8521,7 @@
   {
    "name": "LUDWIG,(AARON)",
    "home_terminal": "OT",
-   "board_position": {
-    "board": "SW POOLS IN OTT POSITION",
-    "ordinal": 2,
-    "of": 4,
-    "craft": "AE",
-    "marker": "AE",
-    "captured_at": "2026-09-12T05:55:17.180112+00:00",
-    "all_boards": [
-     {
-      "board": "SW POOLS IN OTT POSITION",
-      "ordinal": 2,
-      "of": 4,
-      "craft": "AE",
-      "marker": "AE",
-      "captured_at": "2026-09-12T05:55:17.180112+00:00"
-     }
-    ]
-   },
+   "board_position": null,
    "employee_number": "001135902",
    "assignment": "SWSW04AE",
    "availability": {
