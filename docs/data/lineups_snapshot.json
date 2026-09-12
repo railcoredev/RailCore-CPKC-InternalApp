@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Awaiting login after session loss.",
+  "collection_message": "Session lost; waiting at the RSA prompt.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-12T20:01:35+00:00",
+  "generated_at": "2026-09-12T20:03:14+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260912_140908",
@@ -32,8 +32,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 39m",
-         "minutes": 459
+         "label": "7h 37m",
+         "minutes": 457
         },
         "name": "DAU,(AUSTIN)"
        }
@@ -2424,8 +2424,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 29m",
-         "minutes": 629
+         "label": "10h 27m",
+         "minutes": 627
         },
         "name": "ALLEY,(MARK)"
        },
@@ -2433,8 +2433,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "10h 29m",
-         "minutes": 629
+         "label": "10h 27m",
+         "minutes": 627
         },
         "name": "VINES,(VICTOR)"
        }
@@ -4219,8 +4219,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "4h 44m",
-         "minutes": 284
+         "label": "4h 42m",
+         "minutes": 282
         },
         "name": "MARKO,(CAIN)"
        },
@@ -4228,8 +4228,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "4h 44m",
-         "minutes": 284
+         "label": "4h 42m",
+         "minutes": 282
         },
         "name": "HARTMAN,(JAMES)"
        }
@@ -4298,8 +4298,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "4h 59m",
-         "minutes": 299
+         "label": "4h 57m",
+         "minutes": 297
         },
         "name": "CALLAHAN,(TIM)"
        },
@@ -4307,8 +4307,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "4h 59m",
-         "minutes": 299
+         "label": "4h 57m",
+         "minutes": 297
         },
         "name": "HERREN,(BRANDON)"
        }
@@ -4376,12 +4376,12 @@
        {
         "craft": "EN",
         "name": "GLASGOW,(STEVE)",
-        "on_in": "0h 59m"
+        "on_in": "0h 57m"
        },
        {
         "craft": "AE",
         "name": "STRADLING,(DALLIN)",
-        "on_in": "0h 59m"
+        "on_in": "0h 57m"
        }
       ],
       "eng_crew_count": "0",
@@ -6044,8 +6044,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "11h 44m",
-         "minutes": 704
+         "label": "11h 42m",
+         "minutes": 702
         },
         "name": "LOCHNER,(DEREK)",
         "tags": [
@@ -6056,8 +6056,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "11h 44m",
-         "minutes": 704
+         "label": "11h 42m",
+         "minutes": 702
         },
         "name": "LUDWIG,(AARON)",
         "tags": [
@@ -6068,8 +6068,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "11h 44m",
-         "minutes": 704
+         "label": "11h 42m",
+         "minutes": 702
         },
         "name": "MURPHY,(ADAM)",
         "tags": [
@@ -8462,8 +8462,8 @@
     "my_craft": "AE",
     "my_hos": {
      "band": "green",
-     "label": "11h 44m",
-     "minutes": 704
+     "label": "11h 42m",
+     "minutes": 702
     },
     "with": [
      {
