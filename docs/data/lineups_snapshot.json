@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Awaiting login after session loss.",
+  "collection_message": "Session lost; waiting at the RSA prompt.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-12T09:53:50+00:00",
+  "generated_at": "2026-09-12T09:55:29+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260912_005245",
@@ -2294,8 +2294,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 51m",
-         "minutes": 231
+         "label": "3h 50m",
+         "minutes": 230
         },
         "name": "CADY,(AARON)"
        },
@@ -2303,8 +2303,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 51m",
-         "minutes": 231
+         "label": "3h 50m",
+         "minutes": 230
         },
         "name": "YORK,(CHRISTOPHER)"
        }
@@ -2343,8 +2343,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "4h 36m",
-         "minutes": 276
+         "label": "4h 35m",
+         "minutes": 275
         },
         "name": "HILLERY,(RYAN)"
        },
@@ -2352,8 +2352,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "4h 36m",
-         "minutes": 276
+         "label": "4h 35m",
+         "minutes": 275
         },
         "name": "ELDRIDGE,(DYLAN)"
        }
@@ -2392,8 +2392,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 02m",
-         "minutes": 482
+         "label": "8h 01m",
+         "minutes": 481
         },
         "name": "EAKINS,(JUSTIN)"
        },
@@ -2401,8 +2401,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 02m",
-         "minutes": 482
+         "label": "8h 01m",
+         "minutes": 481
         },
         "name": "SELS,(DOUG)"
        }
@@ -2561,8 +2561,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 06m",
-         "minutes": 366
+         "label": "6h 05m",
+         "minutes": 365
         },
         "name": "PIATZ,(FRANK)"
        },
@@ -2570,8 +2570,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 06m",
-         "minutes": 366
+         "label": "6h 05m",
+         "minutes": 365
         },
         "name": "WHITLEY,(CHRIS)"
        },
@@ -2579,8 +2579,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "6h 06m",
-         "minutes": 366
+         "label": "6h 05m",
+         "minutes": 365
         },
         "name": "HAGEN,(ANTHONY)"
        }
@@ -4185,8 +4185,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 06m",
-         "minutes": 6
+         "label": "0h 05m",
+         "minutes": 5
         },
         "name": "RUSSELL,(DAN)"
        },
@@ -4194,8 +4194,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 06m",
-         "minutes": 6
+         "label": "0h 05m",
+         "minutes": 5
         },
         "name": "HASKE,(JUSTIN)"
        }
@@ -4264,8 +4264,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 36m",
-         "minutes": 456
+         "label": "7h 35m",
+         "minutes": 455
         },
         "name": "WHITING,(STEVE)"
        },
@@ -4273,8 +4273,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 36m",
-         "minutes": 456
+         "label": "7h 35m",
+         "minutes": 455
         },
         "name": "WARUIMBO,(JOE)"
        }
@@ -5669,8 +5669,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 16m",
-         "minutes": 16
+         "label": "0h 15m",
+         "minutes": 15
         },
         "name": "STANSBERRY,(CHANDLER)"
        },
@@ -5678,8 +5678,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 16m",
-         "minutes": 16
+         "label": "0h 15m",
+         "minutes": 15
         },
         "name": "KEOMANIVONG,(SONNY)"
        }
