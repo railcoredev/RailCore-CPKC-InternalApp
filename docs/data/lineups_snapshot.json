@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Awaiting login after session loss.",
+  "collection_message": "Session lost; waiting at the RSA prompt.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-12T12:53:06+00:00",
+  "generated_at": "2026-09-12T12:54:45+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260912_005245",
@@ -2294,8 +2294,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 52m",
-         "minutes": 52
+         "label": "0h 50m",
+         "minutes": 50
         },
         "name": "CADY,(AARON)"
        },
@@ -2303,8 +2303,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 52m",
-         "minutes": 52
+         "label": "0h 50m",
+         "minutes": 50
         },
         "name": "YORK,(CHRISTOPHER)"
        }
@@ -2343,8 +2343,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 37m",
-         "minutes": 97
+         "label": "1h 35m",
+         "minutes": 95
         },
         "name": "HILLERY,(RYAN)"
        },
@@ -2352,8 +2352,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "1h 37m",
-         "minutes": 97
+         "label": "1h 35m",
+         "minutes": 95
         },
         "name": "ELDRIDGE,(DYLAN)"
        }
@@ -2392,8 +2392,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "5h 03m",
-         "minutes": 303
+         "label": "5h 01m",
+         "minutes": 301
         },
         "name": "EAKINS,(JUSTIN)"
        },
@@ -2401,8 +2401,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "5h 03m",
-         "minutes": 303
+         "label": "5h 01m",
+         "minutes": 301
         },
         "name": "SELS,(DOUG)"
        }
@@ -2561,8 +2561,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 07m",
-         "minutes": 187
+         "label": "3h 05m",
+         "minutes": 185
         },
         "name": "PIATZ,(FRANK)"
        },
@@ -2570,8 +2570,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 07m",
-         "minutes": 187
+         "label": "3h 05m",
+         "minutes": 185
         },
         "name": "WHITLEY,(CHRIS)"
        },
@@ -2579,8 +2579,8 @@
         "craft": "ET",
         "hos": {
          "band": "yellow",
-         "label": "3h 07m",
-         "minutes": 187
+         "label": "3h 05m",
+         "minutes": 185
         },
         "name": "HAGEN,(ANTHONY)"
        }
@@ -4245,8 +4245,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "4h 37m",
-         "minutes": 277
+         "label": "4h 35m",
+         "minutes": 275
         },
         "name": "WHITING,(STEVE)"
        },
@@ -4254,8 +4254,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "4h 37m",
-         "minutes": 277
+         "label": "4h 35m",
+         "minutes": 275
         },
         "name": "WARUIMBO,(JOE)"
        }
