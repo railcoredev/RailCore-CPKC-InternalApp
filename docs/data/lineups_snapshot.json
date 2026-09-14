@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-14T11:01:12+00:00",
+  "generated_at": "2026-09-14T11:21:59+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260914_005422",
@@ -2324,8 +2324,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 54m",
-         "minutes": 414
+         "label": "6h 33m",
+         "minutes": 393
         },
         "name": "WHITING,(STEVE)"
        },
@@ -2333,8 +2333,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 54m",
-         "minutes": 414
+         "label": "6h 33m",
+         "minutes": 393
         },
         "name": "BLASER,(RYAN)"
        }
@@ -2373,8 +2373,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "4h 59m",
-         "minutes": 299
+         "label": "4h 38m",
+         "minutes": 278
         },
         "name": "HILLERY,(RYAN)"
        },
@@ -2382,8 +2382,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "4h 59m",
-         "minutes": 299
+         "label": "4h 38m",
+         "minutes": 278
         },
         "name": "YORK,(CHRISTOPHER)"
        }
@@ -2422,8 +2422,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 29m",
-         "minutes": 449
+         "label": "7h 08m",
+         "minutes": 428
         },
         "name": "EAKINS,(JUSTIN)"
        },
@@ -2431,8 +2431,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 29m",
-         "minutes": 449
+         "label": "7h 08m",
+         "minutes": 428
         },
         "name": "AMOUZ,(ADJIWANOU)"
        }
@@ -4367,8 +4367,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 34m",
-         "minutes": 394
+         "label": "6h 13m",
+         "minutes": 373
         },
         "name": "LOCHNER,(DEREK)"
        },
@@ -4376,8 +4376,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 34m",
-         "minutes": 394
+         "label": "6h 13m",
+         "minutes": 373
         },
         "name": "LUDWIG,(AARON)"
        },
@@ -4385,8 +4385,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "6h 34m",
-         "minutes": 394
+         "label": "6h 13m",
+         "minutes": 373
         },
         "name": "MURPHY,(ADAM)"
        }
@@ -4425,8 +4425,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 29m",
-         "minutes": 449
+         "label": "7h 08m",
+         "minutes": 428
         },
         "name": "TILLIS,(ETHAN)"
        },
@@ -4434,8 +4434,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 29m",
-         "minutes": 449
+         "label": "7h 08m",
+         "minutes": 428
         },
         "name": "BOER,(BRANDON)"
        }
@@ -6250,8 +6250,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 39m",
-         "minutes": 99
+         "label": "1h 18m",
+         "minutes": 78
         },
         "name": "CASHATT,(DAKOTA)"
        },
@@ -6259,8 +6259,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "1h 39m",
-         "minutes": 99
+         "label": "1h 18m",
+         "minutes": 78
         },
         "name": "HARTMAN,(JAMES)"
        }
@@ -8857,8 +8857,8 @@
     "my_craft": "AE",
     "my_hos": {
      "band": "green",
-     "label": "6h 34m",
-     "minutes": 394
+     "label": "6h 13m",
+     "minutes": 373
     },
     "with": [
      {
@@ -21832,10 +21832,10 @@
    "last_confirmed": "2026-09-14"
   },
   {
-   "name": "JOHNSON,(CHAD)QBV",
+   "name": "JOHNSON,(CHAD)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "DA10",
+   "assignment": "",
    "since": "2026-09-12",
    "time": "05:24",
    "terminal": "DA",
@@ -22173,10 +22173,10 @@
    "last_confirmed": "2026-09-14"
   },
   {
-   "name": "POOLE,(TREVOR)* @D",
+   "name": "POOLE,(TREVOR)",
    "code": "M",
    "label": "Off Miles/Days",
-   "assignment": "0010",
+   "assignment": "",
    "since": "2026-09-12",
    "time": "03:19",
    "terminal": "OT",
