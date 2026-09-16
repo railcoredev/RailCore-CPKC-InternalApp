@@ -1,10 +1,10 @@
 {
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; recovering (auto-login + RSA).",
+  "collection_message": "Session lost; waiting at the RSA prompt.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-16T23:15:58+00:00",
+  "generated_at": "2026-09-16T23:16:39+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260916_181043",
@@ -2324,8 +2324,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "4h 44m",
-         "minutes": 284
+         "label": "4h 43m",
+         "minutes": 283
         },
         "name": "JOHNSON,(CHAD)"
        },
@@ -2333,8 +2333,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "4h 44m",
-         "minutes": 284
+         "label": "4h 43m",
+         "minutes": 283
         },
         "name": "ONKEN,(WILLIAM)"
        },
@@ -2342,8 +2342,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "4h 44m",
-         "minutes": 284
+         "label": "4h 43m",
+         "minutes": 283
         },
         "name": "PARKHURST,(CODY)"
        }
@@ -2622,8 +2622,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 44m",
-         "minutes": 44
+         "label": "0h 43m",
+         "minutes": 43
         },
         "name": "SEXTON,(JOHN)"
        }
@@ -2653,8 +2653,8 @@
         "craft": "CO",
         "hos": {
          "band": "orange",
-         "label": "0h 44m",
-         "minutes": 44
+         "label": "0h 43m",
+         "minutes": 43
         },
         "name": "TARKENTON,(JESSE)"
        }
@@ -3758,8 +3758,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 24m",
-         "minutes": 504
+         "label": "8h 23m",
+         "minutes": 503
         },
         "name": "LAPOINT,(CAMERON)",
         "tags": [
@@ -3792,8 +3792,8 @@
         "craft": "CO",
         "hos": {
          "band": "green",
-         "label": "8h 24m",
-         "minutes": 504
+         "label": "8h 23m",
+         "minutes": 503
         },
         "name": "ADKINS,(CHRISTOPHER)",
         "tags": [
@@ -3814,8 +3814,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "5h 19m",
-         "minutes": 319
+         "label": "5h 18m",
+         "minutes": 318
         },
         "name": "BEGYN,(ANDREW)"
        },
@@ -3823,8 +3823,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "5h 19m",
-         "minutes": 319
+         "label": "5h 18m",
+         "minutes": 318
         },
         "name": "BERNDT,(JON)"
        }
@@ -3893,8 +3893,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 24m",
-         "minutes": 444
+         "label": "7h 23m",
+         "minutes": 443
         },
         "name": "HILLERY,(RYAN)"
        },
@@ -3902,8 +3902,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 24m",
-         "minutes": 444
+         "label": "7h 23m",
+         "minutes": 443
         },
         "name": "YORK,(CHRISTOPHER)"
        }
@@ -3933,8 +3933,8 @@
         "craft": "TT",
         "hos": {
          "band": "green",
-         "label": "7h 24m",
-         "minutes": 444
+         "label": "7h 23m",
+         "minutes": 443
         },
         "name": "LE,(HUY)"
        }
@@ -4101,12 +4101,12 @@
        {
         "craft": "EN",
         "name": "STONEHOUSE,(ZACH)",
-        "on_in": "0h 44m"
+        "on_in": "0h 43m"
        },
        {
         "craft": "AE",
         "name": "MOFFITT,(LUCAS)",
-        "on_in": "0h 44m"
+        "on_in": "0h 43m"
        }
       ],
       "eng_crew_count": "1",
@@ -5439,8 +5439,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 49m",
-         "minutes": 109
+         "label": "1h 48m",
+         "minutes": 108
         },
         "name": "PEREZ,(NICHOLAS)",
         "tags": [
@@ -5722,8 +5722,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 29m",
-         "minutes": 629
+         "label": "10h 28m",
+         "minutes": 628
         },
         "name": "LOCHNER,(DEREK)"
        },
@@ -5731,8 +5731,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "10h 29m",
-         "minutes": 629
+         "label": "10h 28m",
+         "minutes": 628
         },
         "name": "MOZQUEDA,(ERNESTO)"
        }
@@ -5762,8 +5762,8 @@
         "craft": "TT",
         "hos": {
          "band": "green",
-         "label": "10h 29m",
-         "minutes": 629
+         "label": "10h 28m",
+         "minutes": 628
         },
         "name": "ODINSON,(VIDAR)"
        }
