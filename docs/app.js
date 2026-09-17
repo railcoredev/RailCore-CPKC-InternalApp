@@ -149,14 +149,14 @@ async function initApp() {
   // Auto-refresh the board while the app is FOREGROUNDED (operator
   // 2026-08-22: a "6 out" notification was correct but the open app stayed
   // stale -- there was no poll, only reload-on-reopen). Mirrors the
-  // visibilitychange reload on a 60s timer; the data_loader cache-bust keeps
+  // visibilitychange reload on a 30s timer; the data_loader cache-bust keeps
   // each pull fresh past the GitHub Pages CDN.
   setInterval(async () => {
     if (document.hidden) return;
     LINEUPS = await loadLineupsSnapshot();
     updateHomeTiles();
     renderCurrentView();
-  }, 60000);
+  }, 30000);
 }
 
 // ===================== NAVIGATION =====================
@@ -615,8 +615,15 @@ function updateFreshnessBar() {
   const when = capturedAt ? localTime(capturedAt) : "unknown";
   const age = formatAge(capturedAt);
   const cacheNote = LINEUPS.fromCache ? " · offline copy" : "";
+  const captureMs = Date.parse(capturedAt);
+  const old = !Number.isFinite(captureMs) || Date.now() - captureMs > 20 * 60000;
+  const boardsOld = key === "crew_boards" && ((d.crew_boards || {}).boards || [])
+    .some(b => b.status === "unknown" || b.stale || !b.captured_at
+      || Date.now() - Date.parse(b.captured_at) > 20 * 60000);
+  const warning = old ? "OUT OF DATE — last captured data · "
+    : boardsOld ? "Some boards are old or unverified · " : "";
   DOM.freshnessText.textContent =
-    `Data as of ${when}${age ? ` (${age})` : ""}${cacheNote}` +
+    warning + `Data as of ${when}${age ? ` (${age})` : ""}${cacheNote}` +
     ` · reference time ${localTime(new Date().toISOString())}`;
 }
 
@@ -635,6 +642,7 @@ function formatTrainLines(t, lines) {
   lines.push(`  ${eng} · ${trn}`);
   const names = crewNames(t.eng_crew) + " " + crewNames(t.trn_crew);
   if (names.trim()) lines.push(`  Crew: ${names.trim()}`);
+  if (t.crew_projection) lines.push(`  Projected crew: ${projectedCrewText(t.crew_projection)}`);
   if (t.information) lines.push(`  ${t.information}`);
   lines.push("");
 }
@@ -741,6 +749,17 @@ function crewCell(members) {
   return box;
 }
 
+function projectedCrewText(projection) {
+  if (!projection) return "—";
+  const seats = projection.seats || {};
+  return ["EN", "AE_CO", "ET", "TT"].map(seat => {
+    const person = seats[seat];
+    const label = seat === "AE_CO" ? "AE/CO" : seat;
+    return person ? `${label}: ${person.name}${person.optional ? " (possible)" : ""}`
+      : `${label}: ${seat === "ET" || seat === "TT" ? "—" : "unfilled"}`;
+  }).join(" · ") + " · advisory" + (projection.complete ? "" : " · incomplete crew");
+}
+
 function renderLineupsTable() {
   const d = lineupsData();
   if (!d) { showText(); return "No lineup data available yet."; }
@@ -762,6 +781,7 @@ function renderLineupsTable() {
     t.rc || "",
     crewCell((t.eng_crew || []).concat(t.trn_crew || [])),
     crewCell((t.eng_planned_crew || []).concat(t.trn_planned_crew || [])),
+    projectedCrewText(t.crew_projection),
     (t.eng_crew_pool ? `${t.eng_crew_district || ""}${t.eng_crew_pool}` : ""),
     t.information || "",
   ]);
@@ -769,7 +789,7 @@ function renderLineupsTable() {
   box.appendChild(el("div", "table-title",
     `${(st.name || st.location_code).toUpperCase()} — ${st.trains.length} trains`));
   box.appendChild(buildTable(
-    ["Date/Time", "Train", "Status", "Ord", "RC", "Inbound Crew", "Outbound Crew", "Pool", "Info"],
+    ["Date/Time", "Train", "Status", "Ord", "RC", "Inbound Crew", "Outbound Crew", "Projected crew", "Pool", "Info"],
     rows));
   showTable(box);
   return null;   // table mode: nothing for the <pre>
@@ -1113,6 +1133,14 @@ function renderBookoffsView() {
   return null;
 }
 
+function boardCaptureLabel(board) {
+  if (!board.captured_at || board.status === "unknown") return "No verified capture — board availability unknown";
+  const ms = Date.parse(board.captured_at);
+  if (!Number.isFinite(ms)) return "Capture time unknown — do not treat as current";
+  const old = Date.now() - ms > 20 * 60000;
+  return `${old ? "OUT OF DATE — last captured board" : "Board captured"}: ${localTime(board.captured_at)} (${formatAge(board.captured_at)})`;
+}
+
 function renderBoardsTable() {
   const d = lineupsData();
   if (!d) { showText(); return "No crew board data available yet."; }
@@ -1171,6 +1199,7 @@ function renderBoardsTable() {
   const box = el("div");
   box.appendChild(el("div", "table-title",
     `${b.screen_title || b.label} · position order = calling order`));
+  box.appendChild(el("div", "table-title", boardCaptureLabel(b)));
   const wrap = buildTable(["Pos", "Turn", "CR", "Name", "MTOD", "MTPD", "Rest", "Mark"], rows);
   // row classes (greyed marked-off, highlighted me — operator locked-in)
   const trs = wrap.querySelectorAll("tbody tr");
@@ -1195,9 +1224,11 @@ function renderBoardsView() {
 
   const lines = [];
   lines.push(`${b.label || b.screen_title}  [${b.subdistrict || ""}]`);
+  lines.push(boardCaptureLabel(b));
   lines.push("");
   if (!b.rows || !b.rows.length) {
-    lines.push("(no one on this board in the last sweep)");
+    lines.push(b.status === "empty" ? "(confirmed empty at the capture shown above)"
+      : "(no verified board capture available; this does not mean the board is empty)");
     return lines.join("\n");
   }
   lines.push("POS  TURN   CR  NAME                     MTOD MTPD");
@@ -1628,19 +1659,24 @@ function myStatusRows(me) {
   // never a promise. Only future calls; called/on-train branches already
   // returned above.
   const pj = me.projection;
+  if (me.projection_note) rows.push(["PROJECTION", me.projection_note]);
   if (pj && pj.at) {
     const pjDt = new Date(pj.at);
     if (pjDt > now) {
       const mates = (pj.with || []).map((w) => {
         const short = (w.name || "").split(",")[0];
-        return `${short} (${w.craft || "?"})`;
+        return `${short} (${w.craft === "AE_CO" ? "AE/CO" : w.craft || "?"}${w.optional ? "; possible" : ""})`;
       }).join(", ");
       rows.push(["PROJECTED", `${pj.train} at ${fmtClock(pjDt)} ${localDay(pjDt)}`
-        + (mates ? ` — with ${mates}` : "") + " · advisory"]);
+        + (mates ? ` — with ${mates}` : "") + " · advisory" + (pj.complete === false ? " · incomplete crew" : "")]);
     }
   }
   const bp = me.board_position;
   if (bp && bp.ordinal) {
+    const boardMs = Date.parse(bp.captured_at);
+    if (!Number.isFinite(boardMs) || Date.now() - boardMs > 20 * 60000) {
+      rows.push(["BOARD DATA", `OUT OF DATE — standing last observed ${bp.captured_at ? localTime(bp.captured_at) : "at an unknown time"}; current position unverified`]);
+    }
     const ord = ["", "1st out", "2nd out", "3rd out"][bp.ordinal] || `${bp.ordinal}th out`;
     // marker rides verbatim from the captured board row (one source --
     // the card must never tell a different story than the board view)
