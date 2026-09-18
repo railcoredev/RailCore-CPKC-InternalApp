@@ -1604,14 +1604,22 @@ function myStatusRows(me) {
     const what = (bo.code || "?") + (bo.label ? ` (${bo.label})` : "");
     const since = bo.since ? bo.since.slice(5) + (bo.time ? ` ${bo.time}` : "") : "";
     const rows2 = [["STATUS", `BOOKED OFF — ${what}`]];
-    if (since) rows2.push(["SINCE", since]);
+    if (since) rows2.push(["BOOKOFF RECORDED", since]);
+    if (t0 && t0.off_duty) {
+      const tied = myRestInfo(t0);
+      if (tied.offDt) rows2.push(["TIED UP", `${fmtClock(tied.offDt)} ${localDay(tied.offDt)}`]);
+    }
+    if (bo.carryover) rows2.push(["SOURCE", `Carried forward — last recorded ${bo.last_confirmed || "unknown"}; current return not confirmed`]);
     // Back on board: a live future re-entry counts down; otherwise an
     // open-ended code (sick etc.) has no set return -- say so, honestly.
     const reB = me.reentry && me.reentry.at ? new Date(me.reentry.at) : null;
     if (reB && reB > now) {
       const mins = Math.round((reB - now) / 6e4);
-      rows2.push(["BACK ON BOARD",
-        `${fmtClock(reB)} ${localDay(reB)} — in ${Math.floor(mins / 60)}h ${String(mins % 60).padStart(2, "0")}m`]);
+      const operatorReturn = me.reentry.basis === "operator_confirmed_return";
+      rows2.push([operatorReturn ? "RETURN (CONFIRMED BY YOU)" : "EST. RETURN",
+        `${fmtClock(reB)} ${localDay(reB)} — in ${Math.floor(mins / 60)}h ${String(mins % 60).padStart(2, "0")}m · ${operatorReturn ? "actual mark-up not yet observed" : "calculated, mark-up not confirmed"}`]);
+    } else if (reB && me.reentry.basis === "operator_confirmed_return") {
+      rows2.push(["RETURN DUE", `${fmtClock(reB)} ${localDay(reB)} — confirmed by you; awaiting current mark-up evidence`]);
     } else {
       rows2.push(["BACK ON BOARD", "when you mark up — no set return for this code"]);
     }
@@ -1802,7 +1810,7 @@ function renderMyTrainTable() {
 
     if (me.tickets && me.tickets.length) {
       const hrows = me.tickets.slice(0, 14).map((tk) => [
-        tk.date || "", tk.train || "", tk.craft || "",
+        tk.date || "", (tk.train || "") + (tk.superseded_by ? ` → changed to ${tk.superseded_by} (same duty)` : tk.replaces ? ` ← replaces ${tk.replaces} (same duty)` : ""), tk.craft || "",
         tk.on_duty || "—", tk.off_duty || "—",
         `${tk.dep || "?"}→${tk.arr || "?"}`,
         tk.pool ? `${tk.pool}${tk.turn ? "/" + tk.turn : ""}` : "",
