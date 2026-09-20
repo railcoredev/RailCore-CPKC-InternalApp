@@ -1,7 +1,7 @@
 {
  "shared_crew_projection": {
   "model": "seats-v2",
-  "calculated_at": "2026-09-20T07:39:27.516413+00:00",
+  "calculated_at": "2026-09-20T07:41:24.972918+00:00",
   "policy_basis": "explicit_per_leg_calling_groups_and_candidate_eligibility",
   "trains": [],
   "rules_applied": [],
@@ -593,10 +593,10 @@
  },
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Awaiting login after session loss.",
+  "collection_message": "Session lost; waiting at the RSA prompt.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-20T07:39:27+00:00",
+  "generated_at": "2026-09-20T07:41:24+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260919_230143",
@@ -3336,8 +3336,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "9h 16m",
-         "minutes": 556
+         "label": "9h 14m",
+         "minutes": 554
         },
         "name": "HILLERY,(RYAN)"
        },
@@ -3345,8 +3345,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "9h 16m",
-         "minutes": 556
+         "label": "9h 14m",
+         "minutes": 554
         },
         "name": "YORK,(CHRISTOPHER)"
        }
@@ -3415,8 +3415,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 21m",
-         "minutes": 501
+         "label": "8h 19m",
+         "minutes": 499
         },
         "name": "MUSSINGTON,(SOMORI)"
        },
@@ -3424,8 +3424,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 21m",
-         "minutes": 501
+         "label": "8h 19m",
+         "minutes": 499
         },
         "name": "BEGYN,(ANDREW)"
        }
@@ -3455,8 +3455,8 @@
         "craft": "TT",
         "hos": {
          "band": "green",
-         "label": "8h 21m",
-         "minutes": 501
+         "label": "8h 19m",
+         "minutes": 499
         },
         "name": "LE,(HUY)"
        }
@@ -5070,8 +5070,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "1h 52m",
-         "minutes": 112
+         "label": "1h 50m",
+         "minutes": 110
         },
         "name": "WARUIMBO,(JOE)",
         "tags": [
@@ -5082,8 +5082,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "1h 52m",
-         "minutes": 112
+         "label": "1h 50m",
+         "minutes": 110
         },
         "name": "AMOUZ,(ADJIWANOU)",
         "tags": [
@@ -5185,8 +5185,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 41m",
-         "minutes": 401
+         "label": "6h 39m",
+         "minutes": 399
         },
         "name": "DUYVEJONCK,(MARK)"
        },
@@ -5194,8 +5194,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 41m",
-         "minutes": 401
+         "label": "6h 39m",
+         "minutes": 399
         },
         "name": "ROSS,(JANA)"
        }
@@ -5234,8 +5234,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "2h 56m",
-         "minutes": 176
+         "label": "2h 54m",
+         "minutes": 174
         },
         "name": "TAYLOR,(WILLIAM)"
        },
@@ -5243,8 +5243,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "2h 56m",
-         "minutes": 176
+         "label": "2h 54m",
+         "minutes": 174
         },
         "name": "LUDWIG,(AARON)"
        }
@@ -5313,8 +5313,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 51m",
-         "minutes": 411
+         "label": "6h 49m",
+         "minutes": 409
         },
         "name": "LOUGHMILLER,(BARRY)"
        },
@@ -5322,8 +5322,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 51m",
-         "minutes": 411
+         "label": "6h 49m",
+         "minutes": 409
         },
         "name": "FRAKER,(TYLER)"
        }
@@ -5362,8 +5362,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "4h 21m",
-         "minutes": 261
+         "label": "4h 19m",
+         "minutes": 259
         },
         "name": "TURNER,(TERRELL)"
        },
@@ -5371,8 +5371,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "4h 21m",
-         "minutes": 261
+         "label": "4h 19m",
+         "minutes": 259
         },
         "name": "PETERSON,(DARREN)"
        }
@@ -6647,8 +6647,8 @@
         "craft": "EN",
         "hos": {
          "band": "orange",
-         "label": "0h 36m",
-         "minutes": 36
+         "label": "0h 34m",
+         "minutes": 34
         },
         "name": "RISH,(LUCUS)"
        },
@@ -6656,8 +6656,8 @@
         "craft": "AE",
         "hos": {
          "band": "orange",
-         "label": "0h 36m",
-         "minutes": 36
+         "label": "0h 34m",
+         "minutes": 34
         },
         "name": "BRADLEY,(COLTON)"
        }
@@ -8407,7 +8407,7 @@
   "board_count": 11,
   "boards": [
    {
-    "age_seconds": 22879,
+    "age_seconds": 22997,
     "captured_at": "2026-09-20T01:17:47.275337+00:00",
     "label": "OTTUMWA ENG XTRA BRD",
     "menu_path": "1_04",
@@ -8447,7 +8447,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 12917,
+    "age_seconds": 13035,
     "captured_at": "2026-09-20T04:03:49.265790+00:00",
     "label": "OB POOLS IN OTT TURN ORDER",
     "menu_path": "1_05",
@@ -8598,7 +8598,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 12912,
+    "age_seconds": 13029,
     "captured_at": "2026-09-20T04:03:54.572946+00:00",
     "label": "OB POOLS IN OTT POSITION",
     "menu_path": "1_06",
@@ -8638,7 +8638,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 2799001,
+    "age_seconds": 2799119,
     "captured_at": "2026-08-18T22:09:05.293886+00:00",
     "label": "OB POOLS IN BVL POSITION",
     "menu_path": "1_07",
@@ -8740,7 +8740,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 34992,
+    "age_seconds": 35109,
     "captured_at": "2026-09-19T21:55:54.441608+00:00",
     "label": "OB POOLS IN IMS POSITION",
     "menu_path": "1_08",
@@ -8806,7 +8806,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 12894,
+    "age_seconds": 13011,
     "captured_at": "2026-09-20T04:04:13.006737+00:00",
     "label": "DA POOLS IN OTT POSITION",
     "menu_path": "1_09",
@@ -9054,7 +9054,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 12886,
+    "age_seconds": 13003,
     "captured_at": "2026-09-20T04:04:20.741870+00:00",
     "label": "KA POOLS IN OTT POSITION",
     "menu_path": "1_10",
@@ -9120,7 +9120,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 12878,
+    "age_seconds": 12995,
     "captured_at": "2026-09-20T04:04:28.503676+00:00",
     "label": "SW POOLS IN OTT POSITION",
     "menu_path": "1_11",
@@ -9291,7 +9291,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 12868,
+    "age_seconds": 12985,
     "captured_at": "2026-09-20T04:04:38.742158+00:00",
     "label": "SW POOLS IN KC POSITION",
     "menu_path": "1_12",
@@ -9435,7 +9435,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 1306188,
+    "age_seconds": 1306305,
     "captured_at": "2026-09-05T04:49:18.833290+00:00",
     "label": "SW POOLS IN DA POSITION",
     "menu_path": "1_13",
@@ -9471,7 +9471,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 27278,
+    "age_seconds": 27396,
     "captured_at": "2026-09-20T00:04:28.423416+00:00",
     "label": "OTT SWITCHMAN XTRA BRD",
     "menu_path": "2_04",
@@ -9684,8 +9684,8 @@
     "my_craft": "AE",
     "my_hos": {
      "band": "yellow",
-     "label": "2h 56m",
-     "minutes": 176
+     "label": "2h 54m",
+     "minutes": 174
     },
     "with": [
      {
