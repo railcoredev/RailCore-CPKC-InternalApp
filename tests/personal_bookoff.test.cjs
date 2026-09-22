@@ -20,3 +20,31 @@ assert.equal(rows.find(r=>r[0]==='BOOKOFF RECORDED')[1],'09-15 18:29');
 assert.match(rows.find(r=>r[0].startsWith('RETURN'))[1],/mark-up/);
 assert.match(rows.find(r=>r[0]==='SOURCE')[1],/Carried forward/);
 console.log('Personal bookoff truth checks passed');
+
+const scheduleUnknown = {...me, reentry:{at:null,basis:'schedule_return_unresolved',
+  schedule:{id:'5-2',source:'assignment_override'}, note:'Schedule unresolved; rest is not mark-up'}};
+const unknownRows = ctx.myStatusRows(scheduleUnknown).rows;
+assert.match(unknownRows.find(r=>r[0]==='BACK ON BOARD')[1],/not confirmed/);
+assert.equal(unknownRows.find(r=>r[0]==='RETURN BASIS')[1],scheduleUnknown.reentry.note);
+const withoutBookoff = ctx.myStatusRows({...scheduleUnknown,bookoff:null,availability:{state:'resting'}});
+assert.equal(withoutBookoff.label,'RETURN UNCONFIRMED');
+assert.ok(!withoutBookoff.rows.some(r=>r[0]==='ON BOARD SINCE'));
+const assumed = {...me,reentry:{at:'2099-09-24T06:00',into_rest_days:true,
+  schedule:{id:'6-2',source:'default'},note:'Assumes default 6-and-2 schedule'}};
+assert.equal(ctx.myStatusRows(assumed).rows.find(r=>r[0]==='RETURN BASIS')[1],assumed.reentry.note);
+console.log('Schedule uncertainty checks passed');
+
+ctx.localTime = v => v;
+const staleStanding={home_terminal:'OT',availability:{state:'availability_unknown'},tickets:[],
+ board_position:{ordinal:1,of:4,board:'TEST',captured_at:'2000-01-01T00:00:00Z'}};
+const guarded=ctx.myStatusRows(staleStanding);
+assert.equal(guarded.band,'grey');
+assert.equal(guarded.label,'AVAILABILITY UNCONFIRMED');
+assert.ok(guarded.rows.some(r=>r[0]==='LAST BOARD POSITION'));
+assert.ok(!guarded.rows[0][1].includes('1st out'));
+const fresh={...staleStanding,availability:{state:'on_board'},
+ board_position:{...staleStanding.board_position,captured_at:new Date().toISOString()}};
+assert.equal(ctx.myStatusRows(fresh).band,'red');
+assert.equal(ctx.myStatusRows({...fresh,availability:{state:'availability_unknown'}}).band,'grey');
+assert.ok(!source.includes('Grading silently against real calls'));
+console.log('Unknown and stale standing headline checks passed');

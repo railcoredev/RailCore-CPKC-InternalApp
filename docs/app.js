@@ -1621,8 +1621,10 @@ function myStatusRows(me) {
     } else if (reB && me.reentry.basis === "operator_confirmed_return") {
       rows2.push(["RETURN DUE", `${fmtClock(reB)} ${localDay(reB)} — confirmed by you; awaiting current mark-up evidence`]);
     } else {
-      rows2.push(["BACK ON BOARD", "when you mark up — no set return for this code"]);
+      rows2.push(["BACK ON BOARD", "Return not confirmed — awaiting schedule or mark-up evidence"]);
     }
+    if (me.reentry && me.reentry.schedule && me.reentry.note)
+      rows2.push(["RETURN BASIS", me.reentry.note]);
     return { rows: rows2, band: "blue", label: `BOOKED OFF — ${bo.code || "?"}` };
   }
   if (av.state === "booked_off") {
@@ -1637,6 +1639,11 @@ function myStatusRows(me) {
   // ADO days off is NOT on the board -- say so, and count down.
   const re = me.reentry;
   const reDt = re && re.at ? new Date(re.at) : null;
+  if (re && re.basis === "schedule_return_unresolved") {
+    return { rows: [["STATUS", "Return availability unconfirmed"],
+      ["RETURN BASIS", re.note || "Applicable schedule needs verification"]],
+      band: "blue", label: "RETURN UNCONFIRMED" };
+  }
   let where = away ? `AT HOTEL — ${t0.arr}` : "AT HOME";
   let restedNow = null;   // true=rested, false=resting (Aaron's readiness colors)
   if (reDt && reDt > now && re.into_rest_days) {
@@ -1644,11 +1651,14 @@ function myStatusRows(me) {
     band = "blue";
   }
   rows.push(["STATUS", where]);
+  if (re && re.into_rest_days && re.schedule && re.note)
+    rows.push(["RETURN BASIS", re.note]);
   if (reDt) {
     if (reDt > now) {
       const mins = Math.round((reDt - now) / 6e4);
       const cd = `in ${Math.floor(mins / 60)}h ${String(mins % 60).padStart(2, "0")}m`;
-      rows.push(["BACK ON BOARD", `${fmtClock(reDt)} ${localDay(reDt)} — ${cd}`]);
+      rows.push([re.into_rest_days ? "EST. RETURN" : "BACK ON BOARD",
+        `${fmtClock(reDt)} ${localDay(reDt)} — ${cd}`]);
       if (label.startsWith("AT HOME")) label = `${where} — back ${fmtClock(reDt)} ${localDay(reDt)}`;
       else label = `${where} — back ${fmtClock(reDt)} ${localDay(reDt)}`;
     } else {
@@ -1757,6 +1767,19 @@ function myStatusRows(me) {
     else if (bp && (bp.ordinal === 2 || bp.ordinal === 3)) band = "yellow";
     else band = "green";                                 // available, further out
   }
+  const standingTime = bp && Date.parse(bp.captured_at);
+  const standingOld = bp && (!Number.isFinite(standingTime) || standingTime > now.getTime()
+    || now.getTime() - standingTime > 20 * 60000);
+  if (band !== "blue" && (av.state === "availability_unknown" || standingOld)) {
+    band = "grey";
+    label = "AVAILABILITY UNCONFIRMED";
+    rows[0] = ["STATUS", "Current availability unconfirmed"];
+    for (const row of rows) {
+      if (row[0] === "BOARD POSITION" && standingOld) row[0] = "LAST BOARD POSITION";
+      if (row[0] === "ON BOARD SINCE") row[0] = "LAST RETURN ESTIMATE";
+      if (row[0] === "REST") row[0] = "REST EVIDENCE";
+    }
+  }
   return { rows, band, label };
 }
 
@@ -1803,8 +1826,8 @@ function renderMyTrainTable() {
 
     box.appendChild(el("div", "table-title", "PREDICTED"));
     const pred = el("div", null,
-      "Grading silently against real calls — your projection (back on the " +
-      "board, position, lined-up train) appears here once it proves out.");
+      me.projection ? "Advisory forecast shown above — not a call or a confirmed assignment."
+        : (me.projection_note || "No supported forecast from the current evidence."));
     pred.style.cssText = "color:#8b93a7;padding:2px 0 6px";
     box.appendChild(pred);
 
