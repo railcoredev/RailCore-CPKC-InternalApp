@@ -1309,7 +1309,7 @@ function renderAlertCards() {
   if (quiet.length) {
     const h = document.createElement("div");
     h.className = "notif-group-title";
-    h.textContent = `Train watch — hidden-late-train flags (${quiet.length})`;
+    h.textContent = `Train watch — unexplained lineup changes (${quiet.length})`;
     panel.appendChild(h);
     quiet.forEach((a) => panel.appendChild(buildAlertCard(a, true)));
   }
@@ -1328,7 +1328,9 @@ function buildAlertCard(a, isQuiet) {
       : `⚠ ${a.train}: ${a.note || a.type}`;
     const when = document.createElement("div");
     when.className = "alert-when";
-    when.textContent = (a.when || "").replace("T", " ");
+    when.textContent = a.type === "upstream_unlisting"
+      ? `Detected: ${(a.detected_at || "unknown").replace("T", " ")}`
+      : (a.when || "").replace("T", " ");
     head.appendChild(title);
     head.appendChild(when);
 
@@ -1348,6 +1350,12 @@ function buildAlertCard(a, isQuiet) {
       if (a.rule) {
         body.innerHTML += `<div class="rule-cite">${a.rule}</div>`;
       }
+    } else if (a.type === "upstream_unlisting") {
+      body.textContent = [a.note,
+        `Former scheduled time: ${(a.scheduled_at || a.when || "unknown").replace("T", " ")}`,
+        a.dropped_at ? `First observed missing: ${a.dropped_at.replace("T", " ")}` : "",
+        a.assessment || "Review candidate; not proof of manipulation."
+      ].filter(Boolean).join(" · ");
     } else {
       body.textContent = a.note || "";
     }
