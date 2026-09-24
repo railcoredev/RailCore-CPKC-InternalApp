@@ -1274,7 +1274,8 @@ function setAlertState(id, state) {
 function visibleAlerts() {
   const d = lineupsData();
   const handled = alertState();
-  return (d && d.alerts ? d.alerts : []).filter((a) => !handled[a.id]);
+  // Train-drop alerts paused by operator; also exclude older cached feeds.
+  return (d && d.alerts ? d.alerts : []).filter((a) => a.type !== "upstream_unlisting" && !handled[a.id]);
 }
 
 function updateBellBadge() {
