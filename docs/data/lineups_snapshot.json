@@ -1,7 +1,7 @@
 {
  "shared_crew_projection": {
   "model": "seats-v2",
-  "calculated_at": "2026-09-26T05:39:37.349584+00:00",
+  "calculated_at": "2026-09-26T05:45:02.417669+00:00",
   "policy_basis": "explicit_per_leg_calling_groups_and_candidate_eligibility",
   "trains": [],
   "rules_applied": [
@@ -931,10 +931,10 @@
  },
  "meta": {
   "collection_state": "active",
-  "collection_message": "Light sweep sched_20260926_003434.",
+  "collection_message": "Light sweep sched_20260926_003955.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-26T05:39:37+00:00",
+  "generated_at": "2026-09-26T05:45:02+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260925_231934",
@@ -1074,8 +1074,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 21m",
-         "minutes": 201
+         "label": "3h 15m",
+         "minutes": 195
         },
         "name": "TILLIS,(ETHAN)"
        },
@@ -1083,8 +1083,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 21m",
-         "minutes": 201
+         "label": "3h 15m",
+         "minutes": 195
         },
         "name": "PEREZ,(JASPER)"
        },
@@ -1092,8 +1092,8 @@
         "craft": "ET",
         "hos": {
          "band": "yellow",
-         "label": "3h 21m",
-         "minutes": 201
+         "label": "3h 15m",
+         "minutes": 195
         },
         "name": "MURPHY,(ADAM)"
        }
@@ -1203,7 +1203,7 @@
   "board_count": 11,
   "boards": [
    {
-    "age_seconds": 4689,
+    "age_seconds": 5014,
     "captured_at": "2026-09-26T04:21:19.308122+00:00",
     "label": "OTTUMWA ENG XTRA BRD",
     "menu_path": "1_04",
@@ -1295,7 +1295,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 4682,
+    "age_seconds": 5006,
     "captured_at": "2026-09-26T04:21:27.049955+00:00",
     "label": "OB POOLS IN OTT TURN ORDER",
     "menu_path": "1_05",
@@ -1419,7 +1419,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 4674,
+    "age_seconds": 4999,
     "captured_at": "2026-09-26T04:21:34.799146+00:00",
     "label": "OB POOLS IN OTT POSITION",
     "menu_path": "1_06",
@@ -1485,7 +1485,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 4669,
+    "age_seconds": 4993,
     "captured_at": "2026-09-26T04:21:40.109316+00:00",
     "label": "OB POOLS IN BVL POSITION",
     "menu_path": "1_07",
@@ -1498,7 +1498,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 4663,
+    "age_seconds": 4988,
     "captured_at": "2026-09-26T04:21:45.401064+00:00",
     "label": "OB POOLS IN IMS POSITION",
     "menu_path": "1_08",
@@ -1511,7 +1511,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 4658,
+    "age_seconds": 4983,
     "captured_at": "2026-09-26T04:21:50.716780+00:00",
     "label": "DA POOLS IN OTT POSITION",
     "menu_path": "1_09",
@@ -1655,7 +1655,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 4650,
+    "age_seconds": 4975,
     "captured_at": "2026-09-26T04:21:58.458863+00:00",
     "label": "KA POOLS IN OTT POSITION",
     "menu_path": "1_10",
@@ -1825,7 +1825,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 4640,
+    "age_seconds": 4965,
     "captured_at": "2026-09-26T04:22:08.642681+00:00",
     "label": "SW POOLS IN OTT POSITION",
     "menu_path": "1_11",
@@ -2047,7 +2047,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 4632,
+    "age_seconds": 4957,
     "captured_at": "2026-09-26T04:22:16.390345+00:00",
     "label": "SW POOLS IN KC POSITION",
     "menu_path": "1_12",
@@ -2165,7 +2165,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 4625,
+    "age_seconds": 4949,
     "captured_at": "2026-09-26T04:22:24.140474+00:00",
     "label": "SW POOLS IN DA POSITION",
     "menu_path": "1_13",
@@ -2178,7 +2178,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 4605,
+    "age_seconds": 4930,
     "captured_at": "2026-09-26T04:22:43.955298+00:00",
     "label": "OTT SWITCHMAN XTRA BRD",
     "menu_path": "2_04",
