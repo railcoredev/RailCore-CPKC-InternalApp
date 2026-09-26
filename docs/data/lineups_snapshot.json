@@ -1,7 +1,7 @@
 {
  "shared_crew_projection": {
   "model": "seats-v2",
-  "calculated_at": "2026-09-26T05:45:02.417669+00:00",
+  "calculated_at": "2026-09-26T05:45:30.076235+00:00",
   "policy_basis": "explicit_per_leg_calling_groups_and_candidate_eligibility",
   "trains": [],
   "rules_applied": [
@@ -930,11 +930,11 @@
   ]
  },
  "meta": {
-  "collection_state": "active",
-  "collection_message": "Light sweep sched_20260926_003955.",
+  "collection_state": "awaiting_login",
+  "collection_message": "Session lost; recovering (auto-login + RSA).",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-26T05:45:02+00:00",
+  "generated_at": "2026-09-26T05:45:30+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260925_231934",
@@ -1203,7 +1203,7 @@
   "board_count": 11,
   "boards": [
    {
-    "age_seconds": 5014,
+    "age_seconds": 5042,
     "captured_at": "2026-09-26T04:21:19.308122+00:00",
     "label": "OTTUMWA ENG XTRA BRD",
     "menu_path": "1_04",
@@ -1295,7 +1295,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 5006,
+    "age_seconds": 5034,
     "captured_at": "2026-09-26T04:21:27.049955+00:00",
     "label": "OB POOLS IN OTT TURN ORDER",
     "menu_path": "1_05",
@@ -1419,7 +1419,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 4999,
+    "age_seconds": 5026,
     "captured_at": "2026-09-26T04:21:34.799146+00:00",
     "label": "OB POOLS IN OTT POSITION",
     "menu_path": "1_06",
@@ -1485,7 +1485,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 4993,
+    "age_seconds": 5021,
     "captured_at": "2026-09-26T04:21:40.109316+00:00",
     "label": "OB POOLS IN BVL POSITION",
     "menu_path": "1_07",
@@ -1498,7 +1498,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 4988,
+    "age_seconds": 5016,
     "captured_at": "2026-09-26T04:21:45.401064+00:00",
     "label": "OB POOLS IN IMS POSITION",
     "menu_path": "1_08",
@@ -1511,7 +1511,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 4983,
+    "age_seconds": 5010,
     "captured_at": "2026-09-26T04:21:50.716780+00:00",
     "label": "DA POOLS IN OTT POSITION",
     "menu_path": "1_09",
@@ -1655,7 +1655,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 4975,
+    "age_seconds": 5003,
     "captured_at": "2026-09-26T04:21:58.458863+00:00",
     "label": "KA POOLS IN OTT POSITION",
     "menu_path": "1_10",
@@ -1825,7 +1825,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 4965,
+    "age_seconds": 4992,
     "captured_at": "2026-09-26T04:22:08.642681+00:00",
     "label": "SW POOLS IN OTT POSITION",
     "menu_path": "1_11",
@@ -2047,7 +2047,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 4957,
+    "age_seconds": 4985,
     "captured_at": "2026-09-26T04:22:16.390345+00:00",
     "label": "SW POOLS IN KC POSITION",
     "menu_path": "1_12",
@@ -2165,7 +2165,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 4949,
+    "age_seconds": 4977,
     "captured_at": "2026-09-26T04:22:24.140474+00:00",
     "label": "SW POOLS IN DA POSITION",
     "menu_path": "1_13",
@@ -2178,7 +2178,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 4930,
+    "age_seconds": 4957,
     "captured_at": "2026-09-26T04:22:43.955298+00:00",
     "label": "OTT SWITCHMAN XTRA BRD",
     "menu_path": "2_04",
