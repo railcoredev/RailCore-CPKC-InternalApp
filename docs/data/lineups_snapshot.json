@@ -1,7 +1,7 @@
 {
  "shared_crew_projection": {
   "model": "seats-v2",
-  "calculated_at": "2026-09-28T05:53:57.598009+00:00",
+  "calculated_at": "2026-09-28T06:14:27.887323+00:00",
   "policy_basis": "explicit_per_leg_calling_groups_and_candidate_eligibility",
   "trains": [],
   "rules_applied": [
@@ -957,10 +957,10 @@
  },
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-28T05:53:57+00:00",
+  "generated_at": "2026-09-28T06:14:27+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260927_234120",
@@ -3490,8 +3490,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 06m",
-         "minutes": 366
+         "label": "5h 46m",
+         "minutes": 346
         },
         "name": "YORK,(CHRISTOPHER)"
        },
@@ -3499,8 +3499,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 06m",
-         "minutes": 366
+         "label": "5h 46m",
+         "minutes": 346
         },
         "name": "MERRELL,(CHARISE)"
        }
@@ -3629,8 +3629,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 51m",
-         "minutes": 651
+         "label": "10h 31m",
+         "minutes": 631
         },
         "name": "HILLERY,(RYAN)"
        },
@@ -3638,8 +3638,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "10h 51m",
-         "minutes": 651
+         "label": "10h 31m",
+         "minutes": 631
         },
         "name": "BORMANN,(HAYDEN)"
        }
@@ -3678,8 +3678,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "9h 41m",
-         "minutes": 581
+         "label": "9h 21m",
+         "minutes": 561
         },
         "name": "MANTHEI,(BRYAN)"
        },
@@ -3687,8 +3687,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "9h 41m",
-         "minutes": 581
+         "label": "9h 21m",
+         "minutes": 561
         },
         "name": "ELDRIDGE,(DYLAN)"
        }
@@ -5383,8 +5383,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "2h 21m",
-         "minutes": 141
+         "label": "2h 01m",
+         "minutes": 121
         },
         "name": "WHITING,(STEVE)"
        },
@@ -5392,8 +5392,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "2h 21m",
-         "minutes": 141
+         "label": "2h 01m",
+         "minutes": 121
         },
         "name": "BARAKS,(RON)"
        },
@@ -5401,8 +5401,8 @@
         "craft": "ET",
         "hos": {
          "band": "yellow",
-         "label": "2h 21m",
-         "minutes": 141
+         "label": "2h 01m",
+         "minutes": 121
         },
         "name": "HAGEN,(ANTHONY)"
        }
@@ -8658,7 +8658,7 @@
   "board_count": 11,
   "boards": [
    {
-    "age_seconds": 4240,
+    "age_seconds": 5468,
     "captured_at": "2026-09-28T04:43:07.548401+00:00",
     "label": "OTTUMWA ENG XTRA BRD",
     "menu_path": "1_04",
@@ -8686,8 +8686,8 @@
       "turn_info": "00",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-09-28T00:53",
-      "rest_calculated_at": "2026-09-28T00:53:48",
+      "rest_until": "2026-09-28T01:14",
+      "rest_calculated_at": "2026-09-28T01:14:16",
       "rest_board": "OTTUMWA ENG XTRA BRD POSITION"
      },
      {
@@ -8712,8 +8712,8 @@
       "turn_info": "00",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-09-28T00:53",
-      "rest_calculated_at": "2026-09-28T00:53:48",
+      "rest_until": "2026-09-28T01:14",
+      "rest_calculated_at": "2026-09-28T01:14:16",
       "rest_board": "OTTUMWA ENG XTRA BRD POSITION"
      },
      {
@@ -8738,8 +8738,8 @@
       "turn_info": "00",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-09-28T00:53",
-      "rest_calculated_at": "2026-09-28T00:53:48",
+      "rest_until": "2026-09-28T01:14",
+      "rest_calculated_at": "2026-09-28T01:14:16",
       "rest_board": "OTTUMWA ENG XTRA BRD POSITION"
      },
      {
@@ -8764,8 +8764,8 @@
       "turn_info": "00",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-09-28T00:53",
-      "rest_calculated_at": "2026-09-28T00:53:48",
+      "rest_until": "2026-09-28T01:14",
+      "rest_calculated_at": "2026-09-28T01:14:16",
       "rest_board": "OTTUMWA ENG XTRA BRD POSITION"
      },
      {
@@ -8790,8 +8790,8 @@
       "turn_info": "0016 0931            00",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-09-28T00:53",
-      "rest_calculated_at": "2026-09-28T00:53:48",
+      "rest_until": "2026-09-28T01:14",
+      "rest_calculated_at": "2026-09-28T01:14:16",
       "rest_board": "OTTUMWA ENG XTRA BRD POSITION"
      },
      {
@@ -8817,7 +8817,7 @@
       "ushr": "",
       "rest_state": "resting",
       "rest_until": "2026-09-28T05:18",
-      "rest_calculated_at": "2026-09-28T00:53:48",
+      "rest_calculated_at": "2026-09-28T01:14:16",
       "rest_board": "OTTUMWA ENG XTRA BRD POSITION"
      }
     ],
@@ -8828,7 +8828,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 4230,
+    "age_seconds": 5458,
     "captured_at": "2026-09-28T04:43:17.779990+00:00",
     "label": "OB POOLS IN OTT TURN ORDER",
     "menu_path": "1_05",
@@ -8998,7 +8998,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 4225,
+    "age_seconds": 5453,
     "captured_at": "2026-09-28T04:43:23.132850+00:00",
     "label": "OB POOLS IN OTT POSITION",
     "menu_path": "1_06",
@@ -9027,7 +9027,7 @@
       "ushr": "",
       "rest_state": "working",
       "rest_until": null,
-      "rest_calculated_at": "2026-09-28T00:53:48",
+      "rest_calculated_at": "2026-09-28T01:14:16",
       "rest_board": "OB POOLS IN OTT POSITION"
      }
     ],
@@ -9038,7 +9038,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 4220,
+    "age_seconds": 5447,
     "captured_at": "2026-09-28T04:43:28.443381+00:00",
     "label": "OB POOLS IN BVL POSITION",
     "menu_path": "1_07",
@@ -9051,7 +9051,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 4214,
+    "age_seconds": 5442,
     "captured_at": "2026-09-28T04:43:33.735380+00:00",
     "label": "OB POOLS IN IMS POSITION",
     "menu_path": "1_08",
@@ -9064,7 +9064,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 4209,
+    "age_seconds": 5437,
     "captured_at": "2026-09-28T04:43:39.053913+00:00",
     "label": "DA POOLS IN OTT POSITION",
     "menu_path": "1_09",
@@ -9092,8 +9092,8 @@
       "turn_info": "",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-09-28T00:53",
-      "rest_calculated_at": "2026-09-28T00:53:48",
+      "rest_until": "2026-09-28T01:14",
+      "rest_calculated_at": "2026-09-28T01:14:16",
       "rest_board": "DA POOLS IN OTT POSITION"
      },
      {
@@ -9118,8 +9118,8 @@
       "turn_info": "",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-09-28T00:53",
-      "rest_calculated_at": "2026-09-28T00:53:48",
+      "rest_until": "2026-09-28T01:14",
+      "rest_calculated_at": "2026-09-28T01:14:16",
       "rest_board": "DA POOLS IN OTT POSITION"
      },
      {
@@ -9145,7 +9145,7 @@
       "ushr": "0223",
       "rest_state": "resting",
       "rest_until": "2026-09-28T02:23",
-      "rest_calculated_at": "2026-09-28T00:53:48",
+      "rest_calculated_at": "2026-09-28T01:14:16",
       "rest_board": "DA POOLS IN OTT POSITION"
      },
      {
@@ -9171,7 +9171,7 @@
       "ushr": "0223",
       "rest_state": "resting",
       "rest_until": "2026-09-28T02:23",
-      "rest_calculated_at": "2026-09-28T00:53:48",
+      "rest_calculated_at": "2026-09-28T01:14:16",
       "rest_board": "DA POOLS IN OTT POSITION"
      }
     ],
@@ -9182,7 +9182,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 4201,
+    "age_seconds": 5429,
     "captured_at": "2026-09-28T04:43:46.815554+00:00",
     "label": "KA POOLS IN OTT POSITION",
     "menu_path": "1_10",
@@ -9211,7 +9211,7 @@
       "ushr": "0417",
       "rest_state": "resting",
       "rest_until": "2026-09-28T04:16",
-      "rest_calculated_at": "2026-09-28T00:53:48",
+      "rest_calculated_at": "2026-09-28T01:14:16",
       "rest_board": "KA POOLS IN OTT POSITION"
      }
     ],
@@ -9222,7 +9222,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 4193,
+    "age_seconds": 5421,
     "captured_at": "2026-09-28T04:43:54.612466+00:00",
     "label": "SW POOLS IN OTT POSITION",
     "menu_path": "1_11",
@@ -9250,8 +9250,8 @@
       "turn_info": "",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-09-28T00:53",
-      "rest_calculated_at": "2026-09-28T00:53:48",
+      "rest_until": "2026-09-28T01:14",
+      "rest_calculated_at": "2026-09-28T01:14:16",
       "rest_board": "SW POOLS IN OTT POSITION"
      },
      {
@@ -9276,8 +9276,8 @@
       "turn_info": "",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-09-28T00:53",
-      "rest_calculated_at": "2026-09-28T00:53:48",
+      "rest_until": "2026-09-28T01:14",
+      "rest_calculated_at": "2026-09-28T01:14:16",
       "rest_board": "SW POOLS IN OTT POSITION"
      },
      {
@@ -9302,8 +9302,8 @@
       "turn_info": "",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-09-28T00:53",
-      "rest_calculated_at": "2026-09-28T00:53:48",
+      "rest_until": "2026-09-28T01:14",
+      "rest_calculated_at": "2026-09-28T01:14:16",
       "rest_board": "SW POOLS IN OTT POSITION"
      },
      {
@@ -9328,8 +9328,8 @@
       "turn_info": "",
       "ushr": "0016",
       "rest_state": "on_board",
-      "rest_until": "2026-09-28T00:53",
-      "rest_calculated_at": "2026-09-28T00:53:48",
+      "rest_until": "2026-09-28T01:14",
+      "rest_calculated_at": "2026-09-28T01:14:16",
       "rest_board": "SW POOLS IN OTT POSITION"
      },
      {
@@ -9355,7 +9355,7 @@
       "ushr": "0518",
       "rest_state": "resting",
       "rest_until": "2026-09-28T05:18",
-      "rest_calculated_at": "2026-09-28T00:53:48",
+      "rest_calculated_at": "2026-09-28T01:14:16",
       "rest_board": "SW POOLS IN OTT POSITION"
      }
     ],
@@ -9366,7 +9366,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 4186,
+    "age_seconds": 5413,
     "captured_at": "2026-09-28T04:44:02.422785+00:00",
     "label": "SW POOLS IN KC POSITION",
     "menu_path": "1_12",
@@ -9394,8 +9394,8 @@
       "turn_info": "",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-09-28T00:53",
-      "rest_calculated_at": "2026-09-28T00:53:48",
+      "rest_until": "2026-09-28T01:14",
+      "rest_calculated_at": "2026-09-28T01:14:16",
       "rest_board": "SW POOLS IN KC  POSITION"
      },
      {
@@ -9420,8 +9420,8 @@
       "turn_info": "",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-09-28T00:53",
-      "rest_calculated_at": "2026-09-28T00:53:48",
+      "rest_until": "2026-09-28T01:14",
+      "rest_calculated_at": "2026-09-28T01:14:16",
       "rest_board": "SW POOLS IN KC  POSITION"
      },
      {
@@ -9446,8 +9446,8 @@
       "turn_info": "",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-09-28T00:53",
-      "rest_calculated_at": "2026-09-28T00:53:48",
+      "rest_until": "2026-09-28T01:14",
+      "rest_calculated_at": "2026-09-28T01:14:16",
       "rest_board": "SW POOLS IN KC  POSITION"
      },
      {
@@ -9472,8 +9472,8 @@
       "turn_info": "",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-09-28T00:53",
-      "rest_calculated_at": "2026-09-28T00:53:48",
+      "rest_until": "2026-09-28T01:14",
+      "rest_calculated_at": "2026-09-28T01:14:16",
       "rest_board": "SW POOLS IN KC  POSITION"
      },
      {
@@ -9498,8 +9498,8 @@
       "turn_info": "",
       "ushr": "0050",
       "rest_state": "on_board",
-      "rest_until": "2026-09-28T00:53",
-      "rest_calculated_at": "2026-09-28T00:53:48",
+      "rest_until": "2026-09-28T01:14",
+      "rest_calculated_at": "2026-09-28T01:14:16",
       "rest_board": "SW POOLS IN KC  POSITION"
      },
      {
@@ -9524,8 +9524,8 @@
       "turn_info": "",
       "ushr": "0052",
       "rest_state": "on_board",
-      "rest_until": "2026-09-28T00:53",
-      "rest_calculated_at": "2026-09-28T00:53:48",
+      "rest_until": "2026-09-28T01:14",
+      "rest_calculated_at": "2026-09-28T01:14:16",
       "rest_board": "SW POOLS IN KC  POSITION"
      }
     ],
@@ -9536,7 +9536,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 4180,
+    "age_seconds": 5408,
     "captured_at": "2026-09-28T04:44:07.741794+00:00",
     "label": "SW POOLS IN DA POSITION",
     "menu_path": "1_13",
@@ -9549,7 +9549,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 4160,
+    "age_seconds": 5388,
     "captured_at": "2026-09-28T04:44:27.569376+00:00",
     "label": "OTT SWITCHMAN XTRA BRD",
     "menu_path": "2_04",
@@ -9577,8 +9577,8 @@
       "turn_info": "00",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-09-28T00:53",
-      "rest_calculated_at": "2026-09-28T00:53:48",
+      "rest_until": "2026-09-28T01:14",
+      "rest_calculated_at": "2026-09-28T01:14:16",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION"
      },
      {
@@ -9603,8 +9603,8 @@
       "turn_info": "00",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-09-28T00:53",
-      "rest_calculated_at": "2026-09-28T00:53:48",
+      "rest_until": "2026-09-28T01:14",
+      "rest_calculated_at": "2026-09-28T01:14:16",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION"
      },
      {
@@ -9629,8 +9629,8 @@
       "turn_info": "00",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-09-28T00:53",
-      "rest_calculated_at": "2026-09-28T00:53:48",
+      "rest_until": "2026-09-28T01:14",
+      "rest_calculated_at": "2026-09-28T01:14:16",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION"
      },
      {
@@ -9655,8 +9655,8 @@
       "turn_info": "00",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-09-28T00:53",
-      "rest_calculated_at": "2026-09-28T00:53:48",
+      "rest_until": "2026-09-28T01:14",
+      "rest_calculated_at": "2026-09-28T01:14:16",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION"
      },
      {
@@ -9681,8 +9681,8 @@
       "turn_info": "00",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-09-28T00:53",
-      "rest_calculated_at": "2026-09-28T00:53:48",
+      "rest_until": "2026-09-28T01:14",
+      "rest_calculated_at": "2026-09-28T01:14:16",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION"
      },
      {
@@ -9707,8 +9707,8 @@
       "turn_info": "0015 0930            00",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-09-28T00:53",
-      "rest_calculated_at": "2026-09-28T00:53:48",
+      "rest_until": "2026-09-28T01:14",
+      "rest_calculated_at": "2026-09-28T01:14:16",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION"
      }
     ],
