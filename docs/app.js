@@ -636,12 +636,15 @@ function crewNames(list) {
 
 function formatTrainLines(t, lines) {
   const rc = t.rc ? "  RC" : "";
-  lines.push(`${t.date_time}  ${t.train_asgn}${rc}  ${t.status || ""}`.trimEnd());
+  lines.push(`${t.date_time}  ${t.train_asgn}${rc}  ${lineupDutyStatus(t)}`.trimEnd());
   const eng = `ENG ${t.eng_crew_pool || "?"}×${t.eng_crew_count || "0"}`;
   const trn = `TRN ${t.trn_crew_pool || "?"}×${t.trn_crew_count || "0"}`;
   lines.push(`  ${eng} · ${trn}`);
   const names = crewNames(t.eng_crew) + " " + crewNames(t.trn_crew);
   if (names.trim()) lines.push(`  Crew: ${names.trim()}`);
+  const outbound = [...(t.eng_planned_crew || []), ...(t.trn_planned_crew || [])];
+  if (outbound.length) lines.push(`  Outbound: ${outbound.map(m =>
+    `${m.craft || ""} ${m.name || ""}${m.on_in ? ` — CALLED, on duty in ${m.on_in} (at capture)` : ""}`).join(" · ")}`);
   if (t.crew_projection) lines.push(`  Projected crew: ${projectedCrewText(t.crew_projection)}`);
   if (t.information) lines.push(`  ${t.information}`);
   lines.push("");
@@ -730,6 +733,45 @@ function buildTable(headers, rows) {
   return wrap;
 }
 
+function lineupDutyStatus(train) {
+  // These legacy-named arrays contain leg-matched ACTUAL tickets, not predictions.
+  // An inbound crew or the raw ORDERED flag is not proof of an outbound call.
+  const members = [...(train.eng_planned_crew || []), ...(train.trn_planned_crew || [])];
+  const states = new Set(members.map(m => m.on_in ? "CALLED"
+    : m.hos ? "ON DUTY (ticket)" : "CREW ASSIGNED — duty time unknown"));
+  const duty = states.size > 1 ? "MIXED OUTBOUND CREW STATUS" : [...states][0];
+  return duty ? duty + (train.status ? ` · lineup: ${train.status}` : "") : (train.status || "");
+}
+
+function historyDutyStatus(ticket, evaluatedAt) {
+  // Evaluate the captured picture, not elapsed wall-clock time on a stale phone.
+  // Railway date/HHMM fields are Central, regardless of the device timezone.
+  if (!evaluatedAt || !Number.isFinite(new Date(evaluatedAt).getTime())) return "STATUS TIME UNKNOWN";
+  const parts = Object.fromEntries(new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/Chicago", year: "numeric", month: "2-digit", day: "2-digit",
+    hour: "2-digit", minute: "2-digit", second: "2-digit", hourCycle: "h23",
+  }).formatToParts(new Date(evaluatedAt)).map(p => [p.type, p.value]));
+  const now = Date.UTC(+parts.year, +parts.month - 1, +parts.day, +parts.hour, +parts.minute, +parts.second);
+  const clock = hhmm => {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(ticket.date || "") || !/^\d{4}$/.test(hhmm || "")) return null;
+    if (+hhmm.slice(0, 2) > 23 || +hhmm.slice(2) > 59) return null;
+    const at = Date.parse(`${ticket.date}T${hhmm.slice(0,2)}:${hhmm.slice(2)}:00Z`);
+    return Number.isFinite(at) && new Date(at).toISOString().slice(0, 10) === ticket.date ? at : null;
+  };
+  const members = ticket.members?.length ? ticket.members : [ticket];
+  const states = new Set(members.map(member => {
+    const on = clock(member.on_duty || ticket.on_duty);
+    if (on === null) return "DUTY TIME UNKNOWN";
+    let off = clock(member.off_duty); // One person's tie-up must not close everyone.
+    if (off !== null && off < on) off += 864e5;
+    if (off !== null && off <= now) return "TIED UP";
+    if (on > now) return "CALLED";
+    // Do not leave old open tickets labelled as current work indefinitely.
+    return now - on < 14 * 36e5 ? "ON DUTY (ticket)" : "NO TIE-UP RECORDED";
+  }));
+  return states.size === 1 ? [...states][0] : "MIXED CREW STATUS";
+}
+
 function crewCell(members) {
   // [{craft,name,hos:{band,label},on_in,tags}] -> chips with colored time
   const box = el("span");
@@ -739,7 +781,7 @@ function crewCell(members) {
     if (m.hos && m.hos.label) {
       chip.appendChild(el("span", ` hos-${m.hos.band || "green"}`, ` ${m.hos.label}`));
     } else if (m.on_in) {
-      chip.appendChild(el("span", " hos-green", ` on in ${m.on_in}`));
+      chip.appendChild(el("span", " hos-green", ` CALLED — on duty in ${m.on_in} (at capture)`));
     }
     if (m.tags && m.tags.length) {
       chip.appendChild(el("span", " tag-dim", ` ${m.tags.join(",")}`));
@@ -776,7 +818,7 @@ function renderLineupsTable() {
   const rows = (st.trains || []).map((t) => [
     t.date_time || "",
     t.train_asgn || "",
-    t.status || "",
+    lineupDutyStatus(t),
     t.ordered || "",
     t.rc || "",
     crewCell((t.eng_crew || []).concat(t.trn_crew || [])),
@@ -788,6 +830,7 @@ function renderLineupsTable() {
   const box = el("div");
   box.appendChild(el("div", "table-title",
     `${(st.name || st.location_code).toUpperCase()} — ${st.trains.length} trains`));
+  box.appendChild(el("div", "data-note", "Called/on-duty describes the outbound crew's captured ticket, not train movement. Original lineup status is retained."));
   box.appendChild(buildTable(
     ["Date/Time", "Train", "Status", "Ord", "RC", "Inbound Crew", "Outbound Crew", "Projected crew", "Pool", "Info"],
     rows));
@@ -830,6 +873,8 @@ function renderHistoryTable() {
   const box = el("div");
   box.appendChild(el("div", "table-title",
     `RECENT TRAINS — last 48h · ${recent.length} trains · by departure point`));
+  box.appendChild(el("div", "data-note",
+    `Crew duty status at ${localTime(d.meta?.generated_at) || "unknown capture time"}. CALLED means a ticket exists but duty has not started. On-duty time alone does not prove train departure.`));
   // Home first (Ottumwa), then the busiest sections.
   const rank = (c) => (c === "04664" ? -1e9 : -(groups[c] || []).length);
   Object.keys(groups).sort((a, b) => rank(a) - rank(b) || a.localeCompare(b)).forEach((code) => {
@@ -843,6 +888,7 @@ function renderHistoryTable() {
       return [
         tr.date ? tr.date.slice(5) : "",
         tr.train || "",
+        historyDutyStatus(tr, d.meta?.generated_at),
         tr.on_duty || "—",
         tr.off_duty || "—",
         `${tr.depart || "?"}→${tr.arrive || "?"}`,
@@ -851,7 +897,7 @@ function renderHistoryTable() {
       ];
     });
     box.appendChild(buildTable(
-      ["Date", "Train", "On Duty", "Tie Up", "Route", "Crew", "Pool"], rows));
+      ["Date", "Train", "Crew status", "On Duty / Scheduled", "Tie Up", "Route", "Crew", "Pool"], rows));
   });
   showTable(box);
   return null;
