@@ -1089,9 +1089,14 @@ function renderBookoffsView() {
   if (!d) { showText(); return "No data available yet."; }
   updateFreshnessBar();
   const list = d.bookoffs || [];
+  const capture = d.bookoffs_capture;
+  const uncertain = !capture || capture.missing_scopes.length > 0
+    || capture.scopes.some((s) => s.stale
+      || Date.now() - new Date(s.captured_at).getTime() > 20 * 60 * 1000);
   if (!list.length) {
     showText();
-    return "No current bookoffs in the feed (or the bookoff capture hasn't run in the last 36h).";
+    return uncertain ? "Bookoff coverage is incomplete or old; an empty list does not confirm everyone is back."
+      : "No bookoffs listed in the latest complete captures.";
   }
   const TERM_NAME = { OT: "OTTUMWA", DA: "DAVENPORT", KC: "KANSAS CITY" };
   const groups = {};
@@ -1101,6 +1106,8 @@ function renderBookoffsView() {
   });
   const carried = list.filter((b) => b.carryover).length;
   const box = el("div");
+  if (uncertain) box.appendChild(el("div", "table-title",
+    "Some bookoff captures are incomplete or old. Last complete lists are retained; current status may have changed."));
   box.appendChild(el("div", "table-title",
     `BOOKED OFF — ${list.length} members · by terminal`
     + (carried ? ` · ${carried} carried† from older captures` : "")));
@@ -1123,9 +1130,8 @@ function renderBookoffsView() {
   });
   if (carried) {
     const fn = el("div", null,
-      "† from an older capture (the bookoff screen only lists each day's "
-      + "entries) — no return to work observed since; drops off once they "
-      + "work a ticket or stand on a board again.");
+      "Retained from the last complete capture. A complete newer list for the same terminal/craft "
+      + "replaces it. Removal does not by itself mean rested or working.");
     fn.style.cssText = "color:#8b93a7;font-size:.82em;padding:8px 0";
     box.appendChild(fn);
   }
