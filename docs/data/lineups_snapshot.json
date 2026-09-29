@@ -1,7 +1,7 @@
 {
  "shared_crew_projection": {
   "model": "seats-v2",
-  "calculated_at": "2026-09-29T20:00:49.517402+00:00",
+  "calculated_at": "2026-09-29T20:01:20.666568+00:00",
   "policy_basis": "explicit_per_leg_calling_groups_and_candidate_eligibility",
   "trains": [
    {
@@ -24,7 +24,7 @@
       "captured_at": "2026-09-29T19:57:34.119391+00:00",
       "evidence": [
        "board:sched_20260929_145344:1_09",
-       "rest_calculated:2026-09-29T15:00:46"
+       "rest_calculated:2026-09-29T15:01:09"
       ],
       "call_before": null,
       "duty_before": null,
@@ -44,7 +44,7 @@
       "captured_at": "2026-09-29T19:57:34.119391+00:00",
       "evidence": [
        "board:sched_20260929_145344:1_09",
-       "rest_calculated:2026-09-29T15:00:46"
+       "rest_calculated:2026-09-29T15:01:09"
       ],
       "call_before": null,
       "duty_before": null,
@@ -64,7 +64,7 @@
       "captured_at": "2026-09-29T19:57:34.119391+00:00",
       "evidence": [
        "board:sched_20260929_145344:1_09",
-       "rest_calculated:2026-09-29T15:00:46"
+       "rest_calculated:2026-09-29T15:01:09"
       ],
       "call_before": null,
       "duty_before": null,
@@ -889,7 +889,7 @@
       "captured_at": "2026-09-29T19:57:34.119391+00:00",
       "evidence": [
        "board:sched_20260929_145344:1_09",
-       "rest_calculated:2026-09-29T15:00:46"
+       "rest_calculated:2026-09-29T15:01:09"
       ],
       "call_before": null,
       "duty_before": null,
@@ -909,7 +909,7 @@
       "captured_at": "2026-09-29T19:57:34.119391+00:00",
       "evidence": [
        "board:sched_20260929_145344:1_09",
-       "rest_calculated:2026-09-29T15:00:46"
+       "rest_calculated:2026-09-29T15:01:09"
       ],
       "call_before": null,
       "duty_before": null,
@@ -1735,7 +1735,7 @@
       "captured_at": "2026-09-29T19:57:15.730541+00:00",
       "evidence": [
        "board:sched_20260929_145344:1_06",
-       "rest_calculated:2026-09-29T15:00:46"
+       "rest_calculated:2026-09-29T15:01:09"
       ],
       "call_before": null,
       "duty_before": null,
@@ -1755,7 +1755,7 @@
       "captured_at": "2026-09-29T19:57:15.730541+00:00",
       "evidence": [
        "board:sched_20260929_145344:1_06",
-       "rest_calculated:2026-09-29T15:00:46"
+       "rest_calculated:2026-09-29T15:01:09"
       ],
       "call_before": null,
       "duty_before": null,
@@ -2603,7 +2603,7 @@
       "captured_at": "2026-09-29T19:57:36.600097+00:00",
       "evidence": [
        "board:sched_20260929_145344:1_09",
-       "rest_calculated:2026-09-29T15:00:46"
+       "rest_calculated:2026-09-29T15:01:09"
       ],
       "call_before": null,
       "duty_before": null,
@@ -2623,7 +2623,7 @@
       "captured_at": "2026-09-29T19:57:36.600097+00:00",
       "evidence": [
        "board:sched_20260929_145344:1_09",
-       "rest_calculated:2026-09-29T15:00:46"
+       "rest_calculated:2026-09-29T15:01:09"
       ],
       "call_before": null,
       "duty_before": null,
@@ -3466,7 +3466,7 @@
       "captured_at": "2026-09-29T19:57:44.377088+00:00",
       "evidence": [
        "board:sched_20260929_145344:1_10",
-       "rest_calculated:2026-09-29T15:00:46"
+       "rest_calculated:2026-09-29T15:01:09"
       ],
       "call_before": null,
       "duty_before": null,
@@ -3486,7 +3486,7 @@
       "captured_at": "2026-09-29T19:57:44.377088+00:00",
       "evidence": [
        "board:sched_20260929_145344:1_10",
-       "rest_calculated:2026-09-29T15:00:46"
+       "rest_calculated:2026-09-29T15:01:09"
       ],
       "call_before": null,
       "duty_before": null,
@@ -4329,7 +4329,7 @@
       "captured_at": "2026-09-29T19:57:49.692344+00:00",
       "evidence": [
        "board:sched_20260929_145344:1_11",
-       "rest_calculated:2026-09-29T15:00:46"
+       "rest_calculated:2026-09-29T15:01:09"
       ],
       "call_before": null,
       "duty_before": null,
@@ -4349,7 +4349,7 @@
       "captured_at": "2026-09-29T19:57:49.692344+00:00",
       "evidence": [
        "board:sched_20260929_145344:1_11",
-       "rest_calculated:2026-09-29T15:00:46"
+       "rest_calculated:2026-09-29T15:01:09"
       ],
       "call_before": null,
       "duty_before": null,
@@ -5202,7 +5202,7 @@
       "captured_at": "2026-09-29T19:57:36.600097+00:00",
       "evidence": [
        "board:sched_20260929_145344:1_09",
-       "rest_calculated:2026-09-29T15:00:46"
+       "rest_calculated:2026-09-29T15:01:09"
       ],
       "call_before": null,
       "duty_before": null,
@@ -5222,7 +5222,7 @@
       "captured_at": "2026-09-29T19:57:36.600097+00:00",
       "evidence": [
        "board:sched_20260929_145344:1_09",
-       "rest_calculated:2026-09-29T15:00:46"
+       "rest_calculated:2026-09-29T15:01:09"
       ],
       "call_before": null,
       "duty_before": null,
@@ -6075,7 +6075,7 @@
       "captured_at": "2026-09-29T19:57:00.193064+00:00",
       "evidence": [
        "board:sched_20260929_145344:1_04",
-       "rest_calculated:2026-09-29T15:00:46",
+       "rest_calculated:2026-09-29T15:01:09",
        "rule:OT_EXTRA_ENGINEER_FALLBACK:2026-09-23.1:268493cf2cace765ae94f5bd81e6c5ab5eaed211ebc7c8182064f91010a6222c",
        "schedule:EX0004EN:operator_confirmation",
        "matrix:ado_matrix_2026"
@@ -6524,7 +6524,7 @@
       "captured_at": "2026-09-29T19:57:00.193064+00:00",
       "evidence": [
        "board:sched_20260929_145344:1_04",
-       "rest_calculated:2026-09-29T15:00:46",
+       "rest_calculated:2026-09-29T15:01:09",
        "rule:OT_EXTRA_ENGINEER_FALLBACK:2026-09-23.1:268493cf2cace765ae94f5bd81e6c5ab5eaed211ebc7c8182064f91010a6222c",
        "schedule:EX0005EN:operator_confirmation",
        "matrix:ado_matrix_2026"
@@ -6547,7 +6547,7 @@
       "captured_at": "2026-09-29T19:58:27.439202+00:00",
       "evidence": [
        "board:sched_20260929_145344:2_04",
-       "rest_calculated:2026-09-29T15:00:46",
+       "rest_calculated:2026-09-29T15:01:09",
        "rule:OT_EXTRA_CONDUCTOR_FALLBACK:2026-09-23.1:dcdc8e04c72273d00ab7cee4f36338d7e7ca7ff65dcfac032d79b5690206eb4b",
        "schedule:EX0008CO:operator_confirmation",
        "matrix:ado_matrix_2026"
@@ -7418,7 +7418,7 @@
       "captured_at": "2026-09-29T19:57:00.193064+00:00",
       "evidence": [
        "board:sched_20260929_145344:1_04",
-       "rest_calculated:2026-09-29T15:00:46",
+       "rest_calculated:2026-09-29T15:01:09",
        "rule:OT_EXTRA_ENGINEER_FALLBACK:2026-09-23.1:268493cf2cace765ae94f5bd81e6c5ab5eaed211ebc7c8182064f91010a6222c",
        "schedule:EX0001EN:operator_confirmation",
        "matrix:ado_matrix_2026"
@@ -7878,7 +7878,7 @@
       "captured_at": "2026-09-29T19:58:27.439202+00:00",
       "evidence": [
        "board:sched_20260929_145344:2_04",
-       "rest_calculated:2026-09-29T15:00:46",
+       "rest_calculated:2026-09-29T15:01:09",
        "rule:OT_EXTRA_CONDUCTOR_FALLBACK:2026-09-23.1:dcdc8e04c72273d00ab7cee4f36338d7e7ca7ff65dcfac032d79b5690206eb4b",
        "schedule:EX0012CO:operator_confirmation",
        "matrix:ado_matrix_2026"
@@ -11147,7 +11147,7 @@
   "collection_message": "Light sweep sched_20260929_145344.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-09-29T20:00:49+00:00",
+  "generated_at": "2026-09-29T20:01:20+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20260929_145344",
@@ -15515,7 +15515,7 @@
          "captured_at": "2026-09-29T19:57:34.119391+00:00",
          "evidence": [
           "board:sched_20260929_145344:1_09",
-          "rest_calculated:2026-09-29T15:00:46"
+          "rest_calculated:2026-09-29T15:01:09"
          ],
          "call_before": null,
          "duty_before": null,
@@ -15535,7 +15535,7 @@
          "captured_at": "2026-09-29T19:57:34.119391+00:00",
          "evidence": [
           "board:sched_20260929_145344:1_09",
-          "rest_calculated:2026-09-29T15:00:46"
+          "rest_calculated:2026-09-29T15:01:09"
          ],
          "call_before": null,
          "duty_before": null,
@@ -15555,7 +15555,7 @@
          "captured_at": "2026-09-29T19:57:34.119391+00:00",
          "evidence": [
           "board:sched_20260929_145344:1_09",
-          "rest_calculated:2026-09-29T15:00:46"
+          "rest_calculated:2026-09-29T15:01:09"
          ],
          "call_before": null,
          "duty_before": null,
@@ -16429,7 +16429,7 @@
          "captured_at": "2026-09-29T19:57:34.119391+00:00",
          "evidence": [
           "board:sched_20260929_145344:1_09",
-          "rest_calculated:2026-09-29T15:00:46"
+          "rest_calculated:2026-09-29T15:01:09"
          ],
          "call_before": null,
          "duty_before": null,
@@ -16449,7 +16449,7 @@
          "captured_at": "2026-09-29T19:57:34.119391+00:00",
          "evidence": [
           "board:sched_20260929_145344:1_09",
-          "rest_calculated:2026-09-29T15:00:46"
+          "rest_calculated:2026-09-29T15:01:09"
          ],
          "call_before": null,
          "duty_before": null,
@@ -17324,7 +17324,7 @@
          "captured_at": "2026-09-29T19:57:15.730541+00:00",
          "evidence": [
           "board:sched_20260929_145344:1_06",
-          "rest_calculated:2026-09-29T15:00:46"
+          "rest_calculated:2026-09-29T15:01:09"
          ],
          "call_before": null,
          "duty_before": null,
@@ -17344,7 +17344,7 @@
          "captured_at": "2026-09-29T19:57:15.730541+00:00",
          "evidence": [
           "board:sched_20260929_145344:1_06",
-          "rest_calculated:2026-09-29T15:00:46"
+          "rest_calculated:2026-09-29T15:01:09"
          ],
          "call_before": null,
          "duty_before": null,
@@ -18222,7 +18222,7 @@
          "captured_at": "2026-09-29T19:57:36.600097+00:00",
          "evidence": [
           "board:sched_20260929_145344:1_09",
-          "rest_calculated:2026-09-29T15:00:46"
+          "rest_calculated:2026-09-29T15:01:09"
          ],
          "call_before": null,
          "duty_before": null,
@@ -18242,7 +18242,7 @@
          "captured_at": "2026-09-29T19:57:36.600097+00:00",
          "evidence": [
           "board:sched_20260929_145344:1_09",
-          "rest_calculated:2026-09-29T15:00:46"
+          "rest_calculated:2026-09-29T15:01:09"
          ],
          "call_before": null,
          "duty_before": null,
@@ -19115,7 +19115,7 @@
          "captured_at": "2026-09-29T19:57:44.377088+00:00",
          "evidence": [
           "board:sched_20260929_145344:1_10",
-          "rest_calculated:2026-09-29T15:00:46"
+          "rest_calculated:2026-09-29T15:01:09"
          ],
          "call_before": null,
          "duty_before": null,
@@ -19135,7 +19135,7 @@
          "captured_at": "2026-09-29T19:57:44.377088+00:00",
          "evidence": [
           "board:sched_20260929_145344:1_10",
-          "rest_calculated:2026-09-29T15:00:46"
+          "rest_calculated:2026-09-29T15:01:09"
          ],
          "call_before": null,
          "duty_before": null,
@@ -20008,7 +20008,7 @@
          "captured_at": "2026-09-29T19:57:49.692344+00:00",
          "evidence": [
           "board:sched_20260929_145344:1_11",
-          "rest_calculated:2026-09-29T15:00:46"
+          "rest_calculated:2026-09-29T15:01:09"
          ],
          "call_before": null,
          "duty_before": null,
@@ -20028,7 +20028,7 @@
          "captured_at": "2026-09-29T19:57:49.692344+00:00",
          "evidence": [
           "board:sched_20260929_145344:1_11",
-          "rest_calculated:2026-09-29T15:00:46"
+          "rest_calculated:2026-09-29T15:01:09"
          ],
          "call_before": null,
          "duty_before": null,
@@ -20911,7 +20911,7 @@
          "captured_at": "2026-09-29T19:57:36.600097+00:00",
          "evidence": [
           "board:sched_20260929_145344:1_09",
-          "rest_calculated:2026-09-29T15:00:46"
+          "rest_calculated:2026-09-29T15:01:09"
          ],
          "call_before": null,
          "duty_before": null,
@@ -20931,7 +20931,7 @@
          "captured_at": "2026-09-29T19:57:36.600097+00:00",
          "evidence": [
           "board:sched_20260929_145344:1_09",
-          "rest_calculated:2026-09-29T15:00:46"
+          "rest_calculated:2026-09-29T15:01:09"
          ],
          "call_before": null,
          "duty_before": null,
@@ -21814,7 +21814,7 @@
          "captured_at": "2026-09-29T19:57:00.193064+00:00",
          "evidence": [
           "board:sched_20260929_145344:1_04",
-          "rest_calculated:2026-09-29T15:00:46",
+          "rest_calculated:2026-09-29T15:01:09",
           "rule:OT_EXTRA_ENGINEER_FALLBACK:2026-09-23.1:268493cf2cace765ae94f5bd81e6c5ab5eaed211ebc7c8182064f91010a6222c",
           "schedule:EX0004EN:operator_confirmation",
           "matrix:ado_matrix_2026"
@@ -22293,7 +22293,7 @@
          "captured_at": "2026-09-29T19:57:00.193064+00:00",
          "evidence": [
           "board:sched_20260929_145344:1_04",
-          "rest_calculated:2026-09-29T15:00:46",
+          "rest_calculated:2026-09-29T15:01:09",
           "rule:OT_EXTRA_ENGINEER_FALLBACK:2026-09-23.1:268493cf2cace765ae94f5bd81e6c5ab5eaed211ebc7c8182064f91010a6222c",
           "schedule:EX0005EN:operator_confirmation",
           "matrix:ado_matrix_2026"
@@ -22316,7 +22316,7 @@
          "captured_at": "2026-09-29T19:58:27.439202+00:00",
          "evidence": [
           "board:sched_20260929_145344:2_04",
-          "rest_calculated:2026-09-29T15:00:46",
+          "rest_calculated:2026-09-29T15:01:09",
           "rule:OT_EXTRA_CONDUCTOR_FALLBACK:2026-09-23.1:dcdc8e04c72273d00ab7cee4f36338d7e7ca7ff65dcfac032d79b5690206eb4b",
           "schedule:EX0008CO:operator_confirmation",
           "matrix:ado_matrix_2026"
@@ -23217,7 +23217,7 @@
          "captured_at": "2026-09-29T19:57:00.193064+00:00",
          "evidence": [
           "board:sched_20260929_145344:1_04",
-          "rest_calculated:2026-09-29T15:00:46",
+          "rest_calculated:2026-09-29T15:01:09",
           "rule:OT_EXTRA_ENGINEER_FALLBACK:2026-09-23.1:268493cf2cace765ae94f5bd81e6c5ab5eaed211ebc7c8182064f91010a6222c",
           "schedule:EX0001EN:operator_confirmation",
           "matrix:ado_matrix_2026"
@@ -23707,7 +23707,7 @@
          "captured_at": "2026-09-29T19:58:27.439202+00:00",
          "evidence": [
           "board:sched_20260929_145344:2_04",
-          "rest_calculated:2026-09-29T15:00:46",
+          "rest_calculated:2026-09-29T15:01:09",
           "rule:OT_EXTRA_CONDUCTOR_FALLBACK:2026-09-23.1:dcdc8e04c72273d00ab7cee4f36338d7e7ca7ff65dcfac032d79b5690206eb4b",
           "schedule:EX0012CO:operator_confirmation",
           "matrix:ado_matrix_2026"
@@ -28339,7 +28339,7 @@
   "board_count": 11,
   "boards": [
    {
-    "age_seconds": 225,
+    "age_seconds": 249,
     "captured_at": "2026-09-29T19:57:00.193064+00:00",
     "label": "OTTUMWA ENG XTRA BRD",
     "menu_path": "1_04",
@@ -28368,7 +28368,7 @@
       "ushr": "",
       "rest_state": "rest_day",
       "rest_until": "2026-09-30T00:01",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "OTTUMWA ENG XTRA BRD POSITION"
      },
      {
@@ -28393,8 +28393,8 @@
       "turn_info": "00",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-09-29T15:00",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_until": "2026-09-29T15:01",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "OTTUMWA ENG XTRA BRD POSITION"
      },
      {
@@ -28419,8 +28419,8 @@
       "turn_info": "00",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-09-29T15:00",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_until": "2026-09-29T15:01",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "OTTUMWA ENG XTRA BRD POSITION"
      },
      {
@@ -28445,8 +28445,8 @@
       "turn_info": "00",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-09-29T15:00",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_until": "2026-09-29T15:01",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "OTTUMWA ENG XTRA BRD POSITION"
      }
     ],
@@ -28457,7 +28457,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 215,
+    "age_seconds": 238,
     "captured_at": "2026-09-29T19:57:10.398680+00:00",
     "label": "OB POOLS IN OTT TURN ORDER",
     "menu_path": "1_05",
@@ -28625,7 +28625,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 210,
+    "age_seconds": 233,
     "captured_at": "2026-09-29T19:57:15.730541+00:00",
     "label": "OB POOLS IN OTT POSITION",
     "menu_path": "1_06",
@@ -28653,8 +28653,8 @@
       "turn_info": "",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-09-29T15:00",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_until": "2026-09-29T15:01",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "OB POOLS IN OTT POSITION"
      },
      {
@@ -28679,8 +28679,8 @@
       "turn_info": "",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-09-29T15:00",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_until": "2026-09-29T15:01",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "OB POOLS IN OTT POSITION"
      },
      {
@@ -28706,7 +28706,7 @@
       "ushr": "1700",
       "rest_state": "resting",
       "rest_until": "2026-09-29T17:00",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "OB POOLS IN OTT POSITION"
      }
     ],
@@ -28717,7 +28717,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 202,
+    "age_seconds": 225,
     "captured_at": "2026-09-29T19:57:23.510723+00:00",
     "label": "OB POOLS IN BVL POSITION",
     "menu_path": "1_07",
@@ -28730,7 +28730,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 197,
+    "age_seconds": 220,
     "captured_at": "2026-09-29T19:57:28.815014+00:00",
     "label": "OB POOLS IN IMS POSITION",
     "menu_path": "1_08",
@@ -28759,7 +28759,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-09-29T11:15",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "OB POOLS IN IMS POSITION"
      },
      {
@@ -28785,7 +28785,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-09-29T11:15",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "OB POOLS IN IMS POSITION"
      },
      {
@@ -28811,7 +28811,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-09-29T11:15",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "OB POOLS IN IMS POSITION"
      }
     ],
@@ -28822,7 +28822,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 186,
+    "age_seconds": 210,
     "captured_at": "2026-09-29T19:57:39.074496+00:00",
     "label": "DA POOLS IN OTT POSITION",
     "menu_path": "1_09",
@@ -28851,7 +28851,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-09-29T06:45",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "DA POOLS IN OTT POSITION"
      },
      {
@@ -28877,7 +28877,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-09-29T06:45",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "DA POOLS IN OTT POSITION"
      },
      {
@@ -28903,7 +28903,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-09-29T06:45",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "DA POOLS IN OTT POSITION"
      },
      {
@@ -28929,7 +28929,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-09-29T08:27",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "DA POOLS IN OTT POSITION"
      },
      {
@@ -28955,7 +28955,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-09-29T08:27",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "DA POOLS IN OTT POSITION"
      },
      {
@@ -28981,7 +28981,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-09-29T12:25",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "DA POOLS IN OTT POSITION"
      },
      {
@@ -29007,7 +29007,7 @@
       "ushr": "",
       "rest_state": "resting",
       "rest_until": "2026-09-29T18:16",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "DA POOLS IN OTT POSITION"
      },
      {
@@ -29033,7 +29033,7 @@
       "ushr": "",
       "rest_state": "resting",
       "rest_until": "2026-09-29T18:13",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "DA POOLS IN OTT POSITION"
      },
      {
@@ -29059,7 +29059,7 @@
       "ushr": "",
       "rest_state": "resting",
       "rest_until": "2026-09-29T18:13",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "DA POOLS IN OTT POSITION"
      },
      {
@@ -29085,7 +29085,7 @@
       "ushr": "2235",
       "rest_state": "working",
       "rest_until": null,
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "DA POOLS IN OTT POSITION"
      },
      {
@@ -29111,7 +29111,7 @@
       "ushr": "2233",
       "rest_state": "working",
       "rest_until": null,
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "DA POOLS IN OTT POSITION"
      }
     ],
@@ -29122,7 +29122,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 181,
+    "age_seconds": 204,
     "captured_at": "2026-09-29T19:57:44.377088+00:00",
     "label": "KA POOLS IN OTT POSITION",
     "menu_path": "1_10",
@@ -29151,7 +29151,7 @@
       "ushr": "1918",
       "rest_state": "resting",
       "rest_until": "2026-09-29T19:18",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "KA POOLS IN OTT POSITION"
      },
      {
@@ -29177,7 +29177,7 @@
       "ushr": "1918",
       "rest_state": "resting",
       "rest_until": "2026-09-29T19:18",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "KA POOLS IN OTT POSITION"
      }
     ],
@@ -29188,7 +29188,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 176,
+    "age_seconds": 199,
     "captured_at": "2026-09-29T19:57:49.692344+00:00",
     "label": "SW POOLS IN OTT POSITION",
     "menu_path": "1_11",
@@ -29217,7 +29217,7 @@
       "ushr": "1807",
       "rest_state": "resting",
       "rest_until": "2026-09-29T18:07",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "SW POOLS IN OTT POSITION"
      },
      {
@@ -29243,7 +29243,7 @@
       "ushr": "",
       "rest_state": "resting",
       "rest_until": "2026-09-29T17:00",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "SW POOLS IN OTT POSITION"
      },
      {
@@ -29269,7 +29269,7 @@
       "ushr": "1807",
       "rest_state": "resting",
       "rest_until": "2026-09-29T18:07",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "SW POOLS IN OTT POSITION"
      }
     ],
@@ -29280,7 +29280,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 165,
+    "age_seconds": 189,
     "captured_at": "2026-09-29T19:57:59.932696+00:00",
     "label": "SW POOLS IN KC POSITION",
     "menu_path": "1_12",
@@ -29309,7 +29309,7 @@
       "ushr": "1620",
       "rest_state": "resting",
       "rest_until": "2026-09-29T16:20",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "SW POOLS IN KC  POSITION"
      },
      {
@@ -29335,7 +29335,7 @@
       "ushr": "1620",
       "rest_state": "resting",
       "rest_until": "2026-09-29T16:20",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "SW POOLS IN KC  POSITION"
      },
      {
@@ -29361,7 +29361,7 @@
       "ushr": "1848",
       "rest_state": "resting",
       "rest_until": "2026-09-29T18:48",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "SW POOLS IN KC  POSITION"
      },
      {
@@ -29387,7 +29387,7 @@
       "ushr": "1848",
       "rest_state": "resting",
       "rest_until": "2026-09-29T18:48",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "SW POOLS IN KC  POSITION"
      },
      {
@@ -29412,8 +29412,8 @@
       "turn_info": "",
       "ushr": "2135",
       "rest_state": "on_board",
-      "rest_until": "2026-09-29T15:00",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_until": "2026-09-29T15:01",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "SW POOLS IN KC  POSITION"
      },
      {
@@ -29438,8 +29438,8 @@
       "turn_info": "",
       "ushr": "2135",
       "rest_state": "on_board",
-      "rest_until": "2026-09-29T15:00",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_until": "2026-09-29T15:01",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "SW POOLS IN KC  POSITION"
      },
      {
@@ -29465,7 +29465,7 @@
       "ushr": "0020",
       "rest_state": "working",
       "rest_until": null,
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "SW POOLS IN KC  POSITION"
      },
      {
@@ -29491,7 +29491,7 @@
       "ushr": "0022",
       "rest_state": "working",
       "rest_until": null,
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "SW POOLS IN KC  POSITION"
      }
     ],
@@ -29502,7 +29502,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 158,
+    "age_seconds": 181,
     "captured_at": "2026-09-29T19:58:07.702350+00:00",
     "label": "SW POOLS IN DA POSITION",
     "menu_path": "1_13",
@@ -29515,7 +29515,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 138,
+    "age_seconds": 161,
     "captured_at": "2026-09-29T19:58:27.439202+00:00",
     "label": "OTT SWITCHMAN XTRA BRD",
     "menu_path": "2_04",
@@ -29543,8 +29543,8 @@
       "turn_info": "00",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-09-29T15:00",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_until": "2026-09-29T15:01",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION"
      },
      {
@@ -29569,8 +29569,8 @@
       "turn_info": "00",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-09-29T15:00",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_until": "2026-09-29T15:01",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION"
      },
      {
@@ -29595,8 +29595,8 @@
       "turn_info": "00",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-09-29T15:00",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_until": "2026-09-29T15:01",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION"
      },
      {
@@ -29621,8 +29621,8 @@
       "turn_info": "00",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-09-29T15:00",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_until": "2026-09-29T15:01",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION"
      },
      {
@@ -29647,8 +29647,8 @@
       "turn_info": "00",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-09-29T15:00",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_until": "2026-09-29T15:01",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION"
      },
      {
@@ -29674,7 +29674,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-09-29T01:50",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION"
      },
      {
@@ -29699,8 +29699,8 @@
       "turn_info": "00",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-09-29T15:00",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_until": "2026-09-29T15:01",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION"
      },
      {
@@ -29726,7 +29726,7 @@
       "ushr": "",
       "rest_state": "resting",
       "rest_until": "2026-09-29T17:00",
-      "rest_calculated_at": "2026-09-29T15:00:46",
+      "rest_calculated_at": "2026-09-29T15:01:09",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION"
      }
     ],
