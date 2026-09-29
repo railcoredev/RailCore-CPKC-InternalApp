@@ -799,7 +799,8 @@ function projectedCrewText(projection) {
     const label = seat === "AE_CO" ? "AE/CO" : seat;
     return person ? `${label}: ${person.name}${person.optional ? " (possible)" : ""}`
       : `${label}: ${seat === "ET" || seat === "TT" ? "—" : "unfilled"}`;
-  }).join(" · ") + " · advisory" + (projection.complete ? "" : " · incomplete crew");
+  }).join(" · ") + " · advisory" + (projection.call_confirmation_required ? " · call confirmation needed" : "")
+    + (projection.complete ? "" : " · incomplete crew");
 }
 
 function renderLineupsTable() {
@@ -1752,7 +1753,9 @@ function myStatusRows(me) {
         return `${short} (${w.craft === "AE_CO" ? "AE/CO" : w.craft || "?"}${w.optional ? "; possible" : ""})`;
       }).join(", ");
       rows.push(["PROJECTED", `${pj.train} at ${fmtClock(pjDt)} ${localDay(pjDt)}`
-        + (mates ? ` — with ${mates}` : "") + " · advisory" + (pj.complete === false ? " · incomplete crew" : "")]);
+        + (mates ? ` — with ${mates}` : "") + " · advisory"
+        + (pj.call_confirmation_required ? " · call confirmation needed" : "")
+        + (pj.complete === false ? " · incomplete crew" : "")]);
     }
   }
   const bp = me.board_position;
