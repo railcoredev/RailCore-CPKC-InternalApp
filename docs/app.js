@@ -1707,14 +1707,19 @@ function myStatusRows(me) {
   }
   let where = away ? `AT HOTEL — ${t0.arr}` : "AT HOME";
   let restedNow = null;   // true=rested, false=resting (Aaron's readiness colors)
-  if (reDt && reDt > now && re.into_rest_days) {
+  const returnConflict = me.eligibility_conflict;
+  if (returnConflict) {
+    where = "RETURN AVAILABILITY UNCONFIRMED";
+    band = "blue";
+  } else if (reDt && reDt > now && re.into_rest_days) {
     where = "DAYS OFF (ADO)";
     band = "blue";
   }
   rows.push(["STATUS", where]);
-  if (re && re.into_rest_days && re.schedule && re.note)
+  if (returnConflict) rows.push(["RETURN BASIS", returnConflict]);
+  else if (re && re.into_rest_days && re.schedule && re.note)
     rows.push(["RETURN BASIS", re.note]);
-  if (reDt) {
+  if (reDt && !returnConflict) {
     if (reDt > now) {
       const mins = Math.round((reDt - now) / 6e4);
       const cd = `in ${Math.floor(mins / 60)}h ${String(mins % 60).padStart(2, "0")}m`;
@@ -1739,7 +1744,7 @@ function myStatusRows(me) {
   // returned above.
   const pj = me.projection;
   if (me.projection_note) rows.push(["PROJECTION", me.projection_note]);
-  if (pj && pj.at) {
+  if (pj && pj.at && !returnConflict) {
     const pjDt = new Date(pj.at);
     if (pjDt > now) {
       const mates = (pj.with || []).map((w) => {
@@ -1788,11 +1793,12 @@ function myStatusRows(me) {
       rows.push(["REST", `resting — rested at ${br.rested_at} ${localDay(restDt)} (board)`]);
       restedNow = false; label = `${where} — rested at ${br.rested_at}`;
     }
-    if (br.prev_duty) {
+    if (br.prev_duty && !br.ushr) {
       const pd = `${+br.prev_duty.slice(0, 2)}h ${br.prev_duty.slice(2)}m`;
-      const tow = +br.prev_duty.slice(0, 2) * 60 + +br.prev_duty.slice(2) - 720;
-      rows.push(["PREV DUTY", pd + (tow > 0 ?
-        ` — ${Math.floor(tow / 60)}h ${String(tow % 60).padStart(2, "0")}m past 12 added to rest` : "")]);
+      rows.push(["PREV DUTY", `${pd} (board)`]);
+    } else if (Number.isFinite(br.ticket_duty_minutes)) {
+      const mins = br.ticket_duty_minutes;
+      rows.push(["PREV DUTY", `${Math.floor(mins / 60)}h ${String(mins % 60).padStart(2, "0")}m (ticket interval)`]);
     }
   } else if (t0 && r.offDt && r.restEnd) {
     if (now >= r.restEnd) {
@@ -1817,7 +1823,7 @@ function myStatusRows(me) {
   //   blue   = scheduled off (days off / booked off / vacation)
   const ordName = bp && bp.ordinal
     ? (["", "1st out", "2nd out", "3rd out"][bp.ordinal] || `${bp.ordinal}th out`) : "";
-  if (rows[0] && rows[0][0] === "STATUS" && !String(rows[0][1]).startsWith("DAYS OFF")) {
+  if (!returnConflict && rows[0] && rows[0][0] === "STATUS" && !String(rows[0][1]).startsWith("DAYS OFF")) {
     rows[0][1] = where
       + (ordName ? ` — ${ordName}` : "")
       + (restedNow === null ? "" : (restedNow ? ", rested" : ", resting"));
@@ -1841,6 +1847,7 @@ function myStatusRows(me) {
       if (row[0] === "REST") row[0] = "REST EVIDENCE";
     }
   }
+  if (returnConflict) label = "RETURN AVAILABILITY UNCONFIRMED";
   return { rows, band, label };
 }
 
