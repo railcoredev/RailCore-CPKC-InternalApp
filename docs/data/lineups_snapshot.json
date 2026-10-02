@@ -1,7 +1,7 @@
 {
  "shared_crew_projection": {
   "model": "seats-v3",
-  "calculated_at": "2026-10-02T05:08:59.559255+00:00",
+  "calculated_at": "2026-10-02T05:20:36.303197+00:00",
   "policy_basis": "explicit_per_leg_calling_groups_and_candidate_eligibility",
   "trains": [
    {
@@ -147,32 +147,32 @@
      {
       "member_id": "MOZQUEDA,(ERNESTO)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "POOLE,(TREVOR)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "BRADLEY,(COLTON)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "ADKINS,(CHRISTOPHER)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
       "seat": "EN",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -297,32 +297,32 @@
      {
       "member_id": "MOZQUEDA,(ERNESTO)",
       "seat": "AE_CO",
-      "reason": "not_rested_by_call"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "POOLE,(TREVOR)",
       "seat": "AE_CO",
-      "reason": "not_rested_by_call"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
       "seat": "AE_CO",
-      "reason": "not_rested_by_call"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "BRADLEY,(COLTON)",
       "seat": "AE_CO",
-      "reason": "not_rested_by_call"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "ADKINS,(CHRISTOPHER)",
       "seat": "AE_CO",
-      "reason": "not_rested_by_call"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
       "seat": "AE_CO",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      }
     ],
     "rule_evaluations": [],
@@ -348,7 +348,7 @@
       "captured_at": "2026-10-02T05:04:25.863293+00:00",
       "evidence": [
        "board:sched_20261002_000215:1_09",
-       "rest_calculated:2026-10-02T00:08:45"
+       "rest_calculated:2026-10-02T00:20:22"
       ],
       "call_before": null,
       "duty_before": null,
@@ -368,7 +368,7 @@
       "captured_at": "2026-10-02T05:04:25.863293+00:00",
       "evidence": [
        "board:sched_20261002_000215:1_09",
-       "rest_calculated:2026-10-02T00:08:45"
+       "rest_calculated:2026-10-02T00:20:22"
       ],
       "call_before": null,
       "duty_before": null,
@@ -491,32 +491,32 @@
      {
       "member_id": "MOZQUEDA,(ERNESTO)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "POOLE,(TREVOR)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "BRADLEY,(COLTON)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "ADKINS,(CHRISTOPHER)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
       "seat": "EN",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -629,14 +629,34 @@
       "reason": "different_station"
      },
      {
+      "member_id": "MOZQUEDA,(ERNESTO)",
+      "seat": "AE_CO",
+      "reason": "stale_evidence"
+     },
+     {
+      "member_id": "POOLE,(TREVOR)",
+      "seat": "AE_CO",
+      "reason": "stale_evidence"
+     },
+     {
+      "member_id": "MASSEY,(COLLIN)",
+      "seat": "AE_CO",
+      "reason": "stale_evidence"
+     },
+     {
+      "member_id": "BRADLEY,(COLTON)",
+      "seat": "AE_CO",
+      "reason": "stale_evidence"
+     },
+     {
       "member_id": "ADKINS,(CHRISTOPHER)",
       "seat": "AE_CO",
-      "reason": "schedule_cutoff_unknown"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
       "seat": "AE_CO",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -761,32 +781,32 @@
      {
       "member_id": "MOZQUEDA,(ERNESTO)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "POOLE,(TREVOR)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "BRADLEY,(COLTON)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "ADKINS,(CHRISTOPHER)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
       "seat": "ET",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -911,32 +931,32 @@
      {
       "member_id": "MOZQUEDA,(ERNESTO)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "POOLE,(TREVOR)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "BRADLEY,(COLTON)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "ADKINS,(CHRISTOPHER)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
       "seat": "TT",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      }
     ],
     "rule_evaluations": [],
@@ -962,7 +982,7 @@
       "captured_at": "2026-10-02T05:04:25.863293+00:00",
       "evidence": [
        "board:sched_20261002_000215:1_09",
-       "rest_calculated:2026-10-02T00:08:45"
+       "rest_calculated:2026-10-02T00:20:22"
       ],
       "call_before": null,
       "duty_before": null,
@@ -982,7 +1002,7 @@
       "captured_at": "2026-10-02T05:04:25.863293+00:00",
       "evidence": [
        "board:sched_20261002_000215:1_09",
-       "rest_calculated:2026-10-02T00:08:45"
+       "rest_calculated:2026-10-02T00:20:22"
       ],
       "call_before": null,
       "duty_before": null,
@@ -1110,32 +1130,32 @@
      {
       "member_id": "MOZQUEDA,(ERNESTO)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "POOLE,(TREVOR)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "BRADLEY,(COLTON)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "ADKINS,(CHRISTOPHER)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
       "seat": "EN",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -1253,14 +1273,34 @@
       "reason": "different_station"
      },
      {
+      "member_id": "MOZQUEDA,(ERNESTO)",
+      "seat": "AE_CO",
+      "reason": "stale_evidence"
+     },
+     {
+      "member_id": "POOLE,(TREVOR)",
+      "seat": "AE_CO",
+      "reason": "stale_evidence"
+     },
+     {
+      "member_id": "MASSEY,(COLLIN)",
+      "seat": "AE_CO",
+      "reason": "stale_evidence"
+     },
+     {
+      "member_id": "BRADLEY,(COLTON)",
+      "seat": "AE_CO",
+      "reason": "stale_evidence"
+     },
+     {
       "member_id": "ADKINS,(CHRISTOPHER)",
       "seat": "AE_CO",
-      "reason": "schedule_cutoff_unknown"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
       "seat": "AE_CO",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -1385,32 +1425,32 @@
      {
       "member_id": "MOZQUEDA,(ERNESTO)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "POOLE,(TREVOR)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "BRADLEY,(COLTON)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "ADKINS,(CHRISTOPHER)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
       "seat": "ET",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -1535,32 +1575,32 @@
      {
       "member_id": "MOZQUEDA,(ERNESTO)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "POOLE,(TREVOR)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "BRADLEY,(COLTON)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "ADKINS,(CHRISTOPHER)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
       "seat": "TT",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      }
     ],
     "rule_evaluations": [],
@@ -1586,7 +1626,7 @@
       "captured_at": "2026-10-02T05:04:33.657228+00:00",
       "evidence": [
        "board:sched_20261002_000215:1_10",
-       "rest_calculated:2026-10-02T00:08:45"
+       "rest_calculated:2026-10-02T00:20:22"
       ],
       "call_before": null,
       "duty_before": null,
@@ -1606,7 +1646,7 @@
       "captured_at": "2026-10-02T05:04:33.657228+00:00",
       "evidence": [
        "board:sched_20261002_000215:1_10",
-       "rest_calculated:2026-10-02T00:08:45"
+       "rest_calculated:2026-10-02T00:20:22"
       ],
       "call_before": null,
       "duty_before": null,
@@ -1626,7 +1666,7 @@
       "captured_at": "2026-10-02T05:04:41.440424+00:00",
       "evidence": [
        "board:sched_20261002_000215:1_11",
-       "rest_calculated:2026-10-02T00:08:45"
+       "rest_calculated:2026-10-02T00:20:22"
       ],
       "call_before": null,
       "duty_before": null,
@@ -1733,32 +1773,32 @@
      {
       "member_id": "MOZQUEDA,(ERNESTO)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "POOLE,(TREVOR)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "BRADLEY,(COLTON)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "ADKINS,(CHRISTOPHER)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
       "seat": "EN",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -1863,32 +1903,32 @@
      {
       "member_id": "MOZQUEDA,(ERNESTO)",
       "seat": "AE_CO",
-      "reason": "calling_group_not_authorized"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "POOLE,(TREVOR)",
       "seat": "AE_CO",
-      "reason": "calling_group_not_authorized"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
       "seat": "AE_CO",
-      "reason": "calling_group_not_authorized"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "BRADLEY,(COLTON)",
       "seat": "AE_CO",
-      "reason": "calling_group_not_authorized"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "ADKINS,(CHRISTOPHER)",
       "seat": "AE_CO",
-      "reason": "calling_group_not_authorized"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
       "seat": "AE_CO",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -2008,32 +2048,32 @@
      {
       "member_id": "MOZQUEDA,(ERNESTO)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "POOLE,(TREVOR)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "BRADLEY,(COLTON)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "ADKINS,(CHRISTOPHER)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
       "seat": "ET",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -2158,32 +2198,32 @@
      {
       "member_id": "MOZQUEDA,(ERNESTO)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "POOLE,(TREVOR)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "BRADLEY,(COLTON)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "ADKINS,(CHRISTOPHER)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
       "seat": "TT",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      }
     ],
     "rule_evaluations": [],
@@ -2209,7 +2249,7 @@
       "captured_at": "2026-10-02T05:04:33.657228+00:00",
       "evidence": [
        "board:sched_20261002_000215:1_10",
-       "rest_calculated:2026-10-02T00:08:45"
+       "rest_calculated:2026-10-02T00:20:22"
       ],
       "call_before": null,
       "duty_before": null,
@@ -2229,7 +2269,7 @@
       "captured_at": "2026-10-02T05:04:33.657228+00:00",
       "evidence": [
        "board:sched_20261002_000215:1_10",
-       "rest_calculated:2026-10-02T00:08:45"
+       "rest_calculated:2026-10-02T00:20:22"
       ],
       "call_before": null,
       "duty_before": null,
@@ -2249,7 +2289,7 @@
       "captured_at": "2026-10-02T05:04:41.440424+00:00",
       "evidence": [
        "board:sched_20261002_000215:1_11",
-       "rest_calculated:2026-10-02T00:08:45"
+       "rest_calculated:2026-10-02T00:20:22"
       ],
       "call_before": null,
       "duty_before": null,
@@ -2351,32 +2391,32 @@
      {
       "member_id": "MOZQUEDA,(ERNESTO)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "POOLE,(TREVOR)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "BRADLEY,(COLTON)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "ADKINS,(CHRISTOPHER)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
       "seat": "EN",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -2481,32 +2521,32 @@
      {
       "member_id": "MOZQUEDA,(ERNESTO)",
       "seat": "AE_CO",
-      "reason": "calling_group_not_authorized"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "POOLE,(TREVOR)",
       "seat": "AE_CO",
-      "reason": "calling_group_not_authorized"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
       "seat": "AE_CO",
-      "reason": "calling_group_not_authorized"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "BRADLEY,(COLTON)",
       "seat": "AE_CO",
-      "reason": "calling_group_not_authorized"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "ADKINS,(CHRISTOPHER)",
       "seat": "AE_CO",
-      "reason": "calling_group_not_authorized"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
       "seat": "AE_CO",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -2626,32 +2666,32 @@
      {
       "member_id": "MOZQUEDA,(ERNESTO)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "POOLE,(TREVOR)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "BRADLEY,(COLTON)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "ADKINS,(CHRISTOPHER)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
       "seat": "ET",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -2776,32 +2816,32 @@
      {
       "member_id": "MOZQUEDA,(ERNESTO)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "POOLE,(TREVOR)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "BRADLEY,(COLTON)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "ADKINS,(CHRISTOPHER)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
       "seat": "TT",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      }
     ],
     "rule_evaluations": [],
@@ -2827,7 +2867,7 @@
       "captured_at": "2026-10-02T05:04:33.657228+00:00",
       "evidence": [
        "board:sched_20261002_000215:1_10",
-       "rest_calculated:2026-10-02T00:08:45"
+       "rest_calculated:2026-10-02T00:20:22"
       ],
       "call_before": null,
       "duty_before": null,
@@ -2847,7 +2887,7 @@
       "captured_at": "2026-10-02T05:04:33.657228+00:00",
       "evidence": [
        "board:sched_20261002_000215:1_10",
-       "rest_calculated:2026-10-02T00:08:45"
+       "rest_calculated:2026-10-02T00:20:22"
       ],
       "call_before": null,
       "duty_before": null,
@@ -2955,32 +2995,32 @@
      {
       "member_id": "MOZQUEDA,(ERNESTO)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "POOLE,(TREVOR)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "BRADLEY,(COLTON)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "ADKINS,(CHRISTOPHER)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
       "seat": "EN",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -3090,32 +3130,32 @@
      {
       "member_id": "MOZQUEDA,(ERNESTO)",
       "seat": "AE_CO",
-      "reason": "calling_group_not_authorized"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "POOLE,(TREVOR)",
       "seat": "AE_CO",
-      "reason": "calling_group_not_authorized"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
       "seat": "AE_CO",
-      "reason": "calling_group_not_authorized"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "BRADLEY,(COLTON)",
       "seat": "AE_CO",
-      "reason": "calling_group_not_authorized"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "ADKINS,(CHRISTOPHER)",
       "seat": "AE_CO",
-      "reason": "calling_group_not_authorized"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
       "seat": "AE_CO",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -3240,32 +3280,32 @@
      {
       "member_id": "MOZQUEDA,(ERNESTO)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "POOLE,(TREVOR)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "BRADLEY,(COLTON)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "ADKINS,(CHRISTOPHER)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
       "seat": "ET",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -3390,32 +3430,32 @@
      {
       "member_id": "MOZQUEDA,(ERNESTO)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "POOLE,(TREVOR)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "BRADLEY,(COLTON)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "ADKINS,(CHRISTOPHER)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
       "seat": "TT",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      }
     ],
     "rule_evaluations": [],
@@ -3441,7 +3481,7 @@
       "captured_at": "2026-10-02T05:04:09.945246+00:00",
       "evidence": [
        "board:sched_20261002_000215:1_06",
-       "rest_calculated:2026-10-02T00:08:45"
+       "rest_calculated:2026-10-02T00:20:22"
       ],
       "call_before": null,
       "duty_before": null,
@@ -3461,7 +3501,7 @@
       "captured_at": "2026-10-02T05:04:09.945246+00:00",
       "evidence": [
        "board:sched_20261002_000215:1_06",
-       "rest_calculated:2026-10-02T00:08:45"
+       "rest_calculated:2026-10-02T00:20:22"
       ],
       "call_before": null,
       "duty_before": null,
@@ -3481,7 +3521,7 @@
       "captured_at": "2026-10-02T05:04:09.945246+00:00",
       "evidence": [
        "board:sched_20261002_000215:1_06",
-       "rest_calculated:2026-10-02T00:08:45"
+       "rest_calculated:2026-10-02T00:20:22"
       ],
       "call_before": null,
       "duty_before": null,
@@ -3603,32 +3643,32 @@
      {
       "member_id": "MOZQUEDA,(ERNESTO)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "POOLE,(TREVOR)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "BRADLEY,(COLTON)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "ADKINS,(CHRISTOPHER)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
       "seat": "EN",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -3748,32 +3788,32 @@
      {
       "member_id": "MOZQUEDA,(ERNESTO)",
       "seat": "AE_CO",
-      "reason": "calling_group_not_authorized"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "POOLE,(TREVOR)",
       "seat": "AE_CO",
-      "reason": "calling_group_not_authorized"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
       "seat": "AE_CO",
-      "reason": "calling_group_not_authorized"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "BRADLEY,(COLTON)",
       "seat": "AE_CO",
-      "reason": "calling_group_not_authorized"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "ADKINS,(CHRISTOPHER)",
       "seat": "AE_CO",
-      "reason": "calling_group_not_authorized"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
       "seat": "AE_CO",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -3893,32 +3933,32 @@
      {
       "member_id": "MOZQUEDA,(ERNESTO)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "POOLE,(TREVOR)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "BRADLEY,(COLTON)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "ADKINS,(CHRISTOPHER)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
       "seat": "ET",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -4043,32 +4083,32 @@
      {
       "member_id": "MOZQUEDA,(ERNESTO)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "POOLE,(TREVOR)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "BRADLEY,(COLTON)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "ADKINS,(CHRISTOPHER)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
       "seat": "TT",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      }
     ],
     "rule_evaluations": [],
@@ -4094,7 +4134,7 @@
       "captured_at": "2026-10-02T05:04:36.158754+00:00",
       "evidence": [
        "board:sched_20261002_000215:1_10",
-       "rest_calculated:2026-10-02T00:08:45"
+       "rest_calculated:2026-10-02T00:20:22"
       ],
       "call_before": null,
       "duty_before": null,
@@ -4114,7 +4154,7 @@
       "captured_at": "2026-10-02T05:04:36.158754+00:00",
       "evidence": [
        "board:sched_20261002_000215:1_10",
-       "rest_calculated:2026-10-02T00:08:45"
+       "rest_calculated:2026-10-02T00:20:22"
       ],
       "call_before": null,
       "duty_before": null,
@@ -4227,32 +4267,32 @@
      {
       "member_id": "MOZQUEDA,(ERNESTO)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "POOLE,(TREVOR)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "BRADLEY,(COLTON)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "ADKINS,(CHRISTOPHER)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
       "seat": "EN",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -4367,32 +4407,32 @@
      {
       "member_id": "MOZQUEDA,(ERNESTO)",
       "seat": "AE_CO",
-      "reason": "calling_group_not_authorized"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "POOLE,(TREVOR)",
       "seat": "AE_CO",
-      "reason": "calling_group_not_authorized"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
       "seat": "AE_CO",
-      "reason": "calling_group_not_authorized"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "BRADLEY,(COLTON)",
       "seat": "AE_CO",
-      "reason": "calling_group_not_authorized"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "ADKINS,(CHRISTOPHER)",
       "seat": "AE_CO",
-      "reason": "calling_group_not_authorized"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
       "seat": "AE_CO",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -4517,32 +4557,32 @@
      {
       "member_id": "MOZQUEDA,(ERNESTO)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "POOLE,(TREVOR)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "BRADLEY,(COLTON)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "ADKINS,(CHRISTOPHER)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
       "seat": "ET",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -4667,32 +4707,32 @@
      {
       "member_id": "MOZQUEDA,(ERNESTO)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "POOLE,(TREVOR)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "BRADLEY,(COLTON)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "ADKINS,(CHRISTOPHER)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
       "seat": "TT",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      }
     ],
     "rule_evaluations": [],
@@ -4718,7 +4758,7 @@
       "captured_at": "2026-10-02T05:03:54.356971+00:00",
       "evidence": [
        "board:sched_20261002_000215:1_04",
-       "rest_calculated:2026-10-02T00:08:45",
+       "rest_calculated:2026-10-02T00:20:22",
        "rule:OT_EXTRA_ENGINEER_FALLBACK:2026-09-23.1:268493cf2cace765ae94f5bd81e6c5ab5eaed211ebc7c8182064f91010a6222c",
        "schedule:EX0005EN:operator_confirmation",
        "matrix:ado_matrix_2026"
@@ -4729,35 +4769,15 @@
       "source": "projected",
       "reason": "eligible_calling_order"
      },
-     "AE_CO": {
-      "member_id": "MOZQUEDA,(ERNESTO)",
-      "name": "MOZQUEDA,(ERNESTO)",
-      "seat": "AE_CO",
-      "assignment": "0005",
-      "board": "OTT SWITCHMAN XTRABRD POSITION",
-      "position": 1,
-      "group": "OT_EXTRA_CO",
-      "optional": false,
-      "captured_at": "2026-10-02T04:58:20.472307+00:00",
-      "evidence": [
-       "board:sched_20261001_235519:2_04",
-       "rest_calculated:2026-10-02T00:01:17",
-       "rule:OT_EXTRA_CONDUCTOR_FALLBACK:2026-09-23.1:dcdc8e04c72273d00ab7cee4f36338d7e7ca7ff65dcfac032d79b5690206eb4b",
-       "schedule:EX0005CO:operator_confirmation",
-       "matrix:ado_matrix_2026"
-      ],
-      "call_before": null,
-      "duty_before": null,
-      "schedule_window_verified": true,
-      "source": "projected",
-      "reason": "eligible_calling_order"
-     },
+     "AE_CO": null,
      "ET": null,
      "TT": null
     },
     "call_confirmation_required": false,
-    "complete": true,
-    "missing_seats": [],
+    "complete": false,
+    "missing_seats": [
+     "AE_CO"
+    ],
     "decisions": [
      {
       "member_id": "MARKO,(CAIN)",
@@ -4872,32 +4892,32 @@
      {
       "member_id": "MOZQUEDA,(ERNESTO)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "POOLE,(TREVOR)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "BRADLEY,(COLTON)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "ADKINS,(CHRISTOPHER)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
       "seat": "EN",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -5020,318 +5040,39 @@
       "reason": "different_station"
      },
      {
-      "member_id": "ADKINS,(CHRISTOPHER)",
-      "seat": "AE_CO",
-      "reason": "schedule_cutoff_unknown"
-     },
-     {
-      "member_id": "CONWELL,(JOSHUA)",
-      "seat": "AE_CO",
-      "reason": "unavailable"
-     },
-     {
-      "member_id": "FIGUEROA,(CEDRIC)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "CARROW,(ROBERT)",
-      "seat": "ET",
-      "reason": "seat_not_qualified"
-     },
-     {
-      "member_id": "MARKO,(CAIN)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "MOFFITT,(LUCAS)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "KEOMANIVONG,(SONNY)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "WHITING,(STEVE)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "ONKEN,(WILLIAM)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "STROPES,(THOMAS)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "DAU,(AUSTIN)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "BRESHEARS,(CHRIS)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "BURCH,(RICK)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "MCBRIDE,(KELTON)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "HERREN,(BRANDON)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "GOODELL,(SETH)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "PEREZ,(NICHOLAS)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "REESE,(MATT)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "COLLINS,(THADD)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "LIENEMAN,(DENNIS)",
-      "seat": "ET",
-      "reason": "seat_not_qualified"
-     },
-     {
-      "member_id": "COMSTOCK,(JUSTYCE)",
-      "seat": "ET",
-      "reason": "seat_not_qualified"
-     },
-     {
-      "member_id": "NELSON,(GARRET)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "LINEBAUGH,(MATT)",
-      "seat": "ET",
-      "reason": "seat_not_qualified"
-     },
-     {
-      "member_id": "MURPHY,(ADAM)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "WARRENBURG,(CHRIS)",
-      "seat": "ET",
-      "reason": "different_station"
-     },
-     {
-      "member_id": "CLAPP,(JASON)",
-      "seat": "ET",
-      "reason": "different_station"
-     },
-     {
       "member_id": "MOZQUEDA,(ERNESTO)",
-      "seat": "ET",
-      "reason": "already_reserved"
+      "seat": "AE_CO",
+      "reason": "stale_evidence"
      },
      {
       "member_id": "POOLE,(TREVOR)",
-      "seat": "ET",
-      "reason": "seat_not_qualified"
+      "seat": "AE_CO",
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
-      "seat": "ET",
-      "reason": "seat_not_qualified"
+      "seat": "AE_CO",
+      "reason": "stale_evidence"
      },
      {
       "member_id": "BRADLEY,(COLTON)",
-      "seat": "ET",
-      "reason": "seat_not_qualified"
+      "seat": "AE_CO",
+      "reason": "stale_evidence"
      },
      {
       "member_id": "ADKINS,(CHRISTOPHER)",
-      "seat": "ET",
-      "reason": "seat_not_qualified"
+      "seat": "AE_CO",
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
-      "seat": "ET",
-      "reason": "unavailable"
-     },
-     {
-      "member_id": "FIGUEROA,(CEDRIC)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "CARROW,(ROBERT)",
-      "seat": "TT",
-      "reason": "seat_not_qualified"
-     },
-     {
-      "member_id": "MARKO,(CAIN)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "MOFFITT,(LUCAS)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "KEOMANIVONG,(SONNY)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "WHITING,(STEVE)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "ONKEN,(WILLIAM)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "STROPES,(THOMAS)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "DAU,(AUSTIN)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "BRESHEARS,(CHRIS)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "BURCH,(RICK)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "MCBRIDE,(KELTON)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "HERREN,(BRANDON)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "GOODELL,(SETH)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "PEREZ,(NICHOLAS)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "REESE,(MATT)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "COLLINS,(THADD)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "LIENEMAN,(DENNIS)",
-      "seat": "TT",
-      "reason": "seat_not_qualified"
-     },
-     {
-      "member_id": "COMSTOCK,(JUSTYCE)",
-      "seat": "TT",
-      "reason": "seat_not_qualified"
-     },
-     {
-      "member_id": "NELSON,(GARRET)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "LINEBAUGH,(MATT)",
-      "seat": "TT",
-      "reason": "seat_not_qualified"
-     },
-     {
-      "member_id": "MURPHY,(ADAM)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "WARRENBURG,(CHRIS)",
-      "seat": "TT",
-      "reason": "different_station"
-     },
-     {
-      "member_id": "CLAPP,(JASON)",
-      "seat": "TT",
-      "reason": "different_station"
-     },
-     {
-      "member_id": "MOZQUEDA,(ERNESTO)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "POOLE,(TREVOR)",
-      "seat": "TT",
-      "reason": "seat_not_qualified"
-     },
-     {
-      "member_id": "MASSEY,(COLLIN)",
-      "seat": "TT",
-      "reason": "seat_not_qualified"
-     },
-     {
-      "member_id": "BRADLEY,(COLTON)",
-      "seat": "TT",
-      "reason": "seat_not_qualified"
-     },
-     {
-      "member_id": "ADKINS,(CHRISTOPHER)",
-      "seat": "TT",
-      "reason": "seat_not_qualified"
-     },
-     {
-      "member_id": "CONWELL,(JOSHUA)",
-      "seat": "TT",
-      "reason": "unavailable"
+      "seat": "AE_CO",
+      "reason": "stale_evidence"
      }
     ],
     "rule_evaluations": [],
-    "destination_verified": false
+    "destination_verified": false,
+    "coverage_note": "No complete supported crew: eligible DA hotel supply first, then scoped extra-engineer and extra-conductor supply. Review seat decisions for rest, schedule, reservations or unknown evidence; further vacancy coverage unresolved."
    },
    {
     "leg_id": "357-726|04664|UNVERIFIED|2026-10-03T04:45:00+00:00",
@@ -5353,7 +5094,7 @@
       "captured_at": "2026-10-02T05:03:54.356971+00:00",
       "evidence": [
        "board:sched_20261002_000215:1_04",
-       "rest_calculated:2026-10-02T00:08:45",
+       "rest_calculated:2026-10-02T00:20:22",
        "rule:OT_EXTRA_ENGINEER_FALLBACK:2026-09-23.1:268493cf2cace765ae94f5bd81e6c5ab5eaed211ebc7c8182064f91010a6222c",
        "schedule:EX0002EN:operator_confirmation",
        "matrix:ado_matrix_2026"
@@ -5364,35 +5105,15 @@
       "source": "projected",
       "reason": "eligible_calling_order"
      },
-     "AE_CO": {
-      "member_id": "POOLE,(TREVOR)",
-      "name": "POOLE,(TREVOR)",
-      "seat": "AE_CO",
-      "assignment": "0010",
-      "board": "OTT SWITCHMAN XTRABRD POSITION",
-      "position": 2,
-      "group": "OT_EXTRA_CO",
-      "optional": false,
-      "captured_at": "2026-10-02T04:58:20.472307+00:00",
-      "evidence": [
-       "board:sched_20261001_235519:2_04",
-       "rest_calculated:2026-10-02T00:01:17",
-       "rule:OT_EXTRA_CONDUCTOR_FALLBACK:2026-09-23.1:dcdc8e04c72273d00ab7cee4f36338d7e7ca7ff65dcfac032d79b5690206eb4b",
-       "schedule:EX0010CO:operator_confirmation",
-       "matrix:ado_matrix_2026"
-      ],
-      "call_before": null,
-      "duty_before": null,
-      "schedule_window_verified": true,
-      "source": "projected",
-      "reason": "eligible_calling_order"
-     },
+     "AE_CO": null,
      "ET": null,
      "TT": null
     },
     "call_confirmation_required": false,
-    "complete": true,
-    "missing_seats": [],
+    "complete": false,
+    "missing_seats": [
+     "AE_CO"
+    ],
     "decisions": [
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -5512,32 +5233,32 @@
      {
       "member_id": "MOZQUEDA,(ERNESTO)",
       "seat": "EN",
-      "reason": "already_reserved"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "POOLE,(TREVOR)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "BRADLEY,(COLTON)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "ADKINS,(CHRISTOPHER)",
       "seat": "EN",
-      "reason": "seat_not_qualified"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
       "seat": "EN",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -5662,321 +5383,37 @@
      {
       "member_id": "MOZQUEDA,(ERNESTO)",
       "seat": "AE_CO",
-      "reason": "already_reserved"
+      "reason": "stale_evidence"
+     },
+     {
+      "member_id": "POOLE,(TREVOR)",
+      "seat": "AE_CO",
+      "reason": "stale_evidence"
+     },
+     {
+      "member_id": "MASSEY,(COLLIN)",
+      "seat": "AE_CO",
+      "reason": "stale_evidence"
+     },
+     {
+      "member_id": "BRADLEY,(COLTON)",
+      "seat": "AE_CO",
+      "reason": "stale_evidence"
      },
      {
       "member_id": "ADKINS,(CHRISTOPHER)",
       "seat": "AE_CO",
-      "reason": "schedule_cutoff_unknown"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
       "seat": "AE_CO",
-      "reason": "unavailable"
-     },
-     {
-      "member_id": "FIGUEROA,(CEDRIC)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "CARROW,(ROBERT)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "MARKO,(CAIN)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "MOFFITT,(LUCAS)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "KEOMANIVONG,(SONNY)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "WHITING,(STEVE)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "ONKEN,(WILLIAM)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "STROPES,(THOMAS)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "DAU,(AUSTIN)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "BRESHEARS,(CHRIS)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "BURCH,(RICK)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "MCBRIDE,(KELTON)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "HERREN,(BRANDON)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "GOODELL,(SETH)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "PEREZ,(NICHOLAS)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "REESE,(MATT)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "COLLINS,(THADD)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "LIENEMAN,(DENNIS)",
-      "seat": "ET",
-      "reason": "seat_not_qualified"
-     },
-     {
-      "member_id": "COMSTOCK,(JUSTYCE)",
-      "seat": "ET",
-      "reason": "seat_not_qualified"
-     },
-     {
-      "member_id": "NELSON,(GARRET)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "LINEBAUGH,(MATT)",
-      "seat": "ET",
-      "reason": "seat_not_qualified"
-     },
-     {
-      "member_id": "MURPHY,(ADAM)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "WARRENBURG,(CHRIS)",
-      "seat": "ET",
-      "reason": "different_station"
-     },
-     {
-      "member_id": "CLAPP,(JASON)",
-      "seat": "ET",
-      "reason": "different_station"
-     },
-     {
-      "member_id": "MOZQUEDA,(ERNESTO)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "POOLE,(TREVOR)",
-      "seat": "ET",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "MASSEY,(COLLIN)",
-      "seat": "ET",
-      "reason": "seat_not_qualified"
-     },
-     {
-      "member_id": "BRADLEY,(COLTON)",
-      "seat": "ET",
-      "reason": "seat_not_qualified"
-     },
-     {
-      "member_id": "ADKINS,(CHRISTOPHER)",
-      "seat": "ET",
-      "reason": "seat_not_qualified"
-     },
-     {
-      "member_id": "CONWELL,(JOSHUA)",
-      "seat": "ET",
-      "reason": "unavailable"
-     },
-     {
-      "member_id": "FIGUEROA,(CEDRIC)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "CARROW,(ROBERT)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "MARKO,(CAIN)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "MOFFITT,(LUCAS)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "KEOMANIVONG,(SONNY)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "WHITING,(STEVE)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "ONKEN,(WILLIAM)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "STROPES,(THOMAS)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "DAU,(AUSTIN)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "BRESHEARS,(CHRIS)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "BURCH,(RICK)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "MCBRIDE,(KELTON)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "HERREN,(BRANDON)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "GOODELL,(SETH)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "PEREZ,(NICHOLAS)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "REESE,(MATT)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "COLLINS,(THADD)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "LIENEMAN,(DENNIS)",
-      "seat": "TT",
-      "reason": "seat_not_qualified"
-     },
-     {
-      "member_id": "COMSTOCK,(JUSTYCE)",
-      "seat": "TT",
-      "reason": "seat_not_qualified"
-     },
-     {
-      "member_id": "NELSON,(GARRET)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "LINEBAUGH,(MATT)",
-      "seat": "TT",
-      "reason": "seat_not_qualified"
-     },
-     {
-      "member_id": "MURPHY,(ADAM)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "WARRENBURG,(CHRIS)",
-      "seat": "TT",
-      "reason": "different_station"
-     },
-     {
-      "member_id": "CLAPP,(JASON)",
-      "seat": "TT",
-      "reason": "different_station"
-     },
-     {
-      "member_id": "MOZQUEDA,(ERNESTO)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "POOLE,(TREVOR)",
-      "seat": "TT",
-      "reason": "already_reserved"
-     },
-     {
-      "member_id": "MASSEY,(COLLIN)",
-      "seat": "TT",
-      "reason": "seat_not_qualified"
-     },
-     {
-      "member_id": "BRADLEY,(COLTON)",
-      "seat": "TT",
-      "reason": "seat_not_qualified"
-     },
-     {
-      "member_id": "ADKINS,(CHRISTOPHER)",
-      "seat": "TT",
-      "reason": "seat_not_qualified"
-     },
-     {
-      "member_id": "CONWELL,(JOSHUA)",
-      "seat": "TT",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      }
     ],
     "rule_evaluations": [],
-    "destination_verified": false
+    "destination_verified": false,
+    "coverage_note": "No complete supported crew: eligible DA hotel supply first, then scoped extra-engineer and extra-conductor supply. Review seat decisions for rest, schedule, reservations or unknown evidence; further vacancy coverage unresolved."
    }
   ],
   "rules_applied": [
@@ -7347,11 +6784,11 @@
   ]
  },
  "meta": {
-  "collection_state": "active",
-  "collection_message": "Light sweep sched_20261002_000215.",
+  "collection_state": "awaiting_login",
+  "collection_message": "Session lost; waiting at the RSA prompt.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-10-02T05:08:59+00:00",
+  "generated_at": "2026-10-02T05:20:36+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20261002_000215",
@@ -11671,32 +11108,32 @@
         {
          "member_id": "MOZQUEDA,(ERNESTO)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "POOLE,(TREVOR)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "BRADLEY,(COLTON)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "ADKINS,(CHRISTOPHER)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
          "seat": "EN",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -11821,32 +11258,32 @@
         {
          "member_id": "MOZQUEDA,(ERNESTO)",
          "seat": "AE_CO",
-         "reason": "not_rested_by_call"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "POOLE,(TREVOR)",
          "seat": "AE_CO",
-         "reason": "not_rested_by_call"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
          "seat": "AE_CO",
-         "reason": "not_rested_by_call"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "BRADLEY,(COLTON)",
          "seat": "AE_CO",
-         "reason": "not_rested_by_call"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "ADKINS,(CHRISTOPHER)",
          "seat": "AE_CO",
-         "reason": "not_rested_by_call"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
          "seat": "AE_CO",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         }
        ],
        "rule_evaluations": [],
@@ -11861,8 +11298,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 36m",
-         "minutes": 516
+         "label": "8h 25m",
+         "minutes": 505
         },
         "name": "JACKMAN,(MATT)"
        },
@@ -11870,8 +11307,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 36m",
-         "minutes": 516
+         "label": "8h 25m",
+         "minutes": 505
         },
         "name": "LUDWIG,(AARON)"
        }
@@ -11921,7 +11358,7 @@
          "captured_at": "2026-10-02T05:04:25.863293+00:00",
          "evidence": [
           "board:sched_20261002_000215:1_09",
-          "rest_calculated:2026-10-02T00:08:45"
+          "rest_calculated:2026-10-02T00:20:22"
          ],
          "call_before": null,
          "duty_before": null,
@@ -11941,7 +11378,7 @@
          "captured_at": "2026-10-02T05:04:25.863293+00:00",
          "evidence": [
           "board:sched_20261002_000215:1_09",
-          "rest_calculated:2026-10-02T00:08:45"
+          "rest_calculated:2026-10-02T00:20:22"
          ],
          "call_before": null,
          "duty_before": null,
@@ -12064,32 +11501,32 @@
         {
          "member_id": "MOZQUEDA,(ERNESTO)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "POOLE,(TREVOR)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "BRADLEY,(COLTON)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "ADKINS,(CHRISTOPHER)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
          "seat": "EN",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -12202,14 +11639,34 @@
          "reason": "different_station"
         },
         {
+         "member_id": "MOZQUEDA,(ERNESTO)",
+         "seat": "AE_CO",
+         "reason": "stale_evidence"
+        },
+        {
+         "member_id": "POOLE,(TREVOR)",
+         "seat": "AE_CO",
+         "reason": "stale_evidence"
+        },
+        {
+         "member_id": "MASSEY,(COLLIN)",
+         "seat": "AE_CO",
+         "reason": "stale_evidence"
+        },
+        {
+         "member_id": "BRADLEY,(COLTON)",
+         "seat": "AE_CO",
+         "reason": "stale_evidence"
+        },
+        {
          "member_id": "ADKINS,(CHRISTOPHER)",
          "seat": "AE_CO",
-         "reason": "schedule_cutoff_unknown"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
          "seat": "AE_CO",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -12334,32 +11791,32 @@
         {
          "member_id": "MOZQUEDA,(ERNESTO)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "POOLE,(TREVOR)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "BRADLEY,(COLTON)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "ADKINS,(CHRISTOPHER)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
          "seat": "ET",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -12484,32 +11941,32 @@
         {
          "member_id": "MOZQUEDA,(ERNESTO)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "POOLE,(TREVOR)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "BRADLEY,(COLTON)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "ADKINS,(CHRISTOPHER)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
          "seat": "TT",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         }
        ],
        "rule_evaluations": [],
@@ -12565,7 +12022,7 @@
          "captured_at": "2026-10-02T05:04:25.863293+00:00",
          "evidence": [
           "board:sched_20261002_000215:1_09",
-          "rest_calculated:2026-10-02T00:08:45"
+          "rest_calculated:2026-10-02T00:20:22"
          ],
          "call_before": null,
          "duty_before": null,
@@ -12585,7 +12042,7 @@
          "captured_at": "2026-10-02T05:04:25.863293+00:00",
          "evidence": [
           "board:sched_20261002_000215:1_09",
-          "rest_calculated:2026-10-02T00:08:45"
+          "rest_calculated:2026-10-02T00:20:22"
          ],
          "call_before": null,
          "duty_before": null,
@@ -12713,32 +12170,32 @@
         {
          "member_id": "MOZQUEDA,(ERNESTO)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "POOLE,(TREVOR)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "BRADLEY,(COLTON)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "ADKINS,(CHRISTOPHER)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
          "seat": "EN",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -12856,14 +12313,34 @@
          "reason": "different_station"
         },
         {
+         "member_id": "MOZQUEDA,(ERNESTO)",
+         "seat": "AE_CO",
+         "reason": "stale_evidence"
+        },
+        {
+         "member_id": "POOLE,(TREVOR)",
+         "seat": "AE_CO",
+         "reason": "stale_evidence"
+        },
+        {
+         "member_id": "MASSEY,(COLLIN)",
+         "seat": "AE_CO",
+         "reason": "stale_evidence"
+        },
+        {
+         "member_id": "BRADLEY,(COLTON)",
+         "seat": "AE_CO",
+         "reason": "stale_evidence"
+        },
+        {
          "member_id": "ADKINS,(CHRISTOPHER)",
          "seat": "AE_CO",
-         "reason": "schedule_cutoff_unknown"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
          "seat": "AE_CO",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -12988,32 +12465,32 @@
         {
          "member_id": "MOZQUEDA,(ERNESTO)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "POOLE,(TREVOR)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "BRADLEY,(COLTON)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "ADKINS,(CHRISTOPHER)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
          "seat": "ET",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -13138,32 +12615,32 @@
         {
          "member_id": "MOZQUEDA,(ERNESTO)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "POOLE,(TREVOR)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "BRADLEY,(COLTON)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "ADKINS,(CHRISTOPHER)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
          "seat": "TT",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         }
        ],
        "rule_evaluations": [],
@@ -13219,7 +12696,7 @@
          "captured_at": "2026-10-02T05:04:33.657228+00:00",
          "evidence": [
           "board:sched_20261002_000215:1_10",
-          "rest_calculated:2026-10-02T00:08:45"
+          "rest_calculated:2026-10-02T00:20:22"
          ],
          "call_before": null,
          "duty_before": null,
@@ -13239,7 +12716,7 @@
          "captured_at": "2026-10-02T05:04:33.657228+00:00",
          "evidence": [
           "board:sched_20261002_000215:1_10",
-          "rest_calculated:2026-10-02T00:08:45"
+          "rest_calculated:2026-10-02T00:20:22"
          ],
          "call_before": null,
          "duty_before": null,
@@ -13259,7 +12736,7 @@
          "captured_at": "2026-10-02T05:04:41.440424+00:00",
          "evidence": [
           "board:sched_20261002_000215:1_11",
-          "rest_calculated:2026-10-02T00:08:45"
+          "rest_calculated:2026-10-02T00:20:22"
          ],
          "call_before": null,
          "duty_before": null,
@@ -13366,32 +12843,32 @@
         {
          "member_id": "MOZQUEDA,(ERNESTO)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "POOLE,(TREVOR)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "BRADLEY,(COLTON)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "ADKINS,(CHRISTOPHER)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
          "seat": "EN",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -13496,32 +12973,32 @@
         {
          "member_id": "MOZQUEDA,(ERNESTO)",
          "seat": "AE_CO",
-         "reason": "calling_group_not_authorized"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "POOLE,(TREVOR)",
          "seat": "AE_CO",
-         "reason": "calling_group_not_authorized"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
          "seat": "AE_CO",
-         "reason": "calling_group_not_authorized"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "BRADLEY,(COLTON)",
          "seat": "AE_CO",
-         "reason": "calling_group_not_authorized"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "ADKINS,(CHRISTOPHER)",
          "seat": "AE_CO",
-         "reason": "calling_group_not_authorized"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
          "seat": "AE_CO",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -13641,32 +13118,32 @@
         {
          "member_id": "MOZQUEDA,(ERNESTO)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "POOLE,(TREVOR)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "BRADLEY,(COLTON)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "ADKINS,(CHRISTOPHER)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
          "seat": "ET",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -13791,32 +13268,32 @@
         {
          "member_id": "MOZQUEDA,(ERNESTO)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "POOLE,(TREVOR)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "BRADLEY,(COLTON)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "ADKINS,(CHRISTOPHER)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
          "seat": "TT",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         }
        ],
        "rule_evaluations": [],
@@ -13932,7 +13409,7 @@
          "captured_at": "2026-10-02T05:04:33.657228+00:00",
          "evidence": [
           "board:sched_20261002_000215:1_10",
-          "rest_calculated:2026-10-02T00:08:45"
+          "rest_calculated:2026-10-02T00:20:22"
          ],
          "call_before": null,
          "duty_before": null,
@@ -13952,7 +13429,7 @@
          "captured_at": "2026-10-02T05:04:33.657228+00:00",
          "evidence": [
           "board:sched_20261002_000215:1_10",
-          "rest_calculated:2026-10-02T00:08:45"
+          "rest_calculated:2026-10-02T00:20:22"
          ],
          "call_before": null,
          "duty_before": null,
@@ -13972,7 +13449,7 @@
          "captured_at": "2026-10-02T05:04:41.440424+00:00",
          "evidence": [
           "board:sched_20261002_000215:1_11",
-          "rest_calculated:2026-10-02T00:08:45"
+          "rest_calculated:2026-10-02T00:20:22"
          ],
          "call_before": null,
          "duty_before": null,
@@ -14074,32 +13551,32 @@
         {
          "member_id": "MOZQUEDA,(ERNESTO)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "POOLE,(TREVOR)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "BRADLEY,(COLTON)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "ADKINS,(CHRISTOPHER)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
          "seat": "EN",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -14204,32 +13681,32 @@
         {
          "member_id": "MOZQUEDA,(ERNESTO)",
          "seat": "AE_CO",
-         "reason": "calling_group_not_authorized"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "POOLE,(TREVOR)",
          "seat": "AE_CO",
-         "reason": "calling_group_not_authorized"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
          "seat": "AE_CO",
-         "reason": "calling_group_not_authorized"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "BRADLEY,(COLTON)",
          "seat": "AE_CO",
-         "reason": "calling_group_not_authorized"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "ADKINS,(CHRISTOPHER)",
          "seat": "AE_CO",
-         "reason": "calling_group_not_authorized"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
          "seat": "AE_CO",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -14349,32 +13826,32 @@
         {
          "member_id": "MOZQUEDA,(ERNESTO)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "POOLE,(TREVOR)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "BRADLEY,(COLTON)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "ADKINS,(CHRISTOPHER)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
          "seat": "ET",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -14499,32 +13976,32 @@
         {
          "member_id": "MOZQUEDA,(ERNESTO)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "POOLE,(TREVOR)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "BRADLEY,(COLTON)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "ADKINS,(CHRISTOPHER)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
          "seat": "TT",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         }
        ],
        "rule_evaluations": [],
@@ -14580,7 +14057,7 @@
          "captured_at": "2026-10-02T05:04:33.657228+00:00",
          "evidence": [
           "board:sched_20261002_000215:1_10",
-          "rest_calculated:2026-10-02T00:08:45"
+          "rest_calculated:2026-10-02T00:20:22"
          ],
          "call_before": null,
          "duty_before": null,
@@ -14600,7 +14077,7 @@
          "captured_at": "2026-10-02T05:04:33.657228+00:00",
          "evidence": [
           "board:sched_20261002_000215:1_10",
-          "rest_calculated:2026-10-02T00:08:45"
+          "rest_calculated:2026-10-02T00:20:22"
          ],
          "call_before": null,
          "duty_before": null,
@@ -14708,32 +14185,32 @@
         {
          "member_id": "MOZQUEDA,(ERNESTO)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "POOLE,(TREVOR)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "BRADLEY,(COLTON)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "ADKINS,(CHRISTOPHER)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
          "seat": "EN",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -14843,32 +14320,32 @@
         {
          "member_id": "MOZQUEDA,(ERNESTO)",
          "seat": "AE_CO",
-         "reason": "calling_group_not_authorized"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "POOLE,(TREVOR)",
          "seat": "AE_CO",
-         "reason": "calling_group_not_authorized"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
          "seat": "AE_CO",
-         "reason": "calling_group_not_authorized"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "BRADLEY,(COLTON)",
          "seat": "AE_CO",
-         "reason": "calling_group_not_authorized"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "ADKINS,(CHRISTOPHER)",
          "seat": "AE_CO",
-         "reason": "calling_group_not_authorized"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
          "seat": "AE_CO",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -14993,32 +14470,32 @@
         {
          "member_id": "MOZQUEDA,(ERNESTO)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "POOLE,(TREVOR)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "BRADLEY,(COLTON)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "ADKINS,(CHRISTOPHER)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
          "seat": "ET",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -15143,32 +14620,32 @@
         {
          "member_id": "MOZQUEDA,(ERNESTO)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "POOLE,(TREVOR)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "BRADLEY,(COLTON)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "ADKINS,(CHRISTOPHER)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
          "seat": "TT",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         }
        ],
        "rule_evaluations": [],
@@ -15224,7 +14701,7 @@
          "captured_at": "2026-10-02T05:04:09.945246+00:00",
          "evidence": [
           "board:sched_20261002_000215:1_06",
-          "rest_calculated:2026-10-02T00:08:45"
+          "rest_calculated:2026-10-02T00:20:22"
          ],
          "call_before": null,
          "duty_before": null,
@@ -15244,7 +14721,7 @@
          "captured_at": "2026-10-02T05:04:09.945246+00:00",
          "evidence": [
           "board:sched_20261002_000215:1_06",
-          "rest_calculated:2026-10-02T00:08:45"
+          "rest_calculated:2026-10-02T00:20:22"
          ],
          "call_before": null,
          "duty_before": null,
@@ -15264,7 +14741,7 @@
          "captured_at": "2026-10-02T05:04:09.945246+00:00",
          "evidence": [
           "board:sched_20261002_000215:1_06",
-          "rest_calculated:2026-10-02T00:08:45"
+          "rest_calculated:2026-10-02T00:20:22"
          ],
          "call_before": null,
          "duty_before": null,
@@ -15386,32 +14863,32 @@
         {
          "member_id": "MOZQUEDA,(ERNESTO)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "POOLE,(TREVOR)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "BRADLEY,(COLTON)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "ADKINS,(CHRISTOPHER)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
          "seat": "EN",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -15531,32 +15008,32 @@
         {
          "member_id": "MOZQUEDA,(ERNESTO)",
          "seat": "AE_CO",
-         "reason": "calling_group_not_authorized"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "POOLE,(TREVOR)",
          "seat": "AE_CO",
-         "reason": "calling_group_not_authorized"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
          "seat": "AE_CO",
-         "reason": "calling_group_not_authorized"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "BRADLEY,(COLTON)",
          "seat": "AE_CO",
-         "reason": "calling_group_not_authorized"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "ADKINS,(CHRISTOPHER)",
          "seat": "AE_CO",
-         "reason": "calling_group_not_authorized"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
          "seat": "AE_CO",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -15676,32 +15153,32 @@
         {
          "member_id": "MOZQUEDA,(ERNESTO)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "POOLE,(TREVOR)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "BRADLEY,(COLTON)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "ADKINS,(CHRISTOPHER)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
          "seat": "ET",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -15826,32 +15303,32 @@
         {
          "member_id": "MOZQUEDA,(ERNESTO)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "POOLE,(TREVOR)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "BRADLEY,(COLTON)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "ADKINS,(CHRISTOPHER)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
          "seat": "TT",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         }
        ],
        "rule_evaluations": [],
@@ -15907,7 +15384,7 @@
          "captured_at": "2026-10-02T05:04:36.158754+00:00",
          "evidence": [
           "board:sched_20261002_000215:1_10",
-          "rest_calculated:2026-10-02T00:08:45"
+          "rest_calculated:2026-10-02T00:20:22"
          ],
          "call_before": null,
          "duty_before": null,
@@ -15927,7 +15404,7 @@
          "captured_at": "2026-10-02T05:04:36.158754+00:00",
          "evidence": [
           "board:sched_20261002_000215:1_10",
-          "rest_calculated:2026-10-02T00:08:45"
+          "rest_calculated:2026-10-02T00:20:22"
          ],
          "call_before": null,
          "duty_before": null,
@@ -16040,32 +15517,32 @@
         {
          "member_id": "MOZQUEDA,(ERNESTO)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "POOLE,(TREVOR)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "BRADLEY,(COLTON)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "ADKINS,(CHRISTOPHER)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
          "seat": "EN",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -16180,32 +15657,32 @@
         {
          "member_id": "MOZQUEDA,(ERNESTO)",
          "seat": "AE_CO",
-         "reason": "calling_group_not_authorized"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "POOLE,(TREVOR)",
          "seat": "AE_CO",
-         "reason": "calling_group_not_authorized"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
          "seat": "AE_CO",
-         "reason": "calling_group_not_authorized"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "BRADLEY,(COLTON)",
          "seat": "AE_CO",
-         "reason": "calling_group_not_authorized"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "ADKINS,(CHRISTOPHER)",
          "seat": "AE_CO",
-         "reason": "calling_group_not_authorized"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
          "seat": "AE_CO",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -16330,32 +15807,32 @@
         {
          "member_id": "MOZQUEDA,(ERNESTO)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "POOLE,(TREVOR)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "BRADLEY,(COLTON)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "ADKINS,(CHRISTOPHER)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
          "seat": "ET",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -16480,32 +15957,32 @@
         {
          "member_id": "MOZQUEDA,(ERNESTO)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "POOLE,(TREVOR)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "BRADLEY,(COLTON)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "ADKINS,(CHRISTOPHER)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
          "seat": "TT",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         }
        ],
        "rule_evaluations": [],
@@ -16561,7 +16038,7 @@
          "captured_at": "2026-10-02T05:03:54.356971+00:00",
          "evidence": [
           "board:sched_20261002_000215:1_04",
-          "rest_calculated:2026-10-02T00:08:45",
+          "rest_calculated:2026-10-02T00:20:22",
           "rule:OT_EXTRA_ENGINEER_FALLBACK:2026-09-23.1:268493cf2cace765ae94f5bd81e6c5ab5eaed211ebc7c8182064f91010a6222c",
           "schedule:EX0005EN:operator_confirmation",
           "matrix:ado_matrix_2026"
@@ -16572,35 +16049,15 @@
          "source": "projected",
          "reason": "eligible_calling_order"
         },
-        "AE_CO": {
-         "member_id": "MOZQUEDA,(ERNESTO)",
-         "name": "MOZQUEDA,(ERNESTO)",
-         "seat": "AE_CO",
-         "assignment": "0005",
-         "board": "OTT SWITCHMAN XTRABRD POSITION",
-         "position": 1,
-         "group": "OT_EXTRA_CO",
-         "optional": false,
-         "captured_at": "2026-10-02T04:58:20.472307+00:00",
-         "evidence": [
-          "board:sched_20261001_235519:2_04",
-          "rest_calculated:2026-10-02T00:01:17",
-          "rule:OT_EXTRA_CONDUCTOR_FALLBACK:2026-09-23.1:dcdc8e04c72273d00ab7cee4f36338d7e7ca7ff65dcfac032d79b5690206eb4b",
-          "schedule:EX0005CO:operator_confirmation",
-          "matrix:ado_matrix_2026"
-         ],
-         "call_before": null,
-         "duty_before": null,
-         "schedule_window_verified": true,
-         "source": "projected",
-         "reason": "eligible_calling_order"
-        },
+        "AE_CO": null,
         "ET": null,
         "TT": null
        },
        "call_confirmation_required": false,
-       "complete": true,
-       "missing_seats": [],
+       "complete": false,
+       "missing_seats": [
+        "AE_CO"
+       ],
        "decisions": [
         {
          "member_id": "MARKO,(CAIN)",
@@ -16715,32 +16172,32 @@
         {
          "member_id": "MOZQUEDA,(ERNESTO)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "POOLE,(TREVOR)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "BRADLEY,(COLTON)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "ADKINS,(CHRISTOPHER)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
          "seat": "EN",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -16863,318 +16320,39 @@
          "reason": "different_station"
         },
         {
-         "member_id": "ADKINS,(CHRISTOPHER)",
-         "seat": "AE_CO",
-         "reason": "schedule_cutoff_unknown"
-        },
-        {
-         "member_id": "CONWELL,(JOSHUA)",
-         "seat": "AE_CO",
-         "reason": "unavailable"
-        },
-        {
-         "member_id": "FIGUEROA,(CEDRIC)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "CARROW,(ROBERT)",
-         "seat": "ET",
-         "reason": "seat_not_qualified"
-        },
-        {
-         "member_id": "MARKO,(CAIN)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "MOFFITT,(LUCAS)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "KEOMANIVONG,(SONNY)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "WHITING,(STEVE)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "ONKEN,(WILLIAM)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "STROPES,(THOMAS)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "DAU,(AUSTIN)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "BRESHEARS,(CHRIS)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "BURCH,(RICK)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "MCBRIDE,(KELTON)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "HERREN,(BRANDON)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "GOODELL,(SETH)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "PEREZ,(NICHOLAS)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "REESE,(MATT)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "COLLINS,(THADD)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "LIENEMAN,(DENNIS)",
-         "seat": "ET",
-         "reason": "seat_not_qualified"
-        },
-        {
-         "member_id": "COMSTOCK,(JUSTYCE)",
-         "seat": "ET",
-         "reason": "seat_not_qualified"
-        },
-        {
-         "member_id": "NELSON,(GARRET)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "LINEBAUGH,(MATT)",
-         "seat": "ET",
-         "reason": "seat_not_qualified"
-        },
-        {
-         "member_id": "MURPHY,(ADAM)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "WARRENBURG,(CHRIS)",
-         "seat": "ET",
-         "reason": "different_station"
-        },
-        {
-         "member_id": "CLAPP,(JASON)",
-         "seat": "ET",
-         "reason": "different_station"
-        },
-        {
          "member_id": "MOZQUEDA,(ERNESTO)",
-         "seat": "ET",
-         "reason": "already_reserved"
+         "seat": "AE_CO",
+         "reason": "stale_evidence"
         },
         {
          "member_id": "POOLE,(TREVOR)",
-         "seat": "ET",
-         "reason": "seat_not_qualified"
+         "seat": "AE_CO",
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
-         "seat": "ET",
-         "reason": "seat_not_qualified"
+         "seat": "AE_CO",
+         "reason": "stale_evidence"
         },
         {
          "member_id": "BRADLEY,(COLTON)",
-         "seat": "ET",
-         "reason": "seat_not_qualified"
+         "seat": "AE_CO",
+         "reason": "stale_evidence"
         },
         {
          "member_id": "ADKINS,(CHRISTOPHER)",
-         "seat": "ET",
-         "reason": "seat_not_qualified"
+         "seat": "AE_CO",
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
-         "seat": "ET",
-         "reason": "unavailable"
-        },
-        {
-         "member_id": "FIGUEROA,(CEDRIC)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "CARROW,(ROBERT)",
-         "seat": "TT",
-         "reason": "seat_not_qualified"
-        },
-        {
-         "member_id": "MARKO,(CAIN)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "MOFFITT,(LUCAS)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "KEOMANIVONG,(SONNY)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "WHITING,(STEVE)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "ONKEN,(WILLIAM)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "STROPES,(THOMAS)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "DAU,(AUSTIN)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "BRESHEARS,(CHRIS)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "BURCH,(RICK)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "MCBRIDE,(KELTON)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "HERREN,(BRANDON)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "GOODELL,(SETH)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "PEREZ,(NICHOLAS)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "REESE,(MATT)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "COLLINS,(THADD)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "LIENEMAN,(DENNIS)",
-         "seat": "TT",
-         "reason": "seat_not_qualified"
-        },
-        {
-         "member_id": "COMSTOCK,(JUSTYCE)",
-         "seat": "TT",
-         "reason": "seat_not_qualified"
-        },
-        {
-         "member_id": "NELSON,(GARRET)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "LINEBAUGH,(MATT)",
-         "seat": "TT",
-         "reason": "seat_not_qualified"
-        },
-        {
-         "member_id": "MURPHY,(ADAM)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "WARRENBURG,(CHRIS)",
-         "seat": "TT",
-         "reason": "different_station"
-        },
-        {
-         "member_id": "CLAPP,(JASON)",
-         "seat": "TT",
-         "reason": "different_station"
-        },
-        {
-         "member_id": "MOZQUEDA,(ERNESTO)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "POOLE,(TREVOR)",
-         "seat": "TT",
-         "reason": "seat_not_qualified"
-        },
-        {
-         "member_id": "MASSEY,(COLLIN)",
-         "seat": "TT",
-         "reason": "seat_not_qualified"
-        },
-        {
-         "member_id": "BRADLEY,(COLTON)",
-         "seat": "TT",
-         "reason": "seat_not_qualified"
-        },
-        {
-         "member_id": "ADKINS,(CHRISTOPHER)",
-         "seat": "TT",
-         "reason": "seat_not_qualified"
-        },
-        {
-         "member_id": "CONWELL,(JOSHUA)",
-         "seat": "TT",
-         "reason": "unavailable"
+         "seat": "AE_CO",
+         "reason": "stale_evidence"
         }
        ],
        "rule_evaluations": [],
-       "destination_verified": false
+       "destination_verified": false,
+       "coverage_note": "No complete supported crew: eligible DA hotel supply first, then scoped extra-engineer and extra-conductor supply. Review seat decisions for rest, schedule, reservations or unknown evidence; further vacancy coverage unresolved."
       }
      },
      {
@@ -17226,7 +16404,7 @@
          "captured_at": "2026-10-02T05:03:54.356971+00:00",
          "evidence": [
           "board:sched_20261002_000215:1_04",
-          "rest_calculated:2026-10-02T00:08:45",
+          "rest_calculated:2026-10-02T00:20:22",
           "rule:OT_EXTRA_ENGINEER_FALLBACK:2026-09-23.1:268493cf2cace765ae94f5bd81e6c5ab5eaed211ebc7c8182064f91010a6222c",
           "schedule:EX0002EN:operator_confirmation",
           "matrix:ado_matrix_2026"
@@ -17237,35 +16415,15 @@
          "source": "projected",
          "reason": "eligible_calling_order"
         },
-        "AE_CO": {
-         "member_id": "POOLE,(TREVOR)",
-         "name": "POOLE,(TREVOR)",
-         "seat": "AE_CO",
-         "assignment": "0010",
-         "board": "OTT SWITCHMAN XTRABRD POSITION",
-         "position": 2,
-         "group": "OT_EXTRA_CO",
-         "optional": false,
-         "captured_at": "2026-10-02T04:58:20.472307+00:00",
-         "evidence": [
-          "board:sched_20261001_235519:2_04",
-          "rest_calculated:2026-10-02T00:01:17",
-          "rule:OT_EXTRA_CONDUCTOR_FALLBACK:2026-09-23.1:dcdc8e04c72273d00ab7cee4f36338d7e7ca7ff65dcfac032d79b5690206eb4b",
-          "schedule:EX0010CO:operator_confirmation",
-          "matrix:ado_matrix_2026"
-         ],
-         "call_before": null,
-         "duty_before": null,
-         "schedule_window_verified": true,
-         "source": "projected",
-         "reason": "eligible_calling_order"
-        },
+        "AE_CO": null,
         "ET": null,
         "TT": null
        },
        "call_confirmation_required": false,
-       "complete": true,
-       "missing_seats": [],
+       "complete": false,
+       "missing_seats": [
+        "AE_CO"
+       ],
        "decisions": [
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -17385,32 +16543,32 @@
         {
          "member_id": "MOZQUEDA,(ERNESTO)",
          "seat": "EN",
-         "reason": "already_reserved"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "POOLE,(TREVOR)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "BRADLEY,(COLTON)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "ADKINS,(CHRISTOPHER)",
          "seat": "EN",
-         "reason": "seat_not_qualified"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
          "seat": "EN",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -17535,321 +16693,37 @@
         {
          "member_id": "MOZQUEDA,(ERNESTO)",
          "seat": "AE_CO",
-         "reason": "already_reserved"
+         "reason": "stale_evidence"
+        },
+        {
+         "member_id": "POOLE,(TREVOR)",
+         "seat": "AE_CO",
+         "reason": "stale_evidence"
+        },
+        {
+         "member_id": "MASSEY,(COLLIN)",
+         "seat": "AE_CO",
+         "reason": "stale_evidence"
+        },
+        {
+         "member_id": "BRADLEY,(COLTON)",
+         "seat": "AE_CO",
+         "reason": "stale_evidence"
         },
         {
          "member_id": "ADKINS,(CHRISTOPHER)",
          "seat": "AE_CO",
-         "reason": "schedule_cutoff_unknown"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
          "seat": "AE_CO",
-         "reason": "unavailable"
-        },
-        {
-         "member_id": "FIGUEROA,(CEDRIC)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "CARROW,(ROBERT)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "MARKO,(CAIN)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "MOFFITT,(LUCAS)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "KEOMANIVONG,(SONNY)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "WHITING,(STEVE)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "ONKEN,(WILLIAM)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "STROPES,(THOMAS)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "DAU,(AUSTIN)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "BRESHEARS,(CHRIS)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "BURCH,(RICK)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "MCBRIDE,(KELTON)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "HERREN,(BRANDON)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "GOODELL,(SETH)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "PEREZ,(NICHOLAS)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "REESE,(MATT)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "COLLINS,(THADD)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "LIENEMAN,(DENNIS)",
-         "seat": "ET",
-         "reason": "seat_not_qualified"
-        },
-        {
-         "member_id": "COMSTOCK,(JUSTYCE)",
-         "seat": "ET",
-         "reason": "seat_not_qualified"
-        },
-        {
-         "member_id": "NELSON,(GARRET)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "LINEBAUGH,(MATT)",
-         "seat": "ET",
-         "reason": "seat_not_qualified"
-        },
-        {
-         "member_id": "MURPHY,(ADAM)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "WARRENBURG,(CHRIS)",
-         "seat": "ET",
-         "reason": "different_station"
-        },
-        {
-         "member_id": "CLAPP,(JASON)",
-         "seat": "ET",
-         "reason": "different_station"
-        },
-        {
-         "member_id": "MOZQUEDA,(ERNESTO)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "POOLE,(TREVOR)",
-         "seat": "ET",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "MASSEY,(COLLIN)",
-         "seat": "ET",
-         "reason": "seat_not_qualified"
-        },
-        {
-         "member_id": "BRADLEY,(COLTON)",
-         "seat": "ET",
-         "reason": "seat_not_qualified"
-        },
-        {
-         "member_id": "ADKINS,(CHRISTOPHER)",
-         "seat": "ET",
-         "reason": "seat_not_qualified"
-        },
-        {
-         "member_id": "CONWELL,(JOSHUA)",
-         "seat": "ET",
-         "reason": "unavailable"
-        },
-        {
-         "member_id": "FIGUEROA,(CEDRIC)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "CARROW,(ROBERT)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "MARKO,(CAIN)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "MOFFITT,(LUCAS)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "KEOMANIVONG,(SONNY)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "WHITING,(STEVE)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "ONKEN,(WILLIAM)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "STROPES,(THOMAS)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "DAU,(AUSTIN)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "BRESHEARS,(CHRIS)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "BURCH,(RICK)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "MCBRIDE,(KELTON)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "HERREN,(BRANDON)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "GOODELL,(SETH)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "PEREZ,(NICHOLAS)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "REESE,(MATT)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "COLLINS,(THADD)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "LIENEMAN,(DENNIS)",
-         "seat": "TT",
-         "reason": "seat_not_qualified"
-        },
-        {
-         "member_id": "COMSTOCK,(JUSTYCE)",
-         "seat": "TT",
-         "reason": "seat_not_qualified"
-        },
-        {
-         "member_id": "NELSON,(GARRET)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "LINEBAUGH,(MATT)",
-         "seat": "TT",
-         "reason": "seat_not_qualified"
-        },
-        {
-         "member_id": "MURPHY,(ADAM)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "WARRENBURG,(CHRIS)",
-         "seat": "TT",
-         "reason": "different_station"
-        },
-        {
-         "member_id": "CLAPP,(JASON)",
-         "seat": "TT",
-         "reason": "different_station"
-        },
-        {
-         "member_id": "MOZQUEDA,(ERNESTO)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "POOLE,(TREVOR)",
-         "seat": "TT",
-         "reason": "already_reserved"
-        },
-        {
-         "member_id": "MASSEY,(COLLIN)",
-         "seat": "TT",
-         "reason": "seat_not_qualified"
-        },
-        {
-         "member_id": "BRADLEY,(COLTON)",
-         "seat": "TT",
-         "reason": "seat_not_qualified"
-        },
-        {
-         "member_id": "ADKINS,(CHRISTOPHER)",
-         "seat": "TT",
-         "reason": "seat_not_qualified"
-        },
-        {
-         "member_id": "CONWELL,(JOSHUA)",
-         "seat": "TT",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         }
        ],
        "rule_evaluations": [],
-       "destination_verified": false
+       "destination_verified": false,
+       "coverage_note": "No complete supported crew: eligible DA hotel supply first, then scoped extra-engineer and extra-conductor supply. Review seat decisions for rest, schedule, reservations or unknown evidence; further vacancy coverage unresolved."
       }
      },
      {
@@ -19006,8 +17880,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 21m",
-         "minutes": 621
+         "label": "10h 10m",
+         "minutes": 610
         },
         "name": "FELLER,(DANIEL)"
        },
@@ -19015,8 +17889,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "10h 21m",
-         "minutes": 621
+         "label": "10h 10m",
+         "minutes": 610
         },
         "name": "BROWN,(CHANCE)"
        }
@@ -20466,7 +19340,7 @@
   "board_count": 11,
   "boards": [
    {
-    "age_seconds": 291,
+    "age_seconds": 987,
     "captured_at": "2026-10-02T05:03:54.356971+00:00",
     "label": "OTTUMWA ENG XTRA BRD",
     "menu_path": "1_04",
@@ -20494,8 +19368,8 @@
       "turn_info": "00",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-10-02T00:08",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_until": "2026-10-02T00:20",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "OTTUMWA ENG XTRA BRD POSITION"
      },
      {
@@ -20521,7 +19395,7 @@
       "ushr": "",
       "rest_state": "resting",
       "rest_until": "2026-10-02T07:32",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "OTTUMWA ENG XTRA BRD POSITION"
      }
     ],
@@ -20532,7 +19406,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 280,
+    "age_seconds": 977,
     "captured_at": "2026-10-02T05:04:04.622517+00:00",
     "label": "OB POOLS IN OTT TURN ORDER",
     "menu_path": "1_05",
@@ -20703,7 +19577,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 275,
+    "age_seconds": 972,
     "captured_at": "2026-10-02T05:04:09.945246+00:00",
     "label": "OB POOLS IN OTT POSITION",
     "menu_path": "1_06",
@@ -20731,8 +19605,8 @@
       "turn_info": "",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-10-02T00:08",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_until": "2026-10-02T00:20",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "OB POOLS IN OTT POSITION"
      },
      {
@@ -20757,8 +19631,8 @@
       "turn_info": "",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-10-02T00:08",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_until": "2026-10-02T00:20",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "OB POOLS IN OTT POSITION"
      },
      {
@@ -20783,8 +19657,8 @@
       "turn_info": "",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-10-02T00:08",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_until": "2026-10-02T00:20",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "OB POOLS IN OTT POSITION"
      }
     ],
@@ -20795,7 +19669,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 270,
+    "age_seconds": 967,
     "captured_at": "2026-10-02T05:04:15.260592+00:00",
     "label": "OB POOLS IN BVL POSITION",
     "menu_path": "1_07",
@@ -20808,7 +19682,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 264,
+    "age_seconds": 961,
     "captured_at": "2026-10-02T05:04:20.548509+00:00",
     "label": "OB POOLS IN IMS POSITION",
     "menu_path": "1_08",
@@ -20821,7 +19695,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 259,
+    "age_seconds": 956,
     "captured_at": "2026-10-02T05:04:25.863293+00:00",
     "label": "DA POOLS IN OTT POSITION",
     "menu_path": "1_09",
@@ -20849,8 +19723,8 @@
       "turn_info": "",
       "ushr": "0317",
       "rest_state": "on_board",
-      "rest_until": "2026-10-02T00:08",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_until": "2026-10-02T00:20",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "DA POOLS IN OTT POSITION"
      },
      {
@@ -20875,8 +19749,8 @@
       "turn_info": "",
       "ushr": "0316",
       "rest_state": "on_board",
-      "rest_until": "2026-10-02T00:08",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_until": "2026-10-02T00:20",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "DA POOLS IN OTT POSITION"
      },
      {
@@ -20901,8 +19775,8 @@
       "turn_info": "",
       "ushr": "0900",
       "rest_state": "on_board",
-      "rest_until": "2026-10-02T00:08",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_until": "2026-10-02T00:20",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "DA POOLS IN OTT POSITION"
      },
      {
@@ -20927,8 +19801,8 @@
       "turn_info": "",
       "ushr": "0900",
       "rest_state": "on_board",
-      "rest_until": "2026-10-02T00:08",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_until": "2026-10-02T00:20",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "DA POOLS IN OTT POSITION"
      }
     ],
@@ -20939,7 +19813,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 249,
+    "age_seconds": 946,
     "captured_at": "2026-10-02T05:04:36.158754+00:00",
     "label": "KA POOLS IN OTT POSITION",
     "menu_path": "1_10",
@@ -20967,8 +19841,8 @@
       "turn_info": "",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-10-02T00:08",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_until": "2026-10-02T00:20",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "KA POOLS IN OTT POSITION"
      },
      {
@@ -20993,8 +19867,8 @@
       "turn_info": "",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-10-02T00:08",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_until": "2026-10-02T00:20",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "KA POOLS IN OTT POSITION"
      },
      {
@@ -21019,8 +19893,8 @@
       "turn_info": "",
       "ushr": "0232",
       "rest_state": "on_board",
-      "rest_until": "2026-10-02T00:08",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_until": "2026-10-02T00:20",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "KA POOLS IN OTT POSITION"
      },
      {
@@ -21045,8 +19919,8 @@
       "turn_info": "",
       "ushr": "0230",
       "rest_state": "on_board",
-      "rest_until": "2026-10-02T00:08",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_until": "2026-10-02T00:20",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "KA POOLS IN OTT POSITION"
      },
      {
@@ -21071,8 +19945,8 @@
       "turn_info": "",
       "ushr": "0255",
       "rest_state": "on_board",
-      "rest_until": "2026-10-02T00:08",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_until": "2026-10-02T00:20",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "KA POOLS IN OTT POSITION"
      },
      {
@@ -21097,8 +19971,8 @@
       "turn_info": "",
       "ushr": "0253",
       "rest_state": "on_board",
-      "rest_until": "2026-10-02T00:08",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_until": "2026-10-02T00:20",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "KA POOLS IN OTT POSITION"
      },
      {
@@ -21123,8 +19997,8 @@
       "turn_info": "",
       "ushr": "0715",
       "rest_state": "on_board",
-      "rest_until": "2026-10-02T00:08",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_until": "2026-10-02T00:20",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "KA POOLS IN OTT POSITION"
      },
      {
@@ -21149,8 +20023,8 @@
       "turn_info": "",
       "ushr": "0715",
       "rest_state": "on_board",
-      "rest_until": "2026-10-02T00:08",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_until": "2026-10-02T00:20",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "KA POOLS IN OTT POSITION"
      }
     ],
@@ -21161,7 +20035,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 244,
+    "age_seconds": 940,
     "captured_at": "2026-10-02T05:04:41.440424+00:00",
     "label": "SW POOLS IN OTT POSITION",
     "menu_path": "1_11",
@@ -21189,8 +20063,8 @@
       "turn_info": "",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-10-02T00:08",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_until": "2026-10-02T00:20",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "SW POOLS IN OTT POSITION"
      },
      {
@@ -21216,7 +20090,7 @@
       "ushr": "0918",
       "rest_state": "resting",
       "rest_until": "2026-10-02T09:18",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "SW POOLS IN OTT POSITION"
      },
      {
@@ -21241,8 +20115,8 @@
       "turn_info": "",
       "ushr": "",
       "rest_state": "on_board",
-      "rest_until": "2026-10-02T00:08",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_until": "2026-10-02T00:20",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "SW POOLS IN OTT POSITION"
      },
      {
@@ -21268,7 +20142,7 @@
       "ushr": "0918",
       "rest_state": "resting",
       "rest_until": "2026-10-02T09:18",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "SW POOLS IN OTT POSITION"
      },
      {
@@ -21294,7 +20168,7 @@
       "ushr": "0928",
       "rest_state": "resting",
       "rest_until": "2026-10-02T09:28",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "SW POOLS IN OTT POSITION"
      }
     ],
@@ -21305,7 +20179,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 236,
+    "age_seconds": 933,
     "captured_at": "2026-10-02T05:04:49.217518+00:00",
     "label": "SW POOLS IN KC POSITION",
     "menu_path": "1_12",
@@ -21334,7 +20208,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-10-01T22:05",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "SW POOLS IN KC  POSITION"
      },
      {
@@ -21360,7 +20234,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-10-01T22:05",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "SW POOLS IN KC  POSITION"
      },
      {
@@ -21386,7 +20260,7 @@
       "ushr": "0256",
       "rest_state": "resting",
       "rest_until": "2026-10-02T02:56",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "SW POOLS IN KC  POSITION"
      },
      {
@@ -21412,7 +20286,7 @@
       "ushr": "0256",
       "rest_state": "resting",
       "rest_until": "2026-10-02T02:56",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "SW POOLS IN KC  POSITION"
      },
      {
@@ -21438,7 +20312,7 @@
       "ushr": "0256",
       "rest_state": "resting",
       "rest_until": "2026-10-02T02:56",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "SW POOLS IN KC  POSITION"
      }
     ],
@@ -21449,7 +20323,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 220,
+    "age_seconds": 917,
     "captured_at": "2026-10-02T05:05:05.140651+00:00",
     "label": "SW POOLS IN DA POSITION",
     "menu_path": "1_13",
@@ -21478,7 +20352,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-10-01T22:05",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "SW POOLS IN KC  POSITION"
      },
      {
@@ -21504,7 +20378,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-10-01T22:05",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "SW POOLS IN KC  POSITION"
      },
      {
@@ -21530,7 +20404,7 @@
       "ushr": "0256",
       "rest_state": "resting",
       "rest_until": "2026-10-02T02:56",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "SW POOLS IN KC  POSITION"
      },
      {
@@ -21556,7 +20430,7 @@
       "ushr": "0256",
       "rest_state": "resting",
       "rest_until": "2026-10-02T02:56",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "SW POOLS IN KC  POSITION"
      },
      {
@@ -21582,7 +20456,7 @@
       "ushr": "0256",
       "rest_state": "resting",
       "rest_until": "2026-10-02T02:56",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "SW POOLS IN KC  POSITION"
      },
      {
@@ -21608,7 +20482,7 @@
       "ushr": "0437",
       "rest_state": "resting",
       "rest_until": "2026-10-02T04:37",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "SW POOLS IN KC  POSITION"
      },
      {
@@ -21634,7 +20508,7 @@
       "ushr": "0437",
       "rest_state": "resting",
       "rest_until": "2026-10-02T04:37",
-      "rest_calculated_at": "2026-10-02T00:08:45",
+      "rest_calculated_at": "2026-10-02T00:20:22",
       "rest_board": "SW POOLS IN KC  POSITION"
      }
     ],
@@ -21645,7 +20519,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 625,
+    "age_seconds": 1321,
     "captured_at": "2026-10-02T04:58:20.472307+00:00",
     "label": "OTT SWITCHMAN XTRA BRD",
     "menu_path": "2_04",
@@ -21810,7 +20684,7 @@
     ],
     "run_id": "sched_20261001_235519",
     "screen_title": "OTT SWITCHMAN XTRABRD POSITION",
-    "stale": false,
+    "stale": true,
     "status": "observed",
     "subdistrict": "OT"
    }
@@ -21818,7 +20692,7 @@
   "captured_at": "2026-10-02T05:05:05.140651+00:00",
   "row_count": 48,
   "run_id": "sched_20261002_000215",
-  "stale": false
+  "stale": true
  },
  "alerts": [],
  "my_status": [
@@ -22003,8 +20877,8 @@
     "my_craft": "AE",
     "my_hos": {
      "band": "green",
-     "label": "8h 36m",
-     "minutes": 516
+     "label": "8h 25m",
+     "minutes": 505
     },
     "with": [
      {
@@ -31950,8 +30824,8 @@
    "since": "2026-10-01",
    "time": "17:28",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:00.928087+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -31966,8 +30840,8 @@
    "since": "2026-10-01",
    "time": "22:01",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:07.687558+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -31982,8 +30856,8 @@
    "since": "2026-09-30",
    "time": "22:01",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:07.687558+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -31998,8 +30872,8 @@
    "since": "2026-09-30",
    "time": "20:09",
    "terminal": "KC",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T04:59:27.080186+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "KC",
@@ -32014,8 +30888,8 @@
    "since": "2026-09-30",
    "time": "01:33",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:00.928087+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32030,8 +30904,8 @@
    "since": "2026-09-30",
    "time": "10:48",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:07.687558+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32046,8 +30920,8 @@
    "since": "2026-09-26",
    "time": "00:01",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:00.928087+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32062,8 +30936,8 @@
    "since": "2026-09-22",
    "time": "00:01",
    "terminal": "KC",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T04:59:27.080186+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "KC",
@@ -32078,8 +30952,8 @@
    "since": "2026-09-29",
    "time": "16:12",
    "terminal": "OT",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T04:59:01.843557+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "OT",
@@ -32094,8 +30968,8 @@
    "since": "2026-09-26",
    "time": "00:01",
    "terminal": "KC",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T04:59:27.080186+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "KC",
@@ -32110,8 +30984,8 @@
    "since": "2026-09-29",
    "time": "22:01",
    "terminal": "KC",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T04:59:31.381477+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "KC",
@@ -32126,8 +31000,8 @@
    "since": "2026-09-26",
    "time": "00:01",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:00.928087+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32142,8 +31016,8 @@
    "since": "2026-10-01",
    "time": "03:06",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:00.928087+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32158,8 +31032,8 @@
    "since": "2026-09-30",
    "time": "09:44",
    "terminal": "OT",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T04:58:53.209049+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "OT",
@@ -32174,8 +31048,8 @@
    "since": "2026-09-30",
    "time": "21:02",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:00.928087+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32190,8 +31064,8 @@
    "since": "2026-09-26",
    "time": "00:01",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:00.928087+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32206,8 +31080,8 @@
    "since": "2026-10-01",
    "time": "20:54",
    "terminal": "KC",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T04:59:35.690586+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "KC",
@@ -32222,8 +31096,8 @@
    "since": "2026-09-17",
    "time": "11:19",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:00.928087+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32238,8 +31112,8 @@
    "since": "2026-09-06",
    "time": "12:54",
    "terminal": "KC",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T04:59:27.080186+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "KC",
@@ -32254,8 +31128,8 @@
    "since": "2026-08-30",
    "time": "14:24",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:00.928087+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32270,8 +31144,8 @@
    "since": "2026-09-30",
    "time": "20:59",
    "terminal": "OT",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T04:58:53.209049+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "OT",
@@ -32286,8 +31160,8 @@
    "since": "2026-09-29",
    "time": "16:12",
    "terminal": "OT",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T04:59:01.843557+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "OT",
@@ -32302,8 +31176,8 @@
    "since": "2026-02-24",
    "time": "17:12",
    "terminal": "KC",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T04:59:27.080186+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "KC",
@@ -32318,8 +31192,8 @@
    "since": "2026-09-30",
    "time": "20:59",
    "terminal": "OT",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T04:58:57.523645+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "OT",
@@ -32334,8 +31208,8 @@
    "since": "2026-09-30",
    "time": "21:00",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:07.687558+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32350,8 +31224,8 @@
    "since": "2026-10-01",
    "time": "09:33",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:00.928087+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32366,8 +31240,8 @@
    "since": "2026-09-30",
    "time": "10:48",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:00.928087+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32382,8 +31256,8 @@
    "since": "2026-09-30",
    "time": "01:33",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:07.687558+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32398,8 +31272,8 @@
    "since": "2026-09-30",
    "time": "16:08",
    "terminal": "OT",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T04:58:57.523645+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "OT",
@@ -32414,8 +31288,8 @@
    "since": "2026-10-01",
    "time": "03:05",
    "terminal": "KC",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T04:59:27.080186+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "KC",
@@ -32430,8 +31304,8 @@
    "since": "2026-09-01",
    "time": "00:01",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:07.687558+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32446,8 +31320,8 @@
    "since": "2026-10-01",
    "time": "20:56",
    "terminal": "OT",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T04:59:01.843557+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "OT",
@@ -32462,8 +31336,8 @@
    "since": "2026-10-01",
    "time": "13:39",
    "terminal": "OT",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T04:59:01.843557+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "OT",
@@ -32478,8 +31352,8 @@
    "since": "2026-05-28",
    "time": "09:33",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:12.003153+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32494,8 +31368,8 @@
    "since": "2026-09-29",
    "time": "16:13",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:07.687558+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32510,8 +31384,8 @@
    "since": "2026-09-26",
    "time": "00:01",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:20.629631+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32526,8 +31400,8 @@
    "since": "2026-09-29",
    "time": "21:40",
    "terminal": "KC",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T04:59:27.080186+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "KC",
@@ -32542,8 +31416,8 @@
    "since": "2026-10-01",
    "time": "13:37",
    "terminal": "KC",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T04:59:27.080186+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "KC",
@@ -32558,8 +31432,8 @@
    "since": "2026-10-01",
    "time": "03:05",
    "terminal": "KC",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T04:59:35.690586+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "KC",
@@ -32574,8 +31448,8 @@
    "since": "2026-09-30",
    "time": "17:11",
    "terminal": "KC",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T04:59:27.080186+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "KC",
@@ -32590,8 +31464,8 @@
    "since": "2026-09-29",
    "time": "16:42",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:07.687558+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32606,8 +31480,8 @@
    "since": "2026-10-01",
    "time": "00:01",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:00.928087+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32622,8 +31496,8 @@
    "since": "2026-10-01",
    "time": "00:01",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:00.928087+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32638,8 +31512,8 @@
    "since": "2025-06-12",
    "time": "20:29",
    "terminal": "OT",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:00.928087+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32654,8 +31528,8 @@
    "since": "2026-09-26",
    "time": "00:01",
    "terminal": "KC",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T04:59:27.080186+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "KC",
@@ -32670,8 +31544,8 @@
    "since": "2026-10-01",
    "time": "02:54",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:00.928087+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32686,8 +31560,8 @@
    "since": "2026-09-30",
    "time": "17:27",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:00.928087+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32702,8 +31576,8 @@
    "since": "2026-10-01",
    "time": "11:11",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:07.687558+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32718,8 +31592,8 @@
    "since": "2026-10-01",
    "time": "09:33",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:07.687558+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32734,8 +31608,8 @@
    "since": "2026-09-30",
    "time": "09:47",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:03.387275+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32750,8 +31624,8 @@
    "since": "2026-09-26",
    "time": "00:01",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:16.308025+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32766,8 +31640,8 @@
    "since": "2026-10-01",
    "time": "13:23",
    "terminal": "OT",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T04:58:53.209049+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "OT",
@@ -32782,8 +31656,8 @@
    "since": "2026-10-01",
    "time": "13:38",
    "terminal": "OT",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T04:58:53.209049+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "OT",
@@ -32798,8 +31672,8 @@
    "since": "2026-09-30",
    "time": "22:01",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:03.387275+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32814,8 +31688,8 @@
    "since": "2026-09-26",
    "time": "00:01",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:03.387275+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32830,8 +31704,8 @@
    "since": "2026-09-26",
    "time": "00:01",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:03.387275+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32846,8 +31720,8 @@
    "since": "2026-10-01",
    "time": "12:05",
    "terminal": "OT",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T04:58:53.209049+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "OT",
@@ -32862,8 +31736,8 @@
    "since": "2026-10-01",
    "time": "15:33",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:07.687558+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32878,8 +31752,8 @@
    "since": "2026-09-29",
    "time": "21:43",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:03.387275+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32894,8 +31768,8 @@
    "since": "2026-10-01",
    "time": "22:29",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:07.687558+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32910,8 +31784,8 @@
    "since": "2026-01-02",
    "time": "02:45",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:03.387275+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32926,8 +31800,8 @@
    "since": "2026-09-26",
    "time": "00:01",
    "terminal": "OT",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T04:58:53.209049+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "OT",
@@ -32942,8 +31816,8 @@
    "since": "2026-10-01",
    "time": "20:55",
    "terminal": "OT",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T04:58:53.209049+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "OT",
@@ -32958,8 +31832,8 @@
    "since": "2026-10-01",
    "time": "13:38",
    "terminal": "OT",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T04:58:53.209049+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "OT",
@@ -32974,8 +31848,8 @@
    "since": "2026-10-01",
    "time": "03:06",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:03.387275+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -32990,8 +31864,8 @@
    "since": "2026-09-30",
    "time": "17:37",
    "terminal": "OT",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T04:58:53.209049+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "OT",
@@ -33006,8 +31880,8 @@
    "since": "2026-09-30",
    "time": "15:04",
    "terminal": "OT",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T04:58:53.209049+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "OT",
@@ -33022,8 +31896,8 @@
    "since": "2026-10-01",
    "time": "23:45",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:03.387275+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -33038,8 +31912,8 @@
    "since": "2026-09-29",
    "time": "22:01",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:03.387275+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -33054,8 +31928,8 @@
    "since": "2026-09-29",
    "time": "16:15",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:03.387275+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -33070,8 +31944,8 @@
    "since": "2026-09-26",
    "time": "00:01",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:03.387275+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -33086,8 +31960,8 @@
    "since": "2026-09-29",
    "time": "16:43",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:03.387275+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -33102,8 +31976,8 @@
    "since": "2026-10-01",
    "time": "14:03",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-10-02T05:00:07.687558+00:00",
    "source_run": "sched_20261001_235519",
    "inquiry_subdistrict": "DA",
@@ -33120,7 +31994,7 @@
     "craft": "AE",
     "captured_at": "2026-10-02T05:00:07.687558+00:00",
     "run_id": "sched_20261001_235519",
-    "stale": false,
+    "stale": true,
     "incomplete_newer_capture": false
    },
    {
@@ -33128,7 +32002,7 @@
     "craft": "CO",
     "captured_at": "2026-10-02T05:00:12.003153+00:00",
     "run_id": "sched_20261001_235519",
-    "stale": false,
+    "stale": true,
     "incomplete_newer_capture": false
    },
    {
@@ -33136,7 +32010,7 @@
     "craft": "EN",
     "captured_at": "2026-10-02T05:00:03.387275+00:00",
     "run_id": "sched_20261001_235519",
-    "stale": false,
+    "stale": true,
     "incomplete_newer_capture": false
    },
    {
@@ -33144,7 +32018,7 @@
     "craft": "ET",
     "captured_at": "2026-10-02T05:00:16.308025+00:00",
     "run_id": "sched_20261001_235519",
-    "stale": false,
+    "stale": true,
     "incomplete_newer_capture": false
    },
    {
@@ -33152,7 +32026,7 @@
     "craft": "TT",
     "captured_at": "2026-10-02T05:00:20.629631+00:00",
     "run_id": "sched_20261001_235519",
-    "stale": false,
+    "stale": true,
     "incomplete_newer_capture": false
    },
    {
@@ -33160,7 +32034,7 @@
     "craft": "AE",
     "captured_at": "2026-10-02T04:59:31.381477+00:00",
     "run_id": "sched_20261001_235519",
-    "stale": false,
+    "stale": true,
     "incomplete_newer_capture": false
    },
    {
@@ -33168,7 +32042,7 @@
     "craft": "CO",
     "captured_at": "2026-10-02T04:59:35.690586+00:00",
     "run_id": "sched_20261001_235519",
-    "stale": false,
+    "stale": true,
     "incomplete_newer_capture": false
    },
    {
@@ -33176,7 +32050,7 @@
     "craft": "EN",
     "captured_at": "2026-10-02T04:59:27.080186+00:00",
     "run_id": "sched_20261001_235519",
-    "stale": false,
+    "stale": true,
     "incomplete_newer_capture": false
    },
    {
@@ -33184,7 +32058,7 @@
     "craft": "ET",
     "captured_at": "2026-10-02T04:59:39.998845+00:00",
     "run_id": "sched_20261001_235519",
-    "stale": false,
+    "stale": true,
     "incomplete_newer_capture": false
    },
    {
@@ -33192,7 +32066,7 @@
     "craft": "TT",
     "captured_at": "2026-10-02T04:59:44.339508+00:00",
     "run_id": "sched_20261001_235519",
-    "stale": false,
+    "stale": true,
     "incomplete_newer_capture": false
    },
    {
@@ -33200,7 +32074,7 @@
     "craft": "AE",
     "captured_at": "2026-10-02T04:58:57.523645+00:00",
     "run_id": "sched_20261001_235519",
-    "stale": false,
+    "stale": true,
     "incomplete_newer_capture": false
    },
    {
@@ -33208,7 +32082,7 @@
     "craft": "CO",
     "captured_at": "2026-10-02T04:59:01.843557+00:00",
     "run_id": "sched_20261001_235519",
-    "stale": false,
+    "stale": true,
     "incomplete_newer_capture": false
    },
    {
@@ -33216,7 +32090,7 @@
     "craft": "EN",
     "captured_at": "2026-10-02T04:58:53.209049+00:00",
     "run_id": "sched_20261001_235519",
-    "stale": false,
+    "stale": true,
     "incomplete_newer_capture": false
    },
    {
@@ -33224,7 +32098,7 @@
     "craft": "ET",
     "captured_at": "2026-10-02T04:59:06.149420+00:00",
     "run_id": "sched_20261001_235519",
-    "stale": false,
+    "stale": true,
     "incomplete_newer_capture": false
    },
    {
@@ -33232,7 +32106,7 @@
     "craft": "TT",
     "captured_at": "2026-10-02T04:59:10.449073+00:00",
     "run_id": "sched_20261001_235519",
-    "stale": false,
+    "stale": true,
     "incomplete_newer_capture": false
    }
   ]
