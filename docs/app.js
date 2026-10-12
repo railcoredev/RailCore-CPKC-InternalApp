@@ -1194,6 +1194,42 @@ function boardCaptureLabel(board) {
   return `${old ? "OUT OF DATE — last captured board" : "Board captured"}: ${localTime(board.captured_at)} (${formatAge(board.captured_at)})`;
 }
 
+function boardRestLabel(row, boardTitle, evaluatedAt) {
+  // Consume the same scoped rest evidence as the shared predictor. Never
+  // turn an unknown state or missing time into a positive readiness claim.
+  const centralClock = value => {
+    if (typeof value !== "string" || !value) return null;
+    if (/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2}(\.\d+)?)?$/.test(value)) {
+      const n = Date.parse(value + "Z"); // comparison-only Central wall clock
+      return Number.isFinite(n) ? n : null;
+    }
+    if (!/(Z|[+-]\d{2}:\d{2})$/.test(value)) return null;
+    const d = new Date(value);
+    if (!Number.isFinite(d.getTime())) return null;
+    const p = Object.fromEntries(new Intl.DateTimeFormat("en-US", {
+      timeZone:"America/Chicago", year:"numeric", month:"2-digit", day:"2-digit",
+      hour:"2-digit", minute:"2-digit", second:"2-digit", hourCycle:"h23",
+    }).formatToParts(d).map(p => [p.type,p.value]));
+    return Date.UTC(+p.year,+p.month-1,+p.day,+p.hour,+p.minute,+p.second);
+  };
+  if (row.on_train) return "on train";
+  const now = centralClock(evaluatedAt), calculated = centralClock(row.rest_calculated_at);
+  if (now === null || calculated === null || row.rest_board !== boardTitle ||
+      calculated > now || now - calculated > 20 * 60000) return "unknown";
+  const labels = {called:"called", working:"on duty", on_train:"on train",
+    booked_off:"off", rest_day:"days off", annual_vacation:"vacation", fra_rest:"rest restriction"};
+  if (Object.hasOwn(labels, row.rest_state)) return labels[row.rest_state];
+  if (!["on_board", "resting"].includes(row.rest_state)) return "unknown";
+  const until = centralClock(row.rest_until);
+  if (until === null) return "unknown";
+  if (until <= now) return "rested";
+  const d = new Date(until), n = new Date(now);
+  const clock = `${String(d.getUTCHours()).padStart(2,"0")}${String(d.getUTCMinutes()).padStart(2,"0")}`;
+  const day = d.toISOString().slice(0,10) === n.toISOString().slice(0,10)
+    ? "" : ` ${d.getUTCMonth()+1}/${d.getUTCDate()}`;
+  return `til ${clock}${day}`;
+}
+
 function renderBoardsTable() {
   const d = lineupsData();
   if (!d) { showText(); return "No crew board data available yet."; }
@@ -1228,18 +1264,7 @@ function renderBoardsTable() {
     // REST (operator 2026-08-30: away boards print no MTOD, so the page
     // read as 'everybody rested'): calculated from the same projection
     // layer as the Me card. Board MTOD stays authoritative where shown.
-    let restCell = "—";
-    if (r.rest_state) {
-      const ru = r.rest_until ? new Date(r.rest_until) : null;
-      const now = new Date();
-      if (r.rest_state === "on_train") restCell = "on train";
-      else if (r.rest_state === "booked_off") restCell = "off";
-      else if (ru && ru > now) {
-        const hhmm = `${String(ru.getHours()).padStart(2, "0")}${String(ru.getMinutes()).padStart(2, "0")}`;
-        const sameDay = ru.toDateString() === now.toDateString();
-        restCell = `til ${hhmm}${sameDay ? "" : " " + (ru.getMonth() + 1) + "/" + ru.getDate()}`;
-      } else restCell = "rested";
-    }
+    const restCell = boardRestLabel(r, b.screen_title, d.meta?.generated_at);
     const tr = [
       r.position || "", r.turn_asgn || "", (starred ? "*" : "") + (r.craft_code || ""),
       nameEl, hours[0] || "—", hours[1] || "—",
