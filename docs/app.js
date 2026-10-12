@@ -1804,11 +1804,11 @@ function myStatusRows(me) {
   const br = me.board_rest;
   if (br && br.rested_at) {
     const cap = br.captured_at ? new Date(br.captured_at) : now;
-    let restDt = new Date(cap);
-    restDt.setHours(+br.rested_at.slice(0, 2), +br.rested_at.slice(2), 0, 0);
+    let restDt = br.resolved_at ? new Date(br.resolved_at) : new Date(cap);
+    if (!br.resolved_at) restDt.setHours(+br.rested_at.slice(0, 2), +br.rested_at.slice(2), 0, 0);
     // MTOD has no date: it is the NEXT occurrence after tie-up (or the
     // one nearest the board capture when no tie-up anchors it).
-    if (r.offDt) {
+    if (r.offDt && !br.resolved_at) {
       restDt = new Date(r.offDt);
       restDt.setHours(+br.rested_at.slice(0, 2), +br.rested_at.slice(2), 0, 0);
       while (restDt < r.offDt) restDt = new Date(restDt.getTime() + 864e5);
