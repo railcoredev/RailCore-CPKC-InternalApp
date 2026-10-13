@@ -1,7 +1,7 @@
 {
  "shared_crew_projection": {
   "model": "seats-v3",
-  "calculated_at": "2026-10-13T03:14:10.440752+00:00",
+  "calculated_at": "2026-10-13T03:25:55.496807+00:00",
   "policy_basis": "explicit_per_leg_calling_groups_and_candidate_eligibility",
   "trains": [],
   "rules_applied": [
@@ -897,11 +897,11 @@
   ]
  },
  "meta": {
-  "collection_state": "active",
-  "collection_message": "Light sweep sched_20261012_215017.",
+  "collection_state": "awaiting_login",
+  "collection_message": "Session lost; waiting at the RSA prompt.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-10-13T03:14:10+00:00",
+  "generated_at": "2026-10-13T03:25:55+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20261012_204401",
@@ -4847,8 +4847,8 @@
         "craft": "EN",
         "hos": {
          "band": "yellow",
-         "label": "3h 46m",
-         "minutes": 226
+         "label": "3h 34m",
+         "minutes": 214
         },
         "name": "JACKMAN,(MATT)"
        },
@@ -4856,8 +4856,8 @@
         "craft": "AE",
         "hos": {
          "band": "yellow",
-         "label": "3h 46m",
-         "minutes": 226
+         "label": "3h 34m",
+         "minutes": 214
         },
         "name": "JAMESON,(DANIELLE)"
        },
@@ -4865,8 +4865,8 @@
         "craft": "ET",
         "hos": {
          "band": "yellow",
-         "label": "3h 46m",
-         "minutes": 226
+         "label": "3h 34m",
+         "minutes": 214
         },
         "name": "FERNANDEZ,(DANILO)"
        }
@@ -4995,8 +4995,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 46m",
-         "minutes": 526
+         "label": "8h 34m",
+         "minutes": 514
         },
         "name": "SCOTT,(ZACHARY)"
        },
@@ -5004,8 +5004,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "8h 46m",
-         "minutes": 526
+         "label": "8h 34m",
+         "minutes": 514
         },
         "name": "PETERSON,(DARREN)"
        }
@@ -7871,7 +7871,7 @@
   "board_count": 11,
   "boards": [
    {
-    "age_seconds": 11055,
+    "age_seconds": 11761,
     "captured_at": "2026-10-13T00:09:33.719505+00:00",
     "label": "OTTUMWA ENG XTRA BRD",
     "menu_path": "1_04",
@@ -8033,7 +8033,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 11045,
+    "age_seconds": 11751,
     "captured_at": "2026-10-13T00:09:43.956600+00:00",
     "label": "OB POOLS IN OTT TURN ORDER",
     "menu_path": "1_05",
@@ -8205,7 +8205,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 11037,
+    "age_seconds": 11743,
     "captured_at": "2026-10-13T00:09:51.718093+00:00",
     "label": "OB POOLS IN OTT POSITION",
     "menu_path": "1_06",
@@ -8248,7 +8248,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 11032,
+    "age_seconds": 11738,
     "captured_at": "2026-10-13T00:09:57.040777+00:00",
     "label": "OB POOLS IN BVL POSITION",
     "menu_path": "1_07",
@@ -8261,7 +8261,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 11027,
+    "age_seconds": 11733,
     "captured_at": "2026-10-13T00:10:02.373652+00:00",
     "label": "OB POOLS IN IMS POSITION",
     "menu_path": "1_08",
@@ -8274,7 +8274,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 11022,
+    "age_seconds": 11727,
     "captured_at": "2026-10-13T00:10:07.694337+00:00",
     "label": "DA POOLS IN OTT POSITION",
     "menu_path": "1_09",
@@ -8287,7 +8287,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 11016,
+    "age_seconds": 11722,
     "captured_at": "2026-10-13T00:10:13.055693+00:00",
     "label": "KA POOLS IN OTT POSITION",
     "menu_path": "1_10",
@@ -8505,7 +8505,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 11008,
+    "age_seconds": 11714,
     "captured_at": "2026-10-13T00:10:20.887918+00:00",
     "label": "SW POOLS IN OTT POSITION",
     "menu_path": "1_11",
@@ -8635,7 +8635,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 10998,
+    "age_seconds": 11704,
     "captured_at": "2026-10-13T00:10:31.133543+00:00",
     "label": "SW POOLS IN KC POSITION",
     "menu_path": "1_12",
@@ -8859,7 +8859,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 10993,
+    "age_seconds": 11699,
     "captured_at": "2026-10-13T00:10:36.450712+00:00",
     "label": "SW POOLS IN DA POSITION",
     "menu_path": "1_13",
@@ -8872,7 +8872,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 7565,
+    "age_seconds": 8271,
     "captured_at": "2026-10-13T01:07:44.035396+00:00",
     "label": "OTT SWITCHMAN XTRA BRD",
     "menu_path": "2_04",
@@ -8901,7 +8901,7 @@
       "ushr": "",
       "rest_state": "availability_unknown",
       "rest_until": null,
-      "rest_calculated_at": "2026-10-12T22:13:49",
+      "rest_calculated_at": "2026-10-12T22:25:35",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION",
       "rest_evidence": [
        "junior_in_craft",
@@ -8931,7 +8931,7 @@
       "ushr": "",
       "rest_state": "resting",
       "rest_until": "2026-10-12T22:45",
-      "rest_calculated_at": "2026-10-12T22:13:49",
+      "rest_calculated_at": "2026-10-12T22:25:35",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION",
       "rest_evidence": [
        "junior_in_craft",
