@@ -794,11 +794,26 @@ function crewCell(members) {
 function projectedCrewText(projection) {
   if (!projection) return "—";
   const seats = projection.seats || {};
+  function missingReason(seat) {
+    const decisions = (projection.decisions || []).filter(d => d.seat === seat);
+    const blocking = [...new Set(decisions.filter(d => d.reason === "earlier_eligibility_unknown")
+      .flatMap(d => d.blocking_members || []))];
+    if (blocking.length) return `${blocking.join(", ")} ahead: eligibility unknown`;
+    const reasons = new Set(decisions.map(d => d.reason));
+    const notes = [];
+    if (reasons.has("schedule_cutoff_unknown")) notes.push("schedule cutoff unverified");
+    if (["availability_unknown", "rest_unknown", "stale_evidence", "future_evidence"].some(r => reasons.has(r)))
+      notes.push("rest/availability evidence unresolved");
+    if (notes.length) return notes.join("; ");
+    if (reasons.has("not_rested_by_call")) return "candidates not rested by call";
+    if (reasons.has("already_reserved")) return "candidates reserved on earlier trains";
+    return "no supported candidate";
+  }
   return ["EN", "AE_CO", "ET", "TT"].map(seat => {
     const person = seats[seat];
     const label = seat === "AE_CO" ? "AE/CO" : seat;
     return person ? `${label}: ${person.name}${person.optional ? " (possible)" : ""}`
-      : `${label}: ${seat === "ET" || seat === "TT" ? "—" : "unfilled"}`;
+      : `${label}: ${seat === "ET" || seat === "TT" ? "—" : `not projected (${missingReason(seat)})`}`;
   }).join(" · ") + " · advisory" + (projection.call_confirmation_required ? " · call confirmation needed" : "")
     + (projection.complete ? "" : " · incomplete crew");
 }
