@@ -1,7 +1,7 @@
 {
  "shared_crew_projection": {
   "model": "seats-v3",
-  "calculated_at": "2026-10-16T07:59:41.751779+00:00",
+  "calculated_at": "2026-10-16T08:10:12.782962+00:00",
   "policy_basis": "explicit_per_leg_calling_groups_and_candidate_eligibility",
   "trains": [
    {
@@ -24,7 +24,7 @@
       "captured_at": "2026-10-16T07:56:16.069714+00:00",
       "evidence": [
        "board:sched_20261016_025347:1_12",
-       "rest_calculated:2026-10-16T02:59:38",
+       "rest_calculated:2026-10-16T03:10:09",
        "board_rest:2026-10-16T07:56:16.069714+00:00:sched_20261016_025347",
        "no_lineup_trains_for_pool_at_04690"
       ],
@@ -46,7 +46,7 @@
       "captured_at": "2026-10-16T07:56:16.069714+00:00",
       "evidence": [
        "board:sched_20261016_025347:1_12",
-       "rest_calculated:2026-10-16T02:59:38",
+       "rest_calculated:2026-10-16T03:10:09",
        "junior_in_craft",
        "board_rest:2026-10-16T07:56:16.069714+00:00:sched_20261016_025347",
        "no_lineup_trains_for_pool_at_04690"
@@ -638,7 +638,7 @@
       "captured_at": "2026-10-16T07:56:16.069714+00:00",
       "evidence": [
        "board:sched_20261016_025347:1_12",
-       "rest_calculated:2026-10-16T02:59:38",
+       "rest_calculated:2026-10-16T03:10:09",
        "board_rest:2026-10-16T07:56:16.069714+00:00:sched_20261016_025347",
        "no_lineup_trains_for_pool_at_04690"
       ],
@@ -660,7 +660,7 @@
       "captured_at": "2026-10-16T07:56:16.069714+00:00",
       "evidence": [
        "board:sched_20261016_025347:1_12",
-       "rest_calculated:2026-10-16T02:59:38",
+       "rest_calculated:2026-10-16T03:10:09",
        "junior_in_craft",
        "board_rest:2026-10-16T07:56:16.069714+00:00:sched_20261016_025347",
        "no_lineup_trains_for_pool_at_04690"
@@ -1255,12 +1255,12 @@
      {
       "member_id": "FIGUEROA,(CEDRIC)",
       "seat": "EN",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "LUDWIG,(AARON)",
       "seat": "EN",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MARKO,(CAIN)",
@@ -1399,12 +1399,12 @@
      {
       "member_id": "FIGUEROA,(CEDRIC)",
       "seat": "AE_CO",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "LUDWIG,(AARON)",
       "seat": "AE_CO",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MARKO,(CAIN)",
@@ -1564,7 +1564,7 @@
       "captured_at": "2026-10-16T07:56:08.582754+00:00",
       "evidence": [
        "board:sched_20261016_025347:1_11",
-       "rest_calculated:2026-10-16T02:59:38",
+       "rest_calculated:2026-10-16T03:10:09",
        "board_rest:2026-10-16T07:56:08.582754+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261016_025347\\parsed\\crew_lineup.jsonl"
       ],
       "call_before": null,
@@ -1585,7 +1585,7 @@
       "captured_at": "2026-10-16T07:56:08.582754+00:00",
       "evidence": [
        "board:sched_20261016_025347:1_11",
-       "rest_calculated:2026-10-16T02:59:38",
+       "rest_calculated:2026-10-16T03:10:09",
        "basic_rest_10h"
       ],
       "call_before": null,
@@ -1604,12 +1604,12 @@
      {
       "member_id": "FIGUEROA,(CEDRIC)",
       "seat": "EN",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "LUDWIG,(AARON)",
       "seat": "EN",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MARKO,(CAIN)",
@@ -1734,12 +1734,12 @@
      {
       "member_id": "FIGUEROA,(CEDRIC)",
       "seat": "AE_CO",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "LUDWIG,(AARON)",
       "seat": "AE_CO",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MARKO,(CAIN)",
@@ -1864,12 +1864,12 @@
      {
       "member_id": "FIGUEROA,(CEDRIC)",
       "seat": "ET",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "LUDWIG,(AARON)",
       "seat": "ET",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MARKO,(CAIN)",
@@ -2004,12 +2004,12 @@
      {
       "member_id": "FIGUEROA,(CEDRIC)",
       "seat": "TT",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "LUDWIG,(AARON)",
       "seat": "TT",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MARKO,(CAIN)",
@@ -2168,12 +2168,12 @@
      {
       "member_id": "FIGUEROA,(CEDRIC)",
       "seat": "EN",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "LUDWIG,(AARON)",
       "seat": "EN",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MARKO,(CAIN)",
@@ -2314,12 +2314,12 @@
      {
       "member_id": "FIGUEROA,(CEDRIC)",
       "seat": "AE_CO",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "LUDWIG,(AARON)",
       "seat": "AE_CO",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MARKO,(CAIN)",
@@ -2485,12 +2485,12 @@
      {
       "member_id": "FIGUEROA,(CEDRIC)",
       "seat": "EN",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "LUDWIG,(AARON)",
       "seat": "EN",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MARKO,(CAIN)",
@@ -2631,12 +2631,12 @@
      {
       "member_id": "FIGUEROA,(CEDRIC)",
       "seat": "AE_CO",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "LUDWIG,(AARON)",
       "seat": "AE_CO",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MARKO,(CAIN)",
@@ -2799,7 +2799,7 @@
       "captured_at": "2026-10-16T07:56:08.582754+00:00",
       "evidence": [
        "board:sched_20261016_025347:1_11",
-       "rest_calculated:2026-10-16T02:59:38",
+       "rest_calculated:2026-10-16T03:10:09",
        "board_rest:2026-10-16T07:56:08.582754+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261016_025347\\parsed\\crew_lineup.jsonl"
       ],
       "call_before": null,
@@ -2820,7 +2820,7 @@
       "captured_at": "2026-10-16T07:56:08.582754+00:00",
       "evidence": [
        "board:sched_20261016_025347:1_11",
-       "rest_calculated:2026-10-16T02:59:38",
+       "rest_calculated:2026-10-16T03:10:09",
        "board_rest:2026-10-16T07:56:08.582754+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261016_025347\\parsed\\crew_lineup.jsonl"
       ],
       "call_before": null,
@@ -2839,12 +2839,12 @@
      {
       "member_id": "FIGUEROA,(CEDRIC)",
       "seat": "EN",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "LUDWIG,(AARON)",
       "seat": "EN",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MARKO,(CAIN)",
@@ -2974,12 +2974,12 @@
      {
       "member_id": "FIGUEROA,(CEDRIC)",
       "seat": "AE_CO",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "LUDWIG,(AARON)",
       "seat": "AE_CO",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MARKO,(CAIN)",
@@ -3109,12 +3109,12 @@
      {
       "member_id": "FIGUEROA,(CEDRIC)",
       "seat": "ET",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "LUDWIG,(AARON)",
       "seat": "ET",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MARKO,(CAIN)",
@@ -3249,12 +3249,12 @@
      {
       "member_id": "FIGUEROA,(CEDRIC)",
       "seat": "TT",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "LUDWIG,(AARON)",
       "seat": "TT",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MARKO,(CAIN)",
@@ -3413,12 +3413,12 @@
      {
       "member_id": "FIGUEROA,(CEDRIC)",
       "seat": "EN",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "LUDWIG,(AARON)",
       "seat": "EN",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MARKO,(CAIN)",
@@ -3559,12 +3559,12 @@
      {
       "member_id": "FIGUEROA,(CEDRIC)",
       "seat": "AE_CO",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "LUDWIG,(AARON)",
       "seat": "AE_CO",
-      "reason": "unavailable"
+      "reason": "stale_evidence"
      },
      {
       "member_id": "MARKO,(CAIN)",
@@ -3727,7 +3727,7 @@
       "captured_at": "2026-10-16T07:56:18.506668+00:00",
       "evidence": [
        "board:sched_20261016_025347:1_12",
-       "rest_calculated:2026-10-16T02:59:38",
+       "rest_calculated:2026-10-16T03:10:09",
        "board_rest:2026-10-16T07:56:18.506668+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261016_025347\\parsed\\crew_lineup.jsonl",
        "no_lineup_trains_for_pool_at_04690"
       ],
@@ -3749,7 +3749,7 @@
       "captured_at": "2026-10-16T07:56:18.506668+00:00",
       "evidence": [
        "board:sched_20261016_025347:1_12",
-       "rest_calculated:2026-10-16T02:59:38",
+       "rest_calculated:2026-10-16T03:10:09",
        "junior_in_craft",
        "board_rest:2026-10-16T07:56:18.506668+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261016_025347\\parsed\\crew_lineup.jsonl",
        "no_lineup_trains_for_pool_at_04690"
@@ -4524,6 +4524,14 @@
    }
   ],
   "input_issues": [
+   {
+    "member": "FIGUEROA,(CEDRIC)",
+    "reason": "rest_evidence_old_or_different_board"
+   },
+   {
+    "member": "LUDWIG,(AARON)",
+    "reason": "rest_evidence_old_or_different_board"
+   },
    {
     "board": "SW POOLS IN OTT POSITION",
     "position": "002",
@@ -5494,7 +5502,7 @@
     ],
     "evidence": [
      "board:sched_20261016_025347:1_09",
-     "rest_calculated:2026-10-16T02:59:38",
+     "rest_calculated:2026-10-16T03:10:09",
      "rest_evidence_missing"
     ],
     "status": "needs_evidence_review",
@@ -5527,7 +5535,7 @@
     ],
     "evidence": [
      "board:sched_20261016_025347:1_06",
-     "rest_calculated:2026-10-16T02:59:38",
+     "rest_calculated:2026-10-16T03:10:09",
      "rest_evidence_missing"
     ],
     "status": "needs_evidence_review",
@@ -5560,7 +5568,7 @@
     ],
     "evidence": [
      "board:sched_20261016_025347:1_06",
-     "rest_calculated:2026-10-16T02:59:38",
+     "rest_calculated:2026-10-16T03:10:09",
      "rest_evidence_missing"
     ],
     "status": "needs_evidence_review",
@@ -5594,7 +5602,7 @@
     ],
     "evidence": [
      "board:sched_20261016_025347:1_09",
-     "rest_calculated:2026-10-16T02:59:38",
+     "rest_calculated:2026-10-16T03:10:09",
      "rest_evidence_missing"
     ],
     "status": "needs_evidence_review",
@@ -5624,10 +5632,43 @@
     "blocks_other_members": [],
     "evidence": [
      "board:sched_20261016_025347:2_04",
-     "rest_calculated:2026-10-16T02:59:38",
+     "rest_calculated:2026-10-16T03:10:09",
      "rest_evidence_missing",
      "rule:OT_EXTRA_CONDUCTOR_FALLBACK:2026-09-23.1:dcdc8e04c72273d00ab7cee4f36338d7e7ca7ff65dcfac032d79b5690206eb4b",
      "schedule:EX0008CO:operator_confirmation",
+     "matrix:ado_matrix_2026"
+    ],
+    "status": "needs_evidence_review",
+    "automatic_collection": false
+   },
+   {
+    "member": "FIGUEROA,(CEDRIC)",
+    "station": "04664",
+    "board": "OTTUMWA ENG XTRA BRD POSITION",
+    "assignment": "0005",
+    "position": 1,
+    "seats": [
+     "EN"
+    ],
+    "captured_at": "2026-10-16T07:44:14.933088+00:00",
+    "reasons": [
+     "stale_evidence"
+    ],
+    "affected_legs": [
+     "181-13|04664|UNVERIFIED|2026-10-16T18:30:00+00:00",
+     "252-16|04664|UNVERIFIED|2026-10-16T21:56:00+00:00",
+     "280-15|04664|UNVERIFIED|2026-10-16T19:47:00+00:00",
+     "357-689|04664|UNVERIFIED|2026-10-16T21:15:00+00:00",
+     "655-655|04664|UNVERIFIED|2026-10-16T21:00:00+00:00",
+     "781-14|04664|UNVERIFIED|2026-10-17T00:35:00+00:00"
+    ],
+    "blocks_other_members": [],
+    "evidence": [
+     "board:sched_20261016_024236:1_04",
+     "rest_calculated:2026-10-16T02:48:10",
+     "rest_evidence_missing",
+     "rule:OT_EXTRA_ENGINEER_FALLBACK:2026-09-23.1:268493cf2cace765ae94f5bd81e6c5ab5eaed211ebc7c8182064f91010a6222c",
+     "schedule:EX0005EN:operator_confirmation",
      "matrix:ado_matrix_2026"
     ],
     "status": "needs_evidence_review",
@@ -5657,10 +5698,44 @@
     "blocks_other_members": [],
     "evidence": [
      "board:sched_20261016_025347:2_04",
-     "rest_calculated:2026-10-16T02:59:38",
+     "rest_calculated:2026-10-16T03:10:09",
      "rest_evidence_missing",
      "rule:OT_EXTRA_CONDUCTOR_FALLBACK:2026-09-23.1:dcdc8e04c72273d00ab7cee4f36338d7e7ca7ff65dcfac032d79b5690206eb4b",
      "schedule:EX0009CO:operator_confirmation",
+     "matrix:ado_matrix_2026"
+    ],
+    "status": "needs_evidence_review",
+    "automatic_collection": false
+   },
+   {
+    "member": "LUDWIG,(AARON)",
+    "station": "04664",
+    "board": "OTTUMWA ENG XTRA BRD POSITION",
+    "assignment": "0002",
+    "position": 2,
+    "seats": [
+     "EN"
+    ],
+    "captured_at": "2026-10-16T07:44:14.933088+00:00",
+    "reasons": [
+     "stale_evidence"
+    ],
+    "affected_legs": [
+     "181-13|04664|UNVERIFIED|2026-10-16T18:30:00+00:00",
+     "252-16|04664|UNVERIFIED|2026-10-16T21:56:00+00:00",
+     "280-15|04664|UNVERIFIED|2026-10-16T19:47:00+00:00",
+     "357-689|04664|UNVERIFIED|2026-10-16T21:15:00+00:00",
+     "655-655|04664|UNVERIFIED|2026-10-16T21:00:00+00:00",
+     "781-14|04664|UNVERIFIED|2026-10-17T00:35:00+00:00"
+    ],
+    "blocks_other_members": [],
+    "evidence": [
+     "board:sched_20261016_024236:1_04",
+     "rest_calculated:2026-10-16T02:48:10",
+     "junior_in_craft",
+     "rest_evidence_missing",
+     "rule:OT_EXTRA_ENGINEER_FALLBACK:2026-09-23.1:268493cf2cace765ae94f5bd81e6c5ab5eaed211ebc7c8182064f91010a6222c",
+     "schedule:EX0002EN:operator_confirmation",
      "matrix:ado_matrix_2026"
     ],
     "status": "needs_evidence_review",
@@ -5690,7 +5765,7 @@
     "blocks_other_members": [],
     "evidence": [
      "board:sched_20261016_025347:2_04",
-     "rest_calculated:2026-10-16T02:59:38",
+     "rest_calculated:2026-10-16T03:10:09",
      "junior_in_craft",
      "rest_evidence_missing",
      "rule:OT_EXTRA_CONDUCTOR_FALLBACK:2026-09-23.1:dcdc8e04c72273d00ab7cee4f36338d7e7ca7ff65dcfac032d79b5690206eb4b",
@@ -5724,7 +5799,7 @@
     "blocks_other_members": [],
     "evidence": [
      "board:sched_20261016_025347:2_04",
-     "rest_calculated:2026-10-16T02:59:38",
+     "rest_calculated:2026-10-16T03:10:09",
      "junior_in_craft",
      "rest_evidence_missing",
      "rule:OT_EXTRA_CONDUCTOR_FALLBACK:2026-09-23.1:dcdc8e04c72273d00ab7cee4f36338d7e7ca7ff65dcfac032d79b5690206eb4b",
@@ -5758,7 +5833,7 @@
     "blocks_other_members": [],
     "evidence": [
      "board:sched_20261016_025347:2_04",
-     "rest_calculated:2026-10-16T02:59:38",
+     "rest_calculated:2026-10-16T03:10:09",
      "junior_in_craft",
      "rest_evidence_missing",
      "rule:OT_EXTRA_CONDUCTOR_FALLBACK:2026-09-23.1:dcdc8e04c72273d00ab7cee4f36338d7e7ca7ff65dcfac032d79b5690206eb4b",
@@ -5792,7 +5867,7 @@
     "blocks_other_members": [],
     "evidence": [
      "board:sched_20261016_025347:2_04",
-     "rest_calculated:2026-10-16T02:59:38",
+     "rest_calculated:2026-10-16T03:10:09",
      "rest_evidence_missing",
      "rule:OT_EXTRA_CONDUCTOR_FALLBACK:2026-09-23.1:dcdc8e04c72273d00ab7cee4f36338d7e7ca7ff65dcfac032d79b5690206eb4b",
      "schedule:EX0013CO:operator_confirmation",
@@ -5813,10 +5888,10 @@
  },
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; waiting at the RSA prompt.",
+  "collection_message": "Awaiting login after session loss.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-10-16T07:59:41+00:00",
+  "generated_at": "2026-10-16T08:10:12+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20261016_025347",
@@ -9581,7 +9656,7 @@
        {
         "craft": "EN",
         "name": "CASHATT,(DAKOTA)",
-        "on_in": "1h 00m",
+        "on_in": "0h 50m",
         "tags": [
          "01"
         ]
@@ -9589,7 +9664,7 @@
        {
         "craft": "AE",
         "name": "HARTMAN,(JAMES)",
-        "on_in": "1h 00m",
+        "on_in": "0h 50m",
         "tags": [
          "01"
         ]
@@ -9643,12 +9718,12 @@
         {
          "member_id": "FIGUEROA,(CEDRIC)",
          "seat": "EN",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "LUDWIG,(AARON)",
          "seat": "EN",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MARKO,(CAIN)",
@@ -9787,12 +9862,12 @@
         {
          "member_id": "FIGUEROA,(CEDRIC)",
          "seat": "AE_CO",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "LUDWIG,(AARON)",
          "seat": "AE_CO",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MARKO,(CAIN)",
@@ -9982,7 +10057,7 @@
          "captured_at": "2026-10-16T07:56:08.582754+00:00",
          "evidence": [
           "board:sched_20261016_025347:1_11",
-          "rest_calculated:2026-10-16T02:59:38",
+          "rest_calculated:2026-10-16T03:10:09",
           "board_rest:2026-10-16T07:56:08.582754+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261016_025347\\parsed\\crew_lineup.jsonl"
          ],
          "call_before": null,
@@ -10003,7 +10078,7 @@
          "captured_at": "2026-10-16T07:56:08.582754+00:00",
          "evidence": [
           "board:sched_20261016_025347:1_11",
-          "rest_calculated:2026-10-16T02:59:38",
+          "rest_calculated:2026-10-16T03:10:09",
           "basic_rest_10h"
          ],
          "call_before": null,
@@ -10022,12 +10097,12 @@
         {
          "member_id": "FIGUEROA,(CEDRIC)",
          "seat": "EN",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "LUDWIG,(AARON)",
          "seat": "EN",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MARKO,(CAIN)",
@@ -10152,12 +10227,12 @@
         {
          "member_id": "FIGUEROA,(CEDRIC)",
          "seat": "AE_CO",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "LUDWIG,(AARON)",
          "seat": "AE_CO",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MARKO,(CAIN)",
@@ -10282,12 +10357,12 @@
         {
          "member_id": "FIGUEROA,(CEDRIC)",
          "seat": "ET",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "LUDWIG,(AARON)",
          "seat": "ET",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MARKO,(CAIN)",
@@ -10422,12 +10497,12 @@
         {
          "member_id": "FIGUEROA,(CEDRIC)",
          "seat": "TT",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "LUDWIG,(AARON)",
          "seat": "TT",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MARKO,(CAIN)",
@@ -10616,12 +10691,12 @@
         {
          "member_id": "FIGUEROA,(CEDRIC)",
          "seat": "EN",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "LUDWIG,(AARON)",
          "seat": "EN",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MARKO,(CAIN)",
@@ -10762,12 +10837,12 @@
         {
          "member_id": "FIGUEROA,(CEDRIC)",
          "seat": "AE_CO",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "LUDWIG,(AARON)",
          "seat": "AE_CO",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MARKO,(CAIN)",
@@ -10963,12 +11038,12 @@
         {
          "member_id": "FIGUEROA,(CEDRIC)",
          "seat": "EN",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "LUDWIG,(AARON)",
          "seat": "EN",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MARKO,(CAIN)",
@@ -11109,12 +11184,12 @@
         {
          "member_id": "FIGUEROA,(CEDRIC)",
          "seat": "AE_CO",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "LUDWIG,(AARON)",
          "seat": "AE_CO",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MARKO,(CAIN)",
@@ -11307,7 +11382,7 @@
          "captured_at": "2026-10-16T07:56:08.582754+00:00",
          "evidence": [
           "board:sched_20261016_025347:1_11",
-          "rest_calculated:2026-10-16T02:59:38",
+          "rest_calculated:2026-10-16T03:10:09",
           "board_rest:2026-10-16T07:56:08.582754+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261016_025347\\parsed\\crew_lineup.jsonl"
          ],
          "call_before": null,
@@ -11328,7 +11403,7 @@
          "captured_at": "2026-10-16T07:56:08.582754+00:00",
          "evidence": [
           "board:sched_20261016_025347:1_11",
-          "rest_calculated:2026-10-16T02:59:38",
+          "rest_calculated:2026-10-16T03:10:09",
           "board_rest:2026-10-16T07:56:08.582754+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261016_025347\\parsed\\crew_lineup.jsonl"
          ],
          "call_before": null,
@@ -11347,12 +11422,12 @@
         {
          "member_id": "FIGUEROA,(CEDRIC)",
          "seat": "EN",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "LUDWIG,(AARON)",
          "seat": "EN",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MARKO,(CAIN)",
@@ -11482,12 +11557,12 @@
         {
          "member_id": "FIGUEROA,(CEDRIC)",
          "seat": "AE_CO",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "LUDWIG,(AARON)",
          "seat": "AE_CO",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MARKO,(CAIN)",
@@ -11617,12 +11692,12 @@
         {
          "member_id": "FIGUEROA,(CEDRIC)",
          "seat": "ET",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "LUDWIG,(AARON)",
          "seat": "ET",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MARKO,(CAIN)",
@@ -11757,12 +11832,12 @@
         {
          "member_id": "FIGUEROA,(CEDRIC)",
          "seat": "TT",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "LUDWIG,(AARON)",
          "seat": "TT",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MARKO,(CAIN)",
@@ -11951,12 +12026,12 @@
         {
          "member_id": "FIGUEROA,(CEDRIC)",
          "seat": "EN",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "LUDWIG,(AARON)",
          "seat": "EN",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MARKO,(CAIN)",
@@ -12097,12 +12172,12 @@
         {
          "member_id": "FIGUEROA,(CEDRIC)",
          "seat": "AE_CO",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "LUDWIG,(AARON)",
          "seat": "AE_CO",
-         "reason": "unavailable"
+         "reason": "stale_evidence"
         },
         {
          "member_id": "MARKO,(CAIN)",
@@ -13261,7 +13336,7 @@
          "captured_at": "2026-10-16T07:56:16.069714+00:00",
          "evidence": [
           "board:sched_20261016_025347:1_12",
-          "rest_calculated:2026-10-16T02:59:38",
+          "rest_calculated:2026-10-16T03:10:09",
           "board_rest:2026-10-16T07:56:16.069714+00:00:sched_20261016_025347",
           "no_lineup_trains_for_pool_at_04690"
          ],
@@ -13283,7 +13358,7 @@
          "captured_at": "2026-10-16T07:56:16.069714+00:00",
          "evidence": [
           "board:sched_20261016_025347:1_12",
-          "rest_calculated:2026-10-16T02:59:38",
+          "rest_calculated:2026-10-16T03:10:09",
           "junior_in_craft",
           "board_rest:2026-10-16T07:56:16.069714+00:00:sched_20261016_025347",
           "no_lineup_trains_for_pool_at_04690"
@@ -14025,7 +14100,7 @@
          "captured_at": "2026-10-16T07:56:16.069714+00:00",
          "evidence": [
           "board:sched_20261016_025347:1_12",
-          "rest_calculated:2026-10-16T02:59:38",
+          "rest_calculated:2026-10-16T03:10:09",
           "board_rest:2026-10-16T07:56:16.069714+00:00:sched_20261016_025347",
           "no_lineup_trains_for_pool_at_04690"
          ],
@@ -14047,7 +14122,7 @@
          "captured_at": "2026-10-16T07:56:16.069714+00:00",
          "evidence": [
           "board:sched_20261016_025347:1_12",
-          "rest_calculated:2026-10-16T02:59:38",
+          "rest_calculated:2026-10-16T03:10:09",
           "junior_in_craft",
           "board_rest:2026-10-16T07:56:16.069714+00:00:sched_20261016_025347",
           "no_lineup_trains_for_pool_at_04690"
@@ -14657,12 +14732,12 @@
        {
         "craft": "EN",
         "name": "LINEBAUGH,(MATT)",
-        "on_in": "1h 00m"
+        "on_in": "0h 50m"
        },
        {
         "craft": "AE",
         "name": "COMSTOCK,(JUSTYCE)",
-        "on_in": "1h 00m"
+        "on_in": "0h 50m"
        }
       ],
       "eng_crew_count": "0",
@@ -14728,7 +14803,7 @@
        {
         "craft": "EN",
         "name": "FIGUEROA,(CEDRIC)",
-        "on_in": "1h 45m",
+        "on_in": "1h 35m",
         "tags": [
          "01"
         ]
@@ -14736,7 +14811,7 @@
        {
         "craft": "AE",
         "name": "LUDWIG,(AARON)",
-        "on_in": "1h 45m",
+        "on_in": "1h 35m",
         "tags": [
          "01"
         ]
@@ -14937,7 +15012,7 @@
          "captured_at": "2026-10-16T07:56:18.506668+00:00",
          "evidence": [
           "board:sched_20261016_025347:1_12",
-          "rest_calculated:2026-10-16T02:59:38",
+          "rest_calculated:2026-10-16T03:10:09",
           "board_rest:2026-10-16T07:56:18.506668+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261016_025347\\parsed\\crew_lineup.jsonl",
           "no_lineup_trains_for_pool_at_04690"
          ],
@@ -14959,7 +15034,7 @@
          "captured_at": "2026-10-16T07:56:18.506668+00:00",
          "evidence": [
           "board:sched_20261016_025347:1_12",
-          "rest_calculated:2026-10-16T02:59:38",
+          "rest_calculated:2026-10-16T03:10:09",
           "junior_in_craft",
           "board_rest:2026-10-16T07:56:18.506668+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261016_025347\\parsed\\crew_lineup.jsonl",
           "no_lineup_trains_for_pool_at_04690"
@@ -16591,7 +16666,7 @@
   "board_count": 11,
   "boards": [
    {
-    "age_seconds": 922,
+    "age_seconds": 1553,
     "captured_at": "2026-10-16T07:44:14.933088+00:00",
     "label": "OTTUMWA ENG XTRA BRD",
     "menu_path": "1_04",
@@ -16659,12 +16734,12 @@
     ],
     "run_id": "sched_20261016_024236",
     "screen_title": "OTTUMWA ENG XTRA BRD POSITION",
-    "stale": false,
+    "stale": true,
     "status": "observed",
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 241,
+    "age_seconds": 872,
     "captured_at": "2026-10-16T07:55:35.796698+00:00",
     "label": "OB POOLS IN OTT TURN ORDER",
     "menu_path": "1_05",
@@ -16790,7 +16865,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 236,
+    "age_seconds": 867,
     "captured_at": "2026-10-16T07:55:40.852253+00:00",
     "label": "OB POOLS IN OTT POSITION",
     "menu_path": "1_06",
@@ -16819,7 +16894,7 @@
       "ushr": "",
       "rest_state": "availability_unknown",
       "rest_until": null,
-      "rest_calculated_at": "2026-10-16T02:59:38",
+      "rest_calculated_at": "2026-10-16T03:10:09",
       "rest_board": "OB POOLS IN OTT POSITION",
       "rest_evidence": [
        "rest_evidence_missing"
@@ -16848,7 +16923,7 @@
       "ushr": "",
       "rest_state": "availability_unknown",
       "rest_until": null,
-      "rest_calculated_at": "2026-10-16T02:59:38",
+      "rest_calculated_at": "2026-10-16T03:10:09",
       "rest_board": "OB POOLS IN OTT POSITION",
       "rest_evidence": [
        "rest_evidence_missing"
@@ -16862,7 +16937,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 231,
+    "age_seconds": 862,
     "captured_at": "2026-10-16T07:55:45.910538+00:00",
     "label": "OB POOLS IN BVL POSITION",
     "menu_path": "1_07",
@@ -16875,7 +16950,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 226,
+    "age_seconds": 857,
     "captured_at": "2026-10-16T07:55:50.974870+00:00",
     "label": "OB POOLS IN IMS POSITION",
     "menu_path": "1_08",
@@ -16888,7 +16963,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 219,
+    "age_seconds": 850,
     "captured_at": "2026-10-16T07:55:58.471627+00:00",
     "label": "DA POOLS IN OTT POSITION",
     "menu_path": "1_09",
@@ -16917,7 +16992,7 @@
       "ushr": "",
       "rest_state": "availability_unknown",
       "rest_until": null,
-      "rest_calculated_at": "2026-10-16T02:59:38",
+      "rest_calculated_at": "2026-10-16T03:10:09",
       "rest_board": "DA POOLS IN OTT POSITION",
       "rest_evidence": [
        "rest_evidence_missing"
@@ -16946,7 +17021,7 @@
       "ushr": "",
       "rest_state": "availability_unknown",
       "rest_until": null,
-      "rest_calculated_at": "2026-10-16T02:59:38",
+      "rest_calculated_at": "2026-10-16T03:10:09",
       "rest_board": "DA POOLS IN OTT POSITION",
       "rest_evidence": [
        "rest_evidence_missing"
@@ -16975,7 +17050,7 @@
       "ushr": "0445",
       "rest_state": "resting",
       "rest_until": "2026-10-16T04:45",
-      "rest_calculated_at": "2026-10-16T02:59:38",
+      "rest_calculated_at": "2026-10-16T03:10:09",
       "rest_board": "DA POOLS IN OTT POSITION",
       "rest_evidence": [
        "board_rest:2026-10-16T07:55:56.036028+00:00:sched_20261016_025347"
@@ -17004,7 +17079,7 @@
       "ushr": "0445",
       "rest_state": "resting",
       "rest_until": "2026-10-16T04:45",
-      "rest_calculated_at": "2026-10-16T02:59:38",
+      "rest_calculated_at": "2026-10-16T03:10:09",
       "rest_board": "DA POOLS IN OTT POSITION",
       "rest_evidence": [
        "board_rest:2026-10-16T07:55:56.036028+00:00:sched_20261016_025347"
@@ -17033,7 +17108,7 @@
       "ushr": "1134",
       "rest_state": "resting",
       "rest_until": "2026-10-16T11:32",
-      "rest_calculated_at": "2026-10-16T02:59:38",
+      "rest_calculated_at": "2026-10-16T03:10:09",
       "rest_board": "DA POOLS IN OTT POSITION",
       "rest_evidence": [
        "board_rest:2026-10-16T07:55:58.471627+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261016_025347\\parsed\\crew_lineup.jsonl"
@@ -17062,7 +17137,7 @@
       "ushr": "1133",
       "rest_state": "resting",
       "rest_until": "2026-10-16T11:32",
-      "rest_calculated_at": "2026-10-16T02:59:38",
+      "rest_calculated_at": "2026-10-16T03:10:09",
       "rest_board": "DA POOLS IN OTT POSITION",
       "rest_evidence": [
        "junior_in_craft",
@@ -17077,7 +17152,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 214,
+    "age_seconds": 845,
     "captured_at": "2026-10-16T07:56:03.518110+00:00",
     "label": "KA POOLS IN OTT POSITION",
     "menu_path": "1_10",
@@ -17090,7 +17165,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 209,
+    "age_seconds": 840,
     "captured_at": "2026-10-16T07:56:08.582754+00:00",
     "label": "SW POOLS IN OTT POSITION",
     "menu_path": "1_11",
@@ -17119,7 +17194,7 @@
       "ushr": "",
       "rest_state": "resting",
       "rest_until": "2026-10-16T05:43",
-      "rest_calculated_at": "2026-10-16T02:59:38",
+      "rest_calculated_at": "2026-10-16T03:10:09",
       "rest_board": "SW POOLS IN OTT POSITION",
       "rest_evidence": [
        "board_rest:2026-10-16T07:56:08.582754+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261016_025347\\parsed\\crew_lineup.jsonl"
@@ -17148,7 +17223,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-10-16T01:58",
-      "rest_calculated_at": "2026-10-16T02:59:38",
+      "rest_calculated_at": "2026-10-16T03:10:09",
       "rest_board": "SW POOLS IN OTT POSITION",
       "rest_evidence": [
        "basic_rest_10h"
@@ -17177,7 +17252,7 @@
       "ushr": "",
       "rest_state": "availability_unknown",
       "rest_until": null,
-      "rest_calculated_at": "2026-10-16T02:59:38",
+      "rest_calculated_at": "2026-10-16T03:10:09",
       "rest_board": "SW POOLS IN OTT POSITION",
       "rest_evidence": [
        "rest_evidence_missing"
@@ -17206,7 +17281,7 @@
       "ushr": "0639",
       "rest_state": "availability_unknown",
       "rest_until": null,
-      "rest_calculated_at": "2026-10-16T02:59:38",
+      "rest_calculated_at": "2026-10-16T03:10:09",
       "rest_board": "SW POOLS IN OTT POSITION",
       "rest_evidence": [
        "booked_off_L",
@@ -17237,7 +17312,7 @@
       "ushr": "0615",
       "rest_state": "resting",
       "rest_until": "2026-10-16T06:15",
-      "rest_calculated_at": "2026-10-16T02:59:38",
+      "rest_calculated_at": "2026-10-16T03:10:09",
       "rest_board": "SW POOLS IN OTT POSITION",
       "rest_evidence": [
        "board_rest:2026-10-16T07:56:08.582754+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261016_025347\\parsed\\crew_lineup.jsonl"
@@ -17266,7 +17341,7 @@
       "ushr": "0615",
       "rest_state": "resting",
       "rest_until": "2026-10-16T06:15",
-      "rest_calculated_at": "2026-10-16T02:59:38",
+      "rest_calculated_at": "2026-10-16T03:10:09",
       "rest_board": "SW POOLS IN OTT POSITION",
       "rest_evidence": [
        "board_rest:2026-10-16T07:56:08.582754+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261016_025347\\parsed\\crew_lineup.jsonl"
@@ -17295,7 +17370,7 @@
       "ushr": "",
       "rest_state": "availability_unknown",
       "rest_until": null,
-      "rest_calculated_at": "2026-10-16T02:59:38",
+      "rest_calculated_at": "2026-10-16T03:10:09",
       "rest_board": "SW POOLS IN OTT POSITION",
       "rest_evidence": [
        "rest_evidence_missing"
@@ -17309,7 +17384,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 199,
+    "age_seconds": 830,
     "captured_at": "2026-10-16T07:56:18.506668+00:00",
     "label": "SW POOLS IN KC POSITION",
     "menu_path": "1_12",
@@ -17338,7 +17413,7 @@
       "ushr": "0330",
       "rest_state": "resting",
       "rest_until": "2026-10-16T03:30",
-      "rest_calculated_at": "2026-10-16T02:59:38",
+      "rest_calculated_at": "2026-10-16T03:10:09",
       "rest_board": "SW POOLS IN KC  POSITION",
       "rest_evidence": [
        "board_rest:2026-10-16T07:56:16.069714+00:00:sched_20261016_025347",
@@ -17368,7 +17443,7 @@
       "ushr": "0330",
       "rest_state": "resting",
       "rest_until": "2026-10-16T03:30",
-      "rest_calculated_at": "2026-10-16T02:59:38",
+      "rest_calculated_at": "2026-10-16T03:10:09",
       "rest_board": "SW POOLS IN KC  POSITION",
       "rest_evidence": [
        "junior_in_craft",
@@ -17399,7 +17474,7 @@
       "ushr": "0555",
       "rest_state": "resting",
       "rest_until": "2026-10-16T05:55",
-      "rest_calculated_at": "2026-10-16T02:59:38",
+      "rest_calculated_at": "2026-10-16T03:10:09",
       "rest_board": "SW POOLS IN KC  POSITION",
       "rest_evidence": [
        "board_rest:2026-10-16T07:56:16.069714+00:00:sched_20261016_025347",
@@ -17429,7 +17504,7 @@
       "ushr": "0555",
       "rest_state": "resting",
       "rest_until": "2026-10-16T05:55",
-      "rest_calculated_at": "2026-10-16T02:59:38",
+      "rest_calculated_at": "2026-10-16T03:10:09",
       "rest_board": "SW POOLS IN KC  POSITION",
       "rest_evidence": [
        "junior_in_craft",
@@ -17460,7 +17535,7 @@
       "ushr": "1130",
       "rest_state": "resting",
       "rest_until": "2026-10-16T11:30",
-      "rest_calculated_at": "2026-10-16T02:59:38",
+      "rest_calculated_at": "2026-10-16T03:10:09",
       "rest_board": "SW POOLS IN KC  POSITION",
       "rest_evidence": [
        "board_rest:2026-10-16T07:56:18.506668+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261016_025347\\parsed\\crew_lineup.jsonl",
@@ -17490,7 +17565,7 @@
       "ushr": "1130",
       "rest_state": "resting",
       "rest_until": "2026-10-16T11:30",
-      "rest_calculated_at": "2026-10-16T02:59:38",
+      "rest_calculated_at": "2026-10-16T03:10:09",
       "rest_board": "SW POOLS IN KC  POSITION",
       "rest_evidence": [
        "junior_in_craft",
@@ -17506,7 +17581,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 194,
+    "age_seconds": 825,
     "captured_at": "2026-10-16T07:56:23.554960+00:00",
     "label": "SW POOLS IN DA POSITION",
     "menu_path": "1_13",
@@ -17519,7 +17594,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 185,
+    "age_seconds": 816,
     "captured_at": "2026-10-16T07:56:32.375143+00:00",
     "label": "OTT SWITCHMAN XTRA BRD",
     "menu_path": "2_04",
@@ -17548,7 +17623,7 @@
       "ushr": "",
       "rest_state": "availability_unknown",
       "rest_until": null,
-      "rest_calculated_at": "2026-10-16T02:59:38",
+      "rest_calculated_at": "2026-10-16T03:10:09",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION",
       "rest_evidence": [
        "rest_evidence_missing"
@@ -17577,7 +17652,7 @@
       "ushr": "",
       "rest_state": "availability_unknown",
       "rest_until": null,
-      "rest_calculated_at": "2026-10-16T02:59:38",
+      "rest_calculated_at": "2026-10-16T03:10:09",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION",
       "rest_evidence": [
        "rest_evidence_missing"
@@ -17606,7 +17681,7 @@
       "ushr": "",
       "rest_state": "availability_unknown",
       "rest_until": null,
-      "rest_calculated_at": "2026-10-16T02:59:38",
+      "rest_calculated_at": "2026-10-16T03:10:09",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION",
       "rest_evidence": [
        "junior_in_craft",
@@ -17636,7 +17711,7 @@
       "ushr": "",
       "rest_state": "availability_unknown",
       "rest_until": null,
-      "rest_calculated_at": "2026-10-16T02:59:38",
+      "rest_calculated_at": "2026-10-16T03:10:09",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION",
       "rest_evidence": [
        "junior_in_craft",
@@ -17666,7 +17741,7 @@
       "ushr": "",
       "rest_state": "availability_unknown",
       "rest_until": null,
-      "rest_calculated_at": "2026-10-16T02:59:38",
+      "rest_calculated_at": "2026-10-16T03:10:09",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION",
       "rest_evidence": [
        "junior_in_craft",
@@ -17696,7 +17771,7 @@
       "ushr": "",
       "rest_state": "availability_unknown",
       "rest_until": null,
-      "rest_calculated_at": "2026-10-16T02:59:38",
+      "rest_calculated_at": "2026-10-16T03:10:09",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION",
       "rest_evidence": [
        "rest_evidence_missing"
@@ -17713,7 +17788,7 @@
   "captured_at": "2026-10-16T07:56:32.375143+00:00",
   "row_count": 35,
   "run_id": "sched_20261016_025347",
-  "stale": false
+  "stale": true
  },
  "alerts": [],
  "my_status": [
