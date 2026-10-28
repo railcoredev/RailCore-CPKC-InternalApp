@@ -1,7 +1,7 @@
 {
  "shared_crew_projection": {
   "model": "seats-v3",
-  "calculated_at": "2026-10-28T10:10:17.441006+00:00",
+  "calculated_at": "2026-10-28T10:20:07.805213+00:00",
   "policy_basis": "explicit_per_leg_calling_groups_and_candidate_eligibility",
   "trains": [
    {
@@ -24,7 +24,7 @@
       "captured_at": "2026-10-28T10:03:28.635052+00:00",
       "evidence": [
        "board:sched_20261028_013059:1_12",
-       "rest_calculated:2026-10-28T05:09:29",
+       "rest_calculated:2026-10-28T05:19:20",
        "basic_rest_10h"
       ],
       "call_before": null,
@@ -45,7 +45,7 @@
       "captured_at": "2026-10-28T10:03:28.635052+00:00",
       "evidence": [
        "board:sched_20261028_013059:1_12",
-       "rest_calculated:2026-10-28T05:09:29",
+       "rest_calculated:2026-10-28T05:19:20",
        "basic_rest_10h"
       ],
       "call_before": null,
@@ -66,7 +66,7 @@
       "captured_at": "2026-10-28T10:03:28.635052+00:00",
       "evidence": [
        "board:sched_20261028_013059:1_12",
-       "rest_calculated:2026-10-28T05:09:29",
+       "rest_calculated:2026-10-28T05:19:20",
        "basic_rest_10h"
       ],
       "call_before": null,
@@ -615,7 +615,7 @@
       "captured_at": "2026-10-28T10:03:20.956298+00:00",
       "evidence": [
        "board:sched_20261028_013059:1_11",
-       "rest_calculated:2026-10-28T05:09:29",
+       "rest_calculated:2026-10-28T05:19:20",
        "basic_rest_10h"
       ],
       "call_before": null,
@@ -636,7 +636,7 @@
       "captured_at": "2026-10-28T10:03:20.956298+00:00",
       "evidence": [
        "board:sched_20261028_013059:1_11",
-       "rest_calculated:2026-10-28T05:09:29",
+       "rest_calculated:2026-10-28T05:19:20",
        "basic_rest_10h"
       ],
       "call_before": null,
@@ -657,7 +657,7 @@
       "captured_at": "2026-10-28T10:03:20.956298+00:00",
       "evidence": [
        "board:sched_20261028_013059:1_11",
-       "rest_calculated:2026-10-28T05:09:29",
+       "rest_calculated:2026-10-28T05:19:20",
        "board_rest:2026-10-28T10:03:20.956298+00:00:sched_20261028_013059"
       ],
       "call_before": null,
@@ -723,14 +723,9 @@
       "reason": "seat_not_qualified"
      },
      {
-      "member_id": "GERST,(BRADEN)",
-      "seat": "EN",
-      "reason": "unavailable"
-     },
-     {
       "member_id": "HARTMAN,(JAMES)",
       "seat": "EN",
-      "reason": "unavailable"
+      "reason": "seat_not_qualified"
      },
      {
       "member_id": "LOCHNER,(DEREK)",
@@ -850,12 +845,7 @@
      {
       "member_id": "GERST,(BRADEN)",
       "seat": "AE_CO",
-      "reason": "unavailable"
-     },
-     {
-      "member_id": "HARTMAN,(JAMES)",
-      "seat": "AE_CO",
-      "reason": "unavailable"
+      "reason": "seat_not_qualified"
      },
      {
       "member_id": "LOCHNER,(DEREK)",
@@ -980,12 +970,12 @@
      {
       "member_id": "GERST,(BRADEN)",
       "seat": "ET",
-      "reason": "unavailable"
+      "reason": "seat_not_qualified"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
       "seat": "ET",
-      "reason": "unavailable"
+      "reason": "seat_not_qualified"
      },
      {
       "member_id": "LOCHNER,(DEREK)",
@@ -1115,12 +1105,12 @@
      {
       "member_id": "GERST,(BRADEN)",
       "seat": "TT",
-      "reason": "unavailable"
+      "reason": "seat_not_qualified"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
       "seat": "TT",
-      "reason": "unavailable"
+      "reason": "seat_not_qualified"
      },
      {
       "member_id": "LOCHNER,(DEREK)",
@@ -1201,7 +1191,7 @@
       "captured_at": "2026-10-28T10:03:08.198564+00:00",
       "evidence": [
        "board:sched_20261028_013059:1_09",
-       "rest_calculated:2026-10-28T05:09:29",
+       "rest_calculated:2026-10-28T05:19:20",
        "basic_rest_10h"
       ],
       "call_before": null,
@@ -1222,7 +1212,7 @@
       "captured_at": "2026-10-28T10:03:08.198564+00:00",
       "evidence": [
        "board:sched_20261028_013059:1_09",
-       "rest_calculated:2026-10-28T05:09:29",
+       "rest_calculated:2026-10-28T05:19:20",
        "basic_rest_10h"
       ],
       "call_before": null,
@@ -1286,12 +1276,12 @@
      {
       "member_id": "GERST,(BRADEN)",
       "seat": "EN",
-      "reason": "unavailable"
+      "reason": "calling_group_not_authorized"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
       "seat": "EN",
-      "reason": "unavailable"
+      "reason": "seat_not_qualified"
      },
      {
       "member_id": "LOCHNER,(DEREK)",
@@ -1406,12 +1396,12 @@
      {
       "member_id": "GERST,(BRADEN)",
       "seat": "AE_CO",
-      "reason": "unavailable"
+      "reason": "seat_not_qualified"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
       "seat": "AE_CO",
-      "reason": "unavailable"
+      "reason": "calling_group_not_authorized"
      },
      {
       "member_id": "LOCHNER,(DEREK)",
@@ -1544,12 +1534,12 @@
      {
       "member_id": "GERST,(BRADEN)",
       "seat": "ET",
-      "reason": "unavailable"
+      "reason": "seat_not_qualified"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
       "seat": "ET",
-      "reason": "unavailable"
+      "reason": "seat_not_qualified"
      },
      {
       "member_id": "LOCHNER,(DEREK)",
@@ -1679,12 +1669,12 @@
      {
       "member_id": "GERST,(BRADEN)",
       "seat": "TT",
-      "reason": "unavailable"
+      "reason": "seat_not_qualified"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
       "seat": "TT",
-      "reason": "unavailable"
+      "reason": "seat_not_qualified"
      },
      {
       "member_id": "LOCHNER,(DEREK)",
@@ -1765,7 +1755,7 @@
       "captured_at": "2026-10-28T10:03:20.956298+00:00",
       "evidence": [
        "board:sched_20261028_013059:1_11",
-       "rest_calculated:2026-10-28T05:09:29",
+       "rest_calculated:2026-10-28T05:19:20",
        "basic_rest_10h"
       ],
       "call_before": null,
@@ -1786,7 +1776,7 @@
       "captured_at": "2026-10-28T10:03:20.956298+00:00",
       "evidence": [
        "board:sched_20261028_013059:1_11",
-       "rest_calculated:2026-10-28T05:09:29",
+       "rest_calculated:2026-10-28T05:19:20",
        "board_rest:2026-10-28T10:03:20.956298+00:00:sched_20261028_013059"
       ],
       "call_before": null,
@@ -1858,14 +1848,9 @@
       "reason": "seat_not_qualified"
      },
      {
-      "member_id": "GERST,(BRADEN)",
-      "seat": "EN",
-      "reason": "unavailable"
-     },
-     {
       "member_id": "HARTMAN,(JAMES)",
       "seat": "EN",
-      "reason": "unavailable"
+      "reason": "seat_not_qualified"
      },
      {
       "member_id": "LOCHNER,(DEREK)",
@@ -1990,12 +1975,7 @@
      {
       "member_id": "GERST,(BRADEN)",
       "seat": "AE_CO",
-      "reason": "unavailable"
-     },
-     {
-      "member_id": "HARTMAN,(JAMES)",
-      "seat": "AE_CO",
-      "reason": "unavailable"
+      "reason": "seat_not_qualified"
      },
      {
       "member_id": "LOCHNER,(DEREK)",
@@ -2125,12 +2105,12 @@
      {
       "member_id": "GERST,(BRADEN)",
       "seat": "ET",
-      "reason": "unavailable"
+      "reason": "seat_not_qualified"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
       "seat": "ET",
-      "reason": "unavailable"
+      "reason": "seat_not_qualified"
      },
      {
       "member_id": "LOCHNER,(DEREK)",
@@ -2260,12 +2240,12 @@
      {
       "member_id": "GERST,(BRADEN)",
       "seat": "TT",
-      "reason": "unavailable"
+      "reason": "seat_not_qualified"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
       "seat": "TT",
-      "reason": "unavailable"
+      "reason": "seat_not_qualified"
      },
      {
       "member_id": "LOCHNER,(DEREK)",
@@ -2346,7 +2326,7 @@
       "captured_at": "2026-10-28T10:03:08.198564+00:00",
       "evidence": [
        "board:sched_20261028_013059:1_09",
-       "rest_calculated:2026-10-28T05:09:29",
+       "rest_calculated:2026-10-28T05:19:20",
        "board_rest:2026-10-28T10:03:08.198564+00:00:sched_20261028_013059"
       ],
       "call_before": null,
@@ -2367,7 +2347,7 @@
       "captured_at": "2026-10-28T10:03:08.198564+00:00",
       "evidence": [
        "board:sched_20261028_013059:1_09",
-       "rest_calculated:2026-10-28T05:09:29",
+       "rest_calculated:2026-10-28T05:19:20",
        "board_rest:2026-10-28T10:03:08.198564+00:00:sched_20261028_013059"
       ],
       "call_before": null,
@@ -2436,12 +2416,12 @@
      {
       "member_id": "GERST,(BRADEN)",
       "seat": "EN",
-      "reason": "unavailable"
+      "reason": "calling_group_not_authorized"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
       "seat": "EN",
-      "reason": "unavailable"
+      "reason": "seat_not_qualified"
      },
      {
       "member_id": "LOCHNER,(DEREK)",
@@ -2561,12 +2541,12 @@
      {
       "member_id": "GERST,(BRADEN)",
       "seat": "AE_CO",
-      "reason": "unavailable"
+      "reason": "seat_not_qualified"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
       "seat": "AE_CO",
-      "reason": "unavailable"
+      "reason": "calling_group_not_authorized"
      },
      {
       "member_id": "LOCHNER,(DEREK)",
@@ -2699,12 +2679,12 @@
      {
       "member_id": "GERST,(BRADEN)",
       "seat": "ET",
-      "reason": "unavailable"
+      "reason": "seat_not_qualified"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
       "seat": "ET",
-      "reason": "unavailable"
+      "reason": "seat_not_qualified"
      },
      {
       "member_id": "LOCHNER,(DEREK)",
@@ -2834,12 +2814,12 @@
      {
       "member_id": "GERST,(BRADEN)",
       "seat": "TT",
-      "reason": "unavailable"
+      "reason": "seat_not_qualified"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
       "seat": "TT",
-      "reason": "unavailable"
+      "reason": "seat_not_qualified"
      },
      {
       "member_id": "LOCHNER,(DEREK)",
@@ -2909,23 +2889,19 @@
     "call_at": "2026-10-29T01:35:00+00:00",
     "seats": {
      "EN": {
-      "member_id": "FELLER,(DANIEL)",
-      "name": "FELLER,(DANIEL)",
+      "member_id": "GERST,(BRADEN)",
+      "name": "GERST,(BRADEN)",
       "seat": "EN",
-      "assignment": "0006",
-      "board": "OTTUMWA ENG XTRA BRD POSITION",
-      "position": 1,
-      "group": "OT_EXTRA_EN",
+      "assignment": "SW03",
+      "board": "SW POOLS IN OTT POSITION",
+      "position": 3,
+      "group": "SW",
       "optional": false,
-      "captured_at": "2026-10-28T10:02:37.575223+00:00",
+      "captured_at": "2026-10-28T10:03:23.495828+00:00",
       "evidence": [
-       "board:sched_20261028_013059:1_04",
-       "rest_calculated:2026-10-28T05:09:29",
-       "basic_rest_10h",
-       "xtraboard_no_lineup_walk",
-       "rule:OT_EXTRA_ENGINEER_FALLBACK:2026-09-23.1:268493cf2cace765ae94f5bd81e6c5ab5eaed211ebc7c8182064f91010a6222c",
-       "schedule:EX0006EN:operator_confirmation",
-       "matrix:ado_matrix_2026"
+       "board:sched_20261028_013059:1_11",
+       "rest_calculated:2026-10-28T05:19:20",
+       "board_rest:2026-10-28T10:03:23.495828+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261028_013059\\parsed\\crew_lineup.jsonl"
       ],
       "call_before": null,
       "duty_before": null,
@@ -2933,15 +2909,33 @@
       "source": "projected",
       "reason": "eligible_calling_order"
      },
-     "AE_CO": null,
+     "AE_CO": {
+      "member_id": "HARTMAN,(JAMES)",
+      "name": "HARTMAN,(JAMES)",
+      "seat": "AE_CO",
+      "assignment": "SW03",
+      "board": "SW POOLS IN OTT POSITION",
+      "position": 3,
+      "group": "SW",
+      "optional": false,
+      "captured_at": "2026-10-28T10:03:23.495828+00:00",
+      "evidence": [
+       "board:sched_20261028_013059:1_11",
+       "rest_calculated:2026-10-28T05:19:20",
+       "board_rest:2026-10-28T10:03:23.495828+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261028_013059\\parsed\\crew_lineup.jsonl"
+      ],
+      "call_before": null,
+      "duty_before": null,
+      "schedule_window_verified": true,
+      "source": "projected",
+      "reason": "eligible_calling_order"
+     },
      "ET": null,
      "TT": null
     },
     "call_confirmation_required": false,
-    "complete": false,
-    "missing_seats": [
-     "AE_CO"
-    ],
+    "complete": true,
+    "missing_seats": [],
     "decisions": [
      {
       "member_id": "STRAUSS,(WILLIAM)",
@@ -3004,14 +2998,9 @@
       "reason": "already_reserved"
      },
      {
-      "member_id": "GERST,(BRADEN)",
-      "seat": "EN",
-      "reason": "unavailable"
-     },
-     {
       "member_id": "HARTMAN,(JAMES)",
       "seat": "EN",
-      "reason": "unavailable"
+      "reason": "seat_not_qualified"
      },
      {
       "member_id": "LOCHNER,(DEREK)",
@@ -3071,7 +3060,7 @@
      {
       "member_id": "FELLER,(DANIEL)",
       "seat": "AE_CO",
-      "reason": "already_reserved"
+      "reason": "seat_not_qualified"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -3141,12 +3130,7 @@
      {
       "member_id": "GERST,(BRADEN)",
       "seat": "AE_CO",
-      "reason": "unavailable"
-     },
-     {
-      "member_id": "HARTMAN,(JAMES)",
-      "seat": "AE_CO",
-      "reason": "unavailable"
+      "reason": "already_reserved"
      },
      {
       "member_id": "LOCHNER,(DEREK)",
@@ -3201,6 +3185,276 @@
      {
       "member_id": "KNIGHTS,(JARRETT)",
       "seat": "AE_CO",
+      "reason": "availability_unknown"
+     },
+     {
+      "member_id": "FELLER,(DANIEL)",
+      "seat": "ET",
+      "reason": "seat_not_qualified"
+     },
+     {
+      "member_id": "FIGUEROA,(CEDRIC)",
+      "seat": "ET",
+      "reason": "seat_not_qualified"
+     },
+     {
+      "member_id": "STRAUSS,(WILLIAM)",
+      "seat": "ET",
+      "reason": "availability_unknown"
+     },
+     {
+      "member_id": "RUSSELL,(DAN)",
+      "seat": "ET",
+      "reason": "already_reserved"
+     },
+     {
+      "member_id": "BARAKS,(RON)",
+      "seat": "ET",
+      "reason": "already_reserved"
+     },
+     {
+      "member_id": "HANK,(MATT)",
+      "seat": "ET",
+      "reason": "already_reserved"
+     },
+     {
+      "member_id": "GANZER,(JASON)",
+      "seat": "ET",
+      "reason": "already_reserved"
+     },
+     {
+      "member_id": "STROPES,(THOMAS)",
+      "seat": "ET",
+      "reason": "seat_not_qualified"
+     },
+     {
+      "member_id": "DACOSTA,(HERCULANO)",
+      "seat": "ET",
+      "reason": "seat_not_qualified"
+     },
+     {
+      "member_id": "LIENEMAN,(DENNIS)",
+      "seat": "ET",
+      "reason": "already_reserved"
+     },
+     {
+      "member_id": "PATTERSON,(DELRON)",
+      "seat": "ET",
+      "reason": "already_reserved"
+     },
+     {
+      "member_id": "NELSON,(GARRET)",
+      "seat": "ET",
+      "reason": "already_reserved"
+     },
+     {
+      "member_id": "JACKMAN,(MATT)",
+      "seat": "ET",
+      "reason": "already_reserved"
+     },
+     {
+      "member_id": "CLAPP,(JASON)",
+      "seat": "ET",
+      "reason": "already_reserved"
+     },
+     {
+      "member_id": "GERST,(BRADEN)",
+      "seat": "ET",
+      "reason": "already_reserved"
+     },
+     {
+      "member_id": "HARTMAN,(JAMES)",
+      "seat": "ET",
+      "reason": "already_reserved"
+     },
+     {
+      "member_id": "LOCHNER,(DEREK)",
+      "seat": "ET",
+      "reason": "already_reserved"
+     },
+     {
+      "member_id": "PEREZ,(JASPER)",
+      "seat": "ET",
+      "reason": "already_reserved"
+     },
+     {
+      "member_id": "MURPHY,(ADAM)",
+      "seat": "ET",
+      "reason": "already_reserved"
+     },
+     {
+      "member_id": "ROBERTS,(KIMBERLY)",
+      "seat": "ET",
+      "reason": "different_station"
+     },
+     {
+      "member_id": "LUDWIG,(AARON)",
+      "seat": "ET",
+      "reason": "different_station"
+     },
+     {
+      "member_id": "WEST,(TAYLOR)",
+      "seat": "ET",
+      "reason": "different_station"
+     },
+     {
+      "member_id": "TAYLOR,(WILLIAM)",
+      "seat": "ET",
+      "reason": "different_station"
+     },
+     {
+      "member_id": "STONEHOUSE,(ZACH)",
+      "seat": "ET",
+      "reason": "different_station"
+     },
+     {
+      "member_id": "GRELK,(RUGER)",
+      "seat": "ET",
+      "reason": "availability_unknown"
+     },
+     {
+      "member_id": "BRADLEY,(COLTON)",
+      "seat": "ET",
+      "reason": "seat_not_qualified"
+     },
+     {
+      "member_id": "KNIGHTS,(JARRETT)",
+      "seat": "ET",
+      "reason": "availability_unknown"
+     },
+     {
+      "member_id": "FELLER,(DANIEL)",
+      "seat": "TT",
+      "reason": "seat_not_qualified"
+     },
+     {
+      "member_id": "FIGUEROA,(CEDRIC)",
+      "seat": "TT",
+      "reason": "seat_not_qualified"
+     },
+     {
+      "member_id": "STRAUSS,(WILLIAM)",
+      "seat": "TT",
+      "reason": "availability_unknown"
+     },
+     {
+      "member_id": "RUSSELL,(DAN)",
+      "seat": "TT",
+      "reason": "already_reserved"
+     },
+     {
+      "member_id": "BARAKS,(RON)",
+      "seat": "TT",
+      "reason": "already_reserved"
+     },
+     {
+      "member_id": "HANK,(MATT)",
+      "seat": "TT",
+      "reason": "already_reserved"
+     },
+     {
+      "member_id": "GANZER,(JASON)",
+      "seat": "TT",
+      "reason": "already_reserved"
+     },
+     {
+      "member_id": "STROPES,(THOMAS)",
+      "seat": "TT",
+      "reason": "seat_not_qualified"
+     },
+     {
+      "member_id": "DACOSTA,(HERCULANO)",
+      "seat": "TT",
+      "reason": "seat_not_qualified"
+     },
+     {
+      "member_id": "LIENEMAN,(DENNIS)",
+      "seat": "TT",
+      "reason": "already_reserved"
+     },
+     {
+      "member_id": "PATTERSON,(DELRON)",
+      "seat": "TT",
+      "reason": "already_reserved"
+     },
+     {
+      "member_id": "NELSON,(GARRET)",
+      "seat": "TT",
+      "reason": "already_reserved"
+     },
+     {
+      "member_id": "JACKMAN,(MATT)",
+      "seat": "TT",
+      "reason": "already_reserved"
+     },
+     {
+      "member_id": "CLAPP,(JASON)",
+      "seat": "TT",
+      "reason": "already_reserved"
+     },
+     {
+      "member_id": "GERST,(BRADEN)",
+      "seat": "TT",
+      "reason": "already_reserved"
+     },
+     {
+      "member_id": "HARTMAN,(JAMES)",
+      "seat": "TT",
+      "reason": "already_reserved"
+     },
+     {
+      "member_id": "LOCHNER,(DEREK)",
+      "seat": "TT",
+      "reason": "already_reserved"
+     },
+     {
+      "member_id": "PEREZ,(JASPER)",
+      "seat": "TT",
+      "reason": "already_reserved"
+     },
+     {
+      "member_id": "MURPHY,(ADAM)",
+      "seat": "TT",
+      "reason": "already_reserved"
+     },
+     {
+      "member_id": "ROBERTS,(KIMBERLY)",
+      "seat": "TT",
+      "reason": "different_station"
+     },
+     {
+      "member_id": "LUDWIG,(AARON)",
+      "seat": "TT",
+      "reason": "different_station"
+     },
+     {
+      "member_id": "WEST,(TAYLOR)",
+      "seat": "TT",
+      "reason": "different_station"
+     },
+     {
+      "member_id": "TAYLOR,(WILLIAM)",
+      "seat": "TT",
+      "reason": "different_station"
+     },
+     {
+      "member_id": "STONEHOUSE,(ZACH)",
+      "seat": "TT",
+      "reason": "different_station"
+     },
+     {
+      "member_id": "GRELK,(RUGER)",
+      "seat": "TT",
+      "reason": "availability_unknown"
+     },
+     {
+      "member_id": "BRADLEY,(COLTON)",
+      "seat": "TT",
+      "reason": "seat_not_qualified"
+     },
+     {
+      "member_id": "KNIGHTS,(JARRETT)",
+      "seat": "TT",
       "reason": "availability_unknown"
      }
     ],
@@ -3227,7 +3481,7 @@
       "captured_at": "2026-10-28T10:03:28.635052+00:00",
       "evidence": [
        "board:sched_20261028_013059:1_12",
-       "rest_calculated:2026-10-28T05:09:29",
+       "rest_calculated:2026-10-28T05:19:20",
        "basic_rest_10h"
       ],
       "call_before": null,
@@ -3248,7 +3502,7 @@
       "captured_at": "2026-10-28T10:03:28.635052+00:00",
       "evidence": [
        "board:sched_20261028_013059:1_12",
-       "rest_calculated:2026-10-28T05:09:29",
+       "rest_calculated:2026-10-28T05:19:20",
        "basic_rest_10h"
       ],
       "call_before": null,
@@ -3269,7 +3523,7 @@
       "captured_at": "2026-10-28T10:03:28.635052+00:00",
       "evidence": [
        "board:sched_20261028_013059:1_12",
-       "rest_calculated:2026-10-28T05:09:29",
+       "rest_calculated:2026-10-28T05:19:20",
        "basic_rest_10h"
       ],
       "call_before": null,
@@ -3287,7 +3541,7 @@
      {
       "member_id": "FELLER,(DANIEL)",
       "seat": "EN",
-      "reason": "already_reserved"
+      "reason": "different_station"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -3357,12 +3611,12 @@
      {
       "member_id": "GERST,(BRADEN)",
       "seat": "EN",
-      "reason": "different_station"
+      "reason": "already_reserved"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
       "seat": "EN",
-      "reason": "different_station"
+      "reason": "already_reserved"
      },
      {
       "member_id": "LOCHNER,(DEREK)",
@@ -3412,7 +3666,7 @@
      {
       "member_id": "FELLER,(DANIEL)",
       "seat": "AE_CO",
-      "reason": "already_reserved"
+      "reason": "different_station"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -3482,12 +3736,12 @@
      {
       "member_id": "GERST,(BRADEN)",
       "seat": "AE_CO",
-      "reason": "different_station"
+      "reason": "already_reserved"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
       "seat": "AE_CO",
-      "reason": "different_station"
+      "reason": "already_reserved"
      },
      {
       "member_id": "LOCHNER,(DEREK)",
@@ -3537,7 +3791,7 @@
      {
       "member_id": "FELLER,(DANIEL)",
       "seat": "ET",
-      "reason": "already_reserved"
+      "reason": "different_station"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -3607,12 +3861,12 @@
      {
       "member_id": "GERST,(BRADEN)",
       "seat": "ET",
-      "reason": "different_station"
+      "reason": "already_reserved"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
       "seat": "ET",
-      "reason": "different_station"
+      "reason": "already_reserved"
      },
      {
       "member_id": "LOCHNER,(DEREK)",
@@ -3667,7 +3921,7 @@
      {
       "member_id": "FELLER,(DANIEL)",
       "seat": "TT",
-      "reason": "already_reserved"
+      "reason": "different_station"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -3737,12 +3991,12 @@
      {
       "member_id": "GERST,(BRADEN)",
       "seat": "TT",
-      "reason": "different_station"
+      "reason": "already_reserved"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
       "seat": "TT",
-      "reason": "different_station"
+      "reason": "already_reserved"
      },
      {
       "member_id": "LOCHNER,(DEREK)",
@@ -3823,7 +4077,7 @@
       "captured_at": "2026-10-28T10:03:31.131155+00:00",
       "evidence": [
        "board:sched_20261028_013059:1_12",
-       "rest_calculated:2026-10-28T05:09:29",
+       "rest_calculated:2026-10-28T05:19:20",
        "board_rest:2026-10-28T10:03:31.131155+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261028_013059\\parsed\\crew_lineup.jsonl",
        "no_lineup_trains_for_pool_at_04690"
       ],
@@ -3845,7 +4099,7 @@
       "captured_at": "2026-10-28T10:03:31.131155+00:00",
       "evidence": [
        "board:sched_20261028_013059:1_12",
-       "rest_calculated:2026-10-28T05:09:29",
+       "rest_calculated:2026-10-28T05:19:20",
        "junior_in_craft",
        "board_rest:2026-10-28T10:03:31.131155+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261028_013059\\parsed\\crew_lineup.jsonl",
        "no_lineup_trains_for_pool_at_04690"
@@ -3866,7 +4120,7 @@
      {
       "member_id": "FELLER,(DANIEL)",
       "seat": "EN",
-      "reason": "already_reserved"
+      "reason": "different_station"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -3936,12 +4190,12 @@
      {
       "member_id": "GERST,(BRADEN)",
       "seat": "EN",
-      "reason": "different_station"
+      "reason": "already_reserved"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
       "seat": "EN",
-      "reason": "different_station"
+      "reason": "already_reserved"
      },
      {
       "member_id": "LOCHNER,(DEREK)",
@@ -3996,7 +4250,7 @@
      {
       "member_id": "FELLER,(DANIEL)",
       "seat": "AE_CO",
-      "reason": "already_reserved"
+      "reason": "different_station"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -4066,12 +4320,12 @@
      {
       "member_id": "GERST,(BRADEN)",
       "seat": "AE_CO",
-      "reason": "different_station"
+      "reason": "already_reserved"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
       "seat": "AE_CO",
-      "reason": "different_station"
+      "reason": "already_reserved"
      },
      {
       "member_id": "LOCHNER,(DEREK)",
@@ -4126,7 +4380,7 @@
      {
       "member_id": "FELLER,(DANIEL)",
       "seat": "ET",
-      "reason": "already_reserved"
+      "reason": "different_station"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -4196,12 +4450,12 @@
      {
       "member_id": "GERST,(BRADEN)",
       "seat": "ET",
-      "reason": "different_station"
+      "reason": "already_reserved"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
       "seat": "ET",
-      "reason": "different_station"
+      "reason": "already_reserved"
      },
      {
       "member_id": "LOCHNER,(DEREK)",
@@ -4261,7 +4515,7 @@
      {
       "member_id": "FELLER,(DANIEL)",
       "seat": "TT",
-      "reason": "already_reserved"
+      "reason": "different_station"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -4331,12 +4585,12 @@
      {
       "member_id": "GERST,(BRADEN)",
       "seat": "TT",
-      "reason": "different_station"
+      "reason": "already_reserved"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
       "seat": "TT",
-      "reason": "different_station"
+      "reason": "already_reserved"
      },
      {
       "member_id": "LOCHNER,(DEREK)",
@@ -4420,7 +4674,7 @@
      {
       "member_id": "FELLER,(DANIEL)",
       "seat": "EN",
-      "reason": "already_reserved"
+      "reason": "different_station"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -4490,12 +4744,12 @@
      {
       "member_id": "GERST,(BRADEN)",
       "seat": "EN",
-      "reason": "different_station"
+      "reason": "already_reserved"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
       "seat": "EN",
-      "reason": "different_station"
+      "reason": "already_reserved"
      },
      {
       "member_id": "LOCHNER,(DEREK)",
@@ -4555,7 +4809,7 @@
      {
       "member_id": "FELLER,(DANIEL)",
       "seat": "AE_CO",
-      "reason": "already_reserved"
+      "reason": "different_station"
      },
      {
       "member_id": "FIGUEROA,(CEDRIC)",
@@ -4625,12 +4879,12 @@
      {
       "member_id": "GERST,(BRADEN)",
       "seat": "AE_CO",
-      "reason": "different_station"
+      "reason": "already_reserved"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
       "seat": "AE_CO",
-      "reason": "different_station"
+      "reason": "already_reserved"
      },
      {
       "member_id": "LOCHNER,(DEREK)",
@@ -5733,7 +5987,7 @@
     ],
     "evidence": [
      "board:sched_20261028_013059:2_04",
-     "rest_calculated:2026-10-28T05:09:29",
+     "rest_calculated:2026-10-28T05:19:20",
      "junior_in_craft",
      "rest_evidence_missing",
      "rule:OT_EXTRA_CONDUCTOR_FALLBACK:2026-09-23.1:dcdc8e04c72273d00ab7cee4f36338d7e7ca7ff65dcfac032d79b5690206eb4b",
@@ -5766,7 +6020,7 @@
     "blocks_other_members": [],
     "evidence": [
      "board:sched_20261028_013059:2_04",
-     "rest_calculated:2026-10-28T05:09:29",
+     "rest_calculated:2026-10-28T05:19:20",
      "rest_evidence_missing",
      "rule:OT_EXTRA_CONDUCTOR_FALLBACK:2026-09-23.1:dcdc8e04c72273d00ab7cee4f36338d7e7ca7ff65dcfac032d79b5690206eb4b",
      "schedule:EX0012CO:operator_confirmation",
@@ -5798,7 +6052,7 @@
     "blocks_other_members": [],
     "evidence": [
      "board:sched_20261028_013059:1_04",
-     "rest_calculated:2026-10-28T05:09:29",
+     "rest_calculated:2026-10-28T05:19:20",
      "rest_evidence_missing",
      "rule:OT_EXTRA_ENGINEER_FALLBACK:2026-09-23.1:268493cf2cace765ae94f5bd81e6c5ab5eaed211ebc7c8182064f91010a6222c",
      "schedule:EX0004EN:operator_confirmation",
@@ -5818,11 +6072,11 @@
   ]
  },
  "meta": {
-  "collection_state": "active",
-  "collection_message": "Light sweep sched_20261028_013059.",
+  "collection_state": "awaiting_login",
+  "collection_message": "Session lost; recovering (auto-login + RSA).",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-10-28T10:10:17+00:00",
+  "generated_at": "2026-10-28T10:20:07+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20261028_013059",
@@ -8022,8 +8276,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "5h 26m",
-         "minutes": 326
+         "label": "5h 16m",
+         "minutes": 316
         },
         "name": "LYTLE,(JUSTIN)"
        },
@@ -8031,8 +8285,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "5h 26m",
-         "minutes": 326
+         "label": "5h 16m",
+         "minutes": 316
         },
         "name": "IYOHA,(OSAYANDE)"
        }
@@ -8101,8 +8355,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "5h 51m",
-         "minutes": 351
+         "label": "5h 41m",
+         "minutes": 341
         },
         "name": "DUYVEJONCK,(MARK)"
        },
@@ -8110,8 +8364,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "5h 51m",
-         "minutes": 351
+         "label": "5h 41m",
+         "minutes": 341
         },
         "name": "SELS,(DOUG)"
        }
@@ -8143,9 +8397,26 @@
       "trn_planned_crew": []
      },
      {
-      "crewed": false,
+      "crewed": true,
       "date_time": "10/28-1239",
-      "eng_crew": [],
+      "eng_crew": [
+       {
+        "craft": "EN",
+        "name": "SEXTON,(SAM)",
+        "on_in": "1h 21m",
+        "tags": [
+         "recrew"
+        ]
+       },
+       {
+        "craft": "AE",
+        "name": "ELDRIDGE,(DYLAN)",
+        "on_in": "1h 21m",
+        "tags": [
+         "recrew"
+        ]
+       }
+      ],
       "eng_crew_count": "0",
       "eng_crew_district": "8IDA",
       "eng_crew_pool": "DA",
@@ -8203,9 +8474,25 @@
       "trn_planned_crew": []
      },
      {
-      "crewed": false,
+      "crewed": true,
       "date_time": "10/28-1625",
-      "eng_crew": [],
+      "eng_crew": [
+       {
+        "craft": "EN",
+        "name": "WHITING,(STEVE)",
+        "on_in": "1h 26m"
+       },
+       {
+        "craft": "AE",
+        "name": "ONKEN,(WILLIAM)",
+        "on_in": "1h 26m"
+       },
+       {
+        "craft": "ET",
+        "name": "GREEN,(DALTON)",
+        "on_in": "1h 26m"
+       }
+      ],
       "eng_crew_count": "0",
       "eng_crew_district": "8IDA",
       "eng_crew_pool": "DA",
@@ -9787,7 +10074,7 @@
          "captured_at": "2026-10-28T10:03:20.956298+00:00",
          "evidence": [
           "board:sched_20261028_013059:1_11",
-          "rest_calculated:2026-10-28T05:09:29",
+          "rest_calculated:2026-10-28T05:19:20",
           "basic_rest_10h"
          ],
          "call_before": null,
@@ -9808,7 +10095,7 @@
          "captured_at": "2026-10-28T10:03:20.956298+00:00",
          "evidence": [
           "board:sched_20261028_013059:1_11",
-          "rest_calculated:2026-10-28T05:09:29",
+          "rest_calculated:2026-10-28T05:19:20",
           "basic_rest_10h"
          ],
          "call_before": null,
@@ -9829,7 +10116,7 @@
          "captured_at": "2026-10-28T10:03:20.956298+00:00",
          "evidence": [
           "board:sched_20261028_013059:1_11",
-          "rest_calculated:2026-10-28T05:09:29",
+          "rest_calculated:2026-10-28T05:19:20",
           "board_rest:2026-10-28T10:03:20.956298+00:00:sched_20261028_013059"
          ],
          "call_before": null,
@@ -9895,14 +10182,9 @@
          "reason": "seat_not_qualified"
         },
         {
-         "member_id": "GERST,(BRADEN)",
-         "seat": "EN",
-         "reason": "unavailable"
-        },
-        {
          "member_id": "HARTMAN,(JAMES)",
          "seat": "EN",
-         "reason": "unavailable"
+         "reason": "seat_not_qualified"
         },
         {
          "member_id": "LOCHNER,(DEREK)",
@@ -10022,12 +10304,7 @@
         {
          "member_id": "GERST,(BRADEN)",
          "seat": "AE_CO",
-         "reason": "unavailable"
-        },
-        {
-         "member_id": "HARTMAN,(JAMES)",
-         "seat": "AE_CO",
-         "reason": "unavailable"
+         "reason": "seat_not_qualified"
         },
         {
          "member_id": "LOCHNER,(DEREK)",
@@ -10152,12 +10429,12 @@
         {
          "member_id": "GERST,(BRADEN)",
          "seat": "ET",
-         "reason": "unavailable"
+         "reason": "seat_not_qualified"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
          "seat": "ET",
-         "reason": "unavailable"
+         "reason": "seat_not_qualified"
         },
         {
          "member_id": "LOCHNER,(DEREK)",
@@ -10287,12 +10564,12 @@
         {
          "member_id": "GERST,(BRADEN)",
          "seat": "TT",
-         "reason": "unavailable"
+         "reason": "seat_not_qualified"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
          "seat": "TT",
-         "reason": "unavailable"
+         "reason": "seat_not_qualified"
         },
         {
          "member_id": "LOCHNER,(DEREK)",
@@ -10403,7 +10680,7 @@
          "captured_at": "2026-10-28T10:03:08.198564+00:00",
          "evidence": [
           "board:sched_20261028_013059:1_09",
-          "rest_calculated:2026-10-28T05:09:29",
+          "rest_calculated:2026-10-28T05:19:20",
           "basic_rest_10h"
          ],
          "call_before": null,
@@ -10424,7 +10701,7 @@
          "captured_at": "2026-10-28T10:03:08.198564+00:00",
          "evidence": [
           "board:sched_20261028_013059:1_09",
-          "rest_calculated:2026-10-28T05:09:29",
+          "rest_calculated:2026-10-28T05:19:20",
           "basic_rest_10h"
          ],
          "call_before": null,
@@ -10488,12 +10765,12 @@
         {
          "member_id": "GERST,(BRADEN)",
          "seat": "EN",
-         "reason": "unavailable"
+         "reason": "calling_group_not_authorized"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
          "seat": "EN",
-         "reason": "unavailable"
+         "reason": "seat_not_qualified"
         },
         {
          "member_id": "LOCHNER,(DEREK)",
@@ -10608,12 +10885,12 @@
         {
          "member_id": "GERST,(BRADEN)",
          "seat": "AE_CO",
-         "reason": "unavailable"
+         "reason": "seat_not_qualified"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
          "seat": "AE_CO",
-         "reason": "unavailable"
+         "reason": "calling_group_not_authorized"
         },
         {
          "member_id": "LOCHNER,(DEREK)",
@@ -10746,12 +11023,12 @@
         {
          "member_id": "GERST,(BRADEN)",
          "seat": "ET",
-         "reason": "unavailable"
+         "reason": "seat_not_qualified"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
          "seat": "ET",
-         "reason": "unavailable"
+         "reason": "seat_not_qualified"
         },
         {
          "member_id": "LOCHNER,(DEREK)",
@@ -10881,12 +11158,12 @@
         {
          "member_id": "GERST,(BRADEN)",
          "seat": "TT",
-         "reason": "unavailable"
+         "reason": "seat_not_qualified"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
          "seat": "TT",
-         "reason": "unavailable"
+         "reason": "seat_not_qualified"
         },
         {
          "member_id": "LOCHNER,(DEREK)",
@@ -10997,7 +11274,7 @@
          "captured_at": "2026-10-28T10:03:20.956298+00:00",
          "evidence": [
           "board:sched_20261028_013059:1_11",
-          "rest_calculated:2026-10-28T05:09:29",
+          "rest_calculated:2026-10-28T05:19:20",
           "basic_rest_10h"
          ],
          "call_before": null,
@@ -11018,7 +11295,7 @@
          "captured_at": "2026-10-28T10:03:20.956298+00:00",
          "evidence": [
           "board:sched_20261028_013059:1_11",
-          "rest_calculated:2026-10-28T05:09:29",
+          "rest_calculated:2026-10-28T05:19:20",
           "board_rest:2026-10-28T10:03:20.956298+00:00:sched_20261028_013059"
          ],
          "call_before": null,
@@ -11090,14 +11367,9 @@
          "reason": "seat_not_qualified"
         },
         {
-         "member_id": "GERST,(BRADEN)",
-         "seat": "EN",
-         "reason": "unavailable"
-        },
-        {
          "member_id": "HARTMAN,(JAMES)",
          "seat": "EN",
-         "reason": "unavailable"
+         "reason": "seat_not_qualified"
         },
         {
          "member_id": "LOCHNER,(DEREK)",
@@ -11222,12 +11494,7 @@
         {
          "member_id": "GERST,(BRADEN)",
          "seat": "AE_CO",
-         "reason": "unavailable"
-        },
-        {
-         "member_id": "HARTMAN,(JAMES)",
-         "seat": "AE_CO",
-         "reason": "unavailable"
+         "reason": "seat_not_qualified"
         },
         {
          "member_id": "LOCHNER,(DEREK)",
@@ -11357,12 +11624,12 @@
         {
          "member_id": "GERST,(BRADEN)",
          "seat": "ET",
-         "reason": "unavailable"
+         "reason": "seat_not_qualified"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
          "seat": "ET",
-         "reason": "unavailable"
+         "reason": "seat_not_qualified"
         },
         {
          "member_id": "LOCHNER,(DEREK)",
@@ -11492,12 +11759,12 @@
         {
          "member_id": "GERST,(BRADEN)",
          "seat": "TT",
-         "reason": "unavailable"
+         "reason": "seat_not_qualified"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
          "seat": "TT",
-         "reason": "unavailable"
+         "reason": "seat_not_qualified"
         },
         {
          "member_id": "LOCHNER,(DEREK)",
@@ -11608,7 +11875,7 @@
          "captured_at": "2026-10-28T10:03:08.198564+00:00",
          "evidence": [
           "board:sched_20261028_013059:1_09",
-          "rest_calculated:2026-10-28T05:09:29",
+          "rest_calculated:2026-10-28T05:19:20",
           "board_rest:2026-10-28T10:03:08.198564+00:00:sched_20261028_013059"
          ],
          "call_before": null,
@@ -11629,7 +11896,7 @@
          "captured_at": "2026-10-28T10:03:08.198564+00:00",
          "evidence": [
           "board:sched_20261028_013059:1_09",
-          "rest_calculated:2026-10-28T05:09:29",
+          "rest_calculated:2026-10-28T05:19:20",
           "board_rest:2026-10-28T10:03:08.198564+00:00:sched_20261028_013059"
          ],
          "call_before": null,
@@ -11698,12 +11965,12 @@
         {
          "member_id": "GERST,(BRADEN)",
          "seat": "EN",
-         "reason": "unavailable"
+         "reason": "calling_group_not_authorized"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
          "seat": "EN",
-         "reason": "unavailable"
+         "reason": "seat_not_qualified"
         },
         {
          "member_id": "LOCHNER,(DEREK)",
@@ -11823,12 +12090,12 @@
         {
          "member_id": "GERST,(BRADEN)",
          "seat": "AE_CO",
-         "reason": "unavailable"
+         "reason": "seat_not_qualified"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
          "seat": "AE_CO",
-         "reason": "unavailable"
+         "reason": "calling_group_not_authorized"
         },
         {
          "member_id": "LOCHNER,(DEREK)",
@@ -11961,12 +12228,12 @@
         {
          "member_id": "GERST,(BRADEN)",
          "seat": "ET",
-         "reason": "unavailable"
+         "reason": "seat_not_qualified"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
          "seat": "ET",
-         "reason": "unavailable"
+         "reason": "seat_not_qualified"
         },
         {
          "member_id": "LOCHNER,(DEREK)",
@@ -12096,12 +12363,12 @@
         {
          "member_id": "GERST,(BRADEN)",
          "seat": "TT",
-         "reason": "unavailable"
+         "reason": "seat_not_qualified"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
          "seat": "TT",
-         "reason": "unavailable"
+         "reason": "seat_not_qualified"
         },
         {
          "member_id": "LOCHNER,(DEREK)",
@@ -12201,23 +12468,19 @@
        "call_at": "2026-10-29T01:35:00+00:00",
        "seats": {
         "EN": {
-         "member_id": "FELLER,(DANIEL)",
-         "name": "FELLER,(DANIEL)",
+         "member_id": "GERST,(BRADEN)",
+         "name": "GERST,(BRADEN)",
          "seat": "EN",
-         "assignment": "0006",
-         "board": "OTTUMWA ENG XTRA BRD POSITION",
-         "position": 1,
-         "group": "OT_EXTRA_EN",
+         "assignment": "SW03",
+         "board": "SW POOLS IN OTT POSITION",
+         "position": 3,
+         "group": "SW",
          "optional": false,
-         "captured_at": "2026-10-28T10:02:37.575223+00:00",
+         "captured_at": "2026-10-28T10:03:23.495828+00:00",
          "evidence": [
-          "board:sched_20261028_013059:1_04",
-          "rest_calculated:2026-10-28T05:09:29",
-          "basic_rest_10h",
-          "xtraboard_no_lineup_walk",
-          "rule:OT_EXTRA_ENGINEER_FALLBACK:2026-09-23.1:268493cf2cace765ae94f5bd81e6c5ab5eaed211ebc7c8182064f91010a6222c",
-          "schedule:EX0006EN:operator_confirmation",
-          "matrix:ado_matrix_2026"
+          "board:sched_20261028_013059:1_11",
+          "rest_calculated:2026-10-28T05:19:20",
+          "board_rest:2026-10-28T10:03:23.495828+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261028_013059\\parsed\\crew_lineup.jsonl"
          ],
          "call_before": null,
          "duty_before": null,
@@ -12225,15 +12488,33 @@
          "source": "projected",
          "reason": "eligible_calling_order"
         },
-        "AE_CO": null,
+        "AE_CO": {
+         "member_id": "HARTMAN,(JAMES)",
+         "name": "HARTMAN,(JAMES)",
+         "seat": "AE_CO",
+         "assignment": "SW03",
+         "board": "SW POOLS IN OTT POSITION",
+         "position": 3,
+         "group": "SW",
+         "optional": false,
+         "captured_at": "2026-10-28T10:03:23.495828+00:00",
+         "evidence": [
+          "board:sched_20261028_013059:1_11",
+          "rest_calculated:2026-10-28T05:19:20",
+          "board_rest:2026-10-28T10:03:23.495828+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261028_013059\\parsed\\crew_lineup.jsonl"
+         ],
+         "call_before": null,
+         "duty_before": null,
+         "schedule_window_verified": true,
+         "source": "projected",
+         "reason": "eligible_calling_order"
+        },
         "ET": null,
         "TT": null
        },
        "call_confirmation_required": false,
-       "complete": false,
-       "missing_seats": [
-        "AE_CO"
-       ],
+       "complete": true,
+       "missing_seats": [],
        "decisions": [
         {
          "member_id": "STRAUSS,(WILLIAM)",
@@ -12296,14 +12577,9 @@
          "reason": "already_reserved"
         },
         {
-         "member_id": "GERST,(BRADEN)",
-         "seat": "EN",
-         "reason": "unavailable"
-        },
-        {
          "member_id": "HARTMAN,(JAMES)",
          "seat": "EN",
-         "reason": "unavailable"
+         "reason": "seat_not_qualified"
         },
         {
          "member_id": "LOCHNER,(DEREK)",
@@ -12363,7 +12639,7 @@
         {
          "member_id": "FELLER,(DANIEL)",
          "seat": "AE_CO",
-         "reason": "already_reserved"
+         "reason": "seat_not_qualified"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -12433,12 +12709,7 @@
         {
          "member_id": "GERST,(BRADEN)",
          "seat": "AE_CO",
-         "reason": "unavailable"
-        },
-        {
-         "member_id": "HARTMAN,(JAMES)",
-         "seat": "AE_CO",
-         "reason": "unavailable"
+         "reason": "already_reserved"
         },
         {
          "member_id": "LOCHNER,(DEREK)",
@@ -12493,6 +12764,276 @@
         {
          "member_id": "KNIGHTS,(JARRETT)",
          "seat": "AE_CO",
+         "reason": "availability_unknown"
+        },
+        {
+         "member_id": "FELLER,(DANIEL)",
+         "seat": "ET",
+         "reason": "seat_not_qualified"
+        },
+        {
+         "member_id": "FIGUEROA,(CEDRIC)",
+         "seat": "ET",
+         "reason": "seat_not_qualified"
+        },
+        {
+         "member_id": "STRAUSS,(WILLIAM)",
+         "seat": "ET",
+         "reason": "availability_unknown"
+        },
+        {
+         "member_id": "RUSSELL,(DAN)",
+         "seat": "ET",
+         "reason": "already_reserved"
+        },
+        {
+         "member_id": "BARAKS,(RON)",
+         "seat": "ET",
+         "reason": "already_reserved"
+        },
+        {
+         "member_id": "HANK,(MATT)",
+         "seat": "ET",
+         "reason": "already_reserved"
+        },
+        {
+         "member_id": "GANZER,(JASON)",
+         "seat": "ET",
+         "reason": "already_reserved"
+        },
+        {
+         "member_id": "STROPES,(THOMAS)",
+         "seat": "ET",
+         "reason": "seat_not_qualified"
+        },
+        {
+         "member_id": "DACOSTA,(HERCULANO)",
+         "seat": "ET",
+         "reason": "seat_not_qualified"
+        },
+        {
+         "member_id": "LIENEMAN,(DENNIS)",
+         "seat": "ET",
+         "reason": "already_reserved"
+        },
+        {
+         "member_id": "PATTERSON,(DELRON)",
+         "seat": "ET",
+         "reason": "already_reserved"
+        },
+        {
+         "member_id": "NELSON,(GARRET)",
+         "seat": "ET",
+         "reason": "already_reserved"
+        },
+        {
+         "member_id": "JACKMAN,(MATT)",
+         "seat": "ET",
+         "reason": "already_reserved"
+        },
+        {
+         "member_id": "CLAPP,(JASON)",
+         "seat": "ET",
+         "reason": "already_reserved"
+        },
+        {
+         "member_id": "GERST,(BRADEN)",
+         "seat": "ET",
+         "reason": "already_reserved"
+        },
+        {
+         "member_id": "HARTMAN,(JAMES)",
+         "seat": "ET",
+         "reason": "already_reserved"
+        },
+        {
+         "member_id": "LOCHNER,(DEREK)",
+         "seat": "ET",
+         "reason": "already_reserved"
+        },
+        {
+         "member_id": "PEREZ,(JASPER)",
+         "seat": "ET",
+         "reason": "already_reserved"
+        },
+        {
+         "member_id": "MURPHY,(ADAM)",
+         "seat": "ET",
+         "reason": "already_reserved"
+        },
+        {
+         "member_id": "ROBERTS,(KIMBERLY)",
+         "seat": "ET",
+         "reason": "different_station"
+        },
+        {
+         "member_id": "LUDWIG,(AARON)",
+         "seat": "ET",
+         "reason": "different_station"
+        },
+        {
+         "member_id": "WEST,(TAYLOR)",
+         "seat": "ET",
+         "reason": "different_station"
+        },
+        {
+         "member_id": "TAYLOR,(WILLIAM)",
+         "seat": "ET",
+         "reason": "different_station"
+        },
+        {
+         "member_id": "STONEHOUSE,(ZACH)",
+         "seat": "ET",
+         "reason": "different_station"
+        },
+        {
+         "member_id": "GRELK,(RUGER)",
+         "seat": "ET",
+         "reason": "availability_unknown"
+        },
+        {
+         "member_id": "BRADLEY,(COLTON)",
+         "seat": "ET",
+         "reason": "seat_not_qualified"
+        },
+        {
+         "member_id": "KNIGHTS,(JARRETT)",
+         "seat": "ET",
+         "reason": "availability_unknown"
+        },
+        {
+         "member_id": "FELLER,(DANIEL)",
+         "seat": "TT",
+         "reason": "seat_not_qualified"
+        },
+        {
+         "member_id": "FIGUEROA,(CEDRIC)",
+         "seat": "TT",
+         "reason": "seat_not_qualified"
+        },
+        {
+         "member_id": "STRAUSS,(WILLIAM)",
+         "seat": "TT",
+         "reason": "availability_unknown"
+        },
+        {
+         "member_id": "RUSSELL,(DAN)",
+         "seat": "TT",
+         "reason": "already_reserved"
+        },
+        {
+         "member_id": "BARAKS,(RON)",
+         "seat": "TT",
+         "reason": "already_reserved"
+        },
+        {
+         "member_id": "HANK,(MATT)",
+         "seat": "TT",
+         "reason": "already_reserved"
+        },
+        {
+         "member_id": "GANZER,(JASON)",
+         "seat": "TT",
+         "reason": "already_reserved"
+        },
+        {
+         "member_id": "STROPES,(THOMAS)",
+         "seat": "TT",
+         "reason": "seat_not_qualified"
+        },
+        {
+         "member_id": "DACOSTA,(HERCULANO)",
+         "seat": "TT",
+         "reason": "seat_not_qualified"
+        },
+        {
+         "member_id": "LIENEMAN,(DENNIS)",
+         "seat": "TT",
+         "reason": "already_reserved"
+        },
+        {
+         "member_id": "PATTERSON,(DELRON)",
+         "seat": "TT",
+         "reason": "already_reserved"
+        },
+        {
+         "member_id": "NELSON,(GARRET)",
+         "seat": "TT",
+         "reason": "already_reserved"
+        },
+        {
+         "member_id": "JACKMAN,(MATT)",
+         "seat": "TT",
+         "reason": "already_reserved"
+        },
+        {
+         "member_id": "CLAPP,(JASON)",
+         "seat": "TT",
+         "reason": "already_reserved"
+        },
+        {
+         "member_id": "GERST,(BRADEN)",
+         "seat": "TT",
+         "reason": "already_reserved"
+        },
+        {
+         "member_id": "HARTMAN,(JAMES)",
+         "seat": "TT",
+         "reason": "already_reserved"
+        },
+        {
+         "member_id": "LOCHNER,(DEREK)",
+         "seat": "TT",
+         "reason": "already_reserved"
+        },
+        {
+         "member_id": "PEREZ,(JASPER)",
+         "seat": "TT",
+         "reason": "already_reserved"
+        },
+        {
+         "member_id": "MURPHY,(ADAM)",
+         "seat": "TT",
+         "reason": "already_reserved"
+        },
+        {
+         "member_id": "ROBERTS,(KIMBERLY)",
+         "seat": "TT",
+         "reason": "different_station"
+        },
+        {
+         "member_id": "LUDWIG,(AARON)",
+         "seat": "TT",
+         "reason": "different_station"
+        },
+        {
+         "member_id": "WEST,(TAYLOR)",
+         "seat": "TT",
+         "reason": "different_station"
+        },
+        {
+         "member_id": "TAYLOR,(WILLIAM)",
+         "seat": "TT",
+         "reason": "different_station"
+        },
+        {
+         "member_id": "STONEHOUSE,(ZACH)",
+         "seat": "TT",
+         "reason": "different_station"
+        },
+        {
+         "member_id": "GRELK,(RUGER)",
+         "seat": "TT",
+         "reason": "availability_unknown"
+        },
+        {
+         "member_id": "BRADLEY,(COLTON)",
+         "seat": "TT",
+         "reason": "seat_not_qualified"
+        },
+        {
+         "member_id": "KNIGHTS,(JARRETT)",
+         "seat": "TT",
          "reason": "availability_unknown"
         }
        ],
@@ -13545,7 +14086,7 @@
          "captured_at": "2026-10-28T10:03:28.635052+00:00",
          "evidence": [
           "board:sched_20261028_013059:1_12",
-          "rest_calculated:2026-10-28T05:09:29",
+          "rest_calculated:2026-10-28T05:19:20",
           "basic_rest_10h"
          ],
          "call_before": null,
@@ -13566,7 +14107,7 @@
          "captured_at": "2026-10-28T10:03:28.635052+00:00",
          "evidence": [
           "board:sched_20261028_013059:1_12",
-          "rest_calculated:2026-10-28T05:09:29",
+          "rest_calculated:2026-10-28T05:19:20",
           "basic_rest_10h"
          ],
          "call_before": null,
@@ -13587,7 +14128,7 @@
          "captured_at": "2026-10-28T10:03:28.635052+00:00",
          "evidence": [
           "board:sched_20261028_013059:1_12",
-          "rest_calculated:2026-10-28T05:09:29",
+          "rest_calculated:2026-10-28T05:19:20",
           "basic_rest_10h"
          ],
          "call_before": null,
@@ -14244,7 +14785,7 @@
        {
         "craft": "EN",
         "name": "WARRENBURG,(CHRIS)",
-        "on_in": "1h 16m",
+        "on_in": "1h 06m",
         "tags": [
          "01"
         ]
@@ -14252,7 +14793,7 @@
        {
         "craft": "AE",
         "name": "PETERSON,(DARREN)",
-        "on_in": "1h 16m",
+        "on_in": "1h 06m",
         "tags": [
          "01"
         ]
@@ -14423,7 +14964,7 @@
          "captured_at": "2026-10-28T10:03:28.635052+00:00",
          "evidence": [
           "board:sched_20261028_013059:1_12",
-          "rest_calculated:2026-10-28T05:09:29",
+          "rest_calculated:2026-10-28T05:19:20",
           "basic_rest_10h"
          ],
          "call_before": null,
@@ -14444,7 +14985,7 @@
          "captured_at": "2026-10-28T10:03:28.635052+00:00",
          "evidence": [
           "board:sched_20261028_013059:1_12",
-          "rest_calculated:2026-10-28T05:09:29",
+          "rest_calculated:2026-10-28T05:19:20",
           "basic_rest_10h"
          ],
          "call_before": null,
@@ -14465,7 +15006,7 @@
          "captured_at": "2026-10-28T10:03:28.635052+00:00",
          "evidence": [
           "board:sched_20261028_013059:1_12",
-          "rest_calculated:2026-10-28T05:09:29",
+          "rest_calculated:2026-10-28T05:19:20",
           "basic_rest_10h"
          ],
          "call_before": null,
@@ -14483,7 +15024,7 @@
         {
          "member_id": "FELLER,(DANIEL)",
          "seat": "EN",
-         "reason": "already_reserved"
+         "reason": "different_station"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -14553,12 +15094,12 @@
         {
          "member_id": "GERST,(BRADEN)",
          "seat": "EN",
-         "reason": "different_station"
+         "reason": "already_reserved"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
          "seat": "EN",
-         "reason": "different_station"
+         "reason": "already_reserved"
         },
         {
          "member_id": "LOCHNER,(DEREK)",
@@ -14608,7 +15149,7 @@
         {
          "member_id": "FELLER,(DANIEL)",
          "seat": "AE_CO",
-         "reason": "already_reserved"
+         "reason": "different_station"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -14678,12 +15219,12 @@
         {
          "member_id": "GERST,(BRADEN)",
          "seat": "AE_CO",
-         "reason": "different_station"
+         "reason": "already_reserved"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
          "seat": "AE_CO",
-         "reason": "different_station"
+         "reason": "already_reserved"
         },
         {
          "member_id": "LOCHNER,(DEREK)",
@@ -14733,7 +15274,7 @@
         {
          "member_id": "FELLER,(DANIEL)",
          "seat": "ET",
-         "reason": "already_reserved"
+         "reason": "different_station"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -14803,12 +15344,12 @@
         {
          "member_id": "GERST,(BRADEN)",
          "seat": "ET",
-         "reason": "different_station"
+         "reason": "already_reserved"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
          "seat": "ET",
-         "reason": "different_station"
+         "reason": "already_reserved"
         },
         {
          "member_id": "LOCHNER,(DEREK)",
@@ -14863,7 +15404,7 @@
         {
          "member_id": "FELLER,(DANIEL)",
          "seat": "TT",
-         "reason": "already_reserved"
+         "reason": "different_station"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -14933,12 +15474,12 @@
         {
          "member_id": "GERST,(BRADEN)",
          "seat": "TT",
-         "reason": "different_station"
+         "reason": "already_reserved"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
          "seat": "TT",
-         "reason": "different_station"
+         "reason": "already_reserved"
         },
         {
          "member_id": "LOCHNER,(DEREK)",
@@ -15079,7 +15620,7 @@
          "captured_at": "2026-10-28T10:03:31.131155+00:00",
          "evidence": [
           "board:sched_20261028_013059:1_12",
-          "rest_calculated:2026-10-28T05:09:29",
+          "rest_calculated:2026-10-28T05:19:20",
           "board_rest:2026-10-28T10:03:31.131155+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261028_013059\\parsed\\crew_lineup.jsonl",
           "no_lineup_trains_for_pool_at_04690"
          ],
@@ -15101,7 +15642,7 @@
          "captured_at": "2026-10-28T10:03:31.131155+00:00",
          "evidence": [
           "board:sched_20261028_013059:1_12",
-          "rest_calculated:2026-10-28T05:09:29",
+          "rest_calculated:2026-10-28T05:19:20",
           "junior_in_craft",
           "board_rest:2026-10-28T10:03:31.131155+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261028_013059\\parsed\\crew_lineup.jsonl",
           "no_lineup_trains_for_pool_at_04690"
@@ -15122,7 +15663,7 @@
         {
          "member_id": "FELLER,(DANIEL)",
          "seat": "EN",
-         "reason": "already_reserved"
+         "reason": "different_station"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -15192,12 +15733,12 @@
         {
          "member_id": "GERST,(BRADEN)",
          "seat": "EN",
-         "reason": "different_station"
+         "reason": "already_reserved"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
          "seat": "EN",
-         "reason": "different_station"
+         "reason": "already_reserved"
         },
         {
          "member_id": "LOCHNER,(DEREK)",
@@ -15252,7 +15793,7 @@
         {
          "member_id": "FELLER,(DANIEL)",
          "seat": "AE_CO",
-         "reason": "already_reserved"
+         "reason": "different_station"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -15322,12 +15863,12 @@
         {
          "member_id": "GERST,(BRADEN)",
          "seat": "AE_CO",
-         "reason": "different_station"
+         "reason": "already_reserved"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
          "seat": "AE_CO",
-         "reason": "different_station"
+         "reason": "already_reserved"
         },
         {
          "member_id": "LOCHNER,(DEREK)",
@@ -15382,7 +15923,7 @@
         {
          "member_id": "FELLER,(DANIEL)",
          "seat": "ET",
-         "reason": "already_reserved"
+         "reason": "different_station"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -15452,12 +15993,12 @@
         {
          "member_id": "GERST,(BRADEN)",
          "seat": "ET",
-         "reason": "different_station"
+         "reason": "already_reserved"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
          "seat": "ET",
-         "reason": "different_station"
+         "reason": "already_reserved"
         },
         {
          "member_id": "LOCHNER,(DEREK)",
@@ -15517,7 +16058,7 @@
         {
          "member_id": "FELLER,(DANIEL)",
          "seat": "TT",
-         "reason": "already_reserved"
+         "reason": "different_station"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -15587,12 +16128,12 @@
         {
          "member_id": "GERST,(BRADEN)",
          "seat": "TT",
-         "reason": "different_station"
+         "reason": "already_reserved"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
          "seat": "TT",
-         "reason": "different_station"
+         "reason": "already_reserved"
         },
         {
          "member_id": "LOCHNER,(DEREK)",
@@ -15706,7 +16247,7 @@
         {
          "member_id": "FELLER,(DANIEL)",
          "seat": "EN",
-         "reason": "already_reserved"
+         "reason": "different_station"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -15776,12 +16317,12 @@
         {
          "member_id": "GERST,(BRADEN)",
          "seat": "EN",
-         "reason": "different_station"
+         "reason": "already_reserved"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
          "seat": "EN",
-         "reason": "different_station"
+         "reason": "already_reserved"
         },
         {
          "member_id": "LOCHNER,(DEREK)",
@@ -15841,7 +16382,7 @@
         {
          "member_id": "FELLER,(DANIEL)",
          "seat": "AE_CO",
-         "reason": "already_reserved"
+         "reason": "different_station"
         },
         {
          "member_id": "FIGUEROA,(CEDRIC)",
@@ -15911,12 +16452,12 @@
         {
          "member_id": "GERST,(BRADEN)",
          "seat": "AE_CO",
-         "reason": "different_station"
+         "reason": "already_reserved"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
          "seat": "AE_CO",
-         "reason": "different_station"
+         "reason": "already_reserved"
         },
         {
          "member_id": "LOCHNER,(DEREK)",
@@ -17157,7 +17698,7 @@
   "board_count": 11,
   "boards": [
    {
-    "age_seconds": 409,
+    "age_seconds": 1000,
     "captured_at": "2026-10-28T10:02:37.575223+00:00",
     "label": "OTTUMWA ENG XTRA BRD",
     "menu_path": "1_04",
@@ -17186,7 +17727,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-10-27T22:14",
-      "rest_calculated_at": "2026-10-28T05:09:29",
+      "rest_calculated_at": "2026-10-28T05:19:20",
       "rest_board": "OTTUMWA ENG XTRA BRD POSITION",
       "rest_evidence": [
        "basic_rest_10h",
@@ -17216,7 +17757,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-10-28T04:47",
-      "rest_calculated_at": "2026-10-28T05:09:29",
+      "rest_calculated_at": "2026-10-28T05:19:20",
       "rest_board": "OTTUMWA ENG XTRA BRD POSITION",
       "rest_evidence": [
        "basic_rest_10h",
@@ -17246,7 +17787,7 @@
       "ushr": "",
       "rest_state": "availability_unknown",
       "rest_until": null,
-      "rest_calculated_at": "2026-10-28T05:09:29",
+      "rest_calculated_at": "2026-10-28T05:19:20",
       "rest_board": "OTTUMWA ENG XTRA BRD POSITION",
       "rest_evidence": [
        "rest_evidence_missing"
@@ -17260,7 +17801,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 402,
+    "age_seconds": 992,
     "captured_at": "2026-10-28T10:02:45.189462+00:00",
     "label": "OB POOLS IN OTT TURN ORDER",
     "menu_path": "1_05",
@@ -17364,7 +17905,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 394,
+    "age_seconds": 985,
     "captured_at": "2026-10-28T10:02:52.791406+00:00",
     "label": "OB POOLS IN OTT POSITION",
     "menu_path": "1_06",
@@ -17377,7 +17918,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 389,
+    "age_seconds": 980,
     "captured_at": "2026-10-28T10:02:57.924271+00:00",
     "label": "OB POOLS IN BVL POSITION",
     "menu_path": "1_07",
@@ -17390,7 +17931,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 384,
+    "age_seconds": 975,
     "captured_at": "2026-10-28T10:03:03.076471+00:00",
     "label": "OB POOLS IN IMS POSITION",
     "menu_path": "1_08",
@@ -17403,7 +17944,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 376,
+    "age_seconds": 967,
     "captured_at": "2026-10-28T10:03:10.687008+00:00",
     "label": "DA POOLS IN OTT POSITION",
     "menu_path": "1_09",
@@ -17432,7 +17973,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-10-28T03:50",
-      "rest_calculated_at": "2026-10-28T05:09:29",
+      "rest_calculated_at": "2026-10-28T05:19:20",
       "rest_board": "DA POOLS IN OTT POSITION",
       "rest_evidence": [
        "basic_rest_10h"
@@ -17461,7 +18002,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-10-28T03:49",
-      "rest_calculated_at": "2026-10-28T05:09:29",
+      "rest_calculated_at": "2026-10-28T05:19:20",
       "rest_board": "DA POOLS IN OTT POSITION",
       "rest_evidence": [
        "basic_rest_10h"
@@ -17490,7 +18031,7 @@
       "ushr": "0715",
       "rest_state": "resting",
       "rest_until": "2026-10-28T07:15",
-      "rest_calculated_at": "2026-10-28T05:09:29",
+      "rest_calculated_at": "2026-10-28T05:19:20",
       "rest_board": "DA POOLS IN OTT POSITION",
       "rest_evidence": [
        "board_rest:2026-10-28T10:03:08.198564+00:00:sched_20261028_013059"
@@ -17519,7 +18060,7 @@
       "ushr": "0718",
       "rest_state": "resting",
       "rest_until": "2026-10-28T07:18",
-      "rest_calculated_at": "2026-10-28T05:09:29",
+      "rest_calculated_at": "2026-10-28T05:19:20",
       "rest_board": "DA POOLS IN OTT POSITION",
       "rest_evidence": [
        "board_rest:2026-10-28T10:03:08.198564+00:00:sched_20261028_013059"
@@ -17548,7 +18089,7 @@
       "ushr": "0830",
       "rest_state": "resting",
       "rest_until": "2026-10-28T08:30",
-      "rest_calculated_at": "2026-10-28T05:09:29",
+      "rest_calculated_at": "2026-10-28T05:19:20",
       "rest_board": "DA POOLS IN OTT POSITION",
       "rest_evidence": [
        "board_rest:2026-10-28T10:03:10.687008+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261028_013059\\parsed\\crew_lineup.jsonl"
@@ -17577,7 +18118,7 @@
       "ushr": "0830",
       "rest_state": "resting",
       "rest_until": "2026-10-28T08:30",
-      "rest_calculated_at": "2026-10-28T05:09:29",
+      "rest_calculated_at": "2026-10-28T05:19:20",
       "rest_board": "DA POOLS IN OTT POSITION",
       "rest_evidence": [
        "junior_in_craft",
@@ -17592,7 +18133,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 371,
+    "age_seconds": 962,
     "captured_at": "2026-10-28T10:03:15.811941+00:00",
     "label": "KA POOLS IN OTT POSITION",
     "menu_path": "1_10",
@@ -17605,7 +18146,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 363,
+    "age_seconds": 954,
     "captured_at": "2026-10-28T10:03:23.495828+00:00",
     "label": "SW POOLS IN OTT POSITION",
     "menu_path": "1_11",
@@ -17634,7 +18175,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-10-28T02:05",
-      "rest_calculated_at": "2026-10-28T05:09:29",
+      "rest_calculated_at": "2026-10-28T05:19:20",
       "rest_board": "SW POOLS IN OTT POSITION",
       "rest_evidence": [
        "basic_rest_10h"
@@ -17663,7 +18204,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-10-28T04:47",
-      "rest_calculated_at": "2026-10-28T05:09:29",
+      "rest_calculated_at": "2026-10-28T05:19:20",
       "rest_board": "SW POOLS IN OTT POSITION",
       "rest_evidence": [
        "basic_rest_10h"
@@ -17692,7 +18233,7 @@
       "ushr": "0930",
       "rest_state": "resting",
       "rest_until": "2026-10-28T09:30",
-      "rest_calculated_at": "2026-10-28T05:09:29",
+      "rest_calculated_at": "2026-10-28T05:19:20",
       "rest_board": "SW POOLS IN OTT POSITION",
       "rest_evidence": [
        "board_rest:2026-10-28T10:03:20.956298+00:00:sched_20261028_013059"
@@ -17721,7 +18262,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-10-28T04:44",
-      "rest_calculated_at": "2026-10-28T05:09:29",
+      "rest_calculated_at": "2026-10-28T05:19:20",
       "rest_board": "SW POOLS IN OTT POSITION",
       "rest_evidence": [
        "basic_rest_10h"
@@ -17750,7 +18291,7 @@
       "ushr": "0921",
       "rest_state": "resting",
       "rest_until": "2026-10-28T09:21",
-      "rest_calculated_at": "2026-10-28T05:09:29",
+      "rest_calculated_at": "2026-10-28T05:19:20",
       "rest_board": "SW POOLS IN OTT POSITION",
       "rest_evidence": [
        "board_rest:2026-10-28T10:03:20.956298+00:00:sched_20261028_013059"
@@ -17777,12 +18318,12 @@
       "turn_hours": "1110 1110",
       "turn_info": "",
       "ushr": "1110",
-      "rest_state": "working",
-      "rest_until": null,
-      "rest_calculated_at": "2026-10-28T05:09:29",
+      "rest_state": "resting",
+      "rest_until": "2026-10-28T11:10",
+      "rest_calculated_at": "2026-10-28T05:19:20",
       "rest_board": "SW POOLS IN OTT POSITION",
       "rest_evidence": [
-       "currently_on_duty"
+       "board_rest:2026-10-28T10:03:23.495828+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261028_013059\\parsed\\crew_lineup.jsonl"
       ]
      },
      {
@@ -17806,12 +18347,12 @@
       "turn_hours": "1110 1110",
       "turn_info": "",
       "ushr": "1110",
-      "rest_state": "working",
-      "rest_until": null,
-      "rest_calculated_at": "2026-10-28T05:09:29",
+      "rest_state": "resting",
+      "rest_until": "2026-10-28T11:10",
+      "rest_calculated_at": "2026-10-28T05:19:20",
       "rest_board": "SW POOLS IN OTT POSITION",
       "rest_evidence": [
-       "currently_on_duty"
+       "board_rest:2026-10-28T10:03:23.495828+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261028_013059\\parsed\\crew_lineup.jsonl"
       ]
      }
     ],
@@ -17822,7 +18363,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 356,
+    "age_seconds": 946,
     "captured_at": "2026-10-28T10:03:31.131155+00:00",
     "label": "SW POOLS IN KC POSITION",
     "menu_path": "1_12",
@@ -17851,7 +18392,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-10-28T00:43",
-      "rest_calculated_at": "2026-10-28T05:09:29",
+      "rest_calculated_at": "2026-10-28T05:19:20",
       "rest_board": "SW POOLS IN KC  POSITION",
       "rest_evidence": [
        "basic_rest_10h"
@@ -17880,7 +18421,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-10-28T00:44",
-      "rest_calculated_at": "2026-10-28T05:09:29",
+      "rest_calculated_at": "2026-10-28T05:19:20",
       "rest_board": "SW POOLS IN KC  POSITION",
       "rest_evidence": [
        "basic_rest_10h"
@@ -17909,7 +18450,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-10-28T00:43",
-      "rest_calculated_at": "2026-10-28T05:09:29",
+      "rest_calculated_at": "2026-10-28T05:19:20",
       "rest_board": "SW POOLS IN KC  POSITION",
       "rest_evidence": [
        "basic_rest_10h"
@@ -17938,7 +18479,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-10-28T03:27",
-      "rest_calculated_at": "2026-10-28T05:09:29",
+      "rest_calculated_at": "2026-10-28T05:19:20",
       "rest_board": "SW POOLS IN KC  POSITION",
       "rest_evidence": [
        "basic_rest_10h"
@@ -17967,7 +18508,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-10-28T03:27",
-      "rest_calculated_at": "2026-10-28T05:09:29",
+      "rest_calculated_at": "2026-10-28T05:19:20",
       "rest_board": "SW POOLS IN KC  POSITION",
       "rest_evidence": [
        "basic_rest_10h"
@@ -17996,7 +18537,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-10-28T03:27",
-      "rest_calculated_at": "2026-10-28T05:09:29",
+      "rest_calculated_at": "2026-10-28T05:19:20",
       "rest_board": "SW POOLS IN KC  POSITION",
       "rest_evidence": [
        "basic_rest_10h"
@@ -18025,7 +18566,7 @@
       "ushr": "1040",
       "rest_state": "resting",
       "rest_until": "2026-10-28T10:40",
-      "rest_calculated_at": "2026-10-28T05:09:29",
+      "rest_calculated_at": "2026-10-28T05:19:20",
       "rest_board": "SW POOLS IN KC  POSITION",
       "rest_evidence": [
        "board_rest:2026-10-28T10:03:31.131155+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261028_013059\\parsed\\crew_lineup.jsonl",
@@ -18055,7 +18596,7 @@
       "ushr": "1040",
       "rest_state": "resting",
       "rest_until": "2026-10-28T10:40",
-      "rest_calculated_at": "2026-10-28T05:09:29",
+      "rest_calculated_at": "2026-10-28T05:19:20",
       "rest_board": "SW POOLS IN KC  POSITION",
       "rest_evidence": [
        "junior_in_craft",
@@ -18071,7 +18612,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 350,
+    "age_seconds": 941,
     "captured_at": "2026-10-28T10:03:36.272203+00:00",
     "label": "SW POOLS IN DA POSITION",
     "menu_path": "1_13",
@@ -18084,7 +18625,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 341,
+    "age_seconds": 932,
     "captured_at": "2026-10-28T10:03:45.246327+00:00",
     "label": "OTT SWITCHMAN XTRA BRD",
     "menu_path": "2_04",
@@ -18113,7 +18654,7 @@
       "ushr": "",
       "rest_state": "availability_unknown",
       "rest_until": null,
-      "rest_calculated_at": "2026-10-28T05:09:29",
+      "rest_calculated_at": "2026-10-28T05:19:20",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION",
       "rest_evidence": [
        "junior_in_craft",
@@ -18143,7 +18684,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-10-27T11:37",
-      "rest_calculated_at": "2026-10-28T05:09:29",
+      "rest_calculated_at": "2026-10-28T05:19:20",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION",
       "rest_evidence": [
        "basic_rest_10h",
@@ -18173,7 +18714,7 @@
       "ushr": "",
       "rest_state": "availability_unknown",
       "rest_until": null,
-      "rest_calculated_at": "2026-10-28T05:09:29",
+      "rest_calculated_at": "2026-10-28T05:19:20",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION",
       "rest_evidence": [
        "rest_evidence_missing"
@@ -18417,6 +18958,188 @@
  "train_history": [
   {
    "date": "2026-10-28",
+   "train": "853-196",
+   "on_duty": "0700",
+   "off_duty": null,
+   "depart": "04640",
+   "arrive": "04617",
+   "pool": "DA",
+   "members": [
+    {
+     "craft": "AE",
+     "name": "AMOUZ,(ADJIWANOU)BVAE",
+     "turn": "DA28",
+     "on_duty": "0700",
+     "off_duty": null
+    },
+    {
+     "craft": "EN",
+     "name": "PILLOW,(JOSHUA)NQBVEN",
+     "turn": "DA26",
+     "on_duty": "0700",
+     "off_duty": null
+    }
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "train": "KD70LCL",
+   "on_duty": "0700",
+   "off_duty": null,
+   "depart": "04640",
+   "arrive": "04640",
+   "pool": "LO",
+   "members": [
+    {
+     "craft": "TT",
+     "name": "TRAN,(AARON)",
+     "turn": "ODAT70",
+     "on_duty": "0700",
+     "off_duty": null
+    },
+    {
+     "craft": "CO",
+     "name": "BELL,(NOLAN)*NQBV",
+     "turn": "ODAT70",
+     "on_duty": "0700",
+     "off_duty": null
+    },
+    {
+     "craft": "EN",
+     "name": "SEXTON,(JOHN)NQ/RD",
+     "turn": "ODAT70",
+     "on_duty": "0700",
+     "off_duty": null
+    }
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "train": "358-105",
+   "on_duty": "0645",
+   "off_duty": null,
+   "depart": "04617",
+   "arrive": "04640",
+   "pool": "DA",
+   "members": [
+    {
+     "craft": "ET",
+     "name": "GREEN,(DALTON)BV",
+     "turn": "XX06",
+     "on_duty": "0645",
+     "off_duty": null
+    },
+    {
+     "craft": "AE",
+     "name": "ONKEN,(WILLIAM)BVAE",
+     "turn": "MU02",
+     "on_duty": "0645",
+     "off_duty": null
+    },
+    {
+     "craft": "EN",
+     "name": "WHITING,(STEVE)QBV",
+     "turn": "DA08",
+     "on_duty": "0645",
+     "off_duty": null
+    }
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "train": "181-25",
+   "on_duty": "0640",
+   "off_duty": null,
+   "depart": "04664",
+   "arrive": "04640",
+   "pool": "DA",
+   "members": [
+    {
+     "craft": "AE",
+     "name": "ELDRIDGE,(DYLAN)BVAE",
+     "turn": "DA22",
+     "on_duty": "0640",
+     "off_duty": null
+    },
+    {
+     "craft": "EN",
+     "name": "SEXTON,(SAM)BV",
+     "turn": "DA19",
+     "on_duty": "0640",
+     "off_duty": null
+    }
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "train": "KU81LCL",
+   "on_duty": "0630",
+   "off_duty": null,
+   "depart": "04649",
+   "arrive": "04649",
+   "pool": "LO",
+   "members": [
+    {
+     "craft": "TT",
+     "name": "LOCKHART,(CAMERON)",
+     "turn": "OMTT81",
+     "on_duty": "0630",
+     "off_duty": null
+    },
+    {
+     "craft": "CO",
+     "name": "DOWNEY,(ED)",
+     "turn": "OMTT81",
+     "on_duty": "0630",
+     "off_duty": null
+    },
+    {
+     "craft": "EN",
+     "name": "HARTER,(JAY)NQ/RD",
+     "turn": "OMTT81",
+     "on_duty": "0630",
+     "off_duty": null
+    }
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "train": "KU81 BK",
+   "on_duty": "0630",
+   "off_duty": null,
+   "depart": "04649",
+   "arrive": "04649",
+   "pool": "LO",
+   "members": [
+    {
+     "craft": "B1",
+     "name": "WILSON,(MAX)NQ",
+     "turn": "OMTTBK",
+     "on_duty": "0630",
+     "off_duty": null
+    }
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "train": "180-27 TT",
+   "on_duty": "0625",
+   "off_duty": null,
+   "depart": "04664",
+   "arrive": "04690",
+   "pool": "KA",
+   "members": [
+    {
+     "craft": "TT",
+     "name": "WALTERS,(TODD)MGR/OTT",
+     "turn": "XX01",
+     "on_duty": "0625",
+     "off_duty": null
+    }
+   ]
+  },
+  {
+   "date": "2026-10-28",
    "train": "180-27 01",
    "on_duty": "0625",
    "off_duty": null,
@@ -18436,6 +19159,131 @@
      "name": "WARRENBURG,(CHRIS)",
      "turn": "SW06",
      "on_duty": "0625",
+     "off_duty": null
+    }
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "train": "181-24",
+   "on_duty": "0515",
+   "off_duty": null,
+   "depart": "04640",
+   "arrive": "04540",
+   "pool": "DA",
+   "members": [
+    {
+     "craft": "AE",
+     "name": "MERRELL,(CHARISE)BVAE",
+     "turn": "DA14",
+     "on_duty": "0515",
+     "off_duty": null
+    },
+    {
+     "craft": "EN",
+     "name": "CADY,(AARON)ALL",
+     "turn": "DA02",
+     "on_duty": "0515",
+     "off_duty": null
+    }
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "train": "K91-28",
+   "on_duty": "0500",
+   "off_duty": null,
+   "depart": "04689",
+   "arrive": "04689",
+   "pool": "LO",
+   "members": [
+    {
+     "craft": "TT",
+     "name": "GRIFFIN,(MATTHEW)",
+     "turn": "OLIT91",
+     "on_duty": "0500",
+     "off_duty": null
+    },
+    {
+     "craft": "CO",
+     "name": "PAULSON,(BRYAN)IFG",
+     "turn": "OLIT91",
+     "on_duty": "0500",
+     "off_duty": null
+    },
+    {
+     "craft": "EN",
+     "name": "HEMM,(MARK)",
+     "turn": "OLIT91",
+     "on_duty": "0500",
+     "off_duty": null
+    }
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "train": "RC70",
+   "on_duty": "0500",
+   "off_duty": null,
+   "depart": "04640",
+   "arrive": "04640",
+   "pool": "YD",
+   "members": [
+    {
+     "craft": "FO",
+     "name": "CRUCIANI,(TONY)",
+     "turn": "YDAS07",
+     "on_duty": "0500",
+     "off_duty": null
+    },
+    {
+     "craft": "TT",
+     "name": "NEITZEL,(BRODY)",
+     "turn": "YDAS07",
+     "on_duty": "0500",
+     "off_duty": null
+    },
+    {
+     "craft": "EN",
+     "name": "HARRIS,(JESS)NQRD",
+     "turn": "YDAS07",
+     "on_duty": "0500",
+     "off_duty": null
+    }
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "train": "KK33",
+   "on_duty": "0400",
+   "off_duty": null,
+   "depart": "04690",
+   "arrive": "04690",
+   "pool": "YD",
+   "members": [
+    {
+     "craft": "FO",
+     "name": "KRUGER,(COLE)P",
+     "turn": "YKAS33",
+     "on_duty": "0400",
+     "off_duty": null
+    }
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "train": "KK01",
+   "on_duty": "0400",
+   "off_duty": null,
+   "depart": "04690",
+   "arrive": "04690",
+   "pool": "YD",
+   "members": [
+    {
+     "craft": "EN",
+     "name": "TEEL,(DARRELL)IFG",
+     "turn": "YKAS01",
+     "on_duty": "0400",
      "off_duty": null
     }
    ]
@@ -18534,7 +19382,7 @@
     {
      "craft": "EN",
      "name": "AKERS,(MATTHEW)QBVAE",
-     "turn": "XX01",
+     "turn": "MU01",
      "on_duty": "2310",
      "off_duty": null
     }
@@ -18662,7 +19510,7 @@
    "date": "2026-10-27",
    "train": "577-336",
    "on_duty": "2115",
-   "off_duty": null,
+   "off_duty": "0505",
    "depart": "04640",
    "arrive": "04617",
    "pool": "DA",
@@ -18672,21 +19520,21 @@
      "name": "CARTER,(DARIAN)",
      "turn": "XX01",
      "on_duty": "2115",
-     "off_duty": null
+     "off_duty": "0505"
     },
     {
      "craft": "AE",
      "name": "HOWARD,(MATTHEW)QBV",
      "turn": "DA03",
      "on_duty": "2115",
-     "off_duty": null
+     "off_duty": "0505"
     },
     {
      "craft": "EN",
      "name": "MILLER,(MIKE)QSAVNQBV",
      "turn": "DA23",
      "on_duty": "2115",
-     "off_duty": null
+     "off_duty": "0505"
     }
    ]
   },
@@ -18719,7 +19567,7 @@
    "date": "2026-10-27",
    "train": "K75-27",
    "on_duty": "2000",
-   "off_duty": null,
+   "off_duty": "0406",
    "depart": "04640",
    "arrive": "04640",
    "pool": "LO",
@@ -18729,18 +19577,18 @@
      "name": "LASCHE,(DAVID)QBVAE",
      "turn": "ODVT75",
      "on_duty": "2000",
-     "off_duty": null
-    },
-    {
-     "craft": "CO",
-     "name": "MARZOFKA,(BRAYDEN)*NQSV",
-     "turn": "ODVT75",
-     "on_duty": "2000",
-     "off_duty": null
+     "off_duty": "0406"
     },
     {
      "craft": "EN",
      "name": "LEMASTER,(RANDY)",
+     "turn": "ODVT75",
+     "on_duty": "2000",
+     "off_duty": "0406"
+    },
+    {
+     "craft": "CO",
+     "name": "MARZOFKA,(BRAYDEN)*NQSV",
      "turn": "ODVT75",
      "on_duty": "2000",
      "off_duty": null
@@ -18751,7 +19599,7 @@
    "date": "2026-10-27",
    "train": "852-194",
    "on_duty": "1950",
-   "off_duty": null,
+   "off_duty": "0341",
    "depart": "04617",
    "arrive": "04640",
    "pool": "DA",
@@ -18761,14 +19609,14 @@
      "name": "DAU,(AUSTIN)BVAE",
      "turn": "DA01",
      "on_duty": "1950",
-     "off_duty": null
+     "off_duty": "0341"
     },
     {
      "craft": "EN",
      "name": "POFFENBERGER,(TODD)QOT",
      "turn": "DA01",
      "on_duty": "1950",
-     "off_duty": null
+     "off_duty": "0340"
     }
    ]
   },
@@ -18826,7 +19674,7 @@
    "date": "2026-10-27",
    "train": "KU83LCL",
    "on_duty": "1830",
-   "off_duty": null,
+   "off_duty": "0425",
    "depart": "04649",
    "arrive": "04649",
    "pool": "LO",
@@ -18836,21 +19684,21 @@
      "name": "BLACK,(JASON)NQ/RD",
      "turn": "OMTT83",
      "on_duty": "1830",
-     "off_duty": null
+     "off_duty": "0425"
     },
     {
      "craft": "CO",
      "name": "MARCHAND,(JEREMY)QBV",
      "turn": "OMTT83",
      "on_duty": "1830",
-     "off_duty": null
+     "off_duty": "0424"
     },
     {
      "craft": "EN",
      "name": "CANTRELL,(TODD)NQRD",
      "turn": "OMTT83",
      "on_duty": "1830",
-     "off_duty": null
+     "off_duty": "0425"
     }
    ]
   },
@@ -18858,7 +19706,7 @@
    "date": "2026-10-27",
    "train": "KK23",
    "on_duty": "1800",
-   "off_duty": null,
+   "off_duty": "0400",
    "depart": "04690",
    "arrive": "04690",
    "pool": "YD",
@@ -18868,21 +19716,21 @@
      "name": "LONG,(ALEXANDER)P",
      "turn": "YKAS23",
      "on_duty": "1800",
-     "off_duty": null
+     "off_duty": "0358"
     },
     {
      "craft": "FO",
      "name": "BORUSHASKI,(SAM)ALL",
      "turn": "YKAS23",
      "on_duty": "1800",
-     "off_duty": null
+     "off_duty": "0359"
     },
     {
      "craft": "EN",
      "name": "HUDDLESTON,(KEITH)NQRD",
      "turn": "YKAS23",
      "on_duty": "1800",
-     "off_duty": null
+     "off_duty": "0400"
     }
    ]
   },
@@ -18922,7 +19770,7 @@
    "date": "2026-10-27",
    "train": "RC71 PH",
    "on_duty": "1700",
-   "off_duty": null,
+   "off_duty": "0348",
    "depart": "04640",
    "arrive": "04640",
    "pool": "YD",
@@ -18932,14 +19780,14 @@
      "name": "BRANDENBURG,(WES)NQBV",
      "turn": "XDAS02",
      "on_duty": "1700",
-     "off_duty": null
+     "off_duty": "0347"
     },
     {
      "craft": "EN",
      "name": "PAGE,(GARRISON)QBV",
      "turn": "XDAS02",
      "on_duty": "1700",
-     "off_duty": null
+     "off_duty": "0348"
     }
    ]
   },
@@ -18947,7 +19795,7 @@
    "date": "2026-10-27",
    "train": "181-24",
    "on_duty": "1630",
-   "off_duty": null,
+   "off_duty": "0110",
    "depart": "04690",
    "arrive": "04664",
    "pool": "SW",
@@ -18957,14 +19805,14 @@
      "name": "HARTMAN,(JAMES)",
      "turn": "SW03",
      "on_duty": "1630",
-     "off_duty": null
+     "off_duty": "0110"
     },
     {
      "craft": "EN",
      "name": "GERST,(BRADEN)BV/IFG",
      "turn": "SW03",
      "on_duty": "1630",
-     "off_duty": null
+     "off_duty": "0110"
     }
    ]
   },
@@ -19047,7 +19895,7 @@
    "date": "2026-10-27",
    "train": "280-26",
    "on_duty": "1315",
-   "off_duty": null,
+   "off_duty": "0040",
    "depart": "04664",
    "arrive": "04690",
    "pool": "SW",
@@ -19057,46 +19905,14 @@
      "name": "STONEHOUSE,(ZACH)BVIFG",
      "turn": "SW01",
      "on_duty": "1315",
-     "off_duty": null
+     "off_duty": "0040"
     },
     {
      "craft": "EN",
      "name": "TAYLOR,(WILLIAM)NQBV",
      "turn": "MU01",
      "on_duty": "1315",
-     "off_duty": null
-    }
-   ]
-  },
-  {
-   "date": "2026-10-27",
-   "train": "853-195",
-   "on_duty": "1300",
-   "off_duty": null,
-   "depart": "04640",
-   "arrive": "04617",
-   "pool": "DA",
-   "members": [
-    {
-     "craft": "TT",
-     "name": "EBERLINE,(DRAKE)",
-     "turn": "XX02",
-     "on_duty": "1300",
-     "off_duty": null
-    },
-    {
-     "craft": "AE",
-     "name": "SARGENT,(AUSTIN)BV",
-     "turn": "DA15",
-     "on_duty": "1300",
-     "off_duty": null
-    },
-    {
-     "craft": "EN",
-     "name": "NEUBERG,(RUSSELL)BV",
-     "turn": "DA11",
-     "on_duty": "1300",
-     "off_duty": null
+     "off_duty": "0040"
     }
    ]
   },
@@ -19104,7 +19920,7 @@
    "date": "2026-10-27",
    "train": "K71-27",
    "on_duty": "1300",
-   "off_duty": null,
+   "off_duty": "0115",
    "depart": "04640",
    "arrive": "04640",
    "pool": "LO",
@@ -19114,14 +19930,46 @@
      "name": "HORTON,(BRYAN)NQRD",
      "turn": "ODVT71",
      "on_duty": "1300",
-     "off_duty": null
+     "off_duty": "0115"
     },
     {
      "craft": "EN",
      "name": "MOONEY,(KORY)QBV",
      "turn": "ODVT71",
      "on_duty": "1300",
-     "off_duty": null
+     "off_duty": "0110"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-27",
+   "train": "853-195",
+   "on_duty": "1300",
+   "off_duty": "0145",
+   "depart": "04640",
+   "arrive": "04617",
+   "pool": "DA",
+   "members": [
+    {
+     "craft": "TT",
+     "name": "EBERLINE,(DRAKE)",
+     "turn": "XX02",
+     "on_duty": "1300",
+     "off_duty": "0145"
+    },
+    {
+     "craft": "AE",
+     "name": "SARGENT,(AUSTIN)BV",
+     "turn": "DA15",
+     "on_duty": "1300",
+     "off_duty": "0145"
+    },
+    {
+     "craft": "EN",
+     "name": "NEUBERG,(RUSSELL)BV",
+     "turn": "DA11",
+     "on_duty": "1300",
+     "off_duty": "0144"
     }
    ]
   },
@@ -19242,18 +20090,18 @@
    "pool": "DA",
    "members": [
     {
+     "craft": "EN",
+     "name": "EHRMANN,(CHRIS)BV",
+     "turn": "DA25",
+     "on_duty": "1045",
+     "off_duty": "1925"
+    },
+    {
      "craft": "AE",
      "name": "MYRICK,(CHEVAS)QSAVNQBV",
      "turn": "MU01",
      "on_duty": "1045",
      "off_duty": "1925"
-    },
-    {
-     "craft": "EN",
-     "name": "EHRMANN,(CHRIS)BV",
-     "turn": "DA25",
-     "on_duty": "1045",
-     "off_duty": null
     }
    ]
   },
@@ -28461,7 +29309,7 @@
   },
   {
    "name": "ELDRIDGE,(DYLAN)BVAE",
-   "craft": "CO",
+   "craft": "AE",
    "home_terminal": "DA"
   },
   {
@@ -28481,7 +29329,7 @@
   },
   {
    "name": "ELLIOTT,(SCOTT)BV",
-   "craft": "AE",
+   "craft": "EN",
    "home_terminal": "DA"
   },
   {
@@ -28726,7 +29574,7 @@
   },
   {
    "name": "HARING,(ALEX)QBV",
-   "craft": "EN",
+   "craft": "CO",
    "home_terminal": "DA"
   },
   {
@@ -28891,7 +29739,7 @@
   },
   {
    "name": "HOWARD,(MATTHEW)QBV",
-   "craft": "CO",
+   "craft": "AE",
    "home_terminal": "DA"
   },
   {
@@ -29081,7 +29929,7 @@
   },
   {
    "name": "KRUGER,(COLE)P",
-   "craft": "CO",
+   "craft": "FO",
    "home_terminal": "KC"
   },
   {
@@ -29116,7 +29964,7 @@
   },
   {
    "name": "LASCHE,(DAVID)QBVAE",
-   "craft": "AE",
+   "craft": "B1",
    "home_terminal": "DA"
   },
   {
@@ -29276,7 +30124,7 @@
   },
   {
    "name": "LUDWIG,(AARON)BVAE",
-   "craft": "EN",
+   "craft": "AE",
    "home_terminal": "OT"
   },
   {
@@ -29536,7 +30384,7 @@
   },
   {
    "name": "MOZQUEDA,(ERNESTO)*",
-   "craft": "AE",
+   "craft": "CO",
    "home_terminal": "OT"
   },
   {
@@ -29891,7 +30739,7 @@
   },
   {
    "name": "REAVES,(DALTON)NQS",
-   "craft": "ET",
+   "craft": "CO",
    "home_terminal": "DA"
   },
   {
@@ -30491,7 +31339,7 @@
   },
   {
    "name": "YORK,(CHRISTOPHER)QBV",
-   "craft": "B1",
+   "craft": "AE",
    "home_terminal": "DA"
   },
   {
