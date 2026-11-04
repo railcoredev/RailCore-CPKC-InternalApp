@@ -200,7 +200,7 @@ function updateHomeTiles() {
   if (d) {
     const cap = (d.meta.captured_at || {});
     const age = formatAge(cap.train_lineup);
-    const cacheNote = LINEUPS.fromCache ? " · offline" : "";
+    const cacheNote = LINEUPS.fromCache ? " · saved copy" : "";
     tl.textContent = `${d.train_lineup.train_count} trains · ${age || "?"}${cacheNote}`;
     cb.textContent = `${d.crew_boards.board_count} boards · ${formatAge(cap.crew_boards) || "?"}${cacheNote}`;
     // The top tile IS the Me summary (operator 2026-08-19): name +
@@ -614,7 +614,7 @@ function updateFreshnessBar() {
   // Operator rule: everything DISPLAYED is local time (Central for now).
   const when = capturedAt ? localTime(capturedAt) : "unknown";
   const age = formatAge(capturedAt);
-  const cacheNote = LINEUPS.fromCache ? " · offline copy" : "";
+  const cacheNote = LINEUPS.fromCache ? " · saved copy" : "";
   const captureMs = Date.parse(capturedAt);
   const old = !Number.isFinite(captureMs) || Date.now() - captureMs > 20 * 60000;
   const boardsOld = key === "crew_boards" && ((d.crew_boards || {}).boards || [])

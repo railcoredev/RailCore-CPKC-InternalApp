@@ -31,27 +31,101 @@ async function loadQuietZones() {
   }
 }
 
-async function loadLineupsSnapshot() {
-  const url = 'data/lineups_snapshot.json';
-  const CACHE_KEY = 'railcore_lineups_cache_v1';
-  try {
-    // Cache-bust: cache:'no-store' only bypasses the browser cache, NOT the
-    // GitHub Pages CDN edge cache -- which served the SAME url a stale copy
-    // for ~10 min even on a hard refresh (operator 2026-08-22: refreshed but
-    // still stale). A unique query param makes each request a CDN cache miss.
-    const res = await fetch(url + '?t=' + Date.now(), { cache: 'no-store' });
-    if (!res.ok) throw new Error('Lineups HTTP ' + res.status);
-    const json = await res.json();
-    try { localStorage.setItem(CACHE_KEY, JSON.stringify(json)); } catch (_) {}
-    return { data: json, fromCache: false };
-  } catch (err) {
-    console.warn('Lineups fetch failed, trying cached copy:', err);
-    try {
-      const cached = localStorage.getItem(CACHE_KEY);
-      if (cached) return { data: JSON.parse(cached), fromCache: true };
-    } catch (_) {}
-    return { data: null, fromCache: false };
+const LINEUPS_CACHE_KEY = 'railcore_lineups_cache_v1';
+let lastGoodLineups = null;
+let lineupsRequest = null;
+
+function lineupsSnapshotTimes(data) {
+  const object = x => x !== null && typeof x === 'object' && !Array.isArray(x);
+  const records = x => Array.isArray(x) && x.every(object);
+  if (!object(data) || data.meta?.feed !== 'railcore_lineups' || data.meta.feed_version !== 1
+      || !records(data.train_lineup?.stations)
+      || !data.train_lineup.stations.every(s => records(s.trains))
+      || !records(data.crew_boards?.boards)
+      || !data.crew_boards.boards.every(b => records(b.rows))
+      || !records(data.my_status) || !records(data.shared_crew_projection?.trains)
+      || !records(data.train_history) || !records(data.bookoffs) || !records(data.alerts)) return null;
+  // Only source timestamps, never a fetch/phone clock masquerading as capture.
+  const timestamp = value => typeof value === 'string'
+    && /T.*(?:Z|[+-]\d{2}:\d{2})$/.test(value) ? Date.parse(value) : NaN;
+  const times = [data.meta.generated_at, data.meta.captured_at?.train_lineup,
+    data.meta.captured_at?.crew_boards].map(timestamp);
+  if (!times.every(Number.isFinite) || times[0] > Date.now() + 5 * 60000
+      || times[1] > times[0] || times[2] > times[0]) return null;
+  return times;
+}
+
+function rememberLineupsSnapshot(data) {
+  const times = lineupsSnapshotTimes(data);
+  if (!times) return false;
+  if (lastGoodLineups) {
+    const previous = lineupsSnapshotTimes(lastGoodLineups);
+    if (previous && (times.some((t, i) => t < previous[i])
+        || (times[0] === previous[0] && JSON.stringify(data) !== JSON.stringify(lastGoodLineups)))) return false;
   }
+  lastGoodLineups = data;
+  return true;
+}
+
+function restoreLineupsSnapshot() {
+  try {
+    const cached = localStorage.getItem(LINEUPS_CACHE_KEY);
+    if (cached) rememberLineupsSnapshot(JSON.parse(cached));
+  } catch (_) {} // Storage can be disabled/full; keep the in-memory good copy.
+}
+
+async function fetchLineupsSnapshot(url) {
+  const controller = new AbortController();
+  let timer;
+  try {
+    // Bound headers AND body, including a request that fails to honor abort.
+    return await Promise.race([
+      (async () => {
+        const res = await fetch(url + '?t=' + Date.now(), {
+          cache: 'no-store', credentials: 'omit', referrerPolicy: 'no-referrer', signal: controller.signal
+        });
+        if (!res.ok) throw new Error('Lineups HTTP ' + res.status);
+        return await res.json();
+      })(),
+      new Promise((_, reject) => {
+        timer = setTimeout(() => {
+          reject(new Error('Lineups request timed out'));
+          controller.abort();
+        }, 8000);
+      })
+    ]);
+  } finally { clearTimeout(timer); }
+}
+
+async function refreshLineupsSnapshot() {
+  restoreLineupsSnapshot();
+  const urls = ['data/lineups_snapshot.json'];
+  // The public feed is already in this repository. Read it directly on the
+  // production site so data need not wait for a Pages build/deployment. Keep
+  // local previews and other installations on their own relative feed.
+  if (typeof location !== 'undefined' && location.origin === 'https://railcoredev.github.io'
+      && location.pathname.startsWith('/RailCore-CPKC-InternalApp/')) {
+    urls.unshift('https://raw.githubusercontent.com/railcoredev/RailCore-CPKC-InternalApp/main/docs/data/lineups_snapshot.json');
+  }
+  for (const url of urls) {
+    try {
+      const data = await fetchLineupsSnapshot(url);
+      restoreLineupsSnapshot(); // Another tab may have saved a newer capture.
+      if (!rememberLineupsSnapshot(data)) throw new Error('Invalid or older lineup snapshot');
+      try { localStorage.setItem(LINEUPS_CACHE_KEY, JSON.stringify(lastGoodLineups)); } catch (_) {}
+      return { data: lastGoodLineups, fromCache: false };
+    } catch (err) { console.warn('Lineups source unavailable:', url, err); }
+  }
+  return { data: lastGoodLineups, fromCache: !!lastGoodLineups };
+}
+
+function loadLineupsSnapshot() {
+  // Visibility and the foreground timer can overlap. All views receive the
+  // same whole snapshot; a late request must not roll Me or forecasts back.
+  if (!lineupsRequest) {
+    lineupsRequest = refreshLineupsSnapshot().finally(() => { lineupsRequest = null; });
+  }
+  return lineupsRequest;
 }
 
 async function loadRailCoreSnapshot() {
