@@ -1,7 +1,7 @@
 {
  "shared_crew_projection": {
   "model": "seats-v3",
-  "calculated_at": "2026-11-21T01:47:49.290170+00:00",
+  "calculated_at": "2026-11-21T01:51:11.058792+00:00",
   "policy_basis": "explicit_per_leg_calling_groups_and_candidate_eligibility",
   "trains": [
    {
@@ -3657,7 +3657,7 @@
     "blocks_other_members": [],
     "evidence": [
      "board:sched_20261120_192309:1_11",
-     "rest_calculated:2026-11-20T19:46:32",
+     "rest_calculated:2026-11-20T19:49:53",
      "board_mtod"
     ],
     "status": "needs_evidence_review",
@@ -3688,7 +3688,7 @@
     "blocks_other_members": [],
     "evidence": [
      "board:sched_20261120_192309:1_09",
-     "rest_calculated:2026-11-20T19:46:32",
+     "rest_calculated:2026-11-20T19:49:53",
      "board_mtod"
     ],
     "status": "needs_evidence_review",
@@ -3719,7 +3719,7 @@
     "blocks_other_members": [],
     "evidence": [
      "board:sched_20261120_192309:1_11",
-     "rest_calculated:2026-11-20T19:46:32",
+     "rest_calculated:2026-11-20T19:49:53",
      "board_mtod"
     ],
     "status": "needs_evidence_review",
@@ -3750,7 +3750,7 @@
     "blocks_other_members": [],
     "evidence": [
      "board:sched_20261120_192309:1_09",
-     "rest_calculated:2026-11-20T19:46:32",
+     "rest_calculated:2026-11-20T19:49:53",
      "board_mtod"
     ],
     "status": "needs_evidence_review",
@@ -3781,7 +3781,7 @@
     "blocks_other_members": [],
     "evidence": [
      "board:sched_20261120_192309:2_04",
-     "rest_calculated:2026-11-20T19:46:32",
+     "rest_calculated:2026-11-20T19:49:53",
      "junior_in_craft",
      "rest_evidence_missing",
      "rule:OT_EXTRA_CONDUCTOR_FALLBACK:2026-09-23.1:dcdc8e04c72273d00ab7cee4f36338d7e7ca7ff65dcfac032d79b5690206eb4b",
@@ -3816,7 +3816,7 @@
     "blocks_other_members": [],
     "evidence": [
      "board:sched_20261120_192309:1_06",
-     "rest_calculated:2026-11-20T19:46:32",
+     "rest_calculated:2026-11-20T19:49:53",
      "rest_evidence_missing"
     ],
     "status": "needs_evidence_review",
@@ -3847,7 +3847,7 @@
     "blocks_other_members": [],
     "evidence": [
      "board:sched_20261120_192309:2_04",
-     "rest_calculated:2026-11-20T19:46:32",
+     "rest_calculated:2026-11-20T19:49:53",
      "rest_evidence_missing",
      "rule:OT_EXTRA_CONDUCTOR_FALLBACK:2026-09-23.1:dcdc8e04c72273d00ab7cee4f36338d7e7ca7ff65dcfac032d79b5690206eb4b",
      "schedule:EX0006CO:operator_confirmation",
@@ -3881,7 +3881,7 @@
     "blocks_other_members": [],
     "evidence": [
      "board:sched_20261120_192309:1_09",
-     "rest_calculated:2026-11-20T19:46:32",
+     "rest_calculated:2026-11-20T19:49:53",
      "board_mtod"
     ],
     "status": "needs_evidence_review",
@@ -3912,7 +3912,7 @@
     "blocks_other_members": [],
     "evidence": [
      "board:sched_20261120_192309:1_11",
-     "rest_calculated:2026-11-20T19:46:32",
+     "rest_calculated:2026-11-20T19:49:53",
      "board_mtod"
     ],
     "status": "needs_evidence_review",
@@ -3943,7 +3943,7 @@
     "blocks_other_members": [],
     "evidence": [
      "board:sched_20261120_192309:1_09",
-     "rest_calculated:2026-11-20T19:46:32",
+     "rest_calculated:2026-11-20T19:49:53",
      "fra_5_starts",
      "board_mtod"
     ],
@@ -3975,7 +3975,7 @@
     "blocks_other_members": [],
     "evidence": [
      "board:sched_20261120_192309:1_04",
-     "rest_calculated:2026-11-20T19:46:32",
+     "rest_calculated:2026-11-20T19:49:53",
      "basic_rest_10h",
      "xtraboard_no_lineup_walk",
      "rule:OT_EXTRA_ENGINEER_FALLBACK:2026-09-23.1:268493cf2cace765ae94f5bd81e6c5ab5eaed211ebc7c8182064f91010a6222c",
@@ -4010,7 +4010,7 @@
     "blocks_other_members": [],
     "evidence": [
      "board:sched_20261120_192309:1_11",
-     "rest_calculated:2026-11-20T19:46:32",
+     "rest_calculated:2026-11-20T19:49:53",
      "board_mtod"
     ],
     "status": "needs_evidence_review",
@@ -4041,7 +4041,7 @@
     "blocks_other_members": [],
     "evidence": [
      "board:sched_20261120_192309:1_04",
-     "rest_calculated:2026-11-20T19:46:32",
+     "rest_calculated:2026-11-20T19:49:53",
      "board_mtod",
      "xtraboard_no_lineup_walk",
      "rule:OT_EXTRA_ENGINEER_FALLBACK:2026-09-23.1:268493cf2cace765ae94f5bd81e6c5ab5eaed211ebc7c8182064f91010a6222c",
@@ -4076,7 +4076,7 @@
     "blocks_other_members": [],
     "evidence": [
      "board:sched_20261120_192309:2_04",
-     "rest_calculated:2026-11-20T19:46:32",
+     "rest_calculated:2026-11-20T19:49:53",
      "junior_in_craft",
      "rest_evidence_missing",
      "rule:OT_EXTRA_CONDUCTOR_FALLBACK:2026-09-23.1:dcdc8e04c72273d00ab7cee4f36338d7e7ca7ff65dcfac032d79b5690206eb4b",
@@ -4111,7 +4111,7 @@
     "blocks_other_members": [],
     "evidence": [
      "board:sched_20261120_192309:2_04",
-     "rest_calculated:2026-11-20T19:46:32",
+     "rest_calculated:2026-11-20T19:49:53",
      "rest_evidence_missing",
      "rule:OT_EXTRA_CONDUCTOR_FALLBACK:2026-09-23.1:dcdc8e04c72273d00ab7cee4f36338d7e7ca7ff65dcfac032d79b5690206eb4b",
      "schedule:EX0001CO:operator_confirmation",
@@ -4145,7 +4145,7 @@
     "blocks_other_members": [],
     "evidence": [
      "board:sched_20261120_192309:2_04",
-     "rest_calculated:2026-11-20T19:46:32",
+     "rest_calculated:2026-11-20T19:49:53",
      "rest_evidence_missing",
      "rule:OT_EXTRA_CONDUCTOR_FALLBACK:2026-09-23.1:dcdc8e04c72273d00ab7cee4f36338d7e7ca7ff65dcfac032d79b5690206eb4b",
      "schedule:EX0003CO:operator_confirmation",
@@ -4179,7 +4179,7 @@
     "blocks_other_members": [],
     "evidence": [
      "board:sched_20261120_192309:2_04",
-     "rest_calculated:2026-11-20T19:46:32",
+     "rest_calculated:2026-11-20T19:49:53",
      "ado_days_off_0001",
      "xtraboard_no_lineup_walk",
      "rule:OT_EXTRA_CONDUCTOR_FALLBACK:2026-09-23.1:dcdc8e04c72273d00ab7cee4f36338d7e7ca7ff65dcfac032d79b5690206eb4b",
@@ -4214,7 +4214,7 @@
     "blocks_other_members": [],
     "evidence": [
      "board:sched_20261120_192309:2_04",
-     "rest_calculated:2026-11-20T19:46:32",
+     "rest_calculated:2026-11-20T19:49:53",
      "basic_rest_10h",
      "xtraboard_no_lineup_walk",
      "rule:OT_EXTRA_CONDUCTOR_FALLBACK:2026-09-23.1:dcdc8e04c72273d00ab7cee4f36338d7e7ca7ff65dcfac032d79b5690206eb4b",
@@ -4244,7 +4244,7 @@
     "blocks_other_members": [],
     "evidence": [
      "board:sched_20261120_192309:1_12",
-     "rest_calculated:2026-11-20T19:46:32",
+     "rest_calculated:2026-11-20T19:49:53",
      "junior_in_craft",
      "board_mtod",
      "no_lineup_trains_for_pool_at_04690"
@@ -4272,7 +4272,7 @@
     "blocks_other_members": [],
     "evidence": [
      "board:sched_20261120_192309:1_12",
-     "rest_calculated:2026-11-20T19:46:32",
+     "rest_calculated:2026-11-20T19:49:53",
      "board_mtod",
      "no_lineup_trains_for_pool_at_04690"
     ],
@@ -4299,7 +4299,7 @@
     "blocks_other_members": [],
     "evidence": [
      "board:sched_20261120_192309:1_12",
-     "rest_calculated:2026-11-20T19:46:32",
+     "rest_calculated:2026-11-20T19:49:53",
      "board_mtod",
      "no_lineup_trains_for_pool_at_04690"
     ],
@@ -4326,7 +4326,7 @@
     "blocks_other_members": [],
     "evidence": [
      "board:sched_20261120_192309:1_12",
-     "rest_calculated:2026-11-20T19:46:32",
+     "rest_calculated:2026-11-20T19:49:53",
      "board_mtod",
      "no_lineup_trains_for_pool_at_04690"
     ],
@@ -4345,10 +4345,10 @@
  },
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Awaiting login after session loss.",
+  "collection_message": "Session lost; checking login and terminal launch. Collection has not resumed.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-11-21T01:47:49+00:00",
+  "generated_at": "2026-11-21T01:51:11+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20261120_193233",
@@ -8204,8 +8204,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "4h 44m",
-         "minutes": 284
+         "label": "4h 41m",
+         "minutes": 281
         },
         "name": "CARROW,(ROBERT)"
        },
@@ -8213,8 +8213,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "4h 44m",
-         "minutes": 284
+         "label": "4h 41m",
+         "minutes": 281
         },
         "name": "TILLIS,(ETHAN)"
        }
@@ -8253,8 +8253,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 14m",
-         "minutes": 614
+         "label": "10h 11m",
+         "minutes": 611
         },
         "name": "LOUGHMILLER,(BARRY)"
        },
@@ -8262,8 +8262,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "10h 14m",
-         "minutes": 614
+         "label": "10h 11m",
+         "minutes": 611
         },
         "name": "COLLINS,(THADD)"
        }
@@ -8302,8 +8302,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "9h 29m",
-         "minutes": 569
+         "label": "9h 26m",
+         "minutes": 566
         },
         "name": "GERST,(BRADEN)",
         "tags": [
@@ -8314,8 +8314,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "9h 29m",
-         "minutes": 569
+         "label": "9h 26m",
+         "minutes": 566
         },
         "name": "LINDLY,(DONALD)",
         "tags": [
@@ -11968,8 +11968,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "11h 44m",
-         "minutes": 704
+         "label": "11h 41m",
+         "minutes": 701
         },
         "name": "SCOTT,(ZACHARY)"
        },
@@ -11977,8 +11977,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "11h 44m",
-         "minutes": 704
+         "label": "11h 41m",
+         "minutes": 701
         },
         "name": "LUDWIG,(AARON)"
        }
@@ -13432,7 +13432,7 @@
   "board_count": 11,
   "boards": [
    {
-    "age_seconds": 1278,
+    "age_seconds": 1480,
     "captured_at": "2026-11-21T01:24:49.806701+00:00",
     "label": "OTTUMWA ENG XTRA BRD",
     "menu_path": "1_04",
@@ -13461,7 +13461,7 @@
       "ushr": "",
       "rest_state": "availability_unknown",
       "rest_until": null,
-      "rest_calculated_at": "2026-11-20T19:46:32",
+      "rest_calculated_at": "2026-11-20T19:49:53",
       "rest_board": "OTTUMWA ENG XTRA BRD POSITION",
       "rest_evidence": [
        "rest_evidence_missing"
@@ -13490,7 +13490,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-11-20T14:53",
-      "rest_calculated_at": "2026-11-20T19:46:32",
+      "rest_calculated_at": "2026-11-20T19:49:53",
       "rest_board": "OTTUMWA ENG XTRA BRD POSITION",
       "rest_evidence": [
        "basic_rest_10h",
@@ -13520,7 +13520,7 @@
       "ushr": "",
       "rest_state": "resting",
       "rest_until": "2026-11-21T00:34",
-      "rest_calculated_at": "2026-11-20T19:46:32",
+      "rest_calculated_at": "2026-11-20T19:49:53",
       "rest_board": "OTTUMWA ENG XTRA BRD POSITION",
       "rest_evidence": [
        "board_mtod",
@@ -13535,7 +13535,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 1271,
+    "age_seconds": 1472,
     "captured_at": "2026-11-21T01:24:57.436100+00:00",
     "label": "OB POOLS IN OTT TURN ORDER",
     "menu_path": "1_05",
@@ -13662,7 +13662,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 1266,
+    "age_seconds": 1467,
     "captured_at": "2026-11-21T01:25:02.567310+00:00",
     "label": "OB POOLS IN OTT POSITION",
     "menu_path": "1_06",
@@ -13691,7 +13691,7 @@
       "ushr": "",
       "rest_state": "availability_unknown",
       "rest_until": null,
-      "rest_calculated_at": "2026-11-20T19:46:32",
+      "rest_calculated_at": "2026-11-20T19:49:53",
       "rest_board": "OB POOLS IN OTT POSITION",
       "rest_evidence": [
        "rest_evidence_missing"
@@ -13705,7 +13705,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 1260,
+    "age_seconds": 1462,
     "captured_at": "2026-11-21T01:25:07.755821+00:00",
     "label": "OB POOLS IN BVL POSITION",
     "menu_path": "1_07",
@@ -13718,7 +13718,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 1255,
+    "age_seconds": 1456,
     "captured_at": "2026-11-21T01:25:12.955131+00:00",
     "label": "OB POOLS IN IMS POSITION",
     "menu_path": "1_08",
@@ -13731,7 +13731,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 1250,
+    "age_seconds": 1451,
     "captured_at": "2026-11-21T01:25:18.105760+00:00",
     "label": "DA POOLS IN OTT POSITION",
     "menu_path": "1_09",
@@ -13760,7 +13760,7 @@
       "ushr": "2255",
       "rest_state": "resting",
       "rest_until": "2026-11-20T22:55",
-      "rest_calculated_at": "2026-11-20T19:46:32",
+      "rest_calculated_at": "2026-11-20T19:49:53",
       "rest_board": "DA POOLS IN OTT POSITION",
       "rest_evidence": [
        "board_mtod"
@@ -13789,7 +13789,7 @@
       "ushr": "2255",
       "rest_state": "resting",
       "rest_until": "2026-11-20T22:55",
-      "rest_calculated_at": "2026-11-20T19:46:32",
+      "rest_calculated_at": "2026-11-20T19:49:53",
       "rest_board": "DA POOLS IN OTT POSITION",
       "rest_evidence": [
        "board_mtod"
@@ -13818,7 +13818,7 @@
       "ushr": "0410",
       "rest_state": "resting",
       "rest_until": "2026-11-21T04:10",
-      "rest_calculated_at": "2026-11-20T19:46:32",
+      "rest_calculated_at": "2026-11-20T19:49:53",
       "rest_board": "DA POOLS IN OTT POSITION",
       "rest_evidence": [
        "fra_5_starts",
@@ -13848,7 +13848,7 @@
       "ushr": "0410",
       "rest_state": "resting",
       "rest_until": "2026-11-21T04:10",
-      "rest_calculated_at": "2026-11-20T19:46:32",
+      "rest_calculated_at": "2026-11-20T19:49:53",
       "rest_board": "DA POOLS IN OTT POSITION",
       "rest_evidence": [
        "board_mtod"
@@ -13862,7 +13862,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 1245,
+    "age_seconds": 1446,
     "captured_at": "2026-11-21T01:25:23.234434+00:00",
     "label": "KA POOLS IN OTT POSITION",
     "menu_path": "1_10",
@@ -13875,7 +13875,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 1240,
+    "age_seconds": 1441,
     "captured_at": "2026-11-21T01:25:28.425193+00:00",
     "label": "SW POOLS IN OTT POSITION",
     "menu_path": "1_11",
@@ -13904,7 +13904,7 @@
       "ushr": "2110",
       "rest_state": "resting",
       "rest_until": "2026-11-20T21:05",
-      "rest_calculated_at": "2026-11-20T19:46:32",
+      "rest_calculated_at": "2026-11-20T19:49:53",
       "rest_board": "SW POOLS IN OTT POSITION",
       "rest_evidence": [
        "board_mtod"
@@ -13933,7 +13933,7 @@
       "ushr": "2105",
       "rest_state": "resting",
       "rest_until": "2026-11-20T21:05",
-      "rest_calculated_at": "2026-11-20T19:46:32",
+      "rest_calculated_at": "2026-11-20T19:49:53",
       "rest_board": "SW POOLS IN OTT POSITION",
       "rest_evidence": [
        "board_mtod"
@@ -13962,7 +13962,7 @@
       "ushr": "",
       "rest_state": "working",
       "rest_until": null,
-      "rest_calculated_at": "2026-11-20T19:46:32",
+      "rest_calculated_at": "2026-11-20T19:49:53",
       "rest_board": "SW POOLS IN OTT POSITION",
       "rest_evidence": [
        "currently_on_duty"
@@ -13991,7 +13991,7 @@
       "ushr": "",
       "rest_state": "availability_unknown",
       "rest_until": null,
-      "rest_calculated_at": "2026-11-20T19:46:32",
+      "rest_calculated_at": "2026-11-20T19:49:53",
       "rest_board": "SW POOLS IN OTT POSITION",
       "rest_evidence": [
        "rest_evidence_missing"
@@ -14020,7 +14020,7 @@
       "ushr": "0440",
       "rest_state": "resting",
       "rest_until": "2026-11-21T04:40",
-      "rest_calculated_at": "2026-11-20T19:46:32",
+      "rest_calculated_at": "2026-11-20T19:49:53",
       "rest_board": "SW POOLS IN OTT POSITION",
       "rest_evidence": [
        "board_mtod"
@@ -14049,7 +14049,7 @@
       "ushr": "0440",
       "rest_state": "resting",
       "rest_until": "2026-11-21T04:40",
-      "rest_calculated_at": "2026-11-20T19:46:32",
+      "rest_calculated_at": "2026-11-20T19:49:53",
       "rest_board": "SW POOLS IN OTT POSITION",
       "rest_evidence": [
        "board_mtod"
@@ -14063,7 +14063,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 1232,
+    "age_seconds": 1433,
     "captured_at": "2026-11-21T01:25:35.991838+00:00",
     "label": "SW POOLS IN KC POSITION",
     "menu_path": "1_12",
@@ -14092,7 +14092,7 @@
       "ushr": "2057",
       "rest_state": "resting",
       "rest_until": "2026-11-20T20:57",
-      "rest_calculated_at": "2026-11-20T19:46:32",
+      "rest_calculated_at": "2026-11-20T19:49:53",
       "rest_board": "SW POOLS IN KC  POSITION",
       "rest_evidence": [
        "board_mtod",
@@ -14122,7 +14122,7 @@
       "ushr": "2057",
       "rest_state": "resting",
       "rest_until": "2026-11-20T20:57",
-      "rest_calculated_at": "2026-11-20T19:46:32",
+      "rest_calculated_at": "2026-11-20T19:49:53",
       "rest_board": "SW POOLS IN KC  POSITION",
       "rest_evidence": [
        "junior_in_craft",
@@ -14153,7 +14153,7 @@
       "ushr": "0102",
       "rest_state": "resting",
       "rest_until": "2026-11-21T01:02",
-      "rest_calculated_at": "2026-11-20T19:46:32",
+      "rest_calculated_at": "2026-11-20T19:49:53",
       "rest_board": "SW POOLS IN KC  POSITION",
       "rest_evidence": [
        "board_mtod",
@@ -14183,7 +14183,7 @@
       "ushr": "0102",
       "rest_state": "resting",
       "rest_until": "2026-11-21T01:02",
-      "rest_calculated_at": "2026-11-20T19:46:32",
+      "rest_calculated_at": "2026-11-20T19:49:53",
       "rest_board": "SW POOLS IN KC  POSITION",
       "rest_evidence": [
        "board_mtod",
@@ -14213,7 +14213,7 @@
       "ushr": "0102",
       "rest_state": "resting",
       "rest_until": "2026-11-21T01:02",
-      "rest_calculated_at": "2026-11-20T19:46:32",
+      "rest_calculated_at": "2026-11-20T19:49:53",
       "rest_board": "SW POOLS IN KC  POSITION",
       "rest_evidence": [
        "board_mtod",
@@ -14228,7 +14228,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 1225,
+    "age_seconds": 1426,
     "captured_at": "2026-11-21T01:25:43.690675+00:00",
     "label": "SW POOLS IN DA POSITION",
     "menu_path": "1_13",
@@ -14257,7 +14257,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-11-20T17:10",
-      "rest_calculated_at": "2026-11-20T19:46:32",
+      "rest_calculated_at": "2026-11-20T19:49:53",
       "rest_board": "SW POOLS IN DA  POSITION",
       "rest_evidence": [
        "basic_rest_10h",
@@ -14272,7 +14272,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 1216,
+    "age_seconds": 1417,
     "captured_at": "2026-11-21T01:25:52.674472+00:00",
     "label": "OTT SWITCHMAN XTRA BRD",
     "menu_path": "2_04",
@@ -14301,7 +14301,7 @@
       "ushr": "",
       "rest_state": "availability_unknown",
       "rest_until": null,
-      "rest_calculated_at": "2026-11-20T19:46:32",
+      "rest_calculated_at": "2026-11-20T19:49:53",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION",
       "rest_evidence": [
        "junior_in_craft",
@@ -14331,7 +14331,7 @@
       "ushr": "",
       "rest_state": "availability_unknown",
       "rest_until": null,
-      "rest_calculated_at": "2026-11-20T19:46:32",
+      "rest_calculated_at": "2026-11-20T19:49:53",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION",
       "rest_evidence": [
        "rest_evidence_missing"
@@ -14360,7 +14360,7 @@
       "ushr": "",
       "rest_state": "availability_unknown",
       "rest_until": null,
-      "rest_calculated_at": "2026-11-20T19:46:32",
+      "rest_calculated_at": "2026-11-20T19:49:53",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION",
       "rest_evidence": [
        "junior_in_craft",
@@ -14390,7 +14390,7 @@
       "ushr": "",
       "rest_state": "availability_unknown",
       "rest_until": null,
-      "rest_calculated_at": "2026-11-20T19:46:32",
+      "rest_calculated_at": "2026-11-20T19:49:53",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION",
       "rest_evidence": [
        "rest_evidence_missing"
@@ -14419,7 +14419,7 @@
       "ushr": "",
       "rest_state": "availability_unknown",
       "rest_until": null,
-      "rest_calculated_at": "2026-11-20T19:46:32",
+      "rest_calculated_at": "2026-11-20T19:49:53",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION",
       "rest_evidence": [
        "rest_evidence_missing"
@@ -14448,7 +14448,7 @@
       "ushr": "",
       "rest_state": "resting",
       "rest_until": "2026-11-23T00:01",
-      "rest_calculated_at": "2026-11-20T19:46:32",
+      "rest_calculated_at": "2026-11-20T19:49:53",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION",
       "rest_evidence": [
        "ado_days_off_0001",
@@ -14478,7 +14478,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-11-20T17:02",
-      "rest_calculated_at": "2026-11-20T19:46:32",
+      "rest_calculated_at": "2026-11-20T19:49:53",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION",
       "rest_evidence": [
        "basic_rest_10h",
@@ -14508,7 +14508,7 @@
       "ushr": "",
       "rest_state": "rest_day",
       "rest_until": "2026-11-21T00:01",
-      "rest_calculated_at": "2026-11-20T19:46:32",
+      "rest_calculated_at": "2026-11-20T19:49:53",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION",
       "rest_evidence": [
        "rest_day",
@@ -28728,8 +28728,8 @@
    "since": "2026-11-18",
    "time": "08:33",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:42.091957+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -28744,8 +28744,8 @@
    "since": "2026-11-14",
    "time": "00:01",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:42.091957+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -28760,8 +28760,8 @@
    "since": "2026-11-12",
    "time": "00:01",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:42.091957+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -28776,8 +28776,8 @@
    "since": "2026-11-18",
    "time": "07:08",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:30.904441+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -28792,8 +28792,8 @@
    "since": "2026-11-18",
    "time": "22:18",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:42.091957+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -28824,8 +28824,8 @@
    "since": "2026-10-20",
    "time": "11:54",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:30.904441+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -28840,8 +28840,8 @@
    "since": "2026-11-18",
    "time": "19:40",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:42.091957+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -28856,8 +28856,8 @@
    "since": "2026-11-19",
    "time": "16:14",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:42.091957+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -28904,8 +28904,8 @@
    "since": "2026-11-18",
    "time": "22:17",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:30.904441+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -28920,8 +28920,8 @@
    "since": "2026-11-20",
    "time": "12:48",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:30.904441+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -28984,8 +28984,8 @@
    "since": "2026-11-20",
    "time": "00:01",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:30.904441+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29000,8 +29000,8 @@
    "since": "2026-11-16",
    "time": "19:10",
    "terminal": "OT",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:53.291276+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29032,8 +29032,8 @@
    "since": "2026-11-19",
    "time": "23:38",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:30.904441+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29048,8 +29048,8 @@
    "since": "2026-11-19",
    "time": "03:24",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:42.091957+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29064,8 +29064,8 @@
    "since": "2026-11-20",
    "time": "00:01",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:30.904441+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29080,8 +29080,8 @@
    "since": "2026-11-14",
    "time": "00:01",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:42.091957+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29112,8 +29112,8 @@
    "since": "2026-11-18",
    "time": "22:42",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:30.904441+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29128,8 +29128,8 @@
    "since": "2026-11-20",
    "time": "18:43",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:30.904441+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29144,8 +29144,8 @@
    "since": "2026-10-20",
    "time": "12:49",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:30.904441+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29176,8 +29176,8 @@
    "since": "2026-08-30",
    "time": "14:24",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:30.904441+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29192,8 +29192,8 @@
    "since": "2026-11-20",
    "time": "16:17",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:42.091957+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29208,8 +29208,8 @@
    "since": "2026-11-19",
    "time": "07:55",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:30.904441+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29224,8 +29224,8 @@
    "since": "2026-10-17",
    "time": "20:38",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:30.904441+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29256,8 +29256,8 @@
    "since": "2026-11-20",
    "time": "18:44",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:42.091957+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29304,8 +29304,8 @@
    "since": "2026-11-19",
    "time": "23:39",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:42.091957+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29320,8 +29320,8 @@
    "since": "2026-11-19",
    "time": "03:26",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:42.091957+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29368,8 +29368,8 @@
    "since": "2026-11-20",
    "time": "13:13",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:42.091957+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29384,8 +29384,8 @@
    "since": "2026-11-19",
    "time": "23:38",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:42.091957+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29416,8 +29416,8 @@
    "since": "2026-11-19",
    "time": "16:13",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:30.904441+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29464,8 +29464,8 @@
    "since": "2026-11-13",
    "time": "12:11",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:42.091957+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29480,8 +29480,8 @@
    "since": "2026-11-18",
    "time": "22:02",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:30.904441+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29528,8 +29528,8 @@
    "since": "2026-11-20",
    "time": "00:01",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:42.091957+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29560,8 +29560,8 @@
    "since": "2026-10-02",
    "time": "14:24",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:30.904441+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29592,8 +29592,8 @@
    "since": "2025-06-12",
    "time": "20:29",
    "terminal": "OT",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:33.395505+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29640,8 +29640,8 @@
    "since": "2026-11-18",
    "time": "22:17",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:33.395505+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29672,8 +29672,8 @@
    "since": "2026-11-20",
    "time": "17:47",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:44.580043+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29720,8 +29720,8 @@
    "since": "2026-11-20",
    "time": "13:52",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:33.395505+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29736,8 +29736,8 @@
    "since": "2026-11-18",
    "time": "22:01",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:44.580043+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29752,8 +29752,8 @@
    "since": "2026-11-14",
    "time": "00:01",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:44.580043+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29784,8 +29784,8 @@
    "since": "2026-11-20",
    "time": "10:27",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:44.580043+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29800,8 +29800,8 @@
    "since": "2026-11-20",
    "time": "00:01",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:33.395505+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29816,8 +29816,8 @@
    "since": "2026-11-18",
    "time": "08:32",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:33.395505+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29832,8 +29832,8 @@
    "since": "2026-01-02",
    "time": "02:45",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:33.395505+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29880,8 +29880,8 @@
    "since": "2026-11-14",
    "time": "00:01",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:33.395505+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29896,8 +29896,8 @@
    "since": "2026-11-20",
    "time": "18:46",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:44.580043+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29928,8 +29928,8 @@
    "since": "2026-11-20",
    "time": "10:24",
    "terminal": "DA",
-   "carryover": false,
-   "stale": false,
+   "carryover": true,
+   "stale": true,
    "captured_at": "2026-11-21T01:27:44.580043+00:00",
    "source_run": "sched_20261120_192309",
    "inquiry_subdistrict": "DA",
@@ -29946,7 +29946,7 @@
     "craft": "AE",
     "captured_at": "2026-11-21T01:27:37.747955+00:00",
     "run_id": "sched_20261120_192309",
-    "stale": false,
+    "stale": true,
     "incomplete_newer_capture": false
    },
    {
@@ -29954,7 +29954,7 @@
     "craft": "CO",
     "captured_at": "2026-11-21T01:27:44.580043+00:00",
     "run_id": "sched_20261120_192309",
-    "stale": false,
+    "stale": true,
     "incomplete_newer_capture": false
    },
    {
@@ -29962,7 +29962,7 @@
     "craft": "EN",
     "captured_at": "2026-11-21T01:27:33.395505+00:00",
     "run_id": "sched_20261120_192309",
-    "stale": false,
+    "stale": true,
     "incomplete_newer_capture": false
    },
    {
@@ -29970,7 +29970,7 @@
     "craft": "ET",
     "captured_at": "2026-11-21T01:27:48.964711+00:00",
     "run_id": "sched_20261120_192309",
-    "stale": false,
+    "stale": true,
     "incomplete_newer_capture": false
    },
    {
@@ -29978,7 +29978,7 @@
     "craft": "TT",
     "captured_at": "2026-11-21T01:27:53.291276+00:00",
     "run_id": "sched_20261120_192309",
-    "stale": false,
+    "stale": true,
     "incomplete_newer_capture": false
    },
    {
