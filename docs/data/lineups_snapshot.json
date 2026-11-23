@@ -1,7 +1,7 @@
 {
  "shared_crew_projection": {
   "model": "seats-v3",
-  "calculated_at": "2026-11-23T19:52:07.735590+00:00",
+  "calculated_at": "2026-11-23T20:00:19.245313+00:00",
   "policy_basis": "explicit_per_leg_calling_groups_and_candidate_eligibility",
   "trains": [
    {
@@ -82,7 +82,7 @@
      {
       "member_id": "ROBERTS,(KIMBERLY)",
       "seat": "EN",
-      "reason": "not_rested_by_call"
+      "reason": "unavailable"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
@@ -207,7 +207,7 @@
      {
       "member_id": "ROBERTS,(KIMBERLY)",
       "seat": "AE_CO",
-      "reason": "seat_not_qualified"
+      "reason": "unavailable"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
@@ -295,7 +295,7 @@
      "ET": null,
      "TT": null
     },
-    "call_confirmation_required": false,
+    "call_confirmation_required": true,
     "complete": false,
     "missing_seats": [
      "EN",
@@ -360,7 +360,7 @@
      {
       "member_id": "ROBERTS,(KIMBERLY)",
       "seat": "EN",
-      "reason": "not_rested_by_call"
+      "reason": "unavailable"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
@@ -485,7 +485,7 @@
      {
       "member_id": "ROBERTS,(KIMBERLY)",
       "seat": "AE_CO",
-      "reason": "seat_not_qualified"
+      "reason": "unavailable"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
@@ -580,7 +580,7 @@
       "captured_at": "2026-11-23T19:45:34.550790+00:00",
       "evidence": [
        "board:sched_20261123_134305:1_12",
-       "rest_calculated:2026-11-23T13:50:47",
+       "rest_calculated:2026-11-23T13:58:59",
        "board_rest:2026-11-23T19:45:34.550790+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261123_134305\\parsed\\crew_lineup.jsonl"
       ],
       "call_before": null,
@@ -601,7 +601,7 @@
       "captured_at": "2026-11-23T19:45:34.550790+00:00",
       "evidence": [
        "board:sched_20261123_134305:1_12",
-       "rest_calculated:2026-11-23T13:50:47",
+       "rest_calculated:2026-11-23T13:58:59",
        "board_rest:2026-11-23T19:45:34.550790+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261123_134305\\parsed\\crew_lineup.jsonl"
       ],
       "call_before": null,
@@ -1131,7 +1131,7 @@
       "captured_at": "2026-11-23T19:45:26.893050+00:00",
       "evidence": [
        "board:sched_20261123_134305:1_11",
-       "rest_calculated:2026-11-23T13:50:47",
+       "rest_calculated:2026-11-23T13:58:59",
        "board_rest:2026-11-23T19:45:26.893050+00:00:sched_20261123_134305"
       ],
       "call_before": null,
@@ -1152,7 +1152,7 @@
       "captured_at": "2026-11-23T19:45:26.893050+00:00",
       "evidence": [
        "board:sched_20261123_134305:1_11",
-       "rest_calculated:2026-11-23T13:50:47",
+       "rest_calculated:2026-11-23T13:58:59",
        "board_rest:2026-11-23T19:45:26.893050+00:00:sched_20261123_134305"
       ],
       "call_before": null,
@@ -1221,7 +1221,7 @@
      {
       "member_id": "ROBERTS,(KIMBERLY)",
       "seat": "EN",
-      "reason": "not_rested_by_call"
+      "reason": "unavailable"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
@@ -1341,7 +1341,7 @@
      {
       "member_id": "ROBERTS,(KIMBERLY)",
       "seat": "AE_CO",
-      "reason": "seat_not_qualified"
+      "reason": "unavailable"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
@@ -1466,7 +1466,7 @@
      {
       "member_id": "ROBERTS,(KIMBERLY)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "unavailable"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
@@ -1591,7 +1591,7 @@
      {
       "member_id": "ROBERTS,(KIMBERLY)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "unavailable"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
@@ -1671,19 +1671,19 @@
     "call_at": "2026-11-24T10:38:00+00:00",
     "seats": {
      "EN": {
-      "member_id": "ROBERTS,(KIMBERLY)",
-      "name": "ROBERTS,(KIMBERLY)",
+      "member_id": "CASHATT,(DAKOTA)",
+      "name": "CASHATT,(DAKOTA)",
       "seat": "EN",
-      "assignment": "SW07",
+      "assignment": "SW04",
       "board": "SW POOLS IN OTT POSITION",
-      "position": 2,
+      "position": 3,
       "group": "SW",
       "optional": false,
-      "captured_at": "2026-11-23T19:45:26.893050+00:00",
+      "captured_at": "2026-11-23T19:45:29.397502+00:00",
       "evidence": [
        "board:sched_20261123_134305:1_11",
-       "rest_calculated:2026-11-23T13:50:47",
-       "board_rest:2026-11-23T19:45:26.893050+00:00:sched_20261123_134305"
+       "rest_calculated:2026-11-23T13:58:59",
+       "board_rest:2026-11-23T19:45:29.397502+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261123_134305\\parsed\\crew_lineup.jsonl"
       ],
       "call_before": null,
       "duty_before": null,
@@ -1703,7 +1703,7 @@
       "captured_at": "2026-11-23T19:45:26.893050+00:00",
       "evidence": [
        "board:sched_20261123_134305:1_11",
-       "rest_calculated:2026-11-23T13:50:47",
+       "rest_calculated:2026-11-23T13:58:59",
        "board_rest:2026-11-23T19:45:26.893050+00:00:sched_20261123_134305"
       ],
       "call_before": null,
@@ -1724,7 +1724,7 @@
       "captured_at": "2026-11-23T19:45:26.893050+00:00",
       "evidence": [
        "board:sched_20261123_134305:1_11",
-       "rest_calculated:2026-11-23T13:50:47",
+       "rest_calculated:2026-11-23T13:58:59",
        "fra_5_starts",
        "board_rest:2026-11-23T19:45:26.893050+00:00:sched_20261123_134305"
       ],
@@ -1787,6 +1787,11 @@
      },
      {
       "member_id": "CONWELL,(JOSHUA)",
+      "seat": "EN",
+      "reason": "unavailable"
+     },
+     {
+      "member_id": "ROBERTS,(KIMBERLY)",
       "seat": "EN",
       "reason": "unavailable"
      },
@@ -1916,7 +1921,7 @@
      {
       "member_id": "ROBERTS,(KIMBERLY)",
       "seat": "AE_CO",
-      "reason": "already_reserved"
+      "reason": "unavailable"
      },
      {
       "member_id": "LANDGREBE,(NICHOLAS)",
@@ -1926,7 +1931,7 @@
      {
       "member_id": "CASHATT,(DAKOTA)",
       "seat": "AE_CO",
-      "reason": "seat_not_qualified"
+      "reason": "already_reserved"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
@@ -2036,7 +2041,7 @@
      {
       "member_id": "ROBERTS,(KIMBERLY)",
       "seat": "ET",
-      "reason": "already_reserved"
+      "reason": "unavailable"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
@@ -2046,7 +2051,7 @@
      {
       "member_id": "CASHATT,(DAKOTA)",
       "seat": "ET",
-      "reason": "seat_not_qualified"
+      "reason": "already_reserved"
      },
      {
       "member_id": "MARKO,(CAIN)",
@@ -2151,7 +2156,7 @@
      {
       "member_id": "ROBERTS,(KIMBERLY)",
       "seat": "TT",
-      "reason": "already_reserved"
+      "reason": "unavailable"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
@@ -2166,7 +2171,7 @@
      {
       "member_id": "CASHATT,(DAKOTA)",
       "seat": "TT",
-      "reason": "seat_not_qualified"
+      "reason": "already_reserved"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
@@ -2242,7 +2247,7 @@
       "captured_at": "2026-11-23T19:45:34.550790+00:00",
       "evidence": [
        "board:sched_20261123_134305:1_12",
-       "rest_calculated:2026-11-23T13:50:47",
+       "rest_calculated:2026-11-23T13:58:59",
        "board_rest:2026-11-23T19:45:34.550790+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261123_134305\\parsed\\crew_lineup.jsonl",
        "lineup_short_1_trains_for_rank_2"
       ],
@@ -2264,7 +2269,7 @@
       "captured_at": "2026-11-23T19:45:34.550790+00:00",
       "evidence": [
        "board:sched_20261123_134305:1_12",
-       "rest_calculated:2026-11-23T13:50:47",
+       "rest_calculated:2026-11-23T13:58:59",
        "board_rest:2026-11-23T19:45:34.550790+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261123_134305\\parsed\\crew_lineup.jsonl",
        "lineup_short_1_trains_for_rank_2"
       ],
@@ -2339,7 +2344,7 @@
      {
       "member_id": "ROBERTS,(KIMBERLY)",
       "seat": "EN",
-      "reason": "already_reserved"
+      "reason": "different_station"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
@@ -2354,7 +2359,7 @@
      {
       "member_id": "CASHATT,(DAKOTA)",
       "seat": "EN",
-      "reason": "different_station"
+      "reason": "already_reserved"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
@@ -2459,7 +2464,7 @@
      {
       "member_id": "ROBERTS,(KIMBERLY)",
       "seat": "AE_CO",
-      "reason": "already_reserved"
+      "reason": "different_station"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
@@ -2474,7 +2479,7 @@
      {
       "member_id": "CASHATT,(DAKOTA)",
       "seat": "AE_CO",
-      "reason": "different_station"
+      "reason": "already_reserved"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
@@ -2579,7 +2584,7 @@
      {
       "member_id": "ROBERTS,(KIMBERLY)",
       "seat": "ET",
-      "reason": "already_reserved"
+      "reason": "different_station"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
@@ -2594,7 +2599,7 @@
      {
       "member_id": "CASHATT,(DAKOTA)",
       "seat": "ET",
-      "reason": "different_station"
+      "reason": "already_reserved"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
@@ -2704,7 +2709,7 @@
      {
       "member_id": "ROBERTS,(KIMBERLY)",
       "seat": "TT",
-      "reason": "already_reserved"
+      "reason": "different_station"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
@@ -2719,7 +2724,7 @@
      {
       "member_id": "CASHATT,(DAKOTA)",
       "seat": "TT",
-      "reason": "different_station"
+      "reason": "already_reserved"
      },
      {
       "member_id": "MASSEY,(COLLIN)",
@@ -2783,27 +2788,7 @@
     "on_duty": "2026-11-24T08:40:00-06:00",
     "call_at": "2026-11-24T12:40:00+00:00",
     "seats": {
-     "EN": {
-      "member_id": "CASHATT,(DAKOTA)",
-      "name": "CASHATT,(DAKOTA)",
-      "seat": "EN",
-      "assignment": "SW04",
-      "board": "SW POOLS IN OTT POSITION",
-      "position": 3,
-      "group": "SW",
-      "optional": false,
-      "captured_at": "2026-11-23T19:45:29.397502+00:00",
-      "evidence": [
-       "board:sched_20261123_134305:1_11",
-       "rest_calculated:2026-11-23T13:50:47",
-       "board_rest:2026-11-23T19:45:29.397502+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261123_134305\\parsed\\crew_lineup.jsonl"
-      ],
-      "call_before": null,
-      "duty_before": null,
-      "schedule_window_verified": true,
-      "source": "projected",
-      "reason": "eligible_calling_order"
-     },
+     "EN": null,
      "AE_CO": null,
      "ET": null,
      "TT": null
@@ -2811,6 +2796,7 @@
     "call_confirmation_required": false,
     "complete": false,
     "missing_seats": [
+     "EN",
      "AE_CO"
     ],
     "decisions": [
@@ -2867,7 +2853,7 @@
      {
       "member_id": "ROBERTS,(KIMBERLY)",
       "seat": "EN",
-      "reason": "already_reserved"
+      "reason": "unavailable"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
@@ -2876,6 +2862,11 @@
      },
      {
       "member_id": "LANDGREBE,(NICHOLAS)",
+      "seat": "EN",
+      "reason": "already_reserved"
+     },
+     {
+      "member_id": "CASHATT,(DAKOTA)",
       "seat": "EN",
       "reason": "already_reserved"
      },
@@ -2995,7 +2986,7 @@
      {
       "member_id": "ROBERTS,(KIMBERLY)",
       "seat": "AE_CO",
-      "reason": "already_reserved"
+      "reason": "unavailable"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
@@ -3144,7 +3135,7 @@
      {
       "member_id": "ROBERTS,(KIMBERLY)",
       "seat": "EN",
-      "reason": "already_reserved"
+      "reason": "different_station"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
@@ -3269,7 +3260,7 @@
      {
       "member_id": "ROBERTS,(KIMBERLY)",
       "seat": "AE_CO",
-      "reason": "already_reserved"
+      "reason": "different_station"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
@@ -3360,7 +3351,7 @@
       "captured_at": "2026-11-23T19:45:16.510242+00:00",
       "evidence": [
        "board:sched_20261123_134305:1_09",
-       "rest_calculated:2026-11-23T13:50:47",
+       "rest_calculated:2026-11-23T13:58:59",
        "board_rest:2026-11-23T19:45:16.510242+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261123_134305\\parsed\\crew_lineup.jsonl"
       ],
       "call_before": null,
@@ -3381,7 +3372,7 @@
       "captured_at": "2026-11-23T19:45:16.510242+00:00",
       "evidence": [
        "board:sched_20261123_134305:1_09",
-       "rest_calculated:2026-11-23T13:50:47",
+       "rest_calculated:2026-11-23T13:58:59",
        "board_rest:2026-11-23T19:45:16.510242+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261123_134305\\parsed\\crew_lineup.jsonl"
       ],
       "call_before": null,
@@ -3440,7 +3431,7 @@
      {
       "member_id": "ROBERTS,(KIMBERLY)",
       "seat": "EN",
-      "reason": "already_reserved"
+      "reason": "unavailable"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
@@ -3563,7 +3554,7 @@
      {
       "member_id": "ROBERTS,(KIMBERLY)",
       "seat": "AE_CO",
-      "reason": "already_reserved"
+      "reason": "unavailable"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
@@ -3699,7 +3690,7 @@
      {
       "member_id": "ROBERTS,(KIMBERLY)",
       "seat": "ET",
-      "reason": "already_reserved"
+      "reason": "unavailable"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
@@ -3824,7 +3815,7 @@
      {
       "member_id": "ROBERTS,(KIMBERLY)",
       "seat": "TT",
-      "reason": "already_reserved"
+      "reason": "unavailable"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
@@ -3968,7 +3959,7 @@
      {
       "member_id": "ROBERTS,(KIMBERLY)",
       "seat": "EN",
-      "reason": "already_reserved"
+      "reason": "unavailable"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
@@ -4101,7 +4092,7 @@
      {
       "member_id": "ROBERTS,(KIMBERLY)",
       "seat": "AE_CO",
-      "reason": "already_reserved"
+      "reason": "unavailable"
      },
      {
       "member_id": "HARTMAN,(JAMES)",
@@ -5334,7 +5325,7 @@
     ],
     "evidence": [
      "board:sched_20261123_134305:1_04",
-     "rest_calculated:2026-11-23T13:50:47",
+     "rest_calculated:2026-11-23T13:58:59",
      "junior_in_craft",
      "rest_evidence_missing",
      "rule:OT_EXTRA_ENGINEER_FALLBACK:2026-09-23.1:268493cf2cace765ae94f5bd81e6c5ab5eaed211ebc7c8182064f91010a6222c",
@@ -5374,7 +5365,7 @@
     ],
     "evidence": [
      "board:sched_20261123_134305:2_04",
-     "rest_calculated:2026-11-23T13:50:47",
+     "rest_calculated:2026-11-23T13:58:59",
      "rest_evidence_missing",
      "rule:OT_EXTRA_CONDUCTOR_FALLBACK:2026-09-23.1:dcdc8e04c72273d00ab7cee4f36338d7e7ca7ff65dcfac032d79b5690206eb4b",
      "schedule:EX0001CO:operator_confirmation",
@@ -5412,7 +5403,7 @@
     ],
     "evidence": [
      "board:sched_20261123_134305:2_04",
-     "rest_calculated:2026-11-23T13:50:47",
+     "rest_calculated:2026-11-23T13:58:59",
      "board_rest:2026-11-23T19:45:51.269492+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261123_134305\\parsed\\crew_lineup.jsonl",
      "xtraboard_no_lineup_walk",
      "rule:OT_EXTRA_CONDUCTOR_FALLBACK:2026-09-23.1:dcdc8e04c72273d00ab7cee4f36338d7e7ca7ff65dcfac032d79b5690206eb4b",
@@ -5434,23 +5425,23 @@
  },
  "meta": {
   "collection_state": "active",
-  "collection_message": "Light sweep sched_20261123_134305.",
+  "collection_message": "Light sweep sched_20261123_135237.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-11-23T19:52:07+00:00",
+  "generated_at": "2026-11-23T20:00:19+00:00",
   "names_mode": "full",
   "source_runs": {
-   "train_lineup": "sched_20261123_134305",
+   "train_lineup": "sched_20261123_135237",
    "crew_boards": "sched_20261123_134305"
   },
   "captured_at": {
-   "train_lineup": "2026-11-23T19:44:19.000112+00:00",
+   "train_lineup": "2026-11-23T19:53:51.359055+00:00",
    "crew_boards": "2026-11-23T19:45:51.269492+00:00"
   }
  },
  "train_lineup": {
-  "captured_at": "2026-11-23T19:44:19.000112+00:00",
-  "run_id": "sched_20261123_134305",
+  "captured_at": "2026-11-23T19:53:51.359055+00:00",
+  "run_id": "sched_20261123_135237",
   "station_count": 5,
   "stations": [
    {
@@ -5474,9 +5465,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-0900 C PLANNED  255-24    Y TP PLN ORDR UNTS UPD MTP  7GPO SP 4 7GPO SP 4",
       "rc": "TP",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:44:01.734583+00:00",
+      "snapshot_date": "2026-11-23T19:53:34.226584+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "255-24",
@@ -5504,9 +5495,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-1600 C ORDERED  I45-23    Y BE PLN ORDR UNTS UPD MTP  7GBE BP 0 7GBE BP 0",
       "rc": "BE",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:44:01.734583+00:00",
+      "snapshot_date": "2026-11-23T19:53:34.226584+00:00",
       "status": "ORDERED",
       "subdistrict": "",
       "train_asgn": "I45-23",
@@ -5534,9 +5525,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-1800 C PLANNED  547-779   Y TP PLANNED ORDER FROM MTP 7GPO SP 4 7GPO SP 4",
       "rc": "TP",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:44:01.734583+00:00",
+      "snapshot_date": "2026-11-23T19:53:34.226584+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "547-779",
@@ -5564,9 +5555,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-1830 C ORDERED IF2        Y 03",
       "rc": "03",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:44:01.734583+00:00",
+      "snapshot_date": "2026-11-23T19:53:34.226584+00:00",
       "status": "ORDERED",
       "subdistrict": "",
       "train_asgn": "IF2",
@@ -5594,9 +5585,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-1830 C ORDERED UTIL 2     Y 53",
       "rc": "Y",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:44:01.734583+00:00",
+      "snapshot_date": "2026-11-23T19:53:34.226584+00:00",
       "status": "ORDERED",
       "subdistrict": "",
       "train_asgn": "UTIL",
@@ -5624,9 +5615,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-1900 C ORDERED  I47-23    Y 41 PLANNED ORDER FROM MTP",
       "rc": "41",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:44:01.734583+00:00",
+      "snapshot_date": "2026-11-23T19:53:34.226584+00:00",
       "status": "ORDERED",
       "subdistrict": "",
       "train_asgn": "I47-23",
@@ -5654,9 +5645,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-1900 C ORDERED I47 ROAD   N",
       "rc": "N",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:44:01.734583+00:00",
+      "snapshot_date": "2026-11-23T19:53:34.226584+00:00",
       "status": "ORDERED",
       "subdistrict": "",
       "train_asgn": "I47",
@@ -5684,9 +5675,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-1900 C ORDERED IC2        Y 03",
       "rc": "03",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:44:01.734583+00:00",
+      "snapshot_date": "2026-11-23T19:53:34.226584+00:00",
       "status": "ORDERED",
       "subdistrict": "",
       "train_asgn": "IC2",
@@ -5714,9 +5705,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-2000 C PLANNED  641-691   Y TP PLANNED ORDER FROM MTP 7GPO SP 4 7GPO SP 4",
       "rc": "TP",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:44:01.734583+00:00",
+      "snapshot_date": "2026-11-23T19:53:34.226584+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "641-691",
@@ -5744,9 +5735,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-2120 E PLANNED  230-23    Y    PLN ORDR UNTS UPD MTP  7GEL EB 1 7GEL EB 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:44:01.734583+00:00",
+      "snapshot_date": "2026-11-23T19:53:34.226584+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "230-23",
@@ -5774,9 +5765,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-2200 C PLANNED 84513      Z",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:44:01.734583+00:00",
+      "snapshot_date": "2026-11-23T19:53:34.226584+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "84513",
@@ -5804,9 +5795,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-2200 C PLANNED IY21       Z 30",
       "rc": "30",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:44:01.734583+00:00",
+      "snapshot_date": "2026-11-23T19:53:34.226584+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "IY21",
@@ -5834,9 +5825,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-0001 C PLANNED  252-24    Y    PLN ORDR UNTS UPD MTP  8IDA DA 7 8IDA DA 7",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:44:01.734583+00:00",
+      "snapshot_date": "2026-11-23T19:53:34.226584+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "252-24",
@@ -5864,9 +5855,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-0001 C PLANNED  I52-24    Y    PLANNED ORDER FROM MTP 7GBE T1 0 7GBE T1 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:44:01.734583+00:00",
+      "snapshot_date": "2026-11-23T19:53:34.226584+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "I52-24",
@@ -5894,9 +5885,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-0001 C PLANNED  I56-24    Y    PLANNED ORDER FROM MTP 7GBE T1 0 7GBE T1 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:44:01.734583+00:00",
+      "snapshot_date": "2026-11-23T19:53:34.226584+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "I56-24",
@@ -5924,9 +5915,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-0530 C PLANNED  02H-24    Y    PLANNED ORDER FROM MTP 8IDA DA 7 8IDA DA 7",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:44:04.220460+00:00",
+      "snapshot_date": "2026-11-23T19:53:36.705022+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "02H-24",
@@ -5954,9 +5945,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-0600 C ORDERED  I41-24    Y    PLANNED ORDER FROM MTP",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:44:04.220460+00:00",
+      "snapshot_date": "2026-11-23T19:53:36.705022+00:00",
       "status": "ORDERED",
       "subdistrict": "",
       "train_asgn": "I41-24",
@@ -5984,9 +5975,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-0600 C ORDERED I41        N",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:44:04.220460+00:00",
+      "snapshot_date": "2026-11-23T19:53:36.705022+00:00",
       "status": "ORDERED",
       "subdistrict": "",
       "train_asgn": "I41",
@@ -6014,9 +6005,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-0930 C PLANNED  247-24    Y TP PLN ORDR UNTS UPD MTP  7GPO SP 4 7GPO SP 4",
       "rc": "TP",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:44:04.220460+00:00",
+      "snapshot_date": "2026-11-23T19:53:36.705022+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "247-24",
@@ -6044,9 +6035,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-1030 C PLANNED  249-24    Y TP PLANNED ORDER FROM MTP 7GPO SP 4 7GPO SP 4",
       "rc": "TP",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:44:04.220460+00:00",
+      "snapshot_date": "2026-11-23T19:53:36.705022+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "249-24",
@@ -6074,9 +6065,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-1600 C PLANNED  I45-24    Y BE PLANNED ORDER FROM MTP 7GBE BP 0 7GBE BP 0",
       "rc": "BE",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:44:04.220460+00:00",
+      "snapshot_date": "2026-11-23T19:53:36.705022+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "I45-24",
@@ -6104,9 +6095,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-2120 E PLANNED  230-24    Y    PLANNED ORDER FROM MTP 7GEL EB 1 7GEL EB 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:44:04.220460+00:00",
+      "snapshot_date": "2026-11-23T19:53:36.705022+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "230-24",
@@ -6134,9 +6125,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-0001 C PLANNED  252-25    Y    PLANNED ORDER FROM MTP 8IDA DA 7 8IDA DA 7",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:44:04.220460+00:00",
+      "snapshot_date": "2026-11-23T19:53:36.705022+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "252-25",
@@ -6164,9 +6155,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-0001 C PLANNED  I52-25    Y    PLANNED ORDER FROM MTP 7GBE T1 0 7GBE T1 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:44:04.220460+00:00",
+      "snapshot_date": "2026-11-23T19:53:36.705022+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "I52-25",
@@ -6194,9 +6185,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-0001 C PLANNED  I56-25    Y    PLANNED ORDER FROM MTP 7GBE T1 0 7GBE T1 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:44:04.220460+00:00",
+      "snapshot_date": "2026-11-23T19:53:36.705022+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "I56-25",
@@ -6224,9 +6215,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-0340 E PLANNED  528-787   Y    PLANNED ORDER FROM MTP 7GEL EB 1 7GEL EB 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:44:04.220460+00:00",
+      "snapshot_date": "2026-11-23T19:53:36.705022+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "528-787",
@@ -6254,9 +6245,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-0500 C PLANNED  641-695   Y TP PLANNED ORDER FROM MTP 7GPO SP 4 7GPO SP 4",
       "rc": "TP",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:44:04.220460+00:00",
+      "snapshot_date": "2026-11-23T19:53:36.705022+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "641-695",
@@ -6284,9 +6275,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-0600 C ORDERED  I41-25    Y    PLANNED ORDER FROM MTP",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:44:04.220460+00:00",
+      "snapshot_date": "2026-11-23T19:53:36.705022+00:00",
       "status": "ORDERED",
       "subdistrict": "",
       "train_asgn": "I41-25",
@@ -6314,9 +6305,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-0930 C PLANNED  247-25    Y TP PLANNED ORDER FROM MTP 7GPO SP 4 7GPO SP 4",
       "rc": "TP",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:44:04.220460+00:00",
+      "snapshot_date": "2026-11-23T19:53:36.705022+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "247-25",
@@ -6344,9 +6335,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-1030 C PLANNED  249-25    Y TP PLANNED ORDER FROM MTP 7GPO SP 4 7GPO SP 4",
       "rc": "TP",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:44:04.220460+00:00",
+      "snapshot_date": "2026-11-23T19:53:36.705022+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "249-25",
@@ -6374,9 +6365,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-1500 C PLANNED  641-687   Y TP PLANNED ORDER FROM MTP 7GPO SP 4 7GPO SP 4",
       "rc": "TP",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:44:06.727083+00:00",
+      "snapshot_date": "2026-11-23T19:53:39.179970+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "641-687",
@@ -6404,9 +6395,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-1600 C PLANNED  I45-25    Y BE PLANNED ORDER FROM MTP 7GBE BP 0 7GBE BP 0",
       "rc": "BE",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:44:06.727083+00:00",
+      "snapshot_date": "2026-11-23T19:53:39.179970+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "I45-25",
@@ -6415,6 +6406,36 @@
       "trn_crew_count": "0",
       "trn_crew_district": "7GBE",
       "trn_crew_pool": "BP",
+      "trn_planned_crew": []
+     },
+     {
+      "crewed": false,
+      "date_time": "11/25-1900",
+      "eng_crew": [],
+      "eng_crew_count": "4",
+      "eng_crew_district": "7GPO",
+      "eng_crew_pool": "SP",
+      "eng_planned_crew": [],
+      "hours_in_future": "",
+      "information": "ADDED FROM MTP",
+      "location_code": "04540",
+      "movement_band": "green",
+      "ordered": "Y",
+      "page": 3,
+      "query_pool": "HOURS",
+      "raw_line": " 11/25-1900 C PLANNED  647-611   Y TP ADDED FROM MTP         7GPO SP 4 7GPO SP 4",
+      "rc": "TP",
+      "run_id": "sched_20261123_135237",
+      "service_date": "2026-11-25",
+      "snapshot_date": "2026-11-23T19:53:39.179970+00:00",
+      "status": "PLANNED",
+      "subdistrict": "",
+      "train_asgn": "647-611",
+      "train_type": "C",
+      "trn_crew": [],
+      "trn_crew_count": "4",
+      "trn_crew_district": "7GPO",
+      "trn_crew_pool": "SP",
       "trn_planned_crew": []
      },
      {
@@ -6434,9 +6455,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-1900 C PLANNED  I47-25    Y 41 PLANNED ORDER FROM MTP",
       "rc": "41",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:44:06.727083+00:00",
+      "snapshot_date": "2026-11-23T19:53:39.179970+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "I47-25",
@@ -6464,9 +6485,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-2120 E PLANNED  230-25    Y    PLANNED ORDER FROM MTP 7GEL EB 1 7GEL EB 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:44:06.727083+00:00",
+      "snapshot_date": "2026-11-23T19:53:39.179970+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "230-25",
@@ -6494,9 +6515,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-0001 C PLANNED  252-26    Y    PLANNED ORDER FROM MTP 8IDA DA 7 8IDA DA 7",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:44:06.727083+00:00",
+      "snapshot_date": "2026-11-23T19:53:39.179970+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "252-26",
@@ -6524,9 +6545,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-0100 C PLANNED  255-26    Y TP PLANNED ORDER FROM MTP 7GPO SP 4 7GPO SP 4",
       "rc": "TP",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:44:06.727083+00:00",
+      "snapshot_date": "2026-11-23T19:53:39.179970+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "255-26",
@@ -6554,9 +6575,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-0930 C PLANNED  247-26    Y TP PLANNED ORDER FROM MTP 7GPO SP 4 7GPO SP 4",
       "rc": "TP",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:44:06.727083+00:00",
+      "snapshot_date": "2026-11-23T19:53:39.179970+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "247-26",
@@ -6584,9 +6605,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-1030 C PLANNED  249-26    Y TP PLANNED ORDER FROM MTP 7GPO SP 4 7GPO SP 4",
       "rc": "TP",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:44:06.727083+00:00",
+      "snapshot_date": "2026-11-23T19:53:39.179970+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "249-26",
@@ -6614,9 +6635,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-1125 E PLANNED  528-789   Y    PLANNED ORDER FROM MTP 7GEL EB 1 7GEL EB 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:44:06.727083+00:00",
+      "snapshot_date": "2026-11-23T19:53:39.179970+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "528-789",
@@ -6644,9 +6665,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-1200 C PLANNED  343-105   Y TP ADDED FROM MTP         7GPO SP 4 7GPO SP 4",
       "rc": "TP",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:44:06.727083+00:00",
+      "snapshot_date": "2026-11-23T19:53:39.179970+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "343-105",
@@ -6674,9 +6695,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-1400 C ORDERED BR1 PH     N",
       "rc": "N",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:44:06.727083+00:00",
+      "snapshot_date": "2026-11-23T19:53:39.179970+00:00",
       "status": "ORDERED",
       "subdistrict": "",
       "train_asgn": "BR1",
@@ -6704,9 +6725,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-2120 E PLANNED  230-26    Y    PLANNED ORDER FROM MTP 7GEL EB 1 7GEL EB 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:44:06.727083+00:00",
+      "snapshot_date": "2026-11-23T19:53:39.179970+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "230-26",
@@ -6734,9 +6755,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/27-0001 C PLANNED  252-27    Y    PLANNED ORDER FROM MTP 8IDA DA 7 8IDA DA 7",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-27",
-      "snapshot_date": "2026-11-23T19:44:06.727083+00:00",
+      "snapshot_date": "2026-11-23T19:53:39.179970+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "252-27",
@@ -6764,9 +6785,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/27-0009 C PLANNED  247-27    Y TP PLANNED ORDER FROM MTP 7GPO SP 4 7GPO SP 4",
       "rc": "TP",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-27",
-      "snapshot_date": "2026-11-23T19:44:06.727083+00:00",
+      "snapshot_date": "2026-11-23T19:53:39.179970+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "247-27",
@@ -6790,13 +6811,13 @@
       "location_code": "04540",
       "movement_band": "green",
       "ordered": "Y",
-      "page": 3,
+      "page": 4,
       "query_pool": "HOURS",
       "raw_line": " 11/27-1030 C PLANNED  249-27    Y TP PLANNED ORDER FROM MTP 7GPO SP 4 7GPO SP 4",
       "rc": "TP",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-27",
-      "snapshot_date": "2026-11-23T19:44:06.727083+00:00",
+      "snapshot_date": "2026-11-23T19:53:41.659401+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "249-27",
@@ -6830,9 +6851,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/18-0045 E PLANNED 2132-19    Y IM PLN ORDR UNTS UPD MTP  ZZZZ ZZ 0 ZZZZ ZZ 0",
       "rc": "IM",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-18",
-      "snapshot_date": "2026-11-23T19:44:16.505866+00:00",
+      "snapshot_date": "2026-11-23T19:53:48.871240+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "2132-19",
@@ -6860,9 +6881,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/19-0030 E PLANNED  132-19    Y IM PLANNED ORDER FROM MTP ZZZZ ZZ 0 ZZZZ ZZ 0",
       "rc": "IM",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-19",
-      "snapshot_date": "2026-11-23T19:44:16.505866+00:00",
+      "snapshot_date": "2026-11-23T19:53:48.871240+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "132-19",
@@ -6890,9 +6911,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/20-1013 E PLANNED 2132-21    Y IM PLANNED ORDER FROM MTP ZZZZ ZZ 0 ZZZZ ZZ 0",
       "rc": "IM",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-20",
-      "snapshot_date": "2026-11-23T19:44:16.505866+00:00",
+      "snapshot_date": "2026-11-23T19:53:48.871240+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "2132-21",
@@ -6920,9 +6941,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/22-0001 E PLANNED 2132-22    Y IM PLN ORDR UNTS UPD MTP  ZZZZ ZZ 0 ZZZZ ZZ 0",
       "rc": "IM",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-22",
-      "snapshot_date": "2026-11-23T19:44:16.505866+00:00",
+      "snapshot_date": "2026-11-23T19:53:48.871240+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "2132-22",
@@ -6950,9 +6971,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-0001 E PLANNED 2132-23    Y IM PLN ORDR UNTS UPD MTP  ZZZZ ZZ 0 ZZZZ ZZ 0",
       "rc": "IM",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:44:16.505866+00:00",
+      "snapshot_date": "2026-11-23T19:53:48.871240+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "2132-23",
@@ -6980,9 +7001,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-1920 C PLANNED  180-23    Y    PLN ORDR UNTS UPD MTP  8IDA DA 8 8IDA DA 8",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:44:16.505866+00:00",
+      "snapshot_date": "2026-11-23T19:53:48.871240+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "180-23",
@@ -7010,9 +7031,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-0001 E PLANNED  132-24    Y IM PLN ORDR UNTS UPD MTP  ZZZZ ZZ 0 ZZZZ ZZ 0",
       "rc": "IM",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:44:16.505866+00:00",
+      "snapshot_date": "2026-11-23T19:53:48.871240+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "132-24",
@@ -7040,9 +7061,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-0735 C PLANNED  149-24    Y TP PLANNED ORDER FROM MTP 7GPO SP 4 7GPO SP 4",
       "rc": "TP",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:44:16.505866+00:00",
+      "snapshot_date": "2026-11-23T19:53:48.871240+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "149-24",
@@ -7070,9 +7091,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-1700 C PLANNED  I32-24    Y TP PLANNED ORDER FROM MTP 7GBE T1 0 7GBE T1 0",
       "rc": "TP",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:44:16.505866+00:00",
+      "snapshot_date": "2026-11-23T19:53:48.871240+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "I32-24",
@@ -7100,9 +7121,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-1920 C PLANNED  180-24    Y    PLANNED ORDER FROM MTP 8IDA DA 8 8IDA DA 8",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:44:16.505866+00:00",
+      "snapshot_date": "2026-11-23T19:53:48.871240+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "180-24",
@@ -7130,9 +7151,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-0001 E PLANNED  132-25    Y IM PLANNED ORDER FROM MTP ZZZZ ZZ 0 ZZZZ ZZ 0",
       "rc": "IM",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:44:16.505866+00:00",
+      "snapshot_date": "2026-11-23T19:53:48.871240+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "132-25",
@@ -7160,9 +7181,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-0735 C PLANNED  149-25    Y TP PLANNED ORDER FROM MTP 7GPO SP 4 7GPO SP 4",
       "rc": "TP",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:44:16.505866+00:00",
+      "snapshot_date": "2026-11-23T19:53:48.871240+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "149-25",
@@ -7190,9 +7211,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-1700 C PLANNED  I32-25    Y TP PLANNED ORDER FROM MTP 7GBE T1 0 7GBE T1 0",
       "rc": "TP",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:44:16.505866+00:00",
+      "snapshot_date": "2026-11-23T19:53:48.871240+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "I32-25",
@@ -7220,9 +7241,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-1920 C PLANNED  180-25    Y    PLANNED ORDER FROM MTP 8IDA DA 8 8IDA DA 8",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:44:16.505866+00:00",
+      "snapshot_date": "2026-11-23T19:53:48.871240+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "180-25",
@@ -7250,9 +7271,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-0001 E PLANNED  132-26    Y IM PLANNED ORDER FROM MTP ZZZZ ZZ 0 ZZZZ ZZ 0",
       "rc": "IM",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:44:16.505866+00:00",
+      "snapshot_date": "2026-11-23T19:53:48.871240+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "132-26",
@@ -7280,9 +7301,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-0735 C PLANNED  149-26    Y TP PLANNED ORDER FROM MTP 7GPO SP 4 7GPO SP 4",
       "rc": "TP",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:44:19.000112+00:00",
+      "snapshot_date": "2026-11-23T19:53:51.359055+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "149-26",
@@ -7310,9 +7331,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-1700 C PLANNED  I32-26    Y TP PLANNED ORDER FROM MTP 7GBE T1 0 7GBE T1 0",
       "rc": "TP",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:44:19.000112+00:00",
+      "snapshot_date": "2026-11-23T19:53:51.359055+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "I32-26",
@@ -7340,9 +7361,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-1920 C PLANNED  180-26    Y    PLANNED ORDER FROM MTP 8IDA DA 8 8IDA DA 8",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:44:19.000112+00:00",
+      "snapshot_date": "2026-11-23T19:53:51.359055+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "180-26",
@@ -7370,9 +7391,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/27-0001 E PLANNED  132-27    Y IM PLANNED ORDER FROM MTP ZZZZ ZZ 0 ZZZZ ZZ 0",
       "rc": "IM",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-27",
-      "snapshot_date": "2026-11-23T19:44:19.000112+00:00",
+      "snapshot_date": "2026-11-23T19:53:51.359055+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "132-27",
@@ -7400,9 +7421,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/27-0735 C PLANNED  149-27    Y TP PLANNED ORDER FROM MTP 7GPO SP 4 7GPO SP 4",
       "rc": "TP",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-27",
-      "snapshot_date": "2026-11-23T19:44:19.000112+00:00",
+      "snapshot_date": "2026-11-23T19:53:51.359055+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "149-27",
@@ -7430,9 +7451,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/27-1700 C PLANNED  I32-27    Y TP PLANNED ORDER FROM MTP 7GBE T1 0 7GBE T1 0",
       "rc": "TP",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-27",
-      "snapshot_date": "2026-11-23T19:44:19.000112+00:00",
+      "snapshot_date": "2026-11-23T19:53:51.359055+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "I32-27",
@@ -7451,36 +7472,6 @@
     "trains": [
      {
       "crewed": false,
-      "date_time": "11/20-0127",
-      "eng_crew": [],
-      "eng_crew_count": "0",
-      "eng_crew_district": "8IDA",
-      "eng_crew_pool": "DA",
-      "eng_planned_crew": [],
-      "hours_in_future": "",
-      "information": "PLN ORDR UNTS UPD MTP",
-      "location_code": "04640",
-      "movement_band": "green",
-      "ordered": "Y",
-      "page": 1,
-      "query_pool": "HOURS",
-      "raw_line": " 11/20-0127 C PLANNED  180-19    Y    PLN ORDR UNTS UPD MTP  8IDA DA 0 8IDA DA 0",
-      "rc": "",
-      "run_id": "sched_20261123_134305",
-      "service_date": "2026-11-20",
-      "snapshot_date": "2026-11-23T19:43:47.019262+00:00",
-      "status": "PLANNED",
-      "subdistrict": "",
-      "train_asgn": "180-19",
-      "train_type": "C",
-      "trn_crew": [],
-      "trn_crew_count": "0",
-      "trn_crew_district": "8IDA",
-      "trn_crew_pool": "DA",
-      "trn_planned_crew": []
-     },
-     {
-      "crewed": false,
       "date_time": "11/23-1201",
       "eng_crew": [],
       "eng_crew_count": "8",
@@ -7496,9 +7487,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-1201 C PLANNED DBQ FAM EN Y                           8IMQ UC 8 8IMQ UC 8",
       "rc": "EN",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:43:47.019262+00:00",
+      "snapshot_date": "2026-11-23T19:53:19.521892+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "DBQ",
@@ -7517,8 +7508,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "8h 25m",
-         "minutes": 505
+         "label": "8h 16m",
+         "minutes": 496
         },
         "name": "PIATZ,(FRANK)"
        }
@@ -7536,9 +7527,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-1535 C PLANNED 2781-21    Y    PLN ORDR UNTS UPD MTP  8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:43:47.019262+00:00",
+      "snapshot_date": "2026-11-23T19:53:19.521892+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "2781-21",
@@ -7548,8 +7539,8 @@
         "craft": "CO",
         "hos": {
          "band": "green",
-         "label": "8h 25m",
-         "minutes": 505
+         "label": "8h 16m",
+         "minutes": 496
         },
         "name": "MCCHANE,(MIKE)"
        },
@@ -7557,8 +7548,8 @@
         "craft": "TT",
         "hos": {
          "band": "green",
-         "label": "8h 25m",
-         "minutes": 505
+         "label": "8h 16m",
+         "minutes": 496
         },
         "name": "SNYDER,(AARON)"
        }
@@ -7585,9 +7576,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-1700 C ORDERED RC71       N",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:43:47.019262+00:00",
+      "snapshot_date": "2026-11-23T19:53:19.521892+00:00",
       "status": "ORDERED",
       "subdistrict": "",
       "train_asgn": "RC71",
@@ -7615,9 +7606,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-1730 C PLANNED  181-20    Y    PLANNED ORDER FROM MTP 8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:43:47.019262+00:00",
+      "snapshot_date": "2026-11-23T19:53:19.521892+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "181-20",
@@ -7636,8 +7627,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "9h 40m",
-         "minutes": 580
+         "label": "9h 31m",
+         "minutes": 571
         },
         "name": "JOHNSON,(CHAD)"
        }
@@ -7655,9 +7646,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-1852 C PLANNED  261-23    Y    PLANNED ORDER FROM MTP 8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:43:47.019262+00:00",
+      "snapshot_date": "2026-11-23T19:53:19.521892+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "261-23",
@@ -7667,8 +7658,8 @@
         "craft": "CO",
         "hos": {
          "band": "green",
-         "label": "9h 40m",
-         "minutes": 580
+         "label": "9h 31m",
+         "minutes": 571
         },
         "name": "BESSER,(TIMOTHY)"
        }
@@ -7695,9 +7686,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-1900 C PLANNED DH04617T   Y DH                        8IDA DA 0 8IDA DA 0",
       "rc": "DH",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:43:47.019262+00:00",
+      "snapshot_date": "2026-11-23T19:53:19.521892+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "DH04617T",
@@ -7725,9 +7716,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-1900 C ORDERED KD71LCL    N",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:43:47.019262+00:00",
+      "snapshot_date": "2026-11-23T19:53:19.521892+00:00",
       "status": "ORDERED",
       "subdistrict": "",
       "train_asgn": "KD71LCL",
@@ -7755,9 +7746,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-2000 C ORDERED  K75-23    Y    PLANNED ORDER FROM MTP",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:43:47.019262+00:00",
+      "snapshot_date": "2026-11-23T19:53:19.521892+00:00",
       "status": "ORDERED",
       "subdistrict": "",
       "train_asgn": "K75-23",
@@ -7785,9 +7776,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-2000 C ORDERED K75        Y",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:43:47.019262+00:00",
+      "snapshot_date": "2026-11-23T19:53:19.521892+00:00",
       "status": "ORDERED",
       "subdistrict": "",
       "train_asgn": "K75",
@@ -7815,9 +7806,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-2045 C PLANNED 3781-23    Y    PLANNED ORDER FROM MTP 8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:43:47.019262+00:00",
+      "snapshot_date": "2026-11-23T19:53:19.521892+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "3781-23",
@@ -7836,8 +7827,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "11h 40m",
-         "minutes": 700
+         "label": "11h 31m",
+         "minutes": 691
         },
         "name": "URMY,(PHIL)",
         "tags": [
@@ -7858,9 +7849,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-2313 C PLANNED  576-352   Y    PLANNED ORDER FROM MTP 8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:43:47.019262+00:00",
+      "snapshot_date": "2026-11-23T19:53:19.521892+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "576-352",
@@ -7870,8 +7861,8 @@
         "craft": "CO",
         "hos": {
          "band": "green",
-         "label": "11h 40m",
-         "minutes": 700
+         "label": "11h 31m",
+         "minutes": 691
         },
         "name": "KING,(BILLY)",
         "tags": [
@@ -7882,8 +7873,8 @@
         "craft": "TT",
         "hos": {
          "band": "green",
-         "label": "11h 40m",
-         "minutes": 700
+         "label": "11h 31m",
+         "minutes": 691
         },
         "name": "NEITZEL,(BRODY)",
         "tags": [
@@ -7913,9 +7904,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-0405 C PLANNED  180-23    Y    PLN ORDR UNTS UPD MTP  8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:47.019262+00:00",
+      "snapshot_date": "2026-11-23T19:53:19.521892+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "180-23",
@@ -7943,9 +7934,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-0610 C PLANNED 2280-24    Y    PLANNED ORDER FROM MTP 8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:47.019262+00:00",
+      "snapshot_date": "2026-11-23T19:53:19.521892+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "2280-24",
@@ -7973,9 +7964,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-0800 C ORDERED  K73-24    Y    PLANNED ORDER FROM MTP",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:47.019262+00:00",
+      "snapshot_date": "2026-11-23T19:53:19.521892+00:00",
       "status": "ORDERED",
       "subdistrict": "",
       "train_asgn": "K73-24",
@@ -7999,13 +7990,13 @@
       "location_code": "04640",
       "movement_band": "green",
       "ordered": "Y",
-      "page": 2,
+      "page": 1,
       "query_pool": "HOURS",
       "raw_line": " 11/24-0810 C PLANNED  576-353   Y    PLN ORDR UNTS UPD MTP  8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:49.485299+00:00",
+      "snapshot_date": "2026-11-23T19:53:19.521892+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "576-353",
@@ -8033,9 +8024,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-0955 C PLANNED  252-24    Y    PLN ORDR UNTS UPD MTP  8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:49.485299+00:00",
+      "snapshot_date": "2026-11-23T19:53:21.984632+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "252-24",
@@ -8063,9 +8054,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-1300 C ORDERED  K71-24    Y    PLANNED ORDER FROM MTP",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:49.485299+00:00",
+      "snapshot_date": "2026-11-23T19:53:21.984632+00:00",
       "status": "ORDERED",
       "subdistrict": "",
       "train_asgn": "K71-24",
@@ -8093,9 +8084,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-1725 C PLANNED  261-24    Y    PLANNED ORDER FROM MTP 8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:49.485299+00:00",
+      "snapshot_date": "2026-11-23T19:53:21.984632+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "261-24",
@@ -8123,9 +8114,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-1740 C PLANNED  02H-24    Y    PLANNED ORDER FROM MTP 8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:49.485299+00:00",
+      "snapshot_date": "2026-11-23T19:53:21.984632+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "02H-24",
@@ -8153,9 +8144,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-1900 C ORDERED KD71  PH   N",
       "rc": "N",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:49.485299+00:00",
+      "snapshot_date": "2026-11-23T19:53:21.984632+00:00",
       "status": "ORDERED",
       "subdistrict": "",
       "train_asgn": "KD71",
@@ -8183,9 +8174,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-2000 C ORDERED  K75-24    Y    PLANNED ORDER FROM MTP",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:49.485299+00:00",
+      "snapshot_date": "2026-11-23T19:53:21.984632+00:00",
       "status": "ORDERED",
       "subdistrict": "",
       "train_asgn": "K75-24",
@@ -8213,9 +8204,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-2005 C PLANNED  181-21    Y    PLANNED ORDER FROM MTP 8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:49.485299+00:00",
+      "snapshot_date": "2026-11-23T19:53:21.984632+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "181-21",
@@ -8243,9 +8234,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-2306 C PLANNED  781-23    Y    PLANNED ORDER FROM MTP 8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:49.485299+00:00",
+      "snapshot_date": "2026-11-23T19:53:21.984632+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "781-23",
@@ -8273,9 +8264,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-0405 C PLANNED  180-24    Y    PLANNED ORDER FROM MTP 8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:43:49.485299+00:00",
+      "snapshot_date": "2026-11-23T19:53:21.984632+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "180-24",
@@ -8303,9 +8294,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-0410 C PLANNED  280-24    Y    PLANNED ORDER FROM MTP 8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:43:49.485299+00:00",
+      "snapshot_date": "2026-11-23T19:53:21.984632+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "280-24",
@@ -8333,9 +8324,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-0735 C PLANNED  357-263   Y    PLANNED ORDER FROM MTP 8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:43:49.485299+00:00",
+      "snapshot_date": "2026-11-23T19:53:21.984632+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "357-263",
@@ -8363,9 +8354,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-0815 C PLANNED  253-23    Y    PLANNED ORDER FROM MTP 8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:43:49.485299+00:00",
+      "snapshot_date": "2026-11-23T19:53:21.984632+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "253-23",
@@ -8393,9 +8384,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-0955 C PLANNED  252-25    Y    PLANNED ORDER FROM MTP 8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:43:49.485299+00:00",
+      "snapshot_date": "2026-11-23T19:53:21.984632+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "252-25",
@@ -8423,9 +8414,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-1111 C PLANNED  577-349   Y    PLANNED ORDER FROM MTP 8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:43:49.485299+00:00",
+      "snapshot_date": "2026-11-23T19:53:21.984632+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "577-349",
@@ -8449,13 +8440,13 @@
       "location_code": "04640",
       "movement_band": "green",
       "ordered": "Y",
-      "page": 3,
+      "page": 2,
       "query_pool": "HOURS",
       "raw_line": " 11/25-1300 C ORDERED  K71-25    Y    PLANNED ORDER FROM MTP",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:43:51.984788+00:00",
+      "snapshot_date": "2026-11-23T19:53:21.984632+00:00",
       "status": "ORDERED",
       "subdistrict": "",
       "train_asgn": "K71-25",
@@ -8483,9 +8474,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-1510 C PLANNED  181-22    Y    PLANNED ORDER FROM MTP 8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:43:51.984788+00:00",
+      "snapshot_date": "2026-11-23T19:53:24.499961+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "181-22",
@@ -8513,9 +8504,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-1725 C PLANNED  261-25    Y    PLANNED ORDER FROM MTP 8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:43:51.984788+00:00",
+      "snapshot_date": "2026-11-23T19:53:24.499961+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "261-25",
@@ -8543,9 +8534,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-2000 C ORDERED  K75-25    Y    PLANNED ORDER FROM MTP",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:43:51.984788+00:00",
+      "snapshot_date": "2026-11-23T19:53:24.499961+00:00",
       "status": "ORDERED",
       "subdistrict": "",
       "train_asgn": "K75-25",
@@ -8573,9 +8564,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-0001 C PLANNED  375-760   Y    PLANNED ORDER FROM MTP 8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:43:51.984788+00:00",
+      "snapshot_date": "2026-11-23T19:53:24.499961+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "375-760",
@@ -8603,9 +8594,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-0205 C PLANNED  356-047   Y    PLANNED ORDER FROM MTP 8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:43:51.984788+00:00",
+      "snapshot_date": "2026-11-23T19:53:24.499961+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "356-047",
@@ -8633,9 +8624,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-0336 C PLANNED 2781-23    Y    PLANNED ORDER FROM MTP 8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:43:51.984788+00:00",
+      "snapshot_date": "2026-11-23T19:53:24.499961+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "2781-23",
@@ -8663,9 +8654,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-0405 C PLANNED  180-25    Y    PLANNED ORDER FROM MTP 8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:43:51.984788+00:00",
+      "snapshot_date": "2026-11-23T19:53:24.499961+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "180-25",
@@ -8693,9 +8684,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-0410 C PLANNED  280-25    Y    PLANNED ORDER FROM MTP 8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:43:51.984788+00:00",
+      "snapshot_date": "2026-11-23T19:53:24.499961+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "280-25",
@@ -8723,9 +8714,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-0815 C PLANNED  253-24    Y    PLANNED ORDER FROM MTP 8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:43:51.984788+00:00",
+      "snapshot_date": "2026-11-23T19:53:24.499961+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "253-24",
@@ -8753,9 +8744,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-0925 C PLANNED  577-350   Y    PLANNED ORDER FROM MTP 8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:43:51.984788+00:00",
+      "snapshot_date": "2026-11-23T19:53:24.499961+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "577-350",
@@ -8783,9 +8774,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-0955 C PLANNED  252-26    Y    PLANNED ORDER FROM MTP 8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:43:51.984788+00:00",
+      "snapshot_date": "2026-11-23T19:53:24.499961+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "252-26",
@@ -8813,9 +8804,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-1245 C PLANNED  654-628   Y    PLANNED ORDER FROM MTP 8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:43:51.984788+00:00",
+      "snapshot_date": "2026-11-23T19:53:24.499961+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "654-628",
@@ -8843,9 +8834,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-1300 C ORDERED  K71-26    Y    PLANNED ORDER FROM MTP",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:43:51.984788+00:00",
+      "snapshot_date": "2026-11-23T19:53:24.499961+00:00",
       "status": "ORDERED",
       "subdistrict": "",
       "train_asgn": "K71-26",
@@ -8873,9 +8864,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-1430 C PLANNED  576-354   Y    PLN ORDR UNTS UPD MTP  8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:43:51.984788+00:00",
+      "snapshot_date": "2026-11-23T19:53:24.499961+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "576-354",
@@ -8899,13 +8890,13 @@
       "location_code": "04640",
       "movement_band": "green",
       "ordered": "Y",
-      "page": 4,
+      "page": 3,
       "query_pool": "HOURS",
       "raw_line": " 11/26-1725 C PLANNED  261-26    Y    PLANNED ORDER FROM MTP 8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:43:54.463848+00:00",
+      "snapshot_date": "2026-11-23T19:53:24.499961+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "261-26",
@@ -8933,9 +8924,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/27-0405 C PLANNED  180-26    Y    PLANNED ORDER FROM MTP 8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-27",
-      "snapshot_date": "2026-11-23T19:43:54.463848+00:00",
+      "snapshot_date": "2026-11-23T19:53:26.972710+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "180-26",
@@ -8963,9 +8954,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/27-0410 C PLANNED  280-26    Y    PLANNED ORDER FROM MTP 8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-27",
-      "snapshot_date": "2026-11-23T19:43:54.463848+00:00",
+      "snapshot_date": "2026-11-23T19:53:26.972710+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "280-26",
@@ -8993,9 +8984,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/27-0815 C PLANNED  253-25    Y    PLANNED ORDER FROM MTP 8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-27",
-      "snapshot_date": "2026-11-23T19:43:54.463848+00:00",
+      "snapshot_date": "2026-11-23T19:53:26.972710+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "253-25",
@@ -9023,9 +9014,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/27-0955 C PLANNED  252-27    Y    PLANNED ORDER FROM MTP 8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-27",
-      "snapshot_date": "2026-11-23T19:43:54.463848+00:00",
+      "snapshot_date": "2026-11-23T19:53:26.972710+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "252-27",
@@ -9053,9 +9044,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/27-1300 C ORDERED  K71-27    Y    PLANNED ORDER FROM MTP",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-27",
-      "snapshot_date": "2026-11-23T19:43:54.463848+00:00",
+      "snapshot_date": "2026-11-23T19:53:26.972710+00:00",
       "status": "ORDERED",
       "subdistrict": "",
       "train_asgn": "K71-27",
@@ -9083,9 +9074,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/27-1600 C PLANNED  651-391   Y    PLANNED ORDER FROM MTP 8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-27",
-      "snapshot_date": "2026-11-23T19:43:54.463848+00:00",
+      "snapshot_date": "2026-11-23T19:53:26.972710+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "651-391",
@@ -9113,9 +9104,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/27-1635 C PLANNED  181-24    Y    PLN ORDR UNTS UPD MTP  8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-27",
-      "snapshot_date": "2026-11-23T19:43:54.463848+00:00",
+      "snapshot_date": "2026-11-23T19:53:26.972710+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "181-24",
@@ -9143,9 +9134,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/27-1725 C PLANNED  261-27    Y    PLANNED ORDER FROM MTP 8IDA DA 0 8IDA DA 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-27",
-      "snapshot_date": "2026-11-23T19:43:54.463848+00:00",
+      "snapshot_date": "2026-11-23T19:53:26.972710+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "261-27",
@@ -9179,9 +9170,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-1530 C ORDERED  859-131   Y    ACTUAL ORDER FROM MTP  8IDA DA 1 8IDA DA 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:43:19.922898+00:00",
+      "snapshot_date": "2026-11-23T19:52:52.601709+00:00",
       "status": "ORDERED",
       "subdistrict": "",
       "train_asgn": "859-131",
@@ -9269,7 +9260,7 @@
         {
          "member_id": "ROBERTS,(KIMBERLY)",
          "seat": "EN",
-         "reason": "not_rested_by_call"
+         "reason": "unavailable"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
@@ -9394,7 +9385,7 @@
         {
          "member_id": "ROBERTS,(KIMBERLY)",
          "seat": "AE_CO",
-         "reason": "seat_not_qualified"
+         "reason": "unavailable"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
@@ -9487,9 +9478,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-1600 C PLANNED 3781-23    Y    PLANNED ORDER FROM MTP 8IDA DA 1 8IDA DA 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:43:19.922898+00:00",
+      "snapshot_date": "2026-11-23T19:52:52.601709+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "3781-23",
@@ -9512,7 +9503,7 @@
         "ET": null,
         "TT": null
        },
-       "call_confirmation_required": false,
+       "call_confirmation_required": true,
        "complete": false,
        "missing_seats": [
         "EN",
@@ -9577,7 +9568,7 @@
         {
          "member_id": "ROBERTS,(KIMBERLY)",
          "seat": "EN",
-         "reason": "not_rested_by_call"
+         "reason": "unavailable"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
@@ -9702,7 +9693,7 @@
         {
          "member_id": "ROBERTS,(KIMBERLY)",
          "seat": "AE_CO",
-         "reason": "seat_not_qualified"
+         "reason": "unavailable"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
@@ -9786,8 +9777,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 25m",
-         "minutes": 385
+         "label": "6h 16m",
+         "minutes": 376
         },
         "name": "BUTLER,(JASON)"
        }
@@ -9805,9 +9796,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-1937 C PLANNED 2280-23    Y    PLANNED ORDER FROM MTP 8IOT SW 0 8IOT SW 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:43:19.922898+00:00",
+      "snapshot_date": "2026-11-23T19:52:52.601709+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "2280-23",
@@ -9817,8 +9808,8 @@
         "craft": "CO",
         "hos": {
          "band": "green",
-         "label": "6h 25m",
-         "minutes": 385
+         "label": "6h 16m",
+         "minutes": 376
         },
         "name": "MARZOFKA,(BRAYDEN)"
        },
@@ -9826,8 +9817,8 @@
         "craft": "TT",
         "hos": {
          "band": "green",
-         "label": "6h 25m",
-         "minutes": 385
+         "label": "6h 16m",
+         "minutes": 376
         },
         "name": "LOPEZ,(ALEJANDRO)"
        }
@@ -9856,7 +9847,7 @@
          "captured_at": "2026-11-23T19:45:26.893050+00:00",
          "evidence": [
           "board:sched_20261123_134305:1_11",
-          "rest_calculated:2026-11-23T13:50:47",
+          "rest_calculated:2026-11-23T13:58:59",
           "board_rest:2026-11-23T19:45:26.893050+00:00:sched_20261123_134305"
          ],
          "call_before": null,
@@ -9877,7 +9868,7 @@
          "captured_at": "2026-11-23T19:45:26.893050+00:00",
          "evidence": [
           "board:sched_20261123_134305:1_11",
-          "rest_calculated:2026-11-23T13:50:47",
+          "rest_calculated:2026-11-23T13:58:59",
           "board_rest:2026-11-23T19:45:26.893050+00:00:sched_20261123_134305"
          ],
          "call_before": null,
@@ -9946,7 +9937,7 @@
         {
          "member_id": "ROBERTS,(KIMBERLY)",
          "seat": "EN",
-         "reason": "not_rested_by_call"
+         "reason": "unavailable"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
@@ -10066,7 +10057,7 @@
         {
          "member_id": "ROBERTS,(KIMBERLY)",
          "seat": "AE_CO",
-         "reason": "seat_not_qualified"
+         "reason": "unavailable"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
@@ -10191,7 +10182,7 @@
         {
          "member_id": "ROBERTS,(KIMBERLY)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "unavailable"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
@@ -10316,7 +10307,7 @@
         {
          "member_id": "ROBERTS,(KIMBERLY)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "unavailable"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
@@ -10405,9 +10396,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-0001 C PLANNED DH04640T   Y DH                        8IDA DA 1 8IDA DA 1",
       "rc": "DH",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:19.922898+00:00",
+      "snapshot_date": "2026-11-23T19:52:52.601709+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "DH04640T",
@@ -10435,9 +10426,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-0638 C PLANNED  576-352   Y    PLANNED ORDER FROM MTP 8IOT SW 0 8IOT SW 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:19.922898+00:00",
+      "snapshot_date": "2026-11-23T19:52:52.601709+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "576-352",
@@ -10456,19 +10447,19 @@
        "call_at": "2026-11-24T10:38:00+00:00",
        "seats": {
         "EN": {
-         "member_id": "ROBERTS,(KIMBERLY)",
-         "name": "ROBERTS,(KIMBERLY)",
+         "member_id": "CASHATT,(DAKOTA)",
+         "name": "CASHATT,(DAKOTA)",
          "seat": "EN",
-         "assignment": "SW07",
+         "assignment": "SW04",
          "board": "SW POOLS IN OTT POSITION",
-         "position": 2,
+         "position": 3,
          "group": "SW",
          "optional": false,
-         "captured_at": "2026-11-23T19:45:26.893050+00:00",
+         "captured_at": "2026-11-23T19:45:29.397502+00:00",
          "evidence": [
           "board:sched_20261123_134305:1_11",
-          "rest_calculated:2026-11-23T13:50:47",
-          "board_rest:2026-11-23T19:45:26.893050+00:00:sched_20261123_134305"
+          "rest_calculated:2026-11-23T13:58:59",
+          "board_rest:2026-11-23T19:45:29.397502+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261123_134305\\parsed\\crew_lineup.jsonl"
          ],
          "call_before": null,
          "duty_before": null,
@@ -10488,7 +10479,7 @@
          "captured_at": "2026-11-23T19:45:26.893050+00:00",
          "evidence": [
           "board:sched_20261123_134305:1_11",
-          "rest_calculated:2026-11-23T13:50:47",
+          "rest_calculated:2026-11-23T13:58:59",
           "board_rest:2026-11-23T19:45:26.893050+00:00:sched_20261123_134305"
          ],
          "call_before": null,
@@ -10509,7 +10500,7 @@
          "captured_at": "2026-11-23T19:45:26.893050+00:00",
          "evidence": [
           "board:sched_20261123_134305:1_11",
-          "rest_calculated:2026-11-23T13:50:47",
+          "rest_calculated:2026-11-23T13:58:59",
           "fra_5_starts",
           "board_rest:2026-11-23T19:45:26.893050+00:00:sched_20261123_134305"
          ],
@@ -10572,6 +10563,11 @@
         },
         {
          "member_id": "CONWELL,(JOSHUA)",
+         "seat": "EN",
+         "reason": "unavailable"
+        },
+        {
+         "member_id": "ROBERTS,(KIMBERLY)",
          "seat": "EN",
          "reason": "unavailable"
         },
@@ -10701,7 +10697,7 @@
         {
          "member_id": "ROBERTS,(KIMBERLY)",
          "seat": "AE_CO",
-         "reason": "already_reserved"
+         "reason": "unavailable"
         },
         {
          "member_id": "LANDGREBE,(NICHOLAS)",
@@ -10711,7 +10707,7 @@
         {
          "member_id": "CASHATT,(DAKOTA)",
          "seat": "AE_CO",
-         "reason": "seat_not_qualified"
+         "reason": "already_reserved"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
@@ -10821,7 +10817,7 @@
         {
          "member_id": "ROBERTS,(KIMBERLY)",
          "seat": "ET",
-         "reason": "already_reserved"
+         "reason": "unavailable"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
@@ -10831,7 +10827,7 @@
         {
          "member_id": "CASHATT,(DAKOTA)",
          "seat": "ET",
-         "reason": "seat_not_qualified"
+         "reason": "already_reserved"
         },
         {
          "member_id": "MARKO,(CAIN)",
@@ -10936,7 +10932,7 @@
         {
          "member_id": "ROBERTS,(KIMBERLY)",
          "seat": "TT",
-         "reason": "already_reserved"
+         "reason": "unavailable"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
@@ -10951,7 +10947,7 @@
         {
          "member_id": "CASHATT,(DAKOTA)",
          "seat": "TT",
-         "reason": "seat_not_qualified"
+         "reason": "already_reserved"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
@@ -11025,9 +11021,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-0840 C PLANNED  180-23    Y    PLN ORDR UNTS UPD MTP  8IOT SW 0 8IOT SW 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:19.922898+00:00",
+      "snapshot_date": "2026-11-23T19:52:52.601709+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "180-23",
@@ -11045,27 +11041,7 @@
        "on_duty": "2026-11-24T08:40:00-06:00",
        "call_at": "2026-11-24T12:40:00+00:00",
        "seats": {
-        "EN": {
-         "member_id": "CASHATT,(DAKOTA)",
-         "name": "CASHATT,(DAKOTA)",
-         "seat": "EN",
-         "assignment": "SW04",
-         "board": "SW POOLS IN OTT POSITION",
-         "position": 3,
-         "group": "SW",
-         "optional": false,
-         "captured_at": "2026-11-23T19:45:29.397502+00:00",
-         "evidence": [
-          "board:sched_20261123_134305:1_11",
-          "rest_calculated:2026-11-23T13:50:47",
-          "board_rest:2026-11-23T19:45:29.397502+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261123_134305\\parsed\\crew_lineup.jsonl"
-         ],
-         "call_before": null,
-         "duty_before": null,
-         "schedule_window_verified": true,
-         "source": "projected",
-         "reason": "eligible_calling_order"
-        },
+        "EN": null,
         "AE_CO": null,
         "ET": null,
         "TT": null
@@ -11073,6 +11049,7 @@
        "call_confirmation_required": false,
        "complete": false,
        "missing_seats": [
+        "EN",
         "AE_CO"
        ],
        "decisions": [
@@ -11129,7 +11106,7 @@
         {
          "member_id": "ROBERTS,(KIMBERLY)",
          "seat": "EN",
-         "reason": "already_reserved"
+         "reason": "unavailable"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
@@ -11138,6 +11115,11 @@
         },
         {
          "member_id": "LANDGREBE,(NICHOLAS)",
+         "seat": "EN",
+         "reason": "already_reserved"
+        },
+        {
+         "member_id": "CASHATT,(DAKOTA)",
          "seat": "EN",
          "reason": "already_reserved"
         },
@@ -11257,7 +11239,7 @@
         {
          "member_id": "ROBERTS,(KIMBERLY)",
          "seat": "AE_CO",
-         "reason": "already_reserved"
+         "reason": "unavailable"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
@@ -11346,9 +11328,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-0910 C PLANNED  261-24    Y    PLANNED ORDER FROM MTP 8IDA DA 1 8IDA DA 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:19.922898+00:00",
+      "snapshot_date": "2026-11-23T19:52:52.601709+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "261-24",
@@ -11378,7 +11360,7 @@
          "captured_at": "2026-11-23T19:45:16.510242+00:00",
          "evidence": [
           "board:sched_20261123_134305:1_09",
-          "rest_calculated:2026-11-23T13:50:47",
+          "rest_calculated:2026-11-23T13:58:59",
           "board_rest:2026-11-23T19:45:16.510242+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261123_134305\\parsed\\crew_lineup.jsonl"
          ],
          "call_before": null,
@@ -11399,7 +11381,7 @@
          "captured_at": "2026-11-23T19:45:16.510242+00:00",
          "evidence": [
           "board:sched_20261123_134305:1_09",
-          "rest_calculated:2026-11-23T13:50:47",
+          "rest_calculated:2026-11-23T13:58:59",
           "board_rest:2026-11-23T19:45:16.510242+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261123_134305\\parsed\\crew_lineup.jsonl"
          ],
          "call_before": null,
@@ -11458,7 +11440,7 @@
         {
          "member_id": "ROBERTS,(KIMBERLY)",
          "seat": "EN",
-         "reason": "already_reserved"
+         "reason": "unavailable"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
@@ -11581,7 +11563,7 @@
         {
          "member_id": "ROBERTS,(KIMBERLY)",
          "seat": "AE_CO",
-         "reason": "already_reserved"
+         "reason": "unavailable"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
@@ -11717,7 +11699,7 @@
         {
          "member_id": "ROBERTS,(KIMBERLY)",
          "seat": "ET",
-         "reason": "already_reserved"
+         "reason": "unavailable"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
@@ -11842,7 +11824,7 @@
         {
          "member_id": "ROBERTS,(KIMBERLY)",
          "seat": "TT",
-         "reason": "already_reserved"
+         "reason": "unavailable"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
@@ -11931,9 +11913,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-1350 C PLANNED 2280-24    Y    PLANNED ORDER FROM MTP 8IOT SW 0 8IOT SW 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:19.922898+00:00",
+      "snapshot_date": "2026-11-23T19:52:52.601709+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "2280-24",
@@ -12016,7 +11998,7 @@
         {
          "member_id": "ROBERTS,(KIMBERLY)",
          "seat": "EN",
-         "reason": "already_reserved"
+         "reason": "unavailable"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
@@ -12149,7 +12131,7 @@
         {
          "member_id": "ROBERTS,(KIMBERLY)",
          "seat": "AE_CO",
-         "reason": "already_reserved"
+         "reason": "unavailable"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
@@ -12238,9 +12220,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-1535 C PLANNED  576-353   Y    PLN ORDR UNTS UPD MTP  8IOT SW 0 8IOT SW 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:19.922898+00:00",
+      "snapshot_date": "2026-11-23T19:52:52.601709+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "576-353",
@@ -12268,9 +12250,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-1605 C PLANNED  181-21    Y OB PLANNED ORDER FROM MTP 8IOT OB 0 8IOT OB 0",
       "rc": "OB",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:19.922898+00:00",
+      "snapshot_date": "2026-11-23T19:52:52.601709+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "181-21",
@@ -12298,9 +12280,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-1821 C PLANNED  781-23    Y    PLANNED ORDER FROM MTP 8IDA DA 1 8IDA DA 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:19.922898+00:00",
+      "snapshot_date": "2026-11-23T19:52:52.601709+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "781-23",
@@ -12328,9 +12310,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-1835 C PLANNED  252-24    Y    PLN ORDR UNTS UPD MTP  8IOT SW 0 8IOT SW 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:19.922898+00:00",
+      "snapshot_date": "2026-11-23T19:52:52.601709+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "252-24",
@@ -12358,9 +12340,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-0115 C PLANNED  253-23    Y    PLANNED ORDER FROM MTP 8IDA DA 1 8IDA DA 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:43:19.922898+00:00",
+      "snapshot_date": "2026-11-23T19:52:52.601709+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "253-23",
@@ -12388,9 +12370,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-0220 C PLANNED  357-263   Y    PLANNED ORDER FROM MTP 8IDA DA 1 8IDA DA 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:43:19.922898+00:00",
+      "snapshot_date": "2026-11-23T19:52:52.601709+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "357-263",
@@ -12418,9 +12400,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-0426 C PLANNED  577-349   Y    PLANNED ORDER FROM MTP 8IDA DA 1 8IDA DA 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:43:19.922898+00:00",
+      "snapshot_date": "2026-11-23T19:52:52.601709+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "577-349",
@@ -12448,9 +12430,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-0840 C PLANNED  180-24    Y    PLANNED ORDER FROM MTP 8IOT SW 0 8IOT SW 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:43:22.476595+00:00",
+      "snapshot_date": "2026-11-23T19:52:55.096436+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "180-24",
@@ -12478,9 +12460,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-0845 C PLANNED  02H-24    Y    PLANNED ORDER FROM MTP 8IOT SW 0 8IOT SW 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:43:22.476595+00:00",
+      "snapshot_date": "2026-11-23T19:52:55.096436+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "02H-24",
@@ -12508,9 +12490,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-0910 C PLANNED  261-25    Y    PLANNED ORDER FROM MTP 8IDA DA 1 8IDA DA 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:43:22.476595+00:00",
+      "snapshot_date": "2026-11-23T19:52:55.096436+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "261-25",
@@ -12538,9 +12520,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-1040 C PLANNED  181-22    Y OB PLANNED ORDER FROM MTP 8IOT OB 0 8IOT OB 0",
       "rc": "OB",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:43:22.476595+00:00",
+      "snapshot_date": "2026-11-23T19:52:55.096436+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "181-22",
@@ -12568,9 +12550,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-1150 C PLANNED  280-24    Y    PLANNED ORDER FROM MTP 8IOT SW 0 8IOT SW 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:43:22.476595+00:00",
+      "snapshot_date": "2026-11-23T19:52:55.096436+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "280-24",
@@ -12598,9 +12580,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-1835 C PLANNED  252-25    Y    PLANNED ORDER FROM MTP 8IOT SW 0 8IOT SW 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:43:22.476595+00:00",
+      "snapshot_date": "2026-11-23T19:52:55.096436+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "252-25",
@@ -12628,9 +12610,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-1900 C PLANNED  375-760   Y    PLANNED ORDER FROM MTP 8IDA DA 1 8IDA DA 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:43:22.476595+00:00",
+      "snapshot_date": "2026-11-23T19:52:55.096436+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "375-760",
@@ -12658,9 +12640,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-2251 C PLANNED 2781-23    Y    PLANNED ORDER FROM MTP 8IDA DA 1 8IDA DA 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:43:22.476595+00:00",
+      "snapshot_date": "2026-11-23T19:52:55.096436+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "2781-23",
@@ -12688,9 +12670,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-0115 C PLANNED  253-24    Y    PLANNED ORDER FROM MTP 8IDA DA 1 8IDA DA 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:43:22.476595+00:00",
+      "snapshot_date": "2026-11-23T19:52:55.096436+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "253-24",
@@ -12718,9 +12700,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-0240 C PLANNED  577-350   Y    PLANNED ORDER FROM MTP 8IDA DA 1 8IDA DA 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:43:22.476595+00:00",
+      "snapshot_date": "2026-11-23T19:52:55.096436+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "577-350",
@@ -12748,9 +12730,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-0840 C PLANNED  180-25    Y    PLANNED ORDER FROM MTP 8IOT SW 0 8IOT SW 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:43:22.476595+00:00",
+      "snapshot_date": "2026-11-23T19:52:55.096436+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "180-25",
@@ -12778,9 +12760,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-0910 C PLANNED  261-26    Y    PLANNED ORDER FROM MTP 8IDA DA 1 8IDA DA 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:43:22.476595+00:00",
+      "snapshot_date": "2026-11-23T19:52:55.096436+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "261-26",
@@ -12808,9 +12790,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-0945 C PLANNED  356-047   Y    PLANNED ORDER FROM MTP 8IOT SW 0 8IOT SW 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:43:22.476595+00:00",
+      "snapshot_date": "2026-11-23T19:52:55.096436+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "356-047",
@@ -12838,9 +12820,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-1150 C PLANNED  280-25    Y    PLANNED ORDER FROM MTP 8IOT SW 0 8IOT SW 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:43:22.476595+00:00",
+      "snapshot_date": "2026-11-23T19:52:55.096436+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "280-25",
@@ -12868,9 +12850,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-1835 C PLANNED  252-26    Y    PLANNED ORDER FROM MTP 8IOT SW 0 8IOT SW 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:43:22.476595+00:00",
+      "snapshot_date": "2026-11-23T19:52:55.096436+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "252-26",
@@ -12898,9 +12880,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-2155 C PLANNED  576-354   Y    PLN ORDR UNTS UPD MTP  8IOT SW 0 8IOT SW 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:43:24.961771+00:00",
+      "snapshot_date": "2026-11-23T19:52:57.562271+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "576-354",
@@ -12928,9 +12910,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/27-0115 C PLANNED  253-25    Y    PLANNED ORDER FROM MTP 8IDA DA 1 8IDA DA 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-27",
-      "snapshot_date": "2026-11-23T19:43:24.961771+00:00",
+      "snapshot_date": "2026-11-23T19:52:57.562271+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "253-25",
@@ -12958,9 +12940,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/27-0840 C PLANNED  180-26    Y    PLANNED ORDER FROM MTP 8IOT SW 0 8IOT SW 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-27",
-      "snapshot_date": "2026-11-23T19:43:24.961771+00:00",
+      "snapshot_date": "2026-11-23T19:52:57.562271+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "180-26",
@@ -12988,9 +12970,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/27-0910 C PLANNED  261-27    Y    PLANNED ORDER FROM MTP 8IDA DA 1 8IDA DA 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-27",
-      "snapshot_date": "2026-11-23T19:43:24.961771+00:00",
+      "snapshot_date": "2026-11-23T19:52:57.562271+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "261-27",
@@ -13018,9 +13000,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/27-1150 C PLANNED  280-26    Y    PLANNED ORDER FROM MTP 8IOT SW 0 8IOT SW 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-27",
-      "snapshot_date": "2026-11-23T19:43:24.961771+00:00",
+      "snapshot_date": "2026-11-23T19:52:57.562271+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "280-26",
@@ -13048,9 +13030,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/27-1200 C PLANNED  K82-27    Y    PLANNED ORDER FROM MTP 8IOT EW 0 8IOT EW 0",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-27",
-      "snapshot_date": "2026-11-23T19:43:24.961771+00:00",
+      "snapshot_date": "2026-11-23T19:52:57.562271+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "K82-27",
@@ -13078,9 +13060,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/27-1235 C PLANNED  181-24    Y OB PLN ORDR UNTS UPD MTP  8IOT OB 0 8IOT OB 0",
       "rc": "OB",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-27",
-      "snapshot_date": "2026-11-23T19:43:24.961771+00:00",
+      "snapshot_date": "2026-11-23T19:52:57.562271+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "181-24",
@@ -13105,8 +13087,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "5h 00m",
-         "minutes": 300
+         "label": "4h 51m",
+         "minutes": 291
         },
         "name": "FELLER,(DANIEL)"
        },
@@ -13114,8 +13096,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "5h 00m",
-         "minutes": 300
+         "label": "4h 51m",
+         "minutes": 291
         },
         "name": "STONEHOUSE,(ZACH)"
        }
@@ -13133,9 +13115,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-1430 C PLANNED  180-22    Y    PLANNED ORDER FROM MTP KSPB PS 1 KSPB PS 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:43:32.214093+00:00",
+      "snapshot_date": "2026-11-23T19:53:04.776695+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "180-22",
@@ -13163,9 +13145,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-1445 C PLANNED  868-162   Y    PLANNED ORDER FROM MTP KSPB PS 1 KSPB PS 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:43:32.214093+00:00",
+      "snapshot_date": "2026-11-23T19:53:04.776695+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "868-162",
@@ -13193,9 +13175,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-1500 C ORDERED 2K09-23    Y    PLN ORDR UNTS UPD MTP",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:43:32.214093+00:00",
+      "snapshot_date": "2026-11-23T19:53:04.776695+00:00",
       "status": "ORDERED",
       "subdistrict": "",
       "train_asgn": "2K09-23",
@@ -13223,9 +13205,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-1600 C PLANNED  262-24    Y    PLANNED ORDER FROM MTP KSPB PS 1 KSPB PS 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:43:32.214093+00:00",
+      "snapshot_date": "2026-11-23T19:53:04.776695+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "262-24",
@@ -13253,9 +13235,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-1600 C ORDERED K08        Y",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:43:32.214093+00:00",
+      "snapshot_date": "2026-11-23T19:53:04.776695+00:00",
       "status": "ORDERED",
       "subdistrict": "",
       "train_asgn": "K08",
@@ -13283,9 +13265,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-1600 C ORDERED K08 CP     Y",
       "rc": "Y",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:43:32.214093+00:00",
+      "snapshot_date": "2026-11-23T19:53:04.776695+00:00",
       "status": "ORDERED",
       "subdistrict": "",
       "train_asgn": "K08",
@@ -13313,9 +13295,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-1600 C ORDERED KK02       Z",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:43:32.214093+00:00",
+      "snapshot_date": "2026-11-23T19:53:04.776695+00:00",
       "status": "ORDERED",
       "subdistrict": "",
       "train_asgn": "KK02",
@@ -13343,9 +13325,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-1600 C ORDERED KK02 KCS   Z",
       "rc": "Z",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:43:32.214093+00:00",
+      "snapshot_date": "2026-11-23T19:53:04.776695+00:00",
       "status": "ORDERED",
       "subdistrict": "",
       "train_asgn": "KK02",
@@ -13373,9 +13355,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-1630 C ORDERED YDM RLF    Z",
       "rc": "Z",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:43:32.214093+00:00",
+      "snapshot_date": "2026-11-23T19:53:04.776695+00:00",
       "status": "ORDERED",
       "subdistrict": "",
       "train_asgn": "YDM",
@@ -13403,9 +13385,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-1700 C ORDERED KK21(RC)   Z",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:43:32.214093+00:00",
+      "snapshot_date": "2026-11-23T19:53:04.776695+00:00",
       "status": "ORDERED",
       "subdistrict": "",
       "train_asgn": "KK21(RC)",
@@ -13433,9 +13415,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-1700 C ORDERED KK30 KCS   Z",
       "rc": "Z",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:43:32.214093+00:00",
+      "snapshot_date": "2026-11-23T19:53:04.776695+00:00",
       "status": "ORDERED",
       "subdistrict": "",
       "train_asgn": "KK30",
@@ -13463,9 +13445,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-1800 C PLANNED  261-24    Y    PLANNED ORDER FROM MTP 8IOT SW 3 8IOT SW 3",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:43:32.214093+00:00",
+      "snapshot_date": "2026-11-23T19:53:04.776695+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "261-24",
@@ -13495,7 +13477,7 @@
          "captured_at": "2026-11-23T19:45:34.550790+00:00",
          "evidence": [
           "board:sched_20261123_134305:1_12",
-          "rest_calculated:2026-11-23T13:50:47",
+          "rest_calculated:2026-11-23T13:58:59",
           "board_rest:2026-11-23T19:45:34.550790+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261123_134305\\parsed\\crew_lineup.jsonl"
          ],
          "call_before": null,
@@ -13516,7 +13498,7 @@
          "captured_at": "2026-11-23T19:45:34.550790+00:00",
          "evidence": [
           "board:sched_20261123_134305:1_12",
-          "rest_calculated:2026-11-23T13:50:47",
+          "rest_calculated:2026-11-23T13:58:59",
           "board_rest:2026-11-23T19:45:34.550790+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261123_134305\\parsed\\crew_lineup.jsonl"
          ],
          "call_before": null,
@@ -14044,9 +14026,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-1800 C ORDERED KK23       Z",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:43:32.214093+00:00",
+      "snapshot_date": "2026-11-23T19:53:04.776695+00:00",
       "status": "ORDERED",
       "subdistrict": "",
       "train_asgn": "KK23",
@@ -14074,9 +14056,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-2130 C PLANNED DH04664T   Y DH                        8IOT SW 3 8IOT SW 3",
       "rc": "DH",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:43:32.214093+00:00",
+      "snapshot_date": "2026-11-23T19:53:04.776695+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "DH04664T",
@@ -14104,9 +14086,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-2200 C PLANNED YDM3       Z",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:43:32.214093+00:00",
+      "snapshot_date": "2026-11-23T19:53:04.776695+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "YDM3",
@@ -14134,9 +14116,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/23-2359 C ORDERED KK20       N",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-23",
-      "snapshot_date": "2026-11-23T19:43:34.732332+00:00",
+      "snapshot_date": "2026-11-23T19:53:07.274365+00:00",
       "status": "ORDERED",
       "subdistrict": "",
       "train_asgn": "KK20",
@@ -14164,9 +14146,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-0130 C PLANNED  866-388   Y    PLANNED ORDER FROM MTP KSPB PS 1 KSPB PS 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:34.732332+00:00",
+      "snapshot_date": "2026-11-23T19:53:07.274365+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "866-388",
@@ -14194,9 +14176,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-0347 C PLANNED 2280-23    Y    PLANNED ORDER FROM MTP KSPB PS 1 KSPB PS 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:34.732332+00:00",
+      "snapshot_date": "2026-11-23T19:53:07.274365+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "2280-23",
@@ -14224,9 +14206,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-0400 C PLANNED  390-396   Y    PLANNED ORDER FROM MTP KSPB PS 1 KSPB PS 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:34.732332+00:00",
+      "snapshot_date": "2026-11-23T19:53:07.274365+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "390-396",
@@ -14254,9 +14236,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-0430 C PLANNED  360-051   Y    PLANNED ORDER FROM MTP KSPB PS 1 KSPB PS 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:34.732332+00:00",
+      "snapshot_date": "2026-11-23T19:53:07.274365+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "360-051",
@@ -14284,9 +14266,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-0730 C PLANNED  864-074   Y    PLANNED ORDER FROM MTP KSPB PS 1 KSPB PS 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:34.732332+00:00",
+      "snapshot_date": "2026-11-23T19:53:07.274365+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "864-074",
@@ -14314,9 +14296,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-0800 C PLANNED  GPS-24    Y    ADDED FROM MTP         KSPB PS 1 KSPB PS 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:34.732332+00:00",
+      "snapshot_date": "2026-11-23T19:53:07.274365+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "GPS-24",
@@ -14344,9 +14326,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-0838 C PLANNED  181-21    Y    PLANNED ORDER FROM MTP 8IOT SW 3 8IOT SW 3",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:34.732332+00:00",
+      "snapshot_date": "2026-11-23T19:53:07.274365+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "181-21",
@@ -14376,7 +14358,7 @@
          "captured_at": "2026-11-23T19:45:34.550790+00:00",
          "evidence": [
           "board:sched_20261123_134305:1_12",
-          "rest_calculated:2026-11-23T13:50:47",
+          "rest_calculated:2026-11-23T13:58:59",
           "board_rest:2026-11-23T19:45:34.550790+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261123_134305\\parsed\\crew_lineup.jsonl",
           "lineup_short_1_trains_for_rank_2"
          ],
@@ -14398,7 +14380,7 @@
          "captured_at": "2026-11-23T19:45:34.550790+00:00",
          "evidence": [
           "board:sched_20261123_134305:1_12",
-          "rest_calculated:2026-11-23T13:50:47",
+          "rest_calculated:2026-11-23T13:58:59",
           "board_rest:2026-11-23T19:45:34.550790+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261123_134305\\parsed\\crew_lineup.jsonl",
           "lineup_short_1_trains_for_rank_2"
          ],
@@ -14473,7 +14455,7 @@
         {
          "member_id": "ROBERTS,(KIMBERLY)",
          "seat": "EN",
-         "reason": "already_reserved"
+         "reason": "different_station"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
@@ -14488,7 +14470,7 @@
         {
          "member_id": "CASHATT,(DAKOTA)",
          "seat": "EN",
-         "reason": "different_station"
+         "reason": "already_reserved"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
@@ -14593,7 +14575,7 @@
         {
          "member_id": "ROBERTS,(KIMBERLY)",
          "seat": "AE_CO",
-         "reason": "already_reserved"
+         "reason": "different_station"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
@@ -14608,7 +14590,7 @@
         {
          "member_id": "CASHATT,(DAKOTA)",
          "seat": "AE_CO",
-         "reason": "different_station"
+         "reason": "already_reserved"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
@@ -14713,7 +14695,7 @@
         {
          "member_id": "ROBERTS,(KIMBERLY)",
          "seat": "ET",
-         "reason": "already_reserved"
+         "reason": "different_station"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
@@ -14728,7 +14710,7 @@
         {
          "member_id": "CASHATT,(DAKOTA)",
          "seat": "ET",
-         "reason": "different_station"
+         "reason": "already_reserved"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
@@ -14838,7 +14820,7 @@
         {
          "member_id": "ROBERTS,(KIMBERLY)",
          "seat": "TT",
-         "reason": "already_reserved"
+         "reason": "different_station"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
@@ -14853,7 +14835,7 @@
         {
          "member_id": "CASHATT,(DAKOTA)",
          "seat": "TT",
-         "reason": "different_station"
+         "reason": "already_reserved"
         },
         {
          "member_id": "MASSEY,(COLLIN)",
@@ -14927,9 +14909,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-0856 C PLANNED  781-23    Y    PLANNED ORDER FROM MTP 8IOT SW 3 8IOT SW 3",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:34.732332+00:00",
+      "snapshot_date": "2026-11-23T19:53:07.274365+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "781-23",
@@ -15017,7 +14999,7 @@
         {
          "member_id": "ROBERTS,(KIMBERLY)",
          "seat": "EN",
-         "reason": "already_reserved"
+         "reason": "different_station"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
@@ -15142,7 +15124,7 @@
         {
          "member_id": "ROBERTS,(KIMBERLY)",
          "seat": "AE_CO",
-         "reason": "already_reserved"
+         "reason": "different_station"
         },
         {
          "member_id": "HARTMAN,(JAMES)",
@@ -15231,9 +15213,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-1030 C PLANNED  392-066   Y    PLANNED ORDER FROM MTP KSPB PS 1 KSPB PS 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:34.732332+00:00",
+      "snapshot_date": "2026-11-23T19:53:07.274365+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "392-066",
@@ -15261,9 +15243,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-1230 C PLANNED  362-160   Y    PLANNED ORDER FROM MTP KSPB PS 1 KSPB PS 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:34.732332+00:00",
+      "snapshot_date": "2026-11-23T19:53:07.274365+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "362-160",
@@ -15291,9 +15273,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-1443 C PLANNED  576-352   Y    PLANNED ORDER FROM MTP KSPB PS 1 KSPB PS 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:34.732332+00:00",
+      "snapshot_date": "2026-11-23T19:53:07.274365+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "576-352",
@@ -15321,9 +15303,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-1600 C PLANNED  392-067   Y    PLANNED ORDER FROM MTP KSPB PS 1 KSPB PS 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:34.732332+00:00",
+      "snapshot_date": "2026-11-23T19:53:07.274365+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "392-067",
@@ -15351,9 +15333,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-1620 C PLANNED  357-263   Y    PLANNED ORDER FROM MTP 8IOT SW 3 8IOT SW 3",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:34.732332+00:00",
+      "snapshot_date": "2026-11-23T19:53:07.274365+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "357-263",
@@ -15381,9 +15363,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-1625 C PLANNED  180-23    Y    PLN ORDR UNTS UPD MTP  KSPB PS 1 KSPB PS 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:34.732332+00:00",
+      "snapshot_date": "2026-11-23T19:53:07.274365+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "180-23",
@@ -15411,9 +15393,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-1730 C PLANNED  866-389   Y    PLANNED ORDER FROM MTP KSPB PS 1 KSPB PS 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:37.267033+00:00",
+      "snapshot_date": "2026-11-23T19:53:09.808317+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "866-389",
@@ -15441,9 +15423,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-1800 C PLANNED  253-23    Y    PLANNED ORDER FROM MTP 8IOT SW 3 8IOT SW 3",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:37.267033+00:00",
+      "snapshot_date": "2026-11-23T19:53:09.808317+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "253-23",
@@ -15471,9 +15453,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-1900 C PLANNED  386-926   Y    PLANNED ORDER FROM MTP KSPB PS 1 KSPB PS 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:37.267033+00:00",
+      "snapshot_date": "2026-11-23T19:53:09.808317+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "386-926",
@@ -15501,9 +15483,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-2126 C PLANNED  577-349   Y    PLANNED ORDER FROM MTP 8IOT SW 3 8IOT SW 3",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:37.267033+00:00",
+      "snapshot_date": "2026-11-23T19:53:09.808317+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "577-349",
@@ -15531,9 +15513,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-2200 C PLANNED 2280-24    Y    PLANNED ORDER FROM MTP KSPB PS 1 KSPB PS 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:37.267033+00:00",
+      "snapshot_date": "2026-11-23T19:53:09.808317+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "2280-24",
@@ -15561,9 +15543,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-2340 C PLANNED  261-25    Y    PLANNED ORDER FROM MTP 8IOT SW 3 8IOT SW 3",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:37.267033+00:00",
+      "snapshot_date": "2026-11-23T19:53:09.808317+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "261-25",
@@ -15591,9 +15573,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/24-2340 C PLANNED  576-353   Y    PLN ORDR UNTS UPD MTP  KSPB PS 1 KSPB PS 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-24",
-      "snapshot_date": "2026-11-23T19:43:37.267033+00:00",
+      "snapshot_date": "2026-11-23T19:53:09.808317+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "576-353",
@@ -15621,9 +15603,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-0315 C PLANNED  181-22    Y    PLANNED ORDER FROM MTP 8IOT SW 3 8IOT SW 3",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:43:37.267033+00:00",
+      "snapshot_date": "2026-11-23T19:53:09.808317+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "181-22",
@@ -15651,9 +15633,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-0530 C PLANNED  258-25    Y KM PLANNED ORDER FROM MTP MOKC KM 0 MOKC KM 0",
       "rc": "KM",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:43:37.267033+00:00",
+      "snapshot_date": "2026-11-23T19:53:09.808317+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "258-25",
@@ -15681,9 +15663,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-0950 C PLANNED  375-760   Y    PLANNED ORDER FROM MTP 8IOT SW 3 8IOT SW 3",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:43:37.267033+00:00",
+      "snapshot_date": "2026-11-23T19:53:09.808317+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "375-760",
@@ -15711,9 +15693,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-1326 C PLANNED 2781-23    Y    PLANNED ORDER FROM MTP 8IOT SW 3 8IOT SW 3",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:43:37.267033+00:00",
+      "snapshot_date": "2026-11-23T19:53:09.808317+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "2781-23",
@@ -15741,9 +15723,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-1625 C PLANNED  180-24    Y    PLANNED ORDER FROM MTP KSPB PS 1 KSPB PS 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:43:37.267033+00:00",
+      "snapshot_date": "2026-11-23T19:53:09.808317+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "180-24",
@@ -15771,9 +15753,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-1800 C PLANNED  253-24    Y    PLANNED ORDER FROM MTP 8IOT SW 3 8IOT SW 3",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:43:37.267033+00:00",
+      "snapshot_date": "2026-11-23T19:53:09.808317+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "253-24",
@@ -15801,9 +15783,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-1940 C PLANNED  577-350   Y    PLANNED ORDER FROM MTP 8IOT SW 3 8IOT SW 3",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:43:37.267033+00:00",
+      "snapshot_date": "2026-11-23T19:53:09.808317+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "577-350",
@@ -15831,9 +15813,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-2000 C PLANNED  280-24    Y    PLANNED ORDER FROM MTP KSPB PS 1 KSPB PS 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:43:37.267033+00:00",
+      "snapshot_date": "2026-11-23T19:53:09.808317+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "280-24",
@@ -15861,9 +15843,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-2130 C PLANNED  262-25    Y    PLANNED ORDER FROM MTP KSPB PS 1 KSPB PS 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:43:39.753711+00:00",
+      "snapshot_date": "2026-11-23T19:53:12.304614+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "262-25",
@@ -15891,9 +15873,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/25-2340 C PLANNED  261-26    Y    PLANNED ORDER FROM MTP 8IOT SW 3 8IOT SW 3",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-25",
-      "snapshot_date": "2026-11-23T19:43:39.753711+00:00",
+      "snapshot_date": "2026-11-23T19:53:12.304614+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "261-26",
@@ -15913,17 +15895,17 @@
       "eng_crew_pool": "KM",
       "eng_planned_crew": [],
       "hours_in_future": "",
-      "information": "PLANNED ORDER FROM MTP",
+      "information": "PLN ORDR UNTS UPD MTP",
       "location_code": "04690",
       "movement_band": "green",
       "ordered": "Y",
       "page": 4,
       "query_pool": "HOURS",
-      "raw_line": " 11/26-0803 C PLANNED  DIM-016   Y KM PLANNED ORDER FROM MTP MOKC KM 0 MOKC KM 0",
+      "raw_line": " 11/26-0803 C PLANNED  DIM-016   Y KM PLN ORDR UNTS UPD MTP  MOKC KM 0 MOKC KM 0",
       "rc": "KM",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:43:39.753711+00:00",
+      "snapshot_date": "2026-11-23T19:53:12.304614+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "DIM-016",
@@ -15951,9 +15933,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-1625 C PLANNED  180-25    Y    PLANNED ORDER FROM MTP KSPB PS 1 KSPB PS 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:43:39.753711+00:00",
+      "snapshot_date": "2026-11-23T19:53:12.304614+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "180-25",
@@ -15981,9 +15963,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-1800 C PLANNED  253-25    Y    PLANNED ORDER FROM MTP 8IOT SW 3 8IOT SW 3",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:43:39.753711+00:00",
+      "snapshot_date": "2026-11-23T19:53:12.304614+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "253-25",
@@ -16011,9 +15993,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-2000 C PLANNED  280-25    Y    PLANNED ORDER FROM MTP KSPB PS 1 KSPB PS 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:43:39.753711+00:00",
+      "snapshot_date": "2026-11-23T19:53:12.304614+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "280-25",
@@ -16041,9 +16023,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-2130 C PLANNED  262-26    Y    PLANNED ORDER FROM MTP KSPB PS 1 KSPB PS 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:43:39.753711+00:00",
+      "snapshot_date": "2026-11-23T19:53:12.304614+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "262-26",
@@ -16071,9 +16053,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/26-2340 C PLANNED  261-27    Y    PLANNED ORDER FROM MTP 8IOT SW 3 8IOT SW 3",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-26",
-      "snapshot_date": "2026-11-23T19:43:39.753711+00:00",
+      "snapshot_date": "2026-11-23T19:53:12.304614+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "261-27",
@@ -16101,9 +16083,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/27-0510 C PLANNED  181-24    Y    PLN ORDR UNTS UPD MTP  8IOT SW 3 8IOT SW 3",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-27",
-      "snapshot_date": "2026-11-23T19:43:39.753711+00:00",
+      "snapshot_date": "2026-11-23T19:53:12.304614+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "181-24",
@@ -16131,9 +16113,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/27-0530 C PLANNED  258-27    Y KM PLANNED ORDER FROM MTP MOKC KM 0 MOKC KM 0",
       "rc": "KM",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-27",
-      "snapshot_date": "2026-11-23T19:43:39.753711+00:00",
+      "snapshot_date": "2026-11-23T19:53:12.304614+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "258-27",
@@ -16161,9 +16143,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/27-0600 C PLANNED  576-354   Y    PLN ORDR UNTS UPD MTP  KSPB PS 1 KSPB PS 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-27",
-      "snapshot_date": "2026-11-23T19:43:39.753711+00:00",
+      "snapshot_date": "2026-11-23T19:53:12.304614+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "576-354",
@@ -16191,9 +16173,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/27-1000 C PLANNED  02H-27    Y    PLANNED ORDER FROM MTP KSPB PS 1 KSPB PS 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-27",
-      "snapshot_date": "2026-11-23T19:43:39.753711+00:00",
+      "snapshot_date": "2026-11-23T19:53:12.304614+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "02H-27",
@@ -16221,9 +16203,9 @@
       "query_pool": "HOURS",
       "raw_line": " 11/27-1625 C PLANNED  180-26    Y    PLANNED ORDER FROM MTP KSPB PS 1 KSPB PS 1",
       "rc": "",
-      "run_id": "sched_20261123_134305",
+      "run_id": "sched_20261123_135237",
       "service_date": "2026-11-27",
-      "snapshot_date": "2026-11-23T19:43:39.753711+00:00",
+      "snapshot_date": "2026-11-23T19:53:12.304614+00:00",
       "status": "PLANNED",
       "subdistrict": "",
       "train_asgn": "180-26",
@@ -16243,7 +16225,7 @@
   "board_count": 11,
   "boards": [
    {
-    "age_seconds": 337,
+    "age_seconds": 829,
     "captured_at": "2026-11-23T19:44:45.746660+00:00",
     "label": "OTTUMWA ENG XTRA BRD",
     "menu_path": "1_04",
@@ -16272,7 +16254,7 @@
       "ushr": "",
       "rest_state": "availability_unknown",
       "rest_until": null,
-      "rest_calculated_at": "2026-11-23T13:50:47",
+      "rest_calculated_at": "2026-11-23T13:58:59",
       "rest_board": "OTTUMWA ENG XTRA BRD POSITION",
       "rest_evidence": [
        "junior_in_craft",
@@ -16302,7 +16284,7 @@
       "ushr": "",
       "rest_state": "resting",
       "rest_until": "2026-11-23T20:55",
-      "rest_calculated_at": "2026-11-23T13:50:47",
+      "rest_calculated_at": "2026-11-23T13:58:59",
       "rest_board": "OTTUMWA ENG XTRA BRD POSITION",
       "rest_evidence": [
        "board_rest:2026-11-23T19:44:45.746660+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261123_134305\\parsed\\crew_lineup.jsonl",
@@ -16332,7 +16314,7 @@
       "ushr": "",
       "rest_state": "availability_unknown",
       "rest_until": null,
-      "rest_calculated_at": "2026-11-23T13:50:47",
+      "rest_calculated_at": "2026-11-23T13:58:59",
       "rest_board": "OTTUMWA ENG XTRA BRD POSITION",
       "rest_evidence": [
        "rest_evidence_missing"
@@ -16361,7 +16343,7 @@
       "ushr": "",
       "rest_state": "resting",
       "rest_until": "2026-11-23T22:38",
-      "rest_calculated_at": "2026-11-23T13:50:47",
+      "rest_calculated_at": "2026-11-23T13:58:59",
       "rest_board": "OTTUMWA ENG XTRA BRD POSITION",
       "rest_evidence": [
        "board_rest:2026-11-23T19:44:45.746660+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261123_134305\\parsed\\crew_lineup.jsonl",
@@ -16376,7 +16358,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 329,
+    "age_seconds": 821,
     "captured_at": "2026-11-23T19:44:53.369051+00:00",
     "label": "OB POOLS IN OTT TURN ORDER",
     "menu_path": "1_05",
@@ -16502,7 +16484,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 322,
+    "age_seconds": 813,
     "captured_at": "2026-11-23T19:45:01.011107+00:00",
     "label": "OB POOLS IN OTT POSITION",
     "menu_path": "1_06",
@@ -16531,7 +16513,7 @@
       "ushr": "1740",
       "rest_state": "resting",
       "rest_until": "2026-11-23T17:40",
-      "rest_calculated_at": "2026-11-23T13:50:47",
+      "rest_calculated_at": "2026-11-23T13:58:59",
       "rest_board": "OB POOLS IN OTT POSITION",
       "rest_evidence": [
        "board_rest:2026-11-23T19:45:01.011107+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261123_134305\\parsed\\crew_lineup.jsonl"
@@ -16545,7 +16527,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 316,
+    "age_seconds": 808,
     "captured_at": "2026-11-23T19:45:06.180525+00:00",
     "label": "OB POOLS IN BVL POSITION",
     "menu_path": "1_07",
@@ -16558,7 +16540,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 311,
+    "age_seconds": 803,
     "captured_at": "2026-11-23T19:45:11.324656+00:00",
     "label": "OB POOLS IN IMS POSITION",
     "menu_path": "1_08",
@@ -16571,7 +16553,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 306,
+    "age_seconds": 798,
     "captured_at": "2026-11-23T19:45:16.510242+00:00",
     "label": "DA POOLS IN OTT POSITION",
     "menu_path": "1_09",
@@ -16600,7 +16582,7 @@
       "ushr": "1620",
       "rest_state": "resting",
       "rest_until": "2026-11-23T16:20",
-      "rest_calculated_at": "2026-11-23T13:50:47",
+      "rest_calculated_at": "2026-11-23T13:58:59",
       "rest_board": "DA POOLS IN OTT POSITION",
       "rest_evidence": [
        "board_rest:2026-11-23T19:45:16.510242+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261123_134305\\parsed\\crew_lineup.jsonl"
@@ -16629,7 +16611,7 @@
       "ushr": "1620",
       "rest_state": "resting",
       "rest_until": "2026-11-23T16:20",
-      "rest_calculated_at": "2026-11-23T13:50:47",
+      "rest_calculated_at": "2026-11-23T13:58:59",
       "rest_board": "DA POOLS IN OTT POSITION",
       "rest_evidence": [
        "board_rest:2026-11-23T19:45:16.510242+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261123_134305\\parsed\\crew_lineup.jsonl"
@@ -16658,7 +16640,7 @@
       "ushr": "1712",
       "rest_state": "resting",
       "rest_until": "2026-11-23T17:10",
-      "rest_calculated_at": "2026-11-23T13:50:47",
+      "rest_calculated_at": "2026-11-23T13:58:59",
       "rest_board": "DA POOLS IN OTT POSITION",
       "rest_evidence": [
        "board_rest:2026-11-23T19:45:16.510242+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261123_134305\\parsed\\crew_lineup.jsonl"
@@ -16687,7 +16669,7 @@
       "ushr": "1710",
       "rest_state": "resting",
       "rest_until": "2026-11-23T17:10",
-      "rest_calculated_at": "2026-11-23T13:50:47",
+      "rest_calculated_at": "2026-11-23T13:58:59",
       "rest_board": "DA POOLS IN OTT POSITION",
       "rest_evidence": [
        "board_rest:2026-11-23T19:45:16.510242+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261123_134305\\parsed\\crew_lineup.jsonl"
@@ -16701,7 +16683,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 301,
+    "age_seconds": 793,
     "captured_at": "2026-11-23T19:45:21.704684+00:00",
     "label": "KA POOLS IN OTT POSITION",
     "menu_path": "1_10",
@@ -16714,7 +16696,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 293,
+    "age_seconds": 785,
     "captured_at": "2026-11-23T19:45:29.397502+00:00",
     "label": "SW POOLS IN OTT POSITION",
     "menu_path": "1_11",
@@ -16743,7 +16725,7 @@
       "ushr": "1725",
       "rest_state": "resting",
       "rest_until": "2026-11-23T17:25",
-      "rest_calculated_at": "2026-11-23T13:50:47",
+      "rest_calculated_at": "2026-11-23T13:58:59",
       "rest_board": "SW POOLS IN OTT POSITION",
       "rest_evidence": [
        "board_rest:2026-11-23T19:45:26.893050+00:00:sched_20261123_134305"
@@ -16772,7 +16754,7 @@
       "ushr": "1723",
       "rest_state": "resting",
       "rest_until": "2026-11-23T17:23",
-      "rest_calculated_at": "2026-11-23T13:50:47",
+      "rest_calculated_at": "2026-11-23T13:58:59",
       "rest_board": "SW POOLS IN OTT POSITION",
       "rest_evidence": [
        "board_rest:2026-11-23T19:45:26.893050+00:00:sched_20261123_134305"
@@ -16801,7 +16783,7 @@
       "ushr": "",
       "rest_state": "annual_vacation",
       "rest_until": null,
-      "rest_calculated_at": "2026-11-23T13:50:47",
+      "rest_calculated_at": "2026-11-23T13:58:59",
       "rest_board": "SW POOLS IN OTT POSITION",
       "rest_evidence": [
        "annual_vacation",
@@ -16829,12 +16811,14 @@
       "turn_hours": "2250 2250",
       "turn_info": "",
       "ushr": "2250",
-      "rest_state": "resting",
-      "rest_until": "2026-11-23T22:50",
-      "rest_calculated_at": "2026-11-23T13:50:47",
+      "rest_state": "availability_unknown",
+      "rest_until": null,
+      "rest_calculated_at": "2026-11-23T13:58:59",
       "rest_board": "SW POOLS IN OTT POSITION",
       "rest_evidence": [
-       "board_rest:2026-11-23T19:45:26.893050+00:00:sched_20261123_134305"
+       "booked_off_W",
+       "board_mtod",
+       "availability_conflict_requires_reconciliation"
       ]
      },
      {
@@ -16860,7 +16844,7 @@
       "ushr": "2250",
       "rest_state": "resting",
       "rest_until": "2026-11-23T22:50",
-      "rest_calculated_at": "2026-11-23T13:50:47",
+      "rest_calculated_at": "2026-11-23T13:58:59",
       "rest_board": "SW POOLS IN OTT POSITION",
       "rest_evidence": [
        "board_rest:2026-11-23T19:45:26.893050+00:00:sched_20261123_134305"
@@ -16889,7 +16873,7 @@
       "ushr": "2254",
       "rest_state": "resting",
       "rest_until": "2026-11-23T22:54",
-      "rest_calculated_at": "2026-11-23T13:50:47",
+      "rest_calculated_at": "2026-11-23T13:58:59",
       "rest_board": "SW POOLS IN OTT POSITION",
       "rest_evidence": [
        "fra_5_starts",
@@ -16919,7 +16903,7 @@
       "ushr": "0105",
       "rest_state": "resting",
       "rest_until": "2026-11-24T01:05",
-      "rest_calculated_at": "2026-11-23T13:50:47",
+      "rest_calculated_at": "2026-11-23T13:58:59",
       "rest_board": "SW POOLS IN OTT POSITION",
       "rest_evidence": [
        "board_rest:2026-11-23T19:45:29.397502+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261123_134305\\parsed\\crew_lineup.jsonl"
@@ -16948,7 +16932,7 @@
       "ushr": "0105",
       "rest_state": "resting",
       "rest_until": "2026-11-24T01:05",
-      "rest_calculated_at": "2026-11-23T13:50:47",
+      "rest_calculated_at": "2026-11-23T13:58:59",
       "rest_board": "SW POOLS IN OTT POSITION",
       "rest_evidence": [
        "board_rest:2026-11-23T19:45:29.397502+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261123_134305\\parsed\\crew_lineup.jsonl"
@@ -16962,7 +16946,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 288,
+    "age_seconds": 780,
     "captured_at": "2026-11-23T19:45:34.550790+00:00",
     "label": "SW POOLS IN KC POSITION",
     "menu_path": "1_12",
@@ -16991,7 +16975,7 @@
       "ushr": "1445",
       "rest_state": "resting",
       "rest_until": "2026-11-23T14:45",
-      "rest_calculated_at": "2026-11-23T13:50:47",
+      "rest_calculated_at": "2026-11-23T13:58:59",
       "rest_board": "SW POOLS IN KC  POSITION",
       "rest_evidence": [
        "board_rest:2026-11-23T19:45:34.550790+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261123_134305\\parsed\\crew_lineup.jsonl"
@@ -17020,7 +17004,7 @@
       "ushr": "1438",
       "rest_state": "resting",
       "rest_until": "2026-11-23T14:38",
-      "rest_calculated_at": "2026-11-23T13:50:47",
+      "rest_calculated_at": "2026-11-23T13:58:59",
       "rest_board": "SW POOLS IN KC  POSITION",
       "rest_evidence": [
        "board_rest:2026-11-23T19:45:34.550790+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261123_134305\\parsed\\crew_lineup.jsonl"
@@ -17049,7 +17033,7 @@
       "ushr": "1853",
       "rest_state": "resting",
       "rest_until": "2026-11-23T18:53",
-      "rest_calculated_at": "2026-11-23T13:50:47",
+      "rest_calculated_at": "2026-11-23T13:58:59",
       "rest_board": "SW POOLS IN KC  POSITION",
       "rest_evidence": [
        "board_rest:2026-11-23T19:45:34.550790+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261123_134305\\parsed\\crew_lineup.jsonl",
@@ -17079,7 +17063,7 @@
       "ushr": "1854",
       "rest_state": "resting",
       "rest_until": "2026-11-23T18:53",
-      "rest_calculated_at": "2026-11-23T13:50:47",
+      "rest_calculated_at": "2026-11-23T13:58:59",
       "rest_board": "SW POOLS IN KC  POSITION",
       "rest_evidence": [
        "board_rest:2026-11-23T19:45:34.550790+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261123_134305\\parsed\\crew_lineup.jsonl",
@@ -17094,7 +17078,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 280,
+    "age_seconds": 772,
     "captured_at": "2026-11-23T19:45:42.225057+00:00",
     "label": "SW POOLS IN DA POSITION",
     "menu_path": "1_13",
@@ -17107,7 +17091,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 271,
+    "age_seconds": 763,
     "captured_at": "2026-11-23T19:45:51.269492+00:00",
     "label": "OTT SWITCHMAN XTRA BRD",
     "menu_path": "2_04",
@@ -17136,7 +17120,7 @@
       "ushr": "",
       "rest_state": "availability_unknown",
       "rest_until": null,
-      "rest_calculated_at": "2026-11-23T13:50:47",
+      "rest_calculated_at": "2026-11-23T13:58:59",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION",
       "rest_evidence": [
        "rest_evidence_missing"
@@ -17165,7 +17149,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": null,
-      "rest_calculated_at": "2026-11-23T13:50:47",
+      "rest_calculated_at": "2026-11-23T13:58:59",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION",
       "rest_evidence": [
        "board_blank_rest_observed:{\"board\": \"OTT SWITCHMAN XTRABRD POSITION\", \"captured_at\": \"2026-11-23T19:45:51.269492+00:00\", \"craft\": \"\", \"member\": \"KILGORE,(JONATHAN)\", \"observed_at\": \"2026-11-23T15:56:06.317327+00:00\", \"run_id\": \"sched_20261123_134305\", \"station\": \"04664\", \"ticket\": \"375-75401\", \"ticket_date\": \"2026-11-19\", \"tie_up_at\": \"2026-11-20T06:47:00+00:00\", \"turn\": \"0009\"}"
@@ -17195,7 +17179,7 @@
       "ushr": "",
       "rest_state": "resting",
       "rest_until": "2026-11-23T17:40",
-      "rest_calculated_at": "2026-11-23T13:50:47",
+      "rest_calculated_at": "2026-11-23T13:58:59",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION",
       "rest_evidence": [
        "board_rest:2026-11-23T19:45:51.269492+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261123_134305\\parsed\\crew_lineup.jsonl",
@@ -17225,7 +17209,7 @@
       "ushr": "",
       "rest_state": "resting",
       "rest_until": "2026-11-23T20:55",
-      "rest_calculated_at": "2026-11-23T13:50:47",
+      "rest_calculated_at": "2026-11-23T13:58:59",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION",
       "rest_evidence": [
        "board_rest:2026-11-23T19:45:51.269492+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261123_134305\\parsed\\crew_lineup.jsonl",
@@ -17255,7 +17239,7 @@
       "ushr": "",
       "rest_state": "resting",
       "rest_until": "2026-11-23T22:37",
-      "rest_calculated_at": "2026-11-23T13:50:47",
+      "rest_calculated_at": "2026-11-23T13:58:59",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION",
       "rest_evidence": [
        "junior_in_craft",
@@ -17497,8 +17481,8 @@
     "terminal": "OT",
     "carryover": false,
     "stale": false,
-    "captured_at": "2026-11-23T19:46:17.632605+00:00",
-    "source_run": "sched_20261123_134305",
+    "captured_at": "2026-11-23T19:54:29.491598+00:00",
+    "source_run": "sched_20261123_135237",
     "inquiry_subdistrict": "OT",
     "craft": "EN",
     "last_confirmed": "2026-11-23"
@@ -30967,8 +30951,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:40.804931+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:52.449241+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -30983,8 +30967,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:40.804931+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:52.449241+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -30999,8 +30983,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:40.804931+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:52.449241+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -31015,8 +30999,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:29.607662+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:41.299777+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -31031,8 +31015,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:29.607662+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:41.299777+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -31047,8 +31031,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:40.804931+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:52.449241+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -31063,8 +31047,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:40.804931+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:52.449241+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -31079,8 +31063,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:29.607662+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:41.299777+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -31095,8 +31079,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:40.804931+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:52.449241+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -31111,8 +31095,8 @@
    "terminal": "OT",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:46:26.353682+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:54:38.142989+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "OT",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -31127,8 +31111,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:40.804931+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:52.449241+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -31143,8 +31127,8 @@
    "terminal": "KC",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:46:53.653344+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:05.402266+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "KC",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -31159,8 +31143,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:40.804931+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:52.449241+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -31175,8 +31159,8 @@
    "terminal": "OT",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:46:26.353682+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:54:38.142989+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "OT",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -31191,8 +31175,8 @@
    "terminal": "KC",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:02.379970+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:14.046177+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "KC",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -31207,8 +31191,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:29.607662+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:41.299777+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -31223,8 +31207,8 @@
    "terminal": "KC",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:46:53.653344+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:05.402266+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "KC",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -31239,8 +31223,8 @@
    "terminal": "KC",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:46:53.653344+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:05.402266+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "KC",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -31255,8 +31239,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:29.607662+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:41.299777+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -31271,8 +31255,8 @@
    "terminal": "KC",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:46:58.027315+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:09.731970+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "KC",
    "craft": "AE",
    "last_confirmed": "2026-11-23"
@@ -31287,8 +31271,8 @@
    "terminal": "OT",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:46:30.699259+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:54:42.490355+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "OT",
    "craft": "ET",
    "last_confirmed": "2026-11-23"
@@ -31303,8 +31287,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:29.607662+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:41.299777+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -31319,8 +31303,8 @@
    "terminal": "OT",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:51.972762+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:56:03.678242+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "TT",
    "last_confirmed": "2026-11-23"
@@ -31335,8 +31319,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:40.804931+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:52.449241+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -31351,8 +31335,8 @@
    "terminal": "KC",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:02.379970+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:14.046177+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "KC",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -31367,8 +31351,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:29.607662+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:41.299777+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -31383,8 +31367,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:40.804931+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:52.449241+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -31399,8 +31383,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:40.804931+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:52.449241+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -31415,8 +31399,8 @@
    "terminal": "OT",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:46:21.993538+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:54:33.799318+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "OT",
    "craft": "AE",
    "last_confirmed": "2026-11-23"
@@ -31431,8 +31415,8 @@
    "terminal": "OT",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:46:17.632605+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:54:29.491598+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "OT",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -31447,8 +31431,8 @@
    "terminal": "KC",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:02.379970+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:14.046177+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "KC",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -31463,8 +31447,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:29.607662+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:41.299777+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -31479,8 +31463,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:29.607662+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:41.299777+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -31495,8 +31479,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:40.804931+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:52.449241+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -31511,8 +31495,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:29.607662+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:41.299777+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -31527,8 +31511,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:29.607662+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:41.299777+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -31543,8 +31527,8 @@
    "terminal": "KC",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:46:53.653344+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:05.402266+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "KC",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -31559,8 +31543,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:40.804931+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:52.449241+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -31575,8 +31559,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:40.804931+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:52.449241+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -31591,8 +31575,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:40.804931+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:52.449241+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -31607,8 +31591,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:29.607662+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:41.299777+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -31623,8 +31607,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:29.607662+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:41.299777+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -31639,8 +31623,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:29.607662+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:41.299777+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -31655,8 +31639,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:40.804931+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:52.449241+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -31671,8 +31655,8 @@
    "terminal": "KC",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:46:53.653344+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:05.402266+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "KC",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -31687,8 +31671,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:29.607662+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:41.299777+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -31703,8 +31687,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:43.288516+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:54.918477+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -31719,8 +31703,8 @@
    "terminal": "OT",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:46:21.993538+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:54:33.799318+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "OT",
    "craft": "AE",
    "last_confirmed": "2026-11-23"
@@ -31735,8 +31719,8 @@
    "terminal": "OT",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:46:17.632605+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:54:29.491598+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "OT",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -31751,8 +31735,8 @@
    "terminal": "KC",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:46:53.653344+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:05.402266+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "KC",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -31767,8 +31751,8 @@
    "terminal": "OT",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:46:17.632605+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:54:29.491598+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "OT",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -31783,8 +31767,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:29.607662+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:41.299777+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -31799,8 +31783,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:32.159548+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:43.804948+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -31815,8 +31799,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:32.159548+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:43.804948+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -31831,8 +31815,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:32.159548+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:43.804948+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -31847,8 +31831,8 @@
    "terminal": "OT",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:46:26.353682+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:54:38.142989+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "OT",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -31863,8 +31847,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:32.159548+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:43.804948+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -31879,8 +31863,8 @@
    "terminal": "OT",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:46:17.632605+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:54:29.491598+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "OT",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -31895,8 +31879,8 @@
    "terminal": "OT",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:46:26.353682+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:54:38.142989+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "OT",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -31911,8 +31895,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:43.288516+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:54.918477+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -31927,8 +31911,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:43.288516+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:54.918477+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -31943,8 +31927,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:43.288516+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:54.918477+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -31959,8 +31943,8 @@
    "terminal": "OT",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:46:21.993538+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:54:33.799318+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "OT",
    "craft": "AE",
    "last_confirmed": "2026-11-23"
@@ -31975,8 +31959,8 @@
    "terminal": "KC",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:02.379970+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:14.046177+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "KC",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -31991,8 +31975,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:32.159548+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:43.804948+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -32007,8 +31991,8 @@
    "terminal": "OT",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:46:26.353682+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:54:38.142989+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "OT",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -32023,8 +32007,8 @@
    "terminal": "KC",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:46:53.653344+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:05.402266+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "KC",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -32039,10 +32023,26 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:51.972762+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:56:03.678242+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "TT",
+   "last_confirmed": "2026-11-23"
+  },
+  {
+   "name": "ROBERTS,(KIMBERLY)IFG",
+   "code": "W",
+   "label": "Personal Leave Day",
+   "assignment": "SWSW07EN",
+   "since": "2026-11-23",
+   "time": "00:01",
+   "terminal": "OT",
+   "carryover": false,
+   "stale": false,
+   "captured_at": "2026-11-23T19:54:29.491598+00:00",
+   "source_run": "sched_20261123_135237",
+   "inquiry_subdistrict": "OT",
+   "craft": "EN",
    "last_confirmed": "2026-11-23"
   },
   {
@@ -32055,8 +32055,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:43.288516+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:54.918477+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -32071,8 +32071,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:43.288516+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:54.918477+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -32087,8 +32087,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:32.159548+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:43.804948+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -32103,8 +32103,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:32.159548+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:43.804948+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -32119,8 +32119,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:43.288516+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:54.918477+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -32135,8 +32135,8 @@
    "terminal": "OT",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:46:17.632605+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:54:29.491598+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "OT",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -32151,8 +32151,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:43.288516+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:54.918477+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -32167,8 +32167,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:32.159548+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:43.804948+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -32183,8 +32183,8 @@
    "terminal": "OT",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:46:26.353682+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:54:38.142989+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "OT",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -32199,8 +32199,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:51.972762+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:56:03.678242+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "TT",
    "last_confirmed": "2026-11-23"
@@ -32215,8 +32215,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:43.288516+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:54.918477+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "CO",
    "last_confirmed": "2026-11-23"
@@ -32231,8 +32231,8 @@
    "terminal": "OT",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:46:17.632605+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:54:29.491598+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "OT",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -32247,8 +32247,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:32.159548+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:43.804948+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -32263,8 +32263,8 @@
    "terminal": "DA",
    "carryover": false,
    "stale": false,
-   "captured_at": "2026-11-23T19:47:32.159548+00:00",
-   "source_run": "sched_20261123_134305",
+   "captured_at": "2026-11-23T19:55:43.804948+00:00",
+   "source_run": "sched_20261123_135237",
    "inquiry_subdistrict": "DA",
    "craft": "EN",
    "last_confirmed": "2026-11-23"
@@ -32277,120 +32277,120 @@
    {
     "subdistrict": "DA",
     "craft": "AE",
-    "captured_at": "2026-11-23T19:47:36.465276+00:00",
-    "run_id": "sched_20261123_134305",
+    "captured_at": "2026-11-23T19:55:48.114212+00:00",
+    "run_id": "sched_20261123_135237",
     "stale": false,
     "incomplete_newer_capture": false
    },
    {
     "subdistrict": "DA",
     "craft": "CO",
-    "captured_at": "2026-11-23T19:47:43.288516+00:00",
-    "run_id": "sched_20261123_134305",
+    "captured_at": "2026-11-23T19:55:54.918477+00:00",
+    "run_id": "sched_20261123_135237",
     "stale": false,
     "incomplete_newer_capture": false
    },
    {
     "subdistrict": "DA",
     "craft": "EN",
-    "captured_at": "2026-11-23T19:47:32.159548+00:00",
-    "run_id": "sched_20261123_134305",
+    "captured_at": "2026-11-23T19:55:43.804948+00:00",
+    "run_id": "sched_20261123_135237",
     "stale": false,
     "incomplete_newer_capture": false
    },
    {
     "subdistrict": "DA",
     "craft": "ET",
-    "captured_at": "2026-11-23T19:47:47.624256+00:00",
-    "run_id": "sched_20261123_134305",
+    "captured_at": "2026-11-23T19:55:59.263221+00:00",
+    "run_id": "sched_20261123_135237",
     "stale": false,
     "incomplete_newer_capture": false
    },
    {
     "subdistrict": "DA",
     "craft": "TT",
-    "captured_at": "2026-11-23T19:47:51.972762+00:00",
-    "run_id": "sched_20261123_134305",
+    "captured_at": "2026-11-23T19:56:03.678242+00:00",
+    "run_id": "sched_20261123_135237",
     "stale": false,
     "incomplete_newer_capture": false
    },
    {
     "subdistrict": "KC",
     "craft": "AE",
-    "captured_at": "2026-11-23T19:46:58.027315+00:00",
-    "run_id": "sched_20261123_134305",
+    "captured_at": "2026-11-23T19:55:09.731970+00:00",
+    "run_id": "sched_20261123_135237",
     "stale": false,
     "incomplete_newer_capture": false
    },
    {
     "subdistrict": "KC",
     "craft": "CO",
-    "captured_at": "2026-11-23T19:47:02.379970+00:00",
-    "run_id": "sched_20261123_134305",
+    "captured_at": "2026-11-23T19:55:14.046177+00:00",
+    "run_id": "sched_20261123_135237",
     "stale": false,
     "incomplete_newer_capture": false
    },
    {
     "subdistrict": "KC",
     "craft": "EN",
-    "captured_at": "2026-11-23T19:46:53.653344+00:00",
-    "run_id": "sched_20261123_134305",
+    "captured_at": "2026-11-23T19:55:05.402266+00:00",
+    "run_id": "sched_20261123_135237",
     "stale": false,
     "incomplete_newer_capture": false
    },
    {
     "subdistrict": "KC",
     "craft": "ET",
-    "captured_at": "2026-11-23T19:47:06.763747+00:00",
-    "run_id": "sched_20261123_134305",
+    "captured_at": "2026-11-23T19:55:18.379626+00:00",
+    "run_id": "sched_20261123_135237",
     "stale": false,
     "incomplete_newer_capture": false
    },
    {
     "subdistrict": "KC",
     "craft": "TT",
-    "captured_at": "2026-11-23T19:47:11.111077+00:00",
-    "run_id": "sched_20261123_134305",
+    "captured_at": "2026-11-23T19:55:22.720984+00:00",
+    "run_id": "sched_20261123_135237",
     "stale": false,
     "incomplete_newer_capture": false
    },
    {
     "subdistrict": "OT",
     "craft": "AE",
-    "captured_at": "2026-11-23T19:46:21.993538+00:00",
-    "run_id": "sched_20261123_134305",
+    "captured_at": "2026-11-23T19:54:33.799318+00:00",
+    "run_id": "sched_20261123_135237",
     "stale": false,
     "incomplete_newer_capture": false
    },
    {
     "subdistrict": "OT",
     "craft": "CO",
-    "captured_at": "2026-11-23T19:46:26.353682+00:00",
-    "run_id": "sched_20261123_134305",
+    "captured_at": "2026-11-23T19:54:38.142989+00:00",
+    "run_id": "sched_20261123_135237",
     "stale": false,
     "incomplete_newer_capture": false
    },
    {
     "subdistrict": "OT",
     "craft": "EN",
-    "captured_at": "2026-11-23T19:46:17.632605+00:00",
-    "run_id": "sched_20261123_134305",
+    "captured_at": "2026-11-23T19:54:29.491598+00:00",
+    "run_id": "sched_20261123_135237",
     "stale": false,
     "incomplete_newer_capture": false
    },
    {
     "subdistrict": "OT",
     "craft": "ET",
-    "captured_at": "2026-11-23T19:46:30.699259+00:00",
-    "run_id": "sched_20261123_134305",
+    "captured_at": "2026-11-23T19:54:42.490355+00:00",
+    "run_id": "sched_20261123_135237",
     "stale": false,
     "incomplete_newer_capture": false
    },
    {
     "subdistrict": "OT",
     "craft": "TT",
-    "captured_at": "2026-11-23T19:46:35.061665+00:00",
-    "run_id": "sched_20261123_134305",
+    "captured_at": "2026-11-23T19:54:46.865007+00:00",
+    "run_id": "sched_20261123_135237",
     "stale": false,
     "incomplete_newer_capture": false
    }
