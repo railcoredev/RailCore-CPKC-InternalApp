@@ -1,7 +1,7 @@
 {
  "shared_crew_projection": {
   "model": "seats-v3",
-  "calculated_at": "2026-11-25T05:17:26.977023+00:00",
+  "calculated_at": "2026-11-25T05:19:51.581987+00:00",
   "policy_basis": "explicit_per_leg_calling_groups_and_candidate_eligibility",
   "trains": [
    {
@@ -218,7 +218,7 @@
       "captured_at": "2026-11-25T05:02:28.258336+00:00",
       "evidence": [
        "board:sched_20261124_230017:1_09",
-       "rest_calculated:2026-11-24T23:16:12",
+       "rest_calculated:2026-11-24T23:18:30",
        "basic_rest_10h",
        "no_lineup_trains_for_pool_at_04664"
       ],
@@ -240,7 +240,7 @@
       "captured_at": "2026-11-25T05:02:28.258336+00:00",
       "evidence": [
        "board:sched_20261124_230017:1_09",
-       "rest_calculated:2026-11-24T23:16:12",
+       "rest_calculated:2026-11-24T23:18:30",
        "basic_rest_10h",
        "no_lineup_trains_for_pool_at_04664"
       ],
@@ -596,7 +596,7 @@
       "captured_at": "2026-11-25T05:01:57.594264+00:00",
       "evidence": [
        "board:sched_20261124_230017:1_04",
-       "rest_calculated:2026-11-24T23:16:12",
+       "rest_calculated:2026-11-24T23:18:30",
        "junior_in_craft",
        "basic_rest_10h",
        "xtraboard_no_lineup_walk",
@@ -622,7 +622,7 @@
       "captured_at": "2026-11-25T05:03:02.895555+00:00",
       "evidence": [
        "board:sched_20261124_230017:2_04",
-       "rest_calculated:2026-11-24T23:16:12",
+       "rest_calculated:2026-11-24T23:18:30",
        "junior_in_craft",
        "board_blank_rest_observed:{\"board\": \"OTT SWITCHMAN XTRABRD POSITION\", \"captured_at\": \"2026-11-25T05:03:02.895555+00:00\", \"craft\": \"\", \"member\": \"MOZQUEDA,(ERNESTO)\", \"observed_at\": \"2026-11-25T04:53:27.732378+00:00\", \"run_id\": \"sched_20261124_230017\", \"station\": \"04664\", \"ticket\": \"357-260\", \"ticket_date\": \"2026-11-21\", \"tie_up_at\": \"2026-11-21T22:16:00+00:00\", \"turn\": \"0005\"}",
        "rule:OT_EXTRA_CONDUCTOR_FALLBACK:2026-09-23.1:dcdc8e04c72273d00ab7cee4f36338d7e7ca7ff65dcfac032d79b5690206eb4b",
@@ -992,7 +992,7 @@
       "captured_at": "2026-11-25T05:02:38.568309+00:00",
       "evidence": [
        "board:sched_20261124_230017:1_11",
-       "rest_calculated:2026-11-24T23:16:12",
+       "rest_calculated:2026-11-24T23:18:30",
        "board_rest:2026-11-25T04:53:03.450256+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261124_225041\\parsed\\crew_lineup.jsonl",
        "no_lineup_trains_for_pool_at_04664"
       ],
@@ -1195,7 +1195,7 @@
       "captured_at": "2026-11-25T05:02:28.258336+00:00",
       "evidence": [
        "board:sched_20261124_230017:1_09",
-       "rest_calculated:2026-11-24T23:16:12",
+       "rest_calculated:2026-11-24T23:18:30",
        "board_rest:2026-11-25T05:02:28.258336+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261124_230017\\parsed\\crew_lineup.jsonl",
        "no_lineup_trains_for_pool_at_04664"
       ],
@@ -1217,7 +1217,7 @@
       "captured_at": "2026-11-25T05:02:28.258336+00:00",
       "evidence": [
        "board:sched_20261124_230017:1_09",
-       "rest_calculated:2026-11-24T23:16:12",
+       "rest_calculated:2026-11-24T23:18:30",
        "board_rest:2026-11-25T05:02:28.258336+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261124_230017\\parsed\\crew_lineup.jsonl",
        "no_lineup_trains_for_pool_at_04664"
       ],
@@ -1240,7 +1240,7 @@
       "captured_at": "2026-11-25T05:02:28.258336+00:00",
       "evidence": [
        "board:sched_20261124_230017:1_09",
-       "rest_calculated:2026-11-24T23:16:12",
+       "rest_calculated:2026-11-24T23:18:30",
        "board_rest:2026-11-25T05:02:28.258336+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261124_230017\\parsed\\crew_lineup.jsonl",
        "no_lineup_trains_for_pool_at_04664"
       ],
@@ -1600,7 +1600,7 @@
       "captured_at": "2026-11-25T05:02:38.568309+00:00",
       "evidence": [
        "board:sched_20261124_230017:1_11",
-       "rest_calculated:2026-11-24T23:16:12",
+       "rest_calculated:2026-11-24T23:18:30",
        "junior_in_craft",
        "board_rest:2026-11-25T05:02:38.568309+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261124_230017\\parsed\\crew_lineup.jsonl",
        "no_lineup_trains_for_pool_at_04664"
@@ -1809,7 +1809,7 @@
       "captured_at": "2026-11-25T05:02:46.194296+00:00",
       "evidence": [
        "board:sched_20261124_230017:1_12",
-       "rest_calculated:2026-11-24T23:16:12",
+       "rest_calculated:2026-11-24T23:18:30",
        "board_rest:2026-11-25T05:02:46.194296+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261124_230017\\parsed\\crew_lineup.jsonl",
        "no_lineup_trains_for_pool_at_04690"
       ],
@@ -1831,7 +1831,7 @@
       "captured_at": "2026-11-25T05:02:46.194296+00:00",
       "evidence": [
        "board:sched_20261124_230017:1_12",
-       "rest_calculated:2026-11-24T23:16:12",
+       "rest_calculated:2026-11-24T23:18:30",
        "board_rest:2026-11-25T05:02:46.194296+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261124_230017\\parsed\\crew_lineup.jsonl",
        "no_lineup_trains_for_pool_at_04690"
       ],
@@ -2193,7 +2193,7 @@
       "captured_at": "2026-11-25T05:03:02.895555+00:00",
       "evidence": [
        "board:sched_20261124_230017:2_04",
-       "rest_calculated:2026-11-24T23:16:12",
+       "rest_calculated:2026-11-24T23:18:30",
        "basic_rest_10h",
        "xtraboard_no_lineup_walk",
        "rule:OT_EXTRA_CONDUCTOR_FALLBACK:2026-09-23.1:dcdc8e04c72273d00ab7cee4f36338d7e7ca7ff65dcfac032d79b5690206eb4b",
@@ -3181,7 +3181,7 @@
       "captured_at": "2026-11-25T05:02:46.194296+00:00",
       "evidence": [
        "board:sched_20261124_230017:1_12",
-       "rest_calculated:2026-11-24T23:16:12",
+       "rest_calculated:2026-11-24T23:18:30",
        "board_rest:2026-11-25T05:02:46.194296+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261124_230017\\parsed\\crew_lineup.jsonl",
        "no_lineup_trains_for_pool_at_04690"
       ],
@@ -3203,7 +3203,7 @@
       "captured_at": "2026-11-25T05:02:46.194296+00:00",
       "evidence": [
        "board:sched_20261124_230017:1_12",
-       "rest_calculated:2026-11-24T23:16:12",
+       "rest_calculated:2026-11-24T23:18:30",
        "board_rest:2026-11-25T05:02:46.194296+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261124_230017\\parsed\\crew_lineup.jsonl",
        "no_lineup_trains_for_pool_at_04690"
       ],
@@ -5019,10 +5019,10 @@
  },
  "meta": {
   "collection_state": "awaiting_login",
-  "collection_message": "Session lost; recovering (auto-login + RSA).",
+  "collection_message": "Session lost; checking login and terminal launch. Collection has not resumed.",
   "feed": "railcore_lineups",
   "feed_version": 1,
-  "generated_at": "2026-11-25T05:17:27+00:00",
+  "generated_at": "2026-11-25T05:19:51+00:00",
   "names_mode": "full",
   "source_runs": {
    "train_lineup": "sched_20261124_230017",
@@ -7132,8 +7132,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "10h 14m",
-         "minutes": 614
+         "label": "10h 12m",
+         "minutes": 612
         },
         "name": "FLYNN,(CASEY)"
        }
@@ -7163,8 +7163,8 @@
         "craft": "CO",
         "hos": {
          "band": "green",
-         "label": "10h 14m",
-         "minutes": 614
+         "label": "10h 12m",
+         "minutes": 612
         },
         "name": "AKERS,(MATTHEW)"
        }
@@ -7272,8 +7272,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "11h 54m",
-         "minutes": 714
+         "label": "11h 52m",
+         "minutes": 712
         },
         "name": "SPERSTAD,(JOHN)",
         "tags": [
@@ -7306,8 +7306,8 @@
         "craft": "CO",
         "hos": {
          "band": "green",
-         "label": "11h 54m",
-         "minutes": 714
+         "label": "11h 52m",
+         "minutes": 712
         },
         "name": "REAVES,(DALTON)",
         "tags": [
@@ -8474,8 +8474,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "5h 14m",
-         "minutes": 314
+         "label": "5h 12m",
+         "minutes": 312
         },
         "name": "FRENCH,(BEN)"
        }
@@ -8505,8 +8505,8 @@
         "craft": "CO",
         "hos": {
          "band": "green",
-         "label": "5h 14m",
-         "minutes": 314
+         "label": "5h 12m",
+         "minutes": 312
         },
         "name": "HARING,(ALEX)"
        }
@@ -8718,8 +8718,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 44m",
-         "minutes": 464
+         "label": "7h 42m",
+         "minutes": 462
         },
         "name": "CARROW,(ROBERT)"
        },
@@ -8727,8 +8727,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "7h 44m",
-         "minutes": 464
+         "label": "7h 42m",
+         "minutes": 462
         },
         "name": "ADKINS,(CHRISTOPHER)"
        },
@@ -8736,8 +8736,8 @@
         "craft": "ET",
         "hos": {
          "band": "green",
-         "label": "7h 44m",
-         "minutes": 464
+         "label": "7h 42m",
+         "minutes": 462
         },
         "name": "MURPHY,(ADAM)"
        }
@@ -8787,7 +8787,7 @@
          "captured_at": "2026-11-25T05:02:28.258336+00:00",
          "evidence": [
           "board:sched_20261124_230017:1_09",
-          "rest_calculated:2026-11-24T23:16:12",
+          "rest_calculated:2026-11-24T23:18:30",
           "basic_rest_10h",
           "no_lineup_trains_for_pool_at_04664"
          ],
@@ -8809,7 +8809,7 @@
          "captured_at": "2026-11-25T05:02:28.258336+00:00",
          "evidence": [
           "board:sched_20261124_230017:1_09",
-          "rest_calculated:2026-11-24T23:16:12",
+          "rest_calculated:2026-11-24T23:18:30",
           "basic_rest_10h",
           "no_lineup_trains_for_pool_at_04664"
          ],
@@ -9195,7 +9195,7 @@
          "captured_at": "2026-11-25T05:01:57.594264+00:00",
          "evidence": [
           "board:sched_20261124_230017:1_04",
-          "rest_calculated:2026-11-24T23:16:12",
+          "rest_calculated:2026-11-24T23:18:30",
           "junior_in_craft",
           "basic_rest_10h",
           "xtraboard_no_lineup_walk",
@@ -9221,7 +9221,7 @@
          "captured_at": "2026-11-25T05:03:02.895555+00:00",
          "evidence": [
           "board:sched_20261124_230017:2_04",
-          "rest_calculated:2026-11-24T23:16:12",
+          "rest_calculated:2026-11-24T23:18:30",
           "junior_in_craft",
           "board_blank_rest_observed:{\"board\": \"OTT SWITCHMAN XTRABRD POSITION\", \"captured_at\": \"2026-11-25T05:03:02.895555+00:00\", \"craft\": \"\", \"member\": \"MOZQUEDA,(ERNESTO)\", \"observed_at\": \"2026-11-25T04:53:27.732378+00:00\", \"run_id\": \"sched_20261124_230017\", \"station\": \"04664\", \"ticket\": \"357-260\", \"ticket_date\": \"2026-11-21\", \"tie_up_at\": \"2026-11-21T22:16:00+00:00\", \"turn\": \"0005\"}",
           "rule:OT_EXTRA_CONDUCTOR_FALLBACK:2026-09-23.1:dcdc8e04c72273d00ab7cee4f36338d7e7ca7ff65dcfac032d79b5690206eb4b",
@@ -9621,7 +9621,7 @@
          "captured_at": "2026-11-25T05:02:38.568309+00:00",
          "evidence": [
           "board:sched_20261124_230017:1_11",
-          "rest_calculated:2026-11-24T23:16:12",
+          "rest_calculated:2026-11-24T23:18:30",
           "board_rest:2026-11-25T04:53:03.450256+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261124_225041\\parsed\\crew_lineup.jsonl",
           "no_lineup_trains_for_pool_at_04664"
          ],
@@ -9812,12 +9812,12 @@
        {
         "craft": "EN",
         "name": "STANSBERRY,(CHANDLER)",
-        "on_in": "1h 14m"
+        "on_in": "1h 12m"
        },
        {
         "craft": "AE",
         "name": "KILGORE,(JONATHAN)",
-        "on_in": "1h 14m"
+        "on_in": "1h 12m"
        }
       ],
       "eng_crew_count": "1",
@@ -9865,7 +9865,7 @@
          "captured_at": "2026-11-25T05:02:28.258336+00:00",
          "evidence": [
           "board:sched_20261124_230017:1_09",
-          "rest_calculated:2026-11-24T23:16:12",
+          "rest_calculated:2026-11-24T23:18:30",
           "board_rest:2026-11-25T05:02:28.258336+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261124_230017\\parsed\\crew_lineup.jsonl",
           "no_lineup_trains_for_pool_at_04664"
          ],
@@ -9887,7 +9887,7 @@
          "captured_at": "2026-11-25T05:02:28.258336+00:00",
          "evidence": [
           "board:sched_20261124_230017:1_09",
-          "rest_calculated:2026-11-24T23:16:12",
+          "rest_calculated:2026-11-24T23:18:30",
           "board_rest:2026-11-25T05:02:28.258336+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261124_230017\\parsed\\crew_lineup.jsonl",
           "no_lineup_trains_for_pool_at_04664"
          ],
@@ -9910,7 +9910,7 @@
          "captured_at": "2026-11-25T05:02:28.258336+00:00",
          "evidence": [
           "board:sched_20261124_230017:1_09",
-          "rest_calculated:2026-11-24T23:16:12",
+          "rest_calculated:2026-11-24T23:18:30",
           "board_rest:2026-11-25T05:02:28.258336+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261124_230017\\parsed\\crew_lineup.jsonl",
           "no_lineup_trains_for_pool_at_04664"
          ],
@@ -10258,8 +10258,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "7h 44m",
-         "minutes": 464
+         "label": "7h 42m",
+         "minutes": 462
         },
         "name": "DUNCAN,(ZACH)"
        }
@@ -10289,8 +10289,8 @@
         "craft": "CO",
         "hos": {
          "band": "green",
-         "label": "7h 44m",
-         "minutes": 464
+         "label": "7h 42m",
+         "minutes": 462
         },
         "name": "GRELK,(RUGER)"
        }
@@ -10320,7 +10320,7 @@
          "captured_at": "2026-11-25T05:02:38.568309+00:00",
          "evidence": [
           "board:sched_20261124_230017:1_11",
-          "rest_calculated:2026-11-24T23:16:12",
+          "rest_calculated:2026-11-24T23:18:30",
           "junior_in_craft",
           "board_rest:2026-11-25T05:02:38.568309+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261124_230017\\parsed\\crew_lineup.jsonl",
           "no_lineup_trains_for_pool_at_04664"
@@ -10560,7 +10560,7 @@
          "captured_at": "2026-11-25T05:03:02.895555+00:00",
          "evidence": [
           "board:sched_20261124_230017:2_04",
-          "rest_calculated:2026-11-24T23:16:12",
+          "rest_calculated:2026-11-24T23:18:30",
           "basic_rest_10h",
           "xtraboard_no_lineup_walk",
           "rule:OT_EXTRA_CONDUCTOR_FALLBACK:2026-09-23.1:dcdc8e04c72273d00ab7cee4f36338d7e7ca7ff65dcfac032d79b5690206eb4b",
@@ -10760,8 +10760,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "4h 04m",
-         "minutes": 244
+         "label": "4h 02m",
+         "minutes": 242
         },
         "name": "BUTLER,(JASON)"
        }
@@ -10791,8 +10791,8 @@
         "craft": "CO",
         "hos": {
          "band": "green",
-         "label": "4h 04m",
-         "minutes": 244
+         "label": "4h 02m",
+         "minutes": 242
         },
         "name": "YORK,(CHRISTOPHER)"
        },
@@ -10800,8 +10800,8 @@
         "craft": "TT",
         "hos": {
          "band": "green",
-         "label": "4h 04m",
-         "minutes": 244
+         "label": "4h 02m",
+         "minutes": 242
         },
         "name": "NEITZEL,(BRODY)"
        }
@@ -12565,7 +12565,7 @@
        {
         "craft": "EN",
         "name": "MOFFITT,(JASON)",
-        "on_in": "0h 19m",
+        "on_in": "0h 17m",
         "tags": [
          "EN"
         ]
@@ -12601,8 +12601,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "6h 29m",
-         "minutes": 389
+         "label": "6h 27m",
+         "minutes": 387
         },
         "name": "LINEBAUGH,(MATT)"
        },
@@ -12610,8 +12610,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "6h 29m",
-         "minutes": 389
+         "label": "6h 27m",
+         "minutes": 387
         },
         "name": "KNIGHTS,(JARRETT)"
        }
@@ -12860,8 +12860,8 @@
         "craft": "EN",
         "hos": {
          "band": "green",
-         "label": "11h 19m",
-         "minutes": 679
+         "label": "11h 17m",
+         "minutes": 677
         },
         "name": "MARKO,(CAIN)"
        },
@@ -12869,8 +12869,8 @@
         "craft": "AE",
         "hos": {
          "band": "green",
-         "label": "11h 19m",
-         "minutes": 679
+         "label": "11h 17m",
+         "minutes": 677
         },
         "name": "COMSTOCK,(JUSTYCE)"
        }
@@ -13010,7 +13010,7 @@
          "captured_at": "2026-11-25T05:02:46.194296+00:00",
          "evidence": [
           "board:sched_20261124_230017:1_12",
-          "rest_calculated:2026-11-24T23:16:12",
+          "rest_calculated:2026-11-24T23:18:30",
           "board_rest:2026-11-25T05:02:46.194296+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261124_230017\\parsed\\crew_lineup.jsonl",
           "no_lineup_trains_for_pool_at_04690"
          ],
@@ -13032,7 +13032,7 @@
          "captured_at": "2026-11-25T05:02:46.194296+00:00",
          "evidence": [
           "board:sched_20261124_230017:1_12",
-          "rest_calculated:2026-11-24T23:16:12",
+          "rest_calculated:2026-11-24T23:18:30",
           "board_rest:2026-11-25T05:02:46.194296+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261124_230017\\parsed\\crew_lineup.jsonl",
           "no_lineup_trains_for_pool_at_04690"
          ],
@@ -13663,7 +13663,7 @@
          "captured_at": "2026-11-25T05:02:46.194296+00:00",
          "evidence": [
           "board:sched_20261124_230017:1_12",
-          "rest_calculated:2026-11-24T23:16:12",
+          "rest_calculated:2026-11-24T23:18:30",
           "board_rest:2026-11-25T05:02:46.194296+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261124_230017\\parsed\\crew_lineup.jsonl",
           "no_lineup_trains_for_pool_at_04690"
          ],
@@ -13685,7 +13685,7 @@
          "captured_at": "2026-11-25T05:02:46.194296+00:00",
          "evidence": [
           "board:sched_20261124_230017:1_12",
-          "rest_calculated:2026-11-24T23:16:12",
+          "rest_calculated:2026-11-24T23:18:30",
           "board_rest:2026-11-25T05:02:46.194296+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261124_230017\\parsed\\crew_lineup.jsonl",
           "no_lineup_trains_for_pool_at_04690"
          ],
@@ -15678,7 +15678,7 @@
   "board_count": 11,
   "boards": [
    {
-    "age_seconds": 832,
+    "age_seconds": 970,
     "captured_at": "2026-11-25T05:01:57.594264+00:00",
     "label": "OTTUMWA ENG XTRA BRD",
     "menu_path": "1_04",
@@ -15707,7 +15707,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-11-24T22:51",
-      "rest_calculated_at": "2026-11-24T23:16:12",
+      "rest_calculated_at": "2026-11-24T23:18:30",
       "rest_board": "OTTUMWA ENG XTRA BRD POSITION",
       "rest_evidence": [
        "junior_in_craft",
@@ -15738,7 +15738,7 @@
       "ushr": "",
       "rest_state": "resting",
       "rest_until": "2026-11-25T01:40",
-      "rest_calculated_at": "2026-11-24T23:16:12",
+      "rest_calculated_at": "2026-11-24T23:18:30",
       "rest_board": "OTTUMWA ENG XTRA BRD POSITION",
       "rest_evidence": [
        "board_rest:2026-11-25T05:01:57.594264+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261124_230017\\parsed\\crew_lineup.jsonl",
@@ -15768,7 +15768,7 @@
       "ushr": "",
       "rest_state": "availability_unknown",
       "rest_until": null,
-      "rest_calculated_at": "2026-11-24T23:16:12",
+      "rest_calculated_at": "2026-11-24T23:18:30",
       "rest_board": "OTTUMWA ENG XTRA BRD POSITION",
       "rest_evidence": [
        "rest_day",
@@ -15784,7 +15784,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 824,
+    "age_seconds": 962,
     "captured_at": "2026-11-25T05:02:05.147592+00:00",
     "label": "OB POOLS IN OTT TURN ORDER",
     "menu_path": "1_05",
@@ -15934,7 +15934,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 816,
+    "age_seconds": 954,
     "captured_at": "2026-11-25T05:02:12.778386+00:00",
     "label": "OB POOLS IN OTT POSITION",
     "menu_path": "1_06",
@@ -15947,7 +15947,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 811,
+    "age_seconds": 949,
     "captured_at": "2026-11-25T05:02:17.932268+00:00",
     "label": "OB POOLS IN BVL POSITION",
     "menu_path": "1_07",
@@ -15960,7 +15960,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 806,
+    "age_seconds": 944,
     "captured_at": "2026-11-25T05:02:23.081788+00:00",
     "label": "OB POOLS IN IMS POSITION",
     "menu_path": "1_08",
@@ -15973,7 +15973,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 801,
+    "age_seconds": 939,
     "captured_at": "2026-11-25T05:02:28.258336+00:00",
     "label": "DA POOLS IN OTT POSITION",
     "menu_path": "1_09",
@@ -16002,7 +16002,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-11-24T18:36",
-      "rest_calculated_at": "2026-11-24T23:16:12",
+      "rest_calculated_at": "2026-11-24T23:18:30",
       "rest_board": "DA POOLS IN OTT POSITION",
       "rest_evidence": [
        "basic_rest_10h",
@@ -16032,7 +16032,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-11-24T18:36",
-      "rest_calculated_at": "2026-11-24T23:16:12",
+      "rest_calculated_at": "2026-11-24T23:18:30",
       "rest_board": "DA POOLS IN OTT POSITION",
       "rest_evidence": [
        "basic_rest_10h",
@@ -16062,7 +16062,7 @@
       "ushr": "0500",
       "rest_state": "resting",
       "rest_until": "2026-11-25T05:00",
-      "rest_calculated_at": "2026-11-24T23:16:12",
+      "rest_calculated_at": "2026-11-24T23:18:30",
       "rest_board": "DA POOLS IN OTT POSITION",
       "rest_evidence": [
        "board_rest:2026-11-25T05:02:28.258336+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261124_230017\\parsed\\crew_lineup.jsonl",
@@ -16092,7 +16092,7 @@
       "ushr": "0500",
       "rest_state": "resting",
       "rest_until": "2026-11-25T05:00",
-      "rest_calculated_at": "2026-11-24T23:16:12",
+      "rest_calculated_at": "2026-11-24T23:18:30",
       "rest_board": "DA POOLS IN OTT POSITION",
       "rest_evidence": [
        "board_rest:2026-11-25T05:02:28.258336+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261124_230017\\parsed\\crew_lineup.jsonl",
@@ -16122,7 +16122,7 @@
       "ushr": "0500",
       "rest_state": "resting",
       "rest_until": "2026-11-25T05:00",
-      "rest_calculated_at": "2026-11-24T23:16:12",
+      "rest_calculated_at": "2026-11-24T23:18:30",
       "rest_board": "DA POOLS IN OTT POSITION",
       "rest_evidence": [
        "board_rest:2026-11-25T05:02:28.258336+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261124_230017\\parsed\\crew_lineup.jsonl",
@@ -16137,7 +16137,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 796,
+    "age_seconds": 934,
     "captured_at": "2026-11-25T05:02:33.424942+00:00",
     "label": "KA POOLS IN OTT POSITION",
     "menu_path": "1_10",
@@ -16150,7 +16150,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 791,
+    "age_seconds": 929,
     "captured_at": "2026-11-25T05:02:38.568309+00:00",
     "label": "SW POOLS IN OTT POSITION",
     "menu_path": "1_11",
@@ -16179,7 +16179,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-11-24T22:54",
-      "rest_calculated_at": "2026-11-24T23:16:12",
+      "rest_calculated_at": "2026-11-24T23:18:30",
       "rest_board": "SW POOLS IN OTT POSITION",
       "rest_evidence": [
        "board_rest:2026-11-25T04:53:03.450256+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261124_225041\\parsed\\crew_lineup.jsonl",
@@ -16209,7 +16209,7 @@
       "ushr": "",
       "rest_state": "annual_vacation",
       "rest_until": null,
-      "rest_calculated_at": "2026-11-24T23:16:12",
+      "rest_calculated_at": "2026-11-24T23:18:30",
       "rest_board": "SW POOLS IN OTT POSITION",
       "rest_evidence": [
        "annual_vacation",
@@ -16239,7 +16239,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-11-24T22:54",
-      "rest_calculated_at": "2026-11-24T23:16:12",
+      "rest_calculated_at": "2026-11-24T23:18:30",
       "rest_board": "SW POOLS IN OTT POSITION",
       "rest_evidence": [
        "board_rest:2026-11-25T04:53:03.450256+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261124_225041\\parsed\\crew_lineup.jsonl",
@@ -16269,7 +16269,7 @@
       "ushr": "0507",
       "rest_state": "resting",
       "rest_until": "2026-11-25T05:07",
-      "rest_calculated_at": "2026-11-24T23:16:12",
+      "rest_calculated_at": "2026-11-24T23:18:30",
       "rest_board": "SW POOLS IN OTT POSITION",
       "rest_evidence": [
        "junior_in_craft",
@@ -16285,7 +16285,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 783,
+    "age_seconds": 921,
     "captured_at": "2026-11-25T05:02:46.194296+00:00",
     "label": "SW POOLS IN KC POSITION",
     "menu_path": "1_12",
@@ -16314,7 +16314,7 @@
       "ushr": "2335",
       "rest_state": "resting",
       "rest_until": "2026-11-24T23:35",
-      "rest_calculated_at": "2026-11-24T23:16:12",
+      "rest_calculated_at": "2026-11-24T23:18:30",
       "rest_board": "SW POOLS IN KC  POSITION",
       "rest_evidence": [
        "board_rest:2026-11-25T05:02:46.194296+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261124_230017\\parsed\\crew_lineup.jsonl",
@@ -16344,7 +16344,7 @@
       "ushr": "2335",
       "rest_state": "resting",
       "rest_until": "2026-11-24T23:35",
-      "rest_calculated_at": "2026-11-24T23:16:12",
+      "rest_calculated_at": "2026-11-24T23:18:30",
       "rest_board": "SW POOLS IN KC  POSITION",
       "rest_evidence": [
        "board_rest:2026-11-25T05:02:46.194296+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261124_230017\\parsed\\crew_lineup.jsonl",
@@ -16374,7 +16374,7 @@
       "ushr": "0337",
       "rest_state": "resting",
       "rest_until": "2026-11-25T03:35",
-      "rest_calculated_at": "2026-11-24T23:16:12",
+      "rest_calculated_at": "2026-11-24T23:18:30",
       "rest_board": "SW POOLS IN KC  POSITION",
       "rest_evidence": [
        "board_rest:2026-11-25T05:02:46.194296+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261124_230017\\parsed\\crew_lineup.jsonl",
@@ -16404,7 +16404,7 @@
       "ushr": "0336",
       "rest_state": "resting",
       "rest_until": "2026-11-25T03:35",
-      "rest_calculated_at": "2026-11-24T23:16:12",
+      "rest_calculated_at": "2026-11-24T23:18:30",
       "rest_board": "SW POOLS IN KC  POSITION",
       "rest_evidence": [
        "board_rest:2026-11-25T05:02:46.194296+00:00:C:\\CPKC DATA PROCESSOR\\ui_v2\\state\\runs\\sched_20261124_230017\\parsed\\crew_lineup.jsonl",
@@ -16419,7 +16419,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 775,
+    "age_seconds": 913,
     "captured_at": "2026-11-25T05:02:53.875239+00:00",
     "label": "SW POOLS IN DA POSITION",
     "menu_path": "1_13",
@@ -16432,7 +16432,7 @@
     "subdistrict": "OT"
    },
    {
-    "age_seconds": 766,
+    "age_seconds": 904,
     "captured_at": "2026-11-25T05:03:02.895555+00:00",
     "label": "OTT SWITCHMAN XTRA BRD",
     "menu_path": "2_04",
@@ -16461,7 +16461,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": null,
-      "rest_calculated_at": "2026-11-24T23:16:12",
+      "rest_calculated_at": "2026-11-24T23:18:30",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION",
       "rest_evidence": [
        "junior_in_craft",
@@ -16492,7 +16492,7 @@
       "ushr": "",
       "rest_state": "on_board",
       "rest_until": "2026-11-24T10:13",
-      "rest_calculated_at": "2026-11-24T23:16:12",
+      "rest_calculated_at": "2026-11-24T23:18:30",
       "rest_board": "OTT SWITCHMAN XTRABRD POSITION",
       "rest_evidence": [
        "basic_rest_10h",
